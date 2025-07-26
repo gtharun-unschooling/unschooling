@@ -1,0 +1,157 @@
+/* Custom scrollbar for scrollable grids */
+.profile-form-scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.profile-form-scrollable::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.profile-form-scrollable::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 4px;
+}
+
+.profile-form-scrollable::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
+/* Custom range slider styles */
+.profile-form-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
+}
+
+.profile-form-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+  border: 3px solid white;
+}
+
+.profile-form-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+  border: 3px solid white;
+}
+
+/* Hover effects for buttons */
+.profile-form-button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.profile-form-button:active {
+  transform: translateY(0) !important;
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+.profile-form-loading {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .profile-form-container {
+    padding: 1rem !important;
+  }
+  
+  .profile-form-card {
+    padding: 1.5rem !important;
+    margin: 0 1rem !important;
+  }
+  
+  .profile-form-title {
+    font-size: 2rem !important;
+  }
+  
+  .profile-form-section {
+    padding: 1rem !important;
+  }
+  
+  .profile-form-learning-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .profile-form-age-display {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-form-title {
+    font-size: 1.75rem !important;
+  }
+  
+  .profile-form-subtitle {
+    font-size: 1rem !important;
+  }
+  
+  .profile-form-section-title {
+    font-size: 1.25rem !important;
+  }
+  
+  .profile-form-button {
+    font-size: 0.85rem !important;
+    padding: 0.5rem 0.75rem !important;
+  }
+}
+
+/* Smooth transitions */
+.profile-form-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Focus states for accessibility */
+.profile-form-button:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+.profile-form-slider:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+/* Glass morphism effect */
+.profile-form-glass {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Gradient text animation */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.profile-form-gradient-text {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 
