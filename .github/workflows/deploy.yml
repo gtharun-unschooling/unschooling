@@ -47,7 +47,4 @@ jobs:
     - name: Deploy to Firebase Hosting
       if: github.ref == 'refs/heads/dev-clean' || github.ref == 'refs/heads/main'
       run: |
-        echo ${{ secrets.FIREBASE_TOKEN }} | firebase login --no-localhost
-        firebase deploy --only hosting --project unschooling-464413
-      env:
-        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }} 
+        firebase deploy --only hosting --project unschooling-464413 --token "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}" 
