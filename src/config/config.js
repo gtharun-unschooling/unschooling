@@ -9,17 +9,17 @@ const config = {
   DEBUG: process.env.REACT_APP_DEBUG === "true",
   
   // API Configuration
-  API_BASE_URL: process.env.REACT_APP_API_BASE_URL || "https://cloudrun-proxy-790275794964.us-central1.run.app",
+  API_BASE_URL: process.env.REACT_APP_API_BASE_URL || "https://unschooling-backend-790275794964.us-central1.run.app",
   API_TIMEOUT: parseInt(process.env.REACT_APP_API_TIMEOUT) || 30000,
   
   // Firebase Configuration
   FIREBASE: {
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY || "AIzaSyCueSWQKy_ESZNs6v-uJTq5SJ_DVsIbVio",
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN || "unschooling-7d6b4.firebaseapp.com",
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID || "unschooling-7d6b4",
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET || "unschooling-7d6b4.firebasestorage.app",
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID || "838194478817",
-    appId: process.env.REACT_APP_FIREBASE_APP_ID || "1:838194478817:web:f94411e22b340417b041a0"
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN || "unschooling-464413.firebaseapp.com",
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID || "unschooling-464413",
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET || "unschooling-464413.appspot.com",
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID || "790275794964",
+    appId: process.env.REACT_APP_FIREBASE_APP_ID || "1:790275794964:web:your_app_id_here"
   },
   
   // API Endpoints
