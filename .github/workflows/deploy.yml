@@ -52,8 +52,14 @@ jobs:
       run: |
         npm cache clean --force
         npm install -g firebase-tools@13.0.0
+        
+    - name: Setup Firebase credentials
+      run: |
+        echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > /tmp/firebase-key.json
       
     - name: Deploy to Firebase Hosting
       if: github.ref == 'refs/heads/dev-clean' || github.ref == 'refs/heads/main'
       run: |
-        firebase deploy --only hosting --project unschooling-464413 --token "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}" 
+        firebase deploy --only hosting --project unschooling-464413
+      env:
+        GOOGLE_APPLICATION_CREDENTIALS: /tmp/firebase-key.json 
