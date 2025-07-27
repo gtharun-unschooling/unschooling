@@ -371,6 +371,7 @@ class ApiService {
             headers: {
               'Content-Type': 'application/json',
               'X-API-Key': 'unschooling-api-key-2024',
+              'Accept': 'application/json',
             },
             body: JSON.stringify({ 
               profile
@@ -380,9 +381,15 @@ class ApiService {
           debugLog(`📤 Request body preview: ${JSON.stringify({ 
             profile: { child_name: profile.child_name, child_age: profile.child_age }
           }, null, 2)}`);
+          debugLog(`📤 Request headers: ${JSON.stringify({
+            'Content-Type': 'application/json',
+            'X-API-Key': 'unschooling-api-key-2024',
+            'Accept': 'application/json',
+          })}`);
           
           debugLog('📡 STEP 3: BACKEND RESPONSE RECEIVED');
           debugLog(`✅ Status: ${res.status} ${res.statusText}`);
+          debugLog(`📋 Response headers: ${JSON.stringify(Object.fromEntries(res.headers.entries()))}`);
           
           let data;
           if (!res.ok) {
