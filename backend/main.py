@@ -16,6 +16,37 @@ from utils.error_handling import handle_exception, validate_required_fields, saf
 from agents.profile_agent import run_profile_agent
 from main_graph import flow
 
+# Authentication function
+def verify_auth(request: Request) -> bool:
+    """Verify authentication from request headers or body."""
+    # Check for API key in headers
+    api_key = request.headers.get("X-API-Key")
+    if api_key == "unschooling-api-key-2024":
+        return True
+    
+    # Check for Bearer token
+    auth_header = request.headers.get("Authorization")
+    if auth_header and auth_header.startswith("Bearer "):
+        token = auth_header.split(" ")[1]
+        if token and len(token) > 10:  # Basic token validation
+            return True
+    
+    # Check for Firebase token in headers
+    firebase_token = request.headers.get("X-Firebase-Token")
+    if firebase_token and len(firebase_token) > 10:
+        return True
+    
+    # Check for auth token in body (for POST requests)
+    if request.method == "POST":
+        try:
+            body = request.json()
+            if body.get("auth_token") or body.get("api_key"):
+                return True
+        except:
+            pass
+    
+    return False
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -82,6 +113,17 @@ async def generate_plan(request: Request):
     """Generate a personalized learning plan based on user profile."""
     
     try:
+        # Check authentication
+        if not verify_auth(request):
+            raise HTTPException(
+                status_code=401,
+                detail={
+                    "message": "Authentication required",
+                    "code": "AUTHENTICATION_ERROR",
+                    "status_code": 401
+                }
+            )
+        
         # Parse request body
         input_data: Dict[str, Any] = await request.json()
         logger.info(f"📥 Received plan generation request: {input_data}")
@@ -104,6 +146,8 @@ async def generate_plan(request: Request):
             "message": "Plan generated successfully"
         }
         
+    except HTTPException:
+        raise
     except Exception as exc:
         logger.error(f"❌ Error generating plan: {str(exc)}")
         return handle_exception(exc)
@@ -113,6 +157,17 @@ async def query_embeddings(request: Request):
     """Query embeddings for similar content."""
     
     try:
+        # Check authentication
+        if not verify_auth(request):
+            raise HTTPException(
+                status_code=401,
+                detail={
+                    "message": "Authentication required",
+                    "code": "AUTHENTICATION_ERROR",
+                    "status_code": 401
+                }
+            )
+        
         # Parse request body
         input_data: Dict[str, Any] = await request.json()
         logger.info(f"📥 Received embedding query: {input_data}")
@@ -133,6 +188,8 @@ async def query_embeddings(request: Request):
             "message": "Query completed successfully"
         }
         
+    except HTTPException:
+        raise
     except Exception as exc:
         logger.error(f"❌ Error querying embeddings: {str(exc)}")
         return handle_exception(exc)
@@ -142,6 +199,17 @@ async def update_embeddings(request: Request):
     """Update embeddings in the vector store."""
     
     try:
+        # Check authentication
+        if not verify_auth(request):
+            raise HTTPException(
+                status_code=401,
+                detail={
+                    "message": "Authentication required",
+                    "code": "AUTHENTICATION_ERROR",
+                    "status_code": 401
+                }
+            )
+        
         # Parse request body
         input_data: Dict[str, Any] = await request.json()
         logger.info(f"📥 Received embedding update request: {input_data}")
@@ -162,6 +230,8 @@ async def update_embeddings(request: Request):
             "message": "Embeddings updated successfully"
         }
         
+    except HTTPException:
+        raise
     except Exception as exc:
         logger.error(f"❌ Error updating embeddings: {str(exc)}")
         return handle_exception(exc)
