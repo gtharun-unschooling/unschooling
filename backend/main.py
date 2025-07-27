@@ -93,10 +93,11 @@ async def global_exception_handler(request: Request, exc: Exception):
 async def root():
     """Health check endpoint."""
     return {
-        "message": f"Welcome to {settings.APP_NAME} - Agent System Active",
+        "message": f"Welcome to {settings.APP_NAME} - Agent System Active v2",
         "status": "healthy",
         "version": "1.0.0",
-        "agents": "enabled"
+        "agents": "enabled",
+        "deployment": "latest"
     }
 
 @app.get("/health")
