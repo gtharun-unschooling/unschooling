@@ -80,9 +80,30 @@ def run_match_agent(state):
 
     except Exception as e:
         print("Gemini LLM error:", str(e))
-        # Fallback to random selection
-        fallback = random.sample(eligible_topics, min(4, len(eligible_topics)))
+        # Fallback to intelligent selection without API
+        if len(eligible_topics) >= 4:
+            # Select diverse topics
+            selected_topics = []
+            niches_seen = set()
+            
+            for topic in eligible_topics:
+                if len(selected_topics) >= 4:
+                    break
+                if topic["Niche"] not in niches_seen or len(selected_topics) < 2:
+                    selected_topics.append(topic)
+                    niches_seen.add(topic["Niche"])
+            
+            # If we don't have enough, add more
+            if len(selected_topics) < 4:
+                for topic in eligible_topics:
+                    if len(selected_topics) >= 4:
+                        break
+                    if topic not in selected_topics:
+                        selected_topics.append(topic)
+        else:
+            selected_topics = eligible_topics
+        
         return {
             "profile": profile,
-            "matched_topics": fallback
+            "matched_topics": selected_topics
         }
