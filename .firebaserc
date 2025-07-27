@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "unschooling-464413"
-  }
-} 
+    "default": "unschooling-464413",
+    "dev": "unschooling-464413"
+  },
+  "targets": {},
+  "etags": {}
+}

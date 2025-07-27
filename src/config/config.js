@@ -14,12 +14,12 @@ const config = {
   
   // Firebase Configuration
   FIREBASE: {
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY || "AIzaSyCueSWQKy_ESZNs6v-uJTq5SJ_DVsIbVio",
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY || "AIzaSyBX2bZmOUosU-2PXZFQVN_WLLuee_zkFzI",
     authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN || "unschooling-464413.firebaseapp.com",
     projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID || "unschooling-464413",
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET || "unschooling-464413.appspot.com",
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET || "unschooling-464413.firebasestorage.app",
     messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID || "790275794964",
-    appId: process.env.REACT_APP_FIREBASE_APP_ID || "1:790275794964:web:your_app_id_here"
+    appId: process.env.REACT_APP_FIREBASE_APP_ID || "1:790275794964:web:f981a7f0693cc186631f01"
   },
   
   // API Endpoints

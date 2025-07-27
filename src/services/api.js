@@ -10,31 +10,35 @@ class ApiService {
     this.baseURL = config.API_BASE_URL;
     this.timeout = config.API_TIMEOUT;
     this.maxRetries = config.UI.MAX_RETRIES;
-    this.mockMode = false; // Disable mock mode so backend agents are used
+    this.mockMode = false; // Use real backend with Firebase authentication
   }
 
   /**
-   * Get authentication token for Google Cloud
+   * Get authentication token from Firebase Auth
    */
   async getAuthToken() {
-    // Try to get token from gapi (Google Identity Platform)
-    if (window.gapi && window.gapi.auth2) {
-      const auth2 = window.gapi.auth2.getAuthInstance();
-      if (auth2 && auth2.isSignedIn.get()) {
-        const user = auth2.currentUser.get();
-        const idToken = user.getAuthResponse().id_token;
+    try {
+      // Import Firebase auth dynamically to avoid circular imports
+      const { auth } = await import('../firebase');
+      const { getIdToken } = await import('firebase/auth');
+      
+      // Get current user
+      const user = auth.currentUser;
+      if (user) {
+        // Get fresh ID token
+        const idToken = await getIdToken(user, true); // force refresh
         return idToken;
       }
+      
+      // If no user is signed in, try to sign in anonymously
+      const { signInAnonymously } = await import('firebase/auth');
+      const result = await signInAnonymously(auth);
+      const idToken = await getIdToken(result.user, true);
+      return idToken;
+    } catch (error) {
+      console.error('Authentication error:', error);
+      return null;
     }
-    // Fallback: try to get token from backend helper (if running locally)
-    try {
-      const res = await fetch('/api/get-identity-token');
-      if (res.ok) {
-        const data = await res.json();
-        return data.token;
-      }
-    } catch {}
-    return null;
   }
 
   /**
@@ -300,46 +304,152 @@ class ApiService {
    * Generate a personalized learning plan
    */
   async generatePlan(profile) {
+    // Simple debug logging function
+    const debugLog = (message) => {
+      console.log(`🔍 DEBUG: ${message}`);
+      // Try to add to debug context if available
+      try {
+        // Dispatch a custom event that the debug context can listen to
+        window.dispatchEvent(new CustomEvent('debug-log', { detail: message }));
+      } catch (e) {
+        // Ignore if debug context is not available
+      }
+    };
+
+    // Add debug logging at the start
+    debugLog('🚀 PLAN GENERATION JOURNEY STARTED');
+    debugLog(`📋 Profile received: ${profile.child_name || 'Unknown'}, Age: ${profile.child_age || 'Unknown'}`);
+    debugLog(`🎯 Interests: ${profile.interests?.join(', ') || 'None'}`);
+    debugLog(`🎨 Learning Style: ${profile.preferred_learning_style || 'Unknown'}`);
+    debugLog(`📝 Plan Type: ${profile.plan_type || 'Unknown'}`);
+    debugLog(`🌐 Mock Mode: ${this.mockMode ? 'ENABLED' : 'DISABLED'}`);
+    
     // Always send the full profile, including plan_type
     if (!this.mockMode) {
-      // Use local proxy if running on localhost
-      const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-      if (isLocal) {
-        const res = await fetch('http://localhost:8080/local-proxy', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ profile }), // <-- wrap profile
-        });
-        const data = await res.json();
-        return data;
-      } else {
-        const res = await fetch(getApiUrl(config.ENDPOINTS.GENERATE_PLAN), {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ profile }), // <-- wrap profile
-        });
-        const data = await res.json();
-        return data;
+      try {
+        debugLog('🌐 STEP 1: PREPARING BACKEND REQUEST');
+        
+        // Use local proxy if running on localhost
+        const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        if (isLocal) {
+          debugLog('🔗 Using local proxy (localhost detected)');
+          debugLog('📡 STEP 2: SENDING REQUEST TO LOCAL PROXY');
+          
+          const res = await fetch('http://localhost:8080/local-proxy', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ profile }), // <-- wrap profile
+          });
+          
+          debugLog(`📡 STEP 3: LOCAL PROXY RESPONSE RECEIVED`);
+          debugLog(`✅ Status: ${res.status} ${res.statusText}`);
+          
+          const data = await res.json();
+          debugLog('📄 STEP 4: PARSING LOCAL PROXY RESPONSE');
+          debugLog(`📊 Response type: ${data.success ? 'SUCCESS' : 'FAILED'}`);
+          debugLog(`🔍 DEBUG: Full local proxy response: ${JSON.stringify(data, null, 2)}`);
+          
+          return data;
+        } else {
+          debugLog('🔗 Using remote backend (production)');
+          debugLog(`🌐 Backend URL: ${getApiUrl(config.ENDPOINTS.GENERATE_PLAN)}`);
+          debugLog('🔑 STEP 2: GETTING AUTHENTICATION TOKEN');
+          
+          // Get authentication token
+          const token = await this.getAuthToken();
+          if (token) {
+            debugLog('✅ Authentication token obtained');
+            debugLog(`🔑 Token preview: ${token.substring(0, 20)}...`);
+          } else {
+            debugLog('❌ Failed to get authentication token');
+          }
+          
+          const res = await fetch(getApiUrl(config.ENDPOINTS.GENERATE_PLAN), {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'X-API-Key': 'unschooling-api-key-2024',
+            },
+            body: JSON.stringify({ 
+              profile
+            }),
+          });
+          
+          debugLog(`📤 Request body preview: ${JSON.stringify({ 
+            profile: { child_name: profile.child_name, child_age: profile.child_age }
+          }, null, 2)}`);
+          
+          debugLog('📡 STEP 3: BACKEND RESPONSE RECEIVED');
+          debugLog(`✅ Status: ${res.status} ${res.statusText}`);
+          
+          let data;
+          if (!res.ok) {
+            debugLog(`❌ HTTP ERROR: ${res.status} ${res.statusText}`);
+            const errorText = await res.text();
+            debugLog(`📄 Error details: ${errorText}`);
+            throw new Error(`Backend error: ${res.status} - ${errorText}`);
+          } else {
+            data = await res.json();
+            debugLog('📄 STEP 4: PARSING RESPONSE DATA');
+            debugLog(`📊 Response type: ${data.success ? 'SUCCESS' : 'FAILED'}`);
+            debugLog(`🔍 DEBUG: Full backend response: ${JSON.stringify(data, null, 2)}`);
+            
+            if (data.success) {
+              debugLog('✅ Plan generated successfully!');
+            } else {
+              debugLog(`❌ Backend Error: ${data.error?.message || 'Unknown error'}`);
+              debugLog(`🔍 Error Code: ${data.error?.code || 'Unknown'}`);
+            }
+          }
+          
+          return data;
+        }
+      } catch (error) {
+        debugLog('💥 STEP 3: EXCEPTION CAUGHT');
+        debugLog(`❌ Error Type: ${error.name}`);
+        debugLog(`❌ Error Message: ${error.message}`);
+        debugLog(`❌ Error Stack: ${error.stack}`);
+        debugLog(`🔍 DEBUG: Full error object: ${JSON.stringify(error, Object.getOwnPropertyNames(error), 2)}`);
+        throw error;
       }
     } else {
       // Mock mode: generate a 4-week plan for both plan types
+      debugLog('🎭 STEP 1: USING MOCK MODE (Backend unavailable)');
+      debugLog('📊 STEP 2: PROCESSING PROFILE DATA');
+      
       const planType = profile.plan_type || 'hybrid';
       const child_age = profile.child_age || 5;
       const interests = profile.interests || [];
       const learning_style = profile.preferred_learning_style || 'mixed';
       const goals = profile.goals || [];
+      
+      debugLog(`📋 Plan Type: ${planType}`);
+      debugLog(`👶 Child Age: ${child_age}`);
+      debugLog(`🎯 Interests: ${interests.join(', ')}`);
+      debugLog(`🎨 Learning Style: ${learning_style}`);
+      debugLog(`🎯 Goals: ${goals.join(', ')}`);
+      
       let topicsData = null;
+      debugLog('📁 STEP 3: LOADING TOPICS DATA');
+      
       try {
         const topicsResponse = await fetch('/topicsdata.json');
         if (topicsResponse.ok) {
           topicsData = await topicsResponse.json();
+          debugLog(`✅ Topics data loaded: ${topicsData.length} topics available`);
+        } else {
+          debugLog(`❌ Failed to load topics data: ${topicsResponse.status}`);
         }
-      } catch {}
+      } catch (error) {
+        debugLog(`❌ Error loading topics data: ${error.message}`);
+      }
+      
       let matched_topics = [];
+      debugLog('🔍 STEP 4: MATCHING TOPICS TO INTERESTS');
+      debugLog(`🎯 Looking for topics matching: ${interests.join(', ')}`);
+      
       if (topicsData && interests.length > 0) {
         for (const topic of topicsData) {
           if (interests.includes(topic.Niche)) {
@@ -348,8 +458,13 @@ class ApiService {
             if (age_match) matched_topics.push(topic);
           }
         }
+        
+        debugLog(`✅ Found ${matched_topics.length} matching topics`);
       }
+      
       if (matched_topics.length === 0 && interests.length > 0) {
+        debugLog('🔄 STEP 5: CREATING FALLBACK TOPICS (No matches found)');
+        
         matched_topics = interests.map(interest => ({
           Topic: `Introduction to ${interest}`,
           Niche: interest,
@@ -358,6 +473,8 @@ class ApiService {
           "Activity 1": `Explore ${interest}`,
           "Activity 2": `Create a project related to ${interest}`
         }));
+        
+        debugLog(`✅ Created ${matched_topics.length} fallback topics`);
       }
       // Hybrid: up to 4 topics, Fusion: up to 7 topics
       let selectedTopics = [];
@@ -397,6 +514,10 @@ class ApiService {
           }
         }
       }
+      debugLog('🎉 STEP 6: MOCK PLAN GENERATION COMPLETE');
+      debugLog(`📊 Generated ${Object.keys(weekly_plan).length} weeks of activities`);
+      debugLog('✅ Plan ready for display!');
+      
       return {
         success: true,
         data: {

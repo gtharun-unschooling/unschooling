@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { db, auth } from "../../firebase";
-import { doc, setDoc, getDoc, updateDoc, collection, getDocs } from "firebase/firestore";
+import { doc, setDoc, getDoc, updateDoc, collection, getDocs, deleteDoc } from "firebase/firestore";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import { colors, spacing, typography } from "../../styles/designTokens";
@@ -188,7 +188,7 @@ const PLAN_TYPES = [
 ];
 
 export default function ProfileForm({ onSubmit }) {
-  const [user] = useAuthState(auth);
+  const [user, loading, error] = useAuthState(auth);
   const [childAge, setChildAge] = useState(5);
   const [interests, setInterests] = useState([]);
   const [dislikes, setDislikes] = useState([]);
@@ -212,7 +212,34 @@ export default function ProfileForm({ onSubmit }) {
 
   // Load children on mount and data files
   useEffect(() => {
-    if (!user) return;
+    console.log('🔐 Auth state changed:', { user: !!user, loading, error });
+    
+    if (loading) {
+      console.log('⏳ Auth loading...');
+      return;
+    }
+    
+    if (error) {
+      console.error('❌ Auth error:', error);
+      return;
+    }
+    
+    if (!user) {
+      console.log('👤 No user found, attempting anonymous sign-in...');
+      // Try to sign in anonymously
+      import('firebase/auth').then(({ signInAnonymously }) => {
+        signInAnonymously(auth)
+          .then((result) => {
+            console.log('✅ Anonymous sign-in successful:', result.user.uid);
+          })
+          .catch((signInError) => {
+            console.error('❌ Anonymous sign-in failed:', signInError);
+          });
+      });
+      return;
+    }
+    
+    console.log('✅ User authenticated:', user.uid);
     // Save user email at user doc level
     const userRef = doc(db, "users", user.uid);
     setDoc(userRef, { user_email: user.email }, { merge: true });
@@ -220,18 +247,57 @@ export default function ProfileForm({ onSubmit }) {
     loadDataFiles();
     // Load existing children
     loadChildren();
-  }, [user]);
+  }, [user, loading, error]);
 
   // Load existing children from Firebase
   const loadChildren = async () => {
-    if (!user) return;
+    if (!user) {
+      console.log('❌ No user found, skipping loadChildren');
+      return;
+    }
+    
+    console.log('🔍 Starting loadChildren...');
+    console.log('👤 User UID:', user.uid);
+    console.log('🔗 Database instance:', db);
+    
+    // Test basic Firestore connectivity - temporarily disabled
+    /*
+    try {
+      console.log('🧪 Testing Firestore connectivity...');
+      const testRef = doc(db, 'test', 'connection');
+      await setDoc(testRef, { timestamp: new Date() });
+      console.log('✅ Firestore write test successful');
+      await deleteDoc(testRef);
+      console.log('✅ Firestore delete test successful');
+    } catch (testError) {
+      console.error('❌ Firestore connectivity test failed:', testError);
+      console.error('❌ Test error details:', {
+        code: testError.code,
+        message: testError.message,
+        name: testError.name
+      });
+    }
+    */
     
     try {
+      console.log('📂 Creating collection reference...');
       const childrenRef = collection(db, `users/${user.uid}/children`);
+      console.log('📂 Collection ref:', childrenRef);
+      console.log('📂 Collection path:', childrenRef.path);
+      console.log('📂 Collection id:', childrenRef.id);
+      
+      console.log('📥 Fetching documents...');
+      console.log('📥 User UID for collection:', user.uid);
+      console.log('📥 Full collection path:', `users/${user.uid}/children`);
+      
       const childrenSnapshot = await getDocs(childrenRef);
+      console.log('📥 Snapshot received:', childrenSnapshot);
+      console.log('📊 Snapshot size:', childrenSnapshot.size);
+      
       const childrenList = [];
       
       childrenSnapshot.forEach((doc) => {
+        console.log('📄 Processing doc:', doc.id, doc.data());
         childrenList.push({
           id: doc.id,
           name: doc.id,
@@ -239,15 +305,40 @@ export default function ProfileForm({ onSubmit }) {
         });
       });
       
+      console.log('✅ Final children list:', childrenList);
       setChildren(childrenList);
-      console.log('Loaded children:', childrenList);
+      console.log('💾 Children state updated');
       
       // If there are children, select the first one by default
       if (childrenList.length > 0) {
+        console.log('👶 Selecting first child:', childrenList[0]);
         selectChild(childrenList[0], 0);
+      } else {
+        console.log('📭 No children found');
       }
     } catch (error) {
-      console.error('Error loading children:', error);
+      console.error('❌ Error loading children:', error);
+      console.error('❌ Error details:', {
+        code: error.code,
+        message: error.message,
+        stack: error.stack,
+        name: error.name,
+        firestoreError: error.firestoreError,
+        serverResponse: error.serverResponse
+      });
+      
+      // Add to debug context
+      try {
+        const { addDebugInfo } = await import('../../contexts/DebugContext');
+        addDebugInfo(`❌ FIRESTORE ERROR: ${error.code} - ${error.message}`);
+        addDebugInfo(`🔍 Error details: ${JSON.stringify({
+          code: error.code,
+          message: error.message,
+          name: error.name
+        }, null, 2)}`);
+      } catch (e) {
+        console.log('Debug context not available');
+      }
     }
   };
 
@@ -365,8 +456,12 @@ export default function ProfileForm({ onSubmit }) {
   };
 
   const handleSubmit = async () => {
+    console.log('🔘 BUTTON CLICKED - handleSubmit called');
+    addDebugInfo('🔘 BUTTON CLICKED - handleSubmit called');
+    
     if (!user) {
       console.error("User not authenticated");
+      addDebugInfo('❌ User not authenticated');
       return;
     }
     if (!childName.trim()) {
@@ -443,6 +538,9 @@ export default function ProfileForm({ onSubmit }) {
       }
 
       // Only show the plan modal if it's a new profile (no originalProfile)
+      addDebugInfo(`📋 Original Profile exists: ${originalProfile ? 'YES' : 'NO'}`);
+      console.log('📋 Original Profile exists:', !!originalProfile);
+      
       if (!originalProfile) {
         addDebugInfo("🔄 GENERATING PLAN FOR NEW PROFILE");
         console.log('🔄 GENERATING PLAN FOR NEW PROFILE...');
@@ -456,6 +554,7 @@ export default function ProfileForm({ onSubmit }) {
           
           if (res.success) {
             console.log('✅ PLAN GENERATION SUCCESSFUL');
+            addDebugInfo('✅ PLAN GENERATION SUCCESSFUL');
             // Save plan to Firestore under 'plans' field keyed by month
             const currentDate = new Date();
             const monthYear = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' }).replace(/ /g, ''); // e.g., July2025
@@ -544,6 +643,107 @@ export default function ProfileForm({ onSubmit }) {
           setShowSuccessMessage(true);
           setTimeout(() => {
             console.log('🚀 NAVIGATING TO PLAN PAGE (ENHANCED)...');
+            navigate("/customised-weekly-plan", { 
+              state: { 
+                data: enhancedPlan, 
+                childName,
+                childMonths: months
+              } 
+            });
+          }, 3000);
+        }
+      } else {
+        // This is an existing profile - generate a new plan anyway
+        addDebugInfo("🔄 GENERATING PLAN FOR EXISTING PROFILE");
+        console.log('🔄 GENERATING PLAN FOR EXISTING PROFILE...');
+        try {
+          // Send to backend
+          addDebugInfo("📡 CALLING API SERVICE FOR EXISTING PROFILE...");
+          console.log('📡 CALLING API SERVICE FOR EXISTING PROFILE...');
+          const res = await apiService.generatePlan(profile);
+          addDebugInfo(`📥 API RESPONSE RECEIVED: ${res.success ? 'SUCCESS' : 'FAILED'}`);
+          console.log('📥 API RESPONSE RECEIVED:', res);
+          
+          if (res.success) {
+            console.log('✅ PLAN GENERATION SUCCESSFUL FOR EXISTING PROFILE');
+            addDebugInfo('✅ PLAN GENERATION SUCCESSFUL FOR EXISTING PROFILE');
+            // Save plan to Firestore under 'plans' field keyed by month
+            const currentDate = new Date();
+            const monthYear = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' }).replace(/ /g, ''); // e.g., July2025
+            // Get existing plans (if any)
+            const snap = await getDoc(childRef);
+            let existingPlans = {};
+            let existingData = snap.exists() ? snap.data() : {};
+            if (existingData.plans) {
+              existingPlans = existingData.plans;
+            }
+            const newPlans = { ...existingPlans, [monthYear]: res.data };
+            
+            // Update months array
+            let months = existingData.months || [];
+            if (!months.includes(monthYear)) {
+              months.push(monthYear);
+            }
+            
+            await setDoc(childRef, { 
+              plans: newPlans,
+              months: months
+            }, { merge: true });
+            console.log('✅ Plan and months saved to Firebase for existing profile');
+            
+            setShowSuccessMessage(true);
+            setTimeout(() => {
+              console.log('🚀 NAVIGATING TO PLAN PAGE (EXISTING PROFILE)...');
+              navigate("/customised-weekly-plan", { 
+                state: { 
+                  data: res.data, 
+                  childName,
+                  childMonths: months
+                } 
+              });
+            }, 3000);
+          } else {
+            throw new Error(res.message || "Failed to generate plan");
+          }
+
+          if (onSubmit) onSubmit(res);
+        } catch (err) {
+          addDebugInfo(`❌ ERROR CALLING BACKEND FOR EXISTING PROFILE: ${err.message}`);
+          console.error("❌ ERROR CALLING BACKEND FOR EXISTING PROFILE:", err);
+          
+          // Create an enhanced plan using the data files
+          addDebugInfo("🔄 FALLING BACK TO ENHANCED PLAN GENERATION FOR EXISTING PROFILE");
+          console.log('🔄 FALLING BACK TO ENHANCED PLAN GENERATION FOR EXISTING PROFILE...');
+          const enhancedPlan = generateEnhancedPlan(profile);
+          addDebugInfo("✅ ENHANCED PLAN GENERATED FOR EXISTING PROFILE");
+          console.log('✅ ENHANCED PLAN GENERATED FOR EXISTING PROFILE:', enhancedPlan);
+
+          // Save enhanced plan to Firestore
+          const currentDate = new Date();
+          const monthYear = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' }).replace(/ /g, '');
+          const snap = await getDoc(childRef);
+          let existingPlans = {};
+          let existingData = snap.exists() ? snap.data() : {};
+          if (existingData.plans) {
+            existingPlans = existingData.plans;
+          }
+          const newPlans = { ...existingPlans, [monthYear]: enhancedPlan };
+          
+          // Update months array
+          let months = existingData.months || [];
+          if (!months.includes(monthYear)) {
+            months.push(monthYear);
+          }
+          
+          await setDoc(childRef, { 
+            plans: newPlans,
+            months: months
+          }, { merge: true });
+          console.log('✅ Enhanced plan and months saved to Firebase for existing profile');
+          
+          setShowSuccessMessage(true);
+          setTimeout(() => {
+            console.log('🚀 NAVIGATING TO PLAN PAGE (ENHANCED - EXISTING PROFILE)...');
             navigate("/customised-weekly-plan", { 
               state: { 
                 data: enhancedPlan, 
