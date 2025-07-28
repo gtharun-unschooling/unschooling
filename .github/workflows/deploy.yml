@@ -3,7 +3,6 @@ name: Deploy to Firebase Hosting
 on:
   push:
     branches:
-      - dev-clean
       - main
 
 concurrency:
@@ -50,7 +49,6 @@ jobs:
         which npm
         
     - name: Deploy to Firebase Hosting
-      if: github.ref == 'refs/heads/dev-clean' || github.ref == 'refs/heads/main'
       run: |
         npm install -g firebase-tools@latest
         firebase deploy --only hosting --project unschooling-464413 --token "${{ secrets.FIREBASE_TOKEN }}"
