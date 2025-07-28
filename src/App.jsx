@@ -7,6 +7,8 @@ import { applyGlobalStyles } from './styles/globalStyles';
 import firebaseApp from './firebase';
 import { DebugProvider, useDebug } from './contexts/DebugContext';
 
+// Firebase deployment ready - token configured
+
 function GlobalDebugBox() {
   const { debugInfo } = useDebug();
   const boxRef = useRef(null);
