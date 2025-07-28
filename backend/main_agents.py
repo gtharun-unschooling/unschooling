@@ -246,25 +246,26 @@ class MatchAgent:
         for topic in self.topics_data:
             age_str = topic.get("Age", "7")
             # Handle age ranges like "3 and 4" or "5-7"
+            topic_age_range = []
             try:
                 if " and " in age_str:
                     # Handle "3 and 4" format
                     ages = age_str.split(" and ")
-                    topic_age = int(ages[0])
+                    topic_age_range = [int(ages[0]), int(ages[1])]
                 elif "-" in age_str:
                     # Handle "5-7" format
                     ages = age_str.split("-")
-                    topic_age = int(ages[0])
+                    topic_age_range = [int(ages[0]), int(ages[1])]
                 else:
-                    topic_age = int(age_str)
+                    topic_age_range = [int(age_str), int(age_str)]
             except:
-                topic_age = 7  # Default fallback
+                topic_age_range = [7, 7]  # Default fallback
             
             topic_name = topic.get("Topic", "")
             topic_niche = topic.get("Niche", "")
             
-            # Age-appropriate topics
-            if topic_age <= child_age + 2 and topic_age >= child_age - 2:
+            # Age-appropriate topics - check if child's age falls within the topic's age range
+            if child_age >= topic_age_range[0] and child_age <= topic_age_range[1]:
                 # Skip if topic is already completed
                 if topic_name in completed_topics:
                     logger.info(f"⏭️ Skipping completed topic: {topic_name}")
