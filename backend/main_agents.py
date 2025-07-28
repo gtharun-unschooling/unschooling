@@ -38,19 +38,31 @@ app.add_middleware(
 def load_topics_data():
     """Load topics data from JSON file."""
     try:
+        logger.info("📁 Attempting to load topics data from data/topicsdata.json")
         with open("data/topicsdata.json", "r") as f:
-            return json.load(f)
+            data = json.load(f)
+            logger.info(f"✅ Successfully loaded {len(data)} topics from data/topicsdata.json")
+            return data
     except Exception as e:
-        logger.error(f"Error loading topics data: {e}")
+        logger.error(f"❌ Error loading topics data: {e}")
+        logger.error(f"📁 Current working directory: {os.getcwd()}")
+        logger.error(f"📁 Files in current directory: {os.listdir('.')}")
+        if os.path.exists('data'):
+            logger.error(f"📁 Files in data directory: {os.listdir('data')}")
+        else:
+            logger.error("📁 Data directory does not exist")
         return []
 
 def load_niches_data():
     """Load niches data from JSON file."""
     try:
+        logger.info("📁 Attempting to load niches data from data/nichesdata.json")
         with open("data/nichesdata.json", "r") as f:
-            return json.load(f)
+            data = json.load(f)
+            logger.info(f"✅ Successfully loaded {len(data)} niches from data/nichesdata.json")
+            return data
     except Exception as e:
-        logger.error(f"Error loading niches data: {e}")
+        logger.error(f"❌ Error loading niches data: {e}")
         return []
 
 # Agent System Implementation
@@ -171,8 +183,15 @@ class MatchAgent:
     """Match Agent - Selects appropriate topics based on profile and history."""
     
     def __init__(self):
+        logger.info("🎯 Initializing MatchAgent")
         self.topics_data = load_topics_data()
         self.niches_data = load_niches_data()
+        logger.info(f"📊 MatchAgent loaded {len(self.topics_data)} topics and {len(self.niches_data)} niches")
+        
+        if len(self.topics_data) == 0:
+            logger.error("❌ CRITICAL: No topics data loaded! MatchAgent will not work properly.")
+        else:
+            logger.info(f"✅ Topics data loaded successfully. Sample topics: {[t.get('Topic', 'Unknown')[:20] for t in self.topics_data[:3]]}")
     
     def _get_child_history(self, child_name: str) -> List[str]:
         """Get child's learning history to avoid repeating topics."""
@@ -234,6 +253,9 @@ class MatchAgent:
         interests = profile_analysis.get("interests", ["AI"])
         cognitive_level = profile_analysis.get("cognitive_level", "beginner")
         
+        logger.info(f"👤 Child: {child_name}, Age: {child_age}, Interests: {interests}")
+        logger.info(f"📊 Available topics: {len(self.topics_data)}")
+        
         # Get child's learning history
         completed_topics = self._get_child_history(child_name)
         
@@ -279,10 +301,12 @@ class MatchAgent:
                     # Medium priority: other age-appropriate topics
                     eligible_topics.append({**topic, "priority": "medium"})
         
+        logger.info(f"📊 Found {len(eligible_topics)} eligible topics (excluding {len(completed_topics)} completed)")
+        logger.info(f"📊 High priority topics: {len([t for t in eligible_topics if t.get('priority') == 'high'])}")
+        logger.info(f"📊 Medium priority topics: {len([t for t in eligible_topics if t.get('priority') == 'medium'])}")
+        
         # Sort by priority (high first, then medium)
         eligible_topics.sort(key=lambda x: {"high": 0, "medium": 1}.get(x.get("priority", "medium"), 1))
-        
-        logger.info(f"📊 Found {len(eligible_topics)} eligible topics (excluding {len(completed_topics)} completed)")
         
         # Use LLM to select the best topics
         if gemini_available and eligible_topics:
@@ -398,7 +422,9 @@ class MatchAgent:
         
         execution_time = time.time() - start_time
         logger.info(f"✅ Match Agent: Selected {len(selected_topics)} topics (fallback) in {execution_time:.3f}s")
-        return {
+        logger.info(f"📊 Formatted topics: {formatted_topics}")
+        
+        result = {
             "profile": profile_analysis,
             "matched_topics": formatted_topics,
             "completed_topics": completed_topics,
@@ -412,6 +438,10 @@ class MatchAgent:
                 "llm_response": None
             }
         }
+        
+        logger.info(f"🎯 MatchAgent returning result with {len(formatted_topics)} matched topics")
+        logger.info(f"📊 Result keys: {list(result.keys())}")
+        return result
 
 class ScheduleAgent:
     """Schedule Agent - Creates weekly learning plan."""
