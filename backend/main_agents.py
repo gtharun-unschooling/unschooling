@@ -168,22 +168,80 @@ class ProfileAgent:
         return activities.get(learning_style, activities["hybrid"])
 
 class MatchAgent:
-    """Match Agent - Selects appropriate topics based on profile."""
+    """Match Agent - Selects appropriate topics based on profile and history."""
     
     def __init__(self):
         self.topics_data = load_topics_data()
         self.niches_data = load_niches_data()
     
-    def run(self, profile_analysis: Dict[str, Any]) -> Dict[str, Any]:
-        """Match topics to child profile using LLM."""
-        start_time = time.time()
-        logger.info("🎯 Match Agent: Selecting topics")
+    def _get_child_history(self, child_name: str) -> List[str]:
+        """Get child's learning history to avoid repeating topics."""
+        # TODO: In a real implementation, this would query a database
+        # For now, we'll simulate some completed topics
+        completed_topics = []
         
+        # Simulate completed topics based on child name (for demo purposes)
+        if child_name.lower() in ["alex", "alexander", "alexa"]:
+            completed_topics = ["Cleaning Robots", "AI Artists", "Voice to Text"]
+        elif child_name.lower() in ["emma", "emily", "em"]:
+            completed_topics = ["AI in Animals", "AI and Weather", "AI and Traffic"]
+        elif child_name.lower() in ["max", "maxwell", "maximus"]:
+            completed_topics = ["Farming Robots", "AI Eyes in Space", "AI and Sports"]
+        else:
+            # Random simulation for other names
+            import random
+            all_topics = [topic.get("Topic", "") for topic in self.topics_data if topic.get("Topic")]
+            completed_topics = random.sample(all_topics, min(2, len(all_topics)))
+        
+        logger.info(f"📚 Child history for {child_name}: {completed_topics}")
+        return completed_topics
+    
+    def _get_all_available_niches(self) -> List[str]:
+        """Get all available niches from the data."""
+        niches = set()
+        for topic in self.topics_data:
+            niche = topic.get("Niche", "")
+            if niche:
+                niches.add(niche)
+        return list(niches)
+    
+    def _format_topics_for_display(self, topics: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Format topics for clear display with topic number and name."""
+        formatted_topics = []
+        for idx, topic in enumerate(topics, 1):
+            formatted_topic = {
+                "topic_number": idx,
+                "topic_name": topic.get("Topic", ""),
+                "niche": topic.get("Niche", ""),
+                "age": topic.get("Age", ""),
+                "objective": topic.get("Objective", ""),
+                "estimated_time": topic.get("Estimated Time", ""),
+                "hashtags": topic.get("Hashtags", ""),
+                "explanation": topic.get("Explanation", ""),
+                "activity_1": topic.get("Activity 1", ""),
+                "activity_2": topic.get("Activity 2", "")
+            }
+            formatted_topics.append(formatted_topic)
+        return formatted_topics
+    
+    def run(self, profile_analysis: Dict[str, Any]) -> Dict[str, Any]:
+        """Match topics to child profile using LLM with history consideration."""
+        start_time = time.time()
+        logger.info("🎯 Match Agent: Selecting topics with history consideration")
+        
+        child_name = profile_analysis.get("child_name", "Child")
         child_age = profile_analysis.get("child_age", 7)
         interests = profile_analysis.get("interests", ["AI"])
         cognitive_level = profile_analysis.get("cognitive_level", "beginner")
         
-        # Filter topics by age and interests
+        # Get child's learning history
+        completed_topics = self._get_child_history(child_name)
+        
+        # Get all available niches (not just parent-selected interests)
+        all_niches = self._get_all_available_niches()
+        logger.info(f"🌐 All available niches: {all_niches}")
+        
+        # Filter topics by age and consider ALL niches, not just interests
         eligible_topics = []
         for topic in self.topics_data:
             age_str = topic.get("Age", "7")
@@ -202,59 +260,61 @@ class MatchAgent:
             except:
                 topic_age = 7  # Default fallback
             
+            topic_name = topic.get("Topic", "")
             topic_niche = topic.get("Niche", "")
             
             # Age-appropriate topics
             if topic_age <= child_age + 2 and topic_age >= child_age - 2:
-                # Interest-based matching
-                if any(interest.lower() in topic_niche.lower() for interest in interests):
-                    eligible_topics.append(topic)
-        
-        # If no interest-based matches, get general topics
-        if not eligible_topics:
-            for topic in self.topics_data:
-                age_str = topic.get("Age", "7")
-                try:
-                    if " and " in age_str:
-                        ages = age_str.split(" and ")
-                        topic_age = int(ages[0])
-                    elif "-" in age_str:
-                        ages = age_str.split("-")
-                        topic_age = int(ages[0])
-                    else:
-                        topic_age = int(age_str)
-                except:
-                    topic_age = 7  # Default fallback
+                # Skip if topic is already completed
+                if topic_name in completed_topics:
+                    logger.info(f"⏭️ Skipping completed topic: {topic_name}")
+                    continue
                 
-                if topic_age <= child_age + 2 and topic_age >= child_age - 2:
-                    eligible_topics.append(topic)
+                # Consider ALL niches, but prioritize parent-selected interests
+                if any(interest.lower() in topic_niche.lower() for interest in interests):
+                    # High priority: matches parent interests
+                    eligible_topics.append({**topic, "priority": "high"})
+                else:
+                    # Medium priority: other age-appropriate topics
+                    eligible_topics.append({**topic, "priority": "medium"})
+        
+        # Sort by priority (high first, then medium)
+        eligible_topics.sort(key=lambda x: {"high": 0, "medium": 1}.get(x.get("priority", "medium"), 1))
+        
+        logger.info(f"📊 Found {len(eligible_topics)} eligible topics (excluding {len(completed_topics)} completed)")
         
         # Use LLM to select the best topics
         if gemini_available and eligible_topics:
             try:
-                # Create LLM prompt
+                # Create enhanced LLM prompt
                 prompt = f"""
                 You are an expert educational content curator for children. 
                 
                 Child Profile:
+                - Name: {child_name}
                 - Age: {child_age} years old
                 - Interests: {', '.join(interests)}
                 - Cognitive Level: {cognitive_level}
                 
-                Available Topics (first 10 for selection):
-                {json.dumps(eligible_topics[:10], indent=2)}
+                Child's Learning History (Completed Topics):
+                {completed_topics}
+                
+                Available Topics (considering ALL niches, not just interests):
+                {json.dumps(eligible_topics[:15], indent=2)}
                 
                 Task: Select the 4 most engaging and age-appropriate topics for this child.
                 Consider:
                 1. Age appropriateness
-                2. Interest alignment
-                3. Learning progression
+                2. Interest alignment (prioritize parent-selected interests)
+                3. Learning progression (avoid completed topics)
                 4. Engagement potential
+                5. Diversity across different niches
+                6. Balance between familiar interests and new discoveries
                 
                 Return ONLY a JSON array with the 4 selected topic objects, no additional text.
                 """
                 
-                logger.info("🤖 Calling Gemini LLM for topic selection")
+                logger.info("🤖 Calling Gemini LLM for enhanced topic selection")
                 logger.info(f"📝 Prompt length: {len(prompt)} characters")
                 model = genai.GenerativeModel('gemini-1.5-flash')
                 response = model.generate_content(prompt)
@@ -273,6 +333,9 @@ class MatchAgent:
                     
                     selected_topics = json.loads(clean_response)
                     if isinstance(selected_topics, list) and len(selected_topics) <= 4:
+                        # Format topics for display
+                        formatted_topics = self._format_topics_for_display(selected_topics)
+                        
                         execution_time = time.time() - start_time
                         logger.info(f"✅ LLM selected {len(selected_topics)} topics in {execution_time:.3f}s")
                         
@@ -283,7 +346,9 @@ class MatchAgent:
                         
                         return {
                             "profile": profile_analysis,
-                            "matched_topics": selected_topics,
+                            "matched_topics": formatted_topics,
+                            "completed_topics": completed_topics,
+                            "available_niches": all_niches,
                             "agent_timing": {
                                 "agent_name": "MatchAgent",
                                 "execution_time_seconds": execution_time,
@@ -309,7 +374,9 @@ class MatchAgent:
         selected_topics = []
         niches_seen = set()
         
-        for topic in eligible_topics:
+        # First, prioritize high-priority topics (matching interests)
+        high_priority = [t for t in eligible_topics if t.get("priority") == "high"]
+        for topic in high_priority:
             if len(selected_topics) >= 4:
                 break
             niche = topic.get("Niche", "")
@@ -317,18 +384,24 @@ class MatchAgent:
                 selected_topics.append(topic)
                 niches_seen.add(niche)
         
-        # Fill remaining slots
-        for topic in eligible_topics:
+        # Then add medium-priority topics to fill remaining slots
+        medium_priority = [t for t in eligible_topics if t.get("priority") == "medium"]
+        for topic in medium_priority:
             if len(selected_topics) >= 4:
                 break
             if topic not in selected_topics:
                 selected_topics.append(topic)
         
+        # Format topics for display
+        formatted_topics = self._format_topics_for_display(selected_topics)
+        
         execution_time = time.time() - start_time
         logger.info(f"✅ Match Agent: Selected {len(selected_topics)} topics (fallback) in {execution_time:.3f}s")
         return {
             "profile": profile_analysis,
-            "matched_topics": selected_topics,
+            "matched_topics": formatted_topics,
+            "completed_topics": completed_topics,
+            "available_niches": all_niches,
             "agent_timing": {
                 "agent_name": "MatchAgent",
                 "execution_time_seconds": execution_time,

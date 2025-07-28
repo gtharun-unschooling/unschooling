@@ -693,6 +693,197 @@ const CustomisedWeeklyPlan = () => {
               )}
             </div>
           )}
+          
+          {/* Matched Topics Section - Display below Child Profile Summary */}
+          {planData && planData.matched_topics && planData.matched_topics.length > 0 && (
+            <div style={{
+              background: '#fff',
+              border: '2px solid #4caf50',
+              borderRadius: 16,
+              padding: '28px 32px',
+              marginBottom: 40,
+              boxShadow: '0 4px 16px #4caf5022',
+              maxWidth: 900,
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}>
+              <h2 style={{ color: '#4caf50', fontWeight: 700, fontSize: 26, marginBottom: 16 }}>🎯 Matched Learning Topics</h2>
+              
+              {/* Topics List */}
+              <div style={{ display: 'grid', gap: 16 }}>
+                {planData.matched_topics.map((topic, idx) => (
+                  <div key={idx} style={{
+                    background: '#f8f9fa',
+                    border: '1px solid #e0e0e0',
+                    borderRadius: 12,
+                    padding: '20px',
+                    position: 'relative',
+                  }}>
+                    {/* Topic Number Badge */}
+                    <div style={{
+                      position: 'absolute',
+                      top: -8,
+                      left: 16,
+                      background: '#4caf50',
+                      color: 'white',
+                      borderRadius: '50%',
+                      width: 32,
+                      height: 32,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: 14,
+                      fontWeight: 'bold',
+                    }}>
+                      {topic.topic_number || idx + 1}
+                    </div>
+                    
+                    {/* Topic Content */}
+                    <div style={{ marginTop: 8 }}>
+                      <h3 style={{ 
+                        color: '#2e7d32', 
+                        fontSize: 20, 
+                        fontWeight: 600, 
+                        marginBottom: 8,
+                        marginLeft: 24
+                      }}>
+                        {topic.topic_name}
+                      </h3>
+                      
+                      <div style={{ 
+                        display: 'grid', 
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
+                        gap: 16,
+                        marginLeft: 24
+                      }}>
+                        {/* Basic Info */}
+                        <div>
+                          <div style={{ marginBottom: 8 }}>
+                            <strong style={{ color: '#666' }}>Niche:</strong> 
+                            <span style={{ color: '#4caf50', fontWeight: 500, marginLeft: 8 }}>
+                              {topic.niche}
+                            </span>
+                          </div>
+                          <div style={{ marginBottom: 8 }}>
+                            <strong style={{ color: '#666' }}>Age Range:</strong> 
+                            <span style={{ color: '#666', marginLeft: 8 }}>
+                              {topic.age}
+                            </span>
+                          </div>
+                          <div style={{ marginBottom: 8 }}>
+                            <strong style={{ color: '#666' }}>Duration:</strong> 
+                            <span style={{ color: '#666', marginLeft: 8 }}>
+                              {topic.estimated_time}
+                            </span>
+                          </div>
+                        </div>
+                        
+                        {/* Objective */}
+                        <div>
+                          <div style={{ marginBottom: 8 }}>
+                            <strong style={{ color: '#666' }}>Learning Objective:</strong>
+                          </div>
+                          <div style={{ 
+                            color: '#333', 
+                            fontSize: 14, 
+                            lineHeight: 1.4,
+                            background: '#fff',
+                            padding: 8,
+                            borderRadius: 6,
+                            border: '1px solid #e0e0e0'
+                          }}>
+                            {topic.objective}
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* Explanation */}
+                      {topic.explanation && (
+                        <div style={{ marginTop: 12, marginLeft: 24 }}>
+                          <strong style={{ color: '#666' }}>What this covers:</strong>
+                          <div style={{ 
+                            color: '#555', 
+                            fontSize: 14, 
+                            lineHeight: 1.5,
+                            marginTop: 4,
+                            fontStyle: 'italic'
+                          }}>
+                            {topic.explanation}
+                          </div>
+                        </div>
+                      )}
+                      
+                      {/* Activities Preview */}
+                      {(topic.activity_1 || topic.activity_2) && (
+                        <div style={{ marginTop: 12, marginLeft: 24 }}>
+                          <strong style={{ color: '#666' }}>Activities Preview:</strong>
+                          <div style={{ marginTop: 4 }}>
+                            {topic.activity_1 && (
+                              <div style={{ 
+                                color: '#555', 
+                                fontSize: 13, 
+                                marginBottom: 4,
+                                padding: '4px 8px',
+                                background: '#f0f8f0',
+                                borderRadius: 4
+                              }}>
+                                <strong>Activity 1:</strong> {topic.activity_1.substring(0, 100)}...
+                              </div>
+                            )}
+                            {topic.activity_2 && (
+                              <div style={{ 
+                                color: '#555', 
+                                fontSize: 13,
+                                padding: '4px 8px',
+                                background: '#f0f8f0',
+                                borderRadius: 4
+                              }}>
+                                <strong>Activity 2:</strong> {topic.activity_2.substring(0, 100)}...
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+              
+              {/* Summary Info */}
+              {planData.completed_topics && planData.completed_topics.length > 0 && (
+                <div style={{ 
+                  marginTop: 20, 
+                  padding: '16px', 
+                  background: '#fff3cd', 
+                  border: '1px solid #ffeaa7',
+                  borderRadius: 8,
+                  fontSize: 14
+                }}>
+                  <strong style={{ color: '#856404' }}>📚 Learning History:</strong>
+                  <div style={{ color: '#856404', marginTop: 4 }}>
+                    Previously completed topics: {planData.completed_topics.join(', ')}
+                  </div>
+                </div>
+              )}
+              
+              {planData.available_niches && planData.available_niches.length > 0 && (
+                <div style={{ 
+                  marginTop: 12, 
+                  padding: '16px', 
+                  background: '#e8f5e8', 
+                  border: '1px solid #c8e6c9',
+                  borderRadius: 8,
+                  fontSize: 14
+                }}>
+                  <strong style={{ color: '#2e7d32' }}>🌐 Available Learning Areas:</strong>
+                  <div style={{ color: '#2e7d32', marginTop: 4 }}>
+                    {planData.available_niches.join(', ')}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+          
           {/* Weekly Plan */}
           <div style={styles.weeksContainer}>
             {Object.entries(processedPlanData.weeklyPlan).map(([weekKey, weekData], weekIdx) => (
