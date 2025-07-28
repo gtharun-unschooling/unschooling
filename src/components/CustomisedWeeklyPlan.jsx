@@ -65,11 +65,13 @@ const CustomisedWeeklyPlan = () => {
     console.log('🔍 DEBUG - Plan data keys:', Object.keys(planData));
     console.log('🔍 DEBUG - Matched topics:', planData.matched_topics);
     console.log('🔍 DEBUG - Profile analysis:', planData.profile_analysis);
+    console.log('🔍 DEBUG - Type of matched_topics:', typeof planData.matched_topics);
+    console.log('🔍 DEBUG - Length of matched_topics:', planData.matched_topics?.length);
     
     // Check if it's the new structure from backend
     if (planData.weekly_plan) {
       console.log('✅ Using backend structure (weekly_plan)');
-      return {
+      const result = {
         isNewStructure: true,
         weeklyPlan: planData.weekly_plan,
         matched_topics: planData.matched_topics,
@@ -80,12 +82,15 @@ const CustomisedWeeklyPlan = () => {
         llm_integration: planData.llm_integration,
         agent_timings: planData.agent_timings
       };
+      console.log('🔍 DEBUG - Processed result:', result);
+      console.log('🔍 DEBUG - Result matched_topics:', result.matched_topics);
+      return result;
     }
     
     // Check if it's the old structure
     if (planData.weekly_learning_plan) {
       console.log('✅ Using old structure (weekly_learning_plan)');
-      return {
+      const result = {
         isNewStructure: false,
         weeklyPlan: planData.weekly_learning_plan,
         matched_topics: planData.matched_topics,
@@ -96,6 +101,9 @@ const CustomisedWeeklyPlan = () => {
         llm_integration: planData.llm_integration,
         agent_timings: planData.agent_timings
       };
+      console.log('🔍 DEBUG - Processed result:', result);
+      console.log('🔍 DEBUG - Result matched_topics:', result.matched_topics);
+      return result;
     }
     
     // Handle flat structure where days are not grouped into weeks
@@ -147,7 +155,7 @@ const CustomisedWeeklyPlan = () => {
     
     console.log('🔍 DEBUG - Converted weekly plan:', weeklyPlan);
     
-    return {
+    const result = {
       isNewStructure: false,
       weeklyPlan: weeklyPlan,
       matched_topics: flatData.matched_topics,
@@ -158,6 +166,9 @@ const CustomisedWeeklyPlan = () => {
       llm_integration: flatData.llm_integration,
       agent_timings: flatData.agent_timings
     };
+    console.log('🔍 DEBUG - Final processed result:', result);
+    console.log('🔍 DEBUG - Final matched_topics:', result.matched_topics);
+    return result;
   };
 
   const processedPlanData = getPlanData(planData);
@@ -718,223 +729,246 @@ const CustomisedWeeklyPlan = () => {
           )}
           
           {/* Matched Topics Section - Display below Child Profile Summary */}
-          {(processedPlanData?.matched_topics && processedPlanData.matched_topics.length > 0) || (planData?.matched_topics && planData.matched_topics.length > 0) ? (
-            <div style={{
-              background: '#fff',
-              border: '2px solid #4caf50',
-              borderRadius: 16,
-              padding: '28px 32px',
-              marginBottom: 40,
-              boxShadow: '0 4px 16px #4caf5022',
-              maxWidth: 900,
-              marginLeft: 'auto',
-              marginRight: 'auto',
-            }}>
-              <h2 style={{ color: '#4caf50', fontWeight: 700, fontSize: 26, marginBottom: 16 }}>🎯 Match Agent Overview - Selected Topics</h2>
-              
-              {/* Debug info */}
-              <div style={{ 
-                background: '#fff3cd', 
-                border: '1px solid #ffeaa7', 
-                borderRadius: 8, 
-                padding: '12px', 
-                marginBottom: 16,
-                fontSize: 12,
-                color: '#856404'
+          {(() => {
+            console.log('🔍 DEBUG - Checking matched topics section');
+            console.log('🔍 DEBUG - processedPlanData:', processedPlanData);
+            console.log('🔍 DEBUG - planData:', planData);
+            console.log('🔍 DEBUG - processedPlanData?.matched_topics:', processedPlanData?.matched_topics);
+            console.log('🔍 DEBUG - planData?.matched_topics:', planData?.matched_topics);
+            console.log('🔍 DEBUG - processedPlanData?.matched_topics?.length:', processedPlanData?.matched_topics?.length);
+            console.log('🔍 DEBUG - planData?.matched_topics?.length:', planData?.matched_topics?.length);
+            
+            const hasProcessedTopics = processedPlanData?.matched_topics && processedPlanData.matched_topics.length > 0;
+            const hasPlanTopics = planData?.matched_topics && planData.matched_topics.length > 0;
+            
+            console.log('🔍 DEBUG - hasProcessedTopics:', hasProcessedTopics);
+            console.log('🔍 DEBUG - hasPlanTopics:', hasPlanTopics);
+            
+            return (hasProcessedTopics || hasPlanTopics) ? (
+              <div style={{
+                background: '#fff',
+                border: '2px solid #4caf50',
+                borderRadius: 16,
+                padding: '28px 32px',
+                marginBottom: 40,
+                boxShadow: '0 4px 16px #4caf5022',
+                maxWidth: 900,
+                marginLeft: 'auto',
+                marginRight: 'auto',
               }}>
-                <strong>Debug Info:</strong> Found {(processedPlanData?.matched_topics?.length || 0) + (planData?.matched_topics?.length || 0)} matched topics
-              </div>
-              
-              {/* Topics List */}
-              <div style={{ display: 'grid', gap: 16 }}>
-                {(processedPlanData?.matched_topics || planData?.matched_topics || []).map((topic, idx) => (
-                  <div key={idx} style={{
-                    background: '#f8f9fa',
-                    border: '1px solid #e0e0e0',
-                    borderRadius: 12,
-                    padding: '20px',
-                    position: 'relative',
-                  }}>
-                    {/* Topic Number Badge */}
-                    <div style={{
-                      position: 'absolute',
-                      top: -8,
-                      left: 16,
-                      background: '#4caf50',
-                      color: 'white',
-                      borderRadius: '50%',
-                      width: 32,
-                      height: 32,
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      fontSize: 14,
-                      fontWeight: 'bold',
-                    }}>
-                      {idx + 1}
-                    </div>
-                    
-                    {/* Topic Content */}
-                    <div style={{ marginTop: 8 }}>
-                      <h3 style={{ 
-                        color: '#2e7d32', 
-                        fontSize: 20, 
-                        fontWeight: 600, 
-                        marginBottom: 8,
-                        marginLeft: 24
+                <h2 style={{ color: '#4caf50', fontWeight: 700, fontSize: 26, marginBottom: 16 }}>🎯 Match Agent Overview - Selected Topics</h2>
+                
+                {/* Debug info */}
+                <div style={{ 
+                  background: '#fff3cd', 
+                  border: '1px solid #ffeaa7', 
+                  borderRadius: 8, 
+                  padding: '12px', 
+                  marginBottom: 16,
+                  fontSize: 12,
+                  color: '#856404'
+                }}>
+                  <strong>Debug Info:</strong> Found {(processedPlanData?.matched_topics?.length || 0) + (planData?.matched_topics?.length || 0)} matched topics
+                  <br />
+                  <strong>Processed Topics:</strong> {JSON.stringify(processedPlanData?.matched_topics?.slice(0, 2))}
+                  <br />
+                  <strong>Plan Topics:</strong> {JSON.stringify(planData?.matched_topics?.slice(0, 2))}
+                </div>
+                
+                {/* Topics List */}
+                <div style={{ display: 'grid', gap: 16 }}>
+                  {(processedPlanData?.matched_topics || planData?.matched_topics || []).map((topic, idx) => {
+                    console.log('🔍 DEBUG - Rendering topic:', topic);
+                    return (
+                      <div key={idx} style={{
+                        background: '#f8f9fa',
+                        border: '1px solid #e0e0e0',
+                        borderRadius: 12,
+                        padding: '20px',
+                        position: 'relative',
                       }}>
-                        {topic.topic_name || topic.Topic || `Topic ${idx + 1}`}
-                      </h3>
-                      
-                      <div style={{ 
-                        display: 'grid', 
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
-                        gap: 16,
-                        marginLeft: 24
-                      }}>
-                        {/* Basic Info */}
-                        <div>
-                          <div style={{ marginBottom: 8 }}>
-                            <strong style={{ color: '#666' }}>Niche:</strong> 
-                            <span style={{ color: '#4caf50', fontWeight: 500, marginLeft: 8 }}>
-                              {topic.niche || topic.Niche || 'General'}
-                            </span>
-                          </div>
-                          <div style={{ marginBottom: 8 }}>
-                            <strong style={{ color: '#666' }}>Age Range:</strong> 
-                            <span style={{ color: '#666', marginLeft: 8 }}>
-                              {topic.age || topic.Age || '5-12'}
-                            </span>
-                          </div>
-                          <div style={{ marginBottom: 8 }}>
-                            <strong style={{ color: '#666' }}>Duration:</strong> 
-                            <span style={{ color: '#666', marginLeft: 8 }}>
-                              {topic.estimated_time || topic['Estimated Time'] || '30 mins'}
-                            </span>
-                          </div>
+                        {/* Topic Number Badge */}
+                        <div style={{
+                          position: 'absolute',
+                          top: -8,
+                          left: 16,
+                          background: '#4caf50',
+                          color: 'white',
+                          borderRadius: '50%',
+                          width: 32,
+                          height: 32,
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          fontSize: 14,
+                          fontWeight: 'bold',
+                        }}>
+                          {idx + 1}
                         </div>
                         
-                        {/* Objective */}
-                        <div>
-                          <div style={{ marginBottom: 8 }}>
-                            <strong style={{ color: '#666' }}>Learning Objective:</strong>
-                          </div>
-                          <div style={{ 
-                            color: '#333', 
-                            fontSize: 14, 
-                            lineHeight: 1.4,
-                            background: '#fff',
-                            padding: 8,
-                            borderRadius: 6,
-                            border: '1px solid #e0e0e0'
+                        {/* Topic Content */}
+                        <div style={{ marginTop: 8 }}>
+                          <h3 style={{ 
+                            color: '#2e7d32', 
+                            fontSize: 20, 
+                            fontWeight: 600, 
+                            marginBottom: 8,
+                            marginLeft: 24
                           }}>
-                            {topic.objective || topic.Objective || `Learn about ${topic.topic_name || topic.Topic || 'this topic'}`}
+                            {topic.topic_name || topic.Topic || `Topic ${idx + 1}`}
+                          </h3>
+                          
+                          <div style={{ 
+                            display: 'grid', 
+                            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
+                            gap: 16,
+                            marginLeft: 24
+                          }}>
+                            {/* Basic Info */}
+                            <div>
+                              <div style={{ marginBottom: 8 }}>
+                                <strong style={{ color: '#666' }}>Niche:</strong> 
+                                <span style={{ color: '#4caf50', fontWeight: 500, marginLeft: 8 }}>
+                                  {topic.niche || topic.Niche || 'General'}
+                                </span>
+                              </div>
+                              <div style={{ marginBottom: 8 }}>
+                                <strong style={{ color: '#666' }}>Age Range:</strong> 
+                                <span style={{ color: '#666', marginLeft: 8 }}>
+                                  {topic.age || topic.Age || '5-12'}
+                                </span>
+                              </div>
+                              <div style={{ marginBottom: 8 }}>
+                                <strong style={{ color: '#666' }}>Duration:</strong> 
+                                <span style={{ color: '#666', marginLeft: 8 }}>
+                                  {topic.estimated_time || topic['Estimated Time'] || '30 mins'}
+                                </span>
+                              </div>
+                            </div>
+                            
+                            {/* Objective */}
+                            <div>
+                              <div style={{ marginBottom: 8 }}>
+                                <strong style={{ color: '#666' }}>Learning Objective:</strong>
+                              </div>
+                              <div style={{ 
+                                color: '#333', 
+                                fontSize: 14, 
+                                lineHeight: 1.4,
+                                background: '#fff',
+                                padding: 8,
+                                borderRadius: 6,
+                                border: '1px solid #e0e0e0'
+                              }}>
+                                {topic.objective || topic.Objective || `Learn about ${topic.topic_name || topic.Topic || 'this topic'}`}
+                              </div>
+                            </div>
                           </div>
+                          
+                          {/* Activities Preview */}
+                          {(topic.activity_1 || topic.activity_2 || topic['Activity 1'] || topic['Activity 2']) && (
+                            <div style={{ marginTop: 12, marginLeft: 24 }}>
+                              <strong style={{ color: '#666' }}>Activities Preview:</strong>
+                              <div style={{ marginTop: 4 }}>
+                                {(topic.activity_1 || topic['Activity 1']) && (
+                                  <div style={{ 
+                                    color: '#555', 
+                                    fontSize: 13, 
+                                    marginBottom: 4,
+                                    padding: '4px 8px',
+                                    background: '#f0f8f0',
+                                    borderRadius: 4
+                                  }}>
+                                    <strong>Activity 1:</strong> {(topic.activity_1 || topic['Activity 1']).substring(0, 100)}...
+                                  </div>
+                                )}
+                                {(topic.activity_2 || topic['Activity 2']) && (
+                                  <div style={{ 
+                                    color: '#555', 
+                                    fontSize: 13,
+                                    padding: '4px 8px',
+                                    background: '#f0f8f0',
+                                    borderRadius: 4
+                                  }}>
+                                    <strong>Activity 2:</strong> {(topic.activity_2 || topic['Activity 2']).substring(0, 100)}...
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+                          )}
                         </div>
                       </div>
-                      
-                      {/* Activities Preview */}
-                      {(topic.activity_1 || topic.activity_2 || topic['Activity 1'] || topic['Activity 2']) && (
-                        <div style={{ marginTop: 12, marginLeft: 24 }}>
-                          <strong style={{ color: '#666' }}>Activities Preview:</strong>
-                          <div style={{ marginTop: 4 }}>
-                            {(topic.activity_1 || topic['Activity 1']) && (
-                              <div style={{ 
-                                color: '#555', 
-                                fontSize: 13, 
-                                marginBottom: 4,
-                                padding: '4px 8px',
-                                background: '#f0f8f0',
-                                borderRadius: 4
-                              }}>
-                                <strong>Activity 1:</strong> {(topic.activity_1 || topic['Activity 1']).substring(0, 100)}...
-                              </div>
-                            )}
-                            {(topic.activity_2 || topic['Activity 2']) && (
-                              <div style={{ 
-                                color: '#555', 
-                                fontSize: 13,
-                                padding: '4px 8px',
-                                background: '#f0f8f0',
-                                borderRadius: 4
-                              }}>
-                                <strong>Activity 2:</strong> {(topic.activity_2 || topic['Activity 2']).substring(0, 100)}...
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                      )}
+                    );
+                  })}
+                </div>
+                
+                {/* Summary Info */}
+                {planData.completed_topics && planData.completed_topics.length > 0 && (
+                  <div style={{ 
+                    marginTop: 20, 
+                    padding: '16px', 
+                    background: '#fff3cd', 
+                    border: '1px solid #ffeaa7',
+                    borderRadius: 8,
+                    fontSize: 14
+                  }}>
+                    <strong style={{ color: '#856404' }}>📚 Learning History:</strong>
+                    <div style={{ color: '#856404', marginTop: 4 }}>
+                      Previously completed topics: {planData.completed_topics.join(', ')}
                     </div>
                   </div>
-                ))}
+                )}
+                
+                {planData.available_niches && planData.available_niches.length > 0 && (
+                  <div style={{ 
+                    marginTop: 12, 
+                    padding: '16px', 
+                    background: '#e8f5e8', 
+                    border: '1px solid #c8e6c9',
+                    borderRadius: 8,
+                    fontSize: 14
+                  }}>
+                    <strong style={{ color: '#2e7d32' }}>🌐 Available Learning Areas:</strong>
+                    <div style={{ color: '#2e7d32', marginTop: 4 }}>
+                      {planData.available_niches.join(', ')}
+                    </div>
+                  </div>
+                )}
               </div>
-              
-              {/* Summary Info */}
-              {planData.completed_topics && planData.completed_topics.length > 0 && (
-                <div style={{ 
-                  marginTop: 20, 
-                  padding: '16px', 
-                  background: '#fff3cd', 
-                  border: '1px solid #ffeaa7',
-                  borderRadius: 8,
-                  fontSize: 14
-                }}>
-                  <strong style={{ color: '#856404' }}>📚 Learning History:</strong>
-                  <div style={{ color: '#856404', marginTop: 4 }}>
-                    Previously completed topics: {planData.completed_topics.join(', ')}
-                  </div>
-                </div>
-              )}
-              
-              {planData.available_niches && planData.available_niches.length > 0 && (
-                <div style={{ 
-                  marginTop: 12, 
-                  padding: '16px', 
-                  background: '#e8f5e8', 
-                  border: '1px solid #c8e6c9',
-                  borderRadius: 8,
-                  fontSize: 14
-                }}>
-                  <strong style={{ color: '#2e7d32' }}>🌐 Available Learning Areas:</strong>
-                  <div style={{ color: '#2e7d32', marginTop: 4 }}>
-                    {planData.available_niches.join(', ')}
-                  </div>
-                </div>
-              )}
-            </div>
-          ) : (
-            <div style={{
-              background: '#fff3cd',
-              border: '1px solid #ffeaa7',
-              borderRadius: 16,
-              padding: '28px 32px',
-              marginBottom: 40,
-              maxWidth: 900,
-              marginLeft: 'auto',
-              marginRight: 'auto',
-            }}>
-              <h2 style={{ color: '#856404', fontWeight: 700, fontSize: 26, marginBottom: 16 }}>⚠️ No Matched Topics Found</h2>
-              <p style={{ color: '#856404', fontSize: 16 }}>
-                The Match Agent didn't find any specific topics for this child. This could be because:
-              </p>
-              <ul style={{ color: '#856404', fontSize: 14, marginTop: 8, marginLeft: 20 }}>
-                <li>The child's interests don't match available topics</li>
-                <li>The plan was generated using a fallback method</li>
-                <li>There was an issue with the topic matching process</li>
-              </ul>
-              <div style={{ 
-                marginTop: 16, 
-                padding: '12px', 
-                background: '#fff', 
-                borderRadius: 8,
-                fontSize: 12,
-                color: '#666'
+            ) : (
+              <div style={{
+                background: '#fff3cd',
+                border: '1px solid #ffeaa7',
+                borderRadius: 16,
+                padding: '28px 32px',
+                marginBottom: 40,
+                maxWidth: 900,
+                marginLeft: 'auto',
+                marginRight: 'auto',
               }}>
-                <strong>Debug Info:</strong> planData.matched_topics = {JSON.stringify(planData?.matched_topics)}, 
-                processedPlanData.matched_topics = {JSON.stringify(processedPlanData?.matched_topics)}
+                <h2 style={{ color: '#856404', fontWeight: 700, fontSize: 26, marginBottom: 16 }}>⚠️ No Matched Topics Found</h2>
+                <p style={{ color: '#856404', fontSize: 16 }}>
+                  The Match Agent didn't find any specific topics for this child. This could be because:
+                </p>
+                <ul style={{ color: '#856404', fontSize: 14, marginTop: 8, marginLeft: 20 }}>
+                  <li>The child's interests don't match available topics</li>
+                  <li>The plan was generated using a fallback method</li>
+                  <li>There was an issue with the topic matching process</li>
+                </ul>
+                <div style={{ 
+                  marginTop: 16, 
+                  padding: '12px', 
+                  background: '#fff', 
+                  borderRadius: 8,
+                  fontSize: 12,
+                  color: '#666'
+                }}>
+                  <strong>Debug Info:</strong> planData.matched_topics = {JSON.stringify(planData?.matched_topics)}, 
+                  processedPlanData.matched_topics = {JSON.stringify(processedPlanData?.matched_topics)}
+                </div>
               </div>
-            </div>
-          )}
+            );
+          })()}
           
           {/* Weekly Plan */}
           <div style={styles.weeksContainer}>
