@@ -64,21 +64,21 @@ const CustomisedWeeklyPlan = () => {
     console.log('🔍 DEBUG - Raw plan data:', planData);
     console.log('🔍 DEBUG - Plan data keys:', Object.keys(planData));
     
-    // Check if it's the new structure
-    if (planData.weekly_learning_plan) {
-      console.log('✅ Using new structure (weekly_learning_plan)');
+    // Check if it's the new structure from backend
+    if (planData.weekly_plan) {
+      console.log('✅ Using backend structure (weekly_plan)');
       return {
         isNewStructure: true,
-        weeklyPlan: planData.weekly_learning_plan
+        weeklyPlan: planData.weekly_plan
       };
     }
     
-    // Check if it's already in weekly format
-    if (planData.weekly_plan) {
-      console.log('✅ Using existing weekly structure');
+    // Check if it's the old structure
+    if (planData.weekly_learning_plan) {
+      console.log('✅ Using old structure (weekly_learning_plan)');
       return {
         isNewStructure: false,
-        weeklyPlan: planData.weekly_plan
+        weeklyPlan: planData.weekly_learning_plan
       };
     }
     
@@ -484,7 +484,7 @@ const CustomisedWeeklyPlan = () => {
       </div>
 
       {/* For Owner Purpose Section */}
-      {planData && (planData.llm_integration || planData.agent_timings) && (
+      {planData && (planData.llm_integration || planData.agent_timings || location.state?.llm_integration || location.state?.agent_timings) && (
         <div style={{
           marginBottom: '40px',
           backgroundColor: '#f8f9fa',
@@ -505,7 +505,7 @@ const CustomisedWeeklyPlan = () => {
               🔍 For Owner Purpose - Agent LLM Responses
             </summary>
             <div style={{ padding: '15px 0' }}>
-              {planData.llm_integration && (
+              {(planData.llm_integration || location.state?.llm_integration) && (
                 <div style={{ marginBottom: '20px' }}>
                   <h4 style={{ color: '#6a4c93', marginBottom: '10px' }}>🤖 LLM Integration Details</h4>
                   <div style={{
@@ -515,88 +515,95 @@ const CustomisedWeeklyPlan = () => {
                     border: '1px solid #ddd',
                     fontSize: '14px'
                   }}>
-                    <p><strong>Gemini API Available:</strong> {planData.llm_integration.gemini_available ? '✅ Yes' : '❌ No'}</p>
-                    <p><strong>Profile Agent LLM Used:</strong> {planData.llm_integration.profile_agent_llm_used ? '✅ Yes' : '❌ No'}</p>
-                    <p><strong>Match Agent LLM Used:</strong> {planData.llm_integration.match_agent_llm_used ? '✅ Yes' : '❌ No'}</p>
-                    <p><strong>Schedule Agent LLM Used:</strong> {planData.llm_integration.schedule_agent_llm_used ? '✅ Yes' : '❌ No'}</p>
-                    <p><strong>Reviewer Agent LLM Used:</strong> {planData.llm_integration.reviewer_agent_llm_used ? '✅ Yes' : '❌ No'}</p>
-                    
-                    {/* Profile Agent Response */}
-                    {planData.llm_integration.profile_agent_response && (
-                      <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f0f8ff', borderRadius: '6px' }}>
-                        <h5 style={{ color: '#264653', marginBottom: '8px' }}>🔍 Profile Agent Response:</h5>
-                        <pre style={{ 
-                          fontSize: '12px', 
-                          whiteSpace: 'pre-wrap', 
-                          wordWrap: 'break-word',
-                          backgroundColor: '#000',
-                          color: '#0f0',
-                          padding: '10px',
-                          borderRadius: '4px',
-                          overflow: 'auto',
-                          maxHeight: '200px'
-                        }}>{planData.llm_integration.profile_agent_response}</pre>
-                      </div>
-                    )}
-                    
-                    {/* Match Agent Response */}
-                    {planData.llm_integration.match_agent_response && (
-                      <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#fff3e0', borderRadius: '6px' }}>
-                        <h5 style={{ color: '#f57c00', marginBottom: '8px' }}>🎯 Match Agent Response:</h5>
-                        <pre style={{ 
-                          fontSize: '12px', 
-                          whiteSpace: 'pre-wrap', 
-                          wordWrap: 'break-word',
-                          backgroundColor: '#000',
-                          color: '#ff0',
-                          padding: '10px',
-                          borderRadius: '4px',
-                          overflow: 'auto',
-                          maxHeight: '200px'
-                        }}>{planData.llm_integration.match_agent_response}</pre>
-                      </div>
-                    )}
-                    
-                    {/* Schedule Agent Response */}
-                    {planData.llm_integration.schedule_agent_response && (
-                      <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#e8f5e9', borderRadius: '6px' }}>
-                        <h5 style={{ color: '#388e3c', marginBottom: '8px' }}>📅 Schedule Agent Response:</h5>
-                        <pre style={{ 
-                          fontSize: '12px', 
-                          whiteSpace: 'pre-wrap', 
-                          wordWrap: 'break-word',
-                          backgroundColor: '#000',
-                          color: '#0f0',
-                          padding: '10px',
-                          borderRadius: '4px',
-                          overflow: 'auto',
-                          maxHeight: '200px'
-                        }}>{planData.llm_integration.schedule_agent_response}</pre>
-                      </div>
-                    )}
-                    
-                    {/* Reviewer Agent Response */}
-                    {planData.llm_integration.reviewer_agent_response && (
-                      <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f3e5f5', borderRadius: '6px' }}>
-                        <h5 style={{ color: '#8e24aa', marginBottom: '8px' }}>🔍 Reviewer Agent Response:</h5>
-                        <pre style={{ 
-                          fontSize: '12px', 
-                          whiteSpace: 'pre-wrap', 
-                          wordWrap: 'break-word',
-                          backgroundColor: '#000',
-                          color: '#f0f',
-                          padding: '10px',
-                          borderRadius: '4px',
-                          overflow: 'auto',
-                          maxHeight: '200px'
-                        }}>{planData.llm_integration.reviewer_agent_response}</pre>
-                      </div>
-                    )}
+                                        {(() => {
+                      const llmData = planData.llm_integration || location.state?.llm_integration;
+                      return (
+                        <>
+                          <p><strong>Gemini API Available:</strong> {llmData.gemini_available ? '✅ Yes' : '❌ No'}</p>
+                          <p><strong>Profile Agent LLM Used:</strong> {llmData.profile_agent_llm_used ? '✅ Yes' : '❌ No'}</p>
+                          <p><strong>Match Agent LLM Used:</strong> {llmData.match_agent_llm_used ? '✅ Yes' : '❌ No'}</p>
+                          <p><strong>Schedule Agent LLM Used:</strong> {llmData.schedule_agent_llm_used ? '✅ Yes' : '❌ No'}</p>
+                          <p><strong>Reviewer Agent LLM Used:</strong> {llmData.reviewer_agent_llm_used ? '✅ Yes' : '❌ No'}</p>
+                          
+                          {/* Profile Agent Response */}
+                          {llmData.profile_agent_response && (
+                            <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f0f8ff', borderRadius: '6px' }}>
+                              <h5 style={{ color: '#264653', marginBottom: '8px' }}>🔍 Profile Agent Response:</h5>
+                              <pre style={{ 
+                                fontSize: '12px', 
+                                whiteSpace: 'pre-wrap', 
+                                wordWrap: 'break-word',
+                                backgroundColor: '#000',
+                                color: '#0f0',
+                                padding: '10px',
+                                borderRadius: '4px',
+                                overflow: 'auto',
+                                maxHeight: '200px'
+                              }}>{llmData.profile_agent_response}</pre>
+                            </div>
+                          )}
+                          
+                          {/* Match Agent Response */}
+                          {llmData.match_agent_response && (
+                            <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#fff3e0', borderRadius: '6px' }}>
+                              <h5 style={{ color: '#f57c00', marginBottom: '8px' }}>🎯 Match Agent Response:</h5>
+                              <pre style={{ 
+                                fontSize: '12px', 
+                                whiteSpace: 'pre-wrap', 
+                                wordWrap: 'break-word',
+                                backgroundColor: '#000',
+                                color: '#ff0',
+                                padding: '10px',
+                                borderRadius: '4px',
+                                overflow: 'auto',
+                                maxHeight: '200px'
+                              }}>{llmData.match_agent_response}</pre>
+                            </div>
+                          )}
+                          
+                          {/* Schedule Agent Response */}
+                          {llmData.schedule_agent_response && (
+                            <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#e8f5e9', borderRadius: '6px' }}>
+                              <h5 style={{ color: '#388e3c', marginBottom: '8px' }}>📅 Schedule Agent Response:</h5>
+                              <pre style={{ 
+                                fontSize: '12px', 
+                                whiteSpace: 'pre-wrap', 
+                                wordWrap: 'break-word',
+                                backgroundColor: '#000',
+                                color: '#0f0',
+                                padding: '10px',
+                                borderRadius: '4px',
+                                overflow: 'auto',
+                                maxHeight: '200px'
+                              }}>{llmData.schedule_agent_response}</pre>
+                            </div>
+                          )}
+                          
+                          {/* Reviewer Agent Response */}
+                          {llmData.reviewer_agent_response && (
+                            <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f3e5f5', borderRadius: '6px' }}>
+                              <h5 style={{ color: '#8e24aa', marginBottom: '8px' }}>🔍 Reviewer Agent Response:</h5>
+                              <pre style={{ 
+                                fontSize: '12px', 
+                                whiteSpace: 'pre-wrap', 
+                                wordWrap: 'break-word',
+                                backgroundColor: '#000',
+                                color: '#f0f',
+                                padding: '10px',
+                                borderRadius: '4px',
+                                overflow: 'auto',
+                                maxHeight: '200px'
+                              }}>{llmData.reviewer_agent_response}</pre>
+                            </div>
+                          )}
+                        </>
+                      );
+                    })()}
                   </div>
                 </div>
               )}
               
-              {planData.agent_timings && (
+              {(planData.agent_timings || location.state?.agent_timings) && (
                 <div>
                   <h4 style={{ color: '#6a4c93', marginBottom: '10px' }}>⏱️ Agent Performance</h4>
                   <div style={{
@@ -606,11 +613,18 @@ const CustomisedWeeklyPlan = () => {
                     border: '1px solid #ddd',
                     fontSize: '14px'
                   }}>
-                    <p><strong>Total Execution Time:</strong> {planData.agent_timings.total_execution_time?.toFixed(3) || 'N/A'} seconds</p>
-                    <p><strong>Profile Agent:</strong> {planData.agent_timings.profile_agent?.execution_time_seconds?.toFixed(3) || 'N/A'}s ({planData.agent_timings.profile_agent?.llm_used ? 'LLM' : 'Fallback'})</p>
-                    <p><strong>Match Agent:</strong> {planData.agent_timings.match_agent?.execution_time_seconds?.toFixed(3) || 'N/A'}s ({planData.agent_timings.match_agent?.llm_used ? 'LLM' : 'Fallback'})</p>
-                    <p><strong>Schedule Agent:</strong> {planData.agent_timings.schedule_agent?.execution_time_seconds?.toFixed(3) || 'N/A'}s ({planData.agent_timings.schedule_agent?.llm_used ? 'LLM' : 'Fallback'})</p>
-                    <p><strong>Reviewer Agent:</strong> {planData.agent_timings.reviewer_agent?.execution_time_seconds?.toFixed(3) || 'N/A'}s ({planData.agent_timings.reviewer_agent?.llm_used ? 'LLM' : 'Fallback'})</p>
+                    {(() => {
+                      const timingData = planData.agent_timings || location.state?.agent_timings;
+                      return (
+                        <>
+                          <p><strong>Total Execution Time:</strong> {timingData.total_execution_time?.toFixed(3) || 'N/A'} seconds</p>
+                          <p><strong>Profile Agent:</strong> {timingData.profile_agent?.execution_time_seconds?.toFixed(3) || 'N/A'}s ({timingData.profile_agent?.llm_used ? 'LLM' : 'Fallback'})</p>
+                          <p><strong>Match Agent:</strong> {timingData.match_agent?.execution_time_seconds?.toFixed(3) || 'N/A'}s ({timingData.match_agent?.llm_used ? 'LLM' : 'Fallback'})</p>
+                          <p><strong>Schedule Agent:</strong> {timingData.schedule_agent?.execution_time_seconds?.toFixed(3) || 'N/A'}s ({timingData.schedule_agent?.llm_used ? 'LLM' : 'Fallback'})</p>
+                          <p><strong>Reviewer Agent:</strong> {timingData.reviewer_agent?.execution_time_seconds?.toFixed(3) || 'N/A'}s ({timingData.reviewer_agent?.llm_used ? 'LLM' : 'Fallback'})</p>
+                        </>
+                      );
+                    })()}
                   </div>
                 </div>
               )}
