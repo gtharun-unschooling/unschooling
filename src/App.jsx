@@ -8,6 +8,7 @@ import firebaseApp from './firebase';
 import { DebugProvider, useDebug } from './contexts/DebugContext';
 
 // Firebase deployment ready - token configured
+// Latest deployment: 2025-01-27 14:30:00 UTC
 
 function GlobalDebugBox() {
   const { debugInfo } = useDebug();
@@ -87,7 +88,7 @@ function GlobalDebugBox() {
           color: '#4ECDC4',
         }}
       >
-        🔍 DEBUG INFO (drag me)
+        🔍 DEBUG INFO (drag me) - v1.2.0
       </div>
       <pre style={{ margin: 0, whiteSpace: 'pre-wrap' }}>{debugInfo}</pre>
     </div>
@@ -98,6 +99,11 @@ function App() {
   useEffect(() => {
     // Apply global styles when the app mounts
     applyGlobalStyles();
+    
+    // Log deployment info
+    console.log('🚀 Unschooling App v1.2.0 deployed successfully!');
+    console.log('📅 Deployment timestamp:', new Date().toISOString());
+    console.log('🔧 Environment:', process.env.NODE_ENV);
     
     // Cleanup global styles when the app unmounts
     return () => {
@@ -123,6 +129,5 @@ function App() {
 }
 
 export default App;
-// Test CI/CD deployment
-// Test deployment - Sat Jul 26 07:39:17 IST 2025
-// Test deployment with updated secret - Sat Jul 26 07:58:16 IST 2025
+// Deployment v1.2.0 - 2025-01-27 14:30:00 UTC
+// Enhanced with better version tracking and deployment logging

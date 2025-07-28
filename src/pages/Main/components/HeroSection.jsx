@@ -106,9 +106,26 @@ const HeroSection = () => {
     textAlign: isMobile ? 'center' : 'left',
   };
 
+  const versionStyle = {
+    position: 'absolute',
+    top: '20px',
+    right: '20px',
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    color: 'white',
+    padding: '8px 12px',
+    borderRadius: '20px',
+    fontSize: '12px',
+    fontWeight: 'bold',
+    zIndex: 1000,
+    backdropFilter: 'blur(10px)',
+  };
+
   return (
     <section style={sectionStyle}>
       <Navbar />
+      <div style={versionStyle}>
+        🚀 v1.2.0
+      </div>
       <div style={textRowStyle}>
         <div style={staticTextStyle}>Schooling is</div>
         <div 
