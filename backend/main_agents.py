@@ -12,6 +12,8 @@ import time
 from typing import Dict, Any, List
 import google.generativeai as genai
 
+# Test deployment with new service account key
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
