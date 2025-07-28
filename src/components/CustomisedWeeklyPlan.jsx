@@ -18,6 +18,11 @@ const CustomisedWeeklyPlan = () => {
 
   useEffect(() => {
     if (user && location.state?.data) {
+      console.log('🔍 DEBUG - Location state data:', location.state.data);
+      console.log('🔍 DEBUG - Location state keys:', Object.keys(location.state.data));
+      console.log('🔍 DEBUG - Location state matched_topics:', location.state.data.matched_topics);
+      console.log('🔍 DEBUG - Location state data type:', typeof location.state.data);
+      
       setPlans({ [location.state.data.month || 'Current']: location.state.data });
       setSelectedMonth(location.state.data.month || 'Current');
       setChildName(location.state.childName || '');
@@ -67,6 +72,27 @@ const CustomisedWeeklyPlan = () => {
     console.log('🔍 DEBUG - Profile analysis:', planData.profile_analysis);
     console.log('🔍 DEBUG - Type of matched_topics:', typeof planData.matched_topics);
     console.log('🔍 DEBUG - Length of matched_topics:', planData.matched_topics?.length);
+    
+    // Check if data is nested under a 'data' property (backend response structure)
+    if (planData.data && planData.data.matched_topics) {
+      console.log('✅ Found nested data structure (backend response)');
+      console.log('🔍 DEBUG - Nested matched_topics:', planData.data.matched_topics);
+      const nestedData = planData.data;
+      const result = {
+        isNewStructure: true,
+        weeklyPlan: nestedData.weekly_plan,
+        matched_topics: nestedData.matched_topics,
+        profile_analysis: nestedData.profile_analysis,
+        learning_objectives: nestedData.learning_objectives,
+        recommended_activities: nestedData.recommended_activities,
+        progress_tracking: nestedData.progress_tracking,
+        llm_integration: planData.llm_integration,
+        agent_timings: planData.agent_timings
+      };
+      console.log('🔍 DEBUG - Processed nested result:', result);
+      console.log('🔍 DEBUG - Result matched_topics:', result.matched_topics);
+      return result;
+    }
     
     // Check if it's the new structure from backend
     if (planData.weekly_plan) {
