@@ -707,7 +707,7 @@ const CustomisedWeeklyPlan = () => {
               marginLeft: 'auto',
               marginRight: 'auto',
             }}>
-              <h2 style={{ color: '#4caf50', fontWeight: 700, fontSize: 26, marginBottom: 16 }}>🎯 Matched Learning Topics</h2>
+              <h2 style={{ color: '#4caf50', fontWeight: 700, fontSize: 26, marginBottom: 16 }}>🎯 Match Agent Overview - Selected Topics</h2>
               
               {/* Topics List */}
               <div style={{ display: 'grid', gap: 16 }}>
@@ -735,7 +735,7 @@ const CustomisedWeeklyPlan = () => {
                       fontSize: 14,
                       fontWeight: 'bold',
                     }}>
-                      {topic.topic_number || idx + 1}
+                      {idx + 1}
                     </div>
                     
                     {/* Topic Content */}
@@ -747,7 +747,7 @@ const CustomisedWeeklyPlan = () => {
                         marginBottom: 8,
                         marginLeft: 24
                       }}>
-                        {topic.topic_name}
+                        {topic.Topic || topic.topic_name || `Topic ${idx + 1}`}
                       </h3>
                       
                       <div style={{ 
@@ -761,19 +761,19 @@ const CustomisedWeeklyPlan = () => {
                           <div style={{ marginBottom: 8 }}>
                             <strong style={{ color: '#666' }}>Niche:</strong> 
                             <span style={{ color: '#4caf50', fontWeight: 500, marginLeft: 8 }}>
-                              {topic.niche}
+                              {topic.Niche || topic.niche || 'General'}
                             </span>
                           </div>
                           <div style={{ marginBottom: 8 }}>
                             <strong style={{ color: '#666' }}>Age Range:</strong> 
                             <span style={{ color: '#666', marginLeft: 8 }}>
-                              {topic.age}
+                              {topic.Age || topic.age || '5-12'}
                             </span>
                           </div>
                           <div style={{ marginBottom: 8 }}>
                             <strong style={{ color: '#666' }}>Duration:</strong> 
                             <span style={{ color: '#666', marginLeft: 8 }}>
-                              {topic.estimated_time}
+                              {topic['Estimated Time'] || topic.estimated_time || '30 mins'}
                             </span>
                           </div>
                         </div>
@@ -792,33 +792,17 @@ const CustomisedWeeklyPlan = () => {
                             borderRadius: 6,
                             border: '1px solid #e0e0e0'
                           }}>
-                            {topic.objective}
+                            {topic.Objective || topic.objective || `Learn about ${topic.Topic || topic.topic_name || 'this topic'}`}
                           </div>
                         </div>
                       </div>
                       
-                      {/* Explanation */}
-                      {topic.explanation && (
-                        <div style={{ marginTop: 12, marginLeft: 24 }}>
-                          <strong style={{ color: '#666' }}>What this covers:</strong>
-                          <div style={{ 
-                            color: '#555', 
-                            fontSize: 14, 
-                            lineHeight: 1.5,
-                            marginTop: 4,
-                            fontStyle: 'italic'
-                          }}>
-                            {topic.explanation}
-                          </div>
-                        </div>
-                      )}
-                      
                       {/* Activities Preview */}
-                      {(topic.activity_1 || topic.activity_2) && (
+                      {(topic['Activity 1'] || topic['Activity 2'] || topic.activity_1 || topic.activity_2) && (
                         <div style={{ marginTop: 12, marginLeft: 24 }}>
                           <strong style={{ color: '#666' }}>Activities Preview:</strong>
                           <div style={{ marginTop: 4 }}>
-                            {topic.activity_1 && (
+                            {(topic['Activity 1'] || topic.activity_1) && (
                               <div style={{ 
                                 color: '#555', 
                                 fontSize: 13, 
@@ -827,10 +811,10 @@ const CustomisedWeeklyPlan = () => {
                                 background: '#f0f8f0',
                                 borderRadius: 4
                               }}>
-                                <strong>Activity 1:</strong> {topic.activity_1.substring(0, 100)}...
+                                <strong>Activity 1:</strong> {(topic['Activity 1'] || topic.activity_1).substring(0, 100)}...
                               </div>
                             )}
-                            {topic.activity_2 && (
+                            {(topic['Activity 2'] || topic.activity_2) && (
                               <div style={{ 
                                 color: '#555', 
                                 fontSize: 13,
@@ -838,7 +822,7 @@ const CustomisedWeeklyPlan = () => {
                                 background: '#f0f8f0',
                                 borderRadius: 4
                               }}>
-                                <strong>Activity 2:</strong> {topic.activity_2.substring(0, 100)}...
+                                <strong>Activity 2:</strong> {(topic['Activity 2'] || topic.activity_2).substring(0, 100)}...
                               </div>
                             )}
                           </div>
@@ -1053,3 +1037,4 @@ const CustomisedWeeklyPlan = () => {
 };
 
 export default CustomisedWeeklyPlan;
+
