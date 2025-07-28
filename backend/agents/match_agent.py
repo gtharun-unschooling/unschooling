@@ -65,45 +65,33 @@ def run_match_agent(state):
 
     full_prompt = "\n".join(prompt_parts)
 
-    # Send prompt to Gemini
-    try:
-        response = model.generate_content(full_prompt)
-        response_text = response.text
-
-        # Try parsing JSON from response
-        matched_topics = json.loads(response_text)
-
-        return {
-            "profile": profile,
-            "matched_topics": matched_topics
-        }
-
-    except Exception as e:
-        print("Gemini LLM error:", str(e))
-        # Fallback to intelligent selection without API
-        if len(eligible_topics) >= 4:
-            # Select diverse topics
-            selected_topics = []
-            niches_seen = set()
-            
+    # For local testing, skip Google API call and use intelligent selection
+    print("🔍 Using intelligent topic selection (no Google API)")
+    
+    # Fallback to intelligent selection without API
+    if len(eligible_topics) >= 4:
+        # Select diverse topics
+        selected_topics = []
+        niches_seen = set()
+        
+        for topic in eligible_topics:
+            if len(selected_topics) >= 4:
+                break
+            if topic["Niche"] not in niches_seen or len(selected_topics) < 2:
+                selected_topics.append(topic)
+                niches_seen.add(topic["Niche"])
+        
+        # If we don't have enough, add more
+        if len(selected_topics) < 4:
             for topic in eligible_topics:
                 if len(selected_topics) >= 4:
                     break
-                if topic["Niche"] not in niches_seen or len(selected_topics) < 2:
+                if topic not in selected_topics:
                     selected_topics.append(topic)
-                    niches_seen.add(topic["Niche"])
-            
-            # If we don't have enough, add more
-            if len(selected_topics) < 4:
-                for topic in eligible_topics:
-                    if len(selected_topics) >= 4:
-                        break
-                    if topic not in selected_topics:
-                        selected_topics.append(topic)
-        else:
-            selected_topics = eligible_topics
-        
-        return {
-            "profile": profile,
-            "matched_topics": selected_topics
-        }
+    else:
+        selected_topics = eligible_topics
+    
+    return {
+        "profile": profile,
+        "matched_topics": selected_topics
+    }

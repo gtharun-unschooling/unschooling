@@ -405,6 +405,15 @@ class ApiService {
             
             if (data.success) {
               debugLog('✅ Plan generated successfully!');
+              // Include LLM response data in the response
+              if (data.llm_integration) {
+                debugLog('🤖 LLM Integration data found in response');
+                data.data.llm_integration = data.llm_integration;
+              }
+              if (data.agent_timings) {
+                debugLog('⏱️ Agent timings data found in response');
+                data.data.agent_timings = data.agent_timings;
+              }
             } else {
               debugLog(`❌ Backend Error: ${data.error?.message || 'Unknown error'}`);
               debugLog(`🔍 Error Code: ${data.error?.code || 'Unknown'}`);
