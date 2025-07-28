@@ -742,6 +742,7 @@ async def generate_plan(request: Request):
         # Create a simplified, guaranteed JSON-serializable response
         response_data = {
             "child_profile": profile,
+            "profile_analysis": profile_analysis,  # Add profile analysis for frontend
             "matched_topics": final_result.get("matched_topics", []),
             "weekly_plan": final_result.get("weekly_plan", {}),
             "learning_objectives": final_result.get("learning_objectives", []),

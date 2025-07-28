@@ -189,27 +189,29 @@ const PLAN_TYPES = [
 
 export default function ProfileForm({ onSubmit }) {
   const [user, loading, error] = useAuthState(auth);
+  const [isLoading, setIsLoading] = useState(false);
+  const [loadingStep, setLoadingStep] = useState('');
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [showUpdateMessage, setShowUpdateMessage] = useState(false);
+  const [originalProfile, setOriginalProfile] = useState(null);
+  const [hasChanges, setHasChanges] = useState(false);
+  const [isAddingNewChild, setIsAddingNewChild] = useState(false);
+  const [children, setChildren] = useState([]);
+  const [selectedChildIndex, setSelectedChildIndex] = useState(0);
+  const [childName, setChildName] = useState('');
   const [childAge, setChildAge] = useState(5);
   const [interests, setInterests] = useState([]);
   const [dislikes, setDislikes] = useState([]);
-  const [learningStyle, setLearningStyle] = useState("");
+  const [learningStyle, setLearningStyle] = useState('visual');
   const [selectedGoals, setSelectedGoals] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-  const [showUpdateMessage, setShowUpdateMessage] = useState(false); // NEW
-  const navigate = useNavigate();
-  const [originalProfile, setOriginalProfile] = useState(null);
-  const [hasChanges, setHasChanges] = useState(false);
-  const [childName, setChildName] = useState("");
-  const { debugInfo, addDebugInfo } = useDebug();
   const [planType, setPlanType] = useState('hybrid');
+  const [showPlanModal, setShowPlanModal] = useState(false);
+  const [planData, setPlanData] = useState(null);
+  const [debugInfo, setDebugInfo] = useState('');
+  const [showDebug, setShowDebug] = useState(false);
+  const navigate = useNavigate();
+  const { debugInfo: globalDebugInfo, addDebugInfo } = useDebug();
   
-  // Child management state
-  const [children, setChildren] = useState([]);
-  const [selectedChild, setSelectedChild] = useState(null);
-  const [isAddingNewChild, setIsAddingNewChild] = useState(false);
-  const [currentChildIndex, setCurrentChildIndex] = useState(0);
-
   // Load children on mount and data files
   useEffect(() => {
     console.log('🔐 Auth state changed:', { user: !!user, loading, error });
@@ -344,8 +346,7 @@ export default function ProfileForm({ onSubmit }) {
 
   // Select a child to edit
   const selectChild = (child, index) => {
-    setSelectedChild(child);
-    setCurrentChildIndex(index);
+    setSelectedChildIndex(index);
     setChildName(child.name);
     setChildAge(child.child_age || 5);
     setInterests(child.interests || []);
@@ -360,16 +361,16 @@ export default function ProfileForm({ onSubmit }) {
 
   // Navigate to next child
   const nextChild = () => {
-    if (currentChildIndex < children.length - 1) {
-      const nextIndex = currentChildIndex + 1;
+    if (selectedChildIndex < children.length - 1) {
+      const nextIndex = selectedChildIndex + 1;
       selectChild(children[nextIndex], nextIndex);
     }
   };
 
   // Navigate to previous child
   const prevChild = () => {
-    if (currentChildIndex > 0) {
-      const prevIndex = currentChildIndex - 1;
+    if (selectedChildIndex > 0) {
+      const prevIndex = selectedChildIndex - 1;
       selectChild(children[prevIndex], prevIndex);
     }
   };
@@ -377,8 +378,7 @@ export default function ProfileForm({ onSubmit }) {
   // Add a new child
   const addNewChild = () => {
     setIsAddingNewChild(true);
-    setSelectedChild(null);
-    setCurrentChildIndex(-1);
+    setSelectedChildIndex(-1);
     setChildName("");
     setChildAge(5);
     setInterests([]);
@@ -490,30 +490,31 @@ export default function ProfileForm({ onSubmit }) {
     console.log('   Plan Type:', planType);
     
     setIsLoading(true);
+    setLoadingStep('Initializing...');
+    addDebugInfo('🔄 PROFILE SUBMISSION STEP: Initializing...');
     
-    const profile = {
-      child_name: childName,
-      child_age: childAge,
-      interests,
-      dislikes,
-      preferred_learning_style: learningStyle,
-      goals: selectedGoals,
-      plan_type: planType
-    };
-
-    addDebugInfo(`📤 Profile object created with ${interests.length} interests`);
-    console.log('📤 PROFILE OBJECT CREATED:', JSON.stringify(profile, null, 2));
-
     try {
       // Save user email at user doc level
       const userRef = doc(db, "users", user.uid);
       await setDoc(userRef, { user_email: user.email }, { merge: true });
       console.log('✅ User email saved to Firebase');
+      addDebugInfo('✅ User email saved to Firebase');
       
       // Save child profile under users/{user_uid}/children/{child_name}
       const childRef = doc(collection(db, `users/${user.uid}/children`), childName);
-      await setDoc(childRef, profile, { merge: true });
+      await setDoc(childRef, {
+        child_name: childName,
+        child_age: childAge,
+        interests: interests,
+        dislikes: dislikes,
+        preferred_learning_style: learningStyle,
+        goals: selectedGoals,
+        plan_type: planType,
+        created_at: new Date(),
+        updated_at: new Date()
+      }, { merge: true });
       console.log('✅ Child profile saved to Firebase');
+      addDebugInfo('✅ Child profile saved to Firebase');
       
       // Initialize months array if it doesn't exist
       const childSnap = await getDoc(childRef);
@@ -528,27 +529,38 @@ export default function ProfileForm({ onSubmit }) {
         months.push(monthYear);
         await setDoc(childRef, { months: months }, { merge: true });
         console.log('✅ Months column updated:', months);
+        addDebugInfo('✅ Months column updated: ' + months);
       }
       
-      setOriginalProfile(profile); // update originalProfile after save
+      setOriginalProfile({ ...originalProfile, ...{
+        child_name: childName,
+        child_age: childAge,
+        interests: interests,
+        dislikes: dislikes,
+        preferred_learning_style: learningStyle,
+        goals: selectedGoals,
+        plan_type: planType,
+        updated_at: new Date()
+      }});
       setHasChanges(false);
       // If this is an update (not first time), show update message
       if (originalProfile) {
         setShowUpdateMessage(true); // persistent until next change
       }
+      addDebugInfo('✅ Profile saved and original profile updated.');
 
       // Only show the plan modal if it's a new profile (no originalProfile)
       addDebugInfo(`📋 Original Profile exists: ${originalProfile ? 'YES' : 'NO'}`);
       console.log('📋 Original Profile exists:', !!originalProfile);
       
       if (!originalProfile) {
-        addDebugInfo("🔄 GENERATING PLAN FOR NEW PROFILE");
-        console.log('🔄 GENERATING PLAN FOR NEW PROFILE...');
+        setLoadingStep('Generating Plan...');
+        addDebugInfo('🔄 PROFILE SUBMISSION STEP: Generating Plan...');
         try {
           // Send to backend
           addDebugInfo("📡 CALLING API SERVICE...");
           console.log('📡 CALLING API SERVICE...');
-          const res = await apiService.generatePlan(profile);
+          const res = await apiService.generatePlan(originalProfile); // Pass originalProfile
           addDebugInfo(`📥 API RESPONSE RECEIVED: ${res.success ? 'SUCCESS' : 'FAILED'}`);
           console.log('📥 API RESPONSE RECEIVED:', res);
           
@@ -578,6 +590,7 @@ export default function ProfileForm({ onSubmit }) {
               months: months
             }, { merge: true });
             console.log('✅ Plan and months saved to Firebase');
+            addDebugInfo('✅ Plan and months saved to Firebase');
             
             // Update children list if this is a new child
             if (isAddingNewChild) {
@@ -595,7 +608,7 @@ export default function ProfileForm({ onSubmit }) {
                   childMonths: months
                 } 
               });
-            }, 3000);
+            }, 1000); // Reduced timeout to 1 second
           } else {
             throw new Error(res.message || "Failed to generate plan");
           }
@@ -608,7 +621,7 @@ export default function ProfileForm({ onSubmit }) {
           // Create an enhanced plan using the data files
           addDebugInfo("🔄 FALLING BACK TO ENHANCED PLAN GENERATION");
           console.log('🔄 FALLING BACK TO ENHANCED PLAN GENERATION...');
-          const enhancedPlan = generateEnhancedPlan(profile);
+          const enhancedPlan = generateEnhancedPlan(originalProfile); // Pass originalProfile
           addDebugInfo("✅ ENHANCED PLAN GENERATED");
           console.log('✅ ENHANCED PLAN GENERATED:', enhancedPlan);
 
@@ -634,6 +647,7 @@ export default function ProfileForm({ onSubmit }) {
             months: months
           }, { merge: true });
           console.log('✅ Enhanced plan and months saved to Firebase');
+          addDebugInfo('✅ Enhanced plan and months saved to Firebase');
           
           // Update children list if this is a new child
           if (isAddingNewChild) {
@@ -650,7 +664,7 @@ export default function ProfileForm({ onSubmit }) {
                 childMonths: months
               } 
             });
-          }, 3000);
+          }, 1000); // Reduced timeout to 1 second
         }
       } else {
         // This is an existing profile - generate a new plan anyway
@@ -660,7 +674,7 @@ export default function ProfileForm({ onSubmit }) {
           // Send to backend
           addDebugInfo("📡 CALLING API SERVICE FOR EXISTING PROFILE...");
           console.log('📡 CALLING API SERVICE FOR EXISTING PROFILE...');
-          const res = await apiService.generatePlan(profile);
+          const res = await apiService.generatePlan(originalProfile); // Pass originalProfile
           addDebugInfo(`📥 API RESPONSE RECEIVED: ${res.success ? 'SUCCESS' : 'FAILED'}`);
           console.log('📥 API RESPONSE RECEIVED:', res);
           
@@ -690,6 +704,7 @@ export default function ProfileForm({ onSubmit }) {
               months: months
             }, { merge: true });
             console.log('✅ Plan and months saved to Firebase for existing profile');
+            addDebugInfo('✅ Plan and months saved to Firebase for existing profile');
             
             setShowSuccessMessage(true);
             setTimeout(() => {
@@ -701,7 +716,7 @@ export default function ProfileForm({ onSubmit }) {
                   childMonths: months
                 } 
               });
-            }, 3000);
+            }, 1000); // Reduced timeout to 1 second
           } else {
             throw new Error(res.message || "Failed to generate plan");
           }
@@ -714,7 +729,7 @@ export default function ProfileForm({ onSubmit }) {
           // Create an enhanced plan using the data files
           addDebugInfo("🔄 FALLING BACK TO ENHANCED PLAN GENERATION FOR EXISTING PROFILE");
           console.log('🔄 FALLING BACK TO ENHANCED PLAN GENERATION FOR EXISTING PROFILE...');
-          const enhancedPlan = generateEnhancedPlan(profile);
+          const enhancedPlan = generateEnhancedPlan(originalProfile); // Pass originalProfile
           addDebugInfo("✅ ENHANCED PLAN GENERATED FOR EXISTING PROFILE");
           console.log('✅ ENHANCED PLAN GENERATED FOR EXISTING PROFILE:', enhancedPlan);
 
@@ -740,6 +755,7 @@ export default function ProfileForm({ onSubmit }) {
             months: months
           }, { merge: true });
           console.log('✅ Enhanced plan and months saved to Firebase for existing profile');
+          addDebugInfo('✅ Enhanced plan and months saved to Firebase for existing profile');
           
           setShowSuccessMessage(true);
           setTimeout(() => {
@@ -751,7 +767,7 @@ export default function ProfileForm({ onSubmit }) {
                 childMonths: months
               } 
             });
-          }, 3000);
+          }, 1000); // Reduced timeout to 1 second
         }
       }
     } catch (err) {
@@ -806,7 +822,7 @@ export default function ProfileForm({ onSubmit }) {
             color: 'white',
             margin: 0,
           }}>
-            {isAddingNewChild ? '➕ Adding New Child' : `👶 ${selectedChild?.name || 'Select Child'}`}
+            {isAddingNewChild ? '➕ Adding New Child' : `👶 ${selectedChildIndex >= 0 && selectedChildIndex < children.length ? children[selectedChildIndex].name : 'Select Child'}`}
           </h3>
           
           <div style={{ display: 'flex', alignItems: 'center', gap: spacing.sm }}>
@@ -816,7 +832,7 @@ export default function ProfileForm({ onSubmit }) {
                 {children.map((child, idx) => (
                   <button
                     key={child.name}
-                    style={getChildButtonStyle(selectedChild && selectedChild.name === child.name)}
+                    style={getChildButtonStyle(selectedChildIndex === idx)}
                     onClick={() => selectChild(child, idx)}
                   >
                     {child.name}
@@ -851,7 +867,7 @@ export default function ProfileForm({ onSubmit }) {
         </div>
         
         {/* Show current child's selections */}
-        {selectedChild && !isAddingNewChild && (
+        {selectedChildIndex >= 0 && selectedChildIndex < children.length && !isAddingNewChild && (
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
@@ -859,19 +875,19 @@ export default function ProfileForm({ onSubmit }) {
             marginTop: spacing.md,
           }}>
             <div style={{ color: 'white', fontSize: '0.9rem' }}>
-              <strong>Age:</strong> {selectedChild.child_age || 'Not set'} years
+              <strong>Age:</strong> {children[selectedChildIndex].child_age || 'Not set'} years
             </div>
             <div style={{ color: 'white', fontSize: '0.9rem' }}>
-              <strong>Interests:</strong> {selectedChild.interests?.length || 0} selected
+              <strong>Interests:</strong> {children[selectedChildIndex].interests?.length || 0} selected
             </div>
             <div style={{ color: 'white', fontSize: '0.9rem' }}>
-              <strong>Learning Style:</strong> {selectedChild.preferred_learning_style || 'Not set'}
+              <strong>Learning Style:</strong> {children[selectedChildIndex].preferred_learning_style || 'Not set'}
             </div>
             <div style={{ color: 'white', fontSize: '0.9rem' }}>
-              <strong>Goals:</strong> {selectedChild.goals?.length || 0} selected
+              <strong>Goals:</strong> {children[selectedChildIndex].goals?.length || 0} selected
             </div>
             <div style={{ color: 'white', fontSize: '0.9rem' }}>
-              <strong>Plan Type:</strong> {selectedChild.plan_type || 'Not set'}
+              <strong>Plan Type:</strong> {children[selectedChildIndex].plan_type || 'Not set'}
             </div>
           </div>
         )}
@@ -1148,7 +1164,7 @@ export default function ProfileForm({ onSubmit }) {
             value={childName}
             onChange={e => setChildName(e.target.value)}
             placeholder="Enter your child's name"
-            disabled={selectedChild && !isAddingNewChild} // Disable if editing existing child
+            disabled={selectedChildIndex >= 0 && selectedChildIndex < children.length && !isAddingNewChild} // Disable if editing existing child
             style={{
               width: '100%',
               padding: spacing.md,
@@ -1156,12 +1172,12 @@ export default function ProfileForm({ onSubmit }) {
               borderRadius: '8px',
               border: '1px solid #ccc',
               marginBottom: spacing.lg,
-              backgroundColor: selectedChild && !isAddingNewChild ? '#f5f5f5' : 'white',
-              color: selectedChild && !isAddingNewChild ? '#666' : 'black',
+              backgroundColor: selectedChildIndex >= 0 && selectedChildIndex < children.length && !isAddingNewChild ? '#f5f5f5' : 'white',
+              color: selectedChildIndex >= 0 && selectedChildIndex < children.length && !isAddingNewChild ? '#666' : 'black',
             }}
             required
           />
-          {selectedChild && !isAddingNewChild && (
+          {selectedChildIndex >= 0 && selectedChildIndex < children.length && !isAddingNewChild && (
             <p style={{ 
               fontSize: '0.9rem', 
               color: '#666', 
@@ -1349,12 +1365,12 @@ export default function ProfileForm({ onSubmit }) {
               onClick={handleSubmit}
               disabled={isLoading || !hasChanges}
             >
-              {isAddingNewChild 
-                ? (isLoading ? '⏳ Creating Plan...' : '🚀 Create My Child\'s Plan!')
-                : originalProfile 
-                  ? (isLoading ? '⏳ Updating...' : '💾 Update Profile') 
-                  : (isLoading ? '⏳ Creating Your Plan...' : '🚀 Generate My Child\'s Perfect Plan!')
-              }
+                          {isAddingNewChild 
+              ? (isLoading ? `⏳ ${loadingStep || 'Creating Plan...'}` : '🚀 Create My Child\'s Plan!')
+              : selectedChildIndex >= 0 && selectedChildIndex < children.length 
+                ? (isLoading ? `⏳ ${loadingStep || 'Updating...'}` : '💾 Update Profile') 
+                : (isLoading ? `⏳ ${loadingStep || 'Creating Your Plan...'}` : '🚀 Generate My Child\'s Perfect Plan!')
+            }
             </button>
             {hasChanges && (
               <button
@@ -1416,30 +1432,30 @@ export default function ProfileForm({ onSubmit }) {
       <div style={{ marginTop: 32, textAlign: 'center' }}>
         <button
           type="button"
-          disabled={!selectedChild || !selectedChild.plans || Object.keys(selectedChild.plans).length === 0}
+          disabled={selectedChildIndex < 0 || selectedChildIndex >= children.length || !children[selectedChildIndex].plans || Object.keys(children[selectedChildIndex].plans).length === 0}
           style={{
-            background: (!selectedChild || !selectedChild.plans || Object.keys(selectedChild.plans).length === 0) ? '#bdbdbd' : '#6a4c93',
+            background: (selectedChildIndex < 0 || selectedChildIndex >= children.length || !children[selectedChildIndex].plans || Object.keys(children[selectedChildIndex].plans).length === 0) ? '#bdbdbd' : '#6a4c93',
             color: 'white',
             border: 'none',
             borderRadius: 8,
             padding: '12px 32px',
             fontSize: '1.1rem',
             fontWeight: 600,
-            cursor: (!selectedChild || !selectedChild.plans || Object.keys(selectedChild.plans).length === 0) ? 'not-allowed' : 'pointer',
-            opacity: (!selectedChild || !selectedChild.plans || Object.keys(selectedChild.plans).length === 0) ? 0.6 : 1,
+            cursor: (selectedChildIndex < 0 || selectedChildIndex >= children.length || !children[selectedChildIndex].plans || Object.keys(children[selectedChildIndex].plans).length === 0) ? 'not-allowed' : 'pointer',
+            opacity: (selectedChildIndex < 0 || selectedChildIndex >= children.length || !children[selectedChildIndex].plans || Object.keys(children[selectedChildIndex].plans).length === 0) ? 0.6 : 1,
             marginTop: 8,
             transition: 'all 0.2s',
           }}
           onClick={() => {
-            if (selectedChild && selectedChild.plans && Object.keys(selectedChild.plans).length > 0) {
+            if (selectedChildIndex >= 0 && selectedChildIndex < children.length && children[selectedChildIndex].plans && Object.keys(children[selectedChildIndex].plans).length > 0) {
               // Get the latest month
-              const months = Object.keys(selectedChild.plans);
+              const months = Object.keys(children[selectedChildIndex].plans);
               const latestMonth = months[months.length - 1];
               navigate('/customised-weekly-plan', {
                 state: {
-                  childName: selectedChild.name,
+                  childName: children[selectedChildIndex].name,
                   childMonths: months,
-                  data: selectedChild.plans[latestMonth],
+                  data: children[selectedChildIndex].plans[latestMonth],
                 }
               });
             }
@@ -1448,7 +1464,7 @@ export default function ProfileForm({ onSubmit }) {
           Go to Weekly Plan
         </button>
         <div style={{ fontSize: 13, color: '#888', marginTop: 6 }}>
-          {(!selectedChild || !selectedChild.plans || Object.keys(selectedChild.plans).length === 0)
+          {(selectedChildIndex < 0 || selectedChildIndex >= children.length || !children[selectedChildIndex].plans || Object.keys(children[selectedChildIndex].plans).length === 0)
             ? 'Generate a plan first to view the weekly plan.'
             : 'View the latest monthly plan for this child.'}
         </div>

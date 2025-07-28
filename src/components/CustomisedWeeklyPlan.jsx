@@ -637,7 +637,7 @@ const CustomisedWeeklyPlan = () => {
         <div style={styles.message}>No plan data for this month.</div>
       ) : (
         <>
-          {/* Profile Summary Block (Parent-facing) */}
+          {/* Profile Summary Block (Parent-facing) - Moved below For Owner Purpose */}
           {planData && planData.profile_analysis && planData.profile_analysis.llm_insights && (
             <div style={{
               background: '#f8f9fa',
