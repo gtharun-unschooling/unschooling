@@ -636,167 +636,226 @@ const CustomisedWeeklyPlan = () => {
       {!processedPlanData ? (
         <div style={styles.message}>No plan data for this month.</div>
       ) : (
-        <div style={styles.weeksContainer}>
-          {Object.entries(processedPlanData.weeklyPlan).map(([weekKey, weekData], weekIdx) => (
-            <div key={weekKey} style={{
-              ...styles.weekCard,
-              background: WEEK_COLORS[weekIdx % WEEK_COLORS.length],
-              borderColor: WEEK_ACCENTS[weekIdx % WEEK_ACCENTS.length],
-              boxShadow: `0 4px 24px ${WEEK_ACCENTS[weekIdx % WEEK_ACCENTS.length]}22`,
+        <>
+          {/* Profile Summary Block (Parent-facing) */}
+          {planData && planData.profile_analysis && planData.profile_analysis.llm_insights && (
+            <div style={{
+              background: '#f8f9fa',
+              border: '2px solid #6a4c93',
+              borderRadius: 16,
+              padding: '28px 32px',
               marginBottom: 40,
+              boxShadow: '0 4px 16px #6a4c9322',
+              maxWidth: 900,
+              marginLeft: 'auto',
+              marginRight: 'auto',
             }}>
-              <h2 style={{
-                ...styles.weekHeader,
-                color: WEEK_ACCENTS[weekIdx % WEEK_ACCENTS.length],
-                background: 'none',
+              <h2 style={{ color: '#6a4c93', fontWeight: 700, fontSize: 26, marginBottom: 12 }}>👤 Child Profile Summary</h2>
+              {planData.profile_analysis.llm_insights.profile_summary && (
+                <div style={{ fontSize: 18, color: '#333', marginBottom: 18, fontWeight: 500, lineHeight: 1.5 }}>
+                  {planData.profile_analysis.llm_insights.profile_summary}
+                </div>
+              )}
+              {planData.profile_analysis.llm_insights.subject_areas_of_interest && planData.profile_analysis.llm_insights.subject_areas_of_interest.length > 0 && (
+                <div style={{ marginBottom: 12 }}>
+                  <strong style={{ color: '#6a4c93' }}>Subject Areas of Interest:</strong>
+                  <ul style={{ margin: '8px 0 0 18px', color: '#222', fontSize: 16 }}>
+                    {planData.profile_analysis.llm_insights.subject_areas_of_interest.map((area, idx) => (
+                      <li key={idx}>{area}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {planData.profile_analysis.llm_insights.areas_for_improvement && planData.profile_analysis.llm_insights.areas_for_improvement.length > 0 && (
+                <div style={{ marginBottom: 12 }}>
+                  <strong style={{ color: '#fb8c00' }}>Areas for Improvement:</strong>
+                  <ul style={{ margin: '8px 0 0 18px', color: '#222', fontSize: 16 }}>
+                    {planData.profile_analysis.llm_insights.areas_for_improvement.map((area, idx) => (
+                      <li key={idx}>{area}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {planData.profile_analysis.llm_insights.suggestions && planData.profile_analysis.llm_insights.suggestions.length > 0 && (
+                <div style={{ marginBottom: 12 }}>
+                  <strong style={{ color: '#43a047' }}>Suggestions for Parents:</strong>
+                  <ul style={{ margin: '8px 0 0 18px', color: '#222', fontSize: 16 }}>
+                    {planData.profile_analysis.llm_insights.suggestions.map((sugg, idx) => (
+                      <li key={idx}>{sugg}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {planData.profile_analysis.llm_insights.rights_of_child && (
+                <div style={{ marginTop: 18, fontStyle: 'italic', color: '#6a4c93', fontSize: 16, borderTop: '1px solid #eee', paddingTop: 10 }}>
+                  <span>🧒 <strong>Rights of the Child:</strong> {planData.profile_analysis.llm_insights.rights_of_child}</span>
+                </div>
+              )}
+            </div>
+          )}
+          {/* Weekly Plan */}
+          <div style={styles.weeksContainer}>
+            {Object.entries(processedPlanData.weeklyPlan).map(([weekKey, weekData], weekIdx) => (
+              <div key={weekKey} style={{
+                ...styles.weekCard,
+                background: WEEK_COLORS[weekIdx % WEEK_COLORS.length],
                 borderColor: WEEK_ACCENTS[weekIdx % WEEK_ACCENTS.length],
+                boxShadow: `0 4px 24px ${WEEK_ACCENTS[weekIdx % WEEK_ACCENTS.length]}22`,
+                marginBottom: 40,
               }}>
-                {weekKey.replace('_', ' ').toUpperCase()}
-              </h2>
-              <div style={{ ...styles.daysContainer, gap: 0 }}>
-                {["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"].map((dayKey, dayIdx) => {
-                  const dayData = getDayData(weekData, dayKey);
-                  const accent = WEEK_ACCENTS[weekIdx % WEEK_ACCENTS.length];
-                  return (
-                    <React.Fragment key={dayKey}>
-                      <div
-                        key={dayKey}
-                        style={{
-                          ...styles.dayCard,
-                          background: '#fff',
-                          borderLeft: `6px solid ${accent}`,
-                          margin: '0 0 8px 0',
-                          boxShadow: expandedDayRow[weekKey] === dayKey ? `0 2px 8px ${accent}33` : '0 1px 4px #0001',
-                          transition: 'box-shadow 0.2s',
-                          display: 'flex',
-                          alignItems: 'center',
-                          minHeight: 44,
-                          height: 44,
-                          position: 'relative',
-                          cursor: 'pointer',
-                          overflow: 'hidden',
-                          padding: '0 8px',
-                          borderRadius: 7,
-                        }}
-                        onClick={() => {
-                          setExpandedDayRow(row => ({ ...row, [weekKey]: row[weekKey] === dayKey ? null : dayKey }));
-                        }}
-                        onMouseEnter={e => e.currentTarget.style.background = '#f6f9fc'}
-                        onMouseLeave={e => e.currentTarget.style.background = '#fff'}
-                      >
-                        {/* Day name */}
-                        <div style={{
-                          minWidth: 80,
-                          fontWeight: 700,
-                          fontSize: 15,
-                          color: accent,
-                          textAlign: 'left',
-                          padding: '0 10px',
-                          letterSpacing: 1,
-                          flexShrink: 0,
-                        }}>{dayKey.charAt(0).toUpperCase() + dayKey.slice(1)}</div>
-                        {/* Topic/title and Smart Helper */}
-                        <div style={{
-                          flex: 1,
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: 10,
-                          fontSize: 14,
-                          fontWeight: 500,
-                          color: '#222',
-                          overflow: 'hidden',
-                          whiteSpace: 'nowrap',
-                          textOverflow: 'ellipsis',
-                        }}>
-                          {dayData ? (
-                            <>
-                              <span style={{ fontWeight: 600 }}>{dayData.topic}</span>
-                              <span style={{ fontSize: 16, marginLeft: 4 }} title="Smart Helper">🤖</span>
-                            </>
-                          ) : (
-                            <span style={{ color: '#bbb', fontStyle: 'italic' }}>No activities planned</span>
-                          )}
-                        </div>
-                        {/* Expand/View Button */}
-                        <button
+                <h2 style={{
+                  ...styles.weekHeader,
+                  color: WEEK_ACCENTS[weekIdx % WEEK_ACCENTS.length],
+                  background: 'none',
+                  borderColor: WEEK_ACCENTS[weekIdx % WEEK_ACCENTS.length],
+                }}>
+                  {weekKey.replace('_', ' ').toUpperCase()}
+                </h2>
+                <div style={{ ...styles.daysContainer, gap: 0 }}>
+                  {["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"].map((dayKey, dayIdx) => {
+                    const dayData = getDayData(weekData, dayKey);
+                    const accent = WEEK_ACCENTS[weekIdx % WEEK_ACCENTS.length];
+                    return (
+                      <React.Fragment key={dayKey}>
+                        <div
+                          key={dayKey}
                           style={{
-                            background: expandedDayRow[weekKey] === dayKey ? accent : '#f3f0fa',
-                            color: expandedDayRow[weekKey] === dayKey ? '#fff' : accent,
-                            border: 'none',
-                            borderRadius: '50%',
-                            width: 26,
-                            height: 26,
+                            ...styles.dayCard,
+                            background: '#fff',
+                            borderLeft: `6px solid ${accent}`,
+                            margin: '0 0 8px 0',
+                            boxShadow: expandedDayRow[weekKey] === dayKey ? `0 2px 8px ${accent}33` : '0 1px 4px #0001',
+                            transition: 'box-shadow 0.2s',
                             display: 'flex',
                             alignItems: 'center',
-                            justifyContent: 'center',
-                            fontSize: 15,
-                            marginRight: 6,
-                            marginLeft: 6,
-                            boxShadow: expandedDayRow[weekKey] === dayKey ? `0 1px 4px ${accent}44` : 'none',
+                            minHeight: 44,
+                            height: 44,
+                            position: 'relative',
                             cursor: 'pointer',
-                            transition: 'all 0.2s',
-                            outline: 'none',
+                            overflow: 'hidden',
+                            padding: '0 8px',
+                            borderRadius: 7,
                           }}
-                          tabIndex={0}
-                          aria-label={expandedDayRow[weekKey] === dayKey ? `Hide details for ${dayKey}` : `Show details for ${dayKey}`}
-                          onClick={e => {
-                            e.stopPropagation();
+                          onClick={() => {
                             setExpandedDayRow(row => ({ ...row, [weekKey]: row[weekKey] === dayKey ? null : dayKey }));
                           }}
+                          onMouseEnter={e => e.currentTarget.style.background = '#f6f9fc'}
+                          onMouseLeave={e => e.currentTarget.style.background = '#fff'}
                         >
-                          {expandedDayRow[weekKey] === dayKey ? (
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="18 15 12 9 6 15" /></svg>
-                          ) : (
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke={accent} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
-                          )}
-                        </button>
-                      </div>
-                      {/* Expanded details inline below the day row, within the week card */}
-                      {expandedDayRow[weekKey] === dayKey && dayData && (
-                        <div style={{
-                          width: 'calc(100% - 16px)',
-                          margin: '0 8px 10px 8px',
-                          background: '#f8f9fa',
-                          borderRadius: 8,
-                          boxShadow: `0 1px 4px ${accent}22`,
-                          border: `1px solid ${accent}`,
-                          padding: '14px 16px',
-                          color: '#222',
-                          fontSize: 14,
-                          fontWeight: 500,
-                          position: 'relative',
-                          zIndex: 1,
-                          animation: 'fadeIn 0.2s',
-                        }}>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
-                            <div style={{ color: accent, fontWeight: 800, fontSize: 15 }}>{weekKey.replace('_', ' ').toUpperCase()} - {dayKey.charAt(0).toUpperCase() + dayKey.slice(1)}</div>
-                            <span style={{ fontSize: 15, marginLeft: 4 }} title="Smart Helper">🤖</span>
+                          {/* Day name */}
+                          <div style={{
+                            minWidth: 80,
+                            fontWeight: 700,
+                            fontSize: 15,
+                            color: accent,
+                            textAlign: 'left',
+                            padding: '0 10px',
+                            letterSpacing: 1,
+                            flexShrink: 0,
+                          }}>{dayKey.charAt(0).toUpperCase() + dayKey.slice(1)}</div>
+                          {/* Topic/title and Smart Helper */}
+                          <div style={{
+                            flex: 1,
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 10,
+                            fontSize: 14,
+                            fontWeight: 500,
+                            color: '#222',
+                            overflow: 'hidden',
+                            whiteSpace: 'nowrap',
+                            textOverflow: 'ellipsis',
+                          }}>
+                            {dayData ? (
+                              <>
+                                <span style={{ fontWeight: 600 }}>{dayData.topic}</span>
+                                <span style={{ fontSize: 16, marginLeft: 4 }} title="Smart Helper">🤖</span>
+                              </>
+                            ) : (
+                              <span style={{ color: '#bbb', fontStyle: 'italic' }}>No activities planned</span>
+                            )}
                           </div>
-                          <div style={{ color: accent, fontWeight: 700, fontSize: 14, marginBottom: 8 }}>{dayData.topic}</div>
-                          <div style={{ marginBottom: 6 }}><span style={{ color: '#6a4c93', fontWeight: 600 }}>📚 Subject:</span> <span style={{ color: '#222', marginLeft: 6 }}>{dayData.subject}</span></div>
-                          <div style={{ marginBottom: 6 }}><span style={{ color: '#6a4c93', fontWeight: 600 }}>🎯 Learning Objective:</span> <span style={{ color: '#222', marginLeft: 6 }}>{dayData.objective}</span></div>
-                          <div style={{ marginBottom: 6 }}><span style={{ color: '#6a4c93', fontWeight: 600 }}>⏱️ Duration:</span> <span style={{ color: '#222', marginLeft: 6 }}>{dayData.duration}</span></div>
-                          <div style={{ marginBottom: 6 }}><span style={{ color: '#6a4c93', fontWeight: 600 }}>📊 Difficulty:</span> <span style={{ color: '#222', marginLeft: 6 }}>{dayData.difficulty}</span></div>
-                          <div style={{ marginBottom: 6 }}><span style={{ color: '#6a4c93', fontWeight: 600 }}>📦 Materials:</span> <span style={{ color: '#222', marginLeft: 6 }}>{dayData.materials}</span></div>
-                          <div style={{ background: '#f0f8ff', borderRadius: 6, padding: '8px 10px', marginBottom: 6, border: `1px solid ${accent}` }}>
-                            <div style={{ color: '#264653', fontWeight: 700, marginBottom: 3, fontSize: 13 }}>🎯 Primary Activity</div>
-                            <div style={{ color: '#222', fontSize: 13 }}>{dayData.primaryActivity}</div>
-                          </div>
-                          {dayData.secondaryActivity && (
-                            <div style={{ background: '#f3e5f5', borderRadius: 6, padding: '8px 10px', border: `1px solid ${accent}` }}>
-                              <div style={{ color: '#8e24aa', fontWeight: 700, marginBottom: 3, fontSize: 13 }}>🔄 Secondary Activity</div>
-                              <div style={{ color: '#222', fontSize: 13 }}>{dayData.secondaryActivity}</div>
-                            </div>
-                          )}
+                          {/* Expand/View Button */}
+                          <button
+                            style={{
+                              background: expandedDayRow[weekKey] === dayKey ? accent : '#f3f0fa',
+                              color: expandedDayRow[weekKey] === dayKey ? '#fff' : accent,
+                              border: 'none',
+                              borderRadius: '50%',
+                              width: 26,
+                              height: 26,
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              fontSize: 15,
+                              marginRight: 6,
+                              marginLeft: 6,
+                              boxShadow: expandedDayRow[weekKey] === dayKey ? `0 1px 4px ${accent}44` : 'none',
+                              cursor: 'pointer',
+                              transition: 'all 0.2s',
+                              outline: 'none',
+                            }}
+                            tabIndex={0}
+                            aria-label={expandedDayRow[weekKey] === dayKey ? `Hide details for ${dayKey}` : `Show details for ${dayKey}`}
+                            onClick={e => {
+                              e.stopPropagation();
+                              setExpandedDayRow(row => ({ ...row, [weekKey]: row[weekKey] === dayKey ? null : dayKey }));
+                            }}
+                          >
+                            {expandedDayRow[weekKey] === dayKey ? (
+                              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="18 15 12 9 6 15" /></svg>
+                            ) : (
+                              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke={accent} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+                            )}
+                          </button>
                         </div>
-                      )}
-                    </React.Fragment>
-                  );
-                })}
+                        {/* Expanded details inline below the day row, within the week card */}
+                        {expandedDayRow[weekKey] === dayKey && dayData && (
+                          <div style={{
+                            width: 'calc(100% - 16px)',
+                            margin: '0 8px 10px 8px',
+                            background: '#f8f9fa',
+                            borderRadius: 8,
+                            boxShadow: `0 1px 4px ${accent}22`,
+                            border: `1px solid ${accent}`,
+                            padding: '14px 16px',
+                            color: '#222',
+                            fontSize: 14,
+                            fontWeight: 500,
+                            position: 'relative',
+                            zIndex: 1,
+                            animation: 'fadeIn 0.2s',
+                          }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
+                              <div style={{ color: accent, fontWeight: 800, fontSize: 15 }}>{weekKey.replace('_', ' ').toUpperCase()} - {dayKey.charAt(0).toUpperCase() + dayKey.slice(1)}</div>
+                              <span style={{ fontSize: 15, marginLeft: 4 }} title="Smart Helper">🤖</span>
+                            </div>
+                            <div style={{ color: accent, fontWeight: 700, fontSize: 14, marginBottom: 8 }}>{dayData.topic}</div>
+                            <div style={{ marginBottom: 6 }}><span style={{ color: '#6a4c93', fontWeight: 600 }}>📚 Subject:</span> <span style={{ color: '#222', marginLeft: 6 }}>{dayData.subject}</span></div>
+                            <div style={{ marginBottom: 6 }}><span style={{ color: '#6a4c93', fontWeight: 600 }}>🎯 Learning Objective:</span> <span style={{ color: '#222', marginLeft: 6 }}>{dayData.objective}</span></div>
+                            <div style={{ marginBottom: 6 }}><span style={{ color: '#6a4c93', fontWeight: 600 }}>⏱️ Duration:</span> <span style={{ color: '#222', marginLeft: 6 }}>{dayData.duration}</span></div>
+                            <div style={{ marginBottom: 6 }}><span style={{ color: '#6a4c93', fontWeight: 600 }}>📊 Difficulty:</span> <span style={{ color: '#222', marginLeft: 6 }}>{dayData.difficulty}</span></div>
+                            <div style={{ marginBottom: 6 }}><span style={{ color: '#6a4c93', fontWeight: 600 }}>📦 Materials:</span> <span style={{ color: '#222', marginLeft: 6 }}>{dayData.materials}</span></div>
+                            <div style={{ background: '#f0f8ff', borderRadius: 6, padding: '8px 10px', marginBottom: 6, border: `1px solid ${accent}` }}>
+                              <div style={{ color: '#264653', fontWeight: 700, marginBottom: 3, fontSize: 13 }}>🎯 Primary Activity</div>
+                              <div style={{ color: '#222', fontSize: 13 }}>{dayData.primaryActivity}</div>
+                            </div>
+                            {dayData.secondaryActivity && (
+                              <div style={{ background: '#f3e5f5', borderRadius: 6, padding: '8px 10px', border: `1px solid ${accent}` }}>
+                                <div style={{ color: '#8e24aa', fontWeight: 700, marginBottom: 3, fontSize: 13 }}>🔄 Secondary Activity</div>
+                                <div style={{ color: '#222', fontSize: 13 }}>{dayData.secondaryActivity}</div>
+                              </div>
+                            )}
+                          </div>
+                        )}
+                      </React.Fragment>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </>
       )}
     </div>
   );

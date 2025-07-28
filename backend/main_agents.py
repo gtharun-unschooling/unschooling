@@ -72,11 +72,12 @@ class ProfileAgent:
         llm_prompt = None
         llm_response = None
         tokens_used = 0
+        llm_analysis = {}
         
         if gemini_available:
             try:
                 prompt = f"""
-                Analyze this child's profile and provide comprehensive insights:
+                Analyze this child's profile and provide a parent-facing summary and actionable insights:
                 
                 Child Profile:
                 - Name: {child_name}
@@ -86,16 +87,20 @@ class ProfileAgent:
                 - Plan Type: {plan_type}
                 
                 Please provide:
-                1. **Personality Traits**: What personality traits does this child likely have based on their interests and learning style?
-                2. **Development Areas**: What developmental areas need attention for a {child_age}-year-old with these characteristics?
-                3. **Age-Appropriate Needs**: What should a {child_age}-year-old be learning/developing at this stage?
-                4. **Learning Gaps**: What might be missing from their current interests that would benefit them?
-                5. **Engagement Factors**: What motivates this child and how can we keep them engaged?
-                6. **Parent Insights**: What should parents know about their child's learning journey?
+                1. **Profile Summary**: A concise, parent-friendly summary (2-3 sentences) about the child's strengths, interests, and learning style.
+                2. **Subject Areas of Interest**: List the main subject areas or domains the child is most interested in.
+                3. **Areas for Improvement**: Bullet points on where the child could improve or benefit from additional focus.
+                4. **Suggestions**: Actionable suggestions for parents to support their child's growth.
+                5. **Rights of the Child**: A short, positive statement about the child's right to learn and grow at their own pace.
                 
-                Return a structured analysis in JSON format with these sections.
+                Return a JSON object with these keys:
+                - "profile_summary" (string)
+                - "subject_areas_of_interest" (array of strings)
+                - "areas_for_improvement" (array of strings)
+                - "suggestions" (array of strings)
+                - "rights_of_child" (string)
                 """
-                
+                llm_prompt = prompt
                 model = genai.GenerativeModel('gemini-1.5-flash')
                 response = model.generate_content(prompt)
                 llm_response = response.text.strip()
@@ -106,14 +111,13 @@ class ProfileAgent:
                     llm_used = True
                     tokens_used = 0  # Gemini doesn't always provide token count
                 except json.JSONDecodeError:
-                    # If JSON parsing fails, create structured analysis from text
+                    # If JSON parsing fails, create a fallback structure
                     llm_analysis = {
-                        "personality_traits": "Creative and curious",
-                        "development_areas": "Problem-solving and critical thinking",
-                        "age_appropriate_needs": f"Age {child_age} development milestones",
-                        "learning_gaps": "Additional skills to explore",
-                        "engagement_factors": "What motivates this child",
-                        "parent_insights": "Key insights for parents"
+                        "profile_summary": "A creative and curious child with a strong interest in learning through visual activities.",
+                        "subject_areas_of_interest": [i for i in interests],
+                        "areas_for_improvement": ["Expand interests beyond current favorites", "Develop stronger focus skills"],
+                        "suggestions": ["Encourage exploration of new topics", "Provide hands-on activities"],
+                        "rights_of_child": "Every child has the right to learn and grow at their own pace in a supportive environment."
                     }
                     llm_used = True
                 
