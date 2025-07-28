@@ -63,13 +63,22 @@ const CustomisedWeeklyPlan = () => {
     
     console.log('🔍 DEBUG - Raw plan data:', planData);
     console.log('🔍 DEBUG - Plan data keys:', Object.keys(planData));
+    console.log('🔍 DEBUG - Matched topics:', planData.matched_topics);
+    console.log('🔍 DEBUG - Profile analysis:', planData.profile_analysis);
     
     // Check if it's the new structure from backend
     if (planData.weekly_plan) {
       console.log('✅ Using backend structure (weekly_plan)');
       return {
         isNewStructure: true,
-        weeklyPlan: planData.weekly_plan
+        weeklyPlan: planData.weekly_plan,
+        matched_topics: planData.matched_topics,
+        profile_analysis: planData.profile_analysis,
+        learning_objectives: planData.learning_objectives,
+        recommended_activities: planData.recommended_activities,
+        progress_tracking: planData.progress_tracking,
+        llm_integration: planData.llm_integration,
+        agent_timings: planData.agent_timings
       };
     }
     
@@ -78,7 +87,14 @@ const CustomisedWeeklyPlan = () => {
       console.log('✅ Using old structure (weekly_learning_plan)');
       return {
         isNewStructure: false,
-        weeklyPlan: planData.weekly_learning_plan
+        weeklyPlan: planData.weekly_learning_plan,
+        matched_topics: planData.matched_topics,
+        profile_analysis: planData.profile_analysis,
+        learning_objectives: planData.learning_objectives,
+        recommended_activities: planData.recommended_activities,
+        progress_tracking: planData.progress_tracking,
+        llm_integration: planData.llm_integration,
+        agent_timings: planData.agent_timings
       };
     }
     
@@ -133,7 +149,14 @@ const CustomisedWeeklyPlan = () => {
     
     return {
       isNewStructure: false,
-      weeklyPlan: weeklyPlan
+      weeklyPlan: weeklyPlan,
+      matched_topics: flatData.matched_topics,
+      profile_analysis: flatData.profile_analysis,
+      learning_objectives: flatData.learning_objectives,
+      recommended_activities: flatData.recommended_activities,
+      progress_tracking: flatData.progress_tracking,
+      llm_integration: flatData.llm_integration,
+      agent_timings: flatData.agent_timings
     };
   };
 
@@ -695,7 +718,7 @@ const CustomisedWeeklyPlan = () => {
           )}
           
           {/* Matched Topics Section - Display below Child Profile Summary */}
-          {planData && planData.matched_topics && planData.matched_topics.length > 0 && (
+          {(processedPlanData?.matched_topics && processedPlanData.matched_topics.length > 0) || (planData?.matched_topics && planData.matched_topics.length > 0) ? (
             <div style={{
               background: '#fff',
               border: '2px solid #4caf50',
@@ -709,9 +732,22 @@ const CustomisedWeeklyPlan = () => {
             }}>
               <h2 style={{ color: '#4caf50', fontWeight: 700, fontSize: 26, marginBottom: 16 }}>🎯 Match Agent Overview - Selected Topics</h2>
               
+              {/* Debug info */}
+              <div style={{ 
+                background: '#fff3cd', 
+                border: '1px solid #ffeaa7', 
+                borderRadius: 8, 
+                padding: '12px', 
+                marginBottom: 16,
+                fontSize: 12,
+                color: '#856404'
+              }}>
+                <strong>Debug Info:</strong> Found {(processedPlanData?.matched_topics?.length || 0) + (planData?.matched_topics?.length || 0)} matched topics
+              </div>
+              
               {/* Topics List */}
               <div style={{ display: 'grid', gap: 16 }}>
-                {planData.matched_topics.map((topic, idx) => (
+                {(processedPlanData?.matched_topics || planData?.matched_topics || []).map((topic, idx) => (
                   <div key={idx} style={{
                     background: '#f8f9fa',
                     border: '1px solid #e0e0e0',
@@ -747,7 +783,7 @@ const CustomisedWeeklyPlan = () => {
                         marginBottom: 8,
                         marginLeft: 24
                       }}>
-                        {topic.Topic || topic.topic_name || `Topic ${idx + 1}`}
+                        {topic.topic_name || topic.Topic || `Topic ${idx + 1}`}
                       </h3>
                       
                       <div style={{ 
@@ -761,19 +797,19 @@ const CustomisedWeeklyPlan = () => {
                           <div style={{ marginBottom: 8 }}>
                             <strong style={{ color: '#666' }}>Niche:</strong> 
                             <span style={{ color: '#4caf50', fontWeight: 500, marginLeft: 8 }}>
-                              {topic.Niche || topic.niche || 'General'}
+                              {topic.niche || topic.Niche || 'General'}
                             </span>
                           </div>
                           <div style={{ marginBottom: 8 }}>
                             <strong style={{ color: '#666' }}>Age Range:</strong> 
                             <span style={{ color: '#666', marginLeft: 8 }}>
-                              {topic.Age || topic.age || '5-12'}
+                              {topic.age || topic.Age || '5-12'}
                             </span>
                           </div>
                           <div style={{ marginBottom: 8 }}>
                             <strong style={{ color: '#666' }}>Duration:</strong> 
                             <span style={{ color: '#666', marginLeft: 8 }}>
-                              {topic['Estimated Time'] || topic.estimated_time || '30 mins'}
+                              {topic.estimated_time || topic['Estimated Time'] || '30 mins'}
                             </span>
                           </div>
                         </div>
@@ -792,17 +828,17 @@ const CustomisedWeeklyPlan = () => {
                             borderRadius: 6,
                             border: '1px solid #e0e0e0'
                           }}>
-                            {topic.Objective || topic.objective || `Learn about ${topic.Topic || topic.topic_name || 'this topic'}`}
+                            {topic.objective || topic.Objective || `Learn about ${topic.topic_name || topic.Topic || 'this topic'}`}
                           </div>
                         </div>
                       </div>
                       
                       {/* Activities Preview */}
-                      {(topic['Activity 1'] || topic['Activity 2'] || topic.activity_1 || topic.activity_2) && (
+                      {(topic.activity_1 || topic.activity_2 || topic['Activity 1'] || topic['Activity 2']) && (
                         <div style={{ marginTop: 12, marginLeft: 24 }}>
                           <strong style={{ color: '#666' }}>Activities Preview:</strong>
                           <div style={{ marginTop: 4 }}>
-                            {(topic['Activity 1'] || topic.activity_1) && (
+                            {(topic.activity_1 || topic['Activity 1']) && (
                               <div style={{ 
                                 color: '#555', 
                                 fontSize: 13, 
@@ -811,10 +847,10 @@ const CustomisedWeeklyPlan = () => {
                                 background: '#f0f8f0',
                                 borderRadius: 4
                               }}>
-                                <strong>Activity 1:</strong> {(topic['Activity 1'] || topic.activity_1).substring(0, 100)}...
+                                <strong>Activity 1:</strong> {(topic.activity_1 || topic['Activity 1']).substring(0, 100)}...
                               </div>
                             )}
-                            {(topic['Activity 2'] || topic.activity_2) && (
+                            {(topic.activity_2 || topic['Activity 2']) && (
                               <div style={{ 
                                 color: '#555', 
                                 fontSize: 13,
@@ -822,7 +858,7 @@ const CustomisedWeeklyPlan = () => {
                                 background: '#f0f8f0',
                                 borderRadius: 4
                               }}>
-                                <strong>Activity 2:</strong> {(topic['Activity 2'] || topic.activity_2).substring(0, 100)}...
+                                <strong>Activity 2:</strong> {(topic.activity_2 || topic['Activity 2']).substring(0, 100)}...
                               </div>
                             )}
                           </div>
@@ -865,6 +901,38 @@ const CustomisedWeeklyPlan = () => {
                   </div>
                 </div>
               )}
+            </div>
+          ) : (
+            <div style={{
+              background: '#fff3cd',
+              border: '1px solid #ffeaa7',
+              borderRadius: 16,
+              padding: '28px 32px',
+              marginBottom: 40,
+              maxWidth: 900,
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}>
+              <h2 style={{ color: '#856404', fontWeight: 700, fontSize: 26, marginBottom: 16 }}>⚠️ No Matched Topics Found</h2>
+              <p style={{ color: '#856404', fontSize: 16 }}>
+                The Match Agent didn't find any specific topics for this child. This could be because:
+              </p>
+              <ul style={{ color: '#856404', fontSize: 14, marginTop: 8, marginLeft: 20 }}>
+                <li>The child's interests don't match available topics</li>
+                <li>The plan was generated using a fallback method</li>
+                <li>There was an issue with the topic matching process</li>
+              </ul>
+              <div style={{ 
+                marginTop: 16, 
+                padding: '12px', 
+                background: '#fff', 
+                borderRadius: 8,
+                fontSize: 12,
+                color: '#666'
+              }}>
+                <strong>Debug Info:</strong> planData.matched_topics = {JSON.stringify(planData?.matched_topics)}, 
+                processedPlanData.matched_topics = {JSON.stringify(processedPlanData?.matched_topics)}
+              </div>
             </div>
           )}
           
