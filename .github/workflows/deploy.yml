@@ -60,8 +60,8 @@ jobs:
         # Setup service account with proper JSON handling
         echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' | base64 -d > temp-service-account.json
         
-        # Fix private key formatting by converting \n to actual newlines
-        cat temp-service-account.json | sed 's/\\n/\n/g' > firebase-service-account.json
+        # Use jq to properly format the JSON and fix private key
+        jq -r '.private_key |= gsub("\\\\n"; "\n")' temp-service-account.json > firebase-service-account.json
         rm temp-service-account.json
         
         export GOOGLE_APPLICATION_CREDENTIALS="$(pwd)/firebase-service-account.json"
