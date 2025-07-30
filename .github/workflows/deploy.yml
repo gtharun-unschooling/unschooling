@@ -54,12 +54,16 @@ jobs:
         curl -sSL https://sdk.cloud.google.com | bash
         echo "$HOME/google-cloud-sdk/bin" >> $GITHUB_PATH
         
-        # Setup service account
-        cat > firebase-service-account.json << 'EOF'
-        ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-        EOF
+        # Install jq for JSON validation
+        sudo apt-get update && sudo apt-get install -y jq
+        
+        # Setup service account with proper JSON handling
+        echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' | base64 -d > firebase-service-account.json
         export GOOGLE_APPLICATION_CREDENTIALS="$(pwd)/firebase-service-account.json"
         echo "GOOGLE_APPLICATION_CREDENTIALS=$(pwd)/firebase-service-account.json" >> $GITHUB_ENV
+        
+        # Verify JSON is valid
+        cat firebase-service-account.json | jq .
         
         # Authenticate with service account
         gcloud auth activate-service-account --key-file=firebase-service-account.json
