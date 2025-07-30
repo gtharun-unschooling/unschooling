@@ -22,6 +22,8 @@ const CustomisedWeeklyPlan = () => {
       console.log('🔍 DEBUG - Location state keys:', Object.keys(location.state.data));
       console.log('🔍 DEBUG - Location state matched_topics:', location.state.data.matched_topics);
       console.log('🔍 DEBUG - Location state data type:', typeof location.state.data);
+      console.log('🔍 DEBUG - Location state data.data:', location.state.data.data);
+      console.log('🔍 DEBUG - Location state data.data?.matched_topics:', location.state.data.data?.matched_topics);
       
       setPlans({ [location.state.data.month || 'Current']: location.state.data });
       setSelectedMonth(location.state.data.month || 'Current');

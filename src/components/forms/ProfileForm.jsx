@@ -567,6 +567,11 @@ export default function ProfileForm({ onSubmit }) {
           if (res.success) {
             console.log('✅ PLAN GENERATION SUCCESSFUL');
             addDebugInfo('✅ PLAN GENERATION SUCCESSFUL');
+            console.log('🔍 DEBUG - Full API response:', res);
+            console.log('🔍 DEBUG - res.data:', res.data);
+            console.log('🔍 DEBUG - res.data keys:', Object.keys(res.data));
+            console.log('🔍 DEBUG - res.data.matched_topics:', res.data.matched_topics);
+            
             // Save plan to Firestore under 'plans' field keyed by month
             const currentDate = new Date();
             const monthYear = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' }).replace(/ /g, ''); // e.g., July2025
@@ -601,6 +606,7 @@ export default function ProfileForm({ onSubmit }) {
             // Navigate after showing success message
             setTimeout(() => {
               console.log('🚀 NAVIGATING TO PLAN PAGE...');
+              console.log('🔍 DEBUG - Navigation state data:', res.data);
               navigate("/customised-weekly-plan", { 
                 state: { 
                   data: res.data, 
