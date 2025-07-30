@@ -57,11 +57,18 @@ jobs:
         # Install jq for JSON validation
         sudo apt-get update && sudo apt-get install -y jq
         
-        # Setup service account with proper JSON handling
+        # Setup service account with proper JSON handling using Python
         echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' | base64 -d > temp-service-account.json
         
-        # Use awk to properly format the private key
-        awk '{gsub(/\\n/, "\n"); print}' temp-service-account.json > firebase-service-account.json
+        # Use Python to properly format the JSON
+        python3 -c "
+        import json
+        with open('temp-service-account.json', 'r') as f:
+            data = json.load(f)
+        data['private_key'] = data['private_key'].replace('\\\\n', '\n')
+        with open('firebase-service-account.json', 'w') as f:
+            json.dump(data, f, indent=2)
+        "
         rm temp-service-account.json
         
         export GOOGLE_APPLICATION_CREDENTIALS="$(pwd)/firebase-service-account.json"
