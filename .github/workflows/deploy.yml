@@ -48,9 +48,15 @@ jobs:
         which node
         which npm
         
+    - name: Setup Firebase Service Account
+      run: |
+        echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > firebase-service-account.json
+        export GOOGLE_APPLICATION_CREDENTIALS="$(pwd)/firebase-service-account.json"
+        
     - name: Deploy to Firebase Hosting
       run: |
         npm install -g firebase-tools@latest
-        firebase deploy --only hosting --project unschooling-464413 --token "${{ secrets.FIREBASE_TOKEN }}"
+        export GOOGLE_APPLICATION_CREDENTIALS="$(pwd)/firebase-service-account.json"
+        firebase deploy --only hosting --project unschooling-464413
       env:
         NODE_OPTIONS: "--max-old-space-size=4096" 
