@@ -58,7 +58,12 @@ jobs:
         sudo apt-get update && sudo apt-get install -y jq
         
         # Setup service account with proper JSON handling
-        echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' | base64 -d > firebase-service-account.json
+        echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' | base64 -d > temp-service-account.json
+        
+        # Fix private key formatting by converting \n to actual newlines
+        cat temp-service-account.json | sed 's/\\n/\n/g' > firebase-service-account.json
+        rm temp-service-account.json
+        
         export GOOGLE_APPLICATION_CREDENTIALS="$(pwd)/firebase-service-account.json"
         echo "GOOGLE_APPLICATION_CREDENTIALS=$(pwd)/firebase-service-account.json" >> $GITHUB_ENV
         
