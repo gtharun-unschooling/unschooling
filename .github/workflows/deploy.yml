@@ -50,7 +50,9 @@ jobs:
         
     - name: Setup Firebase Service Account
       run: |
-        echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > firebase-service-account.json
+        cat > firebase-service-account.json << 'EOF'
+        ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        EOF
         echo "GOOGLE_APPLICATION_CREDENTIALS=$(pwd)/firebase-service-account.json" >> $GITHUB_ENV
         ls -la firebase-service-account.json
         head -3 firebase-service-account.json
