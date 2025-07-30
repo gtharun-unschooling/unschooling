@@ -48,22 +48,18 @@ jobs:
         which node
         which npm
         
-    - name: Setup Firebase Service Account
+    - name: Setup Firebase Service Account (for future backend operations)
       run: |
         cat > firebase-service-account.json << 'EOF'
         ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         EOF
         echo "GOOGLE_APPLICATION_CREDENTIALS=$(pwd)/firebase-service-account.json" >> $GITHUB_ENV
-        ls -la firebase-service-account.json
-        head -3 firebase-service-account.json
+        echo "✅ Service account configured for backend operations"
         
-    - name: Deploy to Firebase Hosting
+    - name: Deploy to Firebase Hosting (using token)
       run: |
         npm install -g firebase-tools@latest
-        echo "Service account path: $GOOGLE_APPLICATION_CREDENTIALS"
-        ls -la "$GOOGLE_APPLICATION_CREDENTIALS"
-        firebase use unschooling-464413
-        firebase deploy --only hosting
+        echo "🚀 Deploying frontend using Firebase token..."
+        firebase deploy --only hosting --project unschooling-464413 --token "${{ secrets.FIREBASE_TOKEN }}"
       env:
-        NODE_OPTIONS: "--max-old-space-size=4096"
-        GOOGLE_APPLICATION_CREDENTIALS: ${{ github.workspace }}/firebase-service-account.json 
+        NODE_OPTIONS: "--max-old-space-size=4096" 
