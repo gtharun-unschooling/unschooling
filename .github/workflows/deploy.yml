@@ -57,11 +57,16 @@ jobs:
         # Install jq for JSON validation
         sudo apt-get update && sudo apt-get install -y jq
         
-        # Setup service account with proper JSON handling
+        # Setup service account with proper JSON handling using Node.js
         echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' | base64 -d > temp-service-account.json
         
-        # Fix private key formatting by converting \n to actual newlines
-        cat temp-service-account.json | tr -d '\r' | sed 's/\\n/\n/g' > firebase-service-account.json
+        # Use Node.js to properly format the JSON
+        node -e "
+        const fs = require('fs');
+        const data = JSON.parse(fs.readFileSync('temp-service-account.json', 'utf8'));
+        data.private_key = data.private_key.replace(/\\\\n/g, '\n');
+        fs.writeFileSync('firebase-service-account.json', JSON.stringify(data, null, 2));
+        "
         rm temp-service-account.json
         
         export GOOGLE_APPLICATION_CREDENTIALS="$(pwd)/firebase-service-account.json"
