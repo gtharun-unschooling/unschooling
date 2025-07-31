@@ -545,6 +545,114 @@ const CustomisedWeeklyPlan = () => {
         </div>
       </div>
 
+      {/* Match Agent Overview Section */}
+      {planData && planData.matched_topics && planData.matched_topics.length > 0 && (
+        <div style={{
+          background: '#fff',
+          border: '2px solid #4caf50',
+          borderRadius: 16,
+          padding: '28px 32px',
+          marginBottom: 40,
+          boxShadow: '0 4px 16px #4caf5022',
+          maxWidth: 900,
+          marginLeft: 'auto',
+          marginRight: 'auto',
+        }}>
+          <h2 style={{ color: '#4caf50', fontWeight: 700, fontSize: 26, marginBottom: 16 }}>🎯 Match Agent Overview - Selected Topics</h2>
+          
+          {/* Topics List */}
+          <div style={{ display: 'grid', gap: 16 }}>
+            {planData.matched_topics.map((topic, idx) => (
+              <div key={idx} style={{
+                background: '#f8f9fa',
+                border: '1px solid #e0e0e0',
+                borderRadius: 12,
+                padding: '20px',
+                position: 'relative',
+              }}>
+                {/* Topic Number Badge */}
+                <div style={{
+                  position: 'absolute',
+                  top: -8,
+                  left: 16,
+                  background: '#4caf50',
+                  color: 'white',
+                  borderRadius: '50%',
+                  width: 32,
+                  height: 32,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: 14,
+                  fontWeight: 'bold',
+                }}>
+                  {idx + 1}
+                </div>
+                
+                {/* Topic Content */}
+                <div style={{ marginTop: 8 }}>
+                  <h3 style={{ 
+                    color: '#2e7d32', 
+                    fontSize: 20, 
+                    fontWeight: 600, 
+                    marginBottom: 8,
+                    marginLeft: 24
+                  }}>
+                    {topic.topic_name || topic.Topic || `Topic ${idx + 1}`}
+                  </h3>
+                  
+                  <div style={{ 
+                    display: 'grid', 
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
+                    gap: 16,
+                    marginLeft: 24
+                  }}>
+                    {/* Basic Info */}
+                    <div>
+                      <div style={{ marginBottom: 8 }}>
+                        <strong style={{ color: '#666' }}>Niche:</strong> 
+                        <span style={{ color: '#4caf50', fontWeight: 500, marginLeft: 8 }}>
+                          {topic.niche || topic.Niche || 'General'}
+                        </span>
+                      </div>
+                      
+                      <div style={{ marginBottom: 8 }}>
+                        <strong style={{ color: '#666' }}>Age Range:</strong> 
+                        <span style={{ color: '#2196f3', fontWeight: 500, marginLeft: 8 }}>
+                          {topic.age || topic.Age || '3-4 years'}
+                        </span>
+                      </div>
+                      
+                      <div style={{ marginBottom: 8 }}>
+                        <strong style={{ color: '#666' }}>Duration:</strong> 
+                        <span style={{ color: '#ff9800', fontWeight: 500, marginLeft: 8 }}>
+                          {topic.estimated_time || topic['Estimated Time'] || '20-30 mins'}
+                        </span>
+                      </div>
+                    </div>
+                    
+                    {/* Objective */}
+                    <div>
+                      <div style={{ marginBottom: 8 }}>
+                        <strong style={{ color: '#666' }}>Objective:</strong>
+                      </div>
+                      <p style={{ 
+                        color: '#555', 
+                        fontSize: 14, 
+                        lineHeight: 1.4,
+                        margin: 0
+                      }}>
+                        {topic.objective || topic.Objective || 'Learn and explore this topic through hands-on activities.'}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* For Owner Purpose Section */}
       {planData && (planData.llm_integration || planData.agent_timings || location.state?.llm_integration || location.state?.agent_timings) && (
         <div style={{
