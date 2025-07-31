@@ -16,19 +16,29 @@ let nichesData = null;
 // Function to load data files
 const loadDataFiles = async () => {
   try {
+    console.log('📁 Loading data files...');
+    
     // Load topics data
     const topicsResponse = await fetch('/topicsdata.json');
+    console.log('📊 Topics response status:', topicsResponse.status);
     if (topicsResponse.ok) {
       topicsData = await topicsResponse.json();
+      console.log('✅ Topics data loaded:', topicsData ? `${topicsData.length} topics` : 'No data');
+    } else {
+      console.error('❌ Failed to load topics data:', topicsResponse.status);
     }
     
     // Load niches data
     const nichesResponse = await fetch('/nichesdata.json');
+    console.log('📊 Niches response status:', nichesResponse.status);
     if (nichesResponse.ok) {
       nichesData = await nichesResponse.json();
+      console.log('✅ Niches data loaded:', nichesData ? `${nichesData.length} niches` : 'No data');
+    } else {
+      console.error('❌ Failed to load niches data:', nichesResponse.status);
     }
   } catch (error) {
-    console.warn('Could not load data files:', error);
+    console.error('❌ Could not load data files:', error);
   }
 };
 
@@ -52,6 +62,10 @@ const generateEnhancedPlan = (profile) => {
   
   // Find matching topics from the data
   let matched_topics = [];
+  
+  // Always create topics based on interests, regardless of data file availability
+  console.log('🔍 ENHANCED PLAN - CREATING TOPICS FOR INTERESTS:', interests);
+  
   if (topicsData && interests.length > 0) {
     console.log('🔍 ENHANCED PLAN - SEARCHING FOR MATCHING TOPICS...');
     console.log('   Available niches in topics data:', [...new Set(topicsData.map(t => t.Niche))]);
@@ -88,10 +102,10 @@ const generateEnhancedPlan = (profile) => {
       }
     }
     console.log(`📋 ENHANCED PLAN TOTAL MATCHED TOPICS: ${matched_topics.length}`);
-    console.log('   Selected topics:', matched_topics.map(t => `${t.Topic} (${t.Niche})`));
+    console.log('   Selected topics:', matched_topics.map(t => `${t.topic_name} (${t.niche})`));
   }
   
-  // If no matches found, create generic topics
+  // If no matches found from data files, create generic topics
   if (matched_topics.length === 0) {
     console.log('⚠️ ENHANCED PLAN - NO MATCHES FOUND, CREATING GENERIC TOPICS');
     matched_topics = interests.map(interest => ({
@@ -104,6 +118,21 @@ const generateEnhancedPlan = (profile) => {
       "Activity 2": `Create a project related to ${interest}`
     }));
     console.log('   Created generic topics:', matched_topics.map(t => t.topic_name));
+  }
+  
+  // Ensure we always have at least one topic per interest
+  if (matched_topics.length === 0 && interests.length > 0) {
+    console.log('🛡️ ENHANCED PLAN - FALLBACK: Creating topics for all interests');
+    matched_topics = interests.map(interest => ({
+      topic_name: `Introduction to ${interest}`,
+      niche: interest,
+      age: `${child_age}-${child_age + 2}`,
+      objective: `Learn the basics of ${interest} through fun activities`,
+      estimated_time: "20-30 mins",
+      "Activity 1": `Explore ${interest} through hands-on activities`,
+      "Activity 2": `Create a project related to ${interest}`
+    }));
+    console.log('   Created fallback topics:', matched_topics.map(t => t.topic_name));
   }
   
   // Create weekly plan based on matched topics
