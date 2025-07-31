@@ -661,16 +661,14 @@ export default function ProfileForm({ onSubmit }) {
           }
           
           setShowSuccessMessage(true);
-          setTimeout(() => {
-            console.log('🚀 NAVIGATING TO PLAN PAGE (ENHANCED)...');
-            navigate("/customised-weekly-plan", { 
-              state: { 
-                data: enhancedPlan, 
-                childName,
-                childMonths: months
-              } 
-            });
-          }, 1000); // Reduced timeout to 1 second
+          console.log('🚀 NAVIGATING TO PLAN PAGE (ENHANCED)...');
+          navigate("/customised-weekly-plan", { 
+            state: { 
+              data: enhancedPlan, 
+              childName,
+              childMonths: months
+            } 
+          });
         }
       } else {
         // This is an existing profile - generate a new plan anyway
@@ -713,16 +711,14 @@ export default function ProfileForm({ onSubmit }) {
             addDebugInfo('✅ Plan and months saved to Firebase for existing profile');
             
             setShowSuccessMessage(true);
-            setTimeout(() => {
-              console.log('🚀 NAVIGATING TO PLAN PAGE (EXISTING PROFILE)...');
-              navigate("/customised-weekly-plan", { 
-                state: { 
-                  data: res.data, 
-                  childName,
-                  childMonths: months
-                } 
-              });
-            }, 1000); // Reduced timeout to 1 second
+            console.log('🚀 NAVIGATING TO PLAN PAGE (EXISTING PROFILE)...');
+            navigate("/customised-weekly-plan", { 
+              state: { 
+                data: res.data, 
+                childName,
+                childMonths: months
+              } 
+            });
           } else {
             throw new Error(res.message || "Failed to generate plan");
           }
