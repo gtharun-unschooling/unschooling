@@ -60,12 +60,8 @@ const generateEnhancedPlan = (profile) => {
   console.log('   Topics Data Available:', topicsData ? `${topicsData.length} topics` : 'No data');
   console.log('   Niches Data Available:', nichesData ? `${nichesData.length} niches` : 'No data');
   
-  // Find matching topics from the data
+  // Find matching topics from the data (simple fallback only)
   let matched_topics = [];
-  
-  // Always create topics based on interests, regardless of data file availability
-  console.log('🔍 ENHANCED PLAN - CREATING TOPICS FOR INTERESTS:', interests);
-  
   if (topicsData && interests.length > 0) {
     console.log('🔍 ENHANCED PLAN - SEARCHING FOR MATCHING TOPICS...');
     console.log('   Available niches in topics data:', [...new Set(topicsData.map(t => t.Niche))]);
@@ -105,7 +101,7 @@ const generateEnhancedPlan = (profile) => {
     console.log('   Selected topics:', matched_topics.map(t => `${t.topic_name} (${t.niche})`));
   }
   
-  // If no matches found from data files, create generic topics
+  // If no matches found, create generic topics
   if (matched_topics.length === 0) {
     console.log('⚠️ ENHANCED PLAN - NO MATCHES FOUND, CREATING GENERIC TOPICS');
     matched_topics = interests.map(interest => ({
@@ -118,21 +114,6 @@ const generateEnhancedPlan = (profile) => {
       "Activity 2": `Create a project related to ${interest}`
     }));
     console.log('   Created generic topics:', matched_topics.map(t => t.topic_name));
-  }
-  
-  // Ensure we always have at least one topic per interest
-  if (matched_topics.length === 0 && interests.length > 0) {
-    console.log('🛡️ ENHANCED PLAN - FALLBACK: Creating topics for all interests');
-    matched_topics = interests.map(interest => ({
-      topic_name: `Introduction to ${interest}`,
-      niche: interest,
-      age: `${child_age}-${child_age + 2}`,
-      objective: `Learn the basics of ${interest} through fun activities`,
-      estimated_time: "20-30 mins",
-      "Activity 1": `Explore ${interest} through hands-on activities`,
-      "Activity 2": `Create a project related to ${interest}`
-    }));
-    console.log('   Created fallback topics:', matched_topics.map(t => t.topic_name));
   }
   
   // Create weekly plan based on matched topics
