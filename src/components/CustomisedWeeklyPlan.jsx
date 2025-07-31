@@ -981,9 +981,17 @@ const CustomisedWeeklyPlan = () => {
                 }}>
                   <strong>Debug Info:</strong> Found {(processedPlanData?.matched_topics?.length || 0) + (planData?.matched_topics?.length || 0)} matched topics
                   <br />
+                  <strong>Processed Topics Length:</strong> {processedPlanData?.matched_topics?.length || 0}
+                  <br />
+                  <strong>Plan Topics Length:</strong> {planData?.matched_topics?.length || 0}
+                  <br />
                   <strong>Processed Topics:</strong> {JSON.stringify(processedPlanData?.matched_topics?.slice(0, 2))}
                   <br />
                   <strong>Plan Topics:</strong> {JSON.stringify(planData?.matched_topics?.slice(0, 2))}
+                  <br />
+                  <strong>hasProcessedTopics:</strong> {hasProcessedTopics ? 'true' : 'false'}
+                  <br />
+                  <strong>hasPlanTopics:</strong> {hasPlanTopics ? 'true' : 'false'}
                 </div>
                 
                 {/* Topics List */}

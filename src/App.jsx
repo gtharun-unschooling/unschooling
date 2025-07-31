@@ -15,6 +15,7 @@ function GlobalDebugBox() {
   const boxRef = useRef(null);
   const [position, setPosition] = useState({ top: 10, right: 10 });
   const [dragging, setDragging] = useState(false);
+  const [minimized, setMinimized] = useState(false);
   const [rel, setRel] = useState({ x: 0, y: 0 });
 
   // Mouse event handlers for dragging
@@ -59,8 +60,8 @@ function GlobalDebugBox() {
         position: 'fixed',
         top: position.top,
         right: position.right,
-        width: '400px',
-        maxHeight: '40vh',
+        width: minimized ? '200px' : '400px',
+        maxHeight: minimized ? '60px' : '40vh',
         backgroundColor: 'rgba(0, 0, 0, 0.9)',
         color: 'white',
         padding: '15px',
@@ -72,6 +73,7 @@ function GlobalDebugBox() {
         boxShadow: '0 4px 16px #00000040',
         cursor: dragging ? 'grabbing' : 'default',
         userSelect: 'none',
+        transition: 'all 0.3s ease',
       }}
       onMouseDown={onMouseDown}
     >
@@ -86,11 +88,34 @@ function GlobalDebugBox() {
           borderTopRightRadius: 8,
           fontWeight: 600,
           color: '#4ECDC4',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
         }}
       >
-        🔍 DEBUG INFO (drag me) - v1.2.0
+        <span>🔍 DEBUG INFO (drag me) - v1.2.0</span>
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            setMinimized(!minimized);
+          }}
+          style={{
+            background: 'none',
+            border: 'none',
+            color: '#4ECDC4',
+            cursor: 'pointer',
+            fontSize: '16px',
+            padding: '0 8px',
+            borderRadius: '4px',
+            transition: 'background-color 0.2s',
+          }}
+          onMouseEnter={(e) => e.target.style.backgroundColor = 'rgba(78, 205, 196, 0.2)'}
+          onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}
+        >
+          {minimized ? '🔽' : '🔼'}
+        </button>
       </div>
-      <pre style={{ margin: 0, whiteSpace: 'pre-wrap' }}>{debugInfo}</pre>
+      {!minimized && <pre style={{ margin: 0, whiteSpace: 'pre-wrap' }}>{debugInfo}</pre>}
     </div>
   );
 }
