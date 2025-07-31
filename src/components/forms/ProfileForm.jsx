@@ -60,6 +60,12 @@ const generateEnhancedPlan = (profile) => {
   console.log('   Topics Data Available:', topicsData ? `${topicsData.length} topics` : 'No data');
   console.log('   Niches Data Available:', nichesData ? `${nichesData.length} niches` : 'No data');
   
+  // Debug topics data structure
+  if (topicsData && topicsData.length > 0) {
+    console.log('📋 Sample topics data:', topicsData.slice(0, 2));
+    console.log('🏷️ Available niches:', [...new Set(topicsData.map(t => t.Niche))]);
+  }
+  
   // Find matching topics from the data (simple fallback only)
   let matched_topics = [];
   if (topicsData && interests.length > 0) {
@@ -305,6 +311,16 @@ export default function ProfileForm({ onSubmit }) {
     loadDataFiles();
     // Load existing children
     loadChildren();
+    
+    // Test data loading after a delay
+    setTimeout(() => {
+      console.log('🧪 Testing data files after 3 seconds...');
+      console.log('📊 Topics data loaded:', topicsData ? `${topicsData.length} topics` : 'No data');
+      console.log('📊 Niches data loaded:', nichesData ? `${nichesData.length} niches` : 'No data');
+      if (topicsData && topicsData.length > 0) {
+        console.log('📋 Sample topics:', topicsData.slice(0, 2));
+      }
+    }, 3000);
   }, [user, loading, error]);
 
   // Load existing children from Firebase
@@ -858,27 +874,67 @@ export default function ProfileForm({ onSubmit }) {
             months.push(monthYear);
           }
           
-          // Sanitize the data to remove any invalid nested entities for Firebase
+          // Robust sanitization function for Firebase
+          const sanitizeForFirebase = (obj) => {
+            if (obj === null || obj === undefined) return null;
+            if (typeof obj === 'string' || typeof obj === 'number' || typeof obj === 'boolean') return obj;
+            if (Array.isArray(obj)) {
+              return obj.map(item => sanitizeForFirebase(item)).filter(item => item !== null);
+            }
+            if (typeof obj === 'object') {
+              const sanitized = {};
+              for (const [key, value] of Object.entries(obj)) {
+                // Skip functions and undefined values
+                if (typeof value === 'function' || value === undefined) continue;
+                // Skip keys that start with underscore (private properties)
+                if (key.startsWith('_')) continue;
+                const sanitizedValue = sanitizeForFirebase(value);
+                if (sanitizedValue !== null) {
+                  sanitized[key] = sanitizedValue;
+                }
+              }
+              return sanitized;
+            }
+            return null;
+          };
+
           const sanitizedPlans = {};
           Object.keys(newPlans).forEach(key => {
             const plan = newPlans[key];
-            // Convert to JSON and back to remove any non-serializable objects
             try {
-              sanitizedPlans[key] = JSON.parse(JSON.stringify(plan));
+              // Deep sanitization
+              const sanitizedPlan = sanitizeForFirebase(plan);
+              if (sanitizedPlan) {
+                sanitizedPlans[key] = sanitizedPlan;
+              } else {
+                // Fallback to minimal structure
+                sanitizedPlans[key] = {
+                  child_profile: {},
+                  profile_analysis: {},
+                  matched_topics: [],
+                  weekly_plan: {},
+                  learning_objectives: [],
+                  recommended_activities: [],
+                  progress_tracking: {},
+                  review_insights: {},
+                  llm_integration: {},
+                  agent_timings: {}
+                };
+              }
             } catch (error) {
-              console.warn('Failed to sanitize plan for key:', key, error);
-              // If sanitization fails, create a minimal version
+              console.error('Failed to sanitize plan for key:', key, error);
+              // Ultimate fallback
               sanitizedPlans[key] = {
-                child_profile: plan.child_profile || {},
-                profile_analysis: plan.profile_analysis || {},
-                matched_topics: plan.matched_topics || [],
-                weekly_plan: plan.weekly_plan || {},
-                learning_objectives: plan.learning_objectives || [],
-                recommended_activities: plan.recommended_activities || [],
-                progress_tracking: plan.progress_tracking || {},
-                review_insights: plan.review_insights || {},
-                llm_integration: plan.llm_integration || {},
-                agent_timings: plan.agent_timings || {}
+                child_profile: {},
+                profile_analysis: {},
+                matched_topics: [],
+                weekly_plan: {},
+                learning_objectives: [],
+                recommended_activities: [],
+                progress_tracking: {},
+                review_insights: {},
+                llm_integration: {},
+                agent_timings: {}
               };
             }
           });
