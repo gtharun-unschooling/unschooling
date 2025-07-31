@@ -590,8 +590,33 @@ export default function ProfileForm({ onSubmit }) {
               months.push(monthYear);
             }
             
+            // Sanitize the data to remove any invalid nested entities for Firebase
+            const sanitizedPlans = {};
+            Object.keys(newPlans).forEach(key => {
+              const plan = newPlans[key];
+              // Convert to JSON and back to remove any non-serializable objects
+              try {
+                sanitizedPlans[key] = JSON.parse(JSON.stringify(plan));
+              } catch (error) {
+                console.warn('Failed to sanitize plan for key:', key, error);
+                // If sanitization fails, create a minimal version
+                sanitizedPlans[key] = {
+                  child_profile: plan.child_profile || {},
+                  profile_analysis: plan.profile_analysis || {},
+                  matched_topics: plan.matched_topics || [],
+                  weekly_plan: plan.weekly_plan || {},
+                  learning_objectives: plan.learning_objectives || [],
+                  recommended_activities: plan.recommended_activities || [],
+                  progress_tracking: plan.progress_tracking || {},
+                  review_insights: plan.review_insights || {},
+                  llm_integration: plan.llm_integration || {},
+                  agent_timings: plan.agent_timings || {}
+                };
+              }
+            });
+            
             await setDoc(childRef, { 
-              plans: newPlans,
+              plans: sanitizedPlans,
               months: months
             }, { merge: true });
             console.log('✅ Plan and months saved to Firebase');
@@ -703,8 +728,33 @@ export default function ProfileForm({ onSubmit }) {
               months.push(monthYear);
             }
             
+            // Sanitize the data to remove any invalid nested entities for Firebase
+            const sanitizedPlans = {};
+            Object.keys(newPlans).forEach(key => {
+              const plan = newPlans[key];
+              // Convert to JSON and back to remove any non-serializable objects
+              try {
+                sanitizedPlans[key] = JSON.parse(JSON.stringify(plan));
+              } catch (error) {
+                console.warn('Failed to sanitize plan for key:', key, error);
+                // If sanitization fails, create a minimal version
+                sanitizedPlans[key] = {
+                  child_profile: plan.child_profile || {},
+                  profile_analysis: plan.profile_analysis || {},
+                  matched_topics: plan.matched_topics || [],
+                  weekly_plan: plan.weekly_plan || {},
+                  learning_objectives: plan.learning_objectives || [],
+                  recommended_activities: plan.recommended_activities || [],
+                  progress_tracking: plan.progress_tracking || {},
+                  review_insights: plan.review_insights || {},
+                  llm_integration: plan.llm_integration || {},
+                  agent_timings: plan.agent_timings || {}
+                };
+              }
+            });
+            
             await setDoc(childRef, { 
-              plans: newPlans,
+              plans: sanitizedPlans,
               months: months
             }, { merge: true });
             console.log('✅ Plan and months saved to Firebase for existing profile');
@@ -752,24 +802,47 @@ export default function ProfileForm({ onSubmit }) {
             months.push(monthYear);
           }
           
+          // Sanitize the data to remove any invalid nested entities for Firebase
+          const sanitizedPlans = {};
+          Object.keys(newPlans).forEach(key => {
+            const plan = newPlans[key];
+            // Convert to JSON and back to remove any non-serializable objects
+            try {
+              sanitizedPlans[key] = JSON.parse(JSON.stringify(plan));
+            } catch (error) {
+              console.warn('Failed to sanitize plan for key:', key, error);
+              // If sanitization fails, create a minimal version
+              sanitizedPlans[key] = {
+                child_profile: plan.child_profile || {},
+                profile_analysis: plan.profile_analysis || {},
+                matched_topics: plan.matched_topics || [],
+                weekly_plan: plan.weekly_plan || {},
+                learning_objectives: plan.learning_objectives || [],
+                recommended_activities: plan.recommended_activities || [],
+                progress_tracking: plan.progress_tracking || {},
+                review_insights: plan.review_insights || {},
+                llm_integration: plan.llm_integration || {},
+                agent_timings: plan.agent_timings || {}
+              };
+            }
+          });
+          
           await setDoc(childRef, { 
-            plans: newPlans,
+            plans: sanitizedPlans,
             months: months
           }, { merge: true });
           console.log('✅ Enhanced plan and months saved to Firebase for existing profile');
           addDebugInfo('✅ Enhanced plan and months saved to Firebase for existing profile');
           
           setShowSuccessMessage(true);
-          setTimeout(() => {
-            console.log('🚀 NAVIGATING TO PLAN PAGE (ENHANCED - EXISTING PROFILE)...');
-            navigate("/customised-weekly-plan", { 
-              state: { 
-                data: enhancedPlan, 
-                childName,
-                childMonths: months
-              } 
-            });
-          }, 1000); // Reduced timeout to 1 second
+          console.log('🚀 NAVIGATING TO PLAN PAGE (ENHANCED - EXISTING PROFILE)...');
+          navigate("/customised-weekly-plan", { 
+            state: { 
+              data: enhancedPlan, 
+              childName,
+              childMonths: months
+            } 
+          });
         }
       }
     } catch (err) {
