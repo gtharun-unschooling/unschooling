@@ -68,8 +68,18 @@ const generateEnhancedPlan = (profile) => {
         console.log(`     Age match: ${age_match ? '✅' : '❌'}`);
         
         if (age_match) {
-          matched_topics.push(topic);
-          console.log(`   ✅ ENHANCED PLAN SELECTED: "${topic.Topic}" for ${topic.Niche}`);
+          // Convert topic to use correct field names
+          const convertedTopic = {
+            topic_name: topic.Topic,
+            niche: topic.Niche,
+            age: topic.Age,
+            objective: topic.Objective,
+            estimated_time: topic["Estimated Time"] || "20-30 mins",
+            "Activity 1": topic["Activity 1"],
+            "Activity 2": topic["Activity 2"]
+          };
+          matched_topics.push(convertedTopic);
+          console.log(`   ✅ ENHANCED PLAN SELECTED: "${convertedTopic.topic_name}" for ${convertedTopic.niche}`);
           if (matched_topics.length >= 4) {
             console.log('   📋 Reached maximum of 4 topics, stopping search');
             break;
@@ -85,14 +95,15 @@ const generateEnhancedPlan = (profile) => {
   if (matched_topics.length === 0) {
     console.log('⚠️ ENHANCED PLAN - NO MATCHES FOUND, CREATING GENERIC TOPICS');
     matched_topics = interests.map(interest => ({
-      Topic: `Introduction to ${interest}`,
-      Niche: interest,
-      Age: `${child_age}-${child_age + 2}`,
-      Objective: `Learn the basics of ${interest} through fun activities`,
+      topic_name: `Introduction to ${interest}`,
+      niche: interest,
+      age: `${child_age}-${child_age + 2}`,
+      objective: `Learn the basics of ${interest} through fun activities`,
+      estimated_time: "20-30 mins",
       "Activity 1": `Explore ${interest} through hands-on activities`,
       "Activity 2": `Create a project related to ${interest}`
     }));
-    console.log('   Created generic topics:', matched_topics.map(t => t.Topic));
+    console.log('   Created generic topics:', matched_topics.map(t => t.topic_name));
   }
   
   // Create weekly plan based on matched topics
@@ -105,13 +116,13 @@ const generateEnhancedPlan = (profile) => {
     days.forEach((day, index) => {
       const topic = matched_topics[index % matched_topics.length];
       week_plan[day] = {
-        topic: topic.Topic,
-        niche: topic.Niche,
-        objective: topic.Objective || `Learn about ${topic.Topic}`,
-        activity_1: topic["Activity 1"] || `Explore ${topic.Topic} through hands-on activities`,
-        activity_2: topic["Activity 2"] || `Create a project related to ${topic.Topic}`,
+        topic: topic.topic_name,
+        niche: topic.niche,
+        objective: topic.objective || `Learn about ${topic.topic_name}`,
+        activity_1: topic["Activity 1"] || `Explore ${topic.topic_name} through hands-on activities`,
+        activity_2: topic["Activity 2"] || `Create a project related to ${topic.topic_name}`,
         learning_style: learning_style,
-        estimated_time: topic["Estimated Time"] || "30 mins"
+        estimated_time: topic.estimated_time || "30 mins"
       };
     });
     weekly_plan[`week_${week}`] = week_plan;
@@ -141,7 +152,7 @@ const generateEnhancedPlan = (profile) => {
     },
     matched_topics: matched_topics,
     weekly_plan: weekly_plan,
-    learning_objectives: matched_topics.map(topic => topic.Objective || `Develop skills in ${topic.Niche}`).slice(0, 4),
+    learning_objectives: matched_topics.map(topic => topic.objective || `Develop skills in ${topic.niche}`).slice(0, 4),
     recommended_activities: [
       `Interactive ${interests[0] || 'learning'} games`,
       "Creative projects and crafts",
