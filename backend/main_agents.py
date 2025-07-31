@@ -522,6 +522,7 @@ class ScheduleAgent:
             "recommended_activities": recommended_activities,
             "progress_tracking": progress_tracking,
             "profile": profile,
+            "matched_topics": matched_topics,  # Preserve matched topics
             "agent_timing": {
                 "agent_name": "ScheduleAgent",
                 "execution_time_seconds": execution_time,
