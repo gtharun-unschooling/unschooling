@@ -545,6 +545,81 @@ const CustomisedWeeklyPlan = () => {
         </div>
       </div>
 
+      {/* Profile View Section */}
+      {planData && planData.profile_analysis && (
+        <div style={{
+          background: '#fff',
+          border: '2px solid #2196f3',
+          borderRadius: 16,
+          padding: '28px 32px',
+          marginBottom: 40,
+          boxShadow: '0 4px 16px #2196f322',
+          maxWidth: 900,
+          marginLeft: 'auto',
+          marginRight: 'auto',
+        }}>
+          <h2 style={{ color: '#2196f3', fontWeight: 700, fontSize: 26, marginBottom: 16 }}>👤 Profile View</h2>
+          
+          {planData.profile_analysis.child_name && (
+            <div style={{ marginBottom: 16 }}>
+              <strong style={{ color: '#666' }}>Child Name:</strong> 
+              <span style={{ color: '#2196f3', fontWeight: 500, marginLeft: 8 }}>
+                {planData.profile_analysis.child_name}
+              </span>
+            </div>
+          )}
+          
+          {planData.profile_analysis.child_age && (
+            <div style={{ marginBottom: 16 }}>
+              <strong style={{ color: '#666' }}>Age:</strong> 
+              <span style={{ color: '#2196f3', fontWeight: 500, marginLeft: 8 }}>
+                {planData.profile_analysis.child_age} years
+              </span>
+            </div>
+          )}
+          
+          {planData.profile_analysis.interests && planData.profile_analysis.interests.length > 0 && (
+            <div style={{ marginBottom: 16 }}>
+              <strong style={{ color: '#666' }}>Interests:</strong>
+              <div style={{ marginTop: 8 }}>
+                {planData.profile_analysis.interests.map((interest, idx) => (
+                  <span key={idx} style={{
+                    background: '#e3f2fd',
+                    color: '#1976d2',
+                    padding: '4px 12px',
+                    borderRadius: 16,
+                    fontSize: 14,
+                    marginRight: 8,
+                    marginBottom: 4,
+                    display: 'inline-block',
+                  }}>
+                    {interest}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+          
+          {planData.profile_analysis.learning_style && (
+            <div style={{ marginBottom: 16 }}>
+              <strong style={{ color: '#666' }}>Learning Style:</strong> 
+              <span style={{ color: '#2196f3', fontWeight: 500, marginLeft: 8 }}>
+                {planData.profile_analysis.learning_style}
+              </span>
+            </div>
+          )}
+          
+          {planData.profile_analysis.plan_type && (
+            <div style={{ marginBottom: 16 }}>
+              <strong style={{ color: '#666' }}>Plan Type:</strong> 
+              <span style={{ color: '#2196f3', fontWeight: 500, marginLeft: 8 }}>
+                {planData.profile_analysis.plan_type}
+              </span>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* Match Agent Overview Section */}
       {planData && planData.matched_topics && planData.matched_topics.length > 0 && (
         <div style={{
