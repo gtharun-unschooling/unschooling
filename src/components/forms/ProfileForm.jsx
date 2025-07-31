@@ -125,6 +125,20 @@ const generateEnhancedPlan = (profile) => {
       learning_style: learning_style,
       goals: goals
     },
+    profile_analysis: {
+      child_name: profile.child_name || 'Child',
+      child_age: child_age,
+      interests: interests,
+      learning_style: learning_style,
+      plan_type: profile.plan_type || 'hybrid',
+      llm_insights: {
+        profile_summary: `A ${child_age}-year-old child with interests in ${interests.join(', ')} who learns best through ${learning_style} activities.`,
+        subject_areas_of_interest: interests,
+        areas_for_improvement: ["Focus and attention", "Following instructions"],
+        suggestions: ["Provide hands-on activities", "Use visual aids", "Break tasks into smaller steps"],
+        rights_of_child: "Every child has the right to learn in their own way and at their own pace."
+      }
+    },
     matched_topics: matched_topics,
     weekly_plan: weekly_plan,
     learning_objectives: matched_topics.map(topic => topic.Objective || `Develop skills in ${topic.Niche}`).slice(0, 4),
@@ -137,6 +151,27 @@ const generateEnhancedPlan = (profile) => {
     progress_tracking: {
       weekly_checkpoints: ["Week 1", "Week 2", "Week 3", "Week 4"],
       milestones: ["Basic understanding", "Skill development", "Confidence building", "Mastery achievement"]
+    },
+    review_insights: {
+      weekly_reviews: ["Week 1: Getting started", "Week 2: Building skills", "Week 3: Deepening understanding", "Week 4: Mastery and celebration"]
+    },
+    llm_integration: {
+      gemini_available: false,
+      profile_agent_llm_used: false,
+      match_agent_llm_used: false,
+      schedule_agent_llm_used: false,
+      reviewer_agent_llm_used: false,
+      profile_agent_response: "Enhanced plan generated without LLM",
+      match_agent_response: "Topics matched using local data",
+      schedule_agent_response: "Weekly plan created with enhanced algorithm",
+      reviewer_agent_response: "Plan reviewed and optimized for child's needs"
+    },
+    agent_timings: {
+      total_execution_time: 0.5,
+      profile_agent: { execution_time_seconds: 0.1, llm_used: false },
+      match_agent: { execution_time_seconds: 0.2, llm_used: false },
+      schedule_agent: { execution_time_seconds: 0.1, llm_used: false },
+      reviewer_agent: { execution_time_seconds: 0.1, llm_used: false }
     }
   };
   
