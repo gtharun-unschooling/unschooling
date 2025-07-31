@@ -265,6 +265,8 @@ class MatchAgent:
         
         # Filter topics by age and consider ALL niches, not just interests
         eligible_topics = []
+        logger.info(f"🔍 Filtering topics for age {child_age}...")
+        
         for topic in self.topics_data:
             age_str = topic.get("Age", "7")
             # Handle age ranges like "3 and 4" or "5-7"
@@ -286,8 +288,11 @@ class MatchAgent:
             topic_name = topic.get("Topic", "")
             topic_niche = topic.get("Niche", "")
             
+            logger.info(f"🔍 Topic: {topic_name}, Age: {age_str}, Range: {topic_age_range}")
+            
             # Age-appropriate topics - check if child's age falls within the topic's age range
             if child_age >= topic_age_range[0] and child_age <= topic_age_range[1]:
+                logger.info(f"✅ Age appropriate: {topic_name}")
                 # Skip if topic is already completed
                 if topic_name in completed_topics:
                     logger.info(f"⏭️ Skipping completed topic: {topic_name}")
@@ -296,111 +301,26 @@ class MatchAgent:
                 # Consider ALL niches, but prioritize parent-selected interests
                 if any(interest.lower() in topic_niche.lower() for interest in interests):
                     # High priority: matches parent interests
+                    logger.info(f"🎯 High priority (matches interests): {topic_name}")
                     eligible_topics.append({**topic, "priority": "high"})
                 else:
                     # Medium priority: other age-appropriate topics
+                    logger.info(f"📚 Medium priority: {topic_name}")
                     eligible_topics.append({**topic, "priority": "medium"})
+            else:
+                logger.info(f"❌ Age inappropriate: {topic_name} (age {age_str} vs child age {child_age})")
         
-        logger.info(f"📊 Found {len(eligible_topics)} eligible topics (excluding {len(completed_topics)} completed)")
-        logger.info(f"📊 High priority topics: {len([t for t in eligible_topics if t.get('priority') == 'high'])}")
-        logger.info(f"📊 Medium priority topics: {len([t for t in eligible_topics if t.get('priority') == 'medium'])}")
+        logger.info(f"📋 Eligible topics found: {len(eligible_topics)}")
+        for topic in eligible_topics:
+            logger.info(f"  - {topic.get('Topic', 'Unknown')} ({topic.get('priority', 'unknown')} priority)")
         
-        # Sort by priority (high first, then medium)
-        eligible_topics.sort(key=lambda x: {"high": 0, "medium": 1}.get(x.get("priority", "medium"), 1))
-        
-        # Use LLM to select the best topics
-        if gemini_available and eligible_topics:
-            try:
-                # Create enhanced LLM prompt
-                prompt = f"""
-                You are an expert educational content curator for children. 
-                
-                Child Profile:
-                - Name: {child_name}
-                - Age: {child_age} years old
-                - Interests: {', '.join(interests)}
-                - Cognitive Level: {cognitive_level}
-                
-                Child's Learning History (Completed Topics):
-                {completed_topics}
-                
-                Available Topics (considering ALL niches, not just interests):
-                {json.dumps(eligible_topics[:15], indent=2)}
-                
-                Task: Select the 4 most engaging and age-appropriate topics for this child.
-                Consider:
-                1. Age appropriateness
-                2. Interest alignment (prioritize parent-selected interests)
-                3. Learning progression (avoid completed topics)
-                4. Engagement potential
-                5. Diversity across different niches
-                6. Balance between familiar interests and new discoveries
-                
-                Return ONLY a JSON array with the 4 selected topic objects, no additional text.
-                """
-                
-                logger.info("🤖 Calling Gemini LLM for enhanced topic selection")
-                logger.info(f"📝 Prompt length: {len(prompt)} characters")
-                model = genai.GenerativeModel('gemini-1.5-flash')
-                response = model.generate_content(prompt)
-                llm_response = response.text.strip()
-                logger.info(f"🤖 LLM response length: {len(llm_response)} characters")
-                
-                # Try to parse LLM response
-                try:
-                    # Clean the response - remove markdown formatting if present
-                    clean_response = llm_response.strip()
-                    if clean_response.startswith('```json'):
-                        clean_response = clean_response[7:]  # Remove ```json
-                    if clean_response.endswith('```'):
-                        clean_response = clean_response[:-3]  # Remove ```
-                    clean_response = clean_response.strip()
-                    
-                    selected_topics = json.loads(clean_response)
-                    if isinstance(selected_topics, list) and len(selected_topics) <= 4:
-                        # Format topics for display
-                        formatted_topics = self._format_topics_for_display(selected_topics)
-                        
-                        execution_time = time.time() - start_time
-                        logger.info(f"✅ LLM selected {len(selected_topics)} topics in {execution_time:.3f}s")
-                        
-                        # Extract token usage from response
-                        token_usage = 0
-                        if hasattr(response, 'usage_metadata') and response.usage_metadata:
-                            token_usage = response.usage_metadata.get('total_token_count', 0)
-                        
-                        return {
-                            "profile": profile_analysis,
-                            "matched_topics": formatted_topics,
-                            "completed_topics": completed_topics,
-                            "available_niches": all_niches,
-                            "agent_timing": {
-                                "agent_name": "MatchAgent",
-                                "execution_time_seconds": execution_time,
-                                "llm_used": True,
-                                "tokens_used": token_usage,
-                                "llm_prompt": prompt,
-                                "llm_response": llm_response,
-                                "llm_response_raw": response.text,
-                                "llm_response_candidates": response.candidates if hasattr(response, 'candidates') else None,
-                                "llm_response_usage_metadata": response.usage_metadata if hasattr(response, 'usage_metadata') else None
-                            }
-                        }
-                except json.JSONDecodeError:
-                    logger.warning("⚠️ LLM response not valid JSON, using fallback")
-                    logger.warning(f"📝 Raw LLM response: {llm_response[:200]}...")
-                
-            except Exception as e:
-                logger.error(f"❌ LLM error: {str(e)}")
-                logger.error(f"📝 Error type: {type(e).__name__}")
-        
-        # Fallback to intelligent selection
-        logger.info("🔄 Using intelligent fallback selection")
+        # Select topics (max 4)
         selected_topics = []
         niches_seen = set()
         
         # First, prioritize high-priority topics (matching interests)
         high_priority = [t for t in eligible_topics if t.get("priority") == "high"]
+        logger.info(f"🎯 High priority topics: {len(high_priority)}")
         for topic in high_priority:
             if len(selected_topics) >= 4:
                 break
@@ -408,14 +328,17 @@ class MatchAgent:
             if niche not in niches_seen or len(selected_topics) < 2:
                 selected_topics.append(topic)
                 niches_seen.add(niche)
+                logger.info(f"✅ Selected high priority: {topic.get('Topic', 'Unknown')}")
         
         # Then add medium-priority topics to fill remaining slots
         medium_priority = [t for t in eligible_topics if t.get("priority") == "medium"]
+        logger.info(f"📚 Medium priority topics: {len(medium_priority)}")
         for topic in medium_priority:
             if len(selected_topics) >= 4:
                 break
             if topic not in selected_topics:
                 selected_topics.append(topic)
+                logger.info(f"✅ Selected medium priority: {topic.get('Topic', 'Unknown')}")
         
         # Format topics for display
         formatted_topics = self._format_topics_for_display(selected_topics)
