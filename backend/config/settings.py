@@ -32,6 +32,9 @@ class Settings:
     GOOGLE_CLOUD_PROJECT: str = os.getenv("GOOGLE_CLOUD_PROJECT", "unschooling-464413")
     GOOGLE_CLOUD_REGION: str = os.getenv("GOOGLE_CLOUD_REGION", "us-central1")
     
+    # Google AI Configuration
+    GOOGLE_API_KEY: str = os.getenv("GOOGLE_API_KEY", "AIzaSyBxSvXcwocqku1NC26nHbW4HbNulHH1cqw")
+    
     # Vertex AI Configuration
     VERTEX_AI_PROJECT_ID: str = os.getenv("VERTEX_AI_PROJECT_ID", "unschooling-464413")
     VERTEX_AI_LOCATION: str = os.getenv("VERTEX_AI_LOCATION", "us-central1")
@@ -40,7 +43,7 @@ class Settings:
     
     # API Configuration
     API_HOST: str = os.getenv("API_HOST", "0.0.0.0")
-    API_PORT: int = int(os.getenv("API_PORT", "8000"))
+    API_PORT: int = int(os.getenv("API_PORT", "8080"))
     
     # CORS Configuration
     ALLOWED_ORIGINS: list = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000,http://localhost:3001").split(",")

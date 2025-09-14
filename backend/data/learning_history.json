@@ -1,0 +1,154 @@
+{
+  "child_123": {
+    "child_id": "child_123",
+    "created_at": "2025-08-11T22:19:10.287993",
+    "last_activity": "2025-08-11T22:19:10.288304",
+    "learning_sessions": [
+      {
+        "session_id": "session_20250811_221910_child_123",
+        "child_id": "child_123",
+        "topic_id": "Finance_Understanding_Money",
+        "topic_name": "Understanding Money",
+        "niche": "Finance",
+        "age_group": "Toddler",
+        "difficulty": "Beginner",
+        "learning_stage": "basic",
+        "started_at": "2025-08-11T22:19:10.287457",
+        "completed_at": "2025-08-11T22:19:10.287474",
+        "time_spent_minutes": 25,
+        "activities_completed": [
+          "Money Sorting",
+          "Shopping Pretend Play"
+        ],
+        "parent_rating": 5,
+        "child_engagement": "high",
+        "notes": "Child loved the shopping game!",
+        "status": "completed",
+        "actual_duration_minutes": 2.8333333333333336e-07
+      }
+    ],
+    "achievements": [
+      {
+        "id": "first_topic",
+        "name": "First Steps",
+        "description": "Completed your first learning topic",
+        "icon": "🌟",
+        "unlocked_at": "2025-08-11T22:19:10.288260",
+        "progress": {
+          "topics_completed": {
+            "current": 1,
+            "required": 1,
+            "percentage": 100
+          }
+        }
+      },
+      {
+        "id": "basic_master",
+        "name": "Basic Master",
+        "description": "Completed all basic level topics in any niche",
+        "icon": "📚",
+        "unlocked_at": "2025-08-11T22:19:10.288276",
+        "progress": {}
+      }
+    ],
+    "recent_achievements": [
+      {
+        "id": "first_topic",
+        "name": "First Steps",
+        "description": "Completed your first learning topic",
+        "icon": "🌟",
+        "unlocked_at": "2025-08-11T22:19:10.288260",
+        "progress": {
+          "topics_completed": {
+            "current": 1,
+            "required": 1,
+            "percentage": 100
+          }
+        }
+      },
+      {
+        "id": "basic_master",
+        "name": "Basic Master",
+        "description": "Completed all basic level topics in any niche",
+        "icon": "📚",
+        "unlocked_at": "2025-08-11T22:19:10.288276",
+        "progress": {}
+      }
+    ],
+    "progress_summary": {
+      "total_sessions": 1,
+      "total_topics_completed": 1,
+      "total_learning_time_minutes": 25,
+      "total_learning_time_hours": 0.4166666666666667,
+      "learning_streak_days": 1,
+      "average_session_length_minutes": 25.0,
+      "average_engagement_score": 3,
+      "average_parent_rating": 5.0,
+      "niche_progress": {
+        "Finance": {
+          "completed": 1,
+          "total_time": 25,
+          "sessions": [
+            {
+              "session_id": "session_20250811_221910_child_123",
+              "child_id": "child_123",
+              "topic_id": "Finance_Understanding_Money",
+              "topic_name": "Understanding Money",
+              "niche": "Finance",
+              "age_group": "Toddler",
+              "difficulty": "Beginner",
+              "learning_stage": "basic",
+              "started_at": "2025-08-11T22:19:10.287457",
+              "completed_at": "2025-08-11T22:19:10.287474",
+              "time_spent_minutes": 25,
+              "activities_completed": [
+                "Money Sorting",
+                "Shopping Pretend Play"
+              ],
+              "parent_rating": 5,
+              "child_engagement": "high",
+              "notes": "Child loved the shopping game!",
+              "status": "completed",
+              "actual_duration_minutes": 2.8333333333333336e-07
+            }
+          ]
+        }
+      },
+      "stage_progress": {
+        "basic": {
+          "completed": 1,
+          "total_time": 25
+        }
+      },
+      "difficulty_progress": {
+        "Beginner": {
+          "completed": 1,
+          "total_time": 25
+        }
+      },
+      "recent_activity": {
+        "last_week": 1,
+        "last_month": 1,
+        "last_3_months": 1
+      },
+      "strengths": [],
+      "areas_for_growth": [
+        "building regular learning habits"
+      ],
+      "recommended_next_topics": [
+        {
+          "type": "niche_continuation",
+          "niche": "Finance",
+          "reason": "High success rate in Finance (avg rating: 5.0)",
+          "priority": "high"
+        },
+        {
+          "type": "difficulty_progression",
+          "difficulty": "Intermediate",
+          "reason": "Ready to progress from Beginner to Intermediate level",
+          "priority": "medium"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "plan_20250811_221918_child_123": {
+    "plan_id": "plan_20250811_221918_child_123",
+    "child_id": "child_123",
+    "created_at": "2025-08-11T22:19:18.084194",
+    "last_modified": "2025-08-11T22:19:18.084475",
+    "version": 2,
+    "status": "draft",
+    "plan_type": "ai_generated",
+    "ai_generated_plan": {
+      "total_weeks": 4,
+      "topics_per_week": 5,
+      "total_topics": 20,
+      "estimated_total_time": "10 hours",
+      "weekly_plans": {
+        "Week 1": {
+          "topics": [
+            {
+              "Topic": "Understanding Money",
+              "topic_id": "Finance_Understanding_Money"
+            },
+            {
+              "Topic": "Spending vs Saving",
+              "topic_id": "Finance_Spending_vs_Saving"
+            }
+          ]
+        }
+      }
+    },
+    "child_profile": {
+      "child_name": "Rahul",
+      "child_age": 8,
+      "interests": [
+        "Finance",
+        "AI"
+      ],
+      "preferred_learning_style": "visual"
+    },
+    "plan_structure": {
+      "total_weeks": 4,
+      "topics_per_week": 5,
+      "total_topics": 20,
+      "estimated_total_time": "10 hours"
+    },
+    "weekly_plans": {
+      "Week 1": {
+        "topics": [
+          {
+            "Topic": "Understanding Money",
+            "topic_id": "Finance_Understanding_Money"
+          },
+          {
+            "Topic": "Spending vs Saving",
+            "topic_id": "Finance_Spending_vs_Saving"
+          }
+        ]
+      }
+    },
+    "customizations": [
+      {
+        "type": "topic_replacement",
+        "description": "Replace 'Coins and Bills' with 'Spending vs Saving'",
+        "old_topic": "Coins and Bills",
+        "new_topic": {
+          "Topic": "Spending vs Saving",
+          "topic_id": "Finance_Spending_vs_Saving"
+        },
+        "week_key": "Week 1"
+      }
+    ],
+    "modification_history": [
+      {
+        "modification_id": "mod_20250811_221918",
+        "type": "topic_replacement",
+        "description": "Replace 'Coins and Bills' with 'Spending vs Saving'",
+        "applied_at": "2025-08-11T22:19:18.084503",
+        "details": {
+          "type": "topic_replacement",
+          "description": "Replace 'Coins and Bills' with 'Spending vs Saving'",
+          "old_topic": "Coins and Bills",
+          "new_topic": {
+            "Topic": "Spending vs Saving",
+            "topic_id": "Finance_Spending_vs_Saving"
+          },
+          "week_key": "Week 1"
+        }
+      }
+    ],
+    "progress": {
+      "overall_progress": 50.0,
+      "weeks_completed": 0,
+      "topics_completed": 1,
+      "total_time_spent": 30,
+      "weekly_progress": {
+        "Week 1": {
+          "status": "in_progress",
+          "topics_completed": 1,
+          "total_topics": 2,
+          "progress_percentage": 50.0,
+          "time_spent": 30,
+          "started_at": null,
+          "completed_at": null
+        }
+      },
+      "topic_progress": {
+        "Finance_Understanding_Money": {
+          "status": "completed",
+          "started_at": null,
+          "completed_at": "2025-08-11T22:19:18.084537",
+          "time_spent": 30,
+          "activities_completed": [
+            "Money Sorting",
+            "Shopping Game"
+          ],
+          "parent_rating": 5,
+          "child_engagement": "high",
+          "notes": "Child loved the activities!"
+        },
+        "Finance_Coins_and_Bills": {
+          "status": "not_started",
+          "started_at": null,
+          "completed_at": null,
+          "time_spent": 0,
+          "activities_completed": [],
+          "parent_rating": null,
+          "child_engagement": null,
+          "notes": ""
+        }
+      }
+    },
+    "quality_metrics": {
+      "prerequisites_checked": true,
+      "difficulty_progression": "optimal",
+      "age_appropriateness": "perfect",
+      "learning_stage_alignment": "excellent",
+      "content_richness_score": 8.0,
+      "ai_confidence_score": 0.9,
+      "customization_impact": "minimal"
+    },
+    "recommendations": {
+      "suggested_modifications": [],
+      "optimization_suggestions": [],
+      "next_steps": []
+    }
+  }
+}
