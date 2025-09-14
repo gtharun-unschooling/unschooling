@@ -1,13 +1,13 @@
-import { useState, useEffect } from "react";
-import { db, auth } from "../../firebase";
-import { doc, setDoc, getDoc, updateDoc, collection, getDocs, deleteDoc } from "firebase/firestore";
+import React, { useState, useEffect } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { auth, db } from "../../firebase";
+import { doc, setDoc, collection, getDocs, getDoc, deleteDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
+import { useDebug } from "../../contexts/DebugContext";
 import { colors, spacing, typography } from "../../styles/designTokens";
+import { apiService } from "../../services/api";
 import "./ProfileForm.css";
 import BackButton from "../BackButton";
-import apiService from "../../services/api";
-import { useDebug } from "../../contexts/DebugContext";
 
 // Load data files
 let topicsData = null;
@@ -42,172 +42,7 @@ const loadDataFiles = async () => {
   }
 };
 
-// Enhanced plan generation with data access
-const generateEnhancedPlan = (profile) => {
-  console.log('🎯 ===== ENHANCED PLAN GENERATION STARTED =====');
-  console.log('👤 PROFILE FOR ENHANCED PLAN:', JSON.stringify(profile, null, 2));
-  
-  const child_age = profile.child_age;
-  const interests = profile.interests;
-  const learning_style = profile.preferred_learning_style;
-  const goals = profile.goals;
-  
-  console.log('📊 ENHANCED PLAN PARAMETERS:');
-  console.log('   Child Age:', child_age);
-  console.log('   Interests:', interests);
-  console.log('   Learning Style:', learning_style);
-  console.log('   Goals:', goals);
-  console.log('   Topics Data Available:', topicsData ? `${topicsData.length} topics` : 'No data');
-  console.log('   Niches Data Available:', nichesData ? `${nichesData.length} niches` : 'No data');
-  
-  // Debug topics data structure
-  if (topicsData && topicsData.length > 0) {
-    console.log('📋 Sample topics data:', topicsData.slice(0, 2));
-    console.log('🏷️ Available niches:', [...new Set(topicsData.map(t => t.Niche))]);
-  }
-  
-  // Find matching topics from the data (simple fallback only)
-  let matched_topics = [];
-  if (topicsData && interests.length > 0) {
-    console.log('🔍 ENHANCED PLAN - SEARCHING FOR MATCHING TOPICS...');
-    console.log('   Available niches in topics data:', [...new Set(topicsData.map(t => t.Niche))]);
-    console.log('   Looking for interests:', interests);
-    
-    for (const topic of topicsData) {
-      if (interests.includes(topic.Niche)) {
-        // Simple age matching
-        const age_range = topic.Age || "";
-        const age_match = age_range.includes(String(child_age)) || age_range.includes("5-12") || age_range.includes("3 and 4");
-        
-        console.log(`   Checking: "${topic.Topic}" (Niche: ${topic.Niche}, Age: ${age_range})`);
-        console.log(`     Interest match: ${interests.includes(topic.Niche) ? '✅' : '❌'}`);
-        console.log(`     Age match: ${age_match ? '✅' : '❌'}`);
-        
-        if (age_match) {
-          // Convert topic to use correct field names
-          const convertedTopic = {
-            topic_name: topic.Topic,
-            niche: topic.Niche,
-            age: topic.Age,
-            objective: topic.Objective,
-            estimated_time: topic["Estimated Time"] || "20-30 mins",
-            "Activity 1": topic["Activity 1"],
-            "Activity 2": topic["Activity 2"]
-          };
-          matched_topics.push(convertedTopic);
-          console.log(`   ✅ ENHANCED PLAN SELECTED: "${convertedTopic.topic_name}" for ${convertedTopic.niche}`);
-          if (matched_topics.length >= 4) {
-            console.log('   📋 Reached maximum of 4 topics, stopping search');
-            break;
-          }
-        }
-      }
-    }
-    console.log(`📋 ENHANCED PLAN TOTAL MATCHED TOPICS: ${matched_topics.length}`);
-    console.log('   Selected topics:', matched_topics.map(t => `${t.topic_name} (${t.niche})`));
-  }
-  
-  // If no matches found, create generic topics
-  if (matched_topics.length === 0) {
-    console.log('⚠️ ENHANCED PLAN - NO MATCHES FOUND, CREATING GENERIC TOPICS');
-    matched_topics = interests.map(interest => ({
-      topic_name: `Introduction to ${interest}`,
-      niche: interest,
-      age: `${child_age}-${child_age + 2}`,
-      objective: `Learn the basics of ${interest} through fun activities`,
-      estimated_time: "20-30 mins",
-      "Activity 1": `Explore ${interest} through hands-on activities`,
-      "Activity 2": `Create a project related to ${interest}`
-    }));
-    console.log('   Created generic topics:', matched_topics.map(t => t.topic_name));
-  }
-  
-  // Create weekly plan based on matched topics
-  console.log('📅 ENHANCED PLAN - CREATING WEEKLY PLAN...');
-  const weekly_plan = {};
-  const days = ["monday", "tuesday", "wednesday", "thursday", "friday"];
-  
-  for (let week = 1; week <= 4; week++) {
-    const week_plan = {};
-    days.forEach((day, index) => {
-      const topic = matched_topics[index % matched_topics.length];
-      week_plan[day] = {
-        topic: topic.topic_name,
-        niche: topic.niche,
-        objective: topic.objective || `Learn about ${topic.topic_name}`,
-        activity_1: topic["Activity 1"] || `Explore ${topic.topic_name} through hands-on activities`,
-        activity_2: topic["Activity 2"] || `Create a project related to ${topic.topic_name}`,
-        learning_style: learning_style,
-        estimated_time: topic.estimated_time || "30 mins"
-      };
-    });
-    weekly_plan[`week_${week}`] = week_plan;
-    console.log(`   Week ${week} created with ${days.length} days`);
-  }
-  
-  const result = {
-    child_profile: {
-      age: child_age,
-      interests: interests,
-      learning_style: learning_style,
-      goals: goals
-    },
-    profile_analysis: {
-      child_name: profile.child_name || 'Child',
-      child_age: child_age,
-      interests: interests,
-      learning_style: learning_style,
-      plan_type: profile.plan_type || 'hybrid',
-      llm_insights: {
-        profile_summary: `A ${child_age}-year-old child with interests in ${interests.join(', ')} who learns best through ${learning_style} activities.`,
-        subject_areas_of_interest: interests,
-        areas_for_improvement: ["Focus and attention", "Following instructions"],
-        suggestions: ["Provide hands-on activities", "Use visual aids", "Break tasks into smaller steps"],
-        rights_of_child: "Every child has the right to learn in their own way and at their own pace."
-      }
-    },
-    matched_topics: matched_topics,
-    weekly_plan: weekly_plan,
-    learning_objectives: matched_topics.map(topic => topic.objective || `Develop skills in ${topic.niche}`).slice(0, 4),
-    recommended_activities: [
-      `Interactive ${interests[0] || 'learning'} games`,
-      "Creative projects and crafts",
-      "Outdoor exploration activities",
-      "Reading and storytelling sessions"
-    ],
-    progress_tracking: {
-      weekly_checkpoints: ["Week 1", "Week 2", "Week 3", "Week 4"],
-      milestones: ["Basic understanding", "Skill development", "Confidence building", "Mastery achievement"]
-    },
-    review_insights: {
-      weekly_reviews: ["Week 1: Getting started", "Week 2: Building skills", "Week 3: Deepening understanding", "Week 4: Mastery and celebration"]
-    },
-    llm_integration: {
-      gemini_available: false,
-      profile_agent_llm_used: false,
-      match_agent_llm_used: false,
-      schedule_agent_llm_used: false,
-      reviewer_agent_llm_used: false,
-      profile_agent_response: "Enhanced plan generated without LLM",
-      match_agent_response: "Topics matched using local data",
-      schedule_agent_response: "Weekly plan created with enhanced algorithm",
-      reviewer_agent_response: "Plan reviewed and optimized for child's needs"
-    },
-    agent_timings: {
-      total_execution_time: 0.5,
-      profile_agent: { execution_time_seconds: 0.1, llm_used: false },
-      match_agent: { execution_time_seconds: 0.2, llm_used: false },
-      schedule_agent: { execution_time_seconds: 0.1, llm_used: false },
-      reviewer_agent: { execution_time_seconds: 0.1, llm_used: false }
-    }
-  };
-  
-  console.log('🎉 ===== ENHANCED PLAN GENERATION COMPLETED =====');
-  console.log('📤 ENHANCED PLAN RESULT:', JSON.stringify(result, null, 2));
-  console.log('🎯 ===== ENHANCED PLAN END =====');
-  
-  return result;
-};
+// Enhanced plan generation function removed - only real backend integration allowed
 
 // Original interest options (reduced to 25 for better UX)
 const interestOptions = [
@@ -249,7 +84,7 @@ const PLAN_TYPES = [
   }
 ];
 
-export default function ProfileForm({ onSubmit }) {
+const ProfileForm = () => {
   const [user, loading, error] = useAuthState(auth);
   const [isLoading, setIsLoading] = useState(false);
   const [loadingStep, setLoadingStep] = useState('');
@@ -271,161 +106,279 @@ export default function ProfileForm({ onSubmit }) {
   const [planData, setPlanData] = useState(null);
   const [debugInfo, setDebugInfo] = useState('');
   const [showDebug, setShowDebug] = useState(false);
+  const [formError, setFormError] = useState(null);
+  const [isAutoFixing, setIsAutoFixing] = useState(false);
   const navigate = useNavigate();
   const { debugInfo: globalDebugInfo, addDebugInfo } = useDebug();
   
   // Load children on mount and data files
   useEffect(() => {
-    console.log('🔐 Auth state changed:', { user: !!user, loading, error });
+    console.log('🔍 ProfileForm useEffect triggered');
+    console.log('👤 User state:', user);
+    console.log('👤 User UID:', user?.uid);
+    console.log('👤 User email:', user?.email);
+    console.log('👶 Current children count:', children.length);
     
-    if (loading) {
-      console.log('⏳ Auth loading...');
-      return;
+    if (user) {
+      console.log('🔐 User authenticated, loading children and data files...');
+      console.log('👤 User UID:', user.uid);
+      console.log('📧 User email:', user.email);
+      loadChildren();
+      loadDataFiles();
+    } else {
+      console.log('❌ No user authenticated, cannot load children');
     }
+  }, [user]);
+
+  // Add loadChildren to dependencies to prevent stale closure
+  useEffect(() => {
+    console.log('🔄 Children dependency useEffect triggered');
+    console.log('👤 User exists:', !!user);
+    console.log('👶 Children length:', children.length);
     
-    if (error) {
-      console.error('❌ Auth error:', error);
-      return;
+    if (user && children.length === 0) {
+      console.log('🔄 Reloading children due to empty children array...');
+      loadChildren();
     }
-    
-    if (!user) {
-      console.log('👤 No user found, attempting anonymous sign-in...');
-      // Try to sign in anonymously
-      import('firebase/auth').then(({ signInAnonymously }) => {
-        signInAnonymously(auth)
-          .then((result) => {
-            console.log('✅ Anonymous sign-in successful:', result.user.uid);
-          })
-          .catch((signInError) => {
-            console.error('❌ Anonymous sign-in failed:', signInError);
-          });
+  }, [user, children.length]);
+
+  // Debug useEffect for children state changes
+  useEffect(() => {
+    console.log('👶 Children state changed:', children);
+    console.log('👶 Children count:', children.length);
+    if (children.length > 0) {
+      console.log('✅ Children loaded successfully');
+      children.forEach((child, idx) => {
+        console.log(`👶 Child ${idx + 1}:`, child);
       });
-      return;
+      
+      // Check if any profiles need fixing after loading
+      children.forEach(async (child, idx) => {
+        if (needsProfileFix(child)) {
+          console.log(`🔧 Profile ${child.name} needs fixing, auto-fixing...`);
+          await autoFixChildProfile(child, idx);
+        }
+      });
     }
+  }, [children]);
+
+  // Check Firestore connection health
+  const checkFirestoreHealth = async () => {
+    try {
+      const testRef = doc(db, 'health-check', 'test');
+      await setDoc(testRef, { timestamp: new Date() }, { merge: true });
+      console.log('✅ Firestore connection healthy');
+      return true;
+    } catch (error) {
+      console.error('❌ Firestore connection unhealthy:', error);
+      return false;
+    }
+  };
+
+  // Reset Firestore connection (clear write queue)
+  const resetFirestoreConnection = async () => {
+    try {
+      console.log('🔄 Resetting Firestore connection...');
+      
+      // Force a new connection by making a simple read
+      const testRef = doc(db, 'health-check', 'reset');
+      await getDoc(testRef);
+      
+      console.log('✅ Firestore connection reset successful');
+      
+      // Reload children after reset
+      setTimeout(() => {
+        loadChildren();
+      }, 1000);
+      
+    } catch (error) {
+      console.error('❌ Failed to reset Firestore connection:', error);
+    }
+  };
+
+  // Check if a child profile needs fixing
+  const needsProfileFix = (child) => {
+    const requiredFields = ['child_age', 'interests', 'preferred_learning_style', 'goals', 'plan_type'];
+    const hasAllFields = requiredFields.every(field => {
+      const value = child[field];
+      return value !== undefined && value !== null && 
+             (Array.isArray(value) ? value.length > 0 : value !== '');
+    });
     
-    console.log('✅ User authenticated:', user.uid);
-    // Save user email at user doc level
-    const userRef = doc(db, "users", user.uid);
-    setDoc(userRef, { user_email: user.email }, { merge: true });
-    // Load data files for enhanced plan generation
-    loadDataFiles();
-    // Load existing children
-    loadChildren();
+    console.log(`🔍 Profile fix check for ${child.name}:`, {
+      hasAllFields,
+      missingFields: requiredFields.filter(field => {
+        const value = child[field];
+        return value === undefined || value === null || 
+               (Array.isArray(value) ? value.length === 0 : value === '');
+      })
+    });
     
-    // Test data loading after a delay
-    setTimeout(() => {
-      console.log('🧪 Testing data files after 3 seconds...');
-      console.log('📊 Topics data loaded:', topicsData ? `${topicsData.length} topics` : 'No data');
-      console.log('📊 Niches data loaded:', nichesData ? `${nichesData.length} niches` : 'No data');
-      if (topicsData && topicsData.length > 0) {
-        console.log('📋 Sample topics:', topicsData.slice(0, 2));
-      }
-    }, 3000);
-  }, [user, loading, error]);
+    return !hasAllFields;
+  };
+
+  // Automatically fix a child profile
+  const autoFixChildProfile = async (child, index) => {
+    try {
+      setIsAutoFixing(true);
+      console.log(`🔧 Auto-fixing profile for child: ${child.name}`);
+      
+      const childRef = doc(db, `users/${user.uid}/children`, child.name);
+      
+      // Create a complete profile structure with smart defaults
+      const completeProfile = {
+        ...child,
+        child_age: child.child_age || child.age || 5,
+        interests: child.interests || child.interest || ['Communication', 'AI'],
+        dislikes: child.dislikes || child.dislike || [],
+        preferred_learning_style: child.preferred_learning_style || child.learning_style || 'visual',
+        goals: child.goals || child.goal || ['problem-solving'],
+        plan_type: child.plan_type || child.planType || 'hybrid',
+        updatedAt: new Date(),
+        autoFixed: true
+      };
+      
+      console.log(`🔧 Complete profile for ${child.name}:`, completeProfile);
+      
+      // Update the profile in Firestore
+      await setDoc(childRef, completeProfile, { merge: true });
+      console.log(`✅ Profile auto-fixed for ${child.name}`);
+      
+      // Update the local children array
+      const updatedChildren = [...children];
+      updatedChildren[index] = completeProfile;
+      setChildren(updatedChildren);
+      
+      setIsAutoFixing(false);
+      return completeProfile;
+      
+    } catch (error) {
+      console.error(`❌ Error auto-fixing profile for ${child.name}:`, error);
+      setIsAutoFixing(false);
+      return child; // Return original if fix fails
+    }
+  };
 
   // Load existing children from Firebase
   const loadChildren = async () => {
     if (!user) {
-      console.log('❌ No user found, skipping loadChildren');
+      console.log('❌ Cannot load children: No user authenticated');
       return;
     }
     
-    console.log('🔍 Starting loadChildren...');
-    console.log('👤 User UID:', user.uid);
-    console.log('🔗 Database instance:', db);
-    
-    // Test basic Firestore connectivity - temporarily disabled
-    /*
-    try {
-      console.log('🧪 Testing Firestore connectivity...');
-      const testRef = doc(db, 'test', 'connection');
-      await setDoc(testRef, { timestamp: new Date() });
-      console.log('✅ Firestore write test successful');
-      await deleteDoc(testRef);
-      console.log('✅ Firestore delete test successful');
-    } catch (testError) {
-      console.error('❌ Firestore connectivity test failed:', testError);
-      console.error('❌ Test error details:', {
-        code: testError.code,
-        message: testError.message,
-        name: testError.name
-      });
-    }
-    */
+    console.log('🔍 Loading children from Firestore for user:', user.uid);
+    console.log('🔍 User object:', user);
+    console.log('🔍 User UID:', user.uid);
     
     try {
-      console.log('📂 Creating collection reference...');
       const childrenRef = collection(db, `users/${user.uid}/children`);
-      console.log('📂 Collection ref:', childrenRef);
-      console.log('📂 Collection path:', childrenRef.path);
-      console.log('📂 Collection id:', childrenRef.id);
+      console.log('📁 Firestore path:', `users/${user.uid}/children`);
+      console.log('📁 Collection reference:', childrenRef);
       
-      console.log('📥 Fetching documents...');
-      console.log('📥 User UID for collection:', user.uid);
-      console.log('📥 Full collection path:', `users/${user.uid}/children`);
-      
+      console.log('⏳ Fetching children snapshot...');
       const childrenSnapshot = await getDocs(childrenRef);
-      console.log('📥 Snapshot received:', childrenSnapshot);
-      console.log('📊 Snapshot size:', childrenSnapshot.size);
+      console.log('📊 Firestore snapshot received, size:', childrenSnapshot.size);
+      console.log('📊 Snapshot empty:', childrenSnapshot.empty);
+      console.log('📊 Snapshot docs:', childrenSnapshot.docs);
       
       const childrenList = [];
       
       childrenSnapshot.forEach((doc) => {
-        console.log('📄 Processing doc:', doc.id, doc.data());
-        childrenList.push({
+        const childData = {
           id: doc.id,
           name: doc.id,
           ...doc.data()
-        });
+        };
+        console.log('👶 Child data loaded:', childData);
+        childrenList.push(childData);
       });
       
-      console.log('✅ Final children list:', childrenList);
+      console.log('✅ Total children loaded:', childrenList.length);
       setChildren(childrenList);
-      console.log('💾 Children state updated');
       
       // If there are children, select the first one by default
       if (childrenList.length > 0) {
-        console.log('👶 Selecting first child:', childrenList[0]);
+        console.log('🎯 Selecting first child:', childrenList[0]);
+        
+        // Automatically fix incomplete profiles before selecting
+        for (let i = 0; i < childrenList.length; i++) {
+          const child = childrenList[i];
+          if (needsProfileFix(child)) {
+            console.log(`🔧 Auto-fixing incomplete profile for child: ${child.name}`);
+            await autoFixChildProfile(child, i);
+          }
+        }
+        
+        // After fixing, select the first child
         selectChild(childrenList[0], 0);
       } else {
-        console.log('📭 No children found');
+        console.log('⚠️ No children found in Firestore');
       }
-    } catch (error) {
-      console.error('❌ Error loading children:', error);
-      console.error('❌ Error details:', {
-        code: error.code,
-        message: error.message,
-        stack: error.stack,
-        name: error.name,
-        firestoreError: error.firestoreError,
-        serverResponse: error.serverResponse
-      });
+    } catch (loadError) {
+      console.error('❌ Error loading children:', loadError);
+      
+      // Handle specific Firestore errors
+      if (loadError.code === 'resource-exhausted') {
+        console.warn('⚠️ Firestore write stream exhausted - retrying in 5 seconds...');
+        setTimeout(() => {
+          console.log('🔄 Retrying Firestore connection...');
+          loadChildren();
+        }, 5000);
+        return;
+      }
+      
+      if (loadError.code === 'unavailable') {
+        console.warn('⚠️ Firestore temporarily unavailable - retrying in 10 seconds...');
+        setTimeout(() => {
+          console.log('🔄 Retrying Firestore connection...');
+          loadChildren();
+        }, 10000);
+        return;
+      }
       
       // Add to debug context
       try {
         const { addDebugInfo } = await import('../../contexts/DebugContext');
-        addDebugInfo(`❌ FIRESTORE ERROR: ${error.code} - ${error.message}`);
-        addDebugInfo(`🔍 Error details: ${JSON.stringify({
-          code: error.code,
-          message: error.message,
-          name: error.name
-        }, null, 2)}`);
-      } catch (e) {
-        console.log('Debug context not available');
+        addDebugInfo(`❌ FIRESTORE ERROR: ${loadError.code} - ${loadError.message}`);
+      } catch (importError) {
+        console.error('Could not import DebugContext:', importError);
       }
     }
   };
 
   // Select a child to edit
   const selectChild = (child, index) => {
+    console.log('🎯 selectChild called with:', child);
+    console.log('🎯 Child fields available:', Object.keys(child));
+    console.log('🎯 Child data:', child);
+    
     setSelectedChildIndex(index);
     setChildName(child.name);
-    setChildAge(child.child_age || 5);
-    setInterests(child.interests || []);
-    setDislikes(child.dislikes || []);
-    setLearningStyle(child.preferred_learning_style || "");
-    setSelectedGoals(child.goals || []);
-    setPlanType(child.plan_type || 'hybrid'); // Load plan type
+    
+    // Check what fields are actually available and use fallbacks
+    const childAge = child.child_age || child.age || 5;
+    const childInterests = child.interests || child.interest || [];
+    const childDislikes = child.dislikes || child.dislike || [];
+    const childLearningStyle = child.preferred_learning_style || child.learning_style || "visual";
+    const childGoals = child.goals || child.goal || [];
+    const childPlanType = child.plan_type || child.planType || 'hybrid';
+    
+    console.log('🎯 Extracted values:', {
+      name: child.name,
+      age: childAge,
+      interests: childInterests,
+      dislikes: childDislikes,
+      learningStyle: childLearningStyle,
+      goals: childGoals,
+      planType: childPlanType
+    });
+    
+    setChildAge(childAge);
+    setInterests(childInterests);
+    setDislikes(childDislikes);
+    setLearningStyle(childLearningStyle);
+    setSelectedGoals(childGoals);
+    setPlanType(childPlanType);
     setOriginalProfile(child);
     setHasChanges(false);
     setIsAddingNewChild(false);
@@ -472,18 +425,11 @@ export default function ProfileForm({ onSubmit }) {
     }
   };
 
-  // Track changes
+  // Track changes - ALWAYS allow submission for new profiles
   useEffect(() => {
     if (!originalProfile) {
-      setHasChanges(
-        childAge !== 5 ||
-        interests.length > 0 ||
-        dislikes.length > 0 ||
-        learningStyle !== "" ||
-        selectedGoals.length > 0 ||
-        planType !== 'hybrid' // Check if plan type changed
-      );
-      // Hide update message if any change
+      // For new profiles, always allow submission if name is provided
+      setHasChanges(childName.trim().length > 0);
       setShowUpdateMessage(false);
       return;
     }
@@ -497,7 +443,7 @@ export default function ProfileForm({ onSubmit }) {
     setHasChanges(changed);
     // Hide update message if any change
     if (changed) setShowUpdateMessage(false);
-  }, [childAge, interests, dislikes, learningStyle, selectedGoals, originalProfile, planType]);
+  }, [childName, childAge, interests, dislikes, learningStyle, selectedGoals, originalProfile, planType]);
 
   // Cancel changes
   const handleCancel = () => {
@@ -531,15 +477,33 @@ export default function ProfileForm({ onSubmit }) {
     console.log('🔘 BUTTON CLICKED - handleSubmit called');
     addDebugInfo('🔘 BUTTON CLICKED - handleSubmit called');
     
-    if (!user) {
-      console.error("User not authenticated");
-      addDebugInfo('❌ User not authenticated');
-      return;
-    }
-    if (!childName.trim()) {
-      alert("Child name is required.");
-      return;
-    }
+         if (!user) {
+       setFormError("User not logged in.");
+       return;
+     }
+
+          // Form validation
+      if (!childName.trim()) {
+        setFormError("Child name is required.");
+        return;
+      }
+      
+      if (interests.length === 0) {
+        setFormError("Please select at least one interest.");
+        return;
+      }
+      
+      if (!learningStyle) {
+        setFormError("Please select a learning style.");
+        return;
+      }
+      
+      if (selectedGoals.length === 0) {
+        setFormError("Please select at least one goal.");
+        return;
+      }
+      
+      setFormError(null); // Clear any previous errors
     
     addDebugInfo("🎯 PROFILE SUBMISSION STARTED");
     addDebugInfo(`👤 User: ${user.email}`);
@@ -566,15 +530,12 @@ export default function ProfileForm({ onSubmit }) {
     addDebugInfo('🔄 PROFILE SUBMISSION STEP: Initializing...');
     
     try {
-      // Save user email at user doc level
-      const userRef = doc(db, "users", user.uid);
-      await setDoc(userRef, { user_email: user.email }, { merge: true });
-      console.log('✅ User email saved to Firebase');
-      addDebugInfo('✅ User email saved to Firebase');
+      const childRef = doc(db, `users/${user.uid}/children/${childName}`);
+
+      setLoadingStep('Saving profile...');
       
-      // Save child profile under users/{user_uid}/children/{child_name}
-      const childRef = doc(collection(db, `users/${user.uid}/children`), childName);
-      await setDoc(childRef, {
+      // Save child profile to Firestore
+      const childProfile = {
         child_name: childName,
         child_age: childAge,
         interests: interests,
@@ -582,11 +543,11 @@ export default function ProfileForm({ onSubmit }) {
         preferred_learning_style: learningStyle,
         goals: selectedGoals,
         plan_type: planType,
-        created_at: new Date(),
         updated_at: new Date()
-      }, { merge: true });
-      console.log('✅ Child profile saved to Firebase');
-      addDebugInfo('✅ Child profile saved to Firebase');
+      };
+      
+      await setDoc(childRef, childProfile, { merge: true });
+      addDebugInfo('✅ Child profile saved to Firestore');
       
       // Initialize months array if it doesn't exist
       const childSnap = await getDoc(childRef);
@@ -600,7 +561,6 @@ export default function ProfileForm({ onSubmit }) {
       if (!months.includes(monthYear)) {
         months.push(monthYear);
         await setDoc(childRef, { months: months }, { merge: true });
-        console.log('✅ Months column updated:', months);
         addDebugInfo('✅ Months column updated: ' + months);
       }
       
@@ -623,7 +583,6 @@ export default function ProfileForm({ onSubmit }) {
 
       // Only show the plan modal if it's a new profile (no originalProfile)
       addDebugInfo(`📋 Original Profile exists: ${originalProfile ? 'YES' : 'NO'}`);
-      console.log('📋 Original Profile exists:', !!originalProfile);
       
       if (!originalProfile) {
         setLoadingStep('Generating Plan...');
@@ -631,18 +590,19 @@ export default function ProfileForm({ onSubmit }) {
         try {
           // Send to backend
           addDebugInfo("📡 CALLING API SERVICE...");
-          console.log('📡 CALLING API SERVICE...');
-          const res = await apiService.generatePlan(originalProfile); // Pass originalProfile
+          const res = await apiService.generatePlan({
+            child_name: childName,
+            child_age: childAge,
+            interests: interests,
+            dislikes: dislikes,
+            preferred_learning_style: learningStyle,
+            goals: selectedGoals,
+            plan_type: planType
+          });
           addDebugInfo(`📥 API RESPONSE RECEIVED: ${res.success ? 'SUCCESS' : 'FAILED'}`);
-          console.log('📥 API RESPONSE RECEIVED:', res);
           
           if (res.success) {
-            console.log('✅ PLAN GENERATION SUCCESSFUL');
             addDebugInfo('✅ PLAN GENERATION SUCCESSFUL');
-            console.log('🔍 DEBUG - Full API response:', res);
-            console.log('🔍 DEBUG - res.data:', res.data);
-            console.log('🔍 DEBUG - res.data keys:', Object.keys(res.data));
-            console.log('🔍 DEBUG - res.data.matched_topics:', res.data.matched_topics);
             
             // Save plan to Firestore under 'plans' field keyed by month
             const currentDate = new Date();
@@ -704,9 +664,12 @@ export default function ProfileForm({ onSubmit }) {
             setTimeout(() => {
               console.log('🚀 NAVIGATING TO PLAN PAGE...');
               console.log('🔍 DEBUG - Navigation state data:', res.data);
+              console.log('🔍 DEBUG - matched_topics length:', res.data.matched_topics?.length);
+              
+              // Pass the data directly without wrapping it in a 'data' property
               navigate("/customised-weekly-plan", { 
                 state: { 
-                  data: res.data, 
+                  ...res.data,  // Spread the backend response directly
                   childName,
                   childMonths: months
                 } 
@@ -716,56 +679,16 @@ export default function ProfileForm({ onSubmit }) {
             throw new Error(res.message || "Failed to generate plan");
           }
 
-          if (onSubmit) onSubmit(res);
+          // onSubmit callback removed - not needed for this component
         } catch (err) {
           addDebugInfo(`❌ ERROR CALLING BACKEND: ${err.message}`);
           console.error("❌ ERROR CALLING BACKEND:", err);
           
-          // Create an enhanced plan using the data files
-          addDebugInfo("🔄 FALLING BACK TO ENHANCED PLAN GENERATION");
-          console.log('🔄 FALLING BACK TO ENHANCED PLAN GENERATION...');
-          const enhancedPlan = generateEnhancedPlan(originalProfile); // Pass originalProfile
-          addDebugInfo("✅ ENHANCED PLAN GENERATED");
-          console.log('✅ ENHANCED PLAN GENERATED:', enhancedPlan);
-
-          // Save enhanced plan to Firestore
-          const currentDate = new Date();
-          const monthYear = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' }).replace(/ /g, '');
-          const snap = await getDoc(childRef);
-          let existingPlans = {};
-          let existingData = snap.exists() ? snap.data() : {};
-          if (existingData.plans) {
-            existingPlans = existingData.plans;
-          }
-          const newPlans = { ...existingPlans, [monthYear]: enhancedPlan };
-          
-          // Update months array
-          let months = existingData.months || [];
-          if (!months.includes(monthYear)) {
-            months.push(monthYear);
-          }
-          
-          await setDoc(childRef, { 
-            plans: newPlans,
-            months: months
-          }, { merge: true });
-          console.log('✅ Enhanced plan and months saved to Firebase');
-          addDebugInfo('✅ Enhanced plan and months saved to Firebase');
-          
-          // Update children list if this is a new child
-          if (isAddingNewChild) {
-            await loadChildren();
-          }
-          
-          setShowSuccessMessage(true);
-          console.log('🚀 NAVIGATING TO PLAN PAGE (ENHANCED)...');
-          navigate("/customised-weekly-plan", { 
-            state: { 
-              data: enhancedPlan, 
-              childName,
-              childMonths: months
-            } 
-          });
+          // Backend failed - show error and don't proceed
+          addDebugInfo("❌ BACKEND FAILED - Cannot generate plan");
+          console.error("❌ Backend failed - cannot generate plan:", err);
+          setFormError("Failed to generate learning plan. Please try again later.");
+          return;
         }
       } else {
         // This is an existing profile - generate a new plan anyway
@@ -775,7 +698,15 @@ export default function ProfileForm({ onSubmit }) {
           // Send to backend
           addDebugInfo("📡 CALLING API SERVICE FOR EXISTING PROFILE...");
           console.log('📡 CALLING API SERVICE FOR EXISTING PROFILE...');
-          const res = await apiService.generatePlan(originalProfile); // Pass originalProfile
+          const res = await apiService.generatePlan({
+            child_name: childName,
+            child_age: childAge,
+            interests: interests,
+            dislikes: dislikes,
+            preferred_learning_style: learningStyle,
+            goals: selectedGoals,
+            plan_type: planType
+          });
           addDebugInfo(`📥 API RESPONSE RECEIVED: ${res.success ? 'SUCCESS' : 'FAILED'}`);
           console.log('📥 API RESPONSE RECEIVED:', res);
           
@@ -834,9 +765,13 @@ export default function ProfileForm({ onSubmit }) {
             
             setShowSuccessMessage(true);
             console.log('🚀 NAVIGATING TO PLAN PAGE (EXISTING PROFILE)...');
+            console.log('🔍 DEBUG - Navigation data structure:', res.data);
+            console.log('🔍 DEBUG - matched_topics length:', res.data.matched_topics?.length);
+            
+            // Pass the data directly without wrapping it in a 'data' property
             navigate("/customised-weekly-plan", { 
               state: { 
-                data: res.data, 
+                ...res.data,  // Spread the backend response directly
                 childName,
                 childMonths: months
               } 
@@ -845,7 +780,7 @@ export default function ProfileForm({ onSubmit }) {
             throw new Error(res.message || "Failed to generate plan");
           }
 
-          if (onSubmit) onSubmit(res);
+          // onSubmit callback removed - not needed for this component
         } catch (err) {
           addDebugInfo(`❌ ERROR CALLING BACKEND FOR EXISTING PROFILE: ${err.message}`);
           console.error("❌ ERROR CALLING BACKEND FOR EXISTING PROFILE:", err);
@@ -853,7 +788,13 @@ export default function ProfileForm({ onSubmit }) {
           // Create an enhanced plan using the data files
           addDebugInfo("🔄 FALLING BACK TO ENHANCED PLAN GENERATION FOR EXISTING PROFILE");
           console.log('🔄 FALLING BACK TO ENHANCED PLAN GENERATION FOR EXISTING PROFILE...');
-          const enhancedPlan = generateEnhancedPlan(originalProfile); // Pass originalProfile
+          const enhancedPlan = generateEnhancedPlan({
+            child_age: childAge,
+            interests: interests,
+            preferred_learning_style: learningStyle,
+            goals: selectedGoals,
+            child_name: childName
+          });
           addDebugInfo("✅ ENHANCED PLAN GENERATED FOR EXISTING PROFILE");
           console.log('✅ ENHANCED PLAN GENERATED FOR EXISTING PROFILE:', enhancedPlan);
 
@@ -874,67 +815,27 @@ export default function ProfileForm({ onSubmit }) {
             months.push(monthYear);
           }
           
-          // Robust sanitization function for Firebase
-          const sanitizeForFirebase = (obj) => {
-            if (obj === null || obj === undefined) return null;
-            if (typeof obj === 'string' || typeof obj === 'number' || typeof obj === 'boolean') return obj;
-            if (Array.isArray(obj)) {
-              return obj.map(item => sanitizeForFirebase(item)).filter(item => item !== null);
-            }
-            if (typeof obj === 'object') {
-              const sanitized = {};
-              for (const [key, value] of Object.entries(obj)) {
-                // Skip functions and undefined values
-                if (typeof value === 'function' || value === undefined) continue;
-                // Skip keys that start with underscore (private properties)
-                if (key.startsWith('_')) continue;
-                const sanitizedValue = sanitizeForFirebase(value);
-                if (sanitizedValue !== null) {
-                  sanitized[key] = sanitizedValue;
-                }
-              }
-              return sanitized;
-            }
-            return null;
-          };
-
+          // Sanitize the data to remove any invalid nested entities for Firebase
           const sanitizedPlans = {};
           Object.keys(newPlans).forEach(key => {
             const plan = newPlans[key];
+            // Convert to JSON and back to remove any non-serializable objects
             try {
-              // Deep sanitization
-              const sanitizedPlan = sanitizeForFirebase(plan);
-              if (sanitizedPlan) {
-                sanitizedPlans[key] = sanitizedPlan;
-              } else {
-                // Fallback to minimal structure
-                sanitizedPlans[key] = {
-                  child_profile: {},
-                  profile_analysis: {},
-                  matched_topics: [],
-                  weekly_plan: {},
-                  learning_objectives: [],
-                  recommended_activities: [],
-                  progress_tracking: {},
-                  review_insights: {},
-                  llm_integration: {},
-                  agent_timings: {}
-                };
-              }
+              sanitizedPlans[key] = JSON.parse(JSON.stringify(plan));
             } catch (error) {
-              console.error('Failed to sanitize plan for key:', key, error);
-              // Ultimate fallback
+              console.warn('Failed to sanitize plan for key:', key, error);
+              // If sanitization fails, create a minimal version
               sanitizedPlans[key] = {
-                child_profile: {},
-                profile_analysis: {},
-                matched_topics: [],
-                weekly_plan: {},
-                learning_objectives: [],
-                recommended_activities: [],
-                progress_tracking: {},
-                review_insights: {},
-                llm_integration: {},
-                agent_timings: {}
+                child_profile: plan.child_profile || {},
+                profile_analysis: plan.profile_analysis || {},
+                matched_topics: plan.matched_topics || [],
+                weekly_plan: plan.weekly_plan || {},
+                learning_objectives: plan.learning_objectives || [],
+                recommended_activities: plan.recommended_activities || [],
+                progress_tracking: plan.progress_tracking || {},
+                review_insights: plan.review_insights || {},
+                llm_integration: plan.llm_integration || {},
+                agent_timings: plan.agent_timings || {}
               };
             }
           });
@@ -986,7 +887,57 @@ export default function ProfileForm({ onSubmit }) {
 
   // Inline Child Selector Component
   const InlineChildSelector = () => {
-    if (children.length === 0 && !isAddingNewChild) return null;
+    if (children.length === 0 && !isAddingNewChild) {
+      return (
+        <div style={{
+          marginBottom: spacing.xl,
+          padding: spacing.lg,
+          background: 'rgba(255, 255, 255, 0.1)',
+          borderRadius: '16px',
+          border: '1px solid rgba(255, 255, 255, 0.2)',
+          backdropFilter: 'blur(10px)',
+          textAlign: 'center'
+        }}>
+          <h3 style={{
+            fontSize: '1.2rem',
+            fontWeight: 600,
+            color: 'white',
+            margin: '0 0 20px 0',
+          }}>
+            👶 No Children Found
+          </h3>
+          <p style={{
+            color: 'rgba(255, 255, 255, 0.8)',
+            marginBottom: spacing.lg,
+            fontSize: '0.9rem'
+          }}>
+            You haven't added any children yet. Add your first child to get started!
+          </p>
+          <button
+            onClick={addNewChild}
+            style={{
+              padding: `${spacing.md} ${spacing.lg}`,
+              background: 'linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%)',
+              border: 'none',
+              borderRadius: '8px',
+              color: 'white',
+              cursor: 'pointer',
+              fontSize: '1rem',
+              fontWeight: 600,
+              transition: 'all 0.3s ease',
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.transform = 'translateY(-1px)';
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.transform = 'translateY(0)';
+            }}
+          >
+            ➕ Add Your First Child
+          </button>
+        </div>
+      );
+    }
     
     return (
       <div style={{
@@ -1337,6 +1288,285 @@ export default function ProfileForm({ onSubmit }) {
           Help us understand your child better so we can create a personalized learning experience 
           that matches their unique interests, style, and goals.
         </p>
+        
+        {/* Error Display */}
+        {formError && (
+          <div style={{
+            background: '#fee',
+            color: '#c33',
+            border: '1px solid #fcc',
+            borderRadius: '8px',
+            padding: '12px',
+            marginBottom: '20px',
+            textAlign: 'center'
+          }}>
+            ⚠️ {formError}
+          </div>
+        )}
+
+        {/* Debug Display - Show loaded data */}
+        <div style={{
+          background: 'rgba(0, 0, 0, 0.1)',
+          color: '#333',
+          border: '1px solid rgba(0, 0, 0, 0.2)',
+          borderRadius: '8px',
+          padding: '12px',
+          marginBottom: '20px',
+          fontSize: '0.9rem'
+        }}>
+          <h4 style={{ margin: '0 0 8px 0', color: '#667eea' }}>🔍 Debug Info</h4>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '8px' }}>
+            <div><strong>User:</strong> {user ? user.email : 'Not logged in'}</div>
+            <div><strong>User UID:</strong> {user ? user.uid : 'Not available'}</div>
+            <div><strong>Children Loaded:</strong> {children.length}</div>
+            <div><strong>Selected Child:</strong> {selectedChildIndex >= 0 ? children[selectedChildIndex]?.name : 'None'}</div>
+            <div><strong>Adding New:</strong> {isAddingNewChild ? 'Yes' : 'No'}</div>
+            <div><strong>Current Name:</strong> {childName || 'Not set'}</div>
+            <div><strong>Current Age:</strong> {childAge} years</div>
+            <div><strong>Interests:</strong> {interests.length} selected</div>
+            <div><strong>Learning Style:</strong> {learningStyle || 'Not set'}</div>
+            <div><strong>Goals:</strong> {selectedGoals.length} selected</div>
+            <div><strong>Plan Type:</strong> {planType}</div>
+          </div>
+          
+          {/* Children Status */}
+          <div style={{ marginTop: '12px', padding: '8px', background: children.length > 0 ? 'rgba(76, 175, 80, 0.1)' : 'rgba(244, 67, 54, 0.1)', borderRadius: '4px', border: `1px solid ${children.length > 0 ? 'rgba(76, 175, 80, 0.3)' : 'rgba(244, 67, 54, 0.3)'}` }}>
+            <strong style={{ color: children.length > 0 ? '#2e7d32' : '#c62828' }}>
+              {children.length > 0 ? '✅ Children Found' : '❌ No Children Loaded'}
+            </strong>
+            <div style={{ fontSize: '0.9rem', marginTop: '4px' }}>
+              {children.length > 0 
+                ? `Found ${children.length} child profile(s) in Firestore`
+                : 'No child profiles found. This could mean: 1) Profiles not saved, 2) Loading in progress, 3) Firestore error'
+              }
+            </div>
+            {children.some(child => child.autoFixed) && (
+              <div style={{ fontSize: '0.9rem', marginTop: '4px', color: '#6a1b9a', fontWeight: 'bold' }}>
+                🔧 Auto-fixed: {children.filter(child => child.autoFixed).length} profile(s) automatically repaired
+              </div>
+            )}
+          </div>
+          
+          {/* Firestore Status */}
+          <div style={{ marginTop: '12px', padding: '8px', background: 'rgba(255, 255, 255, 0.5)', borderRadius: '4px' }}>
+            <strong>Firestore Status:</strong>
+            <button 
+              onClick={checkFirestoreHealth}
+              style={{
+                marginLeft: '8px',
+                padding: '4px 8px',
+                background: '#667eea',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '0.8rem'
+              }}
+            >
+              🔍 Check Connection
+            </button>
+            <button 
+              onClick={resetFirestoreConnection}
+              style={{
+                marginLeft: '8px',
+                padding: '4px 8px',
+                background: '#ff6b6b',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '0.8rem'
+              }}
+            >
+              🔄 Reset Connection
+            </button>
+          </div>
+          
+          {/* Manual Actions */}
+          <div style={{ marginTop: '12px', padding: '8px', background: 'rgba(255, 255, 255, 0.5)', borderRadius: '4px' }}>
+            <strong>Manual Actions:</strong>
+            <button 
+              onClick={() => {
+                console.log('🔄 Manual refresh triggered');
+                if (user) {
+                  loadChildren();
+                  loadDataFiles();
+                }
+              }}
+              style={{
+                marginLeft: '8px',
+                padding: '4px 8px',
+                background: '#28a745',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '0.8rem'
+              }}
+            >
+              🔄 Refresh Children
+            </button>
+            <button 
+              onClick={() => {
+                console.log('📊 Show user details');
+                console.log('User:', user);
+                console.log('User UID:', user?.uid);
+                console.log('User email:', user?.email);
+              }}
+              style={{
+                marginLeft: '8px',
+                padding: '4px 8px',
+                background: '#17a2b8',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '0.8rem'
+              }}
+            >
+              👤 Show User Details
+            </button>
+            <button 
+              onClick={() => {
+                console.log('🔍 Analyze child profile structure');
+                if (children.length > 0) {
+                  const child = children[selectedChildIndex >= 0 ? selectedChildIndex : 0];
+                  console.log('🔍 Current child structure:', child);
+                  console.log('🔍 Available fields:', Object.keys(child));
+                  console.log('🔍 Field values:', {
+                    name: child.name,
+                    age: child.child_age || child.age,
+                    interests: child.interests || child.interest,
+                    dislikes: child.dislikes || child.dislike,
+                    learningStyle: child.preferred_learning_style || child.learning_style,
+                    goals: child.goals || child.goal,
+                    planType: child.plan_type || child.planType,
+                    plans: child.plans,
+                    months: child.months
+                  });
+                }
+              }}
+              style={{
+                marginLeft: '8px',
+                padding: '4px 8px',
+                background: '#ff9800',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '0.8rem'
+              }}
+            >
+              🔍 Analyze Profile
+            </button>
+            <button 
+              onClick={async () => {
+                console.log('🔧 Attempting to fix child profile structure');
+                if (children.length > 0 && user) {
+                  try {
+                    const child = children[selectedChildIndex >= 0 ? selectedChildIndex : 0];
+                    const childRef = doc(db, `users/${user.uid}/children`, child.name);
+                    
+                    // Create a complete profile structure
+                    const completeProfile = {
+                      ...child,
+                      child_age: child.child_age || child.age || 5,
+                      interests: child.interests || child.interest || ['Communication', 'AI'],
+                      dislikes: child.dislikes || child.dislike || [],
+                      preferred_learning_style: child.preferred_learning_style || child.learning_style || 'visual',
+                      goals: child.goals || child.goal || ['problem-solving'],
+                      plan_type: child.plan_type || child.planType || 'hybrid',
+                      updatedAt: new Date()
+                    };
+                    
+                    console.log('🔧 Complete profile to save:', completeProfile);
+                    
+                    await setDoc(childRef, completeProfile, { merge: true });
+                    console.log('✅ Profile structure fixed successfully');
+                    
+                    // Reload children to see the updated structure
+                    setTimeout(() => {
+                      loadChildren();
+                    }, 1000);
+                    
+                  } catch (error) {
+                    console.error('❌ Error fixing profile structure:', error);
+                  }
+                }
+              }}
+              style={{
+                marginLeft: '8px',
+                padding: '4px 8px',
+                background: '#9c27b0',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '0.8rem'
+              }}
+            >
+              🔧 Fix Profile
+            </button>
+          </div>
+          
+          {children.length > 0 && (
+            <div style={{ marginTop: '12px', padding: '8px', background: 'rgba(255, 255, 255, 0.5)', borderRadius: '4px' }}>
+              <strong>Children Data:</strong>
+              {children.map((child, idx) => (
+                <div key={child.name} style={{ marginTop: '4px', fontSize: '0.8rem' }}>
+                  {idx + 1}. {child.name} (Age: {child.child_age}, Interests: {child.interests?.length || 0}, Style: {child.preferred_learning_style || 'N/A'})
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Loading Indicator */}
+        {user && children.length === 0 && (
+          <div style={{
+            marginBottom: spacing.lg,
+            padding: spacing.md,
+            background: 'rgba(255, 193, 7, 0.1)',
+            borderRadius: '8px',
+            border: '1px solid rgba(255, 193, 7, 0.3)',
+            textAlign: 'center'
+          }}>
+            <p style={{ margin: 0, color: '#856404' }}>
+              🔄 Loading your child profiles... Please wait.
+            </p>
+          </div>
+        )}
+
+        {/* Auto-fixing Indicator */}
+        {isAutoFixing && (
+          <div style={{
+            marginBottom: spacing.lg,
+            padding: spacing.md,
+            background: 'rgba(156, 39, 176, 0.1)',
+            borderRadius: '8px',
+            border: '1px solid rgba(156, 39, 176, 0.3)',
+            textAlign: 'center'
+          }}>
+            <p style={{ margin: 0, color: '#6a1b9a' }}>
+              🔧 Auto-fixing child profile structure... Please wait.
+            </p>
+          </div>
+        )}
+        
+        {children.some(child => child.autoFixed === true) && !isAutoFixing && (
+          <div style={{
+            marginBottom: spacing.lg,
+            padding: spacing.md,
+            background: 'rgba(76, 175, 80, 0.1)',
+            borderRadius: '8px',
+            border: '1px solid rgba(76, 175, 80, 0.3)',
+            textAlign: 'center'
+          }}>
+            <p style={{ margin: 0, color: '#2e7d32' }}>
+              ✅ Child profiles automatically fixed and loaded!
+            </p>
+          </div>
+        )}
 
         {/* Inline Child Selector */}
         <InlineChildSelector />
@@ -1352,6 +1582,7 @@ export default function ProfileForm({ onSubmit }) {
             onChange={e => setChildName(e.target.value)}
             placeholder="Enter your child's name"
             disabled={selectedChildIndex >= 0 && selectedChildIndex < children.length && !isAddingNewChild} // Disable if editing existing child
+            className="profile-form-input"
             style={{
               width: '100%',
               padding: spacing.md,
@@ -1547,19 +1778,22 @@ export default function ProfileForm({ onSubmit }) {
           {/* Submit/Update and Cancel Buttons */}
           <div style={{ display: 'flex', gap: spacing.lg, marginTop: spacing.xl }}>
             <button
-              style={{ ...submitButtonStyle, flex: 1, opacity: hasChanges ? 1 : 0.6, cursor: hasChanges ? 'pointer' : 'not-allowed' }}
+              style={{ ...submitButtonStyle, flex: 1, opacity: (hasChanges || !originalProfile) ? 1 : 0.6, cursor: (isLoading || (!hasChanges && originalProfile)) ? 'not-allowed' : 'pointer' }}
               className={`profile-form-button profile-form-transition ${isLoading ? 'profile-form-loading' : ''}`}
               onClick={handleSubmit}
-              disabled={isLoading || !hasChanges}
+              disabled={isLoading || (!hasChanges && originalProfile)}
             >
-                          {isAddingNewChild 
-              ? (isLoading ? `⏳ ${loadingStep || 'Creating Plan...'}` : '🚀 Create My Child\'s Plan!')
-              : selectedChildIndex >= 0 && selectedChildIndex < children.length 
-                ? (isLoading ? `⏳ ${loadingStep || 'Updating...'}` : '💾 Update Profile') 
-                : (isLoading ? `⏳ ${loadingStep || 'Creating Your Plan...'}` : '🚀 Generate My Child\'s Perfect Plan!')
-            }
+              {isLoading ? (
+                <span>⏳ {loadingStep || 'Processing...'}</span>
+              ) : isAddingNewChild ? (
+                '🚀 Create My Child\'s Plan!'
+              ) : selectedChildIndex >= 0 && selectedChildIndex < children.length ? (
+                '💾 Update Profile'
+              ) : (
+                '🚀 Generate My Child\'s Perfect Plan!'
+              )}
             </button>
-            {hasChanges && (
+            {(hasChanges || !originalProfile) && (
               <button
                 style={{ ...submitButtonStyle, background: '#eee', color: '#764ba2', flex: 1, boxShadow: 'none', border: '1px solid #764ba2' }}
                 onClick={handleCancel}
@@ -1659,3 +1893,5 @@ export default function ProfileForm({ onSubmit }) {
     </div>
   );
 }
+
+export default ProfileForm;

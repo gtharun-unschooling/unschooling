@@ -1,5 +1,9 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../contexts/AuthContext';
+import BackButton from '../../components/ui/BackButton';
+import PaymentModal from '../../components/payment/PaymentModal';
 
 
 const HeroSection = () => {
@@ -56,6 +60,11 @@ const HeroSection = () => {
 
 // 🎯 Plan Comparison Section (Standalone Full Width Page Section)
 const PlanSection = () => {
+    const { currentUser } = useAuth();
+    const navigate = useNavigate();
+    const [selectedPlan, setSelectedPlan] = useState(null);
+    const [billingCycle, setBillingCycle] = useState('monthly');
+    const [showPaymentModal, setShowPaymentModal] = useState(false);
     const sectionStyle = {
       padding: '6vh 5vw',
       backgroundColor: '#f9fafb',
@@ -85,15 +94,19 @@ const PlanSection = () => {
       margin: '0 auto',
     };
   
-    const cardStyle = {
+    const cardStyle = (isPopular) => ({
       backgroundColor: '#ffffff',
       padding: '2rem',
       borderRadius: '1.5rem',
-      boxShadow: '0 6px 16px rgba(0,0,0,0.06)',
+      boxShadow: isPopular ? '0 8px 25px rgba(16, 185, 129, 0.15)' : '0 6px 16px rgba(0,0,0,0.06)',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-    };
+      border: isPopular ? '2px solid #10b981' : '2px solid transparent',
+      position: 'relative',
+      transform: isPopular ? 'scale(1.05)' : 'scale(1)',
+      transition: 'all 0.3s ease',
+    });
   
     const emojiStyle = {
       fontSize: '2.75rem',
@@ -128,9 +141,9 @@ const PlanSection = () => {
       marginBottom: '1.5rem',
     };
   
-    const buttonStyle = {
+    const buttonStyle = (isPopular) => ({
       padding: '0.75rem 1.5rem',
-      backgroundColor: '#10b981',
+      backgroundColor: isPopular ? '#059669' : '#10b981',
       color: '#ffffff',
       border: 'none',
       borderRadius: '0.5rem',
@@ -138,6 +151,41 @@ const PlanSection = () => {
       fontSize: '1rem',
       fontWeight: '600',
       width: '100%',
+      transition: 'all 0.3s ease',
+      '&:hover': {
+        backgroundColor: isPopular ? '#047857' : '#059669',
+        transform: 'translateY(-2px)',
+      },
+    });
+
+    const popularBadgeStyle = {
+      position: 'absolute',
+      top: '-10px',
+      right: '20px',
+      backgroundColor: '#10b981',
+      color: 'white',
+      padding: '0.5rem 1rem',
+      borderRadius: '20px',
+      fontSize: '0.8rem',
+      fontWeight: '600',
+      boxShadow: '0 2px 8px rgba(16, 185, 129, 0.3)',
+    };
+
+    const originalPriceStyle = {
+      fontSize: '0.9rem',
+      color: '#9ca3af',
+      textDecoration: 'line-through',
+      marginRight: '0.5rem',
+    };
+
+    const discountStyle = {
+      fontSize: '0.8rem',
+      color: '#ef4444',
+      fontWeight: '600',
+      backgroundColor: '#fef2f2',
+      padding: '0.2rem 0.5rem',
+      borderRadius: '12px',
+      marginLeft: '0.5rem',
     };
   
     const plans = [
@@ -145,43 +193,127 @@ const PlanSection = () => {
         icon: '🍼',
         title: 'Nurture',
         price: '₹499/mo',
+        originalPrice: '₹699/mo',
         age: 'Ages 0–3 (Parent-Guided)',
+        popular: false,
         features: [
-          'Weekly learning kits',
-          'Simple daily activities',
+          'Weekly learning kits (4 per month)',
+          'Simple daily activities (15-20 min)',
           'Expert-curated experiences',
-          'Full parental guidance',
-          'Infant-safe materials',
+          'Full parental guidance & support',
+          'Infant-safe materials & tools',
+          'Progress tracking dashboard',
+          'Parent community access',
+          'Email support',
+        ],
+        benefits: [
+          'Develops early motor skills',
+          'Builds parent-child bonding',
+          'Introduces basic concepts',
+          'Safe exploration environment',
+        ],
+        kitContents: [
+          'Age-appropriate toys',
+          'Sensory materials',
+          'Activity cards',
+          'Parent guide',
         ],
       },
       {
         icon: '🌿',
         title: 'Grow',
         price: '₹799/mo',
+        originalPrice: '₹999/mo',
         age: 'Ages 3–6 (Light Autonomy)',
+        popular: true,
         features: [
-          'Creative kits + stories',
+          'Creative kits + interactive stories',
           'Track progress online',
           'Flexible scheduling',
           'Fun hands-on learning',
           'Early curiosity builder',
+          'Monthly live sessions (2 per month)',
+          'Parent-child activities',
+          'Priority support',
+          'Mobile app access',
+        ],
+        benefits: [
+          'Enhances creativity & imagination',
+          'Develops problem-solving skills',
+          'Builds confidence & independence',
+          'Prepares for school readiness',
+        ],
+        kitContents: [
+          'Art & craft supplies',
+          'Educational games',
+          'Story books',
+          'Activity worksheets',
+          'Progress stickers',
         ],
       },
       {
         icon: '🚀',
         title: 'Thrive',
         price: '₹999/mo',
+        originalPrice: '₹1299/mo',
         age: 'Ages 6–10+ (Independent)',
+        popular: false,
         features: [
           'Project-based learning',
-          'Live sessions included',
+          'Live sessions included (4 per month)',
           'All kits & materials',
           'Self-paced challenges',
           'Builds real-world skills',
+          'Mentor support',
+          'Advanced progress tracking',
+          'Community challenges',
+          'Certificate programs',
+        ],
+        benefits: [
+          'Develops critical thinking',
+          'Builds real-world skills',
+          'Encourages independence',
+          'Prepares for future learning',
+        ],
+        kitContents: [
+          'STEM project materials',
+          'Coding tools',
+          'Science experiments',
+          'Advanced games',
+          'Achievement badges',
         ],
       },
     ];
   
+    const handlePlanSelect = (plan) => {
+      if (!currentUser) {
+        navigate('/login');
+        return;
+      }
+      setSelectedPlan(plan);
+      setShowPaymentModal(true);
+    };
+
+    const billingToggleStyle = {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginBottom: '2rem',
+      gap: '1rem',
+    };
+
+    const toggleButtonStyle = (isActive) => ({
+      padding: '0.75rem 1.5rem',
+      border: 'none',
+      borderRadius: '25px',
+      backgroundColor: isActive ? '#10b981' : '#e5e7eb',
+      color: isActive ? 'white' : '#6b7280',
+      fontSize: '1rem',
+      fontWeight: '600',
+      cursor: 'pointer',
+      transition: 'all 0.3s ease',
+    });
+
     return (
       <section style={sectionStyle}>
         <h2 style={headingStyle}>Choose the Right Plan</h2>
@@ -189,22 +321,90 @@ const PlanSection = () => {
           Each plan is tailored for your child's unique age and learning stage. Our kits grow with your child,
           blending creativity, independence, and hands-on fun!
         </p>
+        
+        {/* Billing Cycle Toggle */}
+        <div style={billingToggleStyle}>
+          <button
+            style={toggleButtonStyle(billingCycle === 'monthly')}
+            onClick={() => setBillingCycle('monthly')}
+          >
+            Monthly
+          </button>
+          <button
+            style={toggleButtonStyle(billingCycle === 'yearly')}
+            onClick={() => setBillingCycle('yearly')}
+          >
+            Yearly
+            <span style={{ 
+              fontSize: '0.75rem', 
+              marginLeft: '0.5rem',
+              backgroundColor: '#059669',
+              color: 'white',
+              padding: '0.2rem 0.5rem',
+              borderRadius: '10px',
+            }}>
+              Save 17%
+            </span>
+          </button>
+        </div>
+
         <div style={gridStyle}>
           {plans.map((plan, index) => (
-            <div key={index} style={cardStyle}>
+            <div key={index} style={cardStyle(plan.popular)}>
+              {plan.popular && (
+                <div style={popularBadgeStyle}>Most Popular</div>
+              )}
               <span style={emojiStyle}>{plan.icon}</span>
               <div style={planTitleStyle}>{plan.title}</div>
-              <div style={priceStyle}>{plan.price}</div>
+              
+              {/* Dynamic Pricing */}
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.5rem' }}>
+                <span style={originalPriceStyle}>{plan.originalPrice}</span>
+                <span style={priceStyle}>
+                  {billingCycle === 'yearly' 
+                    ? `₹${Math.floor(parseInt(plan.price.replace('₹', '').replace('/mo', '')) * 10)}/yr`
+                    : plan.price
+                  }
+                </span>
+                <span style={discountStyle}>
+                  {billingCycle === 'yearly' ? 'Save 17%' : 'Limited Time'}
+                </span>
+              </div>
+              
               <div style={ageStyle}>{plan.age}</div>
+              
+              {/* Key Features */}
               <ul style={featureListStyle}>
-                {plan.features.map((feat, idx) => (
-                  <li key={idx}>• {feat}</li>
+                {plan.features.slice(0, 6).map((feat, idx) => (
+                  <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
+                    <span style={{ color: '#10b981', marginRight: '0.5rem', marginTop: '0.1rem' }}>✓</span>
+                    <span style={{ fontSize: '0.9rem' }}>{feat}</span>
+                  </li>
                 ))}
               </ul>
-              <button style={buttonStyle}>Choose {plan.title}</button>
+              
+              <button 
+                style={buttonStyle(plan.popular)}
+                onClick={() => handlePlanSelect(plan)}
+              >
+                {currentUser ? `Choose ${plan.title}` : 'Login to Subscribe'}
+              </button>
             </div>
           ))}
         </div>
+
+        {/* Payment Modal */}
+        {showPaymentModal && selectedPlan && (
+          <PaymentModal
+            isOpen={showPaymentModal}
+            onClose={() => {
+              setShowPaymentModal(false);
+              setSelectedPlan(null);
+            }}
+            selectedPlan={selectedPlan}
+            billingCycle={billingCycle}
+          />
+        )}
       </section>
     );
   };
@@ -292,6 +492,21 @@ const KitFlowSection = () => {
   const PlansMainPage = () => {
     return (
       <div>
+        {/* Back Button */}
+        <div style={{ 
+          position: 'fixed', 
+          top: '2rem', 
+          left: '2rem', 
+          zIndex: 1000,
+          padding: '1rem'
+        }}>
+                         <BackButton 
+                 to="/" 
+                 text="Back to Home" 
+                 variant="colorful"
+                 size="medium"
+               />
+        </div>
         <HeroSection />
         <PlanSection />
         <KitFlowSection />

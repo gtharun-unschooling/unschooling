@@ -1,41 +1,69 @@
 /**
- * Reusable loading spinner component.
+ * Enhanced loading spinner component with accessibility and multiple variants.
  */
 
 import React from 'react';
+import './LoadingSpinner.css';
 
 const LoadingSpinner = ({ 
-  size = 'md', 
-  color = 'primary', 
-  text = '', 
-  className = '' 
+  size = 'medium', 
+  color = '#3b82f6', 
+  variant = 'spinner',
+  text = '',
+  className = ''
 }) => {
-  const sizeClasses = {
-    sm: 'w-4 h-4',
-    md: 'w-8 h-8',
-    lg: 'w-12 h-12',
-    xl: 'w-16 h-16'
+  const sizeMap = {
+    tiny: '16px',
+    small: '24px',
+    medium: '32px',
+    large: '48px',
+    xlarge: '64px'
   };
 
-  const colorClasses = {
-    primary: 'text-blue-600',
-    secondary: 'text-gray-600',
-    success: 'text-green-600',
-    danger: 'text-red-600',
-    warning: 'text-yellow-600'
+  const renderSpinner = () => {
+    switch (variant) {
+      case 'dots':
+        return (
+          <div className={`loading-dots ${size}`}>
+            <div className="dot"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
+          </div>
+        );
+      case 'pulse':
+        return (
+          <div className={`loading-pulse ${size}`} style={{ backgroundColor: color }}></div>
+        );
+      case 'bars':
+        return (
+          <div className={`loading-bars ${size}`}>
+            <div className="bar" style={{ backgroundColor: color }}></div>
+            <div className="bar" style={{ backgroundColor: color }}></div>
+            <div className="bar" style={{ backgroundColor: color }}></div>
+          </div>
+        );
+      default:
+        return (
+          <div 
+            className={`loading-spinner ${size}`}
+            style={{
+              borderColor: `${color}20`,
+              borderTopColor: color
+            }}
+            role="status"
+            aria-label="Loading"
+          ></div>
+        );
+    }
   };
 
   return (
-    <div className={`flex flex-col items-center justify-center ${className}`}>
-      <div className="relative">
-        <div
-          className={`${sizeClasses[size]} ${colorClasses[color]} animate-spin rounded-full border-2 border-gray-300 border-t-current`}
-        />
-      </div>
+    <div className={`loading-container ${className}`}>
+      {renderSpinner()}
       {text && (
-        <p className="mt-2 text-sm text-gray-600 animate-pulse">
+        <div className="loading-text" style={{ color }}>
           {text}
-        </p>
+        </div>
       )}
     </div>
   );

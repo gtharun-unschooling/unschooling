@@ -1,30 +1,55 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
+import config from '../../config/config';
+import BackButton from '../../components/ui/BackButton';
 // import topicData from '../../data/topicsdata.json';
 
 const DynamicTopicPage = () => {
-  const { nicheName, topicSlug } = useParams();
+  const { nicheSlug, topicSlug } = useParams();
+  const location = useLocation();
   const [topicData, setTopicData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     setLoading(true);
-    fetch('/api/topics')
-      .then(res => res.json())
+    console.log('🔍 DynamicTopicPage: Loading data for nicheSlug:', nicheSlug, 'topicSlug:', topicSlug);
+    console.log('🔍 DynamicTopicPage: API_BASE_URL:', config.API_BASE_URL);
+    
+    fetch(`${config.API_BASE_URL}/api/topics`)
+      .then(res => {
+        console.log('📊 Topics API response status:', res.status);
+        return res.json();
+      })
       .then(data => {
+        console.log('✅ Topics data loaded:', data.length, 'topics');
+        console.log('🔍 Sample topic data:', data.slice(0, 2));
         setTopicData(data);
         setLoading(false);
       })
       .catch(err => {
+        console.error('❌ Error fetching topics data:', err);
         setError('Failed to load topics data.');
         setLoading(false);
       });
-  }, []);
+  }, [nicheSlug, topicSlug]);
 
   // ✅ Safety checks on route params
-  const decodedNiche = (nicheName || '').replace(/-/g, ' ').toLowerCase();
+  const decodedNiche = (nicheSlug || '').replace(/-/g, ' ').toLowerCase();
   const decodedTopic = (topicSlug || '').replace(/-/g, ' ').toLowerCase();
+  
+  // Add more robust debugging
+  console.log('🔍 URL Decoding Debug:');
+  console.log('  Original nicheSlug:', nicheSlug);
+  console.log('  Original topicSlug:', topicSlug);
+  console.log('  Decoded niche:', decodedNiche);
+  console.log('  Decoded topic:', decodedTopic);
+  
+  console.log('🔍 DynamicTopicPage Debug Info:');
+  console.log('  nicheSlug:', nicheSlug);
+  console.log('  topicSlug:', topicSlug);
+  console.log('  decodedNiche:', decodedNiche);
+  console.log('  decodedTopic:', decodedTopic);
 
   // ✅ Preprocess dataset once
   const cleanData = Array.isArray(topicData)
@@ -32,22 +57,107 @@ const DynamicTopicPage = () => {
     : [];
 
   // ✅ Try finding a match
+  console.log('🔍 Looking for topic match:');
+  console.log('  Looking for niche:', decodedNiche);
+  console.log('  Looking for topic:', decodedTopic);
+  
   const foundTopic = cleanData.find(
-    (item) =>
-      item.Niche.toLowerCase() === decodedNiche &&
-      item.Topic.toLowerCase() === decodedTopic
+    (item) => {
+      const nicheMatch = item.Niche.toLowerCase() === decodedNiche;
+      const topicMatch = item.Topic.toLowerCase() === decodedTopic;
+      
+      // Add more detailed logging for debugging
+      console.log(`  Checking: "${item.Niche}" (${nicheMatch ? '✅' : '❌'}) "${item.Topic}" (${topicMatch ? '✅' : '❌'})`);
+      
+      // If exact match fails, try partial matching for better debugging
+      if (!nicheMatch || !topicMatch) {
+        console.log(`    Debug - Niche comparison: "${item.Niche.toLowerCase()}" vs "${decodedNiche}"`);
+        console.log(`    Debug - Topic comparison: "${item.Topic.toLowerCase()}" vs "${decodedTopic}"`);
+      }
+      
+      return nicheMatch && topicMatch;
+    }
+  );
+  
+  console.log('🔍 Found topic:', foundTopic ? 'YES' : 'NO');
+  if (foundTopic) {
+    console.log('📋 Found topic details:', {
+      Topic: foundTopic.Topic,
+      Age: foundTopic.Age,
+      'Estimated Time': foundTopic['Estimated Time'],
+      Hashtags: foundTopic.Hashtags
+    });
+  }
+
+  if (loading) return (
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh',
+      fontSize: '1.2rem',
+      color: '#666'
+    }}>
+      <div>
+        <div style={{ marginBottom: '1rem' }}>🔄 Loading topic page...</div>
+        <div style={{ fontSize: '0.9rem', color: '#999' }}>Fetching data from API...</div>
+      </div>
+    </div>
+  );
+  
+  if (error) return (
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh',
+      fontSize: '1.2rem',
+      color: '#e74c3c'
+    }}>
+      <div>
+        <div style={{ marginBottom: '1rem' }}>❌ Error loading page</div>
+        <div style={{ fontSize: '0.9rem', color: '#666' }}>{error}</div>
+      </div>
+    </div>
   );
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>{error}</p>;
-
   if (!foundTopic) {
+    console.error('❌ Topic not found:', { decodedNiche, decodedTopic });
+    console.log('🔍 Available topics:', cleanData.map(t => ({ niche: t.Niche, topic: t.Topic })));
+    
+    // Try to find similar topics for better debugging
+    const similarTopics = cleanData.filter(item => 
+      item.Niche.toLowerCase().includes(decodedNiche) || 
+      item.Topic.toLowerCase().includes(decodedTopic)
+    );
+    
+    if (similarTopics.length > 0) {
+      console.log('🔍 Similar topics found:', similarTopics.map(t => ({ niche: t.Niche, topic: t.Topic })));
+    }
+    
     return (
-      <div style={{ padding: '2rem' }}>
-        <h2 style={{ fontSize: '1.5rem', color: 'red' }}>
-          Topic not found. Check if data matches route params.
-        </h2>
-        <pre>{JSON.stringify({ decodedNiche, decodedTopic }, null, 2)}</pre>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        fontSize: '1.2rem',
+        color: '#e74c3c'
+      }}>
+        <div>
+          <div style={{ marginBottom: '1rem' }}>❌ Topic Not Found</div>
+          <div style={{ fontSize: '0.9rem', color: '#666' }}>
+            Could not find topic "{decodedTopic}" in niche "{decodedNiche}"
+          </div>
+          <div style={{ fontSize: '0.8rem', color: '#999', marginTop: '1rem' }}>
+            URL: /niche/{nicheSlug}/{topicSlug}
+          </div>
+          {similarTopics.length > 0 && (
+            <div style={{ fontSize: '0.8rem', color: '#999', marginTop: '1rem' }}>
+              Similar topics: {similarTopics.slice(0, 3).map(t => t.Topic).join(', ')}
+            </div>
+          )}
+        </div>
       </div>
     );
   }
@@ -147,6 +257,8 @@ const DynamicTopicPage = () => {
       .map((tag) => `#${tag}`)
       .join('\n');
   
+    console.log('🔍 DetailBarSection - topicData.Age:', topicData.Age, 'Type:', typeof topicData.Age);
+    
     return (
       <div style={barWrapper}>
         <div style={sectionWrapper}>
@@ -317,56 +429,54 @@ const DynamicTopicPage = () => {
     const parseActivity = (activityString) => {
       if (!activityString) return null;
   
+      // Robust section extraction for headings (handles whitespace and colon issues)
+      const getSectionContent = (lines, heading, nextHeadings) => {
+        const headingIndex = lines.findIndex(line => line.replace(/\s+/g, ' ').trim().toLowerCase().includes(heading.toLowerCase()));
+        if (headingIndex === -1) return '';
+        
+        // Extract content from the same line after the heading
+        const currentLine = lines[headingIndex];
+        const headingLower = heading.toLowerCase();
+        const headingStart = currentLine.toLowerCase().indexOf(headingLower);
+        if (headingStart !== -1) {
+          const contentAfterHeading = currentLine.substring(headingStart + heading.length).trim();
+          if (contentAfterHeading) {
+            return contentAfterHeading;
+          }
+        }
+        
+        // If no content on same line, look for next lines
+        let endIndex = lines.length;
+        for (const next of nextHeadings) {
+          const nextIndex = lines.findIndex((line, idx) => idx > headingIndex && line.replace(/\s+/g, ' ').trim().toLowerCase().includes(next.toLowerCase()));
+          if (nextIndex !== -1 && nextIndex < endIndex) endIndex = nextIndex;
+        }
+        return lines.slice(headingIndex + 1, endIndex).join('\n').trim();
+      };
+
       const lines = activityString.split('\n').map(line => line.trim());
-  
       const title = lines[0] || 'Activity';
-  
-      const materialsLine = lines.find(line => line.startsWith('Materials Needed:'));
+      const materialsLine = lines.find(line => line.toLowerCase().startsWith('materials needed:'));
       let materials = '';
       if (materialsLine) {
         const colonIndex = materialsLine.indexOf(':');
         materials = materialsLine.slice(colonIndex + 1).trim();
       }
-  
-      const headings = [
-        'Steps to Follow:',
-        'What Should Be Achieved:',
-        'What is Gained:',
-      ];
-  
-      const sections = {};
-      headings.forEach((heading, i) => {
-        const startIndex = lines.findIndex(line => line === heading);
-        if (startIndex === -1) {
-          sections[heading] = '';
-          return;
-        }
-        let endIndex = lines.length;
-        for (let j = i + 1; j < headings.length; j++) {
-          const nextHeadingIndex = lines.findIndex(line => line === headings[j]);
-          if (nextHeadingIndex !== -1 && nextHeadingIndex > startIndex) {
-            endIndex = nextHeadingIndex;
-            break;
-          }
-        }
-        const contentLines = lines.slice(startIndex + 1, endIndex);
-        sections[heading] = contentLines.join('\n').trim();
-      });
-  
-      return {
-        title,
-        materials,
-        steps: sections['Steps to Follow:'],
-        achieved: sections['What Should Be Achieved:'],
-        gained: sections['What is Gained:'],
-      };
+      const steps = getSectionContent(lines, 'Steps to Follow:', ['What Should Be Achieved:', 'What is Gained:']);
+      const achieved = getSectionContent(lines, 'What Should Be Achieved:', ['What is Gained:']);
+      const gained = getSectionContent(lines, 'What is Gained:', []);
+      return { title, materials, steps, achieved, gained };
     };
   
     const activity1 = parseActivity(topicData['Activity 1']);
     const activity2 = parseActivity(topicData['Activity 2']);
 
+    console.log("Raw Activity 1:", topicData['Activity 1']);
+    console.log("Raw Activity 2:", topicData['Activity 2']);
     console.log("Parsed Activity 1:", activity1);
     console.log("Parsed Activity 2:", activity2);
+    console.log("Activity 1 achieved section:", activity1?.achieved);
+    console.log("Activity 2 achieved section:", activity2?.achieved);
   
     return (
       <>
@@ -393,7 +503,7 @@ const DynamicTopicPage = () => {
                 <p style={paragraphStyle}>{activity1.steps}</p>
   
                 <h4 style={sectionTitle}>What Should Be Achieved</h4>
-                <p style={paragraphStyle}>{activity1.achieved}</p>
+                <p style={paragraphStyle}>{activity1.achieved || 'No data found'}</p>
   
                 <h4 style={sectionTitle}>What is Gained</h4>
                 <p style={paragraphStyle}>{activity1.gained}</p>
@@ -411,7 +521,7 @@ const DynamicTopicPage = () => {
                 <p style={paragraphStyle}>{activity2.steps}</p>
   
                 <h4 style={sectionTitle}>What Should Be Achieved</h4>
-                <p style={paragraphStyle}>{activity2.achieved}</p>
+                <p style={paragraphStyle}>{activity2.achieved || 'No data found'}</p>
   
                 <h4 style={sectionTitle}>What is Gained</h4>
                 <p style={paragraphStyle}>{activity2.gained}</p>
@@ -420,10 +530,7 @@ const DynamicTopicPage = () => {
           </div>
         </div>
 
-            {/* Debug JSON output */}
-    <pre style={{ whiteSpace: 'pre-wrap', background: '#f9fafb', padding: '1rem', marginTop: '2rem', borderRadius: '8px', fontSize: '0.85rem' }}>
-      {JSON.stringify({ activity1, activity2 }, null, 2)}
-    </pre>
+
       </>
     );
   };
@@ -445,6 +552,23 @@ return (
         fontFamily: 'sans-serif',
       }}
     >
+      {/* Back Button */}
+      <div style={{ marginBottom: '2rem' }}>
+        <BackButton 
+          from={location.state?.from || 'niches'}
+          text={(() => {
+            if (location.state?.from === 'weekly-plan') {
+              return "← Back to Weekly Plan";
+            } else if (location.state?.from === 'profile') {
+              return "← Back to Profile";
+            } else {
+              return `← Back to ${decodedNiche.charAt(0).toUpperCase() + decodedNiche.slice(1)}`;
+            }
+          })()}
+          variant="primary"
+          size="medium"
+        />
+      </div>
       <HeroSection topicData={foundTopic} />
       <DetailBarSection topicData={foundTopic} />
       <ObjectiveSection topicData={foundTopic} />

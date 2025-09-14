@@ -115,6 +115,14 @@ export const colors = {
     muted: '#888888',
     inverse: '#ffffff',
   },
+  
+  // Border Colors
+  border: {
+    light: '#e2e8f0',
+    medium: '#cbd5e1',
+    dark: '#94a3b8',
+    focus: '#3b82f6',
+  },
 };
 
 export const spacing = {

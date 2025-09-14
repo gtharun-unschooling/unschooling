@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from './Navbar';
 import { colors, spacing, typography } from '../../../styles/designTokens';
 
 const HeroSection = () => {
@@ -122,7 +121,6 @@ const HeroSection = () => {
 
   return (
     <section style={sectionStyle}>
-      <Navbar />
       <div style={versionStyle}>
         🚀 v1.2.0
       </div>

@@ -1,0 +1,48 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - button "Toggle navigation menu" [ref=e5] [cursor=pointer]
+      - link "Unschooling" [ref=e9] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e10]:
+        - link "Home" [ref=e11] [cursor=pointer]:
+          - /url: /
+        - link "Explore" [ref=e12] [cursor=pointer]:
+          - /url: /niche
+        - link "Plans" [ref=e13] [cursor=pointer]:
+          - /url: /plans
+        - link "Sign In" [ref=e14] [cursor=pointer]:
+          - /url: /login
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - heading "Menu" [level=3] [ref=e17]
+      - button "✕" [ref=e18] [cursor=pointer]
+    - generic [ref=e20]:
+      - heading "Quick Links" [level=4] [ref=e21]
+      - paragraph [ref=e22]: Menu content will go here...
+  - button "⚙️" [ref=e24] [cursor=pointer]
+  - generic [ref=e27]:
+    - heading "Welcome Back" [level=1] [ref=e28]
+    - paragraph [ref=e29]: Sign in to continue your learning journey
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]: Email Address
+        - textbox "Email Address" [ref=e33]
+      - generic [ref=e34]:
+        - generic [ref=e35]: Password
+        - generic [ref=e36]:
+          - textbox "Password" [ref=e37]
+          - button "Show password" [ref=e38] [cursor=pointer]: 👁️
+      - button "Sign In" [ref=e39] [cursor=pointer]
+    - generic [ref=e42]: or
+    - button "Continue with Google" [ref=e44] [cursor=pointer]:
+      - img [ref=e45] [cursor=pointer]
+      - text: Continue with Google
+    - generic [ref=e50]:
+      - generic [ref=e51]: Don't have an account?
+      - generic [ref=e52] [cursor=pointer]: Sign up
+    - generic [ref=e54] [cursor=pointer]: Forgot your password?
+```

@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import config from '../../config/config';
 
 
 
@@ -75,21 +76,89 @@ const NichesGridSection = () => {
   const [niches, setNiches] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [visibleNiches, setVisibleNiches] = useState(() => {
+    // Get saved count from localStorage, default to 9 if first visit
+    const saved = localStorage.getItem('nichesVisibleCount');
+    return saved ? parseInt(saved) : 9;
+  });
   const navigate = useNavigate();
+
+  // Fallback niches data in case API fails
+  const fallbackNiches = [
+    {
+      Niche: "Artificial Intelligence",
+      "Sub heading": "Explore the future of technology and machine learning",
+      "Niche Slug": "artificial-intelligence",
+      Illustration: "/website/niches/ai.png"
+    },
+    {
+      Niche: "Creative Writing",
+      "Sub heading": "Develop storytelling skills and creative expression",
+      "Niche Slug": "creative-writing",
+      Illustration: "/website/niches/writing.png"
+    },
+    {
+      Niche: "Environmental Science",
+      "Sub heading": "Learn about nature, sustainability, and our planet",
+      "Niche Slug": "environmental-science",
+      Illustration: "/website/niches/nature.png"
+    },
+    {
+      Niche: "Mathematics",
+      "Sub heading": "Discover the beauty of numbers and problem-solving",
+      "Niche Slug": "mathematics",
+      Illustration: "/website/niches/math.png"
+    },
+    {
+      Niche: "Music & Arts",
+      "Sub heading": "Express creativity through sound and visual arts",
+      "Niche Slug": "music-arts",
+      Illustration: "/website/niches/arts.png"
+    },
+    {
+      Niche: "Physical Education",
+      "Sub heading": "Build strength, coordination, and healthy habits",
+      "Niche Slug": "physical-education",
+      Illustration: "/website/niches/sports.png"
+    }
+  ];
 
   useEffect(() => {
     setLoading(true);
-    fetch('/api/niches')
-      .then(res => res.json())
+    console.log('🔍 NichesGridSection: Loading niches data');
+    console.log('🔍 API_BASE_URL:', config.API_BASE_URL);
+    
+    fetch(`${config.API_BASE_URL}/api/niches`)
+      .then(res => {
+        console.log('📊 Niches API response status:', res.status);
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+      })
       .then(data => {
-        setNiches(data);
+        console.log('✅ Niches loaded successfully:', data);
+        // Ensure data is an array
+        if (Array.isArray(data) && data.length > 0) {
+          setNiches(data);
+        } else {
+          console.warn('⚠️ API returned invalid data, using fallback niches');
+          setNiches(fallbackNiches);
+        }
         setLoading(false);
       })
       .catch(err => {
-        setError('Failed to load niches data.');
+        console.error('❌ Error fetching niches:', err);
+        console.log('🔄 Using fallback niches data');
+        setNiches(fallbackNiches);
+        setError('Using offline data - some features may be limited.');
         setLoading(false);
       });
   }, []);
+
+  // Ensure niches is always an array before using slice
+  const safeNiches = Array.isArray(niches) ? niches : fallbackNiches;
+  const displayNiches = safeNiches.slice(0, visibleNiches);
 
   const sectionStyle = {
     padding: '5vh 5vw',
@@ -144,34 +213,80 @@ const NichesGridSection = () => {
     minHeight: '3.5rem',
   };
 
-  const buttonStyle = {
+  const loadMoreButtonStyle = {
     marginTop: '3rem',
     display: 'block',
     marginLeft: 'auto',
     marginRight: 'auto',
-    padding: '0.75rem 2rem',
+    padding: '1rem 2.5rem',
     backgroundColor: '#047857',
     color: 'white',
     border: 'none',
     borderRadius: '999px',
-    fontSize: '1rem',
+    fontSize: '1.1rem',
     fontWeight: '600',
     cursor: 'pointer',
-    transition: 'background-color 0.3s ease',
+    transition: 'all 0.3s ease',
+    boxShadow: '0 4px 12px rgba(4, 120, 87, 0.3)',
   };
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>{error}</p>;
+  const handleLoadMore = () => {
+    setVisibleNiches(prev => {
+      const newCount = Math.min(prev + 20, safeNiches.length);
+      // Save to localStorage so it persists across visits
+      localStorage.setItem('nichesVisibleCount', newCount.toString());
+      return newCount;
+    });
+  };
+
+  if (loading) return (
+    <div style={{ padding: '2rem', textAlign: 'center' }}>
+      <p>Loading niches...</p>
+    </div>
+  );
 
   return (
     <section style={sectionStyle}>
       <h2 style={headingStyle}>Top Niches to Explore</h2>
+      
+      {error && (
+        <div style={{
+          textAlign: 'center',
+          marginBottom: '2rem',
+          padding: '1rem',
+          backgroundColor: '#fef3c7',
+          color: '#92400e',
+          borderRadius: '8px',
+          border: '1px solid #f59e0b'
+        }}>
+          {error}
+        </div>
+      )}
+      
+      <div style={{
+        textAlign: 'center',
+        marginBottom: '2rem',
+        fontSize: '1.1rem',
+        color: '#6b7280',
+        fontWeight: '500',
+      }}>
+        Total {safeNiches.length} learning areas available
+      </div>
+      
       <div style={gridStyle}>
-        {niches.map((niche, index) => (
+        {displayNiches.map((niche, index) => (
           <div
             key={index}
             style={tileStyle}
-            onClick={() => navigate(`/niche/${(niche['Niche Slug'] || niche.title || '').toLowerCase().replace(/\s+/g, '-')}`)}
+            onClick={() => navigate(`/niche/${niche['Niche Slug'] || niche.Niche.toLowerCase().replace(/\s+/g, '-')}`)}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)';
+              e.currentTarget.style.boxShadow = '0 12px 25px rgba(0,0,0,0.15)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.08)';
+            }}
           >
             {/* If you have images in your data, use niche.Illustration or similar */}
             <img src={niche.Illustration ? `/images/${niche.Illustration}` : '/website/niches/ai.png'} alt={niche.Niche || niche.title} style={imageStyle} />
@@ -180,7 +295,25 @@ const NichesGridSection = () => {
           </div>
         ))}
       </div>
-      <button style={buttonStyle}>Explore More Niches</button>
+      
+      {visibleNiches < safeNiches.length && (
+        <button 
+          style={loadMoreButtonStyle}
+          onClick={handleLoadMore}
+          onMouseEnter={(e) => {
+            e.target.style.backgroundColor = '#065f46';
+            e.target.style.transform = 'translateY(-2px)';
+            e.target.style.boxShadow = '0 6px 20px rgba(4, 120, 87, 0.4)';
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.backgroundColor = '#047857';
+            e.target.style.transform = 'translateY(0)';
+            e.target.style.boxShadow = '0 4px 12px rgba(4, 120, 87, 0.3)';
+          }}
+        >
+          Load More Niches
+        </button>
+      )}
     </section>
   );
 };

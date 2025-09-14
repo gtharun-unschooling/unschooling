@@ -1,0 +1,29 @@
+{
+  "pageTitle": "Unschooling Dashboard",
+  "url": "http://localhost:3000/child-profile",
+  "bodyText": "...",
+  "elementCounts": {
+    "html": 1,
+    "head": 1,
+    "meta": 4,
+    "link": 3,
+    "title": 1,
+    "script": 1,
+    "style": 18,
+    "body": 1,
+    "noscript": 1,
+    "div": 1
+  },
+  "hasProfileFormTitle": false,
+  "hasProfileFormContent": false,
+  "hasChildContent": false,
+  "hasReactAttributes": null,
+  "hasLoadingState": null,
+  "hasErrorState": false,
+  "forms": 0,
+  "inputs": 0,
+  "buttons": 0,
+  "buttonTexts": [],
+  "divTexts": [],
+  "allText": ""
+}

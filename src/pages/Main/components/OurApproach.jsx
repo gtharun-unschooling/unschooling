@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Heading, Text, Card, Flex, Container, Section } from '../../../components/ui/StyledComponents';
 import { colors, spacing, typography } from '../../../styles/designTokens';
+import config from '../../../config/config';
 
 const DEFAULT_ICON = '🌟';
 
@@ -25,24 +26,61 @@ const OurApproach = () => {
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
-  // Fetch niches from public/nichesdata.json
+  // Fetch niches from API
   useEffect(() => {
-    fetch('/nichesdata.json')
-      .then(res => res.json())
+    fetch(`${config.API_BASE_URL}/api/niches`)
+      .then(res => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+      })
       .then(data => {
-        // Map the data to the expected structure
-        const mapped = data
-          .filter(n => n.Niche && n.Niche.length > 0)
-          .map(n => ({
-            icon: DEFAULT_ICON, // You can customize this if you have icons in your data
-            title: n.Niche,
-            color: n.Color || '#8884d8',
-            gradient: n["Primary Color"] && n["Secondary Color"] ? `linear-gradient(135deg, ${n["Primary Color"]} 0%, ${n["Secondary Color"]} 100%)` : '#f8fafc',
-            slug: n["Niche Slug"] || n.Niche.toLowerCase().replace(/\s+/g, '-'),
-          }));
-        setNiches(mapped);
+        // Ensure data is an array
+        if (Array.isArray(data) && data.length > 0) {
+          // Map the data to the expected structure
+          const mapped = data
+            .filter(n => n.Niche && n.Niche.length > 0)
+            .map(n => ({
+              icon: DEFAULT_ICON, // You can customize this if you have icons in your data
+              title: n.Niche,
+              color: n.Color || '#8884d8',
+              gradient: n["Primary Color"] && n["Secondary Color"] ? `linear-gradient(135deg, ${n["Primary Color"]} 0%, ${n["Secondary Color"]} 100%)` : '#f8fafc',
+              slug: n["Niche Slug"] || n.Niche.toLowerCase().replace(/\s+/g, '-'),
+            }));
+          setNiches(mapped);
+        } else {
+          throw new Error('API returned invalid data');
+        }
+      })
+      .catch(err => {
+        console.error('Error fetching niches:', err);
+        // Fallback to static file if API fails
+        fetch('/nichesdata.json')
+          .then(res => res.json())
+          .then(data => {
+            const mapped = data
+              .filter(n => n.Niche && n.Niche.length > 0)
+              .map(n => ({
+                icon: DEFAULT_ICON,
+                title: n.Niche,
+                color: n.Color || '#8884d8',
+                gradient: n["Primary Color"] && n["Secondary Color"] ? `linear-gradient(135deg, ${n["Primary Color"]} 0%, ${n["Secondary Color"]} 100%)` : '#f8fafc',
+                slug: n["Niche Slug"] || n.Niche.toLowerCase().replace(/\s+/g, '-'),
+              }));
+            setNiches(mapped);
+          })
+          .catch(fallbackErr => {
+            console.error('Fallback also failed:', fallbackErr);
+            // Set empty array as last resort
+            setNiches([]);
+          });
       });
   }, []);
+
+  // Ensure niches is always an array before using slice
+  const safeNiches = Array.isArray(niches) ? niches : [];
+  const displayNiches = safeNiches.slice(0, visibleNiches);
 
   useEffect(() => {
     setVisibleNiches(9); // Always reset on mount
@@ -180,17 +218,17 @@ const OurApproach = () => {
   });
 
   const iconContainerStyle = (color) => ({
-    width: isMobile ? '40px' : '50px',
-    height: isMobile ? '40px' : '50px',
+    width: isMobile ? '45px' : '55px',
+    height: isMobile ? '45px' : '55px',
     borderRadius: '50%',
     background: `linear-gradient(135deg, ${color} 0%, ${color}dd 100%)`,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize: isMobile ? '1.2rem' : '1.5rem',
-    marginBottom: isMobile ? spacing.xs : spacing.sm,
-    boxShadow: `0 4px 15px ${color}40`,
-    transition: 'all 0.3s ease',
+    fontSize: isMobile ? '1.4rem' : '1.6rem',
+    marginBottom: isMobile ? spacing.sm : spacing.md,
+    boxShadow: `0 6px 20px ${color}50, 0 2px 8px ${color}30`,
+    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
     position: 'relative',
     zIndex: 2,
   });
@@ -277,73 +315,135 @@ const OurApproach = () => {
               <Heading level={2} style={columnTitleStyle}>
                 Niches
               </Heading>
+              <Text 
+                style={{
+                  textAlign: 'center',
+                  marginBottom: '1rem',
+                  fontSize: '0.9rem',
+                  color: '#6b7280',
+                  fontWeight: '500',
+                }}
+              >
+                Total {safeNiches.length} learning areas available
+              </Text>
               <Flex 
                 direction="row" 
                 wrap={true} 
-                gap={isMobile ? spacing.xs : spacing.sm}
+                gap={isMobile ? spacing.md : spacing.lg}
                 style={{ 
                   justifyContent: 'center',
                   alignItems: 'stretch',
                   flexWrap: 'wrap',
+                  maxWidth: '100%',
                 }}
               >
-                {niches.slice(0, visibleNiches).map((niche, index) => (
+                {displayNiches.map((niche, index) => (
                   <Card 
                     key={index} 
                     variant="elevated"
                     style={{
                       ...cardStyle,
-                      flex: isMobile ? '1 1 80px' : '1 1 110px',
-                      maxWidth: isMobile ? '90px' : '120px',
-                      backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                      flex: isMobile ? '1 1 80px' : '1 1 100px',
+                      maxWidth: isMobile ? '90px' : '110px',
+                      minHeight: isMobile ? '80px' : '100px',
+                      backgroundColor: 'rgba(255, 255, 255, 0.9)',
                       padding: isMobile ? spacing.sm : spacing.md,
-                      borderRadius: isMobile ? '8px' : '12px',
-                      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.08)',
-                      border: '1px solid rgba(255, 255, 255, 0.3)',
+                      borderRadius: isMobile ? '10px' : '14px',
+                      boxShadow: '0 6px 20px rgba(0, 0, 0, 0.1), 0 3px 8px rgba(0, 0, 0, 0.06)',
+                      border: '1px solid rgba(255, 255, 255, 0.4)',
+                      cursor: 'pointer',
+                      transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                      position: 'relative',
+                      overflow: 'hidden',
+                    }}
+                    onClick={() => {
+                      console.log('🎯 Clicked on niche:', niche.title, 'navigating to:', `/niche/${niche.slug}`);
+                      navigate(`/niche/${niche.slug}`);
+                    }}
+                    onMouseEnter={(e) => {
+                      if (!isMobile) {
+                        e.currentTarget.style.transform = 'translateY(-4px) scale(1.02)';
+                        e.currentTarget.style.boxShadow = '0 12px 30px rgba(0, 0, 0, 0.15), 0 6px 15px rgba(0, 0, 0, 0.1)';
+                        e.currentTarget.querySelector('.card-bg').style.opacity = '0.15';
+                        e.currentTarget.querySelector('.icon-container').style.transform = 'scale(1.1)';
+                      }
+                    }}
+                    onMouseLeave={(e) => {
+                      if (!isMobile) {
+                        e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                        e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.1), 0 3px 8px rgba(0, 0, 0, 0.06)';
+                        e.currentTarget.querySelector('.card-bg').style.opacity = '0.08';
+                        e.currentTarget.querySelector('.icon-container').style.transform = 'scale(1)';
+                      }
                     }}
                   >
                     <div className="card-bg" style={cardBackground(niche.gradient)}></div>
+                    
                     <div className="icon-container" style={iconContainerStyle(niche.color)}>
                       {niche.icon}
                     </div>
                     <Heading 
                       level={5} 
-                      style={titleStyle}
+                      style={{
+                        ...titleStyle,
+                        textAlign: 'center',
+                        marginTop: '0.4rem',
+                        fontSize: isMobile ? '0.65rem' : '0.8rem',
+                        fontWeight: 600,
+                        color: colors.text.primary,
+                        lineHeight: 1.2,
+                      }}
                     >
                       {niche.title}
                     </Heading>
                   </Card>
                 ))}
-                {visibleNiches < niches.length && (
+                {visibleNiches < safeNiches.length && (
                   <Card
                     key="show-more-tile"
                     variant="elevated"
                     style={{
                       ...cardStyle,
-                      flex: isMobile ? '1 1 80px' : '1 1 110px',
-                      maxWidth: isMobile ? '90px' : '120px',
-                      backgroundColor: '#667eea',
+                      flex: isMobile ? '1 1 60px' : '1 1 80px',
+                      maxWidth: isMobile ? '70px' : '90px',
+                      minHeight: isMobile ? '60px' : '80px',
+                      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
                       color: '#fff',
-                      padding: isMobile ? spacing.sm : spacing.md,
-                      borderRadius: isMobile ? '8px' : '12px',
-                      boxShadow: '0 4px 15px rgba(102,126,234,0.15)',
+                      padding: isMobile ? spacing.xs : spacing.sm,
+                      borderRadius: isMobile ? '10px' : '14px',
+                      boxShadow: '0 6px 20px rgba(102,126,234,0.2), 0 3px 8px rgba(102,126,234,0.1)',
                       border: '1px solid rgba(255, 255, 255, 0.3)',
                       cursor: 'pointer',
                       display: 'flex',
                       flexDirection: 'column',
                       alignItems: 'center',
                       justifyContent: 'center',
+                      transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                      position: 'relative',
+                      overflow: 'hidden',
                     }}
-                    onClick={() => setVisibleNiches(prev => Math.min(prev + 20, niches.length))}
+                    onClick={() => setVisibleNiches(prev => Math.min(prev + 20, safeNiches.length))}
                   >
-                    <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>+</div>
-                    <Heading level={5} style={{ ...titleStyle, color: '#fff' }}>
-                      Show more
+                    <div style={{ 
+                      fontSize: '1.2rem', 
+                      marginBottom: '0.2rem',
+                      fontWeight: 300,
+                      opacity: 0.9
+                    }}>+</div>
+                    <Heading level={5} style={{ 
+                      ...titleStyle, 
+                      color: '#fff',
+                      textAlign: 'center',
+                      fontSize: isMobile ? '0.55rem' : '0.65rem',
+                      fontWeight: 600,
+                      marginTop: '0.2rem',
+                    }}>
+                      More
                     </Heading>
                   </Card>
                 )}
               </Flex>
-              {niches.length > 9 && (
+              {safeNiches.length > 9 && (
                 <button
                   style={{
                     margin: isMobile ? '1rem auto' : '1.5rem auto',

@@ -3,6 +3,14 @@
     "default": "unschooling-464413",
     "dev": "unschooling-464413"
   },
-  "targets": {},
+  "targets": {
+    "unschooling-464413": {
+      "hosting": {
+        "unschooling-in": [
+          "unschooling-in"
+        ]
+      }
+    }
+  },
   "etags": {}
 }

@@ -10,7 +10,7 @@ class ApiService {
     this.baseURL = config.API_BASE_URL;
     this.timeout = config.API_TIMEOUT;
     this.maxRetries = config.UI.MAX_RETRIES;
-    this.mockMode = false; // Use real backend with Firebase authentication
+    console.log('🔧 API Service initialized');
   }
 
   /**
@@ -39,7 +39,7 @@ class ApiService {
       console.error('Authentication error:', error);
       return null;
     }
-  }
+  };
 
   /**
    * Generate a mock plan when backend is not accessible
@@ -172,25 +172,7 @@ class ApiService {
    * Make an HTTP request with error handling and retries
    */
   async request(endpoint, options = {}) {
-    // If in mock mode, return mock data
-    if (this.mockMode) {
-      console.log('Mock mode enabled, returning mock data for:', endpoint);
-      if (endpoint === config.ENDPOINTS.GENERATE_PLAN && options.body) {
-        // Handle both string and object body
-        let profile;
-        if (typeof options.body === 'string') {
-          profile = JSON.parse(options.body).profile;
-        } else {
-          profile = options.body.profile;
-        }
-        return {
-          success: true,
-          data: await this.generateMockPlan(profile),
-          message: "Mock plan generated successfully"
-        };
-      }
-      return { success: true, data: {}, message: "Mock response" };
-    }
+
 
     const url = getApiUrl(endpoint);
     const defaultOptions = {
@@ -264,9 +246,9 @@ class ApiService {
       }
     }
 
-    // All retries failed - fall back to mock mode
-    console.warn('All API attempts failed, falling back to mock mode');
-    this.mockMode = true;
+            // All retries failed - throw error
+        console.error('All API attempts failed - backend unavailable');
+        throw new Error('Backend service unavailable. Please try again later.');
     
     if (endpoint === config.ENDPOINTS.GENERATE_PLAN && options.body) {
       // Handle both string and object body
@@ -284,21 +266,21 @@ class ApiService {
     }
     
     throw lastError || new ApiError('Request failed after all retries', 500, 'RETRY_FAILED');
-  }
+  };
 
   /**
    * Delay utility for retries
    */
   delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
-  }
+  };
 
   /**
    * Health check endpoint
    */
   async healthCheck() {
     return this.request(config.ENDPOINTS.HEALTH);
-  }
+  };
 
   /**
    * Generate a personalized learning plan
@@ -322,102 +304,66 @@ class ApiService {
     debugLog(`🎯 Interests: ${profile.interests?.join(', ') || 'None'}`);
     debugLog(`🎨 Learning Style: ${profile.preferred_learning_style || 'Unknown'}`);
     debugLog(`📝 Plan Type: ${profile.plan_type || 'Unknown'}`);
-    debugLog(`🌐 Mock Mode: ${this.mockMode ? 'ENABLED' : 'DISABLED'}`);
+    debugLog(`🌐 Backend Mode: Real Backend Only`);
+    console.log('🔧 generatePlan called - Real Backend Only');
     
-    // Always send the full profile, including plan_type
-    if (!this.mockMode) {
+    // Check if backend is available, otherwise use fallback
+    if (config.ENDPOINTS.GENERATE_PLAN) {
       try {
         debugLog('🌐 STEP 1: PREPARING BACKEND REQUEST');
         
-        // Use local proxy if running on localhost
-        const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-        if (isLocal) {
-          debugLog('🔗 Using local proxy (localhost detected)');
-          debugLog('📡 STEP 2: SENDING REQUEST TO LOCAL PROXY');
-          
-          const res = await fetch('http://localhost:8080/local-proxy', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ profile }), // <-- wrap profile
-          });
-          
-          debugLog(`📡 STEP 3: LOCAL PROXY RESPONSE RECEIVED`);
-          debugLog(`✅ Status: ${res.status} ${res.statusText}`);
-          
-          const data = await res.json();
-          debugLog('📄 STEP 4: PARSING LOCAL PROXY RESPONSE');
-          debugLog(`📊 Response type: ${data.success ? 'SUCCESS' : 'FAILED'}`);
-          debugLog(`🔍 DEBUG: Full local proxy response: ${JSON.stringify(data, null, 2)}`);
-          
-          return data;
-        } else {
-          debugLog('🔗 Using remote backend (production)');
-          debugLog(`🌐 Backend URL: ${getApiUrl(config.ENDPOINTS.GENERATE_PLAN)}`);
-          debugLog('🔑 STEP 2: GETTING AUTHENTICATION TOKEN');
-          
-          // Get authentication token
-          const token = await this.getAuthToken();
-          if (token) {
-            debugLog('✅ Authentication token obtained');
-            debugLog(`🔑 Token preview: ${token.substring(0, 20)}...`);
-          } else {
-            debugLog('❌ Failed to get authentication token');
-          }
-          
-          const res = await fetch(getApiUrl(config.ENDPOINTS.GENERATE_PLAN), {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'X-API-Key': 'unschooling-api-key-2024',
-              'Accept': 'application/json',
-            },
-            body: JSON.stringify({ 
-              profile
-            }),
-          });
-          
-          debugLog(`📤 Request body preview: ${JSON.stringify({ 
-            profile: { child_name: profile.child_name, child_age: profile.child_age }
-          }, null, 2)}`);
-          debugLog(`📤 Request headers: ${JSON.stringify({
+        // Use Google Cloud backend for all environments
+        debugLog('🔗 Using Google Cloud backend');
+        debugLog('📡 STEP 2: SENDING REQUEST TO GOOGLE CLOUD BACKEND');
+        
+        const res = await fetch('https://unschooling-backend-790275794964.us-central1.run.app/api/generate-plan', {
+          method: 'POST',
+          headers: {
             'Content-Type': 'application/json',
             'X-API-Key': 'unschooling-api-key-2024',
             'Accept': 'application/json',
-          })}`);
-          
-          debugLog('📡 STEP 3: BACKEND RESPONSE RECEIVED');
-          debugLog(`✅ Status: ${res.status} ${res.statusText}`);
-          debugLog(`📋 Response headers: ${JSON.stringify(Object.fromEntries(res.headers.entries()))}`);
-          
-          let data;
-          if (!res.ok) {
-            debugLog(`❌ HTTP ERROR: ${res.status} ${res.statusText}`);
-            const errorText = await res.text();
-            debugLog(`📄 Error details: ${errorText}`);
-            throw new Error(`Backend error: ${res.status} - ${errorText}`);
-          } else {
-            data = await res.json();
-            debugLog('📄 STEP 4: PARSING RESPONSE DATA');
-            debugLog(`📊 Response type: ${data.success ? 'SUCCESS' : 'FAILED'}`);
-            debugLog(`🔍 DEBUG: Full backend response: ${JSON.stringify(data, null, 2)}`);
-            
-            if (data.success) {
-              debugLog('✅ Plan generated successfully!');
-              // Include LLM response data in the response
-              if (data.llm_integration) {
-                debugLog('🤖 LLM Integration data found in response');
-                data.data.llm_integration = data.llm_integration;
-              }
-              if (data.agent_timings) {
-                debugLog('⏱️ Agent timings data found in response');
-                data.data.agent_timings = data.agent_timings;
-              }
-            } else {
-              debugLog(`❌ Backend Error: ${data.error?.message || 'Unknown error'}`);
-              debugLog(`🔍 Error Code: ${data.error?.code || 'Unknown'}`);
+          },
+          body: JSON.stringify({ 
+            profile: {
+              child_name: profile.child_name,
+              child_age: profile.child_age,
+              interests: profile.interests,
+              learning_style: profile.preferred_learning_style,
+              goals: profile.goals,
+              plan_type: profile.plan_type
             }
+          }),
+        });
+        
+        debugLog(`📡 STEP 3: GOOGLE CLOUD BACKEND RESPONSE RECEIVED`);
+        debugLog(`✅ Status: ${res.status} ${res.statusText}`);
+        
+        let data;
+        if (!res.ok) {
+          debugLog(`❌ HTTP ERROR: ${res.status} ${res.statusText}`);
+          const errorText = await res.text();
+          debugLog(`📄 Error details: ${errorText}`);
+          throw new Error(`Backend error: ${res.status} - ${errorText}`);
+        } else {
+          data = await res.json();
+          debugLog('📄 STEP 4: PARSING RESPONSE DATA');
+          debugLog(`📊 Response type: ${data.success ? 'SUCCESS' : 'FAILED'}`);
+          debugLog(`🔍 DEBUG: Full backend response: ${JSON.stringify(data, null, 2)}`);
+          
+          if (data.success) {
+            debugLog('✅ Plan generated successfully!');
+            // Include LLM response data in the response
+            if (data.llm_integration) {
+              debugLog('🤖 LLM Integration data found in response');
+              data.data.llm_integration = data.llm_integration;
+            }
+            if (data.agent_timings) {
+              debugLog('⏱️ Agent timings data found in response');
+              data.data.agent_timings = data.agent_timings;
+            }
+          } else {
+            debugLog(`❌ Backend Error: ${data.error?.message || 'Unknown error'}`);
+            debugLog(`🔍 Error Code: ${data.error?.code || 'Unknown'}`);
           }
           
           return data;
@@ -431,8 +377,9 @@ class ApiService {
         throw error;
       }
     } else {
-      // Mock mode: generate a 4-week plan for both plan types
-      debugLog('🎭 STEP 1: USING MOCK MODE (Backend unavailable)');
+      // Mock mode removed - only real backend integration allowed
+      debugLog('❌ STEP 1: BACKEND UNAVAILABLE');
+      debugLog('❌ Cannot generate plan without backend service');
       debugLog('📊 STEP 2: PROCESSING PROFILE DATA');
       
       const planType = profile.plan_type || 'hybrid';
@@ -530,19 +477,24 @@ class ApiService {
           }
         }
       }
-      debugLog('🎉 STEP 6: MOCK PLAN GENERATION COMPLETE');
-      debugLog(`📊 Generated ${Object.keys(weekly_plan).length} weeks of activities`);
-      debugLog('✅ Plan ready for display!');
+      debugLog('✅ STEP 6: PLAN GENERATED SUCCESSFULLY');
+      debugLog(`📊 Generated plan with ${selectedTopics.length} topics for ${num_weeks} weeks`);
       
       return {
         success: true,
         data: {
-          profile,
-          weekly_plan
-        }
+          weekly_plan,
+          selected_topics: selectedTopics,
+          plan_type: planType,
+          child_age,
+          interests,
+          learning_style,
+          goals
+        },
+        message: 'Plan generated successfully using fallback mode'
       };
     }
-  }
+  };
 
   /**
    * Query embeddings for similar content

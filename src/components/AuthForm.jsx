@@ -9,6 +9,9 @@ import {
 } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import { colors, spacing, typography } from '../styles/designTokens';
+import { getAuthErrorMessage, getActionSuggestion } from '../utils/errorMessages';
+import EmailVerification from './auth/EmailVerification';
+import ProfileOnboarding from './onboarding/ProfileOnboarding';
 import './AuthForm.css';
 
 const AuthForm = () => {
@@ -17,8 +20,12 @@ const AuthForm = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
+  const [errorCode, setErrorCode] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [hoveredButton, setHoveredButton] = useState(null);
+  const [showEmailVerification, setShowEmailVerification] = useState(false);
+  const [showProfileOnboarding, setShowProfileOnboarding] = useState(false);
+  const [newUser, setNewUser] = useState(null);
   const navigate = useNavigate();
 
   // Animated background effect
@@ -79,35 +86,88 @@ const AuthForm = () => {
     e.preventDefault();
     setIsLoading(true);
     setError('');
+    setErrorCode('');
 
     try {
       if (isLogin) {
         await signInWithEmailAndPassword(auth, email, password);
-        navigate('/');
+        navigate('/dashboard');
       } else {
-        await createUserWithEmailAndPassword(auth, email, password);
-        navigate('/');
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+        setNewUser(userCredential.user);
+        
+        // Check if email verification is required
+        if (!userCredential.user.emailVerified) {
+          setShowEmailVerification(true);
+        } else {
+          // If email is already verified, go to profile onboarding
+          setShowProfileOnboarding(true);
+        }
       }
     } catch (error) {
-      setError(error.message);
+      const code = error.code || 'default';
+      const userFriendlyMessage = getAuthErrorMessage(code, isLogin);
+      setErrorCode(code);
+      setError(userFriendlyMessage);
     } finally {
       setIsLoading(false);
     }
   };
 
+  // Fix password visibility toggle
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
   const handleGoogleAuth = async () => {
     setIsLoading(true);
     setError('');
+    setErrorCode('');
     
     try {
       const provider = new GoogleAuthProvider();
-      await signInWithPopup(auth, provider);
-      navigate('/');
+      const userCredential = await signInWithPopup(auth, provider);
+      
+      // For Google OAuth, email is automatically verified
+      // Check if this is a new user (no profile data)
+      if (userCredential.user.metadata.creationTime === userCredential.user.metadata.lastSignInTime) {
+        setNewUser(userCredential.user);
+        setShowProfileOnboarding(true);
+      } else {
+        navigate('/dashboard');
+      }
     } catch (error) {
-      setError(error.message);
+      const code = error.code || 'default';
+      const userFriendlyMessage = getAuthErrorMessage(code, isLogin);
+      setErrorCode(code);
+      setError(userFriendlyMessage);
     } finally {
       setIsLoading(false);
     }
+  };
+
+  // Handle email verification completion
+  const handleEmailVerified = () => {
+    setShowEmailVerification(false);
+    setShowProfileOnboarding(true);
+  };
+
+  // Handle email verification skip
+  const handleEmailVerificationSkip = () => {
+    setShowEmailVerification(false);
+    setShowProfileOnboarding(true);
+  };
+
+  // Handle profile onboarding completion
+  const handleProfileComplete = () => {
+    setShowProfileOnboarding(false);
+    navigate('/dashboard');
+  };
+
+  // Handle profile onboarding skip
+  const handleProfileSkip = () => {
+    setShowProfileOnboarding(false);
+    navigate('/dashboard');
   };
 
   const containerStyle = {
@@ -183,12 +243,12 @@ const AuthForm = () => {
 
   const passwordInputStyle = {
     ...inputStyle,
-    paddingRight: '3rem',
+    paddingRight: '60px', // Make room for toggle button
   };
 
   const passwordToggleStyle = {
     position: 'absolute',
-    right: spacing.md,
+    right: '12px',
     top: '50%',
     transform: 'translateY(-50%)',
     background: 'none',
@@ -199,6 +259,7 @@ const AuthForm = () => {
     padding: spacing.xs,
     borderRadius: '4px',
     transition: 'color 0.2s ease',
+    zIndex: 10,
   };
 
   const buttonStyle = {
@@ -269,19 +330,42 @@ const AuthForm = () => {
   };
 
   const errorStyle = {
-    background: 'rgba(239, 68, 68, 0.1)',
+    background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(239, 68, 68, 0.1) 100%)',
     color: '#dc2626',
     padding: spacing.md,
-    borderRadius: '8px',
+    borderRadius: '12px',
     marginBottom: spacing.lg,
     fontSize: '0.9rem',
     border: '1px solid rgba(239, 68, 68, 0.2)',
+    boxShadow: '0 2px 8px rgba(239, 68, 68, 0.1)',
+    position: 'relative',
+    overflow: 'hidden'
   };
 
   const loadingStyle = {
     opacity: 0.7,
     pointerEvents: 'none',
   };
+
+  // Show email verification if needed
+  if (showEmailVerification) {
+    return (
+      <EmailVerification 
+        onVerified={handleEmailVerified}
+        onSkip={handleEmailVerificationSkip}
+      />
+    );
+  }
+
+  // Show profile onboarding if needed
+  if (showProfileOnboarding) {
+    return (
+      <ProfileOnboarding 
+        onComplete={handleProfileComplete}
+        onSkip={handleProfileSkip}
+      />
+    );
+  }
 
   return (
     <div style={containerStyle}>
@@ -295,15 +379,244 @@ const AuthForm = () => {
         <p className="auth-subtitle" style={subtitleStyle}>
           {isLogin 
             ? 'Sign in to continue your learning journey' 
-            : 'Create your account and start exploring'
+            : 'Create your account and start your personalized learning experience'
           }
         </p>
 
-        {error && <div style={errorStyle}>{error}</div>}
+        {error && (
+          <div 
+            style={{
+              ...errorStyle,
+              animation: 'slideInError 0.3s ease-out'
+            }}
+          >
+            <div style={{ 
+              display: 'flex', 
+              justifyContent: 'space-between', 
+              alignItems: 'flex-start',
+              marginBottom: spacing.sm 
+            }}>
+              <div style={{ flex: 1 }}>{error}</div>
+              <button
+                onClick={() => {
+                  setError('');
+                  setErrorCode('');
+                }}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: '#dc2626',
+                  cursor: 'pointer',
+                  fontSize: '1.2rem',
+                  padding: '0',
+                  marginLeft: spacing.sm,
+                  lineHeight: 1
+                }}
+                aria-label="Dismiss error"
+              >
+                ×
+              </button>
+            </div>
+            {(() => {
+              const suggestion = getActionSuggestion(errorCode, isLogin);
+              return suggestion ? (
+                <div style={{ 
+                  fontSize: '0.85rem', 
+                  color: '#059669', 
+                  borderTop: '1px solid rgba(5, 150, 105, 0.2)', 
+                  paddingTop: spacing.sm,
+                  marginTop: spacing.sm
+                }}>
+                  💡 {suggestion}
+                </div>
+              ) : null;
+            })()}
+            
+            {/* Show action button for specific errors */}
+            {errorCode === 'auth/email-already-in-use' && !isLogin && (
+              <div style={{ 
+                marginTop: spacing.md,
+                textAlign: 'center'
+              }}>
+                <button
+                  onClick={() => {
+                    setIsLogin(true);
+                    setError('');
+                    setErrorCode('');
+                  }}
+                  style={{
+                    background: 'linear-gradient(135deg, #059669 0%, #10b981 100%)',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '8px',
+                    padding: `${spacing.sm} ${spacing.md}`,
+                    fontSize: '0.9rem',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease'
+                  }}
+                  onMouseEnter={(e) => e.target.style.transform = 'translateY(-1px)'}
+                  onMouseLeave={(e) => e.target.style.transform = 'translateY(0)'}
+                >
+                  Sign In Instead
+                </button>
+              </div>
+            )}
+            
+            {errorCode === 'auth/user-not-found' && isLogin && (
+              <div style={{ 
+                marginTop: spacing.md,
+                textAlign: 'center'
+              }}>
+                <button
+                  onClick={() => {
+                    setIsLogin(false);
+                    setError('');
+                    setErrorCode('');
+                  }}
+                  style={{
+                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '8px',
+                    padding: `${spacing.sm} ${spacing.md}`,
+                    fontSize: '0.9rem',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease'
+                  }}
+                  onMouseEnter={(e) => e.target.style.transform = 'translateY(-1px)'}
+                  onMouseLeave={(e) => e.target.style.transform = 'translateY(0)'}
+                >
+                  Create Account Instead
+                </button>
+              </div>
+            )}
+            
+            {errorCode === 'auth/wrong-password' && isLogin && (
+              <div style={{ 
+                marginTop: spacing.md,
+                textAlign: 'center'
+              }}>
+                <button
+                  onClick={() => window.location.href = '/password-reset'}
+                  style={{
+                    background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '8px',
+                    padding: `${spacing.sm} ${spacing.md}`,
+                    fontSize: '0.9rem',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease'
+                  }}
+                  onMouseEnter={(e) => e.target.style.transform = 'translateY(-1px)'}
+                  onMouseLeave={(e) => e.target.style.transform = 'translateY(0)'}
+                >
+                  Reset Password
+                </button>
+              </div>
+            )}
+            
+            {errorCode === 'auth/network-request-failed' && (
+              <div style={{ 
+                marginTop: spacing.md,
+                textAlign: 'center'
+              }}>
+                <button
+                  onClick={() => {
+                    setError('');
+                    setErrorCode('');
+                  }}
+                  style={{
+                    background: 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '8px',
+                    padding: `${spacing.sm} ${spacing.md}`,
+                    fontSize: '0.9rem',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease'
+                  }}
+                  onMouseEnter={(e) => e.target.style.transform = 'translateY(-1px)'}
+                  onMouseLeave={(e) => e.target.style.transform = 'translateY(0)'}
+                >
+                  Try Again
+                </button>
+              </div>
+            )}
+            
+            {(errorCode === 'auth/user-disabled' || errorCode === 'auth/operation-not-allowed') && (
+              <div style={{ 
+                marginTop: spacing.md,
+                textAlign: 'center'
+              }}>
+                <button
+                  onClick={() => window.open('mailto:support@unschooling.com?subject=Account Issue', '_blank')}
+                  style={{
+                    background: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '8px',
+                    padding: `${spacing.sm} ${spacing.md}`,
+                    fontSize: '0.9rem',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease'
+                  }}
+                  onMouseEnter={(e) => e.target.style.transform = 'translateY(-1px)'}
+                  onMouseLeave={(e) => e.target.style.transform = 'translateY(0)'}
+                >
+                  Contact Support
+                </button>
+              </div>
+            )}
+            
+            {errorCode === 'auth/requires-recent-login' && (
+              <div style={{ 
+                marginTop: spacing.md,
+                textAlign: 'center'
+              }}>
+                <button
+                  onClick={() => {
+                    setError('');
+                    setErrorCode('');
+                  }}
+                  style={{
+                    background: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '8px',
+                    padding: `${spacing.sm} ${spacing.md}`,
+                    fontSize: '0.9rem',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease'
+                  }}
+                  onMouseEnter={(e) => e.target.style.transform = 'translateY(-1px)'}
+                  onMouseLeave={(e) => e.target.style.transform = 'translateY(0)'}
+                >
+                  Sign In Again
+                </button>
+              </div>
+            )}
+          </div>
+        )}
 
         <form onSubmit={handleEmailAuth}>
           <div style={inputGroupStyle}>
+            <label htmlFor="email" style={{ 
+              display: 'block', 
+              marginBottom: spacing.xs, 
+              fontWeight: 600, 
+              color: colors.text.primary 
+            }}>
+              Email Address
+            </label>
             <input
+              id="email"
               type="email"
               placeholder="Enter your email"
               value={email}
@@ -311,27 +624,42 @@ const AuthForm = () => {
               className="auth-input"
               style={inputStyle}
               required
+              autoComplete="email"
             />
           </div>
 
           <div style={inputGroupStyle}>
-            <input
-              type={showPassword ? 'text' : 'password'}
-              placeholder="Enter your password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="auth-input"
-              style={passwordInputStyle}
-              required
-            />
-            <button
-              type="button"
-              onClick={() => setShowPassword(!showPassword)}
-              className="auth-password-toggle"
-              style={passwordToggleStyle}
-            >
-              {showPassword ? '🙈' : '👁️'}
-            </button>
+            <label htmlFor="password" style={{ 
+              display: 'block', 
+              marginBottom: spacing.xs, 
+              fontWeight: 600, 
+              color: colors.text.primary 
+            }}>
+              Password
+            </label>
+            <div style={{ position: 'relative' }}>
+              <input
+                id="password"
+                type={showPassword ? 'text' : 'password'}
+                placeholder="Enter your password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="auth-input"
+                style={passwordInputStyle}
+                required
+                autoComplete={isLogin ? 'current-password' : 'new-password'}
+              />
+              <button
+                type="button"
+                onClick={togglePasswordVisibility}
+                className="auth-password-toggle"
+                style={passwordToggleStyle}
+                aria-label={showPassword ? 'Hide password' : 'Show password'}
+                tabIndex={0}
+              >
+                {showPassword ? '🙈' : '👁️'}
+              </button>
+            </div>
           </div>
 
           <button 
@@ -372,13 +700,39 @@ const AuthForm = () => {
             {isLogin ? "Don't have an account? " : "Already have an account? "}
           </span>
           <span 
-            onClick={() => setIsLogin(!isLogin)}
+            onClick={() => {
+              setIsLogin(!isLogin);
+              setError('');
+              setErrorCode('');
+            }}
             className="auth-toggle-link"
             style={toggleLinkStyle}
+
           >
             {isLogin ? 'Sign up' : 'Sign in'}
           </span>
         </div>
+        
+        {/* Password Reset Link for Login */}
+        {isLogin && (
+          <div style={{
+            textAlign: 'center',
+            marginTop: spacing.md,
+            fontSize: '0.9rem'
+          }}>
+            <span 
+              onClick={() => window.location.href = '/password-reset'}
+              style={{
+                color: '#667eea',
+                cursor: 'pointer',
+                textDecoration: 'underline'
+              }}
+  
+            >
+              Forgot your password?
+            </span>
+          </div>
+        )}
       </div>
     </div>
   );
