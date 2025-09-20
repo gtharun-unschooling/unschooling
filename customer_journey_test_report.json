@@ -1,0 +1,103 @@
+{
+  "timestamp": "2025-09-19T15:42:49.679Z",
+  "overallScore": 59,
+  "journeySteps": [
+    {
+      "name": "Landing Page",
+      "score": 90,
+      "issues": [],
+      "observations": [
+        "Page title: Unschooling Dashboard",
+        "Navigation elements found",
+        "Hero section found",
+        "6 CTA buttons found",
+        "2 authentication buttons found"
+      ]
+    },
+    {
+      "name": "Navigation & Content",
+      "score": 65,
+      "issues": [],
+      "observations": [
+        "Found 4 navigation links",
+        "Link: Unschooling -> /",
+        "Link: Explore -> /niche",
+        "Link: Pricing -> /plans",
+        "Link: Sign In -> /login",
+        "9 content sections found"
+      ]
+    },
+    {
+      "name": "Authentication Flow",
+      "score": 80,
+      "issues": [
+        "No signup option found"
+      ],
+      "observations": [
+        "Login button found",
+        "Successfully navigated to login page",
+        "Email and password fields found"
+      ]
+    },
+    {
+      "name": "Profile Creation",
+      "score": 30,
+      "issues": [
+        "No profile form found",
+        "No age field found",
+        "No interests selection found",
+        "No learning style selection found"
+      ],
+      "observations": [
+        "Child name field found",
+        "Submit button found"
+      ]
+    },
+    {
+      "name": "Plan Generation",
+      "score": 60,
+      "issues": [
+        "No activity cards found"
+      ],
+      "observations": [
+        "Plans content found",
+        "No error states visible",
+        "23 interactive elements found"
+      ]
+    },
+    {
+      "name": "Responsive Design",
+      "score": 30,
+      "issues": [
+        "Mobile: Has horizontal scroll",
+        "Tablet: Has horizontal scroll",
+        "Desktop: Has horizontal scroll"
+      ],
+      "observations": [
+        "Mobile: 167 visible elements",
+        "Tablet: 167 visible elements",
+        "Desktop: 167 visible elements"
+      ]
+    }
+  ],
+  "issues": [],
+  "recommendations": [
+    "Optimize form design and ensure all required fields are present",
+    "Overall user experience needs significant improvement"
+  ],
+  "screenshots": [
+    "customer_journey_landing_page.png",
+    "customer_journey_login_page.png",
+    "customer_journey_profile_page.png",
+    "customer_journey_plans_page.png",
+    "customer_journey_mobile.png",
+    "customer_journey_tablet.png",
+    "customer_journey_desktop.png"
+  ],
+  "summary": {
+    "totalSteps": 6,
+    "averageScore": 59,
+    "totalIssues": 9,
+    "screenshotsTaken": 7
+  }
+}

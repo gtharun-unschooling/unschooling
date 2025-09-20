@@ -46,6 +46,26 @@ import AdminProjects from '../pages/Admin/AdminProjects';
 import AdminLaunch from '../pages/Admin/AdminLaunch';
 import AgentReporting from '../pages/Admin/AgentReporting';
 import StreamlinedAgentDashboard from '../pages/Admin/StreamlinedAgentDashboard';
+import AdminDashboard from '../pages/Admin/AdminDashboard';
+import ChildActivityDashboard from '../pages/Admin/ChildActivityDashboard';
+import UltimateAdminDashboard from '../pages/Admin/UltimateAdminDashboard';
+import ParentDeliveryPortal from '../components/inventory/ParentDeliveryPortal';
+import GamificationDashboard from '../pages/Admin/GamificationDashboard';
+import PersonalizationDashboard from '../pages/Admin/PersonalizationDashboard';
+import SecurityDashboard from '../pages/Admin/SecurityDashboard';
+import ComplianceDashboard from '../pages/Admin/ComplianceDashboard';
+import PerformanceDashboard from '../pages/Admin/PerformanceDashboard';
+import InnovationDashboard from '../pages/Admin/InnovationDashboard';
+import MLDashboard from '../pages/Admin/MLDashboard';
+import BusinessIntelligenceDashboard from '../pages/Admin/BusinessIntelligenceDashboard';
+import IntegrationDashboard from '../pages/Admin/IntegrationDashboard';
+import MonitoringDashboard from '../pages/Admin/MonitoringDashboard';
+import InfrastructureDashboard from '../pages/Admin/InfrastructureDashboard';
+import LaunchDashboard from '../pages/Admin/LaunchDashboard';
+import PostLaunchOptimizationDashboard from '../pages/Admin/PostLaunchOptimizationDashboard';
+import GlobalExpansionDashboard from '../pages/Admin/GlobalExpansionDashboard';
+import EnterpriseDashboard from '../pages/Admin/EnterpriseDashboard';
+import AdvancedSecurityDashboard from '../pages/Admin/AdvancedSecurityDashboard';
 
 const RoutesComponent = () => {
   console.log('🚀 RoutesComponent rendering...');
@@ -238,6 +258,26 @@ const RoutesComponent = () => {
         <Route path="/admin/agents-streamlined" element={<StreamlinedAgentDashboard />} />
         <Route path="/admin/projects" element={<AdminProjects />} />
         <Route path="/admin/launch" element={<AdminLaunch />} />
+        <Route path="/admin/comprehensive" element={<AdminDashboard />} />
+        <Route path="/admin/child-activity" element={<ChildActivityDashboard />} />
+        <Route path="/admin/ultimate" element={<UltimateAdminDashboard />} />
+        <Route path="/admin/gamification" element={<GamificationDashboard />} />
+<Route path="/admin/personalization" element={<PersonalizationDashboard />} />
+<Route path="/admin/security" element={<SecurityDashboard />} />
+<Route path="/admin/compliance" element={<ComplianceDashboard />} />
+<Route path="/admin/performance" element={<PerformanceDashboard />} />
+<Route path="/admin/innovation" element={<InnovationDashboard />} />
+<Route path="/admin/ml" element={<MLDashboard />} />
+<Route path="/admin/business-intelligence" element={<BusinessIntelligenceDashboard />} />
+<Route path="/admin/integration" element={<IntegrationDashboard />} />
+<Route path="/admin/monitoring" element={<MonitoringDashboard />} />
+<Route path="/admin/infrastructure" element={<InfrastructureDashboard />} />
+<Route path="/admin/launch" element={<LaunchDashboard />} />
+        <Route path="/admin/post-launch" element={<PostLaunchOptimizationDashboard />} />
+        <Route path="/admin/global-expansion" element={<GlobalExpansionDashboard />} />
+        <Route path="/admin/enterprise" element={<EnterpriseDashboard />} />
+        <Route path="/admin/advanced-security" element={<AdvancedSecurityDashboard />} />
+        <Route path="/deliveries" element={<ParentDeliveryPortal />} />
               </Routes>
       </>
     );

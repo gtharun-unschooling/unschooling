@@ -3,14 +3,26 @@
  * Handles environment variables, API endpoints, and application settings.
  */
 
+// Environment detection
+const ENVIRONMENT = process.env.REACT_APP_ENVIRONMENT || 'production';
+const IS_LOCAL = ENVIRONMENT === 'local';
+const IS_STAGING = ENVIRONMENT === 'staging';
+const IS_PRODUCTION = ENVIRONMENT === 'production';
+
 const config = {
   // Application Settings
   APP_NAME: process.env.REACT_APP_NAME || "Unschooling React",
+  ENVIRONMENT: ENVIRONMENT,
   DEBUG: process.env.REACT_APP_DEBUG === "true",
+  IS_LOCAL: IS_LOCAL,
+  IS_STAGING: IS_STAGING,
+  IS_PRODUCTION: IS_PRODUCTION,
   
   // API Configuration
-  API_BASE_URL: process.env.REACT_APP_API_BASE_URL || "https://unschooling-backend-790275794964.us-central1.run.app",
-  API_TIMEOUT: parseInt(process.env.REACT_APP_API_TIMEOUT) || 30000,
+  API_BASE_URL: process.env.REACT_APP_API_BASE_URL || "https://llm-agents-44gsrw22gq-uc.a.run.app",
+  WAREHOUSE_API_URL: process.env.REACT_APP_WAREHOUSE_API_URL || "https://warehouse-api-44gsrw22gq-uc.a.run.app",
+  USE_LOCAL_BACKEND: process.env.REACT_APP_USE_LOCAL_BACKEND === "true",
+  API_TIMEOUT: parseInt(process.env.REACT_APP_API_TIMEOUT) || 90000,
   
   // Firebase Configuration
   FIREBASE: {
@@ -39,7 +51,7 @@ const config = {
   
   // UI Configuration
   UI: {
-    LOADING_TIMEOUT: parseInt(process.env.REACT_APP_LOADING_TIMEOUT) || 10000,
+    LOADING_TIMEOUT: parseInt(process.env.REACT_APP_LOADING_TIMEOUT) || 100000,
     TOAST_DURATION: parseInt(process.env.REACT_APP_TOAST_DURATION) || 5000,
     MAX_RETRIES: parseInt(process.env.REACT_APP_MAX_RETRIES) || 3
   }
@@ -50,12 +62,35 @@ export const getApiUrl = (endpoint) => {
   return `${config.API_BASE_URL}${endpoint}`;
 };
 
+export const getWarehouseApiUrl = (endpoint) => {
+  return `${config.WAREHOUSE_API_URL}${endpoint}`;
+};
+
 export const isFeatureEnabled = (feature) => {
   return config.FEATURES[feature] !== false;
 };
 
 export const getFirebaseConfig = () => {
   return config.FIREBASE;
+};
+
+export const getEnvironmentInfo = () => {
+  return {
+    environment: config.ENVIRONMENT,
+    isLocal: config.IS_LOCAL,
+    isStaging: config.IS_STAGING,
+    isProduction: config.IS_PRODUCTION,
+    debug: config.DEBUG,
+    apiBaseUrl: config.API_BASE_URL,
+    warehouseApiUrl: config.WAREHOUSE_API_URL,
+    useLocalBackend: config.USE_LOCAL_BACKEND
+  };
+};
+
+export const logEnvironmentInfo = () => {
+  if (config.DEBUG) {
+    console.log('🌍 Environment Configuration:', getEnvironmentInfo());
+  }
 };
 
 export default config; 

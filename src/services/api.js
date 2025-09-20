@@ -330,7 +330,12 @@ class ApiService {
               interests: profile.interests,
               learning_style: profile.preferred_learning_style,
               goals: profile.goals,
-              plan_type: profile.plan_type
+              plan_type: profile.plan_type,
+              // Add user account information
+              account_id: profile.account_id || 'unknown',
+              account_email: profile.account_email || 'unknown',
+              session_id: profile.session_id || `session_${Date.now()}`,
+              timestamp: new Date().toISOString()
             }
           }),
         });

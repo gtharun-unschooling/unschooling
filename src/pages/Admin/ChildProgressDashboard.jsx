@@ -4,12 +4,51 @@ import { useNavigate } from 'react-router-dom';
 const ChildProgressDashboard = () => {
   const navigate = useNavigate();
   const [selectedChild, setSelectedChild] = useState(null);
+  const [selectedUser, setSelectedUser] = useState(null);
   const [children, setChildren] = useState([]);
+  const [users, setUsers] = useState([]);
   const [progressData, setProgressData] = useState({});
+  const [llmOutputs, setLlmOutputs] = useState({});
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState('overview');
 
   // Mock data - in real app, this would come from Firebase
+  const mockUsers = [
+    {
+      id: 'user_001',
+      name: 'Sarah Johnson',
+      email: 'sarah.johnson@email.com',
+      role: 'Parent',
+      joinDate: '2024-08-01',
+      childrenCount: 2,
+      avatar: '👩‍💼',
+      subscription: 'Premium',
+      lastActive: '2024-09-14T10:30:00Z'
+    },
+    {
+      id: 'user_002',
+      name: 'Michael Chen',
+      email: 'michael.chen@email.com',
+      role: 'Parent',
+      joinDate: '2024-08-15',
+      childrenCount: 1,
+      avatar: '👨‍💻',
+      subscription: 'Basic',
+      lastActive: '2024-09-13T16:45:00Z'
+    },
+    {
+      id: 'user_003',
+      name: 'Maria Rodriguez',
+      email: 'maria.rodriguez@email.com',
+      role: 'Educator',
+      joinDate: '2024-09-01',
+      childrenCount: 5,
+      avatar: '👩‍🏫',
+      subscription: 'Educator',
+      lastActive: '2024-09-14T09:15:00Z'
+    }
+  ];
+
   const mockChildren = [
     {
       id: 'child_001',
@@ -97,11 +136,119 @@ const ChildProgressDashboard = () => {
     }
   };
 
+  const mockLlmOutputs = {
+    'child_001': {
+      profileAnalysis: {
+        cognitiveAssessment: {
+          level: 'intermediate',
+          score: 78,
+          strengths: ['Visual Learning', 'Pattern Recognition', 'Creative Thinking'],
+          areasForImprovement: ['Attention Span', 'Sequential Processing'],
+          recommendations: ['Use visual aids', 'Break tasks into smaller chunks']
+        },
+        learningStyle: {
+          primary: 'Visual',
+          secondary: 'Kinesthetic',
+          confidence: 0.85,
+          evidence: ['Prefers diagrams over text', 'Enjoys hands-on activities']
+        },
+        interestMapping: {
+          'AI': 0.92,
+          'Science': 0.88,
+          'Entrepreneurship': 0.75,
+          'Finance': 0.68
+        },
+        personalizedActivities: [
+          'AI-powered drawing games',
+          'Science experiment simulations',
+          'Virtual business planning',
+          'Interactive money management'
+        ],
+        llmInsights: {
+          personalityTraits: ['Curious', 'Creative', 'Independent'],
+          learningPatterns: ['Peak performance in morning', 'Prefers collaborative learning'],
+          motivationalFactors: ['Achievement badges', 'Peer recognition', 'Creative freedom']
+        }
+      },
+      recentGenerations: [
+        {
+          timestamp: '2024-09-14T10:30:00Z',
+          prompt: 'Generate learning plan for 7-year-old interested in AI and Science',
+          response: {
+            activities: 18,
+            processingTime: '45.2s',
+            confidence: 0.89,
+            topics: ['AI in Animals', 'Cleaning Robots', 'AI Artists', 'Science Experiments']
+          }
+        },
+        {
+          timestamp: '2024-09-13T14:15:00Z',
+          prompt: 'Create personalized activities for visual learner',
+          response: {
+            activities: 15,
+            processingTime: '38.7s',
+            confidence: 0.92,
+            topics: ['Picture books', 'Drawing activities', 'Visual puzzles']
+          }
+        }
+      ]
+    },
+    'child_002': {
+      profileAnalysis: {
+        cognitiveAssessment: {
+          level: 'advanced',
+          score: 91,
+          strengths: ['Logical Reasoning', 'Problem Solving', 'Memory Retention'],
+          areasForImprovement: ['Social Learning', 'Emotional Intelligence'],
+          recommendations: ['Group activities', 'Emotional awareness exercises']
+        },
+        learningStyle: {
+          primary: 'Kinesthetic',
+          secondary: 'Auditory',
+          confidence: 0.93,
+          evidence: ['Learns by doing', 'Responds well to verbal instructions']
+        },
+        interestMapping: {
+          'AI': 0.95,
+          'Entrepreneurship': 0.88,
+          'Science': 0.82,
+          'Finance': 0.79
+        },
+        personalizedActivities: [
+          'Building AI models',
+          'Business simulation games',
+          'Hands-on science projects',
+          'Investment strategy games'
+        ],
+        llmInsights: {
+          personalityTraits: ['Analytical', 'Goal-oriented', 'Persistent'],
+          learningPatterns: ['Consistent daily progress', 'Prefers structured learning'],
+          motivationalFactors: ['Competition', 'Progress tracking', 'Skill mastery']
+        }
+      },
+      recentGenerations: [
+        {
+          timestamp: '2024-09-14T09:45:00Z',
+          prompt: 'Advanced learning plan for 9-year-old AI enthusiast',
+          response: {
+            activities: 22,
+            processingTime: '52.1s',
+            confidence: 0.94,
+            topics: ['Machine Learning Basics', 'AI Ethics', 'Robotics', 'Data Analysis']
+          }
+        }
+      ]
+    }
+  };
+
   useEffect(() => {
     // Simulate loading data
     setTimeout(() => {
+      setUsers(mockUsers);
       setChildren(mockChildren);
       setProgressData(mockProgressData);
+      setLlmOutputs(mockLlmOutputs);
+      setSelectedUser(mockUsers[0]);
       setSelectedChild(mockChildren[0]);
       setLoading(false);
     }, 1000);
@@ -185,8 +332,49 @@ const ChildProgressDashboard = () => {
           </button>
         </div>
 
+        {/* User Selector */}
+        <div style={{ marginBottom: '24px' }}>
+          <h3 style={{ margin: '0 0 12px 0', fontSize: '1.2rem', fontWeight: '600', color: '#1e293b' }}>
+            👤 Select User Account
+          </h3>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            {users.map((user) => (
+              <button
+                key={user.id}
+                onClick={() => setSelectedUser(user)}
+                style={{
+                  padding: '12px 20px',
+                  background: selectedUser?.id === user.id ? '#8b5cf6' : '#f8fafc',
+                  color: selectedUser?.id === user.id ? '#ffffff' : '#64748b',
+                  border: `2px solid ${selectedUser?.id === user.id ? '#8b5cf6' : '#e2e8f0'}`,
+                  borderRadius: '12px',
+                  cursor: 'pointer',
+                  fontSize: '0.9rem',
+                  fontWeight: '600',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  transition: 'all 0.3s ease'
+                }}
+              >
+                <span style={{ fontSize: '1.2rem' }}>{user.avatar}</span>
+                <div style={{ textAlign: 'left' }}>
+                  <div style={{ fontWeight: '600' }}>{user.name}</div>
+                  <div style={{ fontSize: '0.8rem', opacity: 0.8 }}>
+                    {user.role} • {user.subscription}
+                  </div>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* Child Selector */}
-        <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+        <div>
+          <h3 style={{ margin: '0 0 12px 0', fontSize: '1.2rem', fontWeight: '600', color: '#1e293b' }}>
+            👶 Select Child
+          </h3>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
           {children.map((child) => (
             <button
               key={child.id}
@@ -215,6 +403,7 @@ const ChildProgressDashboard = () => {
               </div>
             </button>
           ))}
+          </div>
         </div>
       </div>
 
@@ -348,7 +537,7 @@ const ChildProgressDashboard = () => {
             border: '1px solid #e2e8f0'
           }}>
             <div style={{ display: 'flex', gap: '8px', marginBottom: '24px' }}>
-              {['overview', 'progress', 'achievements', 'analytics'].map((tab) => (
+              {['overview', 'progress', 'achievements', 'analytics', 'llm-outputs'].map((tab) => (
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
@@ -696,6 +885,220 @@ const ChildProgressDashboard = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            )}
+
+            {activeTab === 'llm-outputs' && (
+              <div>
+                <h3 style={{ margin: '0 0 20px 0', fontSize: '1.5rem', fontWeight: '600', color: '#1e293b' }}>
+                  🤖 LLM Agent Outputs & Analysis
+                </h3>
+                
+                {selectedChild && llmOutputs[selectedChild.id] && (
+                  <>
+                    {/* Profile Analysis */}
+                    <div style={{ marginBottom: '32px' }}>
+                      <h4 style={{ margin: '0 0 16px 0', fontSize: '1.2rem', fontWeight: '600', color: '#1e293b' }}>
+                        🧠 Profile Analysis
+                      </h4>
+                      
+                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', marginBottom: '24px' }}>
+                        {/* Cognitive Assessment */}
+                        <div style={{
+                          padding: '20px',
+                          background: '#f0fdf4',
+                          borderRadius: '12px',
+                          border: '1px solid #22c55e'
+                        }}>
+                          <h5 style={{ margin: '0 0 12px 0', fontSize: '1rem', fontWeight: '600', color: '#166534' }}>
+                            🧠 Cognitive Assessment
+                          </h5>
+                          <div style={{ marginBottom: '12px' }}>
+                            <div style={{ fontSize: '1.5rem', fontWeight: '700', color: '#166534' }}>
+                              {llmOutputs[selectedChild.id].profileAnalysis.cognitiveAssessment.level.toUpperCase()}
+                            </div>
+                            <div style={{ fontSize: '0.9rem', color: '#166534' }}>
+                              Score: {llmOutputs[selectedChild.id].profileAnalysis.cognitiveAssessment.score}/100
+                            </div>
+                          </div>
+                          <div>
+                            <div style={{ fontSize: '0.9rem', fontWeight: '600', color: '#166534', marginBottom: '8px' }}>Strengths:</div>
+                            {llmOutputs[selectedChild.id].profileAnalysis.cognitiveAssessment.strengths.map((strength, index) => (
+                              <div key={index} style={{ fontSize: '0.8rem', color: '#166534', marginBottom: '4px' }}>
+                                • {strength}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+
+                        {/* Learning Style */}
+                        <div style={{
+                          padding: '20px',
+                          background: '#dbeafe',
+                          borderRadius: '12px',
+                          border: '1px solid #3b82f6'
+                        }}>
+                          <h5 style={{ margin: '0 0 12px 0', fontSize: '1rem', fontWeight: '600', color: '#1e40af' }}>
+                            🎯 Learning Style
+                          </h5>
+                          <div style={{ marginBottom: '12px' }}>
+                            <div style={{ fontSize: '1.2rem', fontWeight: '700', color: '#1e40af' }}>
+                              {llmOutputs[selectedChild.id].profileAnalysis.learningStyle.primary}
+                            </div>
+                            <div style={{ fontSize: '0.9rem', color: '#1e40af' }}>
+                              Secondary: {llmOutputs[selectedChild.id].profileAnalysis.learningStyle.secondary}
+                            </div>
+                            <div style={{ fontSize: '0.9rem', color: '#1e40af' }}>
+                              Confidence: {Math.round(llmOutputs[selectedChild.id].profileAnalysis.learningStyle.confidence * 100)}%
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Interest Mapping */}
+                        <div style={{
+                          padding: '20px',
+                          background: '#fef3c7',
+                          borderRadius: '12px',
+                          border: '1px solid #f59e0b'
+                        }}>
+                          <h5 style={{ margin: '0 0 12px 0', fontSize: '1rem', fontWeight: '600', color: '#92400e' }}>
+                            🎨 Interest Mapping
+                          </h5>
+                          {Object.entries(llmOutputs[selectedChild.id].profileAnalysis.interestMapping).map(([interest, score]) => (
+                            <div key={interest} style={{ marginBottom: '8px' }}>
+                              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4px' }}>
+                                <span style={{ fontSize: '0.9rem', color: '#92400e' }}>{interest}</span>
+                                <span style={{ fontSize: '0.9rem', fontWeight: '600', color: '#92400e' }}>
+                                  {Math.round(score * 100)}%
+                                </span>
+                              </div>
+                              <div style={{
+                                width: '100%',
+                                height: '6px',
+                                background: '#fde68a',
+                                borderRadius: '3px',
+                                overflow: 'hidden'
+                              }}>
+                                <div style={{
+                                  width: `${score * 100}%`,
+                                  height: '100%',
+                                  background: '#f59e0b',
+                                  transition: 'width 0.3s ease'
+                                }}></div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* LLM Insights */}
+                      <div style={{
+                        padding: '20px',
+                        background: '#f3e8ff',
+                        borderRadius: '12px',
+                        border: '1px solid #8b5cf6'
+                      }}>
+                        <h5 style={{ margin: '0 0 16px 0', fontSize: '1.1rem', fontWeight: '600', color: '#6b21a8' }}>
+                          💡 LLM Insights
+                        </h5>
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '16px' }}>
+                          <div>
+                            <div style={{ fontSize: '0.9rem', fontWeight: '600', color: '#6b21a8', marginBottom: '8px' }}>Personality Traits:</div>
+                            {llmOutputs[selectedChild.id].profileAnalysis.llmInsights.personalityTraits.map((trait, index) => (
+                              <div key={index} style={{ fontSize: '0.8rem', color: '#6b21a8', marginBottom: '4px' }}>
+                                • {trait}
+                              </div>
+                            ))}
+                          </div>
+                          <div>
+                            <div style={{ fontSize: '0.9rem', fontWeight: '600', color: '#6b21a8', marginBottom: '8px' }}>Learning Patterns:</div>
+                            {llmOutputs[selectedChild.id].profileAnalysis.llmInsights.learningPatterns.map((pattern, index) => (
+                              <div key={index} style={{ fontSize: '0.8rem', color: '#6b21a8', marginBottom: '4px' }}>
+                                • {pattern}
+                              </div>
+                            ))}
+                          </div>
+                          <div>
+                            <div style={{ fontSize: '0.9rem', fontWeight: '600', color: '#6b21a8', marginBottom: '8px' }}>Motivational Factors:</div>
+                            {llmOutputs[selectedChild.id].profileAnalysis.llmInsights.motivationalFactors.map((factor, index) => (
+                              <div key={index} style={{ fontSize: '0.8rem', color: '#6b21a8', marginBottom: '4px' }}>
+                                • {factor}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Recent Generations */}
+                    <div>
+                      <h4 style={{ margin: '0 0 16px 0', fontSize: '1.2rem', fontWeight: '600', color: '#1e293b' }}>
+                        🚀 Recent LLM Generations
+                      </h4>
+                      <div style={{ display: 'grid', gap: '16px' }}>
+                        {llmOutputs[selectedChild.id].recentGenerations.map((generation, index) => (
+                          <div key={index} style={{
+                            padding: '20px',
+                            background: '#f8fafc',
+                            borderRadius: '12px',
+                            border: '1px solid #e2e8f0'
+                          }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '12px' }}>
+                              <div>
+                                <div style={{ fontSize: '0.9rem', fontWeight: '600', color: '#1e293b', marginBottom: '4px' }}>
+                                  {new Date(generation.timestamp).toLocaleString()}
+                                </div>
+                                <div style={{ fontSize: '0.8rem', color: '#64748b' }}>
+                                  {generation.prompt}
+                                </div>
+                              </div>
+                              <div style={{
+                                padding: '6px 12px',
+                                background: '#22c55e',
+                                color: 'white',
+                                borderRadius: '6px',
+                                fontSize: '0.8rem',
+                                fontWeight: '600'
+                              }}>
+                                {Math.round(generation.response.confidence * 100)}% confidence
+                              </div>
+                            </div>
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '12px', marginBottom: '12px' }}>
+                              <div>
+                                <div style={{ fontSize: '1.2rem', fontWeight: '700', color: '#3b82f6' }}>
+                                  {generation.response.activities}
+                                </div>
+                                <div style={{ fontSize: '0.8rem', color: '#64748b' }}>Activities Generated</div>
+                              </div>
+                              <div>
+                                <div style={{ fontSize: '1.2rem', fontWeight: '700', color: '#f59e0b' }}>
+                                  {generation.response.processingTime}
+                                </div>
+                                <div style={{ fontSize: '0.8rem', color: '#64748b' }}>Processing Time</div>
+                              </div>
+                            </div>
+                            <div>
+                              <div style={{ fontSize: '0.9rem', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Generated Topics:</div>
+                              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                                {generation.response.topics.map((topic, topicIndex) => (
+                                  <span key={topicIndex} style={{
+                                    padding: '4px 8px',
+                                    background: '#e2e8f0',
+                                    borderRadius: '4px',
+                                    fontSize: '0.8rem',
+                                    color: '#64748b'
+                                  }}>
+                                    {topic}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </>
+                )}
               </div>
             )}
           </div>

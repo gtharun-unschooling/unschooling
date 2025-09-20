@@ -29,11 +29,75 @@ const Navbar = () => {
   };
 
   const toggleProfileDropdown = () => {
-    setIsProfileDropdownOpen(!isProfileDropdownOpen);
+    const newState = !isProfileDropdownOpen;
+    setIsProfileDropdownOpen(newState);
+    
+    // Check for overflow after dropdown opens
+    if (newState) {
+      setTimeout(() => {
+        const dropdown = document.querySelector('.profile-dropdown');
+        const profileBtn = document.querySelector('.profile-btn');
+        
+        if (dropdown && profileBtn) {
+          const dropdownRect = dropdown.getBoundingClientRect();
+          const viewportWidth = window.innerWidth;
+          
+          // Invisible bounding box: 1rem margin from right edge
+          const rightBoundary = viewportWidth - 16; // 1rem = 16px
+          
+          // Check if dropdown overflows invisible right boundary
+          if (dropdownRect.right > rightBoundary) {
+            dropdown.classList.add('dropdown-left');
+          } else {
+            dropdown.classList.remove('dropdown-left');
+          }
+        }
+      }, 10);
+    }
   };
 
   const closeProfileDropdown = () => {
     setIsProfileDropdownOpen(false);
+  };
+
+  // Function to get gender-based emoji
+  const getGenderEmoji = (user) => {
+    // Check if user has gender preference stored
+    const userGender = user?.gender || user?.metadata?.gender;
+    
+    if (userGender) {
+      switch (userGender.toLowerCase()) {
+        case 'male':
+        case 'm':
+          return '👨';
+        case 'female':
+        case 'f':
+          return '👩';
+        case 'non-binary':
+        case 'nb':
+          return '🧑';
+        default:
+          return '👤';
+      }
+    }
+    
+    // Fallback: try to guess from name or use default
+    const name = user?.displayName || user?.email?.split('@')[0] || '';
+    
+    // Simple heuristic based on common names (you can expand this)
+    const maleNames = ['john', 'mike', 'david', 'chris', 'alex', 'sam', 'james', 'robert', 'william', 'richard', 'tharun', 'tarun', 'arun', 'kumar', 'raj', 'suresh', 'ramesh', 'vijay', 'suresh', 'prakash'];
+    const femaleNames = ['sarah', 'jessica', 'emily', 'jennifer', 'lisa', 'maria', 'susan', 'karen', 'nancy', 'helen', 'priya', 'sita', 'laxmi', 'kavya', 'anjali', 'meera', 'radha', 'geeta', 'sunita', 'rekha'];
+    
+    const lowerName = name.toLowerCase();
+    
+    if (maleNames.some(maleName => lowerName.includes(maleName))) {
+      return '👨';
+    } else if (femaleNames.some(femaleName => lowerName.includes(femaleName))) {
+      return '👩';
+    }
+    
+    // Default neutral emoji
+    return '👤';
   };
 
   // Close profile dropdown when clicking outside
@@ -62,6 +126,10 @@ const Navbar = () => {
       case 'help':
         navigate('/help');
         break;
+      case 'preferences':
+        // For now, just show an alert. You can create a preferences page later
+        alert('Preferences feature coming soon! You can set your gender preference here.');
+        break;
       case 'logout':
         handleLogout();
         break;
@@ -75,21 +143,24 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          {/* Hamburger Menu Button */}
-          <button 
-            className="hamburger-btn"
-            onClick={toggleHamburger}
-            aria-label="Toggle navigation menu"
-          >
-            <span className="hamburger-line"></span>
-            <span className="hamburger-line"></span>
-            <span className="hamburger-line"></span>
-          </button>
+          {/* Left side: Hamburger Menu + Logo */}
+          <div className="navbar-left">
+            <button 
+              className="hamburger-btn"
+              onClick={toggleHamburger}
+              aria-label="Toggle navigation menu"
+            >
+              <span className="hamburger-line"></span>
+              <span className="hamburger-line"></span>
+              <span className="hamburger-line"></span>
+            </button>
 
-          <Link to="/" className="navbar-logo">
-            Unschooling
-          </Link>
+            <Link to="/" className="navbar-logo">
+              Unschooling
+            </Link>
+          </div>
           
+          {/* Right side: Navigation Menu */}
           <div className="navbar-menu">
             <Link to="/niche" className="nav-link">
               Explore
@@ -105,9 +176,6 @@ const Navbar = () => {
                   onClick={toggleProfileDropdown}
                   aria-label="Open profile menu"
                 >
-                  <div className="profile-avatar">
-                    {currentUser.email ? currentUser.email.charAt(0).toUpperCase() : '👤'}
-                  </div>
                   <span className="profile-name-short">
                     {currentUser.displayName || currentUser.email?.split('@')[0] || 'User'}
                   </span>
@@ -115,17 +183,21 @@ const Navbar = () => {
                 </button>
                 
                 {isProfileDropdownOpen && (
-                  <div className="profile-dropdown">
-                    <div className="profile-header">
-                      <div className="profile-avatar-large">
-                        {currentUser.email ? currentUser.email.charAt(0).toUpperCase() : '👤'}
-                      </div>
-                      <div className="profile-info">
-                        <div className="profile-name">
-                          {currentUser.displayName || currentUser.email?.split('@')[0] || 'User'}
-                        </div>
-                      </div>
-                    </div>
+                  <div className="profile-dropdown-container">
+                    <div className="profile-dropdown">
+        <div className="profile-header">
+          <div className="profile-emoji">
+            {getGenderEmoji(currentUser)}
+          </div>
+          <div className="profile-info">
+            <div className="profile-name">
+              {currentUser.displayName || currentUser.email?.split('@')[0] || 'User'}
+            </div>
+            <div className="profile-email-display">
+              {currentUser.email}
+            </div>
+          </div>
+        </div>
 
                     <div className="profile-options">
                       <button 
@@ -159,6 +231,14 @@ const Navbar = () => {
                         <span className="option-icon">❓</span>
                         <span className="option-text">Help</span>
                       </button>
+                      
+                      <button 
+                        className="profile-option"
+                        onClick={() => handleProfileOption('preferences')}
+                      >
+                        <span className="option-icon">⚙️</span>
+                        <span className="option-text">Preferences</span>
+                      </button>
 
                       <div className="profile-divider"></div>
 
@@ -170,6 +250,10 @@ const Navbar = () => {
                         <span className="option-text">Logout</span>
                       </button>
                     </div>
+                    
+                    {/* Version tag at bottom */}
+                    <div className="profile-version-tag">v1.2.0</div>
+                  </div>
                   </div>
                 )}
               </div>
@@ -223,6 +307,10 @@ const Navbar = () => {
               <Link to="/child-profile" className="menu-link" onClick={closeHamburger}>
                 <span className="menu-icon">👶</span>
                 <span>Child Profile</span>
+              </Link>
+              <Link to="/deliveries" className="menu-link" onClick={closeHamburger}>
+                <span className="menu-icon">📦</span>
+                <span>My Deliveries</span>
               </Link>
             </div>
           )}

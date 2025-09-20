@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-09-19T15:52:58.062Z",
+  "userInfo": {
+    "status": "not_logged_in"
+  },
+  "childProfiles": [],
+  "profileStatus": {
+    "overall": "not_logged_in",
+    "issues": [
+      "User is not logged in"
+    ],
+    "recommendations": [
+      "Please log in to access child profiles"
+    ]
+  },
+  "totalProfiles": 0,
+  "issues": [],
+  "recommendations": [
+    "🔐 Please log in to your account to access child profiles",
+    "🔧 Address the following issues:",
+    "   - User is not logged in"
+  ],
+  "summary": {
+    "userLoggedIn": false,
+    "totalProfiles": 0,
+    "profileNames": [],
+    "hasFormAccess": false,
+    "issuesFound": 1,
+    "recommendationsCount": 3
+  }
+}

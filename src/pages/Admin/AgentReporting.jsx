@@ -13,8 +13,10 @@ const AgentReporting = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   
-  // Child-specific performance tracking
+  // User and child-specific performance tracking
+  const [selectedUser, setSelectedUser] = useState('all');
   const [selectedChild, setSelectedChild] = useState('all');
+  const [users, setUsers] = useState([]);
   const [children, setChildren] = useState([]);
   const [childSpecificMetrics, setChildSpecificMetrics] = useState({});
   const [childTestResults, setChildTestResults] = useState({});
@@ -140,8 +142,54 @@ const AgentReporting = () => {
   useEffect(() => {
     // Load agent metrics and test results
     loadAgentData();
+    loadUsers();
     loadChildren();
   }, []);
+
+  // Load users from Firestore
+  const loadUsers = async () => {
+    try {
+      console.log('🔍 Loading users from Firestore...');
+      
+      // Import Firestore functions
+      const { collection, getDocs } = await import('firebase/firestore');
+      const { db } = await import('../../firebase');
+      
+      // Get all users
+      const usersRef = collection(db, 'users');
+      const usersSnapshot = await getDocs(usersRef);
+      
+      if (usersSnapshot.empty) {
+        console.log('⚠️ No users found in database');
+        setUsers([]);
+        return;
+      }
+      
+      const allUsers = [];
+      usersSnapshot.forEach((userDoc) => {
+        const userData = userDoc.data();
+        const user = {
+          id: userDoc.id,
+          name: userData.displayName || userData.email?.split('@')[0] || 'Unknown User',
+          email: userData.email || 'unknown@email.com',
+          role: userData.role || 'Parent',
+          joinDate: userData.createdAt || userData.metadata?.creationTime,
+          childrenCount: 0, // Will be updated when children are loaded
+          avatar: '👤',
+          subscription: userData.subscription || 'Basic',
+          lastActive: userData.lastLoginAt || userData.metadata?.lastSignInTime
+        };
+        allUsers.push(user);
+      });
+      
+      console.log(`✅ Loaded ${allUsers.length} users:`, allUsers);
+      setUsers(allUsers);
+      
+    } catch (error) {
+      console.error('❌ Error loading users from Firestore:', error);
+      setUsers([]);
+    }
+  };
 
   // Load children from all users
   const loadChildren = async () => {
@@ -373,7 +421,7 @@ const AgentReporting = () => {
 
       const startTime = Date.now();
       
-      const response = await fetch('https://unschooling-backend-790275794964.us-central1.run.app/api/generate-plan', {
+      const response = await fetch('https://llm-agents-44gsrw22gq-uc.a.run.app/api/generate-plan', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -494,7 +542,7 @@ const AgentReporting = () => {
 
       const startTime = Date.now();
       
-      const response = await fetch('https://unschooling-backend-790275794964.us-central1.run.app/api/generate-plan', {
+      const response = await fetch('https://llm-agents-44gsrw22gq-uc.a.run.app/api/generate-plan', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -737,6 +785,68 @@ const AgentReporting = () => {
           </div>
         </div>
 
+        {/* User Selection */}
+        <div style={{
+          background: '#f8fafc',
+          padding: '20px',
+          borderRadius: '12px',
+          marginBottom: '16px',
+          border: '1px solid #e2e8f0'
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
+            <div>
+              <label style={{ 
+                display: 'block', 
+                fontSize: '0.9rem', 
+                fontWeight: '600', 
+                color: '#374151', 
+                marginBottom: '8px' 
+              }}>
+                👤 Select User Account:
+              </label>
+              <select
+                value={selectedUser}
+                onChange={(e) => {
+                  setSelectedUser(e.target.value);
+                  setSelectedChild('all'); // Reset child selection when user changes
+                }}
+                style={{
+                  padding: '10px 16px',
+                  border: '2px solid #d1d5db',
+                  borderRadius: '8px',
+                  fontSize: '1rem',
+                  backgroundColor: '#ffffff',
+                  cursor: 'pointer',
+                  minWidth: '200px'
+                }}
+              >
+                <option value="all">All Users (Overall Performance)</option>
+                {users.map(user => (
+                  <option key={user.id} value={user.id}>
+                    {user.name} ({user.role}) - {user.email}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div style={{ 
+              padding: '12px 16px', 
+              background: users.length > 0 ? '#dbeafe' : '#fef2f2', 
+              borderRadius: '8px',
+              border: `1px solid ${users.length > 0 ? '#93c5fd' : '#fca5a5'}`
+            }}>
+              <div style={{ fontSize: '0.9rem', color: users.length > 0 ? '#1e40af' : '#dc2626', fontWeight: '600' }}>
+                {users.length > 0 ? `👥 ${users.length} Users Loaded` : '⚠️ No Users Found'}
+              </div>
+              <div style={{ fontSize: '0.8rem', color: users.length > 0 ? '#1e40af' : '#dc2626' }}>
+                {users.length > 0 
+                  ? 'Real user data loaded from Firestore' 
+                  : 'No users found in database'
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Child Selection */}
         <div style={{
           background: '#f8fafc',
@@ -770,11 +880,13 @@ const AgentReporting = () => {
                 }}
               >
                 <option value="all">All Children (Overall Performance)</option>
-                {children.map(child => (
-                  <option key={child.id} value={child.id}>
-                    {child.name} (Age {child.age}) - {child.userEmail}
-                  </option>
-                ))}
+                {children
+                  .filter(child => selectedUser === 'all' || child.userId === selectedUser)
+                  .map(child => (
+                    <option key={child.id} value={child.id}>
+                      {child.name} (Age {child.age}) - {child.userEmail}
+                    </option>
+                  ))}
               </select>
             </div>
             <div style={{ 
@@ -862,7 +974,7 @@ const AgentReporting = () => {
         border: '1px solid #e2e8f0'
       }}>
         <div style={{ display: 'flex', borderBottom: '1px solid #e2e8f0', flexWrap: 'wrap' }}>
-          {['overview', 'agents', 'child-specific', 'child-comparison', 'testing', 'real-testing', 'analytics', 'bigquery-setup'].map(tab => (
+          {['overview', 'agents', 'child-specific', 'child-comparison', 'testing', 'real-testing', 'llm-outputs', 'analytics', 'bigquery-setup'].map(tab => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
@@ -885,6 +997,7 @@ const AgentReporting = () => {
               {tab === 'child-comparison' && '📊 Compare Children'}
               {tab === 'testing' && '🧪 Test Results'}
               {tab === 'real-testing' && '🔬 Real Testing'}
+              {tab === 'llm-outputs' && '🤖 LLM Outputs'}
               {tab === 'analytics' && '📈 Analytics'}
               {tab === 'bigquery-setup' && '🗄️ BigQuery Setup'}
             </button>
@@ -1584,6 +1697,176 @@ const AgentReporting = () => {
 
           {activeTab === 'real-testing' && (
             <RealAgentTesting />
+          )}
+
+          {activeTab === 'llm-outputs' && (
+            <div>
+              <h2 style={{ margin: '0 0 24px 0', fontSize: '1.8rem', fontWeight: '600', color: '#1e293b' }}>
+                🤖 LLM Agent Outputs & Analysis
+              </h2>
+              
+              {selectedChild === 'all' ? (
+                <div style={{ textAlign: 'center', padding: '40px', color: '#64748b' }}>
+                  <div style={{ fontSize: '3rem', marginBottom: '16px' }}>🤖</div>
+                  <p>Select a specific child to view their LLM agent outputs and analysis.</p>
+                  <p style={{ fontSize: '0.9rem' }}>This will show the actual LLM responses, processing times, and generated content for each agent.</p>
+                </div>
+              ) : (
+                <div>
+                  {(() => {
+                    const child = children.find(c => c.id === selectedChild);
+                    const childTestResult = childTestResults[selectedChild];
+                    
+                    return (
+                      <div>
+                        {/* Child Info Header */}
+                        <div style={{
+                          background: 'linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%)',
+                          padding: '24px',
+                          borderRadius: '12px',
+                          marginBottom: '24px',
+                          border: '1px solid #0ea5e9'
+                        }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                            <div style={{ fontSize: '3rem' }}>🤖</div>
+                            <div>
+                              <h3 style={{ margin: '0 0 8px 0', fontSize: '1.5rem', fontWeight: '600', color: '#0c4a6e' }}>
+                                LLM Outputs for {child?.name} (Age {child?.age})
+                              </h3>
+                              <p style={{ margin: 0, color: '#0369a1', fontSize: '1rem' }}>
+                                Real-time LLM agent responses, processing details, and generated content
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* LLM Outputs Display */}
+                        {childTestResult && childTestResult.agentPerformance ? (
+                          <div style={{ display: 'grid', gap: '24px' }}>
+                            {Object.entries(childTestResult.agentPerformance).map(([agentName, performance]) => (
+                              <div key={agentName} style={{
+                                padding: '24px',
+                                background: '#ffffff',
+                                borderRadius: '12px',
+                                border: '2px solid #e2e8f0'
+                              }}>
+                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
+                                  <h4 style={{ margin: 0, fontSize: '1.3rem', fontWeight: '600', color: '#1e293b', textTransform: 'capitalize' }}>
+                                    {agentName.replace('Agent', ' Agent')}
+                                  </h4>
+                                  <div style={{
+                                    padding: '8px 16px',
+                                    background: performance.status === 'SUCCESS' ? '#22c55e' : '#ef4444',
+                                    color: 'white',
+                                    borderRadius: '8px',
+                                    fontSize: '0.9rem',
+                                    fontWeight: '600'
+                                  }}>
+                                    {performance.status}
+                                  </div>
+                                </div>
+                                
+                                {/* Performance Metrics */}
+                                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '16px', marginBottom: '20px' }}>
+                                  <div style={{ textAlign: 'center' }}>
+                                    <div style={{ fontSize: '1.5rem', fontWeight: '700', color: '#3b82f6', marginBottom: '4px' }}>
+                                      {performance.processingTime ? `${performance.processingTime.toFixed(3)}s` : 'N/A'}
+                                    </div>
+                                    <div style={{ fontSize: '0.8rem', color: '#64748b' }}>Processing Time</div>
+                                  </div>
+                                  {performance.topicsMatched && (
+                                    <div style={{ textAlign: 'center' }}>
+                                      <div style={{ fontSize: '1.5rem', fontWeight: '700', color: '#22c55e', marginBottom: '4px' }}>
+                                        {performance.topicsMatched}
+                                      </div>
+                                      <div style={{ fontSize: '0.8rem', color: '#64748b' }}>Topics Matched</div>
+                                    </div>
+                                  )}
+                                  {performance.weeksGenerated && (
+                                    <div style={{ textAlign: 'center' }}>
+                                      <div style={{ fontSize: '1.5rem', fontWeight: '700', color: '#8b5cf6', marginBottom: '4px' }}>
+                                        {performance.weeksGenerated}
+                                      </div>
+                                      <div style={{ fontSize: '0.8rem', color: '#64748b' }}>Weeks Generated</div>
+                                    </div>
+                                  )}
+                                </div>
+
+                                {/* Agent-Specific Outputs */}
+                                <div style={{
+                                  background: '#f8fafc',
+                                  padding: '16px',
+                                  borderRadius: '8px',
+                                  border: '1px solid #e2e8f0'
+                                }}>
+                                  <h5 style={{ margin: '0 0 12px 0', fontSize: '1rem', fontWeight: '600', color: '#1e293b' }}>
+                                    🎯 Agent Output Details
+                                  </h5>
+                                  <div style={{ fontSize: '0.9rem', color: '#64748b' }}>
+                                    {agentName === 'profileAgent' && (
+                                      <div>
+                                        <strong>Profile Analysis:</strong> Analyzes child's learning style, interests, and cognitive abilities
+                                        <br />
+                                        <strong>Output:</strong> Personalized learning profile with recommendations
+                                      </div>
+                                    )}
+                                    {agentName === 'matchAgent' && (
+                                      <div>
+                                        <strong>Topic Matching:</strong> Matches child's interests with available learning topics
+                                        <br />
+                                        <strong>Output:</strong> {performance.topicsMatched} relevant topics selected
+                                      </div>
+                                    )}
+                                    {agentName === 'scheduleAgent' && (
+                                      <div>
+                                        <strong>Schedule Generation:</strong> Creates weekly learning schedules
+                                        <br />
+                                        <strong>Output:</strong> {performance.weeksGenerated} weeks of structured learning plans
+                                      </div>
+                                    )}
+                                    {agentName === 'reviewerAgent' && (
+                                      <div>
+                                        <strong>Plan Review:</strong> Reviews and optimizes generated learning plans
+                                        <br />
+                                        <strong>Output:</strong> Refined learning recommendations and improvements
+                                      </div>
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        ) : (
+                          <div style={{ textAlign: 'center', padding: '40px', color: '#64748b' }}>
+                            <div style={{ fontSize: '3rem', marginBottom: '16px' }}>🔄</div>
+                            <p>No LLM outputs available for this child yet.</p>
+                            <p style={{ fontSize: '0.9rem' }}>Run a test to generate LLM outputs and see the actual agent responses.</p>
+                            <button
+                              onClick={() => runChildSpecificTest(selectedChild)}
+                              disabled={isLoading}
+                              style={{
+                                marginTop: '16px',
+                                padding: '12px 24px',
+                                background: '#3b82f6',
+                                color: '#ffffff',
+                                border: 'none',
+                                borderRadius: '8px',
+                                cursor: isLoading ? 'not-allowed' : 'pointer',
+                                fontSize: '1rem',
+                                fontWeight: '600',
+                                opacity: isLoading ? 0.6 : 1
+                              }}
+                            >
+                              {isLoading ? '🔄 Running Test...' : `🧪 Run Test for ${child?.name}`}
+                            </button>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })()}
+                </div>
+              )}
+            </div>
           )}
 
           {activeTab === 'testing' && (

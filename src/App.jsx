@@ -4,6 +4,8 @@ import { AuthProvider } from './contexts/AuthContext';
 import { DebugProvider } from './contexts/DebugContext';
 import RoutesComponent from './routes/routes';
 import ErrorBoundary from './components/ErrorBoundary';
+import EnvironmentSwitcher from './components/EnvironmentSwitcher';
+import './styles/global.css';
 
 function App() {
   console.log('🚀 App component rendering...');
@@ -15,6 +17,7 @@ function App() {
           <AuthProvider>
             <DebugProvider>
               <RoutesComponent />
+              <EnvironmentSwitcher />
             </DebugProvider>
           </AuthProvider>
         </BrowserRouter>

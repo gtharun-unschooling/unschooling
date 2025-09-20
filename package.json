@@ -23,7 +23,13 @@
     "eject": "react-scripts eject",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
-    "test:e2e:headed": "playwright test --headed"
+    "test:e2e:headed": "playwright test --headed",
+    "test:env": "node test-environment.js",
+    "dev:local": "./dev-local.sh",
+    "dev:staging": "./dev-staging.sh",
+    "dev:production": "./dev-production.sh",
+    "deploy:staging": "./deploy-staging.sh",
+    "deploy:production": "./deploy-cloud-run.sh"
   },
   "devDependencies": {
     "@playwright/test": "^1.55.0",

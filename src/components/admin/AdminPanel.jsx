@@ -7,6 +7,10 @@ import LoadingSpinner from '../ui/LoadingSpinner';
 import UnifiedDashboard from '../../pages/UnifiedDashboard/UnifiedDashboard';
 import OrderManagement from './OrderManagement';
 import DevDashboard from './AdminDashboard';
+import AdminDashboard from '../../pages/Admin/AdminDashboard';
+import InventoryDashboard from '../inventory/InventoryDashboard';
+import AnalyticsDashboard from '../analytics/AnalyticsDashboard';
+import ContentBuilder from '../content/ContentBuilder';
 // Founder dashboard is merged into this AdminPanel as a Business tab
 
 const AdminPanel = () => {
@@ -469,7 +473,13 @@ const AdminPanel = () => {
         { key: 'content', label: 'Content Management', icon: '📚', tab: 'content' },
         { key: 'progress', label: 'Child Progress', icon: '📊', tab: 'progress' },
         { key: 'agents', label: 'Agent Reporting', icon: '🤖', tab: 'agents' },
-        { key: 'agents-streamlined', label: 'Agent Dashboard (Streamlined)', icon: '⚡', tab: 'agents-streamlined' }
+        { key: 'agents-streamlined', label: 'Agent Dashboard (Streamlined)', icon: '⚡', tab: 'agents-streamlined' },
+        { key: 'comprehensive', label: 'Comprehensive Dashboard', icon: '📊', tab: 'comprehensive' },
+        { key: 'child-activity', label: 'Child Activity Tracking', icon: '👶', tab: 'child-activity' },
+        { key: 'ultimate', label: 'Ultimate Dashboard', icon: '🚀', tab: 'ultimate' },
+        { key: 'inventory', label: 'Inventory Management', icon: '📦', tab: 'inventory' },
+        { key: 'analytics', label: 'Analytics Dashboard', icon: '📊', tab: 'analytics' },
+        { key: 'content-builder', label: 'Content Builder', icon: '🎨', tab: 'content-builder' }
       ]
     },
     {
@@ -510,7 +520,8 @@ const AdminPanel = () => {
     { label: 'Sales', tab: 'warehouse', key: 'sales' },
     { label: 'Customers', tab: 'users', key: 'customers' },
     { label: 'Operations', tab: 'business', key: 'operations' },
-    { label: 'Finance', tab: 'business', key: 'finance' }
+    { label: 'Finance', tab: 'business', key: 'finance' },
+    { label: 'Comprehensive Dashboard', tab: 'comprehensive', key: 'comprehensive' }
   ];
 
   const quickBarStyle = {
@@ -815,6 +826,12 @@ const AdminPanel = () => {
                       onClick={() => navigate('/admin/launch')}
                     >
                       🚀 Startup Launch
+                    </button>
+                    <button 
+                      style={{...linkBtnStyle, background: '#f59e0b', color: '#ffffff'}}
+                      onClick={() => navigate('/admin/comprehensive')}
+                    >
+                      📊 Comprehensive Dashboard
                     </button>
                   </div>
                 </div>
@@ -1764,6 +1781,12 @@ const AdminPanel = () => {
         );
       case 'dev':
         return <DevDashboard />;
+      case 'inventory':
+        return <InventoryDashboard />;
+      case 'analytics':
+        return <AnalyticsDashboard />;
+      case 'content-builder':
+        return <ContentBuilder />;
       default:
         return <UnifiedDashboard />;
     }
@@ -1822,6 +1845,12 @@ const AdminPanel = () => {
                     navigate('/admin/agents');
                   } else if (v.key === 'agents-streamlined') {
                     navigate('/admin/agents-streamlined');
+                  } else if (v.key === 'comprehensive') {
+                    navigate('/admin/comprehensive');
+                  } else if (v.key === 'child-activity') {
+                    navigate('/admin/child-activity');
+                  } else if (v.key === 'ultimate') {
+                    navigate('/admin/ultimate');
                   } else {
                     setActiveTab(v.tab); 
                     setActiveSection(v.key);
