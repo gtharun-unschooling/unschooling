@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unschooling Website Structure Flowchart</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 30px;
+        }
+        .mermaid {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .legend-item {
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 5px solid;
+        }
+        .legend-item.public {
+            background: #e1f5fe;
+            border-left-color: #01579b;
+        }
+        .legend-item.protected {
+            background: #f3e5f5;
+            border-left-color: #4a148c;
+        }
+        .legend-item.admin {
+            background: #fff3e0;
+            border-left-color: #e65100;
+        }
+        .legend-item.auth {
+            background: #e8f5e8;
+            border-left-color: #2e7d32;
+        }
+        .legend-item h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+        }
+        .legend-item ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .legend-item li {
+            margin: 5px 0;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .stat-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 2rem;
+        }
+        .stat-card p {
+            margin: 0;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏗️ Unschooling Website Structure</h1>
+            <p>Complete Page Categorization & Flow Visualization</p>
+        </div>
+        
+        <div class="content">
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>25+</h3>
+                    <p>Admin Pages</p>
+                </div>
+                <div class="stat-card">
+                    <h3>20+</h3>
+                    <p>Customer Pages</p>
+                </div>
+                <div class="stat-card">
+                    <h3>8</h3>
+                    <p>Public Pages</p>
+                </div>
+                <div class="stat-card">
+                    <h3>12+</h3>
+                    <p>Protected Pages</p>
+                </div>
+            </div>
+
+            <div class="mermaid">
+graph TB
+    %% Main Entry Point
+    Start([🌐 Website Entry]) --> AuthCheck{User Authenticated?}
+    
+    %% Public Pages (Before Login)
+    AuthCheck -->|No| PublicPages[📱 PUBLIC PAGES]
+    PublicPages --> HomePage[🏠 Homepage<br/>MainPage]
+    PublicPages --> About[ℹ️ About]
+    PublicPages --> EssentialGrowth[🌱 Essential Growth]
+    PublicPages --> Plans[💰 Pricing Plans]
+    PublicPages --> Niches[🎯 Learning Niches]
+    PublicPages --> Topics[📚 Topic Details]
+    PublicPages --> Login[🔐 Login/Register]
+    PublicPages --> PasswordReset[🔑 Password Reset]
+    
+    %% Authentication Flow
+    Login --> AuthSuccess{Authentication<br/>Successful?}
+    AuthSuccess -->|Yes| ProtectedPages[🔒 PROTECTED PAGES]
+    AuthSuccess -->|No| Login
+    
+    %% Protected Customer Pages (After Login)
+    ProtectedPages --> CustomerDashboard[👤 Customer Dashboard]
+    CustomerDashboard --> Learning[📖 Learning Hub]
+    CustomerDashboard --> Progress[📊 Progress Tracking]
+    CustomerDashboard --> Profile[👨‍👩‍👧‍👦 Child Profiles]
+    CustomerDashboard --> Settings[⚙️ Settings]
+    CustomerDashboard --> Billing[💳 Billing]
+    CustomerDashboard --> Help[❓ Help Center]
+    
+    %% Admin Section
+    AuthCheck -->|Admin Access| AdminSection[🛠️ ADMIN SECTION]
+    AdminSection --> AdminDashboard[📊 Admin Dashboard]
+    AdminSection --> ContentMgmt[📝 Content Management]
+    AdminSection --> UserTracking[👥 User Tracking]
+    AdminSection --> Analytics[📈 Analytics]
+    AdminSection --> Security[🔒 Security]
+    AdminSection --> Operations[⚙️ Operations]
+    
+    %% Admin Subcategories
+    ContentMgmt --> ContentLibrary[📚 Content Library]
+    ContentMgmt --> ContentAnalytics[📊 Content Analytics]
+    ContentMgmt --> ContentInventory[📦 Content Inventory]
+    
+    UserTracking --> ChildProgress[👶 Child Progress]
+    UserTracking --> ActivityTracking[🏃 Activity Tracking]
+    UserTracking --> AdminTracker[📊 Admin Tracker]
+    
+    Analytics --> BusinessIntelligence[🧠 Business Intelligence]
+    Analytics --> Performance[⚡ Performance Metrics]
+    Analytics --> ML[🤖 ML Dashboard]
+    Analytics --> Monitoring[👁️ Monitoring]
+    
+    Security --> SecurityDashboard[🛡️ Security Dashboard]
+    Security --> Compliance[📋 Compliance]
+    Security --> AdvancedSecurity[🔐 Advanced Security]
+    
+    Operations --> OrderMgmt[📦 Order Management]
+    Operations --> AgentReporting[🤖 Agent Reporting]
+    Operations --> Projects[📋 Projects]
+    Operations --> Launch[🚀 Launch Management]
+    
+    %% Styling
+    classDef publicPages fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#000
+    classDef protectedPages fill:#f3e5f5,stroke:#4a148c,stroke-width:2px,color:#000
+    classDef adminPages fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    classDef authPages fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px,color:#000
+    
+    class PublicPages,HomePage,About,EssentialGrowth,Plans,Niches,Topics,Login,PasswordReset publicPages
+    class ProtectedPages,CustomerDashboard,Learning,Progress,Profile,Settings,Billing,Help protectedPages
+    class AdminSection,AdminDashboard,ContentMgmt,UserTracking,Analytics,Security,Operations adminPages
+    class AuthCheck,AuthSuccess authPages
+            </div>
+
+            <div class="legend">
+                <div class="legend-item public">
+                    <h3>📱 Public Pages (Before Login)</h3>
+                    <ul>
+                        <li>Homepage & Marketing</li>
+                        <li>About & Information</li>
+                        <li>Pricing & Plans</li>
+                        <li>Content Discovery</li>
+                        <li>Authentication</li>
+                    </ul>
+                </div>
+                <div class="legend-item protected">
+                    <h3>🔒 Protected Pages (After Login)</h3>
+                    <ul>
+                        <li>Personalized Learning</li>
+                        <li>Progress Tracking</li>
+                        <li>Child Profiles</li>
+                        <li>Settings & Billing</li>
+                        <li>Help & Support</li>
+                    </ul>
+                </div>
+                <div class="legend-item admin">
+                    <h3>🛠️ Admin Pages (Internal)</h3>
+                    <ul>
+                        <li>Content Management</li>
+                        <li>User Analytics</li>
+                        <li>Business Intelligence</li>
+                        <li>Security & Compliance</li>
+                        <li>Operations & Monitoring</li>
+                    </ul>
+                </div>
+                <div class="legend-item auth">
+                    <h3>🔐 Authentication Flow</h3>
+                    <ul>
+                        <li>Login/Register</li>
+                        <li>Password Reset</li>
+                        <li>User Verification</li>
+                        <li>Access Control</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true
+            }
+        });
+    </script>
+</body>
+</html>
