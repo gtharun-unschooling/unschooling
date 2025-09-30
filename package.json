@@ -8,7 +8,7 @@
     "@mui/icons-material": "^7.3.2",
     "@mui/material": "^7.3.2",
     "axios": "^1.10.0",
-    "firebase": "^11.10.0",
+    "firebase": "^12.3.0",
     "puppeteer": "^24.16.2",
     "razorpay": "^2.9.6",
     "react": "^18.2.0",

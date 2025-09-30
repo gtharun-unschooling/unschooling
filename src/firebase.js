@@ -1,73 +1,25 @@
-// Firebase configuration using environment variables
+// Firebase configuration - Latest version with proper imports
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
-import { getFirebaseConfig } from './config/config.js';
 
-let app, auth, db, storage;
-
-// Initialize Firebase with retry logic and better error handling
-const initializeFirebase = async () => {
-  try {
-    const firebaseConfig = getFirebaseConfig();
-    
-    console.log('🔥 Firebase Config:', firebaseConfig);
-    console.log('🔥 Project ID:', firebaseConfig.projectId);
-    console.log('🔥 Auth Domain:', firebaseConfig.authDomain);
-    console.log('🔥 App ID:', firebaseConfig.appId);
-    console.log('🔥 API Key:', firebaseConfig.apiKey ? 'Present' : 'Missing');
-
-    // Validate required Firebase config
-    if (!firebaseConfig.apiKey || !firebaseConfig.authDomain || !firebaseConfig.projectId) {
-      throw new Error('Missing required Firebase configuration values');
-    }
-
-    // Check if Firebase is already initialized
-    if (app) {
-      console.log('🔥 Firebase already initialized, reusing existing app');
-      return true;
-    }
-
-    app = initializeApp(firebaseConfig);
-    console.log('🔥 Firebase App initialized:', app);
-    console.log('🔥 App name:', app.name);
-    console.log('🔥 App options:', app.options);
-
-    auth = getAuth(app);
-    console.log('🔥 Auth initialized:', auth);
-
-    // Configure auth settings for better network handling
-    auth.settings.appVerificationDisabledForTesting = false;
-    
-    // Set up auth state persistence
-    auth.useDeviceLanguage();
-
-    db = getFirestore(app);
-    console.log('🔥 Firestore initialized:', db);
-
-    storage = getStorage(app);
-    console.log('🔥 Storage initialized:', storage);
-
-    // Test Firebase connectivity
-    try {
-      await auth.signInAnonymously();
-      await auth.signOut();
-      console.log('🔥 Firebase connectivity test successful');
-    } catch (connectivityError) {
-      console.warn('🔥 Firebase connectivity test failed:', connectivityError);
-      // Don't throw here, just log the warning
-    }
-
-    return true;
-  } catch (error) {
-    console.error('🔥 Firebase initialization failed:', error);
-    console.warn('🔥 Firebase failed to initialize, but app will continue');
-    return false;
-  }
+// Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBX2bZmOUosU-2PXZFQVN_WLLuee_zkFzI",
+  authDomain: "unschooling-464413.firebaseapp.com",
+  projectId: "unschooling-464413",
+  storageBucket: "unschooling-464413.appspot.com",
+  messagingSenderId: "790275794964",
+  appId: "1:790275794964:web:f981a7f0693cc186631f01"
 };
 
-// Start Firebase initialization in the background
-initializeFirebase();
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+// Initialize Firebase services
+const auth = getAuth(app);
+const db = getFirestore(app);
+const storage = getStorage(app);
 
 export { app, auth, db, storage };

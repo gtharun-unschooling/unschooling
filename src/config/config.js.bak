@@ -19,7 +19,7 @@ const config = {
   IS_PRODUCTION: IS_PRODUCTION,
   
   // API Configuration
-  API_BASE_URL: 'https://api.your-domain.com',
+  API_BASE_URL: process.env.REACT_APP_API_BASE_URL || "https://llm-agents-44gsrw22gq-uc.a.run.app",
   WAREHOUSE_API_URL: process.env.REACT_APP_WAREHOUSE_API_URL || "https://warehouse-api-44gsrw22gq-uc.a.run.app",
   USE_LOCAL_BACKEND: process.env.REACT_APP_USE_LOCAL_BACKEND === "true",
   API_TIMEOUT: parseInt(process.env.REACT_APP_API_TIMEOUT) || 90000,
@@ -59,7 +59,7 @@ const config = {
 
 // Helper functions
 export const getApiUrl = (endpoint) => {
-  return `${config.API_BASE_URL: 'https://api.your-domain.com',
+  return `${config.API_BASE_URL}${endpoint}`;
 };
 
 export const getWarehouseApiUrl = (endpoint) => {
@@ -81,7 +81,7 @@ export const getEnvironmentInfo = () => {
     isStaging: config.IS_STAGING,
     isProduction: config.IS_PRODUCTION,
     debug: config.DEBUG,
-    apiBaseUrl: config.API_BASE_URL: 'https://api.your-domain.com',
+    apiBaseUrl: config.API_BASE_URL,
     warehouseApiUrl: config.WAREHOUSE_API_URL,
     useLocalBackend: config.USE_LOCAL_BACKEND
   };
