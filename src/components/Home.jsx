@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { colors, spacing, typography } from '../styles/designTokens';
 
 const Home = () => {
+  console.log('🏠 Home component rendering with viewMode toggle');
   const { currentUser, userProfile } = useAuth();
   const [children, setChildren] = useState([]);
   const [loading, setLoading] = useState(true);
