@@ -9,6 +9,7 @@ const Home = () => {
   const { currentUser, userProfile } = useAuth();
   const [children, setChildren] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [viewMode, setViewMode] = useState('child'); // 'child' or 'parent'
   const [stats, setStats] = useState({
     totalChildren: 0,
     totalPlans: 0,
@@ -103,23 +104,33 @@ const Home = () => {
 
   const containerStyle = {
     minHeight: '100vh',
-    background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
+    background: viewMode === 'child' 
+      ? 'linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)'  // Child: Warm yellow theme
+      : 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)', // Parent: Cool gray theme
     fontFamily: typography.fontFamily.primary,
+    transition: 'background 0.3s ease',
   };
 
   const headerStyle = {
-    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    background: viewMode === 'child' 
+      ? 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)'  // Child: Orange theme
+      : 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', // Parent: Blue theme
     color: 'white',
     padding: `${spacing['2xl']} ${spacing.xl}`,
     marginBottom: spacing.xl,
+    transition: 'background 0.3s ease',
   };
 
   const cardStyle = {
     background: 'white',
     borderRadius: '16px',
     padding: spacing.xl,
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)',
-    border: '1px solid #e2e8f0',
+    boxShadow: viewMode === 'child' 
+      ? '0 4px 6px rgba(245, 158, 11, 0.1)' 
+      : '0 4px 6px rgba(0, 0, 0, 0.05)',
+    border: viewMode === 'child' 
+      ? '1px solid #fde68a' 
+      : '1px solid #e2e8f0',
     transition: 'all 0.3s ease',
   };
 
@@ -206,12 +217,59 @@ const Home = () => {
       {/* Header */}
       <div style={headerStyle}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h1 style={{ fontSize: '2.5rem', margin: '0 0 0.5rem 0', fontWeight: '700' }}>
-            {getGreeting()}, {userProfile?.profile?.firstName || 'there'}! 👋
-          </h1>
-          <p style={{ fontSize: '1.2rem', margin: 0, opacity: 0.9 }}>
-            Welcome to your personalized learning dashboard
-          </p>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+            <div>
+              <h1 style={{ fontSize: '2.5rem', margin: '0 0 0.5rem 0', fontWeight: '700' }}>
+                {viewMode === 'child' ? '🌟 My Learning Journey' : '👨‍👩‍👧‍👦 Family Dashboard'}
+              </h1>
+              <p style={{ fontSize: '1.2rem', margin: 0, opacity: 0.9 }}>
+                {viewMode === 'child' 
+                  ? 'Track your progress and discover new learning opportunities'
+                  : 'Monitor your children\'s learning progress and achievements'
+                }
+              </p>
+            </div>
+            <div style={{
+              background: 'rgba(255, 255, 255, 0.1)',
+              borderRadius: '25px',
+              padding: '4px',
+              display: 'flex',
+              gap: '4px'
+            }}>
+              <button
+                onClick={() => setViewMode('child')}
+                style={{
+                  background: viewMode === 'child' ? 'white' : 'transparent',
+                  color: viewMode === 'child' ? '#667eea' : 'white',
+                  border: 'none',
+                  borderRadius: '20px',
+                  padding: '8px 16px',
+                  cursor: 'pointer',
+                  fontSize: '0.9rem',
+                  fontWeight: '600',
+                  transition: 'all 0.3s ease'
+                }}
+              >
+                🌟 Child View
+              </button>
+              <button
+                onClick={() => setViewMode('parent')}
+                style={{
+                  background: viewMode === 'parent' ? 'white' : 'transparent',
+                  color: viewMode === 'parent' ? '#667eea' : 'white',
+                  border: 'none',
+                  borderRadius: '20px',
+                  padding: '8px 16px',
+                  cursor: 'pointer',
+                  fontSize: '0.9rem',
+                  fontWeight: '600',
+                  transition: 'all 0.3s ease'
+                }}
+              >
+                👨‍👩‍👧‍👦 Parent View
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
