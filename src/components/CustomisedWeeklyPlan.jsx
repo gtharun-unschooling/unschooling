@@ -79,22 +79,40 @@ const CustomisedWeeklyPlan = () => {
     if (user && location.state?.data) {
       console.log('🔍 DEBUG - Location state data:', location.state.data);
       console.log('🔍 DEBUG - Location state keys:', Object.keys(location.state.data));
-      console.log('🔍 DEBUG - Location state matched_topics:', location.state.data.matched_topics);
-      console.log('🔍 DEBUG - Location state data type:', typeof location.state.data);
-      console.log('🔍 DEBUG - Location state data.data:', location.state.data.data);
-      console.log('🔍 DEBUG - Location state data.data?.matched_topics:', location.state.data.data?.matched_topics);
+      console.log('🔍 DEBUG - Location state childName:', location.state.childName);
       
-      // Create unified plan format
-      const childProfile = {
-        child_name: location.state.childName || '',
-        child_age: 5, // Default age if not available
-        interests: location.state.data.interests || [],
-        learning_style: 'mixed',
-        plan_type: 'hybrid'
-      };
+      // Extract child profile from location state
+      const childProfile = location.state.data.child_profile || {};
+      const childName = childProfile.child_name || location.state.childName || 'Child';
+      const childAge = childProfile.child_age || 5;
+      const interests = childProfile.interests || [];
       
-      const unifiedPlan = createUnifiedWeeklyPlan(location.state.data, childProfile);
-      const formattedPlan = formatPlanForDisplay(unifiedPlan);
+      console.log('🔍 DEBUG - Extracted child profile:', { childName, childAge, interests });
+      
+      // Set child name for display
+      setChildName(childName);
+      
+      // Check if we have matched topics (plan already generated)
+      if (location.state.data.matched_topics && location.state.data.matched_topics.length > 0) {
+        console.log('✅ Plan already generated, displaying existing plan');
+        const unifiedPlan = createUnifiedWeeklyPlan(location.state.data, childProfile);
+        const formattedPlan = formatPlanForDisplay(unifiedPlan);
+        
+        // Set the plan in state
+        const currentMonth = new Date().toLocaleString('default', { month: 'long' }) + ' ' + new Date().getFullYear();
+        setPlans({ [currentMonth]: formattedPlan });
+        setSelectedMonth(currentMonth);
+      } else {
+        console.log('🔄 No plan found, generating new plan...');
+        // Generate new plan using the child profile
+        generateNewPlan({
+          name: childName,
+          age: childAge,
+          interests: interests,
+          learning_style: 'mixed',
+          plan_type: 'hybrid'
+        });
+      }
     } else if (user && location.state?.matched_topics) {
       // NEW: Handle direct backend response structure (after ProfileForm fix)
       console.log('✅ NEW: Direct backend response structure detected');
@@ -185,7 +203,7 @@ const CustomisedWeeklyPlan = () => {
       console.log('📤 Profile data for plan generation:', profileData);
       
       // Call the backend API to generate plan
-      const response = await fetch('https://unschooling-backend-790275794964.us-central1.run.app/api/generate-plan', {
+      const response = await fetch('https://llm-agents-44gsrw22gq-uc.a.run.app/api/generate-plan', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -1369,9 +1387,12 @@ const CustomisedWeeklyPlan = () => {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px', marginBottom: '16px' }}>
             <div><strong>User:</strong> {user ? user.email : 'Not logged in'}</div>
             <div><strong>Child Name:</strong> {childName || 'Not set'}</div>
+            <div><strong>Child Age:</strong> {location.state?.data?.child_profile?.child_age || 'Not set'}</div>
+            <div><strong>Child Interests:</strong> {location.state?.data?.child_profile?.interests?.join(', ') || 'Not set'}</div>
             <div><strong>Selected Month:</strong> {selectedMonth || 'Not set'}</div>
             <div><strong>Plans Count:</strong> {Object.keys(plans).length}</div>
             <div><strong>Available Months:</strong> {Object.keys(plans).join(', ') || 'None'}</div>
+            <div><strong>Generating Plan:</strong> {generatingPlan ? 'Yes' : 'No'}</div>
             <div><strong>Location State:</strong> {location.state ? 'Has data' : 'No data'}</div>
           </div>
           

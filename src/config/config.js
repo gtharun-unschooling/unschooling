@@ -59,7 +59,7 @@ const config = {
 
 // Helper functions
 export const getApiUrl = (endpoint) => {
-  return `${config.API_BASE_URL: 'https://api.your-domain.com',
+  return `${config.API_BASE_URL}${endpoint}`;
 };
 
 export const getWarehouseApiUrl = (endpoint) => {
@@ -81,7 +81,7 @@ export const getEnvironmentInfo = () => {
     isStaging: config.IS_STAGING,
     isProduction: config.IS_PRODUCTION,
     debug: config.DEBUG,
-    apiBaseUrl: config.API_BASE_URL: 'https://api.your-domain.com',
+    apiBaseUrl: config.API_BASE_URL,
     warehouseApiUrl: config.WAREHOUSE_API_URL,
     useLocalBackend: config.USE_LOCAL_BACKEND
   };
