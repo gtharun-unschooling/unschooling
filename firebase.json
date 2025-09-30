@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "target": "unschooling-in",
+    "target": "unschooling-464413",
     "public": "build",
     "ignore": [
       "firebase.json",
