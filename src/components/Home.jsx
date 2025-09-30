@@ -11,6 +11,7 @@ const Home = () => {
   const [children, setChildren] = useState([]);
   const [loading, setLoading] = useState(true);
   const [viewMode, setViewMode] = useState('child'); // 'child' or 'parent'
+  const [isMobile, setIsMobile] = useState(false);
   const [stats, setStats] = useState({
     totalChildren: 0,
     totalPlans: 0,
@@ -18,6 +19,16 @@ const Home = () => {
     completedActivities: 0
   });
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   useEffect(() => {
     if (currentUser) {
@@ -117,8 +128,8 @@ const Home = () => {
       ? 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)'  // Child: Orange theme
       : 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', // Parent: Blue theme
     color: 'white',
-    padding: `${spacing['2xl']} ${spacing.xl}`,
-    marginBottom: spacing.xl,
+    padding: isMobile ? `${spacing.xl} ${spacing.md}` : `${spacing['2xl']} ${spacing.xl}`,
+    marginBottom: isMobile ? spacing.md : spacing.xl,
     transition: 'background 0.3s ease',
   };
 
@@ -218,12 +229,29 @@ const Home = () => {
       {/* Header */}
       <div style={headerStyle}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-            <div>
-              <h1 style={{ fontSize: '2.5rem', margin: '0 0 0.5rem 0', fontWeight: '700' }}>
+          <div style={{ 
+            display: 'flex', 
+            flexDirection: isMobile ? 'column' : 'row',
+            justifyContent: isMobile ? 'center' : 'space-between', 
+            alignItems: isMobile ? 'center' : 'center', 
+            gap: isMobile ? '1rem' : '0',
+            marginBottom: '1rem' 
+          }}>
+            <div style={{ textAlign: isMobile ? 'center' : 'left' }}>
+              <h1 style={{ 
+                fontSize: isMobile ? '1.8rem' : '2.5rem', 
+                margin: '0 0 0.5rem 0', 
+                fontWeight: '700',
+                lineHeight: '1.2'
+              }}>
                 {viewMode === 'child' ? '🌟 My Learning Journey' : '👨‍👩‍👧‍👦 Family Dashboard'}
               </h1>
-              <p style={{ fontSize: '1.2rem', margin: 0, opacity: 0.9 }}>
+              <p style={{ 
+                fontSize: isMobile ? '1rem' : '1.2rem', 
+                margin: 0, 
+                opacity: 0.9,
+                lineHeight: '1.4'
+              }}>
                 {viewMode === 'child' 
                   ? 'Track your progress and discover new learning opportunities'
                   : 'Monitor your children\'s learning progress and achievements'
@@ -244,14 +272,14 @@ const Home = () => {
                   color: viewMode === 'child' ? '#667eea' : 'white',
                   border: 'none',
                   borderRadius: '20px',
-                  padding: '8px 16px',
+                  padding: isMobile ? '6px 12px' : '8px 16px',
                   cursor: 'pointer',
-                  fontSize: '0.9rem',
+                  fontSize: isMobile ? '0.8rem' : '0.9rem',
                   fontWeight: '600',
                   transition: 'all 0.3s ease'
                 }}
               >
-                🌟 Child View
+                🌟 {isMobile ? 'Child' : 'Child View'}
               </button>
               <button
                 onClick={() => setViewMode('parent')}
@@ -260,64 +288,68 @@ const Home = () => {
                   color: viewMode === 'parent' ? '#667eea' : 'white',
                   border: 'none',
                   borderRadius: '20px',
-                  padding: '8px 16px',
+                  padding: isMobile ? '6px 12px' : '8px 16px',
                   cursor: 'pointer',
-                  fontSize: '0.9rem',
+                  fontSize: isMobile ? '0.8rem' : '0.9rem',
                   fontWeight: '600',
                   transition: 'all 0.3s ease'
                 }}
               >
-                👨‍👩‍👧‍👦 Parent View
+                👨‍👩‍👧‍👦 {isMobile ? 'Parent' : 'Parent View'}
               </button>
             </div>
           </div>
         </div>
       </div>
 
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: `0 ${spacing.xl}` }}>
+      <div style={{ 
+        maxWidth: '1200px', 
+        margin: '0 auto', 
+        padding: `0 ${isMobile ? spacing.md : spacing.xl}` 
+      }}>
         {/* Quick Stats */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-          gap: spacing.lg,
-          marginBottom: spacing.xl
+          gridTemplateColumns: isMobile ? 'repeat(2, 1fr)' : 'repeat(auto-fit, minmax(250px, 1fr))',
+          gap: isMobile ? spacing.md : spacing.lg,
+          marginBottom: isMobile ? spacing.lg : spacing.xl
         }}>
           <div style={statCardStyle} onClick={() => navigate('/child-profile')}>
-            <div style={{ fontSize: '3rem', marginBottom: spacing.md }}>👶</div>
-            <div style={{ fontSize: '2rem', fontWeight: '700', color: '#3b82f6', marginBottom: spacing.sm }}>
+            <div style={{ fontSize: isMobile ? '2rem' : '3rem', marginBottom: spacing.md }}>👶</div>
+            <div style={{ fontSize: isMobile ? '1.5rem' : '2rem', fontWeight: '700', color: '#3b82f6', marginBottom: spacing.sm }}>
               {stats.totalChildren}
             </div>
-            <div style={{ color: '#64748b', fontSize: '1.1rem' }}>
+            <div style={{ color: '#64748b', fontSize: isMobile ? '0.9rem' : '1.1rem' }}>
               {stats.totalChildren === 1 ? 'Child Profile' : 'Child Profiles'}
             </div>
           </div>
 
           <div style={statCardStyle} onClick={() => navigate('/enhanced-dashboard')}>
-            <div style={{ fontSize: '3rem', marginBottom: spacing.md }}>📚</div>
-            <div style={{ fontSize: '2rem', fontWeight: '700', color: '#10b981', marginBottom: spacing.sm }}>
+            <div style={{ fontSize: isMobile ? '2rem' : '3rem', marginBottom: spacing.md }}>📚</div>
+            <div style={{ fontSize: isMobile ? '1.5rem' : '2rem', fontWeight: '700', color: '#10b981', marginBottom: spacing.sm }}>
               {stats.totalPlans}
             </div>
-            <div style={{ color: '#64748b', fontSize: '1.1rem' }}>
+            <div style={{ color: '#64748b', fontSize: isMobile ? '0.9rem' : '1.1rem' }}>
               Learning Plans
             </div>
           </div>
 
           <div style={statCardStyle} onClick={() => navigate('/progress-tracker')}>
-            <div style={{ fontSize: '3rem', marginBottom: spacing.md }}>📈</div>
-            <div style={{ fontSize: '2rem', fontWeight: '700', color: '#8b5cf6', marginBottom: spacing.sm }}>
+            <div style={{ fontSize: isMobile ? '2rem' : '3rem', marginBottom: spacing.md }}>📈</div>
+            <div style={{ fontSize: isMobile ? '1.5rem' : '2rem', fontWeight: '700', color: '#8b5cf6', marginBottom: spacing.sm }}>
               {stats.activeLearning}
             </div>
-            <div style={{ color: '#64748b', fontSize: '1.1rem' }}>
+            <div style={{ color: '#64748b', fontSize: isMobile ? '0.9rem' : '1.1rem' }}>
               Active Learning
             </div>
           </div>
 
           <div style={statCardStyle} onClick={() => navigate('/learning')}>
-            <div style={{ fontSize: '3rem', marginBottom: spacing.md }}>✅</div>
-            <div style={{ fontSize: '2rem', fontWeight: '700', color: '#f59e0b', marginBottom: spacing.sm }}>
+            <div style={{ fontSize: isMobile ? '2rem' : '3rem', marginBottom: spacing.md }}>✅</div>
+            <div style={{ fontSize: isMobile ? '1.5rem' : '2rem', fontWeight: '700', color: '#f59e0b', marginBottom: spacing.sm }}>
               {stats.completedActivities}
             </div>
-            <div style={{ color: '#64748b', fontSize: '1.1rem' }}>
+            <div style={{ color: '#64748b', fontSize: isMobile ? '0.9rem' : '1.1rem' }}>
               Completed Activities
             </div>
           </div>
@@ -326,9 +358,9 @@ const Home = () => {
         {/* Main Content Grid */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
-          gap: spacing.xl,
-          marginBottom: spacing.xl
+          gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(400px, 1fr))',
+          gap: isMobile ? spacing.lg : spacing.xl,
+          marginBottom: isMobile ? spacing.lg : spacing.xl
         }}>
           {/* Children Overview */}
           <div style={cardStyle}>

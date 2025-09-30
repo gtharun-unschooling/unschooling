@@ -162,6 +162,9 @@ const Navbar = () => {
           
           {/* Right side: Navigation Menu */}
           <div className="navbar-menu">
+            <Link to="/what-we-do" className="nav-link">
+              What We Do
+            </Link>
             <Link to="/niche" className="nav-link">
               Explore
             </Link>
@@ -281,6 +284,10 @@ const Navbar = () => {
             <Link to="/" className="menu-link" onClick={closeHamburger}>
               <span className="menu-icon">🏠</span>
               <span>Home</span>
+            </Link>
+            <Link to="/what-we-do" className="menu-link" onClick={closeHamburger}>
+              <span className="menu-icon">🎯</span>
+              <span>What We Do</span>
             </Link>
             <Link to="/niche" className="menu-link" onClick={closeHamburger}>
               <span className="menu-icon">🔍</span>
