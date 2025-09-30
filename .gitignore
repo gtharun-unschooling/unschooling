@@ -60,6 +60,10 @@ ENV/
 *.swp
 *.swo
 
+# Cursor IDE
+.cursor/
+*.cursor-*
+
 # OS
 .DS_Store
 Thumbs.db 
