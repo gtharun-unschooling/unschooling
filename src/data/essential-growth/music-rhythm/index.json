@@ -1,0 +1,20 @@
+{
+  "pillar": "Music & Rhythm",
+  "slug": "music-rhythm",
+  "color": "#ccfbf1",
+  "icon": "musical-notes",
+  "description": "Ignite creativity through sounds and movement",
+  "ageGroups": [
+    "Infant (0-1)",
+    "Toddler (1-3)",
+    "Preschooler (3-5)",
+    "Child (6-8)",
+    "Pre-Teen (9-12)",
+    "Teen (13-18)"
+  ],
+  "categories": [],
+  "totalActivities": 0,
+  "totalCategories": 0,
+  "lastUpdated": "2024-12-19",
+  "status": "ready-for-content"
+}

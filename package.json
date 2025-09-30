@@ -1,0 +1,61 @@
+{
+  "name": "unschooling-app",
+  "version": "1.2.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.2",
+    "@mui/material": "^7.3.2",
+    "axios": "^1.10.0",
+    "firebase": "^11.10.0",
+    "puppeteer": "^24.16.2",
+    "razorpay": "^2.9.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-firebase-hooks": "^5.1.1",
+    "react-helmet-async": "^2.0.5",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.11.2",
+    "react-slick": "^0.31.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.2.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:headed": "playwright test --headed",
+    "test:env": "node test-environment.js",
+    "test:links:quick": "node quick_link_test.js",
+    "test:links:comprehensive": "node comprehensive_link_testing.js",
+    "test:links:accurate": "node accurate_link_test.js",
+    "test:links:all": "npm run test:links:quick && npm run test:links:comprehensive",
+    "dev:local": "./dev-local.sh",
+    "dev:staging": "./dev-staging.sh",
+    "dev:production": "./dev-production.sh",
+    "deploy:staging": "./deploy-staging.sh",
+    "deploy:production": "./deploy-cloud-run.sh"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "firebase-tools": "^14.10.1",
+    "playwright": "^1.55.0",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

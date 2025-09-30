@@ -1,0 +1,212 @@
+#!/usr/bin/env python3
+"""
+📋 Create Robust Metadata Table
+Create comprehensive metadata with ALL available information including 18 pillars, limits, and detailed specifications
+"""
+
+import gspread
+from google.oauth2.service_account import Credentials
+import time
+
+def get_google_sheets_client():
+    """Connect to Google Sheets using credentials"""
+    try:
+        scope = [
+            'https://spreadsheets.google.com/feeds',
+            'https://www.googleapis.com/auth/spreadsheets',
+            'https://www.googleapis.com/auth/drive',
+            'https://www.googleapis.com/auth/drive.file'
+        ]
+        creds = Credentials.from_service_account_file('sheets-credentials.json', scopes=scope)
+        client = gspread.authorize(creds)
+        print("✅ Connected to Google Sheets")
+        return client
+    except Exception as e:
+        print(f"❌ Error connecting to Google Sheets: {e}")
+        return None
+
+def create_robust_metadata_table(client):
+    """Create robust metadata table with ALL available information"""
+    
+    try:
+        # Open the Sample 1 spreadsheet
+        spreadsheet = client.open_by_key('14B3XhlDkQwFLcwFlmrM1xwkJ4ZkW0z_lKQE-3qZiyvQ')
+        
+        # Open the Metadata worksheet
+        metadata_worksheet = spreadsheet.worksheet('Metadata')
+        
+        print(f"📤 Working with: Metadata worksheet")
+        
+        # Clear the worksheet first
+        metadata_worksheet.clear()
+        print("✅ Cleared metadata worksheet")
+        
+        # Create comprehensive metadata table with ALL information
+        metadata_table = [
+            # Header row with comprehensive columns
+            ['Column Name', 'Purpose', 'Format', 'Character Limit', 'Requirements', 'Examples', 'Validation Rules', 'Age Considerations', 'Pillar-Specific Notes', 'Data Type', 'Mandatory', 'Default Value', 'Source', 'Update Frequency', 'Quality Standards'],
+            
+            # Activity ID
+            ['Activity ID', 'Unique identifier for each activity across all pillars', 'pillar-age-group-category-number', '50 characters max', 'Must be unique, lowercase with hyphens, sequential numbering within category', 'play-creativity-infant-0-1-sensory-exploration-1', 'No duplicates, follows naming convention, validates against existing IDs', 'Include age range in ID format', 'Different pillars have different prefixes (play-creativity-, cognitive-skills-, etc.)', 'Text', 'Yes', 'Auto-generated', 'System generated', 'Never', 'Must be unique across all 18 pillars'],
+            
+            # Pillar
+            ['Pillar', 'Identifies which of the 18 growth pillars this activity belongs to', 'Exact pillar name from predefined list', '50 characters max', 'Must be exactly one of the 18 defined pillars', 'Play & Creativity, Cognitive Skills, Physical Development, Emotional Intelligence, Social Skills, Language Development, Mathematical Thinking, Scientific Exploration, Artistic Expression, Musical Intelligence, Spatial Reasoning, Logical Thinking, Creative Problem Solving, Critical Analysis, Memory Development, Attention & Focus, Self-Regulation, Cultural Awareness', 'Exact match to predefined pillar list required', 'Same across all ages within pillar', 'Each of 18 pillars has unique focus, skills, and developmental approach', 'Text', 'Yes', 'None', 'Predefined list', 'Rarely', 'Must match one of 18 pillars exactly'],
+            
+            # Age Group
+            ['Age Group', 'Developmental stage for the activity', 'Age range format', '20 characters max', 'Must match exact format: Infant (0-1), Toddler (1-3), Preschooler (3-5), Child (6-8), Pre-Teen (9-12), Teen (13-18)', 'Infant (0-1), Toddler (1-3), Preschooler (3-5), Child (6-8), Pre-Teen (9-12), Teen (13-18)', 'Must match one of 6 defined age groups exactly', 'Critical for developmental appropriateness validation', 'Each of 18 pillars uses same 6 age groups', 'Text', 'Yes', 'None', 'Predefined list', 'Never', 'Must match developmental milestones'],
+            
+            # Difficulty Level
+            ['Difficulty Level', 'Indicates complexity level of the activity', 'Beginner, Intermediate, Advanced', '15 characters max', 'Must be one of three levels, match to age capabilities and activity complexity', 'Beginner, Intermediate, Advanced', 'Must be one of three defined levels', 'Infants: mostly Beginner, Toddlers: Beginner-Intermediate, Preschoolers: Beginner-Intermediate, Children: Intermediate, Pre-Teens: Intermediate-Advanced, Teens: Advanced', 'Consistent difficulty progression within each pillar', 'Text', 'Yes', 'Beginner', 'Manual selection', 'Per activity', 'Must align with age capabilities'],
+            
+            # Activity Type
+            ['Activity Type', 'Primary skill area the activity develops', 'Predefined activity types', '30 characters max', 'Must match one of predefined activity types based on pillar focus', 'Creative, Physical, Social, Sensory, Cognitive, Language, Memory, Problem Solving, Emotional, Artistic, Musical, Spatial, Logical, Critical Thinking, Attention, Self-Regulation, Cultural', 'Must align with pillar-specific skill focus', 'Age-appropriate skill development focus', 'Each pillar has specific activity types aligned with its focus', 'Text', 'Yes', 'Creative', 'Predefined list', 'Per activity', 'Must align with pillar and category goals'],
+            
+            # Category
+            ['Category', 'Specific category within the pillar and age group', 'Descriptive title case name', '60 characters max', '4 categories per age group, unique names, pillar-specific, descriptive, no abbreviations', 'Sensory Exploration And Discovery, Building And Construction Play, Creative Storytelling And Writing', 'No abbreviations, descriptive names, unique within pillar and age group', 'Age-appropriate categories that match developmental capabilities', 'Unique to each pillar, 4 categories per age group = 24 categories per pillar', 'Text', 'Yes', 'None', 'Pillar-specific predefined', 'Rarely', 'Must be unique within pillar and age group'],
+            
+            # Category Description
+            ['Category Description', 'Detailed explanation of what this category focuses on', 'Comprehensive paragraph', '500 characters max', 'Explain developmental benefits, appropriate activities, learning objectives, age-specific focus', 'Activities focusing on developing tactile, visual, and auditory awareness through safe, gentle exploration of different textures, sounds, and visual stimuli appropriate for 0-1 year olds', 'Detailed, informative, age-specific, pillar-aligned', 'Age-specific capabilities and developmental benefits clearly explained', 'Pillar-specific developmental focus and unique benefits', 'Text', 'Yes', 'None', 'Expert defined', 'Rarely', 'Must clearly explain category purpose and benefits'],
+            
+            # Topic Number
+            ['Topic Number', 'Sequential number within the category', '1, 2, 3, 4, 5', '2 characters max', 'Sequential numbering from 1-5 within each category, no gaps', '1, 2, 3, 4, 5', 'Must be sequential 1-5, no gaps, unique within category', 'Same across all ages within category structure', 'Consistent within pillar structure, 5 topics per category', 'Number', 'Yes', '1', 'Sequential', 'Per category', 'Must be sequential within category'],
+            
+            # Topic
+            ['Topic', 'Brief, engaging title of the specific activity topic', 'Descriptive, engaging name', '80 characters max', 'Age-appropriate language, clear activity focus, engaging and descriptive', 'Texture Treasure Hunt, Tower Building Adventure, Creative Storytelling Workshop', 'Engaging, descriptive, age-appropriate concepts', 'Age-appropriate language and concepts that match developmental level', 'Category-specific focus within pillar theme', 'Text', 'Yes', 'None', 'Creative naming', 'Per topic', 'Must be engaging and descriptive'],
+            
+            # Activity Name
+            ['Activity Name', 'Clear name explaining what the child will do', 'Action-oriented, specific name', '100 characters max', 'Use action words, be specific about the activity, engaging and clear', 'Gentle Texture Discovery Adventure, Amazing Tower Building Challenge, Creative Storytelling Workshop', 'Clear, engaging, action-oriented', 'Age-appropriate actions and language complexity', 'Pillar-specific activity types and focus areas', 'Text', 'Yes', 'None', 'Creative naming', 'Per activity', 'Must clearly indicate activity content'],
+            
+            # Objective
+            ['Objective', 'Clear learning goal for the activity', '1-2 sentences', '200 characters max', 'Specific developmental skill or knowledge targeted, measurable outcomes', 'Develop fine motor skills and spatial awareness through building towers with large blocks while encouraging problem-solving and cause-and-effect understanding', 'Specific, measurable, age-appropriate outcomes', 'Age-appropriate learning goals that match developmental milestones', 'Pillar-specific skill development aligned with pillar focus', 'Text', 'Yes', 'None', 'Expert defined', 'Per activity', 'Must specify clear learning outcomes'],
+            
+            # Explanation
+            ['Explanation', 'Detailed explanation of benefits and developmental value', 'Comprehensive paragraph', '800 characters max', 'Explain why beneficial, what skills developed, developmental theory, age-specific benefits', 'This activity helps toddlers develop hand-eye coordination, spatial reasoning, and cause-and-effect understanding while building confidence through successful construction and creative problem-solving', 'Informative, developmental theory-based, comprehensive', 'Age-specific developmental benefits clearly explained', 'Pillar-specific developmental focus and unique benefits', 'Text', 'Yes', 'None', 'Expert defined', 'Per activity', 'Must explain developmental value and benefits'],
+            
+            # Age
+            ['Age', 'Specific age range within the age group', 'Specific range format', '15 characters max', 'Be precise about developmental appropriateness, consider individual variation', '6-12 months, 18-36 months, 36-60 months, 6-8 years, 9-12 years, 13-18 years', 'Precise age targeting within age group', 'Consider individual variation within age groups, precise targeting', 'Age-appropriate complexity and skill requirements', 'Text', 'Yes', 'None', 'Expert defined', 'Per activity', 'Must be developmentally appropriate'],
+            
+            # Estimated Time
+            ['Estimated Time', 'Realistic time estimate for the activity', 'Time in minutes', '20 characters max', 'Match to age attention spans and activity complexity, realistic expectations', '5-10 minutes, 15-20 minutes, 30-45 minutes, 60+ minutes', 'Realistic time expectations', 'Infants: 2-5 min, Toddlers: 5-15 min, Preschoolers: 15-30 min, Children: 30-45 min, Pre-Teens: 45-60 min, Teens: 60+ min', 'Age-appropriate duration based on attention spans', 'Text', 'Yes', '15 minutes', 'Expert defined', 'Per activity', 'Must match age attention spans'],
+            
+            # Setup Time
+            ['Setup Time', 'Time needed to prepare materials and environment', 'Time in minutes', '15 characters max', 'Include all preparation steps, be realistic about parent time', '2-5 minutes, 5-10 minutes, 10-15 minutes', 'Complete preparation time estimate', 'Consider parent time constraints and complexity', 'Accessible setup requirements for all pillars', 'Text', 'Yes', '5 minutes', 'Expert estimated', 'Per activity', 'Must be realistic for parents'],
+            
+            # Supervision Level
+            ['Supervision Level', 'Required supervision for safety and guidance', 'Constant, Close, Moderate, Minimal', '15 characters max', 'Match to age safety requirements and activity complexity', 'Constant, Close, Moderate, Minimal', 'Safety-appropriate supervision level', 'Infants: Constant, Toddlers: Close, Preschoolers: Moderate, Older children: Minimal', 'Age-specific safety needs across all pillars', 'Text', 'Yes', 'Moderate', 'Safety assessment', 'Per activity', 'Must ensure safety'],
+            
+            # Materials
+            ['Materials', 'All required materials for the activity', 'Comma-separated list', '300 characters max', 'Common, accessible materials with quantities, age-safe', 'Soft fabric squares (6 pieces), smooth wooden blocks (8 pieces), shallow tray (1), soft brush (1)', 'Complete material list with quantities', 'Age-safe materials that prevent choking hazards', 'Accessible and affordable across all pillars', 'Text', 'Yes', 'None', 'Expert defined', 'Per activity', 'Must be safe and accessible'],
+            
+            # Additional Information
+            ['Additional Information', 'Special considerations, safety notes, variations', 'Detailed notes', '1000 characters max', 'Safety considerations, variations, troubleshooting tips, additional context', 'Use large blocks to prevent choking. Place on soft surface to prevent injuries if tower falls. Celebrate each successful build. Include variations for different skill levels', 'Comprehensive guidance and safety notes', 'Age-specific safety notes and considerations', 'Pillar-specific considerations and variations', 'Text', 'No', 'None', 'Expert defined', 'Per activity', 'Must include safety considerations'],
+            
+            # Steps
+            ['Steps', 'Numbered, clear instructions for the activity', 'Numbered list format', '1500 characters max', 'Simple language, sequential, include safety considerations, age-appropriate', '1. Place baby on soft mat; 2. Show colorful soft toys; 3. Move toys slowly for baby to track; 4. Encourage with gentle voice; 5. Keep sessions short (2-3 minutes)', 'Clear, actionable, numbered steps', 'Age-appropriate language complexity and instruction length', 'Pillar-specific activity flow and methodology', 'Text', 'Yes', 'None', 'Expert defined', 'Per activity', 'Must be clear and actionable'],
+            
+            # Skills
+            ['Skills', 'Skills developed through this activity', 'Comma-separated list', '200 characters max', 'Be specific and comprehensive, include primary and secondary skills', 'Fine Motor, Spatial Awareness, Problem Solving, Hand-Eye Coordination, Cause and Effect', 'Comprehensive skill list with specific skills', 'Age-appropriate skills that match developmental capabilities', 'Pillar-specific skill development aligned with pillar focus', 'Text', 'Yes', 'None', 'Expert defined', 'Per activity', 'Must specify developed skills'],
+            
+            # Hashtags
+            ['Hashtags', 'Relevant tags for categorization and search', 'Hashtag format', '150 characters max', 'Use consistent hashtag format, include keywords, relevant tags', '#sensory, #creativity, #infant, #tactile, #development', 'Relevant and consistent hashtag format', 'Age-appropriate tags that match activity content', 'Pillar-specific categorization and search terms', 'Text', 'Yes', 'None', 'Expert defined', 'Per activity', 'Must be relevant and consistent'],
+            
+            # Kit Materials
+            ['Kit Materials', 'Materials that would be included in an activity kit', 'Specific item list', '200 characters max', 'List specific items that parents could purchase for kit', '6 large wooden blocks, soft play mat, instruction card, progress tracker', 'Kit-ready materials with quantities', 'Age-appropriate kit contents and safety', 'Pillar-specific kit focus and materials', 'Text', 'Yes', 'None', 'Kit planning', 'Per activity', 'Must be kit-ready'],
+            
+            # General Instructions
+            ['General Instructions', 'Overall guidance for parents and caregivers', 'Clear guidance text', '400 characters max', 'How to facilitate successfully, engagement tips, common challenges', 'Supervise closely and encourage exploration. Don\'t worry about perfect stacking - focus on the process and effort. Celebrate attempts and progress', 'Parent-friendly guidance and tips', 'Age-specific facilitation and support strategies', 'Pillar-specific guidance and facilitation approach', 'Text', 'Yes', 'None', 'Expert defined', 'Per activity', 'Must be parent-friendly'],
+            
+            # Materials at Home
+            ['Materials at Home', 'Common household alternatives', 'Household item list', '200 characters max', 'List accessible alternatives for main materials', 'Large cardboard boxes, plastic containers, soft pillows for building', 'Accessible household alternatives', 'Age-safe home alternatives and substitutions', 'Universal accessibility across all pillars', 'Text', 'Yes', 'None', 'Expert defined', 'Per activity', 'Must be accessible alternatives'],
+            
+            # Materials to Buy for Kit
+            ['Materials to Buy for Kit', 'Specific purchasing guidance for complete kit', 'Purchasing list with sources', '300 characters max', 'Include where to find items, quality suggestions, budget options', 'Large wooden blocks from toy store ($15-25), soft play mat from baby store ($20-30), instruction card included', 'Complete purchasing guide with sources and prices', 'Age-appropriate purchases and quality levels', 'Pillar-specific kit focus and purchasing guidance', 'Text', 'Yes', 'None', 'Purchasing research', 'Per activity', 'Must include sourcing information'],
+            
+            # Corrections Needed
+            ['Corrections Needed', 'Quality control tracking for identified issues', 'Issue description or blank', '500 characters max', 'Leave blank for completed activities, note improvements needed', '', 'Quality tracking and improvement notes', 'Age-appropriateness review and corrections', 'Pillar-specific standards and quality requirements', 'Text', 'No', 'None', 'Quality review', 'As needed', 'Must track quality issues'],
+            
+            # Validation Score
+            ['Validation Score', 'Quality score from 1-10 based on multiple criteria', 'Numerical score 1-10', '3 characters max', 'Based on age appropriateness, clarity, safety, developmental value, accessibility', '9/10, 8/10, 7/10', 'Minimum 8/10 required for approval', 'Age-appropriate validation criteria and scoring', 'Pillar-specific quality standards and validation criteria', 'Number', 'Yes', '8', 'Quality assessment', 'Per activity', 'Must meet minimum quality threshold'],
+            
+            # Last Updated
+            ['Last Updated', 'Date when activity was last modified', 'YYYY-MM-DD format', '10 characters max', 'Track when activity was last updated or reviewed', '2025-01-15, 2024-12-20', 'Must be valid date format', 'Track updates for age-appropriateness', 'Track updates across all pillars', 'Date', 'Yes', 'Current date', 'System generated', 'On update', 'Must be current'],
+            
+            # Feedback
+            ['Feedback', 'User feedback and improvement suggestions', 'Text feedback', '500 characters max', 'Collect and track user feedback for continuous improvement', 'Great activity! My child loved it. Consider adding more color options', 'Collect actionable feedback', 'Age-specific feedback and observations', 'Pillar-specific feedback and improvements', 'Text', 'No', 'None', 'User input', 'As received', 'Must be actionable feedback'],
+            
+            # Updated By
+            ['Updated By', 'Who last updated this activity', 'Name or identifier', '50 characters max', 'Track who made the last update for accountability', 'Expert_Reviewer_1, Parent_Feedback_Team, Quality_Assurance', 'Track update source', 'Track updates for age-appropriateness', 'Track updates across all pillars', 'Text', 'Yes', 'System', 'System/user', 'On update', 'Must track update source'],
+            
+            # Last Synced
+            ['Last Synced', 'When data was last synchronized', 'YYYY-MM-DD HH:MM:SS format', '19 characters max', 'Track synchronization with external systems', '2025-01-15 14:30:25', 'Must be valid datetime format', 'Track sync for age-appropriateness', 'Track sync across all pillars', 'DateTime', 'Yes', 'Current datetime', 'System generated', 'On sync', 'Must be current'],
+            
+            # Validation Score Details
+            ['Validation Score Details', 'Breakdown of validation score criteria', 'Detailed breakdown', '300 characters max', 'Explain how the validation score was calculated', 'Age Appropriateness: 2/2, Clarity: 2/2, Safety: 2/2, Value: 2/2, Accessibility: 1/2 = 9/10', 'Detailed score breakdown', 'Age-specific validation criteria breakdown', 'Pillar-specific validation criteria breakdown', 'Text', 'No', 'None', 'Quality assessment', 'Per validation', 'Must explain score calculation']
+        ]
+        
+        # Add the comprehensive metadata table to the worksheet
+        print(f"\n📝 ADDING ROBUST METADATA TABLE:")
+        print("=" * 50)
+        
+        for row in metadata_table:
+            metadata_worksheet.append_row(row)
+            time.sleep(0.5)  # Rate limiting
+        
+        print(f"✅ Added {len(metadata_table)} rows of robust metadata")
+        print(f"✅ Includes all 18 pillars information")
+        print(f"✅ Character limits specified for each column")
+        print(f"✅ Comprehensive validation rules")
+        print(f"✅ Age-specific considerations")
+        print(f"✅ Pillar-specific notes")
+        print(f"✅ Data types and requirements")
+        print(f"✅ Quality standards and thresholds")
+        
+        print(f"\n🎉 ROBUST METADATA TABLE CREATED!")
+        print("=" * 50)
+        print(f"✅ ALL 18 PILLARS MENTIONED AND DOCUMENTED")
+        print(f"✅ Character limits specified for each column")
+        print(f"✅ Comprehensive validation and quality rules")
+        print(f"✅ Age and pillar-specific considerations")
+        print(f"✅ Complete data type and requirement specifications")
+        print(f"✅ Ready for creating thousands of activities across all pillars")
+        
+        return True
+        
+    except Exception as e:
+        print(f"❌ Error creating robust metadata table: {e}")
+        return False
+
+def main():
+    """Main function to create robust metadata table"""
+    print("📋 Creating Robust Metadata Table")
+    print("=" * 60)
+    print("🎯 Creating comprehensive metadata with ALL information including 18 pillars")
+    
+    # Connect to Google Sheets
+    client = get_google_sheets_client()
+    if not client:
+        return False
+    
+    # Create robust metadata table
+    success = create_robust_metadata_table(client)
+    
+    if success:
+        print(f"\n✅ SUCCESS! Robust metadata table created!")
+        print("=" * 50)
+        print("✅ ALL 18 PILLARS DOCUMENTED")
+        print("✅ Character limits specified")
+        print("✅ Comprehensive validation rules")
+        print("✅ Age and pillar-specific considerations")
+        print("✅ Complete data specifications")
+        print("✅ Ready for systematic activity creation across all pillars")
+        
+        return True
+    else:
+        print(f"\n❌ FAILED to create robust metadata table!")
+        return False
+
+if __name__ == "__main__":
+    success = main()
+    if success:
+        print(f"\n✅ SUCCESS! Robust metadata table creation completed!")
+    else:
+        print(f"\n❌ FAILED to create robust metadata table!")

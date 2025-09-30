@@ -1,0 +1,109 @@
+{
+  "pillar": "Cognitive Skills",
+  "slug": "cognitive-skills",
+  "color": "#fef3c7",
+  "icon": "psychology",
+  "description": "Develop cognitive skills through engaging activities and hands-on learning.",
+  "ageGroups": [
+    "Infant (0-1)",
+    "Toddler (1-3)",
+    "Preschooler (3-5)",
+    "Child (6-8)",
+    "Pre-Teen (9-12)",
+    "Teen (13-18)"
+  ],
+  "categories": [
+    {
+      "name": "Visual Tracking & Focus",
+      "description": "Visual Tracking & Focus activities for cognitive skills"
+    },
+    {
+      "name": "Cause & Effect Learning",
+      "description": "Cause & Effect Learning activities for cognitive skills"
+    },
+    {
+      "name": "Memory Development",
+      "description": "Memory Development activities for cognitive skills"
+    },
+    {
+      "name": "Problem Solving Basics",
+      "description": "Problem Solving Basics activities for cognitive skills"
+    },
+    {
+      "name": "Language Development",
+      "description": "Language Development activities for cognitive skills"
+    },
+    {
+      "name": "Memory and Recall",
+      "description": "Memory and Recall activities for cognitive skills"
+    },
+    {
+      "name": "Attention and Focus",
+      "description": "Attention and Focus activities for cognitive skills"
+    },
+    {
+      "name": "Critical Thinking",
+      "description": "Critical Thinking activities for cognitive skills"
+    },
+    {
+      "name": "Memory Enhancement",
+      "description": "Memory Enhancement activities for cognitive skills"
+    },
+    {
+      "name": "Language and Communication",
+      "description": "Language and Communication activities for cognitive skills"
+    },
+    {
+      "name": "Cognitive Flexibility",
+      "description": "Cognitive Flexibility activities for cognitive skills"
+    },
+    {
+      "name": "Advanced Problem Solving",
+      "description": "Advanced Problem Solving activities for cognitive skills"
+    },
+    {
+      "name": "Executive Function",
+      "description": "Executive Function activities for cognitive skills"
+    },
+    {
+      "name": "Advanced Memory",
+      "description": "Advanced Memory activities for cognitive skills"
+    },
+    {
+      "name": "Cognitive Processing",
+      "description": "Cognitive Processing activities for cognitive skills"
+    },
+    {
+      "name": "Complex Reasoning",
+      "description": "Complex Reasoning activities for cognitive skills"
+    },
+    {
+      "name": "Strategic Thinking",
+      "description": "Strategic Thinking activities for cognitive skills"
+    },
+    {
+      "name": "Advanced Communication",
+      "description": "Advanced Communication activities for cognitive skills"
+    },
+    {
+      "name": "Cognitive Innovation",
+      "description": "Cognitive Innovation activities for cognitive skills"
+    },
+    {
+      "name": "Advanced Critical Analysis",
+      "description": "Advanced Critical Analysis activities for cognitive skills"
+    },
+    {
+      "name": "Cognitive Leadership",
+      "description": "Cognitive Leadership activities for cognitive skills"
+    },
+    {
+      "name": "Advanced Research Skills",
+      "description": "Advanced Research Skills activities for cognitive skills"
+    }
+  ],
+  "totalActivities": 120,
+  "totalCategories": 22,
+  "lastUpdated": "2025-09-29",
+  "status": "complete-with-activities"
+}

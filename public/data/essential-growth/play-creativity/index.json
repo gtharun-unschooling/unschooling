@@ -1,0 +1,117 @@
+{
+  "pillar": "Play & Creativity",
+  "slug": "play-creativity",
+  "color": "#dbeafe",
+  "icon": "palette",
+  "description": "Develop play & creativity through engaging activities and hands-on learning.",
+  "ageGroups": [
+    "Infant (0-1)",
+    "Toddler (1-3)",
+    "Preschooler (3-5)",
+    "Child (6-8)",
+    "Pre-Teen (9-12)",
+    "Teen (13-18)"
+  ],
+  "categories": [
+    {
+      "name": "Sensory Exploration",
+      "description": "Sensory Exploration activities for play & creativity"
+    },
+    {
+      "name": "Tummy Time Play",
+      "description": "Tummy Time Play activities for play & creativity"
+    },
+    {
+      "name": "Interactive Sounds And Textures",
+      "description": "Interactive Sounds And Textures activities for play & creativity"
+    },
+    {
+      "name": "Parent Child Bonding Activities",
+      "description": "Parent Child Bonding Activities activities for play & creativity"
+    },
+    {
+      "name": "Pretend Play",
+      "description": "Pretend Play activities for play & creativity"
+    },
+    {
+      "name": "Building With Blocks",
+      "description": "Building With Blocks activities for play & creativity"
+    },
+    {
+      "name": "Drawing And Scribbling",
+      "description": "Drawing And Scribbling activities for play & creativity"
+    },
+    {
+      "name": "Exploring Musical Instruments",
+      "description": "Exploring Musical Instruments activities for play & creativity"
+    },
+    {
+      "name": "Imaginative Play With Dolls",
+      "description": "Imaginative Play With Dolls activities for play & creativity"
+    },
+    {
+      "name": "Simple Crafting",
+      "description": "Simple Crafting activities for play & creativity"
+    },
+    {
+      "name": "Role Playing Games",
+      "description": "Role Playing Games activities for play & creativity"
+    },
+    {
+      "name": "Shape Sorting And Color Matching",
+      "description": "Shape Sorting And Color Matching activities for play & creativity"
+    },
+    {
+      "name": "Creative Storytelling",
+      "description": "Creative Storytelling activities for play & creativity"
+    },
+    {
+      "name": "Advanced Drawing And Painting",
+      "description": "Advanced Drawing And Painting activities for play & creativity"
+    },
+    {
+      "name": "Diy Craft Projects",
+      "description": "Diy Craft Projects activities for play & creativity"
+    },
+    {
+      "name": "Inventing Games",
+      "description": "Inventing Games activities for play & creativity"
+    },
+    {
+      "name": "Design Thinking For Toys",
+      "description": "Design Thinking For Toys activities for play & creativity"
+    },
+    {
+      "name": "Stop Motion Animation Projects",
+      "description": "Stop Motion Animation Projects activities for play & creativity"
+    },
+    {
+      "name": "Music Composition And Recording",
+      "description": "Music Composition And Recording activities for play & creativity"
+    },
+    {
+      "name": "Sculpting And 3D Modeling",
+      "description": "Sculpting And 3D Modeling activities for play & creativity"
+    },
+    {
+      "name": "Artistic Performance And Design",
+      "description": "Artistic Performance And Design activities for play & creativity"
+    },
+    {
+      "name": "Creating Digital Art",
+      "description": "Creating Digital Art activities for play & creativity"
+    },
+    {
+      "name": "Building And Designing Gadgets",
+      "description": "Building And Designing Gadgets activities for play & creativity"
+    },
+    {
+      "name": "Independent Fashion Design",
+      "description": "Independent Fashion Design activities for play & creativity"
+    }
+  ],
+  "totalActivities": 120,
+  "totalCategories": 24,
+  "lastUpdated": "2025-09-29",
+  "status": "complete-with-activities"
+}

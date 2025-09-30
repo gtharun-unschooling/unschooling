@@ -1,0 +1,2032 @@
+import React, { useState, useEffect } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth, db } from "../../firebase";
+import { doc, setDoc, collection, getDocs, getDoc, deleteDoc } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
+import { useDebug } from "../../contexts/DebugContext";
+import { colors, spacing, typography } from "../../styles/designTokens";
+import { apiService } from "../../services/api";
+import "./ProfileForm.css";
+import UniversalBackButton from "../ui/UniversalBackButton";
+import ScheduleGenerator from "../schedule/ScheduleGenerator";
+import ScheduleDisplay from "../schedule/ScheduleDisplay";
+import ScheduleHistory from "../schedule/ScheduleHistory";
+
+// Load data files
+let topicsData = null;
+let nichesData = null;
+
+// Function to load data files
+const loadDataFiles = async () => {
+  try {
+    console.log('📁 Loading data files...');
+    
+    // Load topics data
+    const topicsResponse = await fetch('/topicsdata.json');
+    console.log('📊 Topics response status:', topicsResponse.status);
+    if (topicsResponse.ok) {
+      topicsData = await topicsResponse.json();
+      console.log('✅ Topics data loaded:', topicsData ? `${topicsData.length} topics` : 'No data');
+    } else {
+      console.error('❌ Failed to load topics data:', topicsResponse.status);
+    }
+    
+    // Load niches data
+    const nichesResponse = await fetch('/nichesdata.json');
+    console.log('📊 Niches response status:', nichesResponse.status);
+    if (nichesResponse.ok) {
+      nichesData = await nichesResponse.json();
+      console.log('✅ Niches data loaded:', nichesData ? `${nichesData.length} niches` : 'No data');
+    } else {
+      console.error('❌ Failed to load niches data:', nichesResponse.status);
+    }
+  } catch (error) {
+    console.error('❌ Could not load data files:', error);
+  }
+};
+
+// Enhanced plan generation function removed - only real backend integration allowed
+
+// Original interest options (reduced to 25 for better UX)
+const interestOptions = [
+  "Finance", "Communication", "AI", "Entrepreneurship", "Dance", "Music", 
+  "Nature Exploration", "Travel", "Coding & Programming", "Civics & Government",
+  "History", "Fashion & Styling", "Arts & Crafts", "Behavioral Science", "General Science",
+  "Sports", "Design Thinking & Creativity", "Photography & Videography", "Trading & Investments",
+  "Games & Recreational Skills", "Mathematics", "Creative & Academic Writing", "Social Media Literacy",
+  "Educational Apps", "Teaching & Pedagogy"
+];
+
+const learningStyles = [
+  { id: "hands-on", label: "Hands-on Learning", icon: "🔧", color: "#FF6B6B" },
+  { id: "visual", label: "Visual Learning", icon: "👁️", color: "#4ECDC4" },
+  { id: "auditory", label: "Auditory Learning", icon: "🎧", color: "#45B7D1" },
+  { id: "reading", label: "Reading & Writing", icon: "📚", color: "#96CEB4" },
+  { id: "mixed", label: "Mixed Approach", icon: "🌈", color: "#FFEAA7" }
+];
+
+const goals = [
+  { id: "confidence", label: "Build Confidence", icon: "💪", color: "#FF6B6B" },
+  { id: "real-world", label: "Real-world Skills", icon: "🌍", color: "#4ECDC4" },
+  { id: "creativity", label: "Creativity", icon: "🎨", color: "#45B7D1" },
+  { id: "focus", label: "Focus & Attention", icon: "🎯", color: "#96CEB4" },
+  { id: "curiosity", label: "Curiosity", icon: "🔍", color: "#FFEAA7" },
+  { id: "problem-solving", label: "Problem Solving", icon: "🧩", color: "#DDA0DD" }
+];
+
+const PLAN_TYPES = [
+  {
+    id: 'hybrid',
+    name: 'Hybrid Monthly Plan',
+    description: 'Each week is different: themes, skills, and a real-world project. Great for variety and deep dives.'
+  },
+  {
+    id: 'fusion',
+    name: 'Holistic Fusion Plan',
+    description: 'Every week follows the same balanced routine. Great for consistency and all-round growth.'
+  }
+];
+
+const ProfileForm = () => {
+  const [user, loading, error] = useAuthState(auth);
+  const [isLoading, setIsLoading] = useState(false);
+  const [loadingStep, setLoadingStep] = useState('');
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [showUpdateMessage, setShowUpdateMessage] = useState(false);
+  const [originalProfile, setOriginalProfile] = useState(null);
+  const [hasChanges, setHasChanges] = useState(false);
+  const [isAddingNewChild, setIsAddingNewChild] = useState(false);
+  const [children, setChildren] = useState([]);
+  const [selectedChildIndex, setSelectedChildIndex] = useState(0);
+  const [childName, setChildName] = useState('');
+  const [childAge, setChildAge] = useState(5);
+  const [interests, setInterests] = useState([]);
+  const [dislikes, setDislikes] = useState([]);
+  const [learningStyle, setLearningStyle] = useState('visual');
+  const [selectedGoals, setSelectedGoals] = useState([]);
+  const [planType, setPlanType] = useState('hybrid');
+  const [showPlanModal, setShowPlanModal] = useState(false);
+  const [planData, setPlanData] = useState(null);
+  const [debugInfo, setDebugInfo] = useState('');
+  const [showDebug, setShowDebug] = useState(false);
+  const [formError, setFormError] = useState(null);
+  const [isAutoFixing, setIsAutoFixing] = useState(false);
+  const [showScheduleGenerator, setShowScheduleGenerator] = useState(false);
+  const [generatedSchedule, setGeneratedSchedule] = useState(null);
+  const [scheduleError, setScheduleError] = useState(null);
+  const [showScheduleHistory, setShowScheduleHistory] = useState(false);
+  const [selectedSchedule, setSelectedSchedule] = useState(null);
+  const navigate = useNavigate();
+  const { debugInfo: globalDebugInfo, addDebugInfo } = useDebug();
+  
+  // Load children on mount and data files
+  useEffect(() => {
+    console.log('🔍 ProfileForm useEffect triggered');
+    console.log('👤 User state:', user);
+    console.log('👤 User UID:', user?.uid);
+    console.log('👤 User email:', user?.email);
+    console.log('👶 Current children count:', children.length);
+    
+    if (user) {
+      console.log('🔐 User authenticated, loading children and data files...');
+      console.log('👤 User UID:', user.uid);
+      console.log('📧 User email:', user.email);
+      loadChildren();
+      loadDataFiles();
+    } else {
+      console.log('❌ No user authenticated, cannot load children');
+    }
+  }, [user]);
+
+  // Add loadChildren to dependencies to prevent stale closure
+  useEffect(() => {
+    console.log('🔄 Children dependency useEffect triggered');
+    console.log('👤 User exists:', !!user);
+    console.log('👶 Children length:', children.length);
+    
+    if (user && children.length === 0) {
+      console.log('🔄 Reloading children due to empty children array...');
+      loadChildren();
+    }
+  }, [user, children.length]);
+
+  // Debug useEffect for children state changes
+  useEffect(() => {
+    console.log('👶 Children state changed:', children);
+    console.log('👶 Children count:', children.length);
+    if (children.length > 0) {
+      console.log('✅ Children loaded successfully');
+      children.forEach((child, idx) => {
+        console.log(`👶 Child ${idx + 1}:`, child);
+      });
+      
+      // Check if any profiles need fixing after loading
+      children.forEach(async (child, idx) => {
+        if (needsProfileFix(child)) {
+          console.log(`🔧 Profile ${child.name} needs fixing, auto-fixing...`);
+          await autoFixChildProfile(child, idx);
+        }
+      });
+    }
+  }, [children]);
+
+  // Check Firestore connection health
+  const checkFirestoreHealth = async () => {
+    try {
+      const testRef = doc(db, 'health-check', 'test');
+      await setDoc(testRef, { timestamp: new Date() }, { merge: true });
+      console.log('✅ Firestore connection healthy');
+      return true;
+    } catch (error) {
+      console.error('❌ Firestore connection unhealthy:', error);
+      return false;
+    }
+  };
+
+  // Reset Firestore connection (clear write queue)
+  const resetFirestoreConnection = async () => {
+    try {
+      console.log('🔄 Resetting Firestore connection...');
+      
+      // Force a new connection by making a simple read
+      const testRef = doc(db, 'health-check', 'reset');
+      await getDoc(testRef);
+      
+      console.log('✅ Firestore connection reset successful');
+      
+      // Reload children after reset
+      setTimeout(() => {
+        loadChildren();
+      }, 1000);
+      
+    } catch (error) {
+      console.error('❌ Failed to reset Firestore connection:', error);
+    }
+  };
+
+  // Check if a child profile needs fixing
+  const needsProfileFix = (child) => {
+    const requiredFields = ['child_age', 'interests', 'preferred_learning_style', 'goals', 'plan_type'];
+    const hasAllFields = requiredFields.every(field => {
+      const value = child[field];
+      return value !== undefined && value !== null && 
+             (Array.isArray(value) ? value.length > 0 : value !== '');
+    });
+    
+    console.log(`🔍 Profile fix check for ${child.name}:`, {
+      hasAllFields,
+      missingFields: requiredFields.filter(field => {
+        const value = child[field];
+        return value === undefined || value === null || 
+               (Array.isArray(value) ? value.length === 0 : value === '');
+      })
+    });
+    
+    return !hasAllFields;
+  };
+
+  // Automatically fix a child profile
+  const autoFixChildProfile = async (child, index) => {
+    try {
+      setIsAutoFixing(true);
+      console.log(`🔧 Auto-fixing profile for child: ${child.name}`);
+      
+      const childRef = doc(db, `users/${user.uid}/children`, child.name);
+      
+      // Create a complete profile structure with smart defaults
+      const completeProfile = {
+        ...child,
+        child_age: child.child_age || child.age || 5,
+        interests: child.interests || child.interest || ['Communication', 'AI'],
+        dislikes: child.dislikes || child.dislike || [],
+        preferred_learning_style: child.preferred_learning_style || child.learning_style || 'visual',
+        goals: child.goals || child.goal || ['problem-solving'],
+        plan_type: child.plan_type || child.planType || 'hybrid',
+        updatedAt: new Date(),
+        autoFixed: true
+      };
+      
+      console.log(`🔧 Complete profile for ${child.name}:`, completeProfile);
+      
+      // Update the profile in Firestore
+      await setDoc(childRef, completeProfile, { merge: true });
+      console.log(`✅ Profile auto-fixed for ${child.name}`);
+      
+      // Update the local children array
+      const updatedChildren = [...children];
+      updatedChildren[index] = completeProfile;
+      setChildren(updatedChildren);
+      
+      setIsAutoFixing(false);
+      return completeProfile;
+      
+    } catch (error) {
+      console.error(`❌ Error auto-fixing profile for ${child.name}:`, error);
+      setIsAutoFixing(false);
+      return child; // Return original if fix fails
+    }
+  };
+
+  // Load existing children from Firebase
+  const loadChildren = async () => {
+    if (!user) {
+      console.log('❌ Cannot load children: No user authenticated');
+      return;
+    }
+    
+    console.log('🔍 Loading children from Firestore for user:', user.uid);
+    console.log('🔍 User object:', user);
+    console.log('🔍 User UID:', user.uid);
+    
+    try {
+      const childrenRef = collection(db, `users/${user.uid}/children`);
+      console.log('📁 Firestore path:', `users/${user.uid}/children`);
+      console.log('📁 Collection reference:', childrenRef);
+      
+      console.log('⏳ Fetching children snapshot...');
+      const childrenSnapshot = await getDocs(childrenRef);
+      console.log('📊 Firestore snapshot received, size:', childrenSnapshot.size);
+      console.log('📊 Snapshot empty:', childrenSnapshot.empty);
+      console.log('📊 Snapshot docs:', childrenSnapshot.docs);
+      
+      const childrenList = [];
+      
+      childrenSnapshot.forEach((doc) => {
+        const childData = {
+          id: doc.id,
+          name: doc.id,
+          ...doc.data()
+        };
+        console.log('👶 Child data loaded:', childData);
+        childrenList.push(childData);
+      });
+      
+      console.log('✅ Total children loaded:', childrenList.length);
+      setChildren(childrenList);
+      
+      // If there are children, select the first one by default
+      if (childrenList.length > 0) {
+        console.log('🎯 Selecting first child:', childrenList[0]);
+        
+        // Automatically fix incomplete profiles before selecting
+        for (let i = 0; i < childrenList.length; i++) {
+          const child = childrenList[i];
+          if (needsProfileFix(child)) {
+            console.log(`🔧 Auto-fixing incomplete profile for child: ${child.name}`);
+            await autoFixChildProfile(child, i);
+          }
+        }
+        
+        // After fixing, select the first child
+        selectChild(childrenList[0], 0);
+      } else {
+        console.log('⚠️ No children found in Firestore');
+      }
+    } catch (loadError) {
+      console.error('❌ Error loading children:', loadError);
+      
+      // Handle specific Firestore errors
+      if (loadError.code === 'resource-exhausted') {
+        console.warn('⚠️ Firestore write stream exhausted - retrying in 5 seconds...');
+        setTimeout(() => {
+          console.log('🔄 Retrying Firestore connection...');
+          loadChildren();
+        }, 5000);
+        return;
+      }
+      
+      if (loadError.code === 'unavailable') {
+        console.warn('⚠️ Firestore temporarily unavailable - retrying in 10 seconds...');
+        setTimeout(() => {
+          console.log('🔄 Retrying Firestore connection...');
+          loadChildren();
+        }, 10000);
+        return;
+      }
+      
+      // Add to debug context
+      try {
+        const { addDebugInfo } = await import('../../contexts/DebugContext');
+        addDebugInfo(`❌ FIRESTORE ERROR: ${loadError.code} - ${loadError.message}`);
+      } catch (importError) {
+        console.error('Could not import DebugContext:', importError);
+      }
+    }
+  };
+
+  // Select a child to edit
+  const selectChild = (child, index) => {
+    console.log('🎯 selectChild called with:', child);
+    console.log('🎯 Child fields available:', Object.keys(child));
+    console.log('🎯 Child data:', child);
+    
+    setSelectedChildIndex(index);
+    setChildName(child.name);
+    
+    // Check what fields are actually available and use fallbacks
+    const childAge = child.child_age || child.age || 5;
+    const childInterests = child.interests || child.interest || [];
+    const childDislikes = child.dislikes || child.dislike || [];
+    const childLearningStyle = child.preferred_learning_style || child.learning_style || "visual";
+    const childGoals = child.goals || child.goal || [];
+    const childPlanType = child.plan_type || child.planType || 'hybrid';
+    
+    console.log('🎯 Extracted values:', {
+      name: child.name,
+      age: childAge,
+      interests: childInterests,
+      dislikes: childDislikes,
+      learningStyle: childLearningStyle,
+      goals: childGoals,
+      planType: childPlanType
+    });
+    
+    setChildAge(childAge);
+    setInterests(childInterests);
+    setDislikes(childDislikes);
+    setLearningStyle(childLearningStyle);
+    setSelectedGoals(childGoals);
+    setPlanType(childPlanType);
+    setOriginalProfile(child);
+    setHasChanges(false);
+    setIsAddingNewChild(false);
+  };
+
+  // Navigate to next child
+  const nextChild = () => {
+    if (selectedChildIndex < children.length - 1) {
+      const nextIndex = selectedChildIndex + 1;
+      selectChild(children[nextIndex], nextIndex);
+    }
+  };
+
+  // Navigate to previous child
+  const prevChild = () => {
+    if (selectedChildIndex > 0) {
+      const prevIndex = selectedChildIndex - 1;
+      selectChild(children[prevIndex], prevIndex);
+    }
+  };
+
+  // Add a new child
+  const addNewChild = () => {
+    setIsAddingNewChild(true);
+    setSelectedChildIndex(-1);
+    setChildName("");
+    setChildAge(5);
+    setInterests([]);
+    setDislikes([]);
+    setLearningStyle("");
+    setSelectedGoals([]);
+    setPlanType('hybrid'); // Reset plan type for new child
+    setOriginalProfile(null);
+    setHasChanges(false);
+  };
+
+  // Cancel adding new child
+  const cancelAddChild = () => {
+    if (children.length > 0) {
+      // If there are children, select the first one
+      selectChild(children[0], 0);
+    } else {
+      setIsAddingNewChild(false);
+    }
+  };
+
+  // Track changes - ALWAYS allow submission for new profiles
+  useEffect(() => {
+    if (!originalProfile) {
+      // For new profiles, always allow submission if name is provided
+      setHasChanges(childName.trim().length > 0);
+      setShowUpdateMessage(false);
+      return;
+    }
+    const changed =
+      childAge !== originalProfile.child_age ||
+      JSON.stringify(interests) !== JSON.stringify(originalProfile.interests) ||
+      JSON.stringify(dislikes) !== JSON.stringify(originalProfile.dislikes) ||
+      learningStyle !== originalProfile.preferred_learning_style ||
+      JSON.stringify(selectedGoals) !== JSON.stringify(originalProfile.goals) ||
+      planType !== originalProfile.plan_type; // Check if plan type changed
+    setHasChanges(changed);
+    // Hide update message if any change
+    if (changed) setShowUpdateMessage(false);
+  }, [childName, childAge, interests, dislikes, learningStyle, selectedGoals, originalProfile, planType]);
+
+  // Cancel changes
+  const handleCancel = () => {
+    if (isAddingNewChild) {
+      cancelAddChild();
+      return;
+    }
+    
+    if (!originalProfile) {
+      setChildAge(5);
+      setInterests([]);
+      setDislikes([]);
+      setLearningStyle("");
+      setSelectedGoals([]);
+      setPlanType('hybrid'); // Reset plan type on cancel
+    } else {
+      setChildAge(originalProfile.child_age);
+      setInterests(originalProfile.interests);
+      setDislikes(originalProfile.dislikes);
+      setLearningStyle(originalProfile.preferred_learning_style);
+      setSelectedGoals(originalProfile.goals);
+      setPlanType(originalProfile.plan_type); // Reset plan type on cancel
+    }
+  };
+
+  const toggleArrayItem = (value, array, setArray) => {
+    setArray(array.includes(value) ? array.filter((v) => v !== value) : [...array, value]);
+  };
+
+  const handleScheduleGenerated = (scheduleData) => {
+    setGeneratedSchedule(scheduleData);
+    setShowScheduleGenerator(false);
+    addDebugInfo('✅ Schedule generated successfully!');
+  };
+
+  const handleScheduleError = (error) => {
+    setScheduleError(error);
+    addDebugInfo(`❌ Schedule generation error: ${error}`);
+  };
+
+  const handleActivityComplete = (activityId, isCompleted) => {
+    addDebugInfo(`📝 Activity ${activityId} ${isCompleted ? 'completed' : 'uncompleted'}`);
+  };
+
+  const handleScheduleSelect = (schedule) => {
+    setSelectedSchedule(schedule);
+    setShowScheduleHistory(false);
+    addDebugInfo(`📅 Selected schedule: ${schedule.schedule_id}`);
+  };
+
+  const handleSubmit = async () => {
+    console.log('🔘 BUTTON CLICKED - handleSubmit called');
+    addDebugInfo('🔘 BUTTON CLICKED - handleSubmit called');
+    
+         if (!user) {
+       setFormError("User not logged in.");
+       return;
+     }
+
+          // Form validation
+      if (!childName.trim()) {
+        setFormError("Child name is required.");
+        return;
+      }
+      
+      if (interests.length === 0) {
+        setFormError("Please select at least one interest.");
+        return;
+      }
+      
+      if (!learningStyle) {
+        setFormError("Please select a learning style.");
+        return;
+      }
+      
+      if (selectedGoals.length === 0) {
+        setFormError("Please select at least one goal.");
+        return;
+      }
+      
+      setFormError(null); // Clear any previous errors
+    
+    addDebugInfo("🎯 PROFILE SUBMISSION STARTED");
+    addDebugInfo(`👤 User: ${user.email}`);
+    addDebugInfo(`📝 Child Name: ${childName}`);
+    addDebugInfo(`📝 Child Age: ${childAge}`);
+    addDebugInfo(`📝 Interests: ${interests.join(', ')}`);
+    addDebugInfo(`📝 Learning Style: ${learningStyle}`);
+    addDebugInfo(`📝 Goals: ${selectedGoals.join(', ')}`);
+    addDebugInfo(`📝 Plan Type: ${planType}`);
+    
+    console.log('🎯 ===== PROFILE SUBMISSION STARTED =====');
+    console.log('👤 USER:', user.email);
+    console.log('📝 FORM DATA:');
+    console.log('   Child Name:', childName);
+    console.log('   Child Age:', childAge);
+    console.log('   Interests:', interests);
+    console.log('   Dislikes:', dislikes);
+    console.log('   Learning Style:', learningStyle);
+    console.log('   Goals:', selectedGoals);
+    console.log('   Plan Type:', planType);
+    
+    setIsLoading(true);
+    setLoadingStep('Initializing...');
+    addDebugInfo('🔄 PROFILE SUBMISSION STEP: Initializing...');
+    
+    try {
+      const childRef = doc(db, `users/${user.uid}/children/${childName}`);
+
+      setLoadingStep('Saving profile...');
+      
+      // Save child profile to Firestore
+      const childProfile = {
+        child_name: childName,
+        child_age: childAge,
+        interests: interests,
+        dislikes: dislikes,
+        preferred_learning_style: learningStyle,
+        goals: selectedGoals,
+        plan_type: planType,
+        // Add user account information
+        account_id: user.uid,
+        account_email: user.email,
+        session_id: `session_${Date.now()}_${user.uid}`,
+        updated_at: new Date()
+      };
+      
+      await setDoc(childRef, childProfile, { merge: true });
+      addDebugInfo('✅ Child profile saved to Firestore');
+      
+      // Initialize months array if it doesn't exist
+      const childSnap = await getDoc(childRef);
+      let existingData = childSnap.exists() ? childSnap.data() : {};
+      let months = existingData.months || [];
+      
+      // Add current month if not already present
+      const currentDate = new Date();
+      const monthYear = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' }).replace(/ /g, '');
+      
+      if (!months.includes(monthYear)) {
+        months.push(monthYear);
+        await setDoc(childRef, { months: months }, { merge: true });
+        addDebugInfo('✅ Months column updated: ' + months);
+      }
+      
+      setOriginalProfile({ ...originalProfile, ...{
+        child_name: childName,
+        child_age: childAge,
+        interests: interests,
+        dislikes: dislikes,
+        preferred_learning_style: learningStyle,
+        goals: selectedGoals,
+        plan_type: planType,
+        updated_at: new Date()
+      }});
+      setHasChanges(false);
+      // If this is an update (not first time), show update message
+      if (originalProfile) {
+        setShowUpdateMessage(true); // persistent until next change
+      }
+      addDebugInfo('✅ Profile saved and original profile updated.');
+
+      // Show schedule generator for new profiles
+      addDebugInfo(`📋 Original Profile exists: ${originalProfile ? 'YES' : 'NO'}`);
+      
+      if (!originalProfile) {
+        // Show schedule generator instead of navigating away
+        setShowScheduleGenerator(true);
+        addDebugInfo('✅ Profile saved, showing schedule generator');
+      } else {
+        setLoadingStep('Generating Plan...');
+        addDebugInfo('🔄 PROFILE SUBMISSION STEP: Generating Plan...');
+        try {
+          // Send to backend
+          addDebugInfo("📡 CALLING API SERVICE...");
+          const res = await apiService.generatePlan({
+            child_name: childName,
+            child_age: childAge,
+            interests: interests,
+            dislikes: dislikes,
+            preferred_learning_style: learningStyle,
+            goals: selectedGoals,
+            plan_type: planType
+          });
+          addDebugInfo(`📥 API RESPONSE RECEIVED: ${res.success ? 'SUCCESS' : 'FAILED'}`);
+          
+          if (res.success) {
+            addDebugInfo('✅ PLAN GENERATION SUCCESSFUL');
+            
+            // Save plan to Firestore under 'plans' field keyed by month
+            const currentDate = new Date();
+            const monthYear = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' }).replace(/ /g, ''); // e.g., July2025
+            // Get existing plans (if any)
+            const snap = await getDoc(childRef);
+            let existingPlans = {};
+            let existingData = snap.exists() ? snap.data() : {};
+            if (existingData.plans) {
+              existingPlans = existingData.plans;
+            }
+            const newPlans = { ...existingPlans, [monthYear]: res.data };
+            
+            // Update months array
+            let months = existingData.months || [];
+            if (!months.includes(monthYear)) {
+              months.push(monthYear);
+            }
+            
+            // Sanitize the data to remove any invalid nested entities for Firebase
+            const sanitizedPlans = {};
+            Object.keys(newPlans).forEach(key => {
+              const plan = newPlans[key];
+              // Convert to JSON and back to remove any non-serializable objects
+              try {
+                sanitizedPlans[key] = JSON.parse(JSON.stringify(plan));
+              } catch (error) {
+                console.warn('Failed to sanitize plan for key:', key, error);
+                // If sanitization fails, create a minimal version
+                sanitizedPlans[key] = {
+                  child_profile: plan.child_profile || {},
+                  profile_analysis: plan.profile_analysis || {},
+                  matched_topics: plan.matched_topics || [],
+                  weekly_plan: plan.weekly_plan || {},
+                  learning_objectives: plan.learning_objectives || [],
+                  recommended_activities: plan.recommended_activities || [],
+                  progress_tracking: plan.progress_tracking || {},
+                  review_insights: plan.review_insights || {},
+                  llm_integration: plan.llm_integration || {},
+                  agent_timings: plan.agent_timings || {}
+                };
+              }
+            });
+            
+            await setDoc(childRef, { 
+              plans: sanitizedPlans,
+              months: months
+            }, { merge: true });
+            console.log('✅ Plan and months saved to Firebase');
+            addDebugInfo('✅ Plan and months saved to Firebase');
+            
+            // Update children list if this is a new child
+            if (isAddingNewChild) {
+              await loadChildren();
+            }
+            
+            setShowSuccessMessage(true);
+            // Navigate after showing success message
+            setTimeout(() => {
+              console.log('🚀 NAVIGATING TO PLAN PAGE...');
+              console.log('🔍 DEBUG - Navigation state data:', res.data);
+              console.log('🔍 DEBUG - matched_topics length:', res.data.matched_topics?.length);
+              
+              // Pass the data directly without wrapping it in a 'data' property
+              navigate("/customised-weekly-plan", { 
+                state: { 
+                  ...res.data,  // Spread the backend response directly
+                  childName,
+                  childMonths: months
+                } 
+              });
+            }, 1000); // Reduced timeout to 1 second
+          } else {
+            throw new Error(res.message || "Failed to generate plan");
+          }
+        }
+
+        // onSubmit callback removed - not needed for this component
+        } catch (err) {
+          addDebugInfo(`❌ ERROR CALLING BACKEND: ${err.message}`);
+          console.error("❌ ERROR CALLING BACKEND:", err);
+          
+          // Backend failed - show error and don't proceed
+          addDebugInfo("❌ BACKEND FAILED - Cannot generate plan");
+          console.error("❌ Backend failed - cannot generate plan:", err);
+          setFormError("Failed to generate learning plan. Please try again later.");
+          return;
+        }
+      }
+    } else {
+        // This is an existing profile - generate a new plan anyway
+        addDebugInfo("🔄 GENERATING PLAN FOR EXISTING PROFILE");
+        console.log('🔄 GENERATING PLAN FOR EXISTING PROFILE...');
+        try {
+          // Send to backend
+          addDebugInfo("📡 CALLING API SERVICE FOR EXISTING PROFILE...");
+          console.log('📡 CALLING API SERVICE FOR EXISTING PROFILE...');
+          const res = await apiService.generatePlan({
+            child_name: childName,
+            child_age: childAge,
+            interests: interests,
+            dislikes: dislikes,
+            preferred_learning_style: learningStyle,
+            goals: selectedGoals,
+            plan_type: planType
+          });
+          addDebugInfo(`📥 API RESPONSE RECEIVED: ${res.success ? 'SUCCESS' : 'FAILED'}`);
+          console.log('📥 API RESPONSE RECEIVED:', res);
+          
+          if (res.success) {
+            console.log('✅ PLAN GENERATION SUCCESSFUL FOR EXISTING PROFILE');
+            addDebugInfo('✅ PLAN GENERATION SUCCESSFUL FOR EXISTING PROFILE');
+            // Save plan to Firestore under 'plans' field keyed by month
+            const currentDate = new Date();
+            const monthYear = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' }).replace(/ /g, ''); // e.g., July2025
+            // Get existing plans (if any)
+            const snap = await getDoc(childRef);
+            let existingPlans = {};
+            let existingData = snap.exists() ? snap.data() : {};
+            if (existingData.plans) {
+              existingPlans = existingData.plans;
+            }
+            const newPlans = { ...existingPlans, [monthYear]: res.data };
+            
+            // Update months array
+            let months = existingData.months || [];
+            if (!months.includes(monthYear)) {
+              months.push(monthYear);
+            }
+            
+            // Sanitize the data to remove any invalid nested entities for Firebase
+            const sanitizedPlans = {};
+            Object.keys(newPlans).forEach(key => {
+              const plan = newPlans[key];
+              // Convert to JSON and back to remove any non-serializable objects
+              try {
+                sanitizedPlans[key] = JSON.parse(JSON.stringify(plan));
+              } catch (error) {
+                console.warn('Failed to sanitize plan for key:', key, error);
+                // If sanitization fails, create a minimal version
+                sanitizedPlans[key] = {
+                  child_profile: plan.child_profile || {},
+                  profile_analysis: plan.profile_analysis || {},
+                  matched_topics: plan.matched_topics || [],
+                  weekly_plan: plan.weekly_plan || {},
+                  learning_objectives: plan.learning_objectives || [],
+                  recommended_activities: plan.recommended_activities || [],
+                  progress_tracking: plan.progress_tracking || {},
+                  review_insights: plan.review_insights || {},
+                  llm_integration: plan.llm_integration || {},
+                  agent_timings: plan.agent_timings || {}
+                };
+              }
+            });
+            
+            await setDoc(childRef, { 
+              plans: sanitizedPlans,
+              months: months
+            }, { merge: true });
+            console.log('✅ Plan and months saved to Firebase for existing profile');
+            addDebugInfo('✅ Plan and months saved to Firebase for existing profile');
+            
+            setShowSuccessMessage(true);
+            console.log('🚀 NAVIGATING TO PLAN PAGE (EXISTING PROFILE)...');
+            console.log('🔍 DEBUG - Navigation data structure:', res.data);
+            console.log('🔍 DEBUG - matched_topics length:', res.data.matched_topics?.length);
+            
+            // Pass the data directly without wrapping it in a 'data' property
+            navigate("/customised-weekly-plan", { 
+              state: { 
+                ...res.data,  // Spread the backend response directly
+                childName,
+                childMonths: months
+              } 
+            });
+          } else {
+            throw new Error(res.message || "Failed to generate plan");
+          }
+
+          // onSubmit callback removed - not needed for this component
+        } catch (err) {
+          addDebugInfo(`❌ ERROR CALLING BACKEND FOR EXISTING PROFILE: ${err.message}`);
+          console.error("❌ ERROR CALLING BACKEND FOR EXISTING PROFILE:", err);
+          
+          // Create an enhanced plan using the data files
+          addDebugInfo("🔄 FALLING BACK TO ENHANCED PLAN GENERATION FOR EXISTING PROFILE");
+          console.log('🔄 FALLING BACK TO ENHANCED PLAN GENERATION FOR EXISTING PROFILE...');
+          const enhancedPlan = generateEnhancedPlan({
+            child_age: childAge,
+            interests: interests,
+            preferred_learning_style: learningStyle,
+            goals: selectedGoals,
+            child_name: childName
+          });
+          addDebugInfo("✅ ENHANCED PLAN GENERATED FOR EXISTING PROFILE");
+          console.log('✅ ENHANCED PLAN GENERATED FOR EXISTING PROFILE:', enhancedPlan);
+
+          // Save enhanced plan to Firestore
+          const currentDate = new Date();
+          const monthYear = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' }).replace(/ /g, '');
+          const snap = await getDoc(childRef);
+          let existingPlans = {};
+          let existingData = snap.exists() ? snap.data() : {};
+          if (existingData.plans) {
+            existingPlans = existingData.plans;
+          }
+          const newPlans = { ...existingPlans, [monthYear]: enhancedPlan };
+          
+          // Update months array
+          let months = existingData.months || [];
+          if (!months.includes(monthYear)) {
+            months.push(monthYear);
+          }
+          
+          // Sanitize the data to remove any invalid nested entities for Firebase
+          const sanitizedPlans = {};
+          Object.keys(newPlans).forEach(key => {
+            const plan = newPlans[key];
+            // Convert to JSON and back to remove any non-serializable objects
+            try {
+              sanitizedPlans[key] = JSON.parse(JSON.stringify(plan));
+            } catch (error) {
+              console.warn('Failed to sanitize plan for key:', key, error);
+              // If sanitization fails, create a minimal version
+              sanitizedPlans[key] = {
+                child_profile: plan.child_profile || {},
+                profile_analysis: plan.profile_analysis || {},
+                matched_topics: plan.matched_topics || [],
+                weekly_plan: plan.weekly_plan || {},
+                learning_objectives: plan.learning_objectives || [],
+                recommended_activities: plan.recommended_activities || [],
+                progress_tracking: plan.progress_tracking || {},
+                review_insights: plan.review_insights || {},
+                llm_integration: plan.llm_integration || {},
+                agent_timings: plan.agent_timings || {}
+              };
+            }
+          });
+          
+          await setDoc(childRef, { 
+            plans: sanitizedPlans,
+            months: months
+          }, { merge: true });
+          console.log('✅ Enhanced plan and months saved to Firebase for existing profile');
+          addDebugInfo('✅ Enhanced plan and months saved to Firebase for existing profile');
+          
+          setShowSuccessMessage(true);
+          console.log('🚀 NAVIGATING TO PLAN PAGE (ENHANCED - EXISTING PROFILE)...');
+          navigate("/customised-weekly-plan", { 
+            state: { 
+              data: enhancedPlan, 
+              childName,
+              childMonths: months
+            } 
+          });
+        }
+      }
+    } catch (err) {
+      console.error("❌ ERROR SUBMITTING PROFILE:", err);
+      alert("Failed to generate plan. Please try again.");
+    } finally {
+      setIsLoading(false);
+      console.log('🎯 ===== PROFILE SUBMISSION COMPLETED =====');
+    }
+  };
+
+  // Update the child name button style function:
+  const getChildButtonStyle = (isSelected) => ({
+    background: isSelected ? '#4ECDC4' : '#f3f0fa',
+    color: isSelected ? '#fff' : '#264653',
+    border: isSelected ? '2px solid #264653' : '1px solid #bdbdbd',
+    borderRadius: '8px',
+    padding: '8px 18px',
+    margin: '0 6px',
+    fontWeight: 600,
+    fontSize: '1rem',
+    cursor: 'pointer',
+    boxShadow: isSelected ? '0 2px 8px #4ECDC440' : 'none',
+    transition: 'all 0.2s',
+    outline: isSelected ? '2px solid #6a4c93' : 'none',
+    letterSpacing: '0.5px',
+    minWidth: 80,
+  });
+
+  // Inline Child Selector Component
+  const InlineChildSelector = () => {
+    if (children.length === 0 && !isAddingNewChild) {
+      return (
+        <div style={{
+          marginBottom: spacing.xl,
+          padding: spacing.lg,
+          background: 'rgba(255, 255, 255, 0.1)',
+          borderRadius: '16px',
+          border: '1px solid rgba(255, 255, 255, 0.2)',
+          backdropFilter: 'blur(10px)',
+          textAlign: 'center'
+        }}>
+          <h3 style={{
+            fontSize: '1.2rem',
+            fontWeight: 600,
+            color: 'white',
+            margin: '0 0 20px 0',
+          }}>
+            👶 No Children Found
+          </h3>
+          <p style={{
+            color: 'rgba(255, 255, 255, 0.8)',
+            marginBottom: spacing.lg,
+            fontSize: '0.9rem'
+          }}>
+            You haven't added any children yet. Add your first child to get started!
+          </p>
+          <button
+            onClick={addNewChild}
+            style={{
+              padding: `${spacing.md} ${spacing.lg}`,
+              background: 'linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%)',
+              border: 'none',
+              borderRadius: '8px',
+              color: 'white',
+              cursor: 'pointer',
+              fontSize: '1rem',
+              fontWeight: 600,
+              transition: 'all 0.3s ease',
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.transform = 'translateY(-1px)';
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.transform = 'translateY(0)';
+            }}
+          >
+            ➕ Add Your First Child
+          </button>
+        </div>
+      );
+    }
+    
+    return (
+      <div style={{
+        marginBottom: spacing.xl,
+        padding: spacing.lg,
+        background: 'rgba(255, 255, 255, 0.1)',
+        borderRadius: '16px',
+        border: '1px solid rgba(255, 255, 255, 0.2)',
+        backdropFilter: 'blur(10px)',
+      }}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          marginBottom: spacing.md,
+        }}>
+          <h3 style={{
+            fontSize: '1.2rem',
+            fontWeight: 600,
+            color: 'white',
+            margin: 0,
+          }}>
+            {isAddingNewChild ? '➕ Adding New Child' : `👶 ${selectedChildIndex >= 0 && selectedChildIndex < children.length ? children[selectedChildIndex].name : 'Select Child'}`}
+          </h3>
+          
+          <div style={{ display: 'flex', alignItems: 'center', gap: spacing.sm }}>
+            {/* Compact child names */}
+            {children.length > 0 && !isAddingNewChild && (
+              <div style={{ display: 'flex', alignItems: 'center', gap: spacing.sm }}>
+                {children.map((child, idx) => (
+                  <button
+                    key={child.name}
+                    style={getChildButtonStyle(selectedChildIndex === idx)}
+                    onClick={() => selectChild(child, idx)}
+                  >
+                    {child.name}
+                  </button>
+                ))}
+              </div>
+            )}
+            
+            <button
+              onClick={addNewChild}
+              style={{
+                padding: `${spacing.sm} ${spacing.md}`,
+                background: 'linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%)',
+                border: 'none',
+                borderRadius: '8px',
+                color: 'white',
+                cursor: 'pointer',
+                fontSize: '0.9rem',
+                fontWeight: 600,
+                transition: 'all 0.3s ease',
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.transform = 'translateY(-1px)';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.transform = 'translateY(0)';
+              }}
+            >
+              ➕ Add Child
+            </button>
+          </div>
+        </div>
+        
+        {/* Show current child's selections */}
+        {selectedChildIndex >= 0 && selectedChildIndex < children.length && !isAddingNewChild && (
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+            gap: spacing.md,
+            marginTop: spacing.md,
+          }}>
+            <div style={{ color: 'white', fontSize: '0.9rem' }}>
+              <strong>Age:</strong> {children[selectedChildIndex].child_age || 'Not set'} years
+            </div>
+            <div style={{ color: 'white', fontSize: '0.9rem' }}>
+              <strong>Interests:</strong> {children[selectedChildIndex].interests?.length || 0} selected
+            </div>
+            <div style={{ color: 'white', fontSize: '0.9rem' }}>
+              <strong>Learning Style:</strong> {children[selectedChildIndex].preferred_learning_style || 'Not set'}
+            </div>
+            <div style={{ color: 'white', fontSize: '0.9rem' }}>
+              <strong>Goals:</strong> {children[selectedChildIndex].goals?.length || 0} selected
+            </div>
+            <div style={{ color: 'white', fontSize: '0.9rem' }}>
+              <strong>Plan Type:</strong> {children[selectedChildIndex].plan_type || 'Not set'}
+            </div>
+          </div>
+        )}
+        
+        {/* Cancel button for new child */}
+        {isAddingNewChild && (
+          <button
+            onClick={cancelAddChild}
+            style={{
+              marginTop: spacing.md,
+              padding: `${spacing.sm} ${spacing.md}`,
+              background: 'rgba(255, 255, 255, 0.1)',
+              border: '1px solid rgba(255, 255, 255, 0.3)',
+              borderRadius: '8px',
+              color: 'white',
+              cursor: 'pointer',
+              fontSize: '0.9rem',
+              transition: 'all 0.3s ease',
+            }}
+          >
+            ❌ Cancel Adding New Child
+          </button>
+        )}
+      </div>
+    );
+  };
+
+  // Container styles
+  const containerStyle = {
+    minHeight: '100vh',
+    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    padding: `${spacing.xl} 0`,
+    fontFamily: typography.fontFamily.primary,
+  };
+
+  const cardStyle = {
+    maxWidth: '900px',
+    margin: '0 auto',
+    background: 'rgba(255, 255, 255, 0.95)',
+    backdropFilter: 'blur(20px)',
+    borderRadius: '24px',
+    padding: spacing.xl,
+    boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15)',
+    border: '1px solid rgba(255, 255, 255, 0.2)',
+  };
+
+  const titleStyle = {
+    fontSize: '2.5rem',
+    fontWeight: 800,
+    textAlign: 'center',
+    marginBottom: spacing.lg,
+    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    backgroundClip: 'text',
+  };
+
+  const subtitleStyle = {
+    fontSize: '1.1rem',
+    textAlign: 'center',
+    color: colors.text.secondary,
+    marginBottom: spacing['2xl'],
+    lineHeight: 1.6,
+  };
+
+  const sectionStyle = {
+    marginBottom: spacing['2xl'],
+    padding: spacing.lg,
+    background: 'rgba(255, 255, 255, 0.5)',
+    borderRadius: '16px',
+    border: '1px solid rgba(255, 255, 255, 0.3)',
+  };
+
+  const sectionTitleStyle = {
+    fontSize: '1.5rem',
+    fontWeight: 700,
+    marginBottom: spacing.md,
+    color: colors.text.primary,
+    display: 'flex',
+    alignItems: 'center',
+    gap: spacing.sm,
+  };
+
+  const labelStyle = {
+    fontSize: '1rem',
+    fontWeight: 600,
+    color: colors.text.primary,
+    marginBottom: spacing.sm,
+  };
+
+  // Age slider styles
+  const sliderContainerStyle = {
+    padding: spacing.lg,
+    background: 'linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%)',
+    borderRadius: '12px',
+    textAlign: 'center',
+  };
+
+  const ageDisplayStyle = {
+    fontSize: '3rem',
+    fontWeight: 800,
+    color: 'white',
+    marginBottom: spacing.sm,
+    textShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
+  };
+
+  const sliderStyle = {
+    width: '100%',
+    height: '8px',
+    borderRadius: '4px',
+    background: 'rgba(255, 255, 255, 0.3)',
+    outline: 'none',
+    cursor: 'pointer',
+  };
+
+  // Scrollable grid styles
+  const scrollableGridStyle = {
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: spacing.sm,
+    maxHeight: '200px',
+    overflowY: 'auto',
+    padding: spacing.sm,
+    background: 'rgba(255, 255, 255, 0.3)',
+    borderRadius: '12px',
+    border: '1px solid rgba(255, 255, 255, 0.2)',
+  };
+
+  const getInterestButtonStyle = (isSelected) => ({
+    padding: `${spacing.sm} ${spacing.md}`,
+    borderRadius: '20px',
+    border: 'none',
+    cursor: 'pointer',
+    fontSize: '0.9rem',
+    fontWeight: 600,
+    transition: 'all 0.3s ease',
+    background: isSelected 
+      ? 'linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%)'
+      : 'rgba(255, 255, 255, 0.8)',
+    color: isSelected ? 'white' : colors.text.primary,
+    boxShadow: isSelected 
+      ? '0 4px 15px rgba(78, 205, 196, 0.4)'
+      : '0 2px 8px rgba(0, 0, 0, 0.1)',
+    transform: isSelected ? 'scale(1.05)' : 'scale(1)',
+  });
+
+  const getDislikeButtonStyle = (isSelected) => ({
+    padding: `${spacing.sm} ${spacing.md}`,
+    borderRadius: '20px',
+    border: 'none',
+    cursor: 'pointer',
+    fontSize: '0.9rem',
+    fontWeight: 600,
+    transition: 'all 0.3s ease',
+    background: isSelected 
+      ? 'linear-gradient(135deg, #FF6B6B 0%, #EE5A52 100%)'
+      : 'rgba(255, 255, 255, 0.8)',
+    color: isSelected ? 'white' : colors.text.primary,
+    boxShadow: isSelected 
+      ? '0 4px 15px rgba(255, 107, 107, 0.4)'
+      : '0 2px 8px rgba(0, 0, 0, 0.1)',
+    transform: isSelected ? 'scale(1.05)' : 'scale(1)',
+  });
+
+  const learningStyleGridStyle = {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+    gap: spacing.md,
+    marginTop: spacing.md,
+  };
+
+  const getLearningStyleButtonStyle = (style, isSelected) => ({
+    padding: spacing.lg,
+    borderRadius: '16px',
+    border: 'none',
+    cursor: 'pointer',
+    fontSize: '1rem',
+    fontWeight: 600,
+    transition: 'all 0.3s ease',
+    background: isSelected 
+      ? style.color
+      : 'rgba(255, 255, 255, 0.8)',
+    color: isSelected ? 'white' : colors.text.primary,
+    boxShadow: isSelected 
+      ? `0 8px 25px ${style.color}40`
+      : '0 4px 15px rgba(0, 0, 0, 0.1)',
+    transform: isSelected ? 'scale(1.02)' : 'scale(1)',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: spacing.sm,
+  });
+
+  const getGoalButtonStyle = (goal, isSelected) => ({
+    padding: `${spacing.md} ${spacing.lg}`,
+    borderRadius: '16px',
+    border: 'none',
+    cursor: 'pointer',
+    fontSize: '1rem',
+    fontWeight: 600,
+    transition: 'all 0.3s ease',
+    background: isSelected 
+      ? goal.color
+      : 'rgba(255, 255, 255, 0.8)',
+    color: isSelected ? 'white' : colors.text.primary,
+    boxShadow: isSelected 
+      ? `0 8px 25px ${goal.color}40`
+      : '0 4px 15px rgba(0, 0, 0, 0.1)',
+    transform: isSelected ? 'scale(1.02)' : 'scale(1)',
+    display: 'flex',
+    alignItems: 'center',
+    gap: spacing.sm,
+  });
+
+  const submitButtonStyle = {
+    width: '100%',
+    padding: `${spacing.lg} ${spacing.xl}`,
+    fontSize: '1.25rem',
+    fontWeight: 700,
+    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    color: 'white',
+    border: 'none',
+    borderRadius: '16px',
+    cursor: isLoading ? 'not-allowed' : 'pointer',
+    transition: 'all 0.3s ease',
+    boxShadow: '0 8px 25px rgba(102, 126, 234, 0.4)',
+    opacity: isLoading ? 0.7 : 1,
+    marginTop: spacing.xl,
+  };
+
+  const successMessageStyle = {
+    position: 'fixed',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    background: 'rgba(255, 255, 255, 0.98)',
+    backdropFilter: 'blur(20px)',
+    borderRadius: '20px',
+    padding: spacing['2xl'],
+    boxShadow: '0 25px 50px rgba(0, 0, 0, 0.2)',
+    textAlign: 'center',
+    zIndex: 1000,
+    border: '1px solid rgba(255, 255, 255, 0.3)',
+    maxWidth: '500px',
+    width: '90%',
+  };
+
+  return (
+    <div style={containerStyle} className="profile-form-container">
+      {/* DebugDisplay component is removed as debug info is now global */}
+      <div style={cardStyle} className="profile-form-card profile-form-glass">
+        {/* Back button at top left */}
+        <div style={{ position: 'relative', minHeight: '40px' }}>
+          <div style={{ position: 'absolute', top: 0, left: 0 }}>
+            <UniversalBackButton 
+              text="← Back" 
+              variant="secondary"
+              size="small"
+            />
+          </div>
+        </div>
+        <h1 style={titleStyle} className="profile-form-title profile-form-gradient-text">🌟 Let's Create Your Child's Perfect Learning Journey! 🌟</h1>
+        <p style={subtitleStyle} className="profile-form-subtitle">
+          Help us understand your child better so we can create a personalized learning experience 
+          that matches their unique interests, style, and goals.
+        </p>
+        
+        {/* Error Display */}
+        {formError && (
+          <div style={{
+            background: '#fee',
+            color: '#c33',
+            border: '1px solid #fcc',
+            borderRadius: '8px',
+            padding: '12px',
+            marginBottom: '20px',
+            textAlign: 'center'
+          }}>
+            ⚠️ {formError}
+          </div>
+        )}
+
+        {/* Debug Display - Show loaded data */}
+        <div style={{
+          background: 'rgba(0, 0, 0, 0.1)',
+          color: '#333',
+          border: '1px solid rgba(0, 0, 0, 0.2)',
+          borderRadius: '8px',
+          padding: '12px',
+          marginBottom: '20px',
+          fontSize: '0.9rem'
+        }}>
+          <h4 style={{ margin: '0 0 8px 0', color: '#667eea' }}>🔍 Debug Info</h4>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '8px' }}>
+            <div><strong>User:</strong> {user ? user.email : 'Not logged in'}</div>
+            <div><strong>User UID:</strong> {user ? user.uid : 'Not available'}</div>
+            <div><strong>Children Loaded:</strong> {children.length}</div>
+            <div><strong>Selected Child:</strong> {selectedChildIndex >= 0 ? children[selectedChildIndex]?.name : 'None'}</div>
+            <div><strong>Adding New:</strong> {isAddingNewChild ? 'Yes' : 'No'}</div>
+            <div><strong>Current Name:</strong> {childName || 'Not set'}</div>
+            <div><strong>Current Age:</strong> {childAge} years</div>
+            <div><strong>Interests:</strong> {interests.length} selected</div>
+            <div><strong>Learning Style:</strong> {learningStyle || 'Not set'}</div>
+            <div><strong>Goals:</strong> {selectedGoals.length} selected</div>
+            <div><strong>Plan Type:</strong> {planType}</div>
+          </div>
+          
+          {/* Children Status */}
+          <div style={{ marginTop: '12px', padding: '8px', background: children.length > 0 ? 'rgba(76, 175, 80, 0.1)' : 'rgba(244, 67, 54, 0.1)', borderRadius: '4px', border: `1px solid ${children.length > 0 ? 'rgba(76, 175, 80, 0.3)' : 'rgba(244, 67, 54, 0.3)'}` }}>
+            <strong style={{ color: children.length > 0 ? '#2e7d32' : '#c62828' }}>
+              {children.length > 0 ? '✅ Children Found' : '❌ No Children Loaded'}
+            </strong>
+            <div style={{ fontSize: '0.9rem', marginTop: '4px' }}>
+              {children.length > 0 
+                ? `Found ${children.length} child profile(s) in Firestore`
+                : 'No child profiles found. This could mean: 1) Profiles not saved, 2) Loading in progress, 3) Firestore error'
+              }
+            </div>
+            {children.some(child => child.autoFixed) && (
+              <div style={{ fontSize: '0.9rem', marginTop: '4px', color: '#6a1b9a', fontWeight: 'bold' }}>
+                🔧 Auto-fixed: {children.filter(child => child.autoFixed).length} profile(s) automatically repaired
+              </div>
+            )}
+          </div>
+          
+          {/* Firestore Status */}
+          <div style={{ marginTop: '12px', padding: '8px', background: 'rgba(255, 255, 255, 0.5)', borderRadius: '4px' }}>
+            <strong>Firestore Status:</strong>
+            <button 
+              onClick={checkFirestoreHealth}
+              style={{
+                marginLeft: '8px',
+                padding: '4px 8px',
+                background: '#667eea',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '0.8rem'
+              }}
+            >
+              🔍 Check Connection
+            </button>
+            <button 
+              onClick={resetFirestoreConnection}
+              style={{
+                marginLeft: '8px',
+                padding: '4px 8px',
+                background: '#ff6b6b',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '0.8rem'
+              }}
+            >
+              🔄 Reset Connection
+            </button>
+          </div>
+          
+          {/* Manual Actions */}
+          <div style={{ marginTop: '12px', padding: '8px', background: 'rgba(255, 255, 255, 0.5)', borderRadius: '4px' }}>
+            <strong>Manual Actions:</strong>
+            <button 
+              onClick={() => {
+                console.log('🔄 Manual refresh triggered');
+                if (user) {
+                  loadChildren();
+                  loadDataFiles();
+                }
+              }}
+              style={{
+                marginLeft: '8px',
+                padding: '4px 8px',
+                background: '#28a745',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '0.8rem'
+              }}
+            >
+              🔄 Refresh Children
+            </button>
+            <button 
+              onClick={() => {
+                console.log('📊 Show user details');
+                console.log('User:', user);
+                console.log('User UID:', user?.uid);
+                console.log('User email:', user?.email);
+              }}
+              style={{
+                marginLeft: '8px',
+                padding: '4px 8px',
+                background: '#17a2b8',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '0.8rem'
+              }}
+            >
+              👤 Show User Details
+            </button>
+            <button 
+              onClick={() => {
+                console.log('🔍 Analyze child profile structure');
+                if (children.length > 0) {
+                  const child = children[selectedChildIndex >= 0 ? selectedChildIndex : 0];
+                  console.log('🔍 Current child structure:', child);
+                  console.log('🔍 Available fields:', Object.keys(child));
+                  console.log('🔍 Field values:', {
+                    name: child.name,
+                    age: child.child_age || child.age,
+                    interests: child.interests || child.interest,
+                    dislikes: child.dislikes || child.dislike,
+                    learningStyle: child.preferred_learning_style || child.learning_style,
+                    goals: child.goals || child.goal,
+                    planType: child.plan_type || child.planType,
+                    plans: child.plans,
+                    months: child.months
+                  });
+                }
+              }}
+              style={{
+                marginLeft: '8px',
+                padding: '4px 8px',
+                background: '#ff9800',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '0.8rem'
+              }}
+            >
+              🔍 Analyze Profile
+            </button>
+            <button 
+              onClick={async () => {
+                console.log('🔧 Attempting to fix child profile structure');
+                if (children.length > 0 && user) {
+                  try {
+                    const child = children[selectedChildIndex >= 0 ? selectedChildIndex : 0];
+                    const childRef = doc(db, `users/${user.uid}/children`, child.name);
+                    
+                    // Create a complete profile structure
+                    const completeProfile = {
+                      ...child,
+                      child_age: child.child_age || child.age || 5,
+                      interests: child.interests || child.interest || ['Communication', 'AI'],
+                      dislikes: child.dislikes || child.dislike || [],
+                      preferred_learning_style: child.preferred_learning_style || child.learning_style || 'visual',
+                      goals: child.goals || child.goal || ['problem-solving'],
+                      plan_type: child.plan_type || child.planType || 'hybrid',
+                      updatedAt: new Date()
+                    };
+                    
+                    console.log('🔧 Complete profile to save:', completeProfile);
+                    
+                    await setDoc(childRef, completeProfile, { merge: true });
+                    console.log('✅ Profile structure fixed successfully');
+                    
+                    // Reload children to see the updated structure
+                    setTimeout(() => {
+                      loadChildren();
+                    }, 1000);
+                    
+                  } catch (error) {
+                    console.error('❌ Error fixing profile structure:', error);
+                  }
+                }
+              }}
+              style={{
+                marginLeft: '8px',
+                padding: '4px 8px',
+                background: '#9c27b0',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '0.8rem'
+              }}
+            >
+              🔧 Fix Profile
+            </button>
+          </div>
+          
+          {children.length > 0 && (
+            <div style={{ marginTop: '12px', padding: '8px', background: 'rgba(255, 255, 255, 0.5)', borderRadius: '4px' }}>
+              <strong>Children Data:</strong>
+              {children.map((child, idx) => (
+                <div key={child.name} style={{ marginTop: '4px', fontSize: '0.8rem' }}>
+                  {idx + 1}. {child.name} (Age: {child.child_age}, Interests: {child.interests?.length || 0}, Style: {child.preferred_learning_style || 'N/A'})
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Loading Indicator */}
+        {user && children.length === 0 && (
+          <div style={{
+            marginBottom: spacing.lg,
+            padding: spacing.md,
+            background: 'rgba(255, 193, 7, 0.1)',
+            borderRadius: '8px',
+            border: '1px solid rgba(255, 193, 7, 0.3)',
+            textAlign: 'center'
+          }}>
+            <p style={{ margin: 0, color: '#856404' }}>
+              🔄 Loading your child profiles... Please wait.
+            </p>
+          </div>
+        )}
+
+        {/* Auto-fixing Indicator */}
+        {isAutoFixing && (
+          <div style={{
+            marginBottom: spacing.lg,
+            padding: spacing.md,
+            background: 'rgba(156, 39, 176, 0.1)',
+            borderRadius: '8px',
+            border: '1px solid rgba(156, 39, 176, 0.3)',
+            textAlign: 'center'
+          }}>
+            <p style={{ margin: 0, color: '#6a1b9a' }}>
+              🔧 Auto-fixing child profile structure... Please wait.
+            </p>
+          </div>
+        )}
+        
+        {children.some(child => child.autoFixed === true) && !isAutoFixing && (
+          <div style={{
+            marginBottom: spacing.lg,
+            padding: spacing.md,
+            background: 'rgba(76, 175, 80, 0.1)',
+            borderRadius: '8px',
+            border: '1px solid rgba(76, 175, 80, 0.3)',
+            textAlign: 'center'
+          }}>
+            <p style={{ margin: 0, color: '#2e7d32' }}>
+              ✅ Child profiles automatically fixed and loaded!
+            </p>
+          </div>
+        )}
+
+        {/* Inline Child Selector */}
+        <InlineChildSelector />
+
+        {/* Child Name Section */}
+        <div style={sectionStyle} className="profile-form-section">
+          <h2 style={sectionTitleStyle} className="profile-form-section-title">
+            👶 Child Name
+          </h2>
+          <input
+            type="text"
+            value={childName}
+            onChange={e => setChildName(e.target.value)}
+            placeholder="Enter your child's name"
+            disabled={selectedChildIndex >= 0 && selectedChildIndex < children.length && !isAddingNewChild} // Disable if editing existing child
+            className="profile-form-input"
+            style={{
+              width: '100%',
+              padding: spacing.md,
+              fontSize: '1.1rem',
+              borderRadius: '8px',
+              border: '1px solid #ccc',
+              marginBottom: spacing.lg,
+              backgroundColor: selectedChildIndex >= 0 && selectedChildIndex < children.length && !isAddingNewChild ? '#f5f5f5' : 'white',
+              color: selectedChildIndex >= 0 && selectedChildIndex < children.length && !isAddingNewChild ? '#666' : 'black',
+            }}
+            required
+          />
+          {selectedChildIndex >= 0 && selectedChildIndex < children.length && !isAddingNewChild && (
+            <p style={{ 
+              fontSize: '0.9rem', 
+              color: '#666', 
+              fontStyle: 'italic',
+              marginTop: spacing.sm 
+            }}>
+              Child name cannot be changed once created. Create a new child profile to use a different name.
+            </p>
+          )}
+        </div>
+
+        {/* Age Section */}
+        <div style={sectionStyle} className="profile-form-section">
+          <h2 style={sectionTitleStyle} className="profile-form-section-title">
+            🎂 How old is your child?
+          </h2>
+          <div style={sliderContainerStyle}>
+            <div style={ageDisplayStyle} className="profile-form-age-display">{childAge} years</div>
+            <input
+              type="range"
+              min="2"
+              max="18"
+              value={childAge}
+              onChange={(e) => setChildAge(parseInt(e.target.value))}
+              style={sliderStyle}
+              className="profile-form-slider"
+            />
+            <p style={{ color: 'white', marginTop: spacing.sm, fontWeight: 600 }}>
+              Slide to adjust age
+            </p>
+          </div>
+        </div>
+
+          {/* Interests Section */}
+          <div style={sectionStyle} className="profile-form-section">
+            <h2 style={sectionTitleStyle} className="profile-form-section-title">
+              ❤️ What does your child love to do?
+            </h2>
+            <p style={labelStyle}>Select all the activities that interest your child:</p>
+            <div style={scrollableGridStyle} className="profile-form-scrollable">
+              {interestOptions.map((interest) => {
+                const isSelected = interests.includes(interest);
+                return (
+                  <button
+                    key={interest}
+                    type="button"
+                    style={getInterestButtonStyle(isSelected)}
+                    className="profile-form-button profile-form-transition"
+                    onClick={() => toggleArrayItem(interest, interests, setInterests)}
+                  >
+                    {interest}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Dislikes Section */}
+          <div style={sectionStyle} className="profile-form-section">
+            <h2 style={sectionTitleStyle} className="profile-form-section-title">
+              😔 What does your child avoid or dislike?
+            </h2>
+            <p style={labelStyle}>Select things your child tends to avoid:</p>
+            <div style={scrollableGridStyle} className="profile-form-scrollable">
+              {interestOptions.map((interest) => {
+                const isSelected = dislikes.includes(interest);
+                return (
+                  <button
+                    key={interest + "-dislike"}
+                    type="button"
+                    style={getDislikeButtonStyle(isSelected)}
+                    className="profile-form-button profile-form-transition"
+                    onClick={() => toggleArrayItem(interest, dislikes, setDislikes)}
+                  >
+                    {interest}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Learning Style Section */}
+          <div style={sectionStyle} className="profile-form-section">
+            <h2 style={sectionTitleStyle} className="profile-form-section-title">
+              🎯 How does your child learn best?
+            </h2>
+            <p style={labelStyle}>Click on the learning style that best describes your child:</p>
+            <div style={learningStyleGridStyle} className="profile-form-learning-grid">
+              {learningStyles.map((style) => {
+                const isSelected = learningStyle === style.id;
+                return (
+                  <button
+                    key={style.id}
+                    type="button"
+                    style={getLearningStyleButtonStyle(style, isSelected)}
+                    className="profile-form-button profile-form-transition"
+                    onClick={() => setLearningStyle(style.id)}
+                  >
+                    <span style={{ fontSize: '2rem' }}>{style.icon}</span>
+                    <span>{style.label}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Goals Section */}
+          <div style={sectionStyle} className="profile-form-section">
+            <h2 style={sectionTitleStyle} className="profile-form-section-title">
+              🎯 What are your main learning goals?
+            </h2>
+            <p style={labelStyle}>Select the goals that matter most to you:</p>
+            <div style={learningStyleGridStyle} className="profile-form-learning-grid">
+              {goals.map((goal) => {
+                const isSelected = selectedGoals.includes(goal.id);
+                return (
+                  <button
+                    key={goal.id}
+                    type="button"
+                    style={getGoalButtonStyle(goal, isSelected)}
+                    className="profile-form-button profile-form-transition"
+                    onClick={() => toggleArrayItem(goal.id, selectedGoals, setSelectedGoals)}
+                  >
+                    <span style={{ fontSize: '1.5rem' }}>{goal.icon}</span>
+                    <span>{goal.label}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Plan Type Selection Section */}
+          <div style={{ margin: '32px 0', padding: '20px', background: '#f8f9fa', borderRadius: '10px', border: '2px solid #6a4c93' }}>
+            <h2 style={{ color: '#6a4c93', marginBottom: 12 }}>Choose Your Plan Type</h2>
+            <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
+              {PLAN_TYPES.map(type => (
+                <div key={type.id} style={{ flex: 1, minWidth: 220, background: planType === type.id ? '#e0e7ff' : 'white', border: planType === type.id ? '2px solid #6a4c93' : '1px solid #ddd', borderRadius: 8, padding: 16, cursor: 'pointer', boxShadow: planType === type.id ? '0 2px 8px #6a4c9340' : 'none', transition: 'all 0.2s' }} onClick={() => setPlanType(type.id)}>
+                  <input type="radio" id={type.id} name="planType" value={type.id} checked={planType === type.id} onChange={() => setPlanType(type.id)} style={{ marginRight: 8 }} />
+                  <label htmlFor={type.id} style={{ fontWeight: 'bold', fontSize: 17, color: '#264653' }}>{type.name}</label>
+                  <div style={{ margin: '8px 0', color: '#555', fontSize: 14 }}>{type.description}</div>
+                </div>
+              ))}
+            </div>
+            <div style={{ marginTop: 18, background: '#f3f0fa', borderRadius: 8, padding: 12, fontSize: 15 }}>
+              <strong>Quick Comparison:</strong>
+              <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: 8 }}>
+                <thead>
+                  <tr style={{ background: '#e0e7ff', fontSize: 14 }}>
+                    <th style={{ padding: 6, border: '1px solid #ddd' }}></th>
+                    <th style={{ padding: 6, border: '1px solid #ddd' }}>Hybrid</th>
+                    <th style={{ padding: 6, border: '1px solid #ddd' }}>Fusion</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td style={{ padding: 6, border: '1px solid #ddd' }}>Weekly Flow</td><td style={{ padding: 6, border: '1px solid #ddd' }}>Different each week</td><td style={{ padding: 6, border: '1px solid #ddd' }}>Same every week</td></tr>
+                  <tr><td style={{ padding: 6, border: '1px solid #ddd' }}>Best For</td><td style={{ padding: 6, border: '1px solid #ddd' }}>Variety, projects</td><td style={{ padding: 6, border: '1px solid #ddd' }}>Routine, balance</td></tr>
+                  <tr><td style={{ padding: 6, border: '1px solid #ddd' }}>Parent Effort</td><td style={{ padding: 6, border: '1px solid #ddd' }}>More planning</td><td style={{ padding: 6, border: '1px solid #ddd' }}>Easy to follow</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Show persistent update confirmation message just above the buttons */}
+          {showUpdateMessage && (
+            <div style={{
+              background: '#e6ffe6',
+              color: '#267326',
+              border: '1px solid #b3ffb3',
+              borderRadius: '12px',
+              padding: '1rem',
+              marginBottom: '1.5rem',
+              textAlign: 'center',
+              fontWeight: 600,
+              fontSize: '1.1rem',
+            }}>
+              Your child profile has been updated.
+            </div>
+          )}
+
+          {/* Submit/Update and Cancel Buttons */}
+          <div style={{ display: 'flex', gap: spacing.lg, marginTop: spacing.xl }}>
+            <button
+              style={{ ...submitButtonStyle, flex: 1, opacity: (hasChanges || !originalProfile) ? 1 : 0.6, cursor: (isLoading || (!hasChanges && originalProfile)) ? 'not-allowed' : 'pointer' }}
+              className={`profile-form-button profile-form-transition ${isLoading ? 'profile-form-loading' : ''}`}
+              onClick={handleSubmit}
+              disabled={isLoading || (!hasChanges && originalProfile)}
+            >
+              {isLoading ? (
+                <span>⏳ {loadingStep || 'Processing...'}</span>
+              ) : isAddingNewChild ? (
+                '🚀 Create My Child\'s Plan!'
+              ) : selectedChildIndex >= 0 && selectedChildIndex < children.length ? (
+                '💾 Update Profile'
+              ) : (
+                '🚀 Generate My Child\'s Perfect Plan!'
+              )}
+            </button>
+            {(hasChanges || !originalProfile) && (
+              <button
+                style={{ ...submitButtonStyle, background: '#eee', color: '#764ba2', flex: 1, boxShadow: 'none', border: '1px solid #764ba2' }}
+                onClick={handleCancel}
+                disabled={isLoading}
+                type="button"
+              >
+                Cancel
+              </button>
+            )}
+          </div>
+        </div>
+
+      {/* Success Message Modal */}
+      {showSuccessMessage && (
+        <div style={successMessageStyle}>
+          <div style={{ fontSize: '4rem', marginBottom: spacing.md }}>🎉</div>
+          <h2 style={{ 
+            fontSize: '1.8rem', 
+            fontWeight: 700, 
+            marginBottom: spacing.md,
+            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+          }}>
+            Your Child's Plan is Ready!
+          </h2>
+          <p style={{ 
+            fontSize: '1.1rem', 
+            color: colors.text.secondary, 
+            marginBottom: spacing.lg,
+            lineHeight: 1.6 
+          }}>
+            We've successfully created a personalized learning plan for your child. 
+            You'll be redirected to your monthly plan in a few seconds...
+          </p>
+          <div style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            justifyContent: 'center', 
+            gap: spacing.sm,
+            fontSize: '1rem',
+            color: colors.text.secondary 
+          }}>
+            <div style={{ 
+              width: '20px', 
+              height: '20px', 
+              border: '2px solid #667eea', 
+              borderTop: '2px solid transparent',
+              borderRadius: '50%',
+              animation: 'spin 1s linear infinite'
+            }}></div>
+            Redirecting to your plan...
+          </div>
+        </div>
+      )}
+      <div style={{ marginTop: 32, textAlign: 'center' }}>
+        <button
+          type="button"
+          disabled={selectedChildIndex < 0 || selectedChildIndex >= children.length || !children[selectedChildIndex].plans || Object.keys(children[selectedChildIndex].plans).length === 0}
+          style={{
+            background: (selectedChildIndex < 0 || selectedChildIndex >= children.length || !children[selectedChildIndex].plans || Object.keys(children[selectedChildIndex].plans).length === 0) ? '#bdbdbd' : '#6a4c93',
+            color: 'white',
+            border: 'none',
+            borderRadius: 8,
+            padding: '12px 32px',
+            fontSize: '1.1rem',
+            fontWeight: 600,
+            cursor: (selectedChildIndex < 0 || selectedChildIndex >= children.length || !children[selectedChildIndex].plans || Object.keys(children[selectedChildIndex].plans).length === 0) ? 'not-allowed' : 'pointer',
+            opacity: (selectedChildIndex < 0 || selectedChildIndex >= children.length || !children[selectedChildIndex].plans || Object.keys(children[selectedChildIndex].plans).length === 0) ? 0.6 : 1,
+            marginTop: 8,
+            transition: 'all 0.2s',
+          }}
+          onClick={() => {
+            if (selectedChildIndex >= 0 && selectedChildIndex < children.length && children[selectedChildIndex].plans && Object.keys(children[selectedChildIndex].plans).length > 0) {
+              // Get the latest month
+              const months = Object.keys(children[selectedChildIndex].plans);
+              const latestMonth = months[months.length - 1];
+              navigate('/customised-weekly-plan', {
+                state: {
+                  childName: children[selectedChildIndex].name,
+                  childMonths: months,
+                  data: children[selectedChildIndex].plans[latestMonth],
+                }
+              });
+            }
+          }}
+        >
+          Go to Weekly Plan
+        </button>
+        <div style={{ fontSize: 13, color: '#888', marginTop: 6 }}>
+          {(selectedChildIndex < 0 || selectedChildIndex >= children.length || !children[selectedChildIndex].plans || Object.keys(children[selectedChildIndex].plans).length === 0)
+            ? 'Generate a plan first to view the weekly plan.'
+            : 'View the latest monthly plan for this child.'}
+        </div>
+      </div>
+
+      {/* Schedule Generation Components */}
+      {showScheduleGenerator && (
+        <div style={{ marginTop: '20px' }}>
+          <ScheduleGenerator
+            childProfile={{
+              child_id: children[selectedChildIndex]?.id || childName,
+              child_name: childName,
+              child_age: childAge,
+              interests: interests,
+              learning_style: learningStyle,
+              plan_type: planType
+            }}
+            onScheduleGenerated={handleScheduleGenerated}
+            onError={handleScheduleError}
+          />
+        </div>
+      )}
+
+      {scheduleError && (
+        <div style={{
+          marginTop: '20px',
+          padding: '16px',
+          backgroundColor: '#fef2f2',
+          border: '1px solid #fecaca',
+          borderRadius: '8px',
+          color: '#dc2626'
+        }}>
+          <strong>Schedule Generation Error:</strong> {scheduleError}
+        </div>
+      )}
+
+      {generatedSchedule && (
+        <div style={{ marginTop: '20px' }}>
+          <ScheduleDisplay
+            scheduleData={generatedSchedule}
+            childProfile={{
+              child_name: childName,
+              child_age: childAge,
+              interests: interests,
+              learning_style: learningStyle,
+              plan_type: planType
+            }}
+            onActivityComplete={handleActivityComplete}
+          />
+        </div>
+      )}
+
+      {selectedSchedule && (
+        <div style={{ marginTop: '20px' }}>
+          <ScheduleDisplay
+            scheduleData={selectedSchedule}
+            childProfile={{
+              child_name: childName,
+              child_age: childAge,
+              interests: interests,
+              learning_style: learningStyle,
+              plan_type: planType
+            }}
+            onActivityComplete={handleActivityComplete}
+          />
+        </div>
+      )}
+
+      {/* Schedule History */}
+      {children.length > 0 && selectedChildIndex >= 0 && (
+        <div style={{ marginTop: '20px' }}>
+          <div style={{ marginBottom: '16px' }}>
+            <button
+              style={{
+                padding: '8px 16px',
+                backgroundColor: '#6b7280',
+                color: 'white',
+                border: 'none',
+                borderRadius: '6px',
+                cursor: 'pointer',
+                fontSize: '14px'
+              }}
+              onClick={() => setShowScheduleHistory(!showScheduleHistory)}
+            >
+              {showScheduleHistory ? 'Hide' : 'Show'} Schedule History
+            </button>
+          </div>
+          
+          {showScheduleHistory && (
+            <ScheduleHistory
+              childId={children[selectedChildIndex]?.id || childName}
+              onScheduleSelect={handleScheduleSelect}
+            />
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default ProfileForm;

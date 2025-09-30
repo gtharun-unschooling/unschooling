@@ -1,0 +1,28 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="defaultGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4b5563;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+  
+  <!-- 3D Default Learning Icon -->
+  <circle cx="32" cy="32" r="28" fill="url(#defaultGradient)" filter="url(#shadow)"/>
+  
+  <!-- Book/Learning symbol -->
+  <rect x="20" y="20" width="24" height="16" rx="2" fill="white"/>
+  <rect x="22" y="22" width="20" height="1" fill="#6b7280"/>
+  <rect x="22" y="25" width="16" height="1" fill="#6b7280"/>
+  <rect x="22" y="28" width="18" height="1" fill="#6b7280"/>
+  <rect x="22" y="31" width="14" height="1" fill="#6b7280"/>
+  
+  <!-- Lightbulb/idea symbol -->
+  <circle cx="32" cy="42" r="4" fill="#fbbf24"/>
+  <rect x="30" y="46" width="4" height="2" fill="#fbbf24"/>
+  
+  <!-- Sparkle -->
+  <text x="32" y="52" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">✨</text>
+</svg>

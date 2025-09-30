@@ -1,0 +1,1252 @@
+{
+  "ageGroups": [
+    {
+      "ageGroup": "Infant (0-1)",
+      "categories": [
+        {
+          "category": "Visual Tracking & Focus",
+          "description": "Develop visual attention and tracking abilities through hands-on activities",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "High Contrast Card Play",
+              "objective": "Stimulate visual development and focus through engaging card activities",
+              "explanation": "Use high contrast cards to capture baby's attention and develop visual tracking skills through interactive play.",
+              "hashtags": [
+                "#VisualDevelopment",
+                "#FocusTraining",
+                "#InfantActivities"
+              ],
+              "estimatedTime": "5-10 min",
+              "age": "0-6 months",
+              "activity": {
+                "name": "High Contrast Card Play",
+                "materials": [
+                  "High contrast black and white cards (supplied by us)",
+                  "Soft play mat (available at home)",
+                  "Baby-safe mirror (supplied by us)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Place baby on soft play mat in comfortable position",
+                  "Hold high contrast cards 8-12 inches from baby's face",
+                  "Slowly move cards left to right, watching for eye tracking",
+                  "Use baby-safe mirror to show baby their own reflection",
+                  "Talk to baby about what they're seeing: 'Look at the black and white patterns!'",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Visual tracking",
+                  "Focus development",
+                  "Eye coordination",
+                  "Attention span",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "Floating Balloon Discovery",
+              "objective": "Encourage visual tracking and head movement through balloon play",
+              "explanation": "Use helium balloons to encourage baby to track movement and develop neck strength through safe, supervised play.",
+              "hashtags": [
+                "#VisualTracking",
+                "#NeckStrength",
+                "#BalloonPlay"
+              ],
+              "estimatedTime": "10-15 min",
+              "age": "2-8 months",
+              "activity": {
+                "name": "Floating Balloon Discovery",
+                "materials": [
+                  "Helium balloon with string (supplied by us)",
+                  "Soft floor mat (available at home)",
+                  "Colorful ribbons (supplied by us)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Tie balloon to baby's wrist or place nearby at safe distance",
+                  "Let baby watch balloon move naturally in the air",
+                  "Gently guide baby's hand to touch the balloon string",
+                  "Add colorful ribbons to make it more engaging",
+                  "Supervise closely and remove if baby shows signs of distress",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Visual tracking",
+                  "Head movement",
+                  "Cause and effect",
+                  "Neck strength",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "Peek-a-Boo Object Game",
+              "objective": "Develop object permanence and attention through interactive hide-and-seek",
+              "explanation": "Hide and reveal favorite objects to help baby understand that things exist even when not seen, building memory and attention skills.",
+              "hashtags": [
+                "#ObjectPermanence",
+                "#AttentionTraining",
+                "#HideAndSeek"
+              ],
+              "estimatedTime": "5-10 min",
+              "age": "4-12 months",
+              "activity": {
+                "name": "Peek-a-Boo Object Game",
+                "materials": [
+                  "Baby's favorite soft toy (available at home)",
+                  "Colorful scarves or cloths (supplied by us)",
+                  "Small soft balls (supplied by us)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Show baby their favorite toy and let them touch it",
+                  "Cover the toy with a colorful scarf while baby watches",
+                  "Ask 'Where did the toy go?' with excitement",
+                  "Reveal the toy with a big smile and say 'Peek-a-boo!'",
+                  "Repeat with different objects and let baby try to find them",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Object permanence",
+                  "Attention span",
+                  "Memory development",
+                  "Social interaction",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "Colorful Mobile Watching",
+              "objective": "Stimulate visual processing and focus through mobile observation",
+              "explanation": "Use colorful mobiles to encourage sustained visual attention and tracking, building focus and visual processing skills.",
+              "hashtags": [
+                "#VisualProcessing",
+                "#SustainedAttention",
+                "#MobilePlay"
+              ],
+              "estimatedTime": "10-15 min",
+              "age": "1-8 months",
+              "activity": {
+                "name": "Colorful Mobile Watching",
+                "materials": [
+                  "Colorful baby mobile (supplied by us)",
+                  "Crib or play area (available at home)",
+                  "Soft music box (supplied by us)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Hang mobile above baby's line of sight in crib or play area",
+                  "Wind up mobile and let baby watch it move",
+                  "Talk about colors and movement: 'Look at the red bird flying!'",
+                  "Play soft music while mobile moves",
+                  "Change mobile position occasionally to maintain interest",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Visual processing",
+                  "Color recognition",
+                  "Sustained attention",
+                  "Auditory processing",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "Light and Shadow Exploration",
+              "objective": "Develop visual discrimination and curiosity through light play",
+              "explanation": "Use flashlight to create shadows and light patterns for visual stimulation and curiosity development.",
+              "hashtags": [
+                "#VisualDiscrimination",
+                "#LightPlay",
+                "#ShadowFun"
+              ],
+              "estimatedTime": "10 min",
+              "age": "3-12 months",
+              "activity": {
+                "name": "Light and Shadow Exploration",
+                "materials": [
+                  "Child-safe flashlight (supplied by us)",
+                  "Colorful transparent objects (supplied by us)",
+                  "White wall or surface (available at home)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Turn off lights and use flashlight in dim room",
+                  "Create moving light patterns on wall or ceiling",
+                  "Let baby track the light with their eyes",
+                  "Use colorful transparent objects to create colored shadows",
+                  "Always supervise and never shine light directly in baby's eyes",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Visual discrimination",
+                  "Curiosity",
+                  "Light awareness",
+                  "Tracking skills",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Cause and Effect Learning",
+          "description": "Understand that actions have consequences through hands-on experiments",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "Rattle Shake Response",
+              "objective": "Learn that shaking creates sound through interactive play",
+              "explanation": "Help baby understand that their actions (shaking) create sounds and effects, building cause-and-effect understanding.",
+              "hashtags": [
+                "#CauseAndEffect",
+                "#SoundResponse",
+                "#RattlePlay"
+              ],
+              "estimatedTime": "5-10 min",
+              "age": "2-8 months",
+              "activity": {
+                "name": "Rattle Shake Response",
+                "materials": [
+                  "Baby-safe rattle (supplied by us)",
+                  "Soft play mat (available at home)",
+                  "Different textured rattles (supplied by us)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Give baby a rattle and let them explore it",
+                  "Demonstrate shaking to make sound",
+                  "Encourage baby to shake and listen to the sound",
+                  "Try different rattles with different sounds",
+                  "Celebrate when baby makes sounds: 'Great shaking!'",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Cause and effect",
+                  "Sound recognition",
+                  "Motor control",
+                  "Hand-eye coordination",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "Button Press Discovery",
+              "objective": "Understand that pressing creates results through interactive toys",
+              "explanation": "Use toys with buttons that make sounds or light up when pressed, teaching cause-and-effect relationships.",
+              "hashtags": [
+                "#ButtonPressing",
+                "#ActionResponse",
+                "#ToyInteraction"
+              ],
+              "estimatedTime": "10-15 min",
+              "age": "4-12 months",
+              "activity": {
+                "name": "Button Press Discovery",
+                "materials": [
+                  "Interactive button toys (supplied by us)",
+                  "Soft play area (available at home)",
+                  "Musical instruments (supplied by us)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Show baby how to press buttons on interactive toys",
+                  "Let them press and see the result (sound, light, movement)",
+                  "Celebrate their success with clapping and praise",
+                  "Try different buttons with different effects",
+                  "Help baby understand the connection between pressing and results",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Button pressing",
+                  "Action understanding",
+                  "Success recognition",
+                  "Fine motor skills",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "Drop and Retrieve Game",
+              "objective": "Learn about gravity and object behavior through hands-on exploration",
+              "explanation": "Drop soft objects and watch them fall, then help baby retrieve them, teaching about gravity and object behavior.",
+              "hashtags": [
+                "#GravityLearning",
+                "#ObjectBehavior",
+                "#DropAndRetrieve"
+              ],
+              "estimatedTime": "10 min",
+              "age": "6-12 months",
+              "activity": {
+                "name": "Drop and Retrieve Game",
+                "materials": [
+                  "Soft balls of different sizes (supplied by us)",
+                  "Soft toys (available at home)",
+                  "Soft play mat (available at home)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Drop soft objects from different heights while baby watches",
+                  "Let baby watch them fall and land",
+                  "Help baby retrieve and drop objects again",
+                  "Talk about what's happening: 'The ball falls down!'",
+                  "Let baby try dropping objects themselves",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Gravity understanding",
+                  "Object behavior",
+                  "Retrieval skills",
+                  "Hand-eye coordination",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "Water Splash Discovery",
+              "objective": "Explore cause and effect with water through supervised play",
+              "explanation": "Let baby splash in water and discover the effects of their actions, building cause-and-effect understanding.",
+              "hashtags": [
+                "#WaterPlay",
+                "#SplashDiscovery",
+                "#ActionEffects"
+              ],
+              "estimatedTime": "10-15 min",
+              "age": "6-12 months",
+              "activity": {
+                "name": "Water Splash Discovery",
+                "materials": [
+                  "Shallow water container (supplied by us)",
+                  "Soft towels (available at home)",
+                  "Water-safe toys (supplied by us)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Let baby sit in shallow water in safe container",
+                  "Encourage splashing with hands and feet",
+                  "Talk about the water movement and splashes",
+                  "Add water-safe toys for more interaction",
+                  "Always supervise closely and dry baby thoroughly after",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Water exploration",
+                  "Splash effects",
+                  "Motor coordination",
+                  "Sensory development",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "Musical Instrument Response",
+              "objective": "Connect actions with musical sounds through instrument play",
+              "explanation": "Use simple musical instruments to show that hitting or shaking creates music, building cause-and-effect understanding.",
+              "hashtags": [
+                "#MusicalResponse",
+                "#SoundCreation",
+                "#InstrumentPlay"
+              ],
+              "estimatedTime": "10 min",
+              "age": "4-12 months",
+              "activity": {
+                "name": "Musical Instrument Response",
+                "materials": [
+                  "Baby-safe musical instruments (supplied by us)",
+                  "Soft play mat (available at home)",
+                  "Simple rhythm instruments (supplied by us)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Show baby how to play different instruments",
+                  "Let them try to make sounds with their hands",
+                  "Respond to their musical attempts with enthusiasm",
+                  "Try different instruments with different sounds",
+                  "Create simple rhythms together",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Musical response",
+                  "Sound creation",
+                  "Instrument interaction",
+                  "Rhythm awareness",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Memory Development",
+          "description": "Build early memory and recognition skills through engaging activities",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "Familiar Face Recognition Game",
+              "objective": "Develop recognition of familiar people through photo play",
+              "explanation": "Help baby recognize and respond to familiar faces through repeated exposure and interactive photo games.",
+              "hashtags": [
+                "#FaceRecognition",
+                "#FamiliarPeople",
+                "#MemoryBuilding"
+              ],
+              "estimatedTime": "5-10 min",
+              "age": "2-12 months",
+              "activity": {
+                "name": "Familiar Face Recognition Game",
+                "materials": [
+                  "Family photos in safe frames (available at home)",
+                  "Baby-safe mirror (supplied by us)",
+                  "Photo album (supplied by us)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Show baby photos of family members one by one",
+                  "Point and name each person: 'This is Grandma!'",
+                  "Use mirror to show baby their own face",
+                  "Repeat names and faces regularly",
+                  "Celebrate when baby recognizes familiar faces",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Face recognition",
+                  "Familiarity",
+                  "Memory development",
+                  "Social connection",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "Routine Memory Building",
+              "objective": "Remember daily routines and sequences through consistent practice",
+              "explanation": "Establish consistent routines to help baby remember and anticipate what comes next, building memory and anticipation skills.",
+              "hashtags": [
+                "#RoutineMemory",
+                "#SequenceLearning",
+                "#DailyRoutines"
+              ],
+              "estimatedTime": "Throughout day",
+              "age": "3-12 months",
+              "activity": {
+                "name": "Routine Memory Building",
+                "materials": [
+                  "Daily routine items (available at home)",
+                  "Consistent schedule (available at home)",
+                  "Routine cards (supplied by us)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Follow consistent daily routines (feeding, sleeping, playing)",
+                  "Use the same words and actions each time",
+                  "Let baby anticipate next steps in routine",
+                  "Use routine cards to show what comes next",
+                  "Celebrate when baby shows anticipation",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Routine memory",
+                  "Sequence learning",
+                  "Anticipation",
+                  "Predictability",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "Hidden Object Memory Game",
+              "objective": "Remember where objects are hidden through interactive play",
+              "explanation": "Hide favorite toys in predictable places and help baby remember where to find them, building memory and search skills.",
+              "hashtags": [
+                "#HiddenObjects",
+                "#LocationMemory",
+                "#ToyHunting"
+              ],
+              "estimatedTime": "10 min",
+              "age": "6-12 months",
+              "activity": {
+                "name": "Hidden Object Memory Game",
+                "materials": [
+                  "Baby's favorite toys (available at home)",
+                  "Soft hiding spots (available at home)",
+                  "Colorful scarves (supplied by us)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Hide toy in same place several times while baby watches",
+                  "Let baby watch you hide it",
+                  "Help them find it and celebrate success",
+                  "Try different hiding spots",
+                  "Let baby hide toys for you to find",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Location memory",
+                  "Object permanence",
+                  "Search skills",
+                  "Problem solving",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "Song and Rhyme Repetition",
+              "objective": "Build memory through repetition and rhythm",
+              "explanation": "Repeat favorite songs and rhymes to help baby remember and anticipate words, building memory and language skills.",
+              "hashtags": [
+                "#SongRepetition",
+                "#RhymeMemory",
+                "#MusicalMemory"
+              ],
+              "estimatedTime": "10-15 min",
+              "age": "3-12 months",
+              "activity": {
+                "name": "Song and Rhyme Repetition",
+                "materials": [
+                  "Familiar songs and rhymes (available at home)",
+                  "Musical instruments (supplied by us)",
+                  "Rhythm tools (supplied by us)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Sing the same songs repeatedly with baby",
+                  "Use hand gestures and movements",
+                  "Let baby anticipate familiar parts",
+                  "Add musical instruments for rhythm",
+                  "Celebrate when baby shows recognition",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Musical memory",
+                  "Rhyme recognition",
+                  "Anticipation",
+                  "Language development",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "Familiar Object Recognition",
+              "objective": "Recognize and remember favorite objects through interactive play",
+              "explanation": "Help baby recognize and remember their favorite toys and objects, building memory and recognition skills.",
+              "hashtags": [
+                "#ObjectRecognition",
+                "#FavoriteToys",
+                "#MemoryBuilding"
+              ],
+              "estimatedTime": "10 min",
+              "age": "4-12 months",
+              "activity": {
+                "name": "Familiar Object Recognition",
+                "materials": [
+                  "Baby's favorite toys (available at home)",
+                  "Familiar objects (available at home)",
+                  "Recognition games (supplied by us)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Show baby their favorite toys one by one",
+                  "Name each object consistently",
+                  "Let them choose between familiar items",
+                  "Hide and reveal favorite objects",
+                  "Celebrate recognition and choice making",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Object recognition",
+                  "Familiarity",
+                  "Choice making",
+                  "Memory development",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Problem Solving Basics",
+          "description": "Develop early problem-solving and decision-making skills through hands-on challenges",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "Obstacle Navigation Challenge",
+              "objective": "Learn to navigate around obstacles through guided play",
+              "explanation": "Create simple obstacles for baby to navigate around or over, building problem-solving and movement skills.",
+              "hashtags": [
+                "#ObstacleNavigation",
+                "#ProblemSolving",
+                "#MovementSkills"
+              ],
+              "estimatedTime": "10-15 min",
+              "age": "6-12 months",
+              "activity": {
+                "name": "Obstacle Navigation Challenge",
+                "materials": [
+                  "Soft pillows and cushions (available at home)",
+                  "Soft play mat (available at home)",
+                  "Safe obstacle course materials (supplied by us)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Place soft obstacles in baby's path",
+                  "Encourage them to crawl around or over obstacles",
+                  "Guide them through the course",
+                  "Celebrate their navigation success",
+                  "Try different obstacle arrangements",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Obstacle navigation",
+                  "Problem solving",
+                  "Movement planning",
+                  "Spatial awareness",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "Container Opening Challenge",
+              "objective": "Learn to open containers and lids through guided practice",
+              "explanation": "Provide containers with lids for baby to practice opening and closing, building fine motor skills and problem-solving abilities.",
+              "hashtags": [
+                "#ContainerOpening",
+                "#LidRemoval",
+                "#FineMotorSkills"
+              ],
+              "estimatedTime": "10-15 min",
+              "age": "8-12 months",
+              "activity": {
+                "name": "Container Opening Challenge",
+                "materials": [
+                  "Containers with different lids (supplied by us)",
+                  "Small toys to put inside (available at home)",
+                  "Safe opening tools (supplied by us)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Put small toys in containers with lids",
+                  "Show baby how to remove lids",
+                  "Let them practice opening and closing",
+                  "Try different types of lids",
+                  "Celebrate successful openings",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Container opening",
+                  "Lid manipulation",
+                  "Fine motor skills",
+                  "Problem solving",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "Shape Fitting Practice",
+              "objective": "Learn to fit shapes into matching holes through guided play",
+              "explanation": "Use simple shape sorters to help baby learn shape recognition and fitting, building spatial and problem-solving skills.",
+              "hashtags": [
+                "#ShapeFitting",
+                "#ShapeRecognition",
+                "#SpatialSkills"
+              ],
+              "estimatedTime": "15 min",
+              "age": "9-12 months",
+              "activity": {
+                "name": "Shape Fitting Practice",
+                "materials": [
+                  "Simple shape sorter (supplied by us)",
+                  "Basic shapes (supplied by us)",
+                  "Soft play mat (available at home)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Show baby how shapes fit into holes",
+                  "Let them try to match shapes",
+                  "Help and guide their attempts",
+                  "Celebrate successful fittings",
+                  "Try different shapes and orientations",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Shape recognition",
+                  "Spatial fitting",
+                  "Problem solving",
+                  "Hand-eye coordination",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "Stacking and Building Challenge",
+              "objective": "Learn to stack objects and build structures through guided play",
+              "explanation": "Provide blocks or cups for baby to practice stacking and building, developing spatial skills and problem-solving abilities.",
+              "hashtags": [
+                "#Stacking",
+                "#Building",
+                "#SpatialSkills"
+              ],
+              "estimatedTime": "15 min",
+              "age": "8-12 months",
+              "activity": {
+                "name": "Stacking and Building Challenge",
+                "materials": [
+                  "Soft blocks of different sizes (supplied by us)",
+                  "Stacking cups (supplied by us)",
+                  "Soft play mat (available at home)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Show baby how to stack blocks",
+                  "Let them try to build towers",
+                  "Help guide their stacking attempts",
+                  "Celebrate when they succeed",
+                  "Try different stacking patterns",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Stacking skills",
+                  "Building",
+                  "Spatial understanding",
+                  "Problem solving",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "Choice Making Practice",
+              "objective": "Learn to make simple choices between options through guided decision-making",
+              "explanation": "Present baby with two options and let them choose, building decision-making skills and independence.",
+              "hashtags": [
+                "#ChoiceMaking",
+                "#DecisionSkills",
+                "#PreferenceLearning"
+              ],
+              "estimatedTime": "10 min",
+              "age": "6-12 months",
+              "activity": {
+                "name": "Choice Making Practice",
+                "materials": [
+                  "Two different toys (available at home)",
+                  "Two different foods (available at home)",
+                  "Choice presentation tools (supplied by us)",
+                  "Cognitive development kit (supplied by us)",
+                  "Learning progress tracker (supplied by us)",
+                  "Skill assessment tools (supplied by us)"
+                ],
+                "steps": [
+                  "Present two options to baby",
+                  "Let them reach for their choice",
+                  "Respect and follow their selection",
+                  "Try different types of choices",
+                  "Celebrate their decision-making",
+                  "Use our cognitive development kit",
+                  "Follow our learning progress tracker",
+                  "Complete skill assessment",
+                  "Return materials when activity is complete"
+                ],
+                "skills": [
+                  "Choice making",
+                  "Decision skills",
+                  "Preference expression",
+                  "Independence",
+                  "Learning assessment",
+                  "Progress tracking",
+                  "Resource management"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "activityTypesMetadata": {
+    "Creative": {
+      "description": "Activities involving artistic expression, imagination, storytelling, music, and creative problem-solving",
+      "keywords": [
+        "draw",
+        "paint",
+        "story",
+        "imagine",
+        "create",
+        "design",
+        "art",
+        "craft",
+        "music",
+        "dance",
+        "theater",
+        "role-play",
+        "pretend",
+        "build",
+        "invent"
+      ],
+      "skills_developed": [
+        "Creativity",
+        "Imagination",
+        "Artistic expression",
+        "Problem-solving",
+        "Innovation"
+      ],
+      "age_appropriateness": {
+        "Infant (0-1)": "Basic sensory exploration and cause-effect play",
+        "Toddler (1-3)": "Simple pretend play, scribbling, and basic building",
+        "Preschooler (3-5)": "Imaginative play, storytelling, and creative crafts",
+        "Child (6-8)": "Complex storytelling, art projects, and creative games",
+        "Pre-Teen (9-12)": "Advanced art techniques, music composition, and design thinking",
+        "Teen (13-18)": "Digital art, performance art, and innovative design projects"
+      }
+    },
+    "Cognitive": {
+      "description": "Activities that develop thinking skills, memory, attention, logical reasoning, and mental processing abilities",
+      "keywords": [
+        "think",
+        "remember",
+        "focus",
+        "concentrate",
+        "solve",
+        "analyze",
+        "reason",
+        "plan",
+        "organize",
+        "sort",
+        "match",
+        "sequence",
+        "pattern",
+        "logic"
+      ],
+      "skills_developed": [
+        "Critical thinking",
+        "Memory",
+        "Attention",
+        "Problem-solving",
+        "Logical reasoning"
+      ],
+      "age_appropriateness": {
+        "Infant (0-1)": "Basic cause-effect understanding and object permanence",
+        "Toddler (1-3)": "Simple sorting, matching, and problem-solving",
+        "Preschooler (3-5)": "Pattern recognition, sequencing, and memory games",
+        "Child (6-8)": "Complex problem-solving, strategy games, and logical thinking",
+        "Pre-Teen (9-12)": "Advanced reasoning, critical thinking, and analytical skills",
+        "Teen (13-18)": "Abstract thinking, complex problem-solving, and strategic planning"
+      }
+    },
+    "Sensory": {
+      "description": "Activities that stimulate and develop the five senses and sensory processing abilities",
+      "keywords": [
+        "touch",
+        "feel",
+        "texture",
+        "sound",
+        "listen",
+        "smell",
+        "taste",
+        "see",
+        "look",
+        "sensory",
+        "tactile",
+        "auditory",
+        "visual",
+        "olfactory",
+        "gustatory"
+      ],
+      "skills_developed": [
+        "Sensory processing",
+        "Sensory integration",
+        "Sensory discrimination",
+        "Sensory awareness"
+      ],
+      "age_appropriateness": {
+        "Infant (0-1)": "Basic sensory exploration and stimulation",
+        "Toddler (1-3)": "Sensory play with different materials and textures",
+        "Preschooler (3-5)": "Multi-sensory experiences and sensory integration",
+        "Child (6-8)": "Complex sensory activities and sensory discrimination",
+        "Pre-Teen (9-12)": "Advanced sensory processing and sensory art",
+        "Teen (13-18)": "Sophisticated sensory experiences and sensory design"
+      }
+    },
+    "Physical": {
+      "description": "Activities that develop gross and fine motor skills, coordination, balance, and physical abilities",
+      "keywords": [
+        "move",
+        "run",
+        "jump",
+        "climb",
+        "throw",
+        "catch",
+        "balance",
+        "coordination",
+        "strength",
+        "endurance",
+        "motor",
+        "gross",
+        "fine",
+        "physical",
+        "exercise"
+      ],
+      "skills_developed": [
+        "Gross motor skills",
+        "Fine motor skills",
+        "Coordination",
+        "Balance",
+        "Physical fitness"
+      ],
+      "age_appropriateness": {
+        "Infant (0-1)": "Basic motor development and tummy time",
+        "Toddler (1-3)": "Walking, running, climbing, and basic coordination",
+        "Preschooler (3-5)": "Complex motor skills, balance, and coordination",
+        "Child (6-8)": "Advanced motor skills, sports, and physical games",
+        "Pre-Teen (9-12)": "Complex physical activities and team sports",
+        "Teen (13-18)": "Advanced physical skills, fitness, and athletic performance"
+      }
+    },
+    "Social": {
+      "description": "Activities that develop social skills, communication, teamwork, and interpersonal relationships",
+      "keywords": [
+        "share",
+        "cooperate",
+        "communicate",
+        "interact",
+        "social",
+        "emotional",
+        "bonding",
+        "relationship",
+        "empathy",
+        "friendship",
+        "teamwork",
+        "collaboration"
+      ],
+      "skills_developed": [
+        "Social skills",
+        "Emotional intelligence",
+        "Communication",
+        "Empathy",
+        "Cooperation"
+      ],
+      "age_appropriateness": {
+        "Infant (0-1)": "Basic social bonding and emotional connection",
+        "Toddler (1-3)": "Parallel play and basic social interaction",
+        "Preschooler (3-5)": "Cooperative play and social skills development",
+        "Child (6-8)": "Complex social interactions and friendship building",
+        "Pre-Teen (9-12)": "Advanced social skills and emotional intelligence",
+        "Teen (13-18)": "Complex social relationships and leadership skills"
+      }
+    },
+    "Emotional": {
+      "description": "Activities that develop emotional intelligence, self-regulation, empathy, and emotional awareness",
+      "keywords": [
+        "emotion",
+        "feel",
+        "calm",
+        "relax",
+        "empathy",
+        "self-regulation",
+        "emotional",
+        "feelings",
+        "mood",
+        "comfort",
+        "security",
+        "attachment"
+      ],
+      "skills_developed": [
+        "Emotional intelligence",
+        "Self-regulation",
+        "Empathy",
+        "Emotional awareness",
+        "Stress management"
+      ],
+      "age_appropriateness": {
+        "Infant (0-1)": "Basic emotional bonding and security",
+        "Toddler (1-3)": "Emotional expression and basic self-regulation",
+        "Preschooler (3-5)": "Emotional vocabulary and empathy development",
+        "Child (6-8)": "Complex emotional understanding and regulation",
+        "Pre-Teen (9-12)": "Advanced emotional intelligence and peer relationships",
+        "Teen (13-18)": "Sophisticated emotional processing and identity development"
+      }
+    },
+    "Language": {
+      "description": "Activities that develop speaking, reading, vocabulary, communication, and language skills",
+      "keywords": [
+        "speak",
+        "talk",
+        "read",
+        "write",
+        "vocabulary",
+        "language",
+        "communication",
+        "words",
+        "letters",
+        "reading",
+        "writing",
+        "speaking",
+        "listening",
+        "conversation"
+      ],
+      "skills_developed": [
+        "Language development",
+        "Communication",
+        "Vocabulary",
+        "Reading",
+        "Writing",
+        "Speaking"
+      ],
+      "age_appropriateness": {
+        "Infant (0-1)": "Basic sound recognition and vocalization",
+        "Toddler (1-3)": "First words, simple sentences, and basic communication",
+        "Preschooler (3-5)": "Vocabulary expansion, storytelling, and pre-reading skills",
+        "Child (6-8)": "Reading, writing, and complex communication",
+        "Pre-Teen (9-12)": "Advanced language skills, creative writing, and presentation",
+        "Teen (13-18)": "Sophisticated language use, critical reading, and advanced communication"
+      }
+    },
+    "STEM": {
+      "description": "Activities that develop science, technology, engineering, and math concepts and skills",
+      "keywords": [
+        "science",
+        "technology",
+        "engineering",
+        "math",
+        "numbers",
+        "counting",
+        "experiment",
+        "discover",
+        "explore",
+        "investigate",
+        "measure",
+        "calculate",
+        "build",
+        "construct",
+        "invent"
+      ],
+      "skills_developed": [
+        "Scientific thinking",
+        "Mathematical reasoning",
+        "Engineering design",
+        "Technology literacy",
+        "Problem-solving"
+      ],
+      "age_appropriateness": {
+        "Infant (0-1)": "Basic cause-effect exploration",
+        "Toddler (1-3)": "Simple counting and basic exploration",
+        "Preschooler (3-5)": "Number recognition, simple experiments, and building",
+        "Child (6-8)": "Basic math operations, simple science experiments, and engineering challenges",
+        "Pre-Teen (9-12)": "Advanced math concepts, technology use, and complex experiments",
+        "Teen (13-18)": "Advanced STEM concepts, programming, and innovative design"
+      }
+    },
+    "Practical": {
+      "description": "Activities that develop life skills, independence, daily tasks, and practical abilities",
+      "keywords": [
+        "practical",
+        "life skills",
+        "independence",
+        "daily",
+        "routine",
+        "self-care",
+        "responsibility",
+        "organization",
+        "planning",
+        "time management",
+        "practical skills"
+      ],
+      "skills_developed": [
+        "Life skills",
+        "Independence",
+        "Responsibility",
+        "Organization",
+        "Time management"
+      ],
+      "age_appropriateness": {
+        "Infant (0-1)": "Basic self-care routines",
+        "Toddler (1-3)": "Simple daily tasks and basic independence",
+        "Preschooler (3-5)": "More complex daily routines and responsibility",
+        "Child (6-8)": "Advanced life skills and organization",
+        "Pre-Teen (9-12)": "Complex practical skills and time management",
+        "Teen (13-18)": "Advanced life skills, career preparation, and adult independence"
+      }
+    },
+    "Adventure": {
+      "description": "Activities that involve exploration, discovery, outdoor experiences, and adventurous learning",
+      "keywords": [
+        "adventure",
+        "explore",
+        "discover",
+        "outdoor",
+        "nature",
+        "hunt",
+        "search",
+        "find",
+        "treasure",
+        "expedition",
+        "journey",
+        "adventure",
+        "exploration",
+        "discovery"
+      ],
+      "skills_developed": [
+        "Exploration",
+        "Discovery",
+        "Adventure skills",
+        "Nature appreciation",
+        "Risk assessment"
+      ],
+      "age_appropriateness": {
+        "Infant (0-1)": "Safe exploration in controlled environments",
+        "Toddler (1-3)": "Supervised outdoor exploration and discovery",
+        "Preschooler (3-5)": "Guided nature walks and simple treasure hunts",
+        "Child (6-8)": "Independent exploration and adventure games",
+        "Pre-Teen (9-12)": "Complex outdoor activities and adventure challenges",
+        "Teen (13-18)": "Advanced adventure skills, leadership, and outdoor leadership"
+      }
+    }
+  }
+}

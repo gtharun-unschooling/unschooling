@@ -1,0 +1,46 @@
+{
+  "structure": "niches",
+  "version": "1.0.0",
+  "description": "Niche-based learning content organized by subject areas",
+  "totalNiches": 63,
+  "categories": [
+    {
+      "name": "Core Academic",
+      "niches": ["finance", "communication", "mathematics", "creative-academic-writing", "history", "civics-government"]
+    },
+    {
+      "name": "Creative Arts", 
+      "niches": ["dance", "music", "arts-crafts", "design-thinking-creativity", "photography-videography", "filmmaking"]
+    },
+    {
+      "name": "Technology",
+      "niches": ["ai", "coding-programming", "robotics", "electronics", "cybersecurity", "internet-of-things-iot", "cryptocurrency-blockchain"]
+    },
+    {
+      "name": "Life Skills",
+      "niches": ["entrepreneurship", "leadership-team-building", "emotional-intelligence", "health-hygiene", "public-speaking-debate", "social-media-literacy"]
+    },
+    {
+      "name": "Physical & Social",
+      "niches": ["sports", "nature-exploration", "travel", "culture-heritage", "physical-fitness", "games-recreational-skills"]
+    },
+    {
+      "name": "Science & Engineering",
+      "niches": ["general-science", "behavioral-science", "human-biology", "electronics", "electrical-engineering-basics", "automobiles-engineering", "construction-structural-engineering"]
+    },
+    {
+      "name": "Sustainability & Environment",
+      "niches": ["sustainability-environment", "renewable-energy", "marine-biology", "agriculture-soil-science", "space-exploration"]
+    },
+    {
+      "name": "Health & Wellness",
+      "niches": ["health-hygiene", "physical-fitness", "ayurveda-natural-healing", "spirituality-devotion"]
+    },
+    {
+      "name": "Media & Communication",
+      "niches": ["photography-videography", "filmmaking", "media-production-broadcasting", "content-creation", "public-speaking-debate"]
+    }
+  ],
+  "ageGroups": ["3-5", "6-8", "9-12", "13-15", "16-18"],
+  "contentTypes": ["topics", "activities", "materials", "assessments", "progress-tracking"]
+}

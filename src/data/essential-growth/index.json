@@ -1,0 +1,150 @@
+{
+  "structure": "essential-growth",
+  "version": "2.0.0",
+  "description": "Essential Growth pillars for holistic child development",
+  "totalPillars": 18,
+  "pillars": [
+    {
+      "name": "Play & Creativity",
+      "slug": "play-creativity",
+      "color": "#fce7f3",
+      "icon": "paint-palette",
+      "description": "Fuel imagination and joyful exploration through hands-on activities and creative expression"
+    },
+    {
+      "name": "Cognitive Skills",
+      "slug": "cognitive-skills",
+      "color": "#dbeafe",
+      "icon": "brainstorm",
+      "description": "Sharpen thinking, memory, and decision-making skills"
+    },
+    {
+      "name": "Physical & Social Play",
+      "slug": "physical-social-play",
+      "color": "#d1fae5",
+      "icon": "teamwork",
+      "description": "Boost strength and social bonds through play"
+    },
+    {
+      "name": "Language & Speech",
+      "slug": "language-speech",
+      "color": "#fef3c7",
+      "icon": "speech-bubble",
+      "description": "Enhance communication and vocabulary skills"
+    },
+    {
+      "name": "Learning Tools",
+      "slug": "learning-tools",
+      "color": "#ede9fe",
+      "icon": "books",
+      "description": "Introduce creative and critical learning tools"
+    },
+    {
+      "name": "Nature & Exploration",
+      "slug": "nature-exploration",
+      "color": "#fee2e2",
+      "icon": "compass",
+      "description": "Connect deeply with nature and discoveries"
+    },
+    {
+      "name": "Mindfulness & Well-being",
+      "slug": "mindfulness-wellbeing",
+      "color": "#e0e7ff",
+      "icon": "lotus",
+      "description": "Foster inner calm, resilience, and balance"
+    },
+    {
+      "name": "Music & Rhythm",
+      "slug": "music-rhythm",
+      "color": "#ccfbf1",
+      "icon": "musical-notes",
+      "description": "Ignite creativity through sounds and movement"
+    },
+    {
+      "name": "Visual Arts",
+      "slug": "visual-arts",
+      "color": "#ffedd5",
+      "icon": "paint-brush",
+      "description": "Develop expression and creative storytelling"
+    },
+    {
+      "name": "Science & Innovation",
+      "slug": "science-innovation",
+      "color": "#cffafe",
+      "icon": "physics",
+      "description": "Spark curiosity through scientific exploration"
+    },
+    {
+      "name": "Emotional Intelligence",
+      "slug": "emotional-intelligence",
+      "color": "#ecfccb",
+      "icon": "mental-health",
+      "description": "Grow self-awareness and empathy skills"
+    },
+    {
+      "name": "Cultural Awareness",
+      "slug": "cultural-awareness",
+      "color": "#ffe4e6",
+      "icon": "global-citizen",
+      "description": "Celebrate diversity and global understanding"
+    },
+    {
+      "name": "Teamwork & Leadership",
+      "slug": "teamwork-leadership",
+      "color": "#e0f2fe",
+      "icon": "leadership",
+      "description": "Build cooperation and inspiring leadership skills"
+    },
+    {
+      "name": "Problem Solving & Logic",
+      "slug": "problem-solving-logic",
+      "color": "#fef9c3",
+      "icon": "logic",
+      "description": "Tackle challenges with smart thinking"
+    },
+    {
+      "name": "Health & Fitness",
+      "slug": "health-fitness",
+      "color": "#fae8ff",
+      "icon": "fitness",
+      "description": "Boost physical wellness and daily energy"
+    },
+    {
+      "name": "Social Skills",
+      "slug": "social-skills",
+      "color": "#d1fae5",
+      "icon": "group",
+      "description": "Strengthen connection, empathy, and respect"
+    },
+    {
+      "name": "Fine Motor Skills",
+      "slug": "fine-motor-skills",
+      "color": "#ede9fe",
+      "icon": "puzzle",
+      "description": "Refine precision and hand-eye coordination"
+    },
+    {
+      "name": "Memory & Recall",
+      "slug": "memory-recall",
+      "color": "#fef08a",
+      "icon": "mind-map",
+      "description": "Enhance remembering and quick thinking"
+    }
+  ],
+  "ageGroups": [
+    "Infant (0-1)",
+    "Toddler (1-3)",
+    "Preschooler (3-5)",
+    "Child (6-8)",
+    "Pre-Teen (9-12)",
+    "Teen (13-18)"
+  ],
+  "contentTypes": [
+    "activities",
+    "materials",
+    "assessments",
+    "progress-tracking",
+    "parent-guides"
+  ],
+  "lastUpdated": "2024-12-19"
+}

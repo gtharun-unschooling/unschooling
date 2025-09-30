@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://unschooling.in/sitemap.xml
+
+# Disallow admin pages
+Disallow: /admin/
+Disallow: /admin/*
+Disallow: /firebase-test
+Disallow: /back-button-test
+
+# Allow important pages
+Allow: /
+Allow: /about
+Allow: /plans
+Allow: /essential-growth
+Allow: /niche
+Allow: /login
+Allow: /terms
+Allow: /privacy
+Allow: /data-protection
+
+# Crawl delay
+Crawl-delay: 1

@@ -1,0 +1,141 @@
+{
+  "pillar": "Cognitive Skills",
+  "slug": "cognitive-skills",
+  "color": "#dbeafe",
+  "icon": "brainstorm",
+  "description": "Sharpen thinking, memory, and decision-making skills through progressive cognitive development activities",
+  "ageGroups": [
+    "Infant (0-1)",
+    "Toddler (1-3)",
+    "Preschooler (3-5)",
+    "Child (6-8)",
+    "Pre-Teen (9-12)",
+    "Teen (13-18)"
+  ],
+  "categories": [
+    {
+      "name": "Visual Tracking & Focus",
+      "ageGroup": "Infant (0-1)",
+      "description": "Develop visual attention and tracking abilities"
+    },
+    {
+      "name": "Cause and Effect Learning",
+      "ageGroup": "Infant (0-1)",
+      "description": "Understand that actions have consequences"
+    },
+    {
+      "name": "Memory Development",
+      "ageGroup": "Infant (0-1)",
+      "description": "Build early memory and recognition skills"
+    },
+    {
+      "name": "Problem Solving Basics",
+      "ageGroup": "Infant (0-1)",
+      "description": "Develop early problem-solving and decision-making skills"
+    },
+    {
+      "name": "Pattern Recognition",
+      "ageGroup": "Toddler (1-3)",
+      "description": "Identify and create simple patterns"
+    },
+    {
+      "name": "Memory Games",
+      "ageGroup": "Toddler (1-3)",
+      "description": "Build memory skills through fun games"
+    },
+    {
+      "name": "Problem Solving",
+      "ageGroup": "Toddler (1-3)",
+      "description": "Develop logical thinking and problem-solving skills"
+    },
+    {
+      "name": "Attention and Focus",
+      "ageGroup": "Toddler (1-3)",
+      "description": "Develop sustained attention and focus skills"
+    },
+    {
+      "name": "Logical Thinking",
+      "ageGroup": "Preschooler (3-5)",
+      "description": "Develop logical reasoning and problem-solving skills"
+    },
+    {
+      "name": "Memory Enhancement",
+      "ageGroup": "Preschooler (3-5)",
+      "description": "Strengthen memory skills through engaging activities"
+    },
+    {
+      "name": "Critical Thinking",
+      "ageGroup": "Preschooler (3-5)",
+      "description": "Develop analytical and critical thinking skills"
+    },
+    {
+      "name": "Decision Making",
+      "ageGroup": "Preschooler (3-5)",
+      "description": "Develop decision-making and choice evaluation skills"
+    },
+    {
+      "name": "Advanced Problem Solving",
+      "ageGroup": "Child (6-8)",
+      "description": "Develop complex problem-solving and analytical skills"
+    },
+    {
+      "name": "Memory Strategies",
+      "ageGroup": "Child (6-8)",
+      "description": "Learn and practice advanced memory techniques"
+    },
+    {
+      "name": "Critical Analysis",
+      "ageGroup": "Child (6-8)",
+      "description": "Develop advanced critical thinking and evaluation skills"
+    },
+    {
+      "name": "Strategic Thinking",
+      "ageGroup": "Child (6-8)",
+      "description": "Develop strategic thinking and planning skills"
+    },
+    {
+      "name": "Advanced Logic and Reasoning",
+      "ageGroup": "Pre-Teen (9-12)",
+      "description": "Develop sophisticated logical thinking and reasoning skills"
+    },
+    {
+      "name": "Advanced Memory Techniques",
+      "ageGroup": "Pre-Teen (9-12)",
+      "description": "Master sophisticated memory techniques and strategies"
+    },
+    {
+      "name": "Critical Analysis and Evaluation",
+      "ageGroup": "Pre-Teen (9-12)",
+      "description": "Develop advanced critical thinking and evaluation skills"
+    },
+    {
+      "name": "Strategic Planning and Decision Making",
+      "ageGroup": "Pre-Teen (9-12)",
+      "description": "Develop advanced strategic thinking and decision-making skills"
+    },
+    {
+      "name": "Advanced Logical Reasoning",
+      "ageGroup": "Teen (13-18)",
+      "description": "Master sophisticated logical reasoning and argumentation"
+    },
+    {
+      "name": "Advanced Memory and Learning",
+      "ageGroup": "Teen (13-18)",
+      "description": "Master sophisticated memory and learning techniques"
+    },
+    {
+      "name": "Critical Analysis and Research",
+      "ageGroup": "Teen (13-18)",
+      "description": "Develop advanced critical analysis and research skills"
+    },
+    {
+      "name": "Strategic Thinking and Leadership",
+      "ageGroup": "Teen (13-18)",
+      "description": "Develop advanced strategic thinking and leadership skills"
+    }
+  ],
+  "totalActivities": 120,
+  "totalCategories": 24,
+  "lastUpdated": "2024-12-19",
+  "status": "complete-with-activities"
+}

@@ -1,0 +1,32 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="writingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+  
+  <!-- 3D Pen/Book Icon -->
+  <circle cx="32" cy="32" r="28" fill="url(#writingGradient)" filter="url(#shadow)"/>
+  
+  <!-- Pen -->
+  <rect x="22" y="16" width="20" height="4" rx="2" fill="white" transform="rotate(45 32 18)"/>
+  <rect x="38" y="20" width="6" height="2" rx="1" fill="#8b5cf6"/>
+  
+  <!-- Paper/Book -->
+  <rect x="18" y="28" width="28" height="20" rx="2" fill="white"/>
+  <rect x="20" y="30" width="24" height="1" fill="#e5e7eb"/>
+  <rect x="20" y="33" width="20" height="1" fill="#e5e7eb"/>
+  <rect x="20" y="36" width="22" height="1" fill="#e5e7eb"/>
+  <rect x="20" y="39" width="18" height="1" fill="#e5e7eb"/>
+  
+  <!-- Ink drops -->
+  <circle cx="26" cy="24" r="1.5" fill="#374151" opacity="0.7"/>
+  <circle cx="30" cy="26" r="1" fill="#374151" opacity="0.5"/>
+  
+  <!-- Creative sparkles -->
+  <text x="32" y="52" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">✍️</text>
+</svg>

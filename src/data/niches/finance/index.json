@@ -1,0 +1,41 @@
+{
+  "niche": "Finance",
+  "slug": "finance",
+  "category": "Core Academic",
+  "heroTagline": "Let’s Make Finance Fun & Future-Proof for Kids",
+  "subHeading": "Empowering Kids to Understand Money and Build Smart Habits Early",
+  "problems": [
+    "They never learn how money works in school",
+    "They think saving is boring",
+    "They don’t get real-world practice"
+  ],
+  "approachSteps": [
+    "Playful Activities",
+    "Real-World Learning",
+    "Parental Involvement (Optional)",
+    "Weekly Kits + Progress Dashboard"
+  ],
+  "whyKidsLoveThis": [
+    "They start saving on their own!",
+    "They explain tax to their friends!"
+  ],
+  "colors": {
+    "primary": "#F39C12",
+    "secondary": "#F7DC6F",
+    "background": "#FFF9E5"
+  },
+  "illustration": "finance-hero.svg",
+  "suggestions": [
+    "Entrepreneurship",
+    "Math in Real Life"
+  ],
+  "ageGroups": [
+    "3-5",
+    "6-8",
+    "9-12",
+    "13-15",
+    "16-18"
+  ],
+  "totalTopics": 100,
+  "lastUpdated": "2025-09-26"
+}

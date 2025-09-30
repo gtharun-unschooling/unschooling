@@ -1,0 +1,3293 @@
+{
+  "ageGroups": [
+    {
+      "ageGroup": "Infant (0-1)",
+      "categories": [
+        {
+          "category": "Visual Tracking & Focus",
+          "description": "Activities that develop visual attention, tracking skills, and focus through age-appropriate visual stimuli and movement patterns. These activities help infants develop eye coordination, visual tracking abilities, and sustained attention through engaging visual experiences.",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "",
+              "objective": "Create mesmerizing visual experiences that capture toddlers' attention and help them develop tracking skills through beautiful, moving displays.",
+              "explanation": "Watch as tiny eyes follow colorful objects moving through the air, strengthening eye muscles and building the foundation for reading skills. This gentle activity develops visual tracking abilities essential for future learning.",
+              "hashtags": [
+                "#VisualTracking #FocusDevelopment #EyeCoordination #InfantDevelopment #CognitiveSkills"
+              ],
+              "estimatedTime": "3-5 minutes",
+              "age": "",
+              "activity": {
+                "name": "Colorful Mobile Watching",
+                "materials": [
+                  "Colorful mobile with high-contrast patterns, secure mounting system, adjustable height mechanism, comfortable viewing area"
+                ],
+                "steps": [
+                  "1. Hang colorful mobile above baby's crib or play area",
+                  "2. Ensure baby is lying comfortably on back",
+                  "3. Gently rotate mobile to catch baby's attention",
+                  "4. Let baby focus on moving colors and shapes",
+                  "5. Stop when baby looks away or shows fatigue",
+                  "6. Remove mobile when activity is complete"
+                ],
+                "skills": [
+                  "Visual Tracking, Eye Coordination, Focus Development, Attention Span, Visual Processing, Concentration"
+                ]
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "",
+              "objective": "Introduce infants to light and shadow concepts while developing visual tracking and focus through gentle shadow play.",
+              "explanation": "Discover the magic of light and shadows! Little ones explore how light creates shadows, learning cause and effect while developing visual perception and understanding of space and movement.",
+              "hashtags": [
+                "#ShadowPlay #LightAwareness #VisualTracking #InfantPlay #CognitiveDevelopment"
+              ],
+              "estimatedTime": "4-6 minutes",
+              "age": "",
+              "activity": {
+                "name": "Light And Shadow Play",
+                "materials": [
+                  "LED flashlight, various objects for shadow creation, white wall or screen, dimmer switch, shadow puppets"
+                ],
+                "steps": [
+                  "1. Dim room lights and use soft flashlight",
+                  "2. Place baby on soft surface facing wall",
+                  "3. Create gentle shadows on wall with hands or objects",
+                  "4. Move shadows slowly for baby to track",
+                  "5. Use soft, encouraging voice during play",
+                  "6. End when baby shows signs of tiredness"
+                ],
+                "skills": [
+                  "Visual Perception, Cause-Effect Understanding, Spatial Awareness, Light Recognition, Shadow Tracking"
+                ]
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "",
+              "objective": "Turn toddlers into skilled observers who learn to follow moving objects with their eyes, building visual tracking abilities through exciting games.",
+              "explanation": "Transform curious eyes into skilled observers! Children learn to follow moving objects, developing visual tracking skills essential for reading and sports while practicing focus and eye coordination.",
+              "hashtags": [
+                "#ObjectTracking #EyeCoordination #VisualDevelopment #InfantSkills #CognitivePlay"
+              ],
+              "estimatedTime": "3-5 minutes",
+              "age": "",
+              "activity": {
+                "name": "Moving Object Tracking",
+                "materials": [
+                  "Colorful balls, ribbons, wind-up toys, tracking cards, comfortable seating, good lighting"
+                ],
+                "steps": [
+                  "1. Use bright, contrasting colored toy or ball",
+                  "2. Place baby in comfortable seated or lying position",
+                  "3. Move object slowly from left to right in baby's line of sight",
+                  "4. Encourage baby to follow with eyes",
+                  "5. Change direction and speed gradually",
+                  "6. Stop when baby loses interest"
+                ],
+                "skills": [
+                  "Visual Tracking, Eye Movement Control, Focus Development, Object Following, Attention Span"
+                ]
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "",
+              "objective": "Introduce toddlers to the fascinating world of patterns through high-contrast visuals that stimulate their developing vision and pattern recognition.",
+              "explanation": "Introduce the fascinating world of patterns through high-contrast visuals that stimulate developing vision. Children identify simple patterns, building the foundation for mathematical thinking and problem-solving.",
+              "hashtags": [
+                "#PatternRecognition #VisualDiscrimination #HighContrast #InfantVision #CognitiveSkills"
+              ],
+              "estimatedTime": "4-6 minutes",
+              "age": "",
+              "activity": {
+                "name": "Visual Pattern Recognition",
+                "materials": [
+                  "High-contrast pattern cards, shape sorting toys, pattern blocks, visual tracking tools, comfortable workspace"
+                ],
+                "steps": [
+                  "1. Show baby high-contrast black and white patterns",
+                  "2. Hold patterns 8-12 inches from baby's face",
+                  "3. Allow baby to focus on different patterns",
+                  "4. Change patterns every 30 seconds",
+                  "5. Watch for baby's visual engagement",
+                  "6. End session when baby looks away"
+                ],
+                "skills": [
+                  "Pattern Recognition, Visual Discrimination, Shape Recognition, Sequence Understanding, Mathematical Thinking"
+                ]
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "",
+              "objective": "Build the tallest tower possible using 12 blocks within 5-10 minutes while maintaining focus.",
+              "explanation": "Build focus, one block at a time! Children construct towers using 12 blocks, developing focus, patience, and fine motor skills while learning to plan their approach and persist when blocks fall down.",
+              "hashtags": [
+                "#building #tower #concentration #toddlerlearning #cognitiveskills #2-3years #focus"
+              ],
+              "estimatedTime": "5-10 minutes",
+              "age": "",
+              "activity": {
+                "name": "Concentration Tower Challenge",
+                "materials": [
+                  "12 wooden blocks, timer, measuring tape, building mat, concentration aids, persistence tools"
+                ],
+                "steps": [
+                  "1. Line up 12 blocks on floor",
+                  "2. Start timer for 5 minutes",
+                  "3. Challenge child to build tallest tower",
+                  "4. Take photo when complete",
+                  "5. Measure height with tape",
+                  "6. Try to beat previous record"
+                ],
+                "skills": [
+                  "Concentration, Focus Development, Patience Building, Fine Motor Skills, Persistence, Planning"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Cause & Effect Learning",
+          "description": "Simple cause-and-effect activities that help infants understand that their actions create responses through safe, immediate feedback. These activities build foundational understanding of action-consequence relationships through hands-on exploration.",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "",
+              "objective": "Create musical discovery moments where toddlers learn that their actions create sounds, building understanding of cause and effect through rhythm.",
+              "explanation": "Discover the magic of cause and effect! Children learn that shaking a rattle creates sound, developing understanding of how their actions produce immediate results while building confidence and motor skills.",
+              "hashtags": [
+                "#CauseAndEffect #AuditoryProcessing #SoundLocalization #InfantResponse #SensoryPlay"
+              ],
+              "estimatedTime": "3-5 minutes",
+              "age": "",
+              "activity": {
+                "name": "Rattle Shake Response",
+                "materials": [
+                  "Various rattles with different sounds, soft textures, easy-grip handles, non-toxic materials, sound variety"
+                ],
+                "steps": [
+                  "1. Select age-appropriate rattle with soft sound",
+                  "2. Place baby in safe, comfortable position",
+                  "3. Shake rattle gently near baby's ear",
+                  "4. Wait for baby to turn toward sound",
+                  "5. Shake on other side to encourage turning",
+                  "6. Stop when baby shows overstimulation"
+                ],
+                "skills": [
+                  "Cause-Effect Reasoning, Motor Skills, Sound Recognition, Action-Response Understanding, Hand-Eye Coordination"
+                ]
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "",
+              "objective": "Transform toddlers into button-pressing explorers who discover the magic of cause and effect through interactive toys and games.",
+              "explanation": "Press buttons and watch the magic happen! Children learn that pressing buttons creates responses like lights, sounds, or movements, developing cause-and-effect thinking and finger dexterity through interactive exploration.",
+              "hashtags": [
+                "#FineMotorSkills #CauseAndEffect #ButtonPressing #HandEyeCoordination #InfantExploration"
+              ],
+              "estimatedTime": "4-6 minutes",
+              "age": "",
+              "activity": {
+                "name": "Button Press Discovery",
+                "materials": [
+                  "Large-button toys, cause-effect toys, light-up buttons, sound-making buttons, easy-press mechanisms"
+                ],
+                "steps": [
+                  "1. Use large, easy-to-press button toy",
+                  "2. Place baby in supported sitting position",
+                  "3. Show baby how to press button",
+                  "4. Guide baby's hand to button",
+                  "5. Celebrate when button makes sound",
+                  "6. End when baby loses interest"
+                ],
+                "skills": [
+                  "Cause-Effect Reasoning, Finger Dexterity, Button Manipulation, Response Recognition, Fine Motor Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "",
+              "objective": "Encourage sound making and musical exploration through safe instrument play that supports auditory development.",
+              "explanation": "Create a symphony of discovery! Children experiment with making sounds using safe instruments or toys, developing auditory awareness, rhythm sense, and learning that they can create music through their actions.",
+              "hashtags": [
+                "#SoundMaking #MusicalExploration #CauseAndEffect #AuditoryDevelopment #CreativePlay"
+              ],
+              "estimatedTime": "5-7 minutes",
+              "age": "",
+              "activity": {
+                "name": "Sound Making Fun",
+                "materials": [
+                  "Baby-safe instruments, musical toys, rhythm sticks, bells, soft drums, sound variety"
+                ],
+                "steps": [
+                  "1. Gather safe, musical instruments for babies",
+                  "2. Place baby in comfortable position",
+                  "3. Demonstrate making sounds with instruments",
+                  "4. Let baby explore and make sounds",
+                  "5. Respond positively to baby's attempts",
+                  "6. Clean up instruments when done"
+                ],
+                "skills": [
+                  "Auditory Awareness, Sound Creation, Rhythm Development, Musical Exploration, Cause-Effect Understanding"
+                ]
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "",
+              "objective": "Create sensory adventures where toddlers explore different textures and learn about the world through their sense of touch.",
+              "explanation": "Explore the world through touch! Children discover different textures like soft, rough, smooth, and bumpy materials, developing tactile awareness and learning about the world through their sense of touch.",
+              "hashtags": [
+                "#TactileProcessing #TextureRecognition #SensoryExploration #TouchResponse #InfantSensory"
+              ],
+              "estimatedTime": "4-6 minutes",
+              "age": "",
+              "activity": {
+                "name": "Touch Response Play",
+                "materials": [
+                  "Texture boards, soft fabrics, smooth stones, bumpy surfaces, temperature-safe materials, sensory exploration kit"
+                ],
+                "steps": [
+                  "1. Use different textured materials (soft, smooth, bumpy)",
+                  "2. Place baby on soft surface",
+                  "3. Gently touch baby's hands with different textures",
+                  "4. Observe baby's reactions to each texture",
+                  "5. Let baby explore textures independently",
+                  "6. Stop if baby shows discomfort"
+                ],
+                "skills": [
+                  "Tactile Awareness, Texture Recognition, Sensory Exploration, Touch Sensitivity, Material Understanding"
+                ]
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "",
+              "objective": "Help toddlers become little scientists who discover how their actions create reactions through exciting cause-and-effect experiments.",
+              "explanation": "Become little scientists discovering cause and effect! Children learn that their actions create reactions through simple games, discovering cause and effect relationships while building logical thinking and problem-solving foundations.",
+              "hashtags": [
+                "#CauseAndEffect #ActionPlanning #ProblemSolving #CognitiveDevelopment #InfantLearning"
+              ],
+              "estimatedTime": "5-7 minutes",
+              "age": "",
+              "activity": {
+                "name": "Action Consequence Games",
+                "materials": [
+                  "Pop-up toys, musical instruments, light-up toys, cause-effect games, immediate response toys"
+                ],
+                "steps": [
+                  "1. Set up simple cause-effect toy",
+                  "2. Place baby in safe position near toy",
+                  "3. Demonstrate the action (push, pull, press)",
+                  "4. Show baby the resulting effect",
+                  "5. Encourage baby to try the action",
+                  "6. Celebrate baby's successful attempts"
+                ],
+                "skills": [
+                  "Cause-Effect Reasoning, Logical Thinking, Action Planning, Consequence Understanding, Problem Solving"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Memory Development",
+          "description": "Gentle memory-building activities that develop recognition, recall, and familiarity through repetition and familiar patterns. These activities support infant memory formation and recognition skills through consistent, engaging experiences.",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "",
+              "objective": "Develop face recognition and memory skills through familiar face exposure that supports social and cognitive development.",
+              "explanation": "Build social memory and emotional connections through familiar face exposure. Children learn to recognize family members and caregivers, developing their ability to remember and respond to different people.",
+              "hashtags": [
+                "#FaceRecognition #MemoryDevelopment #SocialRecognition #VisualMemory #InfantMemory"
+              ],
+              "estimatedTime": "4-6 minutes",
+              "age": "",
+              "activity": {
+                "name": "Familiar Face Recognition",
+                "materials": [
+                  "High-quality family photos, photo albums, memory books, clear picture frames, familiar object photos"
+                ],
+                "steps": [
+                  "1. Show baby photos of familiar family members",
+                  "2. Hold photos at baby's eye level",
+                  "3. Point to faces and say names",
+                  "4. Allow baby to look at each photo",
+                  "5. Repeat names and point to features",
+                  "6. End when baby shows interest waning"
+                ],
+                "skills": [
+                  "Face Recognition, Social Memory, Emotional Connection, Person Identification, Memory Formation"
+                ]
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "",
+              "objective": "Build memory and routine recognition through consistent daily activities that support cognitive organization.",
+              "explanation": "Create security through predictable patterns! Children remember daily routines like feeding and nap times, developing memory for sequences and building confidence through familiar rhythms.",
+              "hashtags": [
+                "#RoutineBuilding #MemoryDevelopment #Anticipation #SequenceLearning #CognitiveOrganization"
+              ],
+              "estimatedTime": "10-15 minutes",
+              "age": "",
+              "activity": {
+                "name": "Routine Memory Building",
+                "materials": [
+                  "Visual schedule cards, routine charts, daily activity photos, sequence cards, memory aids"
+                ],
+                "steps": [
+                  "1. Establish simple daily routine with baby",
+                  "2. Use consistent words and actions",
+                  "3. Repeat routine elements regularly",
+                  "4. Allow baby to anticipate next steps",
+                  "5. Celebrate when baby shows recognition",
+                  "6. Maintain consistency in routine"
+                ],
+                "skills": [
+                  "Routine Recognition, Sequence Memory, Predictability Understanding, Daily Pattern Recognition, Security Building"
+                ]
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "",
+              "objective": "Develop object permanence understanding through hide-and-reveal games that support memory and cognitive development.",
+              "explanation": "Master the concept that objects still exist even when hidden! This classic developmental milestone builds memory and spatial awareness as children learn that things don't disappear just because they can't see them.",
+              "hashtags": [
+                "#ObjectPermanence #MemoryDevelopment #HideAndSeek #CognitiveDevelopment #InfantMemory"
+              ],
+              "estimatedTime": "4-6 minutes",
+              "age": "",
+              "activity": {
+                "name": "Object Permanence Play",
+                "materials": [
+                  "Favorite toys, hiding boxes, peek-a-boo props, object permanence toys, discovery containers"
+                ],
+                "steps": [
+                  "1. Use soft, colorful object",
+                  "2. Show object to baby",
+                  "3. Hide object under soft cloth",
+                  "4. Ask \"Where is it?\"",
+                  "5. Reveal object with excitement",
+                  "6. Repeat hiding and revealing game"
+                ],
+                "skills": [
+                  "Object Permanence, Memory Formation, Spatial Awareness, Hidden Object Understanding, Search Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "",
+              "objective": "Develop auditory memory and pattern recognition through repetitive songs and rhymes that support language development.",
+              "explanation": "Create musical memories that last a lifetime! Children learn familiar songs and rhymes, developing memory, language skills, and rhythm while building early literacy foundations through repetition and anticipation.",
+              "hashtags": [
+                "#AuditoryMemory #PatternRecognition #LanguageDevelopment #RhythmAwareness #MemoryRetention"
+              ],
+              "estimatedTime": "5-7 minutes",
+              "age": "",
+              "activity": {
+                "name": "Song And Rhyme Repetition",
+                "materials": [
+                  "Music player, song books, rhythm instruments, nursery rhyme props, musical memory aids"
+                ],
+                "steps": [
+                  "1. Choose simple, repetitive song or rhyme",
+                  "2. Sing or recite to baby",
+                  "3. Use hand movements or gestures",
+                  "4. Repeat same song multiple times",
+                  "5. Allow baby to show recognition",
+                  "6. End when baby shows interest waning"
+                ],
+                "skills": [
+                  "Memory Formation, Language Development, Rhythm Recognition, Repetition Learning, Musical Memory"
+                ]
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "",
+              "objective": "Develop pattern memory and recognition skills through simple pattern games that support cognitive development.",
+              "explanation": "Exercise those growing minds with pattern recognition! Children recognize repeating patterns in games and activities, developing memory and pattern recognition skills while learning to predict what comes next.",
+              "hashtags": [
+                "#PatternMemory #VisualMemory #RecognitionSkills #CognitiveProcessing #MemoryRetention"
+              ],
+              "estimatedTime": "4-6 minutes",
+              "age": "",
+              "activity": {
+                "name": "Memory Pattern Games",
+                "materials": [
+                  "Pattern cards, sequence toys, memory games, pattern blocks, repetition tools"
+                ],
+                "steps": [
+                  "1. Use simple, colorful pattern cards",
+                  "2. Show baby one pattern",
+                  "3. Hide pattern and show another",
+                  "4. Return to first pattern",
+                  "5. Observe baby's recognition",
+                  "6. Repeat with different patterns"
+                ],
+                "skills": [
+                  "Pattern Memory, Sequence Recognition, Repetition Understanding, Memory Strategies, Pattern Prediction"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Problem Solving Basics",
+          "description": "Simple problem-solving activities that introduce basic thinking skills through safe, guided exploration and discovery. These activities encourage infants to explore, experiment, and develop early reasoning abilities.",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "",
+              "objective": "Develop shape recognition and problem-solving skills through simple shape fitting activities that support cognitive development.",
+              "explanation": "Master the art of shape matching! Children learn that different shapes fit into matching holes, developing spatial reasoning and problem-solving skills through hands-on trial and error.",
+              "hashtags": [
+                "#ShapeRecognition #ProblemSolving #HandEyeCoordination #SpatialReasoning #CognitiveDevelopment"
+              ],
+              "estimatedTime": "5-7 minutes",
+              "age": "",
+              "activity": {
+                "name": "Simple Shape Fitting",
+                "materials": [
+                  "Shape sorting toys, puzzle pieces, geometric shapes, fitting games, spatial reasoning tools"
+                ],
+                "steps": [
+                  "1. Use large, simple shape sorting toy",
+                  "2. Show baby different shapes",
+                  "3. Demonstrate fitting shapes into holes",
+                  "4. Guide baby's hand to try fitting",
+                  "5. Celebrate successful attempts",
+                  "6. End when baby shows frustration"
+                ],
+                "skills": [
+                  "Shape Recognition, Spatial Reasoning, Problem Solving, Hand-Eye Coordination, Trial and Error Learning"
+                ]
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "",
+              "objective": "Develop stacking skills and problem-solving abilities through basic block play that supports motor and cognitive development.",
+              "explanation": "Build towers and discover gravity! Children stack blocks or cups, learning about balance, spatial relationships, and persistence when towers inevitably fall down.",
+              "hashtags": [
+                "#StackingSkills #ProblemSolving #HandEyeCoordination #SpatialAwareness #MotorPlanning"
+              ],
+              "estimatedTime": "5-7 minutes",
+              "age": "",
+              "activity": {
+                "name": "Basic Stacking Play",
+                "materials": [
+                  "Building blocks, stacking cups, nesting toys, balance toys, construction materials"
+                ],
+                "steps": [
+                  "1. Use large, soft stacking blocks",
+                  "2. Show baby how to stack blocks",
+                  "3. Let baby explore stacking",
+                  "4. Help when baby needs assistance",
+                  "5. Celebrate successful stacks",
+                  "6. End when baby shows frustration"
+                ],
+                "skills": [
+                  "Balance Understanding, Gravity Concepts, Spatial Reasoning, Building Skills, Persistence Development"
+                ]
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "",
+              "objective": "Encourage exploration and discovery through safe, guided exploration activities that support cognitive development.",
+              "explanation": "Unleash natural curiosity through safe exploration! Children discover their environment, developing curiosity and discovery skills while learning about objects, textures, and cause-and-effect through guided exploration.",
+              "hashtags": [
+                "#Exploration #Discovery #ProblemSolving #Curiosity #CognitiveDevelopment"
+              ],
+              "estimatedTime": "6-8 minutes",
+              "age": "",
+              "activity": {
+                "name": "Exploration Discovery",
+                "materials": [
+                  "Discovery boxes, sensory materials, exploration tools, safe objects, curiosity kits"
+                ],
+                "steps": [
+                  "1. Set up safe exploration area with various objects",
+                  "2. Let baby explore objects freely",
+                  "3. Observe baby's discoveries",
+                  "4. Respond to baby's interests",
+                  "5. Encourage continued exploration",
+                  "6. End when baby shows fatigue"
+                ],
+                "skills": [
+                  "Curiosity Development, Discovery Skills, Environmental Awareness, Exploration Confidence, Safety Understanding"
+                ]
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "",
+              "objective": "Develop puzzle-solving skills and problem-solving abilities through simple puzzle play that supports cognitive development.",
+              "explanation": "Piece together the puzzle of problem-solving! Children fit puzzle pieces together, developing spatial reasoning and problem-solving skills while learning to recognize shapes and understand how parts fit into wholes.",
+              "hashtags": [
+                "#PuzzleSolving #ProblemSolving #HandEyeCoordination #SpatialReasoning #CognitiveDevelopment"
+              ],
+              "estimatedTime": "5-7 minutes",
+              "age": "",
+              "activity": {
+                "name": "Simple Puzzle Play",
+                "materials": [
+                  "Age-appropriate puzzles, puzzle boards, piece storage, completion rewards, difficulty progression"
+                ],
+                "steps": [
+                  "1. Use large, simple puzzle with few pieces",
+                  "2. Show baby completed puzzle",
+                  "3. Remove one piece",
+                  "4. Guide baby to replace piece",
+                  "5. Celebrate successful completion",
+                  "6. End when baby shows frustration"
+                ],
+                "skills": [
+                  "Spatial Reasoning, Problem Solving, Shape Recognition, Part-Whole Understanding, Logical Thinking"
+                ]
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "",
+              "objective": "Develop critical thinking and problem-solving skills through simple thinking games that support cognitive development.",
+              "explanation": "Challenge growing minds with age-appropriate mental puzzles! Children engage in simple problem-solving activities that challenge their thinking and develop cognitive skills through fun mental challenges.",
+              "hashtags": [
+                "#CriticalThinking #ProblemSolving #CognitiveProcessing #Reasoning #MentalDevelopment"
+              ],
+              "estimatedTime": "5-7 minutes",
+              "age": "",
+              "activity": {
+                "name": "Thinking Games",
+                "materials": [
+                  "Logic puzzles, problem-solving toys, thinking games, challenge cards, mental exercise tools"
+                ],
+                "steps": [
+                  "1. Use simple thinking toy or game",
+                  "2. Demonstrate the thinking process",
+                  "3. Guide baby through simple steps",
+                  "4. Allow baby to try independently",
+                  "5. Provide support when needed",
+                  "6. End when baby shows frustration"
+                ],
+                "skills": [
+                  "Problem Solving, Logical Thinking, Mental Challenges, Cognitive Flexibility, Reasoning Skills"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ageGroup": "Toddler (1-3)",
+      "categories": [
+        {
+          "category": "Language Development",
+          "description": "Activities that develop vocabulary, communication skills, and language understanding through age-appropriate verbal interactions and word games.",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "",
+              "objective": "Turn word learning into an exciting treasure hunt where toddlers discover new words through interactive picture games that make vocabulary building feel like play.",
+              "explanation": "Build the foundation for reading success! Children learn to recognize familiar words in books and signs, connecting spoken words with written symbols and developing early literacy skills.",
+              "hashtags": [
+                "#WordRecognition #VocabularyBuilding #LanguageDevelopment #ToddlerLearning #EarlyLiteracy"
+              ],
+              "estimatedTime": "8-12 minutes",
+              "age": "",
+              "activity": {
+                "name": "Word Recognition Games",
+                "materials": [
+                  "Picture books, word cards, alphabet toys, reading materials, language development tools"
+                ],
+                "steps": [
+                  "1. Show toddler simple picture cards with words",
+                  "2. Say the word clearly and point to picture",
+                  "3. Encourage toddler to repeat the word",
+                  "4. Ask \"Where is the [word]?\"",
+                  "5. Celebrate when toddler points correctly",
+                  "6. Repeat with different words"
+                ],
+                "skills": [
+                  "Word Recognition, Early Literacy, Visual-Symbol Association, Language Development, Reading Preparation"
+                ]
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "",
+              "objective": "Create magical conversation moments where toddlers learn to express themselves and communicate their thoughts through guided, encouraging dialogue.",
+              "explanation": "Master the art of conversation! Children practice having back-and-forth conversations, learning turn-taking and social communication while developing vocabulary and confidence in expressing their thoughts.",
+              "hashtags": [
+                "#ConversationSkills #LanguageExpression #Communication #SocialInteraction #ToddlerDevelopment"
+              ],
+              "estimatedTime": "10-15 minutes",
+              "age": "",
+              "activity": {
+                "name": "Simple Conversation Practice",
+                "materials": [
+                  "Conversation starters, role-play props, communication games, social interaction tools"
+                ],
+                "steps": [
+                  "1. Engage toddler in simple conversation",
+                  "2. Ask simple questions about their day",
+                  "3. Listen carefully to their responses",
+                  "4. Expand on their words",
+                  "5. Encourage longer responses",
+                  "6. End when toddler shows fatigue"
+                ],
+                "skills": [
+                  "Conversation Skills, Turn-Taking, Social Communication, Language Expression, Listening Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "",
+              "objective": "Expand vocabulary through interactive object naming and recognition games that support language development.",
+              "explanation": "Expand word power through play! Children learn new words through interaction and play, expanding their language skills while practicing using words in context and building communication confidence.",
+              "hashtags": [
+                "#VocabularyBuilding #ObjectRecognition #LanguageLearning #ToddlerPlay #CognitiveDevelopment"
+              ],
+              "estimatedTime": "12-18 minutes",
+              "age": "",
+              "activity": {
+                "name": "Vocabulary Building Play",
+                "materials": [
+                  "Vocabulary cards, word games, language toys, picture dictionaries, word-building materials"
+                ],
+                "steps": [
+                  "1. Use everyday objects around the house",
+                  "2. Name each object clearly",
+                  "3. Encourage toddler to repeat the name",
+                  "4. Ask toddler to find objects",
+                  "5. Use objects in simple sentences",
+                  "6. Celebrate new words learned"
+                ],
+                "skills": [
+                  "Vocabulary Expansion, Word Learning, Language Acquisition, Communication Confidence, Word Usage"
+                ]
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "",
+              "objective": "Introduce toddlers to the musical world of sound patterns through rhythm games that teach them to recognize and create different sound sequences.",
+              "explanation": "Tune into the rhythm of learning! Children learn to recognize and respond to different sound patterns and rhythms, developing auditory discrimination skills and musical awareness.",
+              "hashtags": [
+                "#SoundRecognition #PatternRecognition #AuditoryProcessing #ToddlerGames #CognitiveDevelopment"
+              ],
+              "estimatedTime": "8-12 minutes",
+              "age": "",
+              "activity": {
+                "name": "Sound Pattern Recognition",
+                "materials": [
+                  "Sound recognition toys, musical instruments, audio materials, rhythm tools, sound pattern games"
+                ],
+                "steps": [
+                  "1. Make different sounds (clapping, tapping, humming)",
+                  "2. Ask toddler to listen carefully",
+                  "3. Have toddler repeat the sound",
+                  "4. Create simple sound patterns",
+                  "5. Ask toddler to continue the pattern",
+                  "6. Celebrate pattern recognition"
+                ],
+                "skills": [
+                  "Auditory Discrimination, Sound Pattern Recognition, Rhythm Awareness, Musical Development, Listening Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "",
+              "objective": "Help toddlers become confident speakers by creating fun imitation games that encourage them to copy and practice new words and phrases.",
+              "explanation": "Copy, learn, and grow! Children practice copying sounds, words, and gestures, developing language and communication skills while learning to mimic and respond to verbal cues.",
+              "hashtags": [
+                "#LanguageImitation #SpeechDevelopment #Communication #ToddlerLearning #LanguageSkills"
+              ],
+              "estimatedTime": "6-10 minutes",
+              "age": "",
+              "activity": {
+                "name": "Language Imitation Games",
+                "materials": [
+                  "Imitation toys, sound-making devices, language games, verbal expression tools, communication aids"
+                ],
+                "steps": [
+                  "1. Use simple, clear phrases",
+                  "2. Say phrase slowly and clearly",
+                  "3. Encourage toddler to repeat",
+                  "4. Use gestures to help understanding",
+                  "5. Celebrate successful imitation",
+                  "6. Gradually increase phrase complexity"
+                ],
+                "skills": [
+                  "Language Imitation, Sound Production, Communication Skills, Verbal Expression, Language Confidence"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Memory and Recall",
+          "description": "Activities that develop memory skills, recall abilities, and pattern recognition through simple memory games and repetition activities.",
+          "activities": [
+            {
+              "topicNumber": 6,
+              "topic": "",
+              "objective": "Help toddlers discover the joy of finding hidden treasures while building memory skills through exciting hide-and-seek adventures that make learning feel like play.",
+              "explanation": "Train memory like a detective! Children remember where objects are hidden, developing spatial memory and recall skills while learning to use memory to solve problems and find things.",
+              "hashtags": [
+                "#memory #hideseek #objectpermanence #toddlerlearning #cognitiveskills #20-30months #recall"
+              ],
+              "estimatedTime": "10-15 minutes",
+              "age": "",
+              "activity": {
+                "name": "Hide and Seek Memory",
+                "materials": [
+                  "Memory games, hiding objects, search tools, memory aids, recall practice materials"
+                ],
+                "steps": [
+                  "1. Hide familiar objects in easy-to-find places",
+                  "2. Tell toddler what to look for",
+                  "3. Give simple clues if needed",
+                  "4. Celebrate when objects are found",
+                  "5. Ask toddler to remember where objects were",
+                  "6. Repeat with different objects"
+                ],
+                "skills": [
+                  "Spatial Memory, Object Location Memory, Search Skills, Memory Strategies, Recall Development"
+                ]
+              }
+            },
+            {
+              "topicNumber": 7,
+              "topic": "",
+              "objective": "Introduce toddlers to the magical world of patterns and sequences through colorful, hands-on activities that spark curiosity about order and arrangement.",
+              "explanation": "Your toddler learns to follow simple sequences and routines, developing memory and logical thinking. They practice completing multi-step activities in order.",
+              "hashtags": [
+                "#sequences #patterns #logicalthinking #toddlerlearning #cognitiveskills #24-36months #memory"
+              ],
+              "estimatedTime": "8-12 minutes",
+              "age": "",
+              "activity": {
+                "name": "Simple Sequence Games",
+                "materials": [
+                  "Sequence cards, routine charts, daily activity photos, pattern blocks, sequence tools"
+                ],
+                "steps": [
+                  "1. Create simple sequences with 2-3 items",
+                  "2. Show toddler the sequence",
+                  "3. Mix up the items",
+                  "4. Ask toddler to recreate the sequence",
+                  "5. Provide help if needed",
+                  "6. Celebrate successful sequences"
+                ],
+                "skills": [
+                  "Sequence Recognition, Pattern Following, Order Understanding, Step-by-Step Thinking, Sequential Processing"
+                ]
+              }
+            },
+            {
+              "topicNumber": 8,
+              "topic": "",
+              "objective": "Transform everyday objects into memory-building tools by creating fun guessing games that help toddlers remember and recognize items from their daily lives.",
+              "explanation": "Connect names with objects! Children remember and identify familiar objects from memory, developing recall skills and object recognition while learning to connect names with objects.",
+              "hashtags": [
+                "#memory #recall #recognition #toddlerlearning #cognitiveskills #20-30months #vocabulary"
+              ],
+              "estimatedTime": "6-10 minutes",
+              "age": "",
+              "activity": {
+                "name": "Familiar Object Recall",
+                "materials": [
+                  "Familiar objects, memory aids, recall games, object recognition tools, memory practice materials"
+                ],
+                "steps": [
+                  "1. Show toddler 3-4 familiar objects",
+                  "2. Name each object clearly",
+                  "3. Cover objects with a cloth",
+                  "4. Ask toddler to name objects from memory",
+                  "5. Reveal objects to check answers",
+                  "6. Celebrate correct recalls"
+                ],
+                "skills": [
+                  "Object Recognition, Memory Retrieval, Name-Object Association, Recall Skills, Memory Confidence"
+                ]
+              }
+            },
+            {
+              "topicNumber": 9,
+              "topic": "",
+              "objective": "Create musical memory adventures where toddlers learn to remember lyrics, rhythms, and melodies through joyful singing and rhyming experiences.",
+              "explanation": "Sing memories into existence! Children remember and sing familiar songs and rhymes, developing memory, language, and musical skills while building confidence through repetition and recognition.",
+              "hashtags": [
+                "#memory #songs #rhymes #music #toddlerlearning #cognitiveskills #18-30months #auditory"
+              ],
+              "estimatedTime": "10-15 minutes",
+              "age": "",
+              "activity": {
+                "name": "Song and Rhyme Memory",
+                "materials": [
+                  "Musical memory games, song materials, rhythm tools, memory aids, musical recall practice"
+                ],
+                "steps": [
+                  "1. Sing familiar songs or nursery rhymes",
+                  "2. Encourage toddler to join in",
+                  "3. Pause and let toddler fill in words",
+                  "4. Repeat songs multiple times",
+                  "5. Celebrate when toddler remembers words",
+                  "6. Add new songs gradually"
+                ],
+                "skills": [
+                  "Musical Memory, Language Memory, Rhythm Memory, Repetition Skills, Memory Strategies"
+                ]
+              }
+            },
+            {
+              "topicNumber": 10,
+              "topic": "",
+              "objective": "Turn picture viewing into an engaging memory challenge where toddlers learn to remember and recall visual information through fun, colorful activities.",
+              "explanation": "Exercise visual memory muscles! Children remember pictures they've seen, developing visual memory and attention skills while practicing focusing on details and recalling information.",
+              "hashtags": [
+                "#memory #pictures #visual #recognition #toddlerlearning #cognitiveskills #20-30months #recall"
+              ],
+              "estimatedTime": "6-10 minutes",
+              "age": "",
+              "activity": {
+                "name": "Picture Memory Games",
+                "materials": [
+                  "Memory cards, picture games, visual memory tools, recall practice materials, memory strategies"
+                ],
+                "steps": [
+                  "1. Show toddler 2-3 simple pictures",
+                  "2. Name each picture clearly",
+                  "3. Remove pictures from view",
+                  "4. Ask toddler to remember what they saw",
+                  "5. Show pictures again to check",
+                  "6. Celebrate correct memories"
+                ],
+                "skills": [
+                  "Visual Memory, Image Recognition, Memory Strategies, Attention to Detail, Recall Skills"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Problem Solving Basics",
+          "description": "Simple problem-solving activities that introduce basic thinking skills through safe, guided exploration and discovery.",
+          "activities": [
+            {
+              "topicNumber": 11,
+              "topic": "",
+              "objective": "Guide toddlers through shape-matching adventures that teach them to recognize, sort, and categorize different shapes while having fun with colorful toys.",
+              "explanation": "Children explore the world of shapes through hands-on sorting activities that build categorization skills and spatial reasoning. This engaging game helps little ones recognize and group similar shapes together while developing early mathematical thinking.",
+              "hashtags": [
+                "#shapes #sorting #problemsolving #toddlerlearning #cognitiveskills #24-36months #classification"
+              ],
+              "estimatedTime": "10-15 minutes",
+              "age": "",
+              "activity": {
+                "name": "Simple Shape Sorting",
+                "materials": [
+                  "Shape sorting toys, puzzle pieces, geometric shapes, fitting games, spatial reasoning tools"
+                ],
+                "steps": [
+                  "1. Provide simple shape sorting toy",
+                  "2. Show toddler how to match shapes",
+                  "3. Let toddler try independently",
+                  "4. Provide gentle guidance if needed",
+                  "5. Celebrate successful matches",
+                  "6. Encourage continued sorting"
+                ],
+                "skills": [
+                  "Shape Recognition, Categorization, Classification, Visual Discrimination, Sorting Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 12,
+              "topic": "",
+              "objective": "Introduce toddlers to the satisfaction of puzzle-solving through age-appropriate challenges that build spatial reasoning and problem-solving confidence.",
+              "explanation": "Puzzle time becomes an adventure in problem-solving as children fit pieces together and develop spatial reasoning skills. Through trial and error, they learn to recognize patterns and understand how different parts create a complete picture.",
+              "hashtags": [
+                "#puzzles #problemsolving #spatial #toddlerlearning #cognitiveskills #24-36months #persistence"
+              ],
+              "estimatedTime": "8-12 minutes",
+              "age": "",
+              "activity": {
+                "name": "Basic Puzzle Play",
+                "materials": [
+                  "Age-appropriate puzzles, puzzle boards, piece storage, completion rewards, difficulty progression"
+                ],
+                "steps": [
+                  "1. Provide simple 2-4 piece puzzles",
+                  "2. Show toddler how pieces fit together",
+                  "3. Let toddler try independently",
+                  "4. Provide help when frustrated",
+                  "5. Celebrate completed puzzles",
+                  "6. Gradually increase difficulty"
+                ],
+                "skills": [
+                  "Problem Solving, Spatial Reasoning, Part-Whole Understanding, Logical Thinking, Persistence"
+                ]
+              }
+            },
+            {
+              "topicNumber": 13,
+              "topic": "",
+              "objective": "Spark toddlers' curiosity about how things work by creating exciting cause-and-effect experiments that reveal the magic of action and reaction.",
+              "explanation": "Little scientists discover the magic of cause and effect through simple experiments that spark curiosity and logical thinking. Children learn that their actions create reactions, building essential understanding of how the world works.",
+              "hashtags": [
+                "#causeandeffect #exploration #problemsolving #toddlerlearning #cognitiveskills #18-30months #discovery"
+              ],
+              "estimatedTime": "10-15 minutes",
+              "age": "",
+              "activity": {
+                "name": "Cause and Effect Discovery",
+                "materials": [
+                  "Pop-up toys, musical instruments, light-up toys, cause-effect games, immediate response toys"
+                ],
+                "steps": [
+                  "1. Use simple cause-effect toys",
+                  "2. Demonstrate the action and result",
+                  "3. Let toddler try the action",
+                  "4. Celebrate when effect occurs",
+                  "5. Encourage repeated attempts",
+                  "6. Explore different cause-effect relationships"
+                ],
+                "skills": [
+                  "Cause-Effect Reasoning, Scientific Thinking, Experimentation, Hypothesis Testing, Discovery Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "",
+              "objective": "Inspire toddlers to become little architects by encouraging them to build, stack, and create structures that teach spatial reasoning and creativity.",
+              "explanation": "Construction play becomes a lesson in physics as children build structures using blocks and materials. They explore concepts of balance, gravity, and engineering while developing spatial reasoning and fine motor skills.",
+              "hashtags": [
+                "#building #construction #spatial #toddlerlearning #cognitiveskills #20-36months #creativity"
+              ],
+              "estimatedTime": "12-18 minutes",
+              "age": "",
+              "activity": {
+                "name": "Simple Building Games",
+                "materials": [
+                  "Building blocks, stacking cups, nesting toys, balance toys, construction materials"
+                ],
+                "steps": [
+                  "1. Provide large, safe building blocks",
+                  "2. Show toddler how to stack blocks",
+                  "3. Let toddler build freely",
+                  "4. Encourage different structures",
+                  "5. Celebrate successful builds",
+                  "6. Discuss what was built"
+                ],
+                "skills": [
+                  "Spatial Reasoning, Engineering Thinking, Balance Understanding, Construction Skills, Creativity"
+                ]
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "",
+              "objective": "Encourage exploration and discovery through safe, guided exploration activities that support cognitive development.",
+              "explanation": "Adventure awaits as children tackle age-appropriate exploration challenges that build problem-solving and discovery skills. Each challenge encourages curiosity and persistence while teaching them to approach new situations with confidence.",
+              "hashtags": [
+                "#exploration #discovery #curiosity #toddlerlearning #cognitiveskills #18-30months #investigation"
+              ],
+              "estimatedTime": "15-20 minutes",
+              "age": "",
+              "activity": {
+                "name": "Exploration Challenges",
+                "materials": [
+                  "Discovery boxes, sensory materials, exploration tools, safe objects, curiosity kits"
+                ],
+                "steps": [
+                  "1. Set up safe exploration area with various objects",
+                  "2. Let toddler explore freely",
+                  "3. Observe what interests them",
+                  "4. Ask questions about discoveries",
+                  "5. Encourage continued exploration",
+                  "6. Discuss findings together"
+                ],
+                "skills": [
+                  "Curiosity Development, Discovery Skills, Environmental Awareness, Exploration Confidence, Safety Understanding"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Attention and Focus",
+          "description": "Activities that develop attention span, focus, and concentration through engaging, age-appropriate activities.",
+          "activities": [
+            {
+              "topicNumber": 16,
+              "topic": "",
+              "objective": "Build the tallest tower possible using 12 blocks within 5-10 minutes while maintaining focus.",
+              "explanation": "Build focus, one block at a time! Children construct towers using 12 blocks, developing focus, patience, and fine motor skills while learning to plan their approach and persist when blocks fall down.",
+              "hashtags": [
+                "#building #tower #concentration #toddlerlearning #cognitiveskills #2-3years #focus"
+              ],
+              "estimatedTime": "5-10 minutes",
+              "age": "",
+              "activity": {
+                "name": "Concentration Tower Challenge",
+                "materials": [
+                  "12 wooden blocks, timer, measuring tape, building mat, concentration aids, persistence tools"
+                ],
+                "steps": [
+                  "1. Line up 12 blocks on floor",
+                  "2. Start timer for 5 minutes",
+                  "3. Challenge child to build tallest tower",
+                  "4. Take photo when complete",
+                  "5. Measure height with tape",
+                  "6. Try to beat previous record"
+                ],
+                "skills": [
+                  "Concentration, Focus Development, Patience Building, Fine Motor Skills, Persistence, Planning"
+                ]
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "",
+              "objective": "Complete 2-3 age-appropriate puzzles within 8-12 minutes to build focus and task completion skills.",
+              "explanation": "Puzzle mastery develops through age-appropriate challenges that build spatial reasoning and persistence. Children learn to recognize patterns, fit pieces together, and develop the patience needed to complete complex tasks.",
+              "hashtags": [
+                "#puzzles #attention #completion #toddlerlearning #cognitiveskills #2-3years #focus"
+              ],
+              "estimatedTime": "8-12 minutes",
+              "age": "",
+              "activity": {
+                "name": "Puzzle Master Quest",
+                "materials": [
+                  "Age-appropriate puzzles, puzzle boards, piece storage, completion rewards, difficulty progression"
+                ],
+                "steps": [
+                  "1. Set up 3 puzzles on table",
+                  "2. Start 5-minute timer",
+                  "3. Guide child to complete first puzzle",
+                  "4. Give sticker and celebrate",
+                  "5. Start timer for second puzzle",
+                  "6. Continue until all puzzles complete or time ends"
+                ],
+                "skills": [
+                  "Problem Solving, Fine Motor Skills, Spatial Reasoning, Completion Skills, Persistence"
+                ]
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "",
+              "objective": "Match 6 pairs of picture cards within 5-8 minutes to develop memory and concentration skills.",
+              "explanation": "Memory skills get a workout through this exciting card-matching game that builds concentration and recall abilities. Children learn to remember locations and recognize similarities while having fun with friends and family.",
+              "hashtags": [
+                "#memory #matching #concentration #toddlerlearning #cognitiveskills #2-3years #focus"
+              ],
+              "estimatedTime": "5-8 minutes",
+              "age": "",
+              "activity": {
+                "name": "Memory Match Adventure",
+                "materials": [
+                  "Memory cards, picture games, visual memory tools, recall practice materials, memory strategies"
+                ],
+                "steps": [
+                  "1. Place 6 pairs of cards face up",
+                  "2. Show child how to match pairs",
+                  "3. Start timer for 5 minutes",
+                  "4. Let child find and match pairs",
+                  "5. Celebrate each match",
+                  "6. Count total matches completed"
+                ],
+                "skills": [
+                  "Memory Training, Visual Matching, Concentration, Attention to Detail, Recognition Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "",
+              "objective": "Create and act out a 15-25 minute story using 5 props to develop sustained imagination and focus.",
+              "explanation": "Creativity blooms as children create simple stories using props and toys, developing both language skills and imagination. They learn to sequence events and express their ideas through engaging storytelling activities.",
+              "hashtags": [
+                "#storytelling #imagination #sustainedplay #toddlerlearning #cognitiveskills #2-3years #creativity"
+              ],
+              "estimatedTime": "15-25 minutes",
+              "age": "",
+              "activity": {
+                "name": "Story Studio Workshop",
+                "materials": [
+                  "Storytelling props, character toys, scene materials, creative expression tools, narrative aids"
+                ],
+                "steps": [
+                  "1. Set up 5 props in play area",
+                  "2. Start timer for 20 minutes",
+                  "3. Ask child to create story using props",
+                  "4. Act out story together",
+                  "5. Use all props in the story",
+                  "6. Take photos of story scenes"
+                ],
+                "skills": [
+                  "Creative Thinking, Language Development, Imagination, Storytelling, Narrative Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "",
+              "objective": "Sort 20 objects into 4 color groups within 6-10 minutes to develop focus and classification skills.",
+              "explanation": "The world of colors comes alive through hands-on sorting activities that build categorization skills and color recognition. Children learn to group similar colors together while developing early classification abilities.",
+              "hashtags": [
+                "#colors #sorting #classification #toddlerlearning #cognitiveskills #2-3years #focus"
+              ],
+              "estimatedTime": "6-10 minutes",
+              "age": "",
+              "activity": {
+                "name": "Color Explorer Games",
+                "materials": [
+                  "Color sorting toys, colored objects, sorting containers, color recognition tools, categorization aids"
+                ],
+                "steps": [
+                  "1. Mix 20 colored objects together",
+                  "2. Set up 4 color-labeled containers",
+                  "3. Start timer for 8 minutes",
+                  "4. Guide child to sort by color",
+                  "5. Count objects in each container",
+                  "6. Celebrate when all sorted correctly"
+                ],
+                "skills": [
+                  "Color Recognition, Categorization, Sorting Skills, Visual Discrimination, Classification"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ageGroup": "Preschooler (3-5)",
+      "categories": [
+        {
+          "category": "Critical Thinking",
+          "description": "Activities that develop critical thinking skills, reasoning, and logical problem-solving through age-appropriate challenges.",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "",
+              "objective": "Solve 3 mystery cases using logical clues to find the missing items within 20 minutes.",
+              "explanation": "Young detectives embark on exciting mystery-solving adventures that build critical thinking and deductive reasoning skills. Children learn to gather clues, analyze evidence, and make logical connections while having fun solving age-appropriate mysteries.",
+              "hashtags": [
+                "#detective #mystery #logicalreasoning #preschoolerlearning #cognitiveskills #3-5years #deduction"
+              ],
+              "estimatedTime": "20-25 minutes",
+              "age": "",
+              "activity": {
+                "name": "Detective Mystery Challenge",
+                "materials": [
+                  "Mystery props, clue cards, detective tools, investigation materials, problem-solving games"
+                ],
+                "steps": [
+                  "1. Set up 3 mystery scenarios",
+                  "2. Read first mystery aloud",
+                  "3. Follow clues logically",
+                  "4. Make deductions",
+                  "5. Solve each mystery",
+                  "6. Celebrate detective success"
+                ],
+                "skills": [
+                  "Logical Reasoning, Evidence Analysis, Problem Solving, Deductive Thinking, Investigation Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "",
+              "objective": "Analyze cause and effect relationships in everyday situations to develop logical thinking and understanding of consequences.",
+              "explanation": "Little analysts explore the fascinating world of cause and effect through hands-on experiments and real-world examples. Children develop logical thinking skills as they discover how actions create reactions and learn to predict outcomes.",
+              "hashtags": [
+                "#causeandeffect #analysis #reasoning #preschoolerlearning #cognitiveskills #3-5years #logic"
+              ],
+              "estimatedTime": "15-20 minutes",
+              "age": "",
+              "activity": {
+                "name": "Cause and Effect Analysis",
+                "materials": [
+                  "Analysis cards, consequence examples, logical thinking tools, cause-effect games"
+                ],
+                "steps": [
+                  "1. Present a familiar situation",
+                  "2. Ask what happened (effect)",
+                  "3. Ask why it happened (cause)",
+                  "4. Discuss the relationship",
+                  "5. Practice with different scenarios",
+                  "6. Celebrate understanding"
+                ],
+                "skills": [
+                  "Analytical Thinking, Cause-Effect Reasoning, Scientific Method, Hypothesis Testing, Critical Analysis"
+                ]
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "",
+              "objective": "Plan a family dinner menu, make ingredient decisions, and organize cooking tasks within 25 minutes.",
+              "explanation": "Future restaurateurs take charge in this engaging role-play activity that builds planning, organization, and social skills. Children learn to manage multiple tasks, take orders, and provide excellent customer service while developing leadership abilities.",
+              "hashtags": [
+                "#restaurantmanager #decisionmaking #planning #preschoolerlearning #cognitiveskills #3-5years #organization"
+              ],
+              "estimatedTime": "25-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Family Restaurant Manager",
+                "materials": [
+                  "Restaurant props, order forms, menu cards, role-play materials, management tools"
+                ],
+                "steps": [
+                  "1. Review family food preferences",
+                  "2. Plan 3-course menu",
+                  "3. Choose ingredients",
+                  "4. Organize cooking tasks",
+                  "5. Create cooking schedule",
+                  "6. Celebrate restaurant opening"
+                ],
+                "skills": [
+                  "Planning Skills, Organization, Time Management, Responsibility, Multi-Task Management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "",
+              "objective": "Solve 4 puzzles to escape from a themed room within 30 minutes using teamwork and problem-solving.",
+              "explanation": "Adventure seekers work together to solve puzzles and escape from exciting themed rooms. This collaborative experience builds teamwork skills, creative problem-solving, and the ability to think outside the box while having thrilling fun.",
+              "hashtags": [
+                "#escaperoom #problemsolving #teamwork #preschoolerlearning #cognitiveskills #3-5years #adventure"
+              ],
+              "estimatedTime": "30-35 minutes",
+              "age": "",
+              "activity": {
+                "name": "Escape Room Adventure",
+                "materials": [
+                  "Puzzle pieces, escape room props, teamwork tools, problem-solving games, adventure materials"
+                ],
+                "steps": [
+                  "1. Set up escape room theme",
+                  "2. Present first puzzle challenge",
+                  "3. Work through puzzles systematically",
+                  "4. Use teamwork for solutions",
+                  "5. Unlock final escape",
+                  "6. Celebrate successful escape"
+                ],
+                "skills": [
+                  "Problem Solving, Teamwork, Logical Reasoning, Puzzle Solving, Escape Strategy"
+                ]
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "",
+              "objective": "Solve puzzles that require logical reasoning and critical thinking to develop analytical and reasoning skills.",
+              "explanation": "Puzzle masters tackle challenging logic problems that build reasoning and problem-solving abilities. Children learn systematic approaches to complex challenges while developing the persistence needed to overcome obstacles.",
+              "hashtags": [
+                "#criticalthinking #puzzles #logic #preschoolerlearning #cognitiveskills #3-5years #reasoning"
+              ],
+              "estimatedTime": "15-20 minutes",
+              "age": "",
+              "activity": {
+                "name": "Critical Thinking Puzzles",
+                "materials": [
+                  "Logic puzzles, reasoning games, critical thinking tools, problem-solving cards"
+                ],
+                "steps": [
+                  "1. Present a simple logic puzzle",
+                  "2. Guide child through reasoning",
+                  "3. Ask thinking questions",
+                  "4. Work through solution together",
+                  "5. Celebrate logical thinking",
+                  "6. Try more complex puzzles"
+                ],
+                "skills": [
+                  "Critical Thinking, Logical Reasoning, Problem Analysis, Solution Finding, Mental Challenges"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Memory Enhancement",
+          "description": "Advanced memory activities that develop recall, recognition, and memory strategies through engaging games.",
+          "activities": [
+            {
+              "topicNumber": 6,
+              "topic": "",
+              "objective": "Complete 5 memory challenges using different techniques to earn Memory Olympics gold medal within 25 minutes.",
+              "explanation": "Memory athletes train for the ultimate recall challenge through fun competitive games that build memory skills and confidence. Children develop recall strategies while enjoying the excitement of friendly competition.",
+              "hashtags": [
+                "#memoryolympics #techniques #challenges #preschoolerlearning #cognitiveskills #3-5years #achievement"
+              ],
+              "estimatedTime": "25-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Memory Olympics Training",
+                "materials": [
+                  "Memory games, recall practice tools, memory strategies guide, competitive elements"
+                ],
+                "steps": [
+                  "1. Set up 5 memory stations",
+                  "2. Learn memory techniques",
+                  "3. Complete visual memory challenge",
+                  "4. Master sequence memory",
+                  "5. Conquer story memory",
+                  "6. Earn Memory Olympics gold medal"
+                ],
+                "skills": [
+                  "Memory Training, Recall Practice, Memory Strategies, Concentration, Mental Fitness"
+                ]
+              }
+            },
+            {
+              "topicNumber": 7,
+              "topic": "",
+              "objective": "Find 8 hidden memory treasures by recalling specific details about familiar objects within 20 minutes.",
+              "explanation": "Treasure hunters embark on memory-powered adventures that combine recall skills with exciting exploration. Children develop memory abilities while following clues and discovering hidden treasures.",
+              "hashtags": [
+                "#memorytreasurehunt #recall #attention #preschoolerlearning #cognitiveskills #3-5years #hunting"
+              ],
+              "estimatedTime": "20-25 minutes",
+              "age": "",
+              "activity": {
+                "name": "Memory Treasure Hunt",
+                "materials": [
+                  "Treasure hunt props, memory clues, adventure materials, recall practice tools"
+                ],
+                "steps": [
+                  "1. Set up 8 familiar objects",
+                  "2. Create memory-based treasure map",
+                  "3. Give memory clues",
+                  "4. Hunt for treasures using recall",
+                  "5. Find all 8 treasures",
+                  "6. Celebrate successful treasure hunt"
+                ],
+                "skills": [
+                  "Memory Challenges, Spatial Memory, Search Skills, Recall Techniques, Adventure Learning"
+                ]
+              }
+            },
+            {
+              "topicNumber": 8,
+              "topic": "",
+              "objective": "Master 5 different pattern types and create original patterns within 25 minutes to earn Pattern Master certificate.",
+              "explanation": "Pattern detectives master the art of sequence recognition through engaging challenges that build prediction and extension skills. Children learn to identify patterns and predict what comes next while developing logical thinking.",
+              "hashtags": [
+                "#patternmaster #recognition #creativity #preschoolerlearning #cognitiveskills #3-5years #mastery"
+              ],
+              "estimatedTime": "25-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Pattern Master Challenge",
+                "materials": [
+                  "Pattern cards, sequence materials, prediction tools, recognition games"
+                ],
+                "steps": [
+                  "1. Learn 5 pattern types",
+                  "2. Practice pattern recognition",
+                  "3. Create pattern sequences",
+                  "4. Design original patterns",
+                  "5. Master all pattern types",
+                  "6. Earn Pattern Master certificate"
+                ],
+                "skills": [
+                  "Pattern Recognition, Sequence Understanding, Mathematical Thinking, Visual Processing, Pattern Creation"
+                ]
+              }
+            },
+            {
+              "topicNumber": 9,
+              "topic": "",
+              "objective": "Act out 3 complete story sequences from memory and direct family members in the performance.",
+              "explanation": "Storytellers bring tales to life through theatrical performances that build narrative and sequencing skills. Children learn to organize events in logical order while developing creativity and expressive language.",
+              "hashtags": [
+                "#storytheater #sequentialmemory #performance #preschoolerlearning #cognitiveskills #3-5years #theater"
+              ],
+              "estimatedTime": "25-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Story Sequence Theater",
+                "materials": [
+                  "Story props, sequence cards, theater materials, narrative tools"
+                ],
+                "steps": [
+                  "1. Choose 3 familiar stories",
+                  "2. Memorize story sequences",
+                  "3. Gather theater props",
+                  "4. Direct family in performance",
+                  "5. Act out all 3 stories",
+                  "6. Celebrate theatrical success"
+                ],
+                "skills": [
+                  "Sequential Thinking, Storytelling, Language Development, Narrative Skills, Creative Expression"
+                ]
+              }
+            },
+            {
+              "topicNumber": 10,
+              "topic": "",
+              "objective": "Complete 6 memory exercises using different techniques to build memory strength and earn Memory Gym membership.",
+              "explanation": "Memory athletes hit the gym for fun fitness-themed challenges that build recall strength and endurance. Children develop memory muscles through engaging workout activities that make learning feel like play.",
+              "hashtags": [
+                "#memorygym #techniques #training #preschoolerlearning #cognitiveskills #3-5years #fitness"
+              ],
+              "estimatedTime": "25-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Memory Gym Workout",
+                "materials": [
+                  "Memory fitness tools, workout props, recall exercises, endurance games"
+                ],
+                "steps": [
+                  "1. Set up 6 memory stations",
+                  "2. Learn memory techniques",
+                  "3. Complete visual memory workout",
+                  "4. Master auditory memory training",
+                  "5. Conquer tactile memory challenge",
+                  "6. Earn Memory Gym membership"
+                ],
+                "skills": [
+                  "Memory Exercise, Cognitive Fitness, Recall Training, Mental Stamina, Memory Strategies"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Language and Communication",
+          "description": "Advanced language activities that develop communication skills, vocabulary, and expressive language.",
+          "activities": [
+            {
+              "topicNumber": 11,
+              "topic": "",
+              "objective": "Learn and master 10 new advanced words through magical word games and earn Word Wizard certification.",
+              "explanation": "Word wizards embark on magical language adventures that build vocabulary and communication skills. Children develop confidence in using words creatively while exploring the power of language through fun activities.",
+              "hashtags": [
+                "#wordwizard #vocabulary #language #preschoolerlearning #cognitiveskills #3-5years #mastery"
+              ],
+              "estimatedTime": "20-25 minutes",
+              "age": "",
+              "activity": {
+                "name": "Word Wizard Academy",
+                "materials": [
+                  "Word cards, vocabulary tools, language games, magical props"
+                ],
+                "steps": [
+                  "1. Choose 10 advanced words",
+                  "2. Learn word meanings",
+                  "3. Practice pronunciation",
+                  "4. Use words in sentences",
+                  "5. Play word wizard games",
+                  "6. Earn Word Wizard certification"
+                ],
+                "skills": [
+                  "Vocabulary Development, Language Skills, Word Recognition, Spelling, Literacy Development"
+                ]
+              }
+            },
+            {
+              "topicNumber": 12,
+              "topic": "",
+              "objective": "Deliver 3 different types of speeches with confidence and earn Public Speaking Academy graduation certificate.",
+              "explanation": "Future speakers develop confidence and communication skills through supportive public speaking experiences. Children learn to express ideas clearly and engage audiences while building self-assurance.",
+              "hashtags": [
+                "#publicspeaking #confidence #presentation #preschoolerlearning #cognitiveskills #3-5years #academy"
+              ],
+              "estimatedTime": "25-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Public Speaking Academy",
+                "materials": [
+                  "Speaking props, presentation tools, confidence builders, audience materials"
+                ],
+                "steps": [
+                  "1. Choose 3 speech topics",
+                  "2. Practice speech delivery",
+                  "3. Set up presentation area",
+                  "4. Deliver informative speech",
+                  "5. Present persuasive speech",
+                  "6. Graduate from Public Speaking Academy"
+                ],
+                "skills": [
+                  "Communication Skills, Confidence Building, Voice Projection, Presentation Skills, Public Speaking"
+                ]
+              }
+            },
+            {
+              "topicNumber": 13,
+              "topic": "",
+              "objective": "Create and produce a complete story with characters, plot, and ending using story studio equipment within 30 minutes.",
+              "explanation": "Young filmmakers create their own stories through exciting production experiences that build creativity and narrative skills. Children become both storytellers and directors while developing imaginative expression.",
+              "hashtags": [
+                "#storystudio #storytelling #production #preschoolerlearning #cognitiveskills #3-5years #creativity"
+              ],
+              "estimatedTime": "30-35 minutes",
+              "age": "",
+              "activity": {
+                "name": "Story Studio Production",
+                "materials": [
+                  "Production props, story tools, creative materials, directing equipment"
+                ],
+                "steps": [
+                  "1. Set up story studio",
+                  "2. Create characters",
+                  "3. Develop plot structure",
+                  "4. Write story script",
+                  "5. Produce complete story",
+                  "6. Host story premiere celebration"
+                ],
+                "skills": [
+                  "Creative Writing, Storytelling, Imagination, Narrative Skills, Production Planning"
+                ]
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "",
+              "objective": "Conduct 4 language experiments to test different ways of expressing emotions and earn Language Lab certification.",
+              "explanation": "Language scientists conduct exciting experiments that explore the fascinating world of words and communication. Children develop linguistic skills through hands-on discovery and scientific exploration.",
+              "hashtags": [
+                "#languagelab #experiments #expression #preschoolerlearning #cognitiveskills #3-5years #emotions"
+              ],
+              "estimatedTime": "25-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Language Lab Experiments",
+                "materials": [
+                  "Language experiment tools, scientific props, exploration materials, discovery games"
+                ],
+                "steps": [
+                  "1. Set up 4 language stations",
+                  "2. Test emotion expression methods",
+                  "3. Experiment with tone changes",
+                  "4. Try gesture combinations",
+                  "5. Complete all experiments",
+                  "6. Earn Language Lab certification"
+                ],
+                "skills": [
+                  "Language Development, Communication Skills, Vocabulary Building, Linguistic Experimentation, Language Play"
+                ]
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "",
+              "objective": "Host a 15-minute talk show with 3 different guests using proper conversation skills and earn Talk Show Host certification.",
+              "explanation": "Future talk show hosts develop communication and interview skills through engaging conversation experiences. Children learn to conduct interviews, ask questions, and interact with others while building confidence.",
+              "hashtags": [
+                "#talkshowhost #conversation #interview #preschoolerlearning #cognitiveskills #3-5years #hosting"
+              ],
+              "estimatedTime": "25-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Talk Show Host Training",
+                "materials": [
+                  "Interview tools, conversation props, hosting materials, engagement games"
+                ],
+                "steps": [
+                  "1. Set up talk show studio",
+                  "2. Prepare interview questions",
+                  "3. Host first guest interview",
+                  "4. Conduct second guest conversation",
+                  "5. Complete third guest session",
+                  "6. Earn Talk Show Host certification"
+                ],
+                "skills": [
+                  "Communication Skills, Interview Techniques, Social Skills, Confidence Building, Media Skills"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Cognitive Flexibility",
+          "description": "Activities that develop cognitive flexibility, adaptability, and creative thinking through varied challenges.",
+          "activities": [
+            {
+              "topicNumber": 16,
+              "topic": "",
+              "objective": "Rethink and redesign 5 everyday objects for new purposes within 30 minutes using creative flexibility.",
+              "explanation": "Innovation explorers question everything and create new solutions through exciting creative challenges. Children develop the ability to think differently and solve problems in unique ways while building confidence in their creative abilities.",
+              "hashtags": [
+                "#innovationlab #flexiblethinking #creativity #preschoolerlearning #cognitiveskills #3-5years #redesign"
+              ],
+              "estimatedTime": "30-35 minutes",
+              "age": "",
+              "activity": {
+                "name": "Innovation Lab: Rethink Everything",
+                "materials": [
+                  "Innovation tools, creative thinking props, problem-solving materials, invention games"
+                ],
+                "steps": [
+                  "1. Select 5 everyday objects",
+                  "2. Brainstorm new purposes",
+                  "3. Design new functions",
+                  "4. Create prototypes",
+                  "5. Test new uses",
+                  "6. Present innovations to family"
+                ],
+                "skills": [
+                  "Creative Thinking, Innovation, Problem Solving, Design Thinking, Originality"
+                ]
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "",
+              "objective": "Adapt to 5 changing island conditions and find creative solutions to survive and rescue mission within 30 minutes.",
+              "explanation": "Adventure survivors tackle exciting island challenges that build problem-solving and adaptation skills. Children learn to think creatively, work together, and overcome obstacles while having thrilling adventures.",
+              "hashtags": [
+                "#survivallisland #adaptation #survival #preschoolerlearning #cognitiveskills #3-5years #resilience"
+              ],
+              "estimatedTime": "30-35 minutes",
+              "age": "",
+              "activity": {
+                "name": "Survival Island Adventure",
+                "materials": [
+                  "Survival props, adventure tools, problem-solving materials, challenge games"
+                ],
+                "steps": [
+                  "1. Set up island survival scenarios",
+                  "2. Face first adaptation challenge",
+                  "3. Find creative solutions",
+                  "4. Adapt to changing conditions",
+                  "5. Complete all survival challenges",
+                  "6. Celebrate successful rescue"
+                ],
+                "skills": [
+                  "Problem Solving, Survival Skills, Resource Management, Strategic Thinking, Adventure Learning"
+                ]
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "",
+              "objective": "Unleash creative potential through innovative problem-solving with imaginative and original approaches.",
+              "explanation": "Creative innovators develop unique solutions to exciting challenges through hands-on problem-solving experiences. Children learn to think creatively and develop innovative approaches while building confidence in their creative abilities.",
+              "hashtags": [
+                "#creativeproblemsolving #innovation #imagination #preschoolerlearning #cognitiveskills #3-5years #artistic"
+              ],
+              "estimatedTime": "15-20 minutes",
+              "age": "",
+              "activity": {
+                "name": "Creative Solution Innovation Hub",
+                "materials": [
+                  "Creative problem-solving tools, innovation props, solution materials, thinking games"
+                ],
+                "steps": [
+                  "1. Set up the innovation hub with creative problem-solving tools\n2. Introduce creative thinking techniques and solution frameworks\n3. Present complex problems that require multiple creative approaches\n4. Guide teens through structured creative problem-solving process\n5. Facilitate creative collaboration and idea refinement\n6. Present creative solutions and discuss implementation strategies"
+                ],
+                "skills": [
+                  "Creative Problem Solving, Innovation Thinking, Solution Generation, Creative Confidence, Original Thinking"
+                ]
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "",
+              "objective": "Practice breaking down complex tasks into manageable steps and executing them systematically.",
+              "explanation": "Strategic thinkers master the art of multi-step problem-solving through engaging challenges that build complex reasoning and planning skills. Children learn to break down problems into manageable steps while developing organizational thinking.",
+              "hashtags": [
+                "#multistep #thinking #planning #preschoolerlearning #cognitiveskills #3-5years #organization"
+              ],
+              "estimatedTime": "20-25 minutes",
+              "age": "",
+              "activity": {
+                "name": "Multi-Step Thinking",
+                "materials": [
+                  "Multi-step problem tools, planning materials, reasoning games, sequence props"
+                ],
+                "steps": [
+                  "1. Present a multi-step task",
+                  "2. Break it into clear steps",
+                  "3. Guide planning process",
+                  "4. Execute first step",
+                  "5. Continue through all steps",
+                  "6. Celebrate completion"
+                ],
+                "skills": [
+                  "Sequential Processing, Multi-Step Planning, Complex Reasoning, Step-by-Step Analysis, Systematic Thinking"
+                ]
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "",
+              "objective": "Complete 6 cognitive flexibility exercises switching between different thinking tasks to earn Brain Gym certification.",
+              "explanation": "Brain athletes train their minds through exciting circuit challenges that build cognitive fitness and mental agility. Children develop brain strength through fun exercises that make thinking feel like play.",
+              "hashtags": [
+                "#braingym #flexibility #training #preschoolerlearning #cognitiveskills #3-5years #circuit"
+              ],
+              "estimatedTime": "25-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Brain Gym Circuit Training",
+                "materials": [
+                  "Brain fitness tools, circuit props, mental agility games, cognitive exercises"
+                ],
+                "steps": [
+                  "1. Set up 6 brain gym stations",
+                  "2. Practice cognitive flexibility exercises",
+                  "3. Master task switching",
+                  "4. Complete circuit training",
+                  "5. Test flexibility skills",
+                  "6. Earn Brain Gym certification"
+                ],
+                "skills": [
+                  "Cognitive Fitness, Brain Training, Mental Agility, Processing Speed, Cognitive Flexibility"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ageGroup": "Child (6-8)",
+      "categories": [
+        {
+          "category": "Advanced Problem Solving",
+          "description": "Complex problem-solving activities that develop analytical thinking, strategy development, and systematic approaches.",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "",
+              "objective": "Master strategic planning and forward-thinking to anticipate consequences and make informed decisions.",
+              "explanation": "Strategic planners master the art of organizing complex projects through hands-on planning adventures that build executive function and goal-setting abilities. Children learn to break down big tasks into manageable steps while developing confidence in their planning skills.",
+              "hashtags": [
+                "#strategicthinking #planning #decisionmaking #games #cognitive #development"
+              ],
+              "estimatedTime": "25-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Mastermind Planning Adventure",
+                "materials": [
+                  "Planning boards, strategy cards, timeline materials, goal-setting tools, project management aids"
+                ],
+                "steps": [
+                  "1. Set up game board and explain rules clearly to 6-8 years children\n2. Demonstrate strategic thinking by showing sample moves and explaining reasoning\n3. Let children practice planning moves out loud before acting\n4. Encourage consideration of multiple options and consequences\n5. Discuss thinking process after each move to reinforce learning\n6. Celebrate strategic improvements and creative solutions"
+                ],
+                "skills": [
+                  "Strategic Planning, Long-term Thinking, Goal Setting, Project Management, Strategic Analysis"
+                ]
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "",
+              "objective": "Build confidence in complex problem-solving by breaking challenges into manageable, sequential steps.",
+              "explanation": "Methodical detectives develop systematic thinking skills through structured investigation missions that build logical reasoning and problem-solving abilities. Children learn to follow clues methodically while developing confidence in their analytical skills.",
+              "hashtags": [
+                "#problemsolving #multistep #logicalthinking #persistence #methodical #cognitive"
+              ],
+              "estimatedTime": "20-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Step-by-Step Detective Mission",
+                "materials": [
+                  "Investigation tools, clue cards, deduction games, logic puzzles, systematic thinking aids"
+                ],
+                "steps": [
+                  "1. Present complex problem and help 6-8 years children identify main goal\n2. Break problem into smaller, manageable sub-problems together\n3. Create step-by-step action plan on paper with clear sequence\n4. Work through each step systematically, checking progress\n5. Adjust plan as needed and encourage persistence\n6. Celebrate solution and discuss problem-solving strategies learned"
+                ],
+                "skills": [
+                  "Sequential Analysis, Logical Reasoning, Evidence Gathering, Systematic Investigation, Detective Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "",
+              "objective": "Develop analytical reasoning skills to examine evidence, identify patterns, and draw logical conclusions.",
+              "explanation": "Detail detectives sharpen their observation skills through exciting mystery-solving adventures that build attention to detail and pattern recognition. Children learn to notice important clues while developing confidence in their observational abilities.",
+              "hashtags": [
+                "#analytical #reasoning #criticalthinking #patternrecognition #logic #cognitive"
+              ],
+              "estimatedTime": "20-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Mini Detective Mystery Solver",
+                "materials": [
+                  "Observation tools, detail cards, pattern recognition games, attention training aids"
+                ],
+                "steps": [
+                  "1. Introduce puzzle with enthusiasm and explain what to look for\n2. Guide 6-8 years children to examine all available information carefully\n3. Help identify patterns, clues, and relationships between elements\n4. Encourage systematic analysis of each piece of evidence\n5. Support logical reasoning and conclusion drawing process\n6. Discuss analytical process and celebrate insights discovered"
+                ],
+                "skills": [
+                  "Problem Solving, Logical Reasoning, Evidence Analysis, Mystery Solving, Deductive Thinking"
+                ]
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "",
+              "objective": "Transform chaos into clarity through systematic approaches that organize thoughts and solve problems methodically.",
+              "explanation": "Organized puzzle masters develop systematic approaches to complex challenges through structured puzzle-solving experiences that build spatial reasoning and organizational thinking. Children learn to tackle problems methodically while developing confidence in their problem-solving abilities.",
+              "hashtags": [
+                "#systematic #problemsolving #structuredthinking #methodical #organization #cognitive"
+              ],
+              "estimatedTime": "20-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Organized Puzzle Master",
+                "materials": [
+                  "Organization tools, puzzle materials, spatial reasoning games, systematic approach aids"
+                ],
+                "steps": [
+                  "1. Define problem clearly and write it down for 6-8 years children\n2. Gather all relevant information and organize it systematically\n3. Create structured approach or flowchart showing solution path\n4. Work through solution methodically, one step at a time\n5. Verify each step before moving to next one\n6. Review entire process and celebrate systematic approach"
+                ],
+                "skills": [
+                  "Structured Thinking, Process Organization, Methodical Approach, Step-by-step Planning, Systematic Analysis, Solution Validation"
+                ]
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "",
+              "objective": "Master deductive reasoning and logical analysis through increasingly complex logic puzzles.",
+              "explanation": "Logic detectives embark on reasoning adventures that build deductive thinking and connection-making skills. Children learn to analyze information and draw logical conclusions while developing confidence in their reasoning abilities.",
+              "hashtags": [
+                "#logic #advanced #deductive #reasoning #puzzles #cognitive #development"
+              ],
+              "estimatedTime": "20-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Logic Detective Adventures",
+                "materials": [
+                  "Logic games, deduction tools, reasoning cards, connection-making aids"
+                ],
+                "steps": [
+                  "1. Introduce logic puzzle and explain rules thoroughly to 6-8 years children\n2. Demonstrate logical reasoning with sample problem\n3. Guide children through deductive thinking process step by step\n4. Encourage elimination of impossible options systematically\n5. Support logical conclusion drawing and verification\n6. Discuss logic used and celebrate breakthrough moments"
+                ],
+                "skills": [
+                  "Logical Reasoning, Deductive Thinking, Evidence Analysis, Problem Solving, Critical Thinking"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Executive Function",
+          "description": "Activities that develop executive function skills including planning, organization, and self-regulation.",
+          "activities": [
+            {
+              "topicNumber": 6,
+              "topic": "",
+              "objective": "Master time and task management through practical planning and organizational skills.",
+              "explanation": "Time travelers develop understanding of temporal concepts through exciting planning adventures that build time management and scenario thinking skills. Children learn to plan for different time periods while developing confidence in their temporal reasoning abilities.",
+              "hashtags": [
+                "#planning #organization #timemanagement #prioritization #productivity #lifeskills"
+              ],
+              "estimatedTime": "20-25 minutes",
+              "age": "",
+              "activity": {
+                "name": "Time Travel Planner",
+                "materials": [
+                  "Time tools, planning materials, temporal reasoning games, scenario planning aids"
+                ],
+                "steps": [
+                  "1. Identify what needs organizing or planning with 6-8 years children\n2. Create categories and establish clear priorities together\n3. Develop systematic approach or schedule that makes sense\n4. Implement plan step by step with guidance and support\n5. Monitor progress regularly and make adjustments as needed\n6. Celebrate organization successes and discuss ongoing benefits"
+                ],
+                "skills": [
+                  "Time Management, Planning Skills, Sequential Thinking, Organization, Future Planning"
+                ]
+              }
+            },
+            {
+              "topicNumber": 7,
+              "topic": "",
+              "objective": "Build emotional intelligence and self-control through recognition and management of emotions and triggers.",
+              "explanation": "Emotion detectives develop understanding of feelings through story-based adventures that build emotional intelligence and empathy skills. Children learn to recognize and respond to emotions while developing confidence in their social-emotional abilities.",
+              "hashtags": [
+                "#selfregulation #emotions #selfcontrol #emotionalintelligence #mindfulness #lifeskills"
+              ],
+              "estimatedTime": "20-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Emotion Detective Stories",
+                "materials": [
+                  "Emotion cards, story materials, empathy games, emotional intelligence aids"
+                ],
+                "steps": [
+                  "1. Introduce emotions and self-control concepts to 6-8 years children\n2. Practice recognizing different feelings and their triggers\n3. Teach calming techniques like deep breathing and counting\n4. Role-play challenging situations and practice responses\n5. Encourage pausing and thinking before reacting\n6. Celebrate self-regulation successes and discuss strategies"
+                ],
+                "skills": [
+                  "Emotional Awareness, Impulse Control, Self-Monitoring, Stress Management, Emotional Regulation, Behavioral Control"
+                ]
+              }
+            },
+            {
+              "topicNumber": 8,
+              "topic": "",
+              "objective": "Transform abstract goals into concrete action plans with realistic timelines and achievable steps.",
+              "explanation": "Goal builders develop achievement skills through structured workshops that build goal-setting and persistence abilities. Children learn to set realistic targets and work systematically toward them while developing confidence in their achievement capabilities.",
+              "hashtags": [
+                "#goalsetting #planning #motivation #achievement #vision #lifeskills"
+              ],
+              "estimatedTime": "20-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Goal Builder Workshop",
+                "materials": [
+                  "Goal-setting tools, achievement trackers, motivation aids, progress monitoring materials"
+                ],
+                "steps": [
+                  "1. Help 6-8 years children identify their dreams and aspirations\n2. Break down big goals into smaller, achievable steps\n3. Create visual goal map or timeline together\n4. Set milestones and celebration points along the way\n5. Track progress regularly and adjust goals as needed\n6. Celebrate achievements and discuss lessons learned"
+                ],
+                "skills": [
+                  "Vision Development, Action Planning, Progress Monitoring, Motivation Maintenance, Achievement Celebration, Goal Adjustment"
+                ]
+              }
+            },
+            {
+              "topicNumber": 9,
+              "topic": "",
+              "objective": "Develop efficient work habits through structured task management and time estimation skills.",
+              "explanation": "Daily heroes develop responsibility and leadership skills through exciting mission-based challenges that build executive function and task completion abilities. Children learn to manage responsibilities while developing confidence in their leadership capabilities.",
+              "hashtags": [
+                "#taskmanagement #productivity #timemanagement #organization #efficiency #lifeskills"
+              ],
+              "estimatedTime": "20-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Daily Hero Missions",
+                "materials": [
+                  "Mission cards, task tools, responsibility trackers, achievement materials, goal-setting tools"
+                ],
+                "steps": [
+                  "1. List all tasks that need completion with 6-8 years children\n2. Help prioritize tasks by importance and urgency\n3. Estimate realistic time needed for each task\n4. Create manageable schedule or checklist together\n5. Work through tasks systematically with guidance\n6. Celebrate completions and discuss time management lessons"
+                ],
+                "skills": [
+                  "Task Completion, Responsibility Development, Multi-Step Following, Time Management, Self-Control"
+                ]
+              }
+            },
+            {
+              "topicNumber": 10,
+              "topic": "",
+              "objective": "Strengthen executive functions including attention control, planning, and self-monitoring.",
+              "explanation": "Focus warriors build concentration strength through engaging fortress challenges that develop attention control and mindfulness skills. Children learn to maintain focus while developing confidence in their concentration abilities.",
+              "hashtags": [
+                "#executivefunction #attention #planning #selfcontrol #cognitive #development"
+              ],
+              "estimatedTime": "20-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Focus Fortress",
+                "materials": [
+                  "Focus tools, concentration games, attention training materials, distraction management aids"
+                ],
+                "steps": [
+                  "1. Introduce executive functions concept to 6-8 years children\n2. Practice attention and focus exercises together\n3. Work on planning and organization skills systematically\n4. Develop self-monitoring and self-control techniques\n5. Practice working memory and cognitive flexibility\n6. Celebrate improvements and discuss real-world applications"
+                ],
+                "skills": [
+                  "Attention Control, Focus Development, Distraction Resistance, Concentration Skills, Mental Discipline"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Advanced Memory",
+          "description": "Sophisticated memory activities that develop working memory, long-term memory, and memory strategies.",
+          "activities": [
+            {
+              "topicNumber": 11,
+              "topic": "",
+              "objective": "Exercise working memory through engaging games that challenge information holding and manipulation.",
+              "explanation": "Memory athletes train their minds through exciting gym challenges that build recall strength and cognitive fitness. Children develop memory strategies while building confidence in their mental abilities.",
+              "hashtags": [
+                "#workingmemorygames #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "15-20 minutes",
+              "age": "",
+              "activity": {
+                "name": "Memory Gym Games",
+                "materials": [
+                  "Memory games, recall practice tools, memory strategies guide, cognitive fitness equipment"
+                ],
+                "steps": [
+                  "1. Warm up with simple memory games",
+                  "2. Practice memory palace technique",
+                  "3. Try chunking information",
+                  "4. Use visualization strategies",
+                  "5. Test recall abilities",
+                  "6. Celebrate memory improvements",
+                  "7. Build confidence in memory skills"
+                ],
+                "skills": [
+                  "Memory Exercise, Recall Practice, Memory Strategies, Concentration Skills, Mental Fitness"
+                ]
+              }
+            },
+            {
+              "topicNumber": 12,
+              "topic": "",
+              "objective": "Master memory techniques for storing and retrieving important information effectively over time.",
+              "explanation": "Mind architects master advanced memory techniques through exciting castle-building adventures that develop memory palace strategies and visualization skills. Children learn champion-level memory methods while building confidence in their mental capabilities.",
+              "hashtags": [
+                "#long-termmemorytraining #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "20-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Mind Castle Architect",
+                "materials": [
+                  "Memory palace tools, visualization guides, advanced memory techniques, mental architecture materials"
+                ],
+                "steps": [
+                  "1. Choose familiar location for memory palace",
+                  "2. Assign specific rooms to information",
+                  "3. Practice walking through palace",
+                  "4. Visualize placing memories",
+                  "5. Test recall using palace",
+                  "6. Celebrate palace mastery",
+                  "7. Discuss memory techniques learned"
+                ],
+                "skills": [
+                  "Memory Techniques, Information Organization, Memory Strategies, Advanced Recall, Mental Architecture"
+                ]
+              }
+            },
+            {
+              "topicNumber": 13,
+              "topic": "",
+              "objective": "Discover powerful memory strategies and proven techniques for remembering complex information.",
+              "explanation": "Memory explorers discover personalized techniques through exciting toolkit adventures that build memory strategies and learning confidence. Children develop their own memory methods while building confidence in their learning abilities.",
+              "hashtags": [
+                "#memorystrategydevelopment #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "20-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Memory Explorer Kit",
+                "materials": [
+                  "Memory strategy tools, learning techniques, information processing aids, memory confidence builders"
+                ],
+                "steps": [
+                  "1. Experiment with different memory techniques",
+                  "2. Try visualization, association, and repetition",
+                  "3. Test which methods work best",
+                  "4. Practice personalized strategies",
+                  "5. Track memory improvements",
+                  "6. Celebrate technique mastery",
+                  "7. Build memory confidence"
+                ],
+                "skills": [
+                  "Memory Strategies, Learning Techniques, Information Processing, Memory Confidence, Study Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "",
+              "objective": "Push memory boundaries through sophisticated exercises that handle multiple information streams.",
+              "explanation": "Memory adventurers embark on exciting quests that combine recall skills with thrilling exploration. Children develop memory abilities while having adventures that make learning feel like play.",
+              "hashtags": [
+                "#complexmemorytasks #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "20-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Memory Adventure Quest",
+                "materials": [
+                  "Adventure props, memory challenges, quest materials, recall practice tools"
+                ],
+                "steps": [
+                  "1. Create treasure hunt with memory clues",
+                  "2. Hide objects in specific locations",
+                  "3. Give memory-based directions",
+                  "4. Test recall of hidden items",
+                  "5. Celebrate successful discoveries",
+                  "6. Discuss memory strategies used",
+                  "7. Build adventure confidence"
+                ],
+                "skills": [
+                  "Memory Challenges, Recall Practice, Memory Strategies, Adventure-Based Learning, Memory Confidence"
+                ]
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "",
+              "objective": "Achieve memory mastery through advanced techniques that build unshakeable confidence.",
+              "explanation": "Memory explorers discover recall techniques through exciting adventure experiences that build memory skills and exploration confidence. Children develop their own memory methods while having thrilling exploration fun.",
+              "hashtags": [
+                "#advancedmemorychallenges #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "20-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Memory Explorer Adventures",
+                "materials": [
+                  "Exploration tools, memory discovery aids, adventure materials, recall techniques"
+                ],
+                "steps": [
+                  "1. Explore different memory landscapes",
+                  "2. Practice memory techniques in various settings",
+                  "3. Test recall in different environments",
+                  "4. Adapt strategies to new situations",
+                  "5. Celebrate memory adaptability",
+                  "6. Discuss exploration discoveries",
+                  "7. Build memory versatility"
+                ],
+                "skills": [
+                  "Memory Exploration, Strategy Development, Learning Techniques, Memory Mastery, Adventure Learning"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Cognitive Processing",
+          "description": "Activities that develop cognitive processing speed, accuracy, and efficiency through targeted exercises.",
+          "activities": [
+            {
+              "topicNumber": 16,
+              "topic": "",
+              "objective": "Enhance mental agility through fast-paced games that improve processing speed and accuracy.",
+              "explanation": "Speed thinkers develop rapid processing abilities through exciting games that build mental agility and quick thinking skills. Children learn to process information quickly while developing confidence in their cognitive speed.",
+              "hashtags": [
+                "#processingspeedgames #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "10-15 minutes",
+              "age": "",
+              "activity": {
+                "name": "Speed Thinker Games",
+                "materials": [
+                  "Speed games, quick thinking tools, processing aids, mental agility equipment"
+                ],
+                "steps": [
+                  "1. Start with simple quick-thinking games",
+                  "2. Practice rapid decision making",
+                  "3. Increase speed gradually",
+                  "4. Use timers for challenges",
+                  "5. Celebrate speed improvements",
+                  "6. Discuss thinking strategies",
+                  "7. Build mental agility confidence"
+                ],
+                "skills": [
+                  "Quick Thinking, Rapid Decision Making, Mental Agility, Processing Speed, Reaction Time"
+                ]
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "",
+              "objective": "Develop precision thinking and attention to detail for accurate task completion.",
+              "explanation": "Detail detectives develop sharp observation skills through exciting school challenges that build attention to detail and pattern recognition. Children learn to notice important clues while developing confidence in their observational abilities.",
+              "hashtags": [
+                "#cognitiveaccuracytraining #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "20-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Detail Detective School",
+                "materials": [
+                  "Detail training tools, observation aids, pattern recognition games, attention builders"
+                ],
+                "steps": [
+                  "1. Set up detail observation stations",
+                  "2. Practice noticing specific features",
+                  "3. Compare observations with others",
+                  "4. Discuss importance of details",
+                  "5. Build attention to detail",
+                  "6. Celebrate observation skills",
+                  "7. Develop detective confidence"
+                ],
+                "skills": [
+                  "Attention to Detail, Observation Skills, Visual Scanning, Pattern Recognition, Investigation Techniques"
+                ]
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "",
+              "objective": "Optimize cognitive performance through streamlined activities that improve mental efficiency.",
+              "explanation": "Speed thinkers race through cognitive challenges that build processing speed and mental agility. Children develop faster thinking abilities while having exciting track-based fun.",
+              "hashtags": [
+                "#mentalefficiencyexercises #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "20-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Thinking Speed Track",
+                "materials": [
+                  "Processing speed tools, mental agility games, cognitive trackers, speed development aids"
+                ],
+                "steps": [
+                  "1. Create mental speed challenges",
+                  "2. Practice rapid processing",
+                  "3. Use timed thinking exercises",
+                  "4. Celebrate speed improvements",
+                  "5. Discuss thinking strategies",
+                  "6. Build cognitive confidence",
+                  "7. Develop mental agility"
+                ],
+                "skills": [
+                  "Mental Speed Training, Information Processing, Quick Response, Mental Efficiency, Time Pressure Handling"
+                ]
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "",
+              "objective": "Develop both speed and precision in thinking processes and decision-making.",
+              "explanation": "Rapid responders develop quick decision-making skills through exciting games that build fast cognitive processing and response abilities. Children learn to think and respond quickly while developing confidence in their rapid thinking skills.",
+              "hashtags": [
+                "#processingspeedchallenges #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "20-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Rapid Response Games",
+                "materials": [
+                  "Response games, decision-making tools, rapid processing aids, cognitive speed equipment"
+                ],
+                "steps": [
+                  "1. Practice quick decision making",
+                  "2. Use response time challenges",
+                  "3. Celebrate rapid thinking",
+                  "4. Discuss decision strategies",
+                  "5. Build response confidence",
+                  "6. Develop mental speed",
+                  "7. Practice quick problem solving"
+                ],
+                "skills": [
+                  "Reaction Time, Quick Response, Mental Agility, Speed-Accuracy Balance, Processing Efficiency"
+                ]
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "",
+              "objective": "Enhance information organization, manipulation, and understanding capabilities.",
+              "explanation": "Cognitive athletes build overall mental fitness through comprehensive training challenges that develop brain strength and cognitive abilities. Children develop well-rounded cognitive skills while building confidence in their mental capabilities.",
+              "hashtags": [
+                "#cognitiveprocessinggames #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "20-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Cognitive Fitness Center",
+                "materials": [
+                  "Cognitive fitness tools, brain training equipment, mental strength aids, comprehensive development materials"
+                ],
+                "steps": [
+                  "1. Design comprehensive brain workout",
+                  "2. Practice multiple cognitive skills",
+                  "3. Track mental fitness improvements",
+                  "4. Celebrate cognitive gains",
+                  "5. Discuss brain training benefits",
+                  "6. Build mental confidence",
+                  "7. Develop cognitive versatility"
+                ],
+                "skills": [
+                  "Mental Fitness, Cognitive Exercise, Brain Training, Mental Agility, Cognitive Flexibility"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ageGroup": "Pre-Teen (9-12)",
+      "categories": [
+        {
+          "category": "Complex Reasoning",
+          "description": "Advanced reasoning activities that develop abstract thinking, logical analysis, and complex problem-solving skills.",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "",
+              "objective": "Develop higher-order thinking skills through abstract reasoning and conceptual thinking.",
+              "explanation": "Journey into the realm of abstract thinking! Children explore abstract concepts like patterns, relationships, and logical sequences, developing higher-order thinking skills and learning to reason about things they can't see or touch.",
+              "hashtags": [
+                "#abstractthinkinggames #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "25-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Mind-Bending Abstract Adventure",
+                "materials": [
+                  "Age-specific learning materials for mind-bending abstract adventure, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Abstract Thinking, Conceptual Reasoning, Pattern Recognition, Complex Reasoning, Mental Modeling"
+                ]
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "",
+              "objective": "Build critical thinking foundations through logical analysis and argument evaluation.",
+              "explanation": "Your child solves complex mysteries and puzzles, developing deductive reasoning and critical thinking skills. They learn to analyze clues and make logical connections.",
+              "hashtags": [
+                "#logicalanalysisactivities #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Mystery Solver Headquarters",
+                "materials": [
+                  "Age-specific learning materials for mystery solver headquarters, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Problem Solving, Logical Reasoning, Mystery Analysis, Critical Thinking, Investigation Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "",
+              "objective": "Achieve mastery in complex reasoning by integrating multiple thinking skills and perspectives.",
+              "explanation": "Navigate the maze of complex problems! Children learn to break down complex problems into manageable parts, developing analytical thinking skills while practicing identifying patterns and relationships in information.",
+              "hashtags": [
+                "#complexreasoningchallenges #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Complex Analysis Navigator",
+                "materials": [
+                  "Age-specific learning materials for complex analysis navigator, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare complex reasoning challenges and analytical tools\n2. Introduce advanced reasoning techniques and logical frameworks\n3. Present sophisticated problems requiring integrated reasoning\n4. Guide teens through complex reasoning processes\n5. Facilitate reasoning discussions and solution development\n6. Present reasoning solutions and discuss logical soundness"
+                ],
+                "skills": [
+                  "Complex Problem Solving, Analytical Thinking, Multi-Step Reasoning, Problem Decomposition, Analysis Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "",
+              "objective": "Master deductive reasoning through increasingly complex logic puzzles and pattern recognition.",
+              "explanation": "Design and solve like a master architect! Children design and solve increasingly complex puzzles, developing spatial reasoning and logical thinking while learning to approach problems systematically and creatively.",
+              "hashtags": [
+                "#advancedlogicpuzzles #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Puzzle Architect Studio",
+                "materials": [
+                  "Age-specific learning materials for puzzle architect studio, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Spatial Reasoning, Logical Thinking, Problem Solving, Design Thinking, Systematic Approach"
+                ]
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "",
+              "objective": "Develop advanced problem-solving skills through sophisticated challenges and creative approaches.",
+              "explanation": "Your child designs and implements solutions to problems, developing engineering thinking and problem-solving skills. They learn to create and test solutions systematically.",
+              "hashtags": [
+                "#sophisticatedproblemsolving #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Solution Engineer Workshop",
+                "materials": [
+                  "Age-specific learning materials for solution engineer workshop, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Engineering Thinking, Problem Solving, Solution Design, Creative Engineering, Technical Innovation"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Strategic Thinking",
+          "description": "Activities that develop strategic thinking, planning, and long-term goal setting through complex challenges.",
+          "activities": [
+            {
+              "topicNumber": 6,
+              "topic": "",
+              "objective": "Master long-term thinking and strategic planning with future anticipation skills.",
+              "explanation": "Your child develops strategic thinking skills through planning and decision-making activities. They learn to consider multiple factors and plan for the future.",
+              "hashtags": [
+                "#strategicplanninggames #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-35 minutes",
+              "age": "",
+              "activity": {
+                "name": "Future Strategist Lab",
+                "materials": [
+                  "Age-specific learning materials for future strategist lab, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Strategic Thinking, Future Planning, Long-term Vision, Strategic Analysis, Planning Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 7,
+              "topic": "",
+              "objective": "Transform aspirations into achievements through structured goal-setting and timeline creation.",
+              "explanation": "Your child creates and works toward future goals and visions, developing planning and goal-setting skills. They learn to envision and plan for their desired future.",
+              "hashtags": [
+                "#long-termgoalsetting #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Future Vision Planner",
+                "materials": [
+                  "Age-specific learning materials for future vision planner, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Vision Development, Future Planning, Goal Setting, Strategic Vision, Long-term Thinking"
+                ]
+              }
+            },
+            {
+              "topicNumber": 8,
+              "topic": "",
+              "objective": "Develop leadership thinking through strategic decision-making and option evaluation.",
+              "explanation": "Your child learns to make informed decisions by considering options and consequences, developing decision-making and critical thinking skills. They learn to evaluate choices systematically.",
+              "hashtags": [
+                "#strategicdecisionmaking #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Choice Architect Studio",
+                "materials": [
+                  "Age-specific learning materials for choice architect studio, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Decision Making, Choice Analysis, Consequence Evaluation, Strategic Decision, Choice Architecture"
+                ]
+              }
+            },
+            {
+              "topicNumber": 9,
+              "topic": "",
+              "objective": "Master complex planning by coordinating multiple variables and creating comprehensive action plans.",
+              "explanation": "Your child leads and manages projects from start to finish, developing leadership and project management skills. They learn to organize, delegate, and execute complex tasks.",
+              "hashtags": [
+                "#advancedplanningactivities #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Project Commander Base",
+                "materials": [
+                  "Age-specific learning materials for project commander base, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Project Management, Leadership Skills, Team Coordination, Strategic Planning, Command Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 10,
+              "topic": "",
+              "objective": "Develop strategic mindset through challenging exercises that consider multiple outcomes.",
+              "explanation": "Your child develops strategic thinking through competitive and collaborative activities, developing planning and tactical skills. They learn to think ahead and adapt strategies.",
+              "hashtags": [
+                "#strategicthinkingchallenges #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Strategy Builder Arena",
+                "materials": [
+                  "Age-specific learning materials for strategy builder arena, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Strategic Thinking, Strategy Development, Planning Skills, Strategic Analysis, Competitive Strategy"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Advanced Communication",
+          "description": "Sophisticated communication activities that develop persuasive speaking, debate skills, and advanced language use.",
+          "activities": [
+            {
+              "topicNumber": 11,
+              "topic": "",
+              "objective": "Master the art of influence through persuasive communication and respectful presentation.",
+              "explanation": "Your child learns to present ideas persuasively and influence others respectfully, developing communication and leadership skills. They learn to build compelling arguments and presentations.",
+              "hashtags": [
+                "#persuasivecommunication #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "25-30 minutes",
+              "age": "",
+              "activity": {
+                "name": "Persuasion Artisan Studio",
+                "materials": [
+                  "Age-specific learning materials for persuasion artisan studio, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Persuasion Skills, Communication Strategy, Influence Techniques, Persuasive Communication, Rhetorical Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 12,
+              "topic": "",
+              "objective": "Develop critical thinking and communication through structured debate and logical argumentation.",
+              "explanation": "Build arguments that stand strong! Children learn to construct logical arguments and defend their positions respectfully, developing critical thinking and communication skills through structured debates.",
+              "hashtags": [
+                "#debateskillspractice #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Argument Architect School",
+                "materials": [
+                  "Age-specific learning materials for argument architect school, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Logical Argumentation, Debate Skills, Critical Thinking, Persuasive Communication, Evidence-Based Reasoning"
+                ]
+              }
+            },
+            {
+              "topicNumber": 13,
+              "topic": "",
+              "objective": "Elevate communication skills through advanced language exercises and precise expression.",
+              "explanation": "Your child develops advanced communication skills through various activities, developing clarity, empathy, and effectiveness in expressing ideas. They learn to adapt communication for different audiences.",
+              "hashtags": [
+                "#advancedlanguageuse #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Communication Craft Studio",
+                "materials": [
+                  "Age-specific learning materials for communication craft studio, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Communication Skills, Message Crafting, Audience Adaptation, Communication Strategy, Craft Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "",
+              "objective": "Build confidence and communication skills through public speaking and audience engagement.",
+              "explanation": "Find your voice and command attention! Children practice public speaking and presentation skills, building confidence in expressing their ideas and learning to organize their thoughts and communicate effectively.",
+              "hashtags": [
+                "#publicspeakingactivities #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Voice Command Center",
+                "materials": [
+                  "Age-specific learning materials for voice command center, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Public Speaking, Presentation Skills, Voice Projection, Confidence Building, Communication Clarity"
+                ]
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "",
+              "objective": "Master effective communication through strategic adaptation for different audiences.",
+              "explanation": "Craft messages that matter! Children learn to adapt their communication style for different audiences and purposes, developing skills in persuasion, explanation, and storytelling.",
+              "hashtags": [
+                "#communicationstrategygames #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Message Designer Lab",
+                "materials": [
+                  "Age-specific learning materials for message designer lab, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Communication Design, Audience Adaptation, Message Crafting, Persuasion Skills, Communication Strategy"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Cognitive Innovation",
+          "description": "Creative cognitive activities that develop innovation, creative thinking, and original problem-solving approaches.",
+          "activities": [
+            {
+              "topicNumber": 16,
+              "topic": "",
+              "objective": "Spark creative breakthroughs through innovation challenges and unconventional thinking.",
+              "explanation": "Break through barriers and create breakthroughs! Children tackle real-world challenges like \"How can we reduce food waste in our school?\" They brainstorm wild ideas, build prototypes, test solutions, and iterate based on feedback, learning to think like entrepreneurs.",
+              "hashtags": [
+                "#innovationchallenges #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-35 minutes",
+              "age": "",
+              "activity": {
+                "name": "Innovation Breakthrough Lab",
+                "materials": [
+                  "Innovation challenge cards, prototyping materials, brainstorming tools, solution evaluation rubrics"
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Creative Thinking, Innovation Design, Prototyping, Iterative Development, Solution Architecture"
+                ]
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "",
+              "objective": "Unleash creative potential through innovative problem-solving with imaginative and original approaches.",
+              "explanation": "Innovate solutions that change the world! Children generate creative solutions to complex problems, developing innovation and creative thinking skills while learning to approach challenges with fresh perspectives.",
+              "hashtags": [
+                "#creativeproblemsolving #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Creative Solution Innovation Hub",
+                "materials": [
+                  "Age-specific learning materials for creative solution innovation hub, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Set up the innovation hub with creative problem-solving tools\n2. Introduce creative thinking techniques and solution frameworks\n3. Present complex problems that require multiple creative approaches\n4. Guide teens through structured creative problem-solving process\n5. Facilitate creative collaboration and idea refinement\n6. Present creative solutions and discuss implementation strategies"
+                ],
+                "skills": [
+                  "Creative Problem Solving, Innovation Thinking, Solution Generation, Creative Confidence, Original Thinking"
+                ]
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "",
+              "objective": "Develop unique perspectives through original thinking and unconventional solution generation.",
+              "explanation": "Create original ideas that inspire! Children develop original thinking and creative problem-solving abilities, developing innovation and creativity skills while learning to generate unique ideas and solutions.",
+              "hashtags": [
+                "#originalthinkinggames #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Originality Innovation Hub",
+                "materials": [
+                  "Age-specific learning materials for originality innovation hub, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Original Thinking, Creative Innovation, Unique Solution Development, Creative Confidence, Innovation Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "",
+              "objective": "Cultivate breakthrough thinking through innovation development and creative idea transformation.",
+              "explanation": "Create innovations that make a difference! Children learn to create and implement innovative solutions to real-world problems, developing entrepreneurship and creative thinking skills while learning to turn ideas into impactful solutions.",
+              "hashtags": [
+                "#innovationdevelopment #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Innovation Creation Academy",
+                "materials": [
+                  "Age-specific learning materials for innovation creation academy, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Set up the academy with comprehensive innovation tools\n2. Introduce systematic innovation methodologies and frameworks\n3. Present innovation challenges that require systematic approach\n4. Guide teens through the complete innovation creation process\n5. Facilitate innovation development and refinement\n6. Present final innovations and discuss commercialization potential"
+                ],
+                "skills": [
+                  "Innovation Development, Creative Implementation, Solution Creation, Innovation Skills, Creative Entrepreneurship"
+                ]
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "",
+              "objective": "Fuse creativity with cognition through innovative activities that enhance complex problem-solving.",
+              "explanation": "Fuse ideas into breakthrough innovations! Children combine different ideas and approaches to create innovative solutions, developing creative thinking and synthesis skills while learning to merge concepts and create new possibilities.",
+              "hashtags": [
+                "#creativecognitiveactivities #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Innovation Fusion Studio",
+                "materials": [
+                  "Age-specific learning materials for innovation fusion studio, interactive tools, educational resources, and comfortable workspace designed for preteens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 9-12 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Creative Synthesis, Innovation Combination, Multi-Idea Integration, Creative Fusion, Innovation Skills"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ageGroup": "Teen (13-18)",
+      "categories": [
+        {
+          "category": "Advanced Critical Analysis",
+          "description": "Sophisticated critical analysis activities that develop deep thinking, evaluation skills, and complex reasoning.",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "",
+              "objective": "Master sophisticated analytical thinking through deep exploration of complex issues and multi-perspective analysis.",
+              "explanation": "Your teen conducts thorough analysis of complex topics and issues, developing research and analytical skills. They learn to examine information deeply and draw meaningful conclusions.",
+              "hashtags": [
+                "#deepanalysisgames #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "35-40 minutes",
+              "age": "",
+              "activity": {
+                "name": "Deep Dive Analysis Expedition",
+                "materials": [
+                  "Age-specific learning materials for deep dive analysis expedition, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Prepare complex analytical challenges and research materials\n2. Introduce deep analysis techniques and systematic approaches\n3. Present sophisticated problems that require multi-layered analysis\n4. Guide teens through systematic deep analysis process\n5. Facilitate analytical discussions and insight development\n6. Present analytical findings and discuss implications"
+                ],
+                "skills": [
+                  "Deep Analysis, Critical Thinking, In-depth Investigation, Analytical Depth, Research Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "",
+              "objective": "Develop expert evaluation skills through critical assessment and informed judgment making.",
+              "explanation": "Your teen learns to evaluate information critically and make informed judgments, developing critical thinking and analysis skills. They learn to assess credibility and validity.",
+              "hashtags": [
+                "#evaluationskillspractice #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "45-60 minutes",
+              "age": "",
+              "activity": {
+                "name": "Critical Evaluation Workshop",
+                "materials": [
+                  "Age-specific learning materials for critical evaluation workshop, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Set up evaluation workshop with critical thinking tools\n2. Introduce evaluation frameworks and critical analysis techniques\n3. Present materials for critical evaluation and bias identification\n4. Guide teens through systematic critical evaluation process\n5. Facilitate critical discussions and evidence assessment\n6. Present evaluation conclusions and discuss decision-making implications"
+                ],
+                "skills": [
+                  "Critical Evaluation, Assessment Skills, Analysis Techniques, Evaluation Methods, Critical Assessment"
+                ]
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "",
+              "objective": "Achieve mastery in complex reasoning by integrating multiple thinking skills and perspectives.",
+              "explanation": "Navigate the maze of complex problems! Children learn to break down complex problems into manageable parts, developing analytical thinking skills while practicing identifying patterns and relationships in information.",
+              "hashtags": [
+                "#complexreasoningchallenges #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "45-60 minutes",
+              "age": "",
+              "activity": {
+                "name": "Complex Analysis Navigator",
+                "materials": [
+                  "Age-specific learning materials for complex analysis navigator, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Prepare complex reasoning challenges and analytical tools\n2. Introduce advanced reasoning techniques and logical frameworks\n3. Present sophisticated problems requiring integrated reasoning\n4. Guide teens through complex reasoning processes\n5. Facilitate reasoning discussions and solution development\n6. Present reasoning solutions and discuss logical soundness"
+                ],
+                "skills": [
+                  "Complex Problem Solving, Analytical Thinking, Multi-Step Reasoning, Problem Decomposition, Analysis Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "",
+              "objective": "Master sophisticated critical thinking through advanced analysis, evaluation, and synthesis.",
+              "explanation": "Your teen develops expertise in analyzing complex information and situations, developing analytical and reasoning skills. They learn to break down complex problems and identify key factors.",
+              "hashtags": [
+                "#advancedcriticalthinking #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "45-60 minutes",
+              "age": "",
+              "activity": {
+                "name": "Analysis Expert Studio",
+                "materials": [
+                  "Age-specific learning materials for analysis expert studio, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Set up excellence lab with advanced critical thinking tools\n2. Introduce excellence-level critical thinking techniques\n3. Present complex arguments and information for critical analysis\n4. Guide teens through sophisticated critical thinking processes\n5. Facilitate critical discussions and evidence evaluation\n6. Present critical thinking conclusions and discuss real-world applications"
+                ],
+                "skills": [
+                  "Expert Analysis, Specialized Analysis, Technical Analysis, Professional Analysis, Expert Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "",
+              "objective": "Develop deep analytical skills through sophisticated system and relationship examination.",
+              "explanation": "Your teen conducts in-depth research on topics of interest, developing research and information literacy skills. They learn to gather, evaluate, and synthesize information effectively.",
+              "hashtags": [
+                "#sophisticatedanalysisactivities #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "45-60 minutes",
+              "age": "",
+              "activity": {
+                "name": "Deep Dive Research Center",
+                "materials": [
+                  "Age-specific learning materials for deep dive research center, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Prepare sophisticated analytical challenges and research materials\n2. Introduce advanced analysis techniques and methodological frameworks\n3. Present complex systems and relationships for analysis\n4. Guide teens through systematic sophisticated analysis\n5. Facilitate analytical discussions and insight development\n6. Present analytical findings and discuss strategic implications"
+                ],
+                "skills": [
+                  "Research Skills, In-depth Investigation, Data Analysis, Research Methodology, Deep Research"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Cognitive Leadership",
+          "description": "Leadership-focused cognitive activities that develop decision-making, team management, and strategic leadership skills.",
+          "activities": [
+            {
+              "topicNumber": 6,
+              "topic": "",
+              "objective": "Develop leadership capabilities through stakeholder-considering decision-making with long-term consequences.",
+              "explanation": "Make decisions like a CEO! Children learn to make complex decisions by considering multiple factors and consequences, developing leadership skills and the ability to guide others through decision-making processes.",
+              "hashtags": [
+                "#leadershipdecisionmaking #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "30-35 minutes",
+              "age": "",
+              "activity": {
+                "name": "Executive Choice Studio",
+                "materials": [
+                  "Age-specific learning materials for executive choice studio, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 13-18 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Decision Making, Leadership Thinking, Consequence Analysis, Strategic Decision, Leadership Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 7,
+              "topic": "",
+              "objective": "Master team leadership through group coordination and collaborative achievement inspiration.",
+              "explanation": "Lead teams to victory! Children learn to lead teams, manage group dynamics, and inspire others toward common goals, developing skills in collaboration, motivation, and conflict resolution.",
+              "hashtags": [
+                "#teammanagementgames #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "45-60 minutes",
+              "age": "",
+              "activity": {
+                "name": "Group Dynamics Commander",
+                "materials": [
+                  "Age-specific learning materials for group dynamics commander, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 13-18 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Team Leadership, Group Management, Motivation Skills, Conflict Resolution, Collaborative Leadership"
+                ]
+              }
+            },
+            {
+              "topicNumber": 8,
+              "topic": "",
+              "objective": "Develop strategic leadership skills through advanced activities that guide others toward vision and goals.",
+              "explanation": "Your teen develops leadership skills through various activities and challenges, developing influence and team management abilities. They learn to inspire and guide others effectively.",
+              "hashtags": [
+                "#strategicleadershipactivities #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "45-60 minutes",
+              "age": "",
+              "activity": {
+                "name": "Leadership Architect Lab",
+                "materials": [
+                  "Age-specific learning materials for leadership architect lab, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 13-18 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Leadership Development, Leadership Design, Leadership Skills, Leadership Strategy, Leadership Architecture"
+                ]
+              }
+            },
+            {
+              "topicNumber": 9,
+              "topic": "",
+              "objective": "Cultivate leadership problem-solving through complex issue addressing while inspiring others.",
+              "explanation": "Your teen learns to handle crisis situations and make decisions under pressure, developing crisis management and decision-making skills. They learn to stay calm and think clearly in challenging situations.",
+              "hashtags": [
+                "#leadershipproblemsolving #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "45-60 minutes",
+              "age": "",
+              "activity": {
+                "name": "Crisis Navigator Center",
+                "materials": [
+                  "Age-specific learning materials for crisis navigator center, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 13-18 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Crisis Management, Problem Solving, Crisis Response, Leadership in Crisis, Navigation Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 10,
+              "topic": "",
+              "objective": "Strengthen leadership cognition through strategic thinking and effective guidance enhancement.",
+              "explanation": "Think strategically, lead effectively! Children develop strategic thinking and leadership abilities through complex scenarios, learning to analyze situations, consider multiple perspectives, and make informed decisions.",
+              "hashtags": [
+                "#cognitiveleadershiptraining #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "45-60 minutes",
+              "age": "",
+              "activity": {
+                "name": "Leadership Think Tank",
+                "materials": [
+                  "Age-specific learning materials for leadership think tank, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 13-18 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Strategic Thinking, Leadership Development, Decision Making, Team Guidance, Leadership Vision"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Advanced Research Skills",
+          "description": "Research-focused activities that develop information gathering, analysis, and synthesis skills.",
+          "activities": [
+            {
+              "topicNumber": 11,
+              "topic": "",
+              "objective": "Master research skills through information gathering, organization, and data evaluation.",
+              "explanation": "Investigate like a professional! Children learn to conduct thorough research, evaluate sources, and analyze information critically, developing skills in information literacy and evidence-based reasoning.",
+              "hashtags": [
+                "#informationgatheringgames #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "40-45 minutes",
+              "age": "",
+              "activity": {
+                "name": "Investigation Specialist Lab",
+                "materials": [
+                  "Age-specific learning materials for investigation specialist lab, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 13-18 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Research Skills, Information Gathering, Source Evaluation, Critical Analysis, Evidence-Based Reasoning"
+                ]
+              }
+            },
+            {
+              "topicNumber": 12,
+              "topic": "",
+              "objective": "Develop analytical research skills through structured data examination and meaningful conclusion drawing.",
+              "explanation": "Explore data and discover insights! Children learn to collect, organize, and analyze data to draw meaningful conclusions, developing skills in research methodology and data interpretation.",
+              "hashtags": [
+                "#researchanalysisactivities #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "45-60 minutes",
+              "age": "",
+              "activity": {
+                "name": "Data Explorer Studio",
+                "materials": [
+                  "Age-specific learning materials for data explorer studio, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 13-18 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Data Analysis, Information Processing, Research Methodology, Data Interpretation, Analytical Skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 13,
+              "topic": "",
+              "objective": "Master information integration through data synthesis challenges and coherent insight creation.",
+              "explanation": "Your teen learns to collect, organize, and analyze data from multiple sources, developing data literacy and analytical skills. They learn to draw insights from complex datasets.",
+              "hashtags": [
+                "#datasynthesischallenges #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "45-60 minutes",
+              "age": "",
+              "activity": {
+                "name": "Data Integration Mastery",
+                "materials": [
+                  "Age-specific learning materials for data integration mastery, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 13-18 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Data Integration, Information Synthesis, Data Analysis, Integration Skills, Mastery Learning"
+                ]
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "",
+              "objective": "Cultivate sophisticated research capabilities through thorough, methodical investigation conduct.",
+              "explanation": "Your teen conducts systematic investigations and research projects, developing research and analytical skills. They learn to design and execute thorough investigations.",
+              "hashtags": [
+                "#advancedresearchskills #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "45-60 minutes",
+              "age": "",
+              "activity": {
+                "name": "Investigation Command Center",
+                "materials": [
+                  "Age-specific learning materials for investigation command center, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 13-18 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Investigation Leadership, Command Skills, Investigation Strategy, Leadership Investigation, Command Center Operations"
+                ]
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "",
+              "objective": "Master research methods through structured study design, data collection, and systematic analysis.",
+              "explanation": "Design investigations that reveal truth! Children learn to design and conduct systematic investigations, developing skills in research planning, data collection, and analysis while practicing the scientific method.",
+              "hashtags": [
+                "#researchmethodologypractice #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "45-60 minutes",
+              "age": "",
+              "activity": {
+                "name": "Research Architect Studio",
+                "materials": [
+                  "Age-specific learning materials for research architect studio, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Prepare materials and create engaging environment for 13-18 years children\n2. Introduce activity with clear, age-appropriate instructions\n3. Guide children through exercise step by step\n4. Provide encouragement and support as needed\n5. Discuss learning and celebrate achievements\n6. Clean up together and plan future activities"
+                ],
+                "skills": [
+                  "Research Design, Investigation Planning, Data Collection, Systematic Research, Research Methodology"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "category": "Cognitive Innovation",
+          "description": "High-level innovation activities that develop creative problem-solving, original thinking, and breakthrough solutions.",
+          "activities": [
+            {
+              "topicNumber": 16,
+              "topic": "",
+              "objective": "Drive revolutionary thinking through breakthrough innovation activities and paradigm-shifting solution creation.",
+              "explanation": "Create breakthroughs that transform! Children develop breakthrough thinking and innovation skills, developing creative problem-solving and entrepreneurship abilities while learning to create transformative solutions.",
+              "hashtags": [
+                "#breakthroughinnovation #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "35-40 minutes",
+              "age": "",
+              "activity": {
+                "name": "Breakthrough Innovation Studio",
+                "materials": [
+                  "Age-specific learning materials for breakthrough innovation studio, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Create an innovation-focused environment with design thinking tools\n2. Introduce breakthrough innovation methodologies and case studies\n3. Present real-world problems that need revolutionary solutions\n4. Guide teens through the innovation process from ideation to prototype\n5. Facilitate rapid prototyping and iterative improvement\n6. Present innovations and discuss potential impact and implementation"
+                ],
+                "skills": [
+                  "Breakthrough Thinking, Innovation Mastery, Creative Breakthrough, Innovation Leadership, Creative Excellence"
+                ]
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "",
+              "objective": "Unleash creative potential through innovative problem-solving with imaginative and original approaches.",
+              "explanation": "Innovate solutions that change the world! Children generate creative solutions to complex problems, developing innovation and creative thinking skills while learning to approach challenges with fresh perspectives.",
+              "hashtags": [
+                "#creativeproblemsolving #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "45-60 minutes",
+              "age": "",
+              "activity": {
+                "name": "Creative Solution Innovation Hub",
+                "materials": [
+                  "Age-specific learning materials for creative solution innovation hub, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Set up the innovation hub with creative problem-solving tools\n2. Introduce creative thinking techniques and solution frameworks\n3. Present complex problems that require multiple creative approaches\n4. Guide teens through structured creative problem-solving process\n5. Facilitate creative collaboration and idea refinement\n6. Present creative solutions and discuss implementation strategies"
+                ],
+                "skills": [
+                  "Creative Problem Solving, Innovation Thinking, Solution Generation, Creative Confidence, Original Thinking"
+                ]
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "",
+              "objective": "Develop unique perspectives through original thinking challenges and novel idea generation.",
+              "explanation": "Break through to original thinking! Children develop original thinking and breakthrough creativity, developing innovation and creative problem-solving skills while learning to generate revolutionary ideas and solutions.",
+              "hashtags": [
+                "#originalthinkingchallenges #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "45-60 minutes",
+              "age": "",
+              "activity": {
+                "name": "Originality Breakthrough Lab",
+                "materials": [
+                  "Age-specific learning materials for originality breakthrough lab, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Create an inspiring creative laboratory environment\n2. Introduce techniques for generating truly original ideas\n3. Present challenges that require unconventional thinking\n4. Guide teens through originality exercises and creative experiments\n5. Facilitate creative exploration and breakthrough moments\n6. Showcase original creations and discuss creative processes"
+                ],
+                "skills": [
+                  "Original Breakthrough Thinking, Creative Innovation, Unique Solution Development, Creative Mastery"
+                ]
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "",
+              "objective": "Cultivate breakthrough thinking through innovation development and creative idea transformation.",
+              "explanation": "Create innovations that make a difference! Children learn to create and implement innovative solutions to real-world problems, developing entrepreneurship and creative thinking skills while learning to turn ideas into impactful solutions.",
+              "hashtags": [
+                "#innovationdevelopment #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "45-60 minutes",
+              "age": "",
+              "activity": {
+                "name": "Innovation Creation Academy",
+                "materials": [
+                  "Age-specific learning materials for innovation creation academy, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Set up the academy with comprehensive innovation tools\n2. Introduce systematic innovation methodologies and frameworks\n3. Present innovation challenges that require systematic approach\n4. Guide teens through the complete innovation creation process\n5. Facilitate innovation development and refinement\n6. Present final innovations and discuss commercialization potential"
+                ],
+                "skills": [
+                  "Innovation Development, Creative Implementation, Solution Creation, Innovation Skills, Creative Entrepreneurship"
+                ]
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "",
+              "objective": "Master the fusion of creativity and analytical thinking to generate breakthrough solutions and original innovations.",
+              "explanation": "Master the art of creative innovation! Children master advanced creative thinking and innovation techniques, developing expertise in creative problem-solving and innovation while learning to create breakthrough solutions and lead creative initiatives.",
+              "hashtags": [
+                "#advancedcreativeactivities #cognitive #development #learning #education"
+              ],
+              "estimatedTime": "45-60 minutes",
+              "age": "",
+              "activity": {
+                "name": "Advanced Creative Mastery Studio",
+                "materials": [
+                  "Age-specific learning materials for advanced creative mastery studio, interactive tools, educational resources, and comfortable workspace designed for teens."
+                ],
+                "steps": [
+                  "1. Set up the creative studio with advanced tools and inspiration materials\n2. Introduce breakthrough thinking techniques and creative methodologies\n3. Present complex creative challenges that require innovative solutions\n4. Guide teens through the creative process with advanced techniques\n5. Facilitate peer collaboration and creative feedback sessions\n6. Showcase creative breakthroughs and discuss real-world applications"
+                ],
+                "skills": [
+                  "Advanced Creative Thinking, Innovation Mastery, Creative Leadership, Innovation Excellence, Creative Mastery"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
