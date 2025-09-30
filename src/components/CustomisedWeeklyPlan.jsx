@@ -80,24 +80,23 @@ const CustomisedWeeklyPlan = () => {
         loadPlansForChild(children[0].id);
       } else if (children.length === 0) {
         console.log('⚠️ No children found in any path');
-        setError('No child profiles found. Please create a child profile first.');
         
         // Create a test child for debugging
-        try {
-          console.log('🧪 Creating test child for debugging...');
-          const testChild = {
-            id: 'test-child-' + Date.now(),
-            name: 'Test Child',
-            age: 6,
-            interests: ['science', 'art']
-          };
-          setAvailableChildren([testChild]);
-          setSelectedChild(testChild.id);
-          setChildName(testChild.name);
-          console.log('✅ Test child created:', testChild);
-        } catch (testError) {
-          console.error('❌ Failed to create test child:', testError);
-        }
+        console.log('🧪 Creating test child for debugging...');
+        const testChild = {
+          id: 'test-child-' + Date.now(),
+          name: 'Test Child',
+          age: 6,
+          interests: ['science', 'art']
+        };
+        
+        console.log('✅ Test child created:', testChild);
+        setAvailableChildren([testChild]);
+        setSelectedChild(testChild.id);
+        setChildName(testChild.name);
+        
+        // Clear any previous error
+        setError('');
       }
     } catch (error) {
       console.error('❌ Error loading children:', error);
@@ -326,10 +325,37 @@ const CustomisedWeeklyPlan = () => {
               border: 'none',
               padding: '8px 16px',
               borderRadius: '4px',
-              cursor: 'pointer'
+              cursor: 'pointer',
+              marginRight: '10px'
             }}
           >
             🐛 Console Debug
+          </button>
+          <button
+            onClick={() => {
+              console.log('🧪 Creating manual test child...');
+              const testChild = {
+                id: 'manual-test-' + Date.now(),
+                name: 'Manual Test Child',
+                age: 7,
+                interests: ['science', 'art', 'music']
+              };
+              setAvailableChildren([testChild]);
+              setSelectedChild(testChild.id);
+              setChildName(testChild.name);
+              setError('');
+              console.log('✅ Manual test child created:', testChild);
+            }}
+            style={{
+              background: '#4caf50',
+              color: 'white',
+              border: 'none',
+              padding: '8px 16px',
+              borderRadius: '4px',
+              cursor: 'pointer'
+            }}
+          >
+            🧪 Create Test Child
           </button>
         </div>
       </div>
