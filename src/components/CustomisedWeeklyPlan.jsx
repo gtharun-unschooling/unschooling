@@ -23,6 +23,7 @@ const CustomisedWeeklyPlan = () => {
   // Load available children
   const loadAvailableChildren = async () => {
     try {
+      console.log('🔍 Loading children for user:', user.uid);
       const childrenRef = collection(db, `users/${user.uid}/children`);
       const childrenQuery = query(childrenRef, orderBy('createdAt', 'asc'));
       const childrenSnapshot = await getDocs(childrenQuery);
@@ -30,23 +31,31 @@ const CustomisedWeeklyPlan = () => {
       const children = [];
       childrenSnapshot.forEach((doc) => {
         const data = doc.data();
-        children.push({
+        const child = {
           id: doc.id,
           name: data.name || data.child_name || 'Child',
           age: data.age || data.child_age || 5,
           interests: data.interests || []
-        });
+        };
+        children.push(child);
+        console.log('👶 Found child:', child);
       });
       
+      console.log('📊 Total children loaded:', children.length);
       setAvailableChildren(children);
+      
       if (children.length > 0 && !selectedChild) {
+        console.log('🎯 Auto-selecting first child:', children[0]);
         setSelectedChild(children[0].id);
         setChildName(children[0].name);
         loadPlansForChild(children[0].id);
+      } else if (children.length === 0) {
+        console.log('⚠️ No children found for user');
+        setError('No child profiles found. Please create a child profile first.');
       }
     } catch (error) {
       console.error('❌ Error loading children:', error);
-      setError('Failed to load child profiles');
+      setError('Failed to load child profiles: ' + error.message);
     }
   };
 
@@ -228,6 +237,23 @@ const CustomisedWeeklyPlan = () => {
         </p>
       </div>
 
+      {/* Debug Info */}
+      <div style={{
+        background: '#e3f2fd',
+        border: '1px solid #2196f3',
+        borderRadius: '8px',
+        padding: '15px',
+        marginBottom: '20px',
+        fontSize: '14px'
+      }}>
+        <h4 style={{ margin: '0 0 10px 0', color: '#1976d2' }}>🔍 Debug Information</h4>
+        <div><strong>Available Children:</strong> {availableChildren.length}</div>
+        <div><strong>Selected Child:</strong> {selectedChild || 'None'}</div>
+        <div><strong>Child Name:</strong> {childName || 'Not set'}</div>
+        <div><strong>Current Plan:</strong> {currentPlan ? 'Loaded' : 'None'}</div>
+        <div><strong>User ID:</strong> {user?.uid || 'Not authenticated'}</div>
+      </div>
+
       {/* Child Profile Selection */}
       {availableChildren.length > 0 && (
         <div style={{
@@ -242,10 +268,14 @@ const CustomisedWeeklyPlan = () => {
             value={selectedChild}
             onChange={(e) => {
               const childId = e.target.value;
+              console.log('🔄 Child selection changed:', childId);
               const child = availableChildren.find(c => c.id === childId);
               if (child) {
+                console.log('👶 Selected child:', child);
                 setSelectedChild(childId);
                 setChildName(child.name);
+                setCurrentPlan(null); // Clear current plan
+                setAgentPerformance(null); // Clear performance data
                 loadPlansForChild(childId);
               }
             }}
@@ -259,12 +289,44 @@ const CustomisedWeeklyPlan = () => {
               background: 'white'
             }}
           >
+            <option value="">Select a child...</option>
             {availableChildren.map((child) => (
               <option key={child.id} value={child.id}>
                 {child.name} (Age {child.age})
               </option>
             ))}
           </select>
+        </div>
+      )}
+
+      {/* No Children Message */}
+      {availableChildren.length === 0 && user && (
+        <div style={{
+          background: '#fff3cd',
+          border: '1px solid #ffeaa7',
+          borderRadius: '8px',
+          padding: '20px',
+          marginBottom: '20px',
+          textAlign: 'center'
+        }}>
+          <h3 style={{ margin: '0 0 10px 0', color: '#856404' }}>⚠️ No Child Profiles Found</h3>
+          <p style={{ margin: '0 0 15px 0', color: '#856404' }}>
+            You need to create a child profile first to generate learning plans.
+          </p>
+          <button
+            onClick={() => navigate('/dashboard')}
+            style={{
+              background: '#007bff',
+              color: 'white',
+              border: 'none',
+              padding: '10px 20px',
+              borderRadius: '6px',
+              cursor: 'pointer',
+              fontSize: '16px'
+            }}
+          >
+            Go to Dashboard
+          </button>
         </div>
       )}
 
