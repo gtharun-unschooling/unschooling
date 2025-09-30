@@ -24,24 +24,53 @@ const CustomisedWeeklyPlan = () => {
   const loadAvailableChildren = async () => {
     try {
       console.log('🔍 Loading children for user:', user.uid);
-      const childrenRef = collection(db, `users/${user.uid}/children`);
-      const childrenQuery = query(childrenRef, orderBy('createdAt', 'asc'));
-      const childrenSnapshot = await getDocs(childrenQuery);
+      console.log('🔍 Firebase db object:', db);
       
-      const children = [];
-      childrenSnapshot.forEach((doc) => {
-        const data = doc.data();
-        const child = {
-          id: doc.id,
-          name: data.name || data.child_name || 'Child',
-          age: data.age || data.child_age || 5,
-          interests: data.interests || []
-        };
-        children.push(child);
-        console.log('👶 Found child:', child);
-      });
+      // Try different possible collection paths
+      const possiblePaths = [
+        `users/${user.uid}/children`,
+        `users/${user.uid}/child_profiles`,
+        `children`,
+        `child_profiles`
+      ];
+      
+      let children = [];
+      let foundPath = null;
+      
+      for (const path of possiblePaths) {
+        try {
+          console.log(`🔍 Trying path: ${path}`);
+          const childrenRef = collection(db, path);
+          const childrenQuery = query(childrenRef, orderBy('createdAt', 'asc'));
+          const childrenSnapshot = await getDocs(childrenQuery);
+          
+          const pathChildren = [];
+          childrenSnapshot.forEach((doc) => {
+            const data = doc.data();
+            console.log('📄 Raw child data:', data);
+            const child = {
+              id: doc.id,
+              name: data.name || data.child_name || data.firstName || 'Child',
+              age: data.age || data.child_age || data.childAge || 5,
+              interests: data.interests || data.child_interests || []
+            };
+            pathChildren.push(child);
+            console.log('👶 Processed child:', child);
+          });
+          
+          if (pathChildren.length > 0) {
+            children = pathChildren;
+            foundPath = path;
+            console.log(`✅ Found ${children.length} children in path: ${path}`);
+            break;
+          }
+        } catch (pathError) {
+          console.log(`❌ Path ${path} failed:`, pathError.message);
+        }
+      }
       
       console.log('📊 Total children loaded:', children.length);
+      console.log('📊 Found path:', foundPath);
       setAvailableChildren(children);
       
       if (children.length > 0 && !selectedChild) {
@@ -50,8 +79,25 @@ const CustomisedWeeklyPlan = () => {
         setChildName(children[0].name);
         loadPlansForChild(children[0].id);
       } else if (children.length === 0) {
-        console.log('⚠️ No children found for user');
+        console.log('⚠️ No children found in any path');
         setError('No child profiles found. Please create a child profile first.');
+        
+        // Create a test child for debugging
+        try {
+          console.log('🧪 Creating test child for debugging...');
+          const testChild = {
+            id: 'test-child-' + Date.now(),
+            name: 'Test Child',
+            age: 6,
+            interests: ['science', 'art']
+          };
+          setAvailableChildren([testChild]);
+          setSelectedChild(testChild.id);
+          setChildName(testChild.name);
+          console.log('✅ Test child created:', testChild);
+        } catch (testError) {
+          console.error('❌ Failed to create test child:', testError);
+        }
       }
     } catch (error) {
       console.error('❌ Error loading children:', error);
@@ -252,6 +298,40 @@ const CustomisedWeeklyPlan = () => {
         <div><strong>Child Name:</strong> {childName || 'Not set'}</div>
         <div><strong>Current Plan:</strong> {currentPlan ? 'Loaded' : 'None'}</div>
         <div><strong>User ID:</strong> {user?.uid || 'Not authenticated'}</div>
+        <div><strong>Firebase DB:</strong> {db ? 'Connected' : 'Not connected'}</div>
+        <div style={{ marginTop: '10px' }}>
+          <button
+            onClick={loadAvailableChildren}
+            style={{
+              background: '#2196f3',
+              color: 'white',
+              border: 'none',
+              padding: '8px 16px',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              marginRight: '10px'
+            }}
+          >
+            🔄 Reload Children
+          </button>
+          <button
+            onClick={() => {
+              console.log('🔍 Manual debug - User:', user);
+              console.log('🔍 Manual debug - DB:', db);
+              console.log('🔍 Manual debug - Available children:', availableChildren);
+            }}
+            style={{
+              background: '#ff9800',
+              color: 'white',
+              border: 'none',
+              padding: '8px 16px',
+              borderRadius: '4px',
+              cursor: 'pointer'
+            }}
+          >
+            🐛 Console Debug
+          </button>
+        </div>
       </div>
 
       {/* Child Profile Selection */}
