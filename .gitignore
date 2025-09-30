@@ -62,4 +62,5 @@ ENV/
 
 # OS
 .DS_Store
-Thumbs.db 
+Thumbs.db google-credentials.json
+sheets-credentials.json
