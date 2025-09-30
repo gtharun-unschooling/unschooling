@@ -42,7 +42,6 @@ import ContentInventory from '../pages/Admin/ContentInventory';
 import ChildProgressDashboard from '../pages/Admin/ChildProgressDashboard';
 import ProgressDashboard from '../pages/ProgressDashboard';
 import About from '../pages/About';
-import WhatWeDoPage from '../pages/WhatWeDo/WhatWeDoPage';
 import AdminProjects from '../pages/Admin/AdminProjects';
 import AdminLaunch from '../pages/Admin/AdminLaunch';
 import AgentReporting from '../pages/Admin/AgentReporting';
@@ -106,12 +105,6 @@ const RoutesComponent = () => {
           <>
             <Navbar />
             <About />
-          </>
-        } />
-        <Route path="/what-we-do" element={
-          <>
-            <Navbar />
-            <WhatWeDoPage />
           </>
         } />
         <Route path="/firebase-test" element={<FirebaseConnectivityTest />} />
