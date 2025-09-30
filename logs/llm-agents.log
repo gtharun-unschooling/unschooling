@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/tharunguduguntla/Documents/unschooling/backend/main_agents.py", line 5, in <module>
-    from fastapi import FastAPI, Request, HTTPException
-ModuleNotFoundError: No module named 'fastapi'
