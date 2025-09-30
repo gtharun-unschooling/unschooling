@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { db, auth } from '../firebase';
-import { doc, getDoc, collection, getDocs, query, orderBy } from 'firebase/firestore';
+import { doc, getDoc, collection, getDocs, query, orderBy, updateDoc } from 'firebase/firestore';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import config from '../config/config';
@@ -15,6 +15,8 @@ const CustomisedWeeklyPlan = () => {
   const [generatingPlan, setGeneratingPlan] = useState(false);
   const [availableChildren, setAvailableChildren] = useState([]);
   const [selectedChild, setSelectedChild] = useState('');
+  const [currentPlan, setCurrentPlan] = useState(null);
+  const [agentPerformance, setAgentPerformance] = useState(null);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -68,6 +70,7 @@ const CustomisedWeeklyPlan = () => {
           const months = Object.keys(existingPlans);
           if (months.length > 0) {
             setSelectedMonth(months[0]);
+            setCurrentPlan(existingPlans[months[0]]);
           }
         }
       }
@@ -121,6 +124,12 @@ const CustomisedWeeklyPlan = () => {
           
           setPlans(newPlans);
           setSelectedMonth(currentMonth);
+          setCurrentPlan(result.data);
+          
+          // Store agent performance data
+          if (result.data.agent_timings) {
+            setAgentPerformance(result.data.agent_timings);
+          }
         } else {
           setError('Failed to generate plan');
         }
@@ -349,21 +358,168 @@ const CustomisedWeeklyPlan = () => {
           )}
 
           {/* Plan Content */}
-          {selectedMonth && plans[selectedMonth] && (
+          {currentPlan && (
             <div style={{
               background: 'white',
               border: '1px solid #ddd',
               borderRadius: '8px',
-              padding: '20px'
+              padding: '20px',
+              marginBottom: '30px'
             }}>
-              <h4 style={{ margin: '0 0 15px 0', color: '#333' }}>
-                {selectedMonth} Learning Plan
+              <h4 style={{ margin: '0 0 20px 0', color: '#333' }}>
+                📅 {selectedMonth} Learning Plan for {childName}
               </h4>
               
-              {/* Display plan content here */}
-              <div style={{ color: '#666' }}>
-                Plan content will be displayed here...
+              {/* Weekly Plan Display */}
+              {currentPlan.weekly_plan && (
+                <div>
+                  {Object.entries(currentPlan.weekly_plan).map(([weekKey, weekData]) => (
+                    <div key={weekKey} style={{ marginBottom: '30px' }}>
+                      <h5 style={{ 
+                        background: '#f8f9fa', 
+                        padding: '10px', 
+                        borderRadius: '6px',
+                        margin: '0 0 15px 0',
+                        color: '#495057',
+                        textTransform: 'capitalize'
+                      }}>
+                        {weekKey.replace('_', ' ')} Week
+                      </h5>
+                      
+                      <div style={{ overflowX: 'auto' }}>
+                        <table style={{
+                          width: '100%',
+                          borderCollapse: 'collapse',
+                          border: '1px solid #ddd',
+                          borderRadius: '6px',
+                          overflow: 'hidden'
+                        }}>
+                          <thead>
+                            <tr style={{ background: '#f8f9fa' }}>
+                              <th style={{ padding: '12px', border: '1px solid #ddd', textAlign: 'left' }}>Day</th>
+                              <th style={{ padding: '12px', border: '1px solid #ddd', textAlign: 'left' }}>Topic</th>
+                              <th style={{ padding: '12px', border: '1px solid #ddd', textAlign: 'left' }}>Activity</th>
+                              <th style={{ padding: '12px', border: '1px solid #ddd', textAlign: 'left' }}>Duration</th>
+                              <th style={{ padding: '12px', border: '1px solid #ddd', textAlign: 'left' }}>Materials</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {Object.entries(weekData).map(([dayKey, dayData]) => (
+                              <tr key={dayKey}>
+                                <td style={{ padding: '12px', border: '1px solid #ddd', fontWeight: 'bold' }}>
+                                  {dayKey.charAt(0).toUpperCase() + dayKey.slice(1)}
+                                </td>
+                                <td style={{ padding: '12px', border: '1px solid #ddd' }}>
+                                  {dayData.topic || 'N/A'}
+                                </td>
+                                <td style={{ padding: '12px', border: '1px solid #ddd', maxWidth: '300px' }}>
+                                  <div style={{ fontSize: '14px' }}>
+                                    {dayData.activity ? (
+                                      typeof dayData.activity === 'string' ? 
+                                        dayData.activity.substring(0, 100) + '...' : 
+                                        'Activity details available'
+                                    ) : 'N/A'}
+                                  </div>
+                                </td>
+                                <td style={{ padding: '12px', border: '1px solid #ddd' }}>
+                                  {dayData.duration || 'N/A'}
+                                </td>
+                                <td style={{ padding: '12px', border: '1px solid #ddd' }}>
+                                  {dayData.materials_needed ? 
+                                    (Array.isArray(dayData.materials_needed) ? 
+                                      dayData.materials_needed.join(', ') : 
+                                      dayData.materials_needed) : 'N/A'}
+                                </td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Agent Performance Section */}
+          {agentPerformance && (
+            <div style={{
+              background: '#f8f9fa',
+              border: '2px solid #007bff',
+              borderRadius: '8px',
+              padding: '20px',
+              marginTop: '30px'
+            }}>
+              <h3 style={{ margin: '0 0 20px 0', color: '#007bff' }}>
+                🤖 Agent Performance Metrics
+              </h3>
+              
+              {/* Agent Execution Times */}
+              <div style={{ marginBottom: '20px' }}>
+                <h4 style={{ margin: '0 0 10px 0', color: '#495057' }}>⚡ Execution Times</h4>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '10px' }}>
+                  {Object.entries(agentPerformance).map(([agentName, timing]) => (
+                    <div key={agentName} style={{
+                      background: 'white',
+                      padding: '10px',
+                      borderRadius: '6px',
+                      border: '1px solid #ddd'
+                    }}>
+                      <strong>{agentName}:</strong> {timing.execution_time_seconds?.toFixed(4)}s
+                    </div>
+                  ))}
+                </div>
               </div>
+
+              {/* Total Execution Time */}
+              {agentPerformance.total_execution_time && (
+                <div style={{
+                  background: '#e3f2fd',
+                  padding: '15px',
+                  borderRadius: '6px',
+                  marginBottom: '20px'
+                }}>
+                  <strong>Total Execution Time:</strong> {agentPerformance.total_execution_time.toFixed(4)}s
+                </div>
+              )}
+
+              {/* LLM Usage Stats */}
+              <div style={{ marginBottom: '20px' }}>
+                <h4 style={{ margin: '0 0 10px 0', color: '#495057' }}>🧠 LLM Usage</h4>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '10px' }}>
+                  {Object.entries(agentPerformance).map(([agentName, timing]) => (
+                    <div key={agentName} style={{
+                      background: 'white',
+                      padding: '10px',
+                      borderRadius: '6px',
+                      border: '1px solid #ddd'
+                    }}>
+                      <div><strong>{agentName}:</strong></div>
+                      <div>LLM Used: {timing.llm_used ? '✅ Yes' : '❌ No'}</div>
+                      <div>Tokens: {timing.tokens_used || 0}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Raw Agent Data */}
+              <details style={{ marginTop: '20px' }}>
+                <summary style={{ cursor: 'pointer', fontWeight: 'bold', color: '#007bff' }}>
+                  🔍 View Raw Agent Data
+                </summary>
+                <pre style={{
+                  background: '#f5f5f5',
+                  padding: '15px',
+                  borderRadius: '6px',
+                  overflow: 'auto',
+                  fontSize: '12px',
+                  marginTop: '10px',
+                  maxHeight: '400px'
+                }}>
+                  {JSON.stringify(agentPerformance, null, 2)}
+                </pre>
+              </details>
             </div>
           )}
         </div>
