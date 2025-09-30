@@ -1,0 +1,43 @@
+{
+  "niche": "Dance",
+  "slug": "dance",
+  "category": "Creative Arts",
+  "heroTagline": "Move, Groove & Grow Through Dance 🕺💃",
+  "subHeading": "Helping Kids Express, Energize & Enjoy Through Rhythmic Movement",
+  "problems": [
+    "They lack confidence in physical expression",
+    "Sedentary lifestyle habits",
+    "They feel shy about performing"
+  ],
+  "approachSteps": [
+    "Step-by-step fun routines",
+    "Daily movement challenges",
+    "Explore global dance styles",
+    "Parent-child dance-offs!"
+  ],
+  "whyKidsLoveThis": [
+    "They get to move freely",
+    "They feel more confident",
+    "They learn rhythm & discipline"
+  ],
+  "colors": {
+    "primary": "#C2185B",
+    "secondary": "#F8BBD0",
+    "background": "#FFF0F5"
+  },
+  "illustration": "dance-hero.svg",
+  "suggestions": [
+    "Physical Health",
+    "Creativity",
+    "Body Awareness"
+  ],
+  "ageGroups": [
+    "3-5",
+    "6-8",
+    "9-12",
+    "13-15",
+    "16-18"
+  ],
+  "totalTopics": 0,
+  "lastUpdated": "2025-09-26"
+}

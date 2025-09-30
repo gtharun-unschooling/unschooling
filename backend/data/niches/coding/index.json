@@ -1,0 +1,43 @@
+{
+  "niche": "Coding & Programming",
+  "slug": "coding",
+  "category": "General",
+  "heroTagline": "Think, Click, Build: Kid Coders Start Here 💻🧠",
+  "subHeading": "Teaching Kids Logic, Problem Solving & Creativity Through Code",
+  "problems": [
+    "Kids are passive tech users",
+    "They fear complex coding syntax",
+    "Creativity isn't connected with logic"
+  ],
+  "approachSteps": [
+    "Block-based puzzles",
+    "Code-a-story games",
+    "Robotic logic missions",
+    "App simulation games"
+  ],
+  "whyKidsLoveThis": [
+    "They feel like inventors",
+    "They love building digital stories",
+    "They gain logical confidence"
+  ],
+  "colors": {
+    "primary": "#27AE60",
+    "secondary": "#ABEBC6",
+    "background": "#E8F8F5"
+  },
+  "illustration": "coding-hero.svg",
+  "suggestions": [
+    "Logic",
+    "Digital Creation",
+    "Future Skills"
+  ],
+  "ageGroups": [
+    "3-5",
+    "6-8",
+    "9-12",
+    "13-15",
+    "16-18"
+  ],
+  "totalTopics": 0,
+  "lastUpdated": "2025-09-26"
+}

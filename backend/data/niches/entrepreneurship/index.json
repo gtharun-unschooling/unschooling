@@ -1,0 +1,43 @@
+{
+  "niche": "Entrepreneurship",
+  "slug": "entrepreneurship",
+  "category": "Life Skills",
+  "heroTagline": "Build Boss-Minds While They're Still in Pajamas 💼🚀",
+  "subHeading": "Unlock creativity and confidence through real-world problem solving",
+  "problems": [
+    "They’re never taught how to create value",
+    "They fear failure instead of learning from it",
+    "They don’t get to solve real problems"
+  ],
+  "approachSteps": [
+    "Mini startup simulations",
+    "Problem-solving with everyday items",
+    "Pitch ideas to family “investors”",
+    "Creative idea journals + weekly missions"
+  ],
+  "whyKidsLoveThis": [
+    "They invent lemonade stands, sticker shops, and more",
+    "They proudly present their ideas",
+    "They become confident decision-makers"
+  ],
+  "colors": {
+    "primary": "#D35400",
+    "secondary": "#F39C12",
+    "background": "#FEF5E7"
+  },
+  "illustration": "entrepreneurship-hero.svg",
+  "suggestions": [
+    "Creative Thinking",
+    "Decision-Making",
+    "Risk & Reward"
+  ],
+  "ageGroups": [
+    "3-5",
+    "6-8",
+    "9-12",
+    "13-15",
+    "16-18"
+  ],
+  "totalTopics": 100,
+  "lastUpdated": "2025-09-26"
+}

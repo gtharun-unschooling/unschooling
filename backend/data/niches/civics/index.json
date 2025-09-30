@@ -1,0 +1,43 @@
+{
+  "niche": "Civics & Government",
+  "slug": "civics",
+  "category": "General",
+  "heroTagline": "Big Ideas for Tiny Citizens 🏛️🗳️",
+  "subHeading": "Helping Kids Understand Their Rights, Roles & Responsibilities",
+  "problems": [
+    "They think rules are unfair",
+    "No clear idea of democracy",
+    "They feel powerless in decisions"
+  ],
+  "approachSteps": [
+    "Kid councils & mock parliaments",
+    "Community challenge cards",
+    "Local change-maker stories",
+    "Justice games"
+  ],
+  "whyKidsLoveThis": [
+    "They feel responsible",
+    "They love debating & voting",
+    "They understand fairness better"
+  ],
+  "colors": {
+    "primary": "#E74C3C",
+    "secondary": "#F5B7B1",
+    "background": "#FDEDEC"
+  },
+  "illustration": "civics-hero.svg",
+  "suggestions": [
+    "Justice",
+    "Leadership",
+    "Critical Thinking"
+  ],
+  "ageGroups": [
+    "3-5",
+    "6-8",
+    "9-12",
+    "13-15",
+    "16-18"
+  ],
+  "totalTopics": 0,
+  "lastUpdated": "2025-09-26"
+}

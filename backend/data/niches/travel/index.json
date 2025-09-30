@@ -1,0 +1,43 @@
+{
+  "niche": "Travel",
+  "slug": "travel",
+  "category": "General",
+  "heroTagline": "Travel the World Without Packing a Bag 🌍✈️",
+  "subHeading": "Cultivating Curiosity and Culture Through Playful Exploration",
+  "problems": [
+    "Kids have narrow cultural exposure",
+    "They rarely understand geography",
+    "History feels boring"
+  ],
+  "approachSteps": [
+    "Country of the week kits",
+    "Postcard storytelling",
+    "Map missions & games",
+    "Cuisine-based activities"
+  ],
+  "whyKidsLoveThis": [
+    "They feel like explorers",
+    "They discover cool global facts",
+    "They collect world stamps"
+  ],
+  "colors": {
+    "primary": "#2C3E50",
+    "secondary": "#95A5A6",
+    "background": "#ECF0F1"
+  },
+  "illustration": "travel-hero.svg",
+  "suggestions": [
+    "Geography",
+    "Culture",
+    "Curiosity"
+  ],
+  "ageGroups": [
+    "3-5",
+    "6-8",
+    "9-12",
+    "13-15",
+    "16-18"
+  ],
+  "totalTopics": 0,
+  "lastUpdated": "2025-09-26"
+}

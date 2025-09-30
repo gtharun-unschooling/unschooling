@@ -1,0 +1,43 @@
+{
+  "niche": "AI",
+  "slug": "ai",
+  "category": "Technology",
+  "heroTagline": "Learn to Think Like a Robot, Solve Like a Human 🤖🧠",
+  "subHeading": "Making Artificial Intelligence Fun, Simple, and Accessible for Young Minds",
+  "problems": [
+    "AI feels too complex for kids",
+    "No relatable, kid-friendly examples",
+    "It’s often taught with dry technical terms"
+  ],
+  "approachSteps": [
+    "Visual puzzles & pattern recognition",
+    "Build-your-own bot logic cards",
+    "Simple decision trees using real-life choices",
+    "Chatbot storytelling games"
+  ],
+  "whyKidsLoveThis": [
+    "They feel like tech wizards",
+    "They get to “teach” robots using cards",
+    "They love thinking like a machine"
+  ],
+  "colors": {
+    "primary": "#3498DB",
+    "secondary": "#85C1E9",
+    "background": "#E8F6FC"
+  },
+  "illustration": "ai-hero.svg",
+  "suggestions": [
+    "Logic Building",
+    "Digital Literacy",
+    "Future Careers"
+  ],
+  "ageGroups": [
+    "3-5",
+    "6-8",
+    "9-12",
+    "13-15",
+    "16-18"
+  ],
+  "totalTopics": 100,
+  "lastUpdated": "2025-09-26"
+}
