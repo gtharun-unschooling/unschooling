@@ -110,7 +110,7 @@ const SubscriptionPlans = () => {
   };
   
   return (
-    <section style={planStyles.section}>
+    <section className="pricing-section" style={planStyles.section}>
       <h2 style={planStyles.heading}>Plans for Every Family</h2>
       <div style={planStyles.plansWrapper}>
         {planData.map((plan, index) => (

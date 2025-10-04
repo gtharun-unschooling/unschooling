@@ -9,6 +9,9 @@ import CookieConsent from './components/CookieConsent';
 import SEOHead from './components/SEO/SEOHead';
 import { HelmetProvider } from 'react-helmet-async';
 import './styles/global.css';
+import './styles/mobile-responsive.css';
+import './styles/typographyConsistency.css';
+import './styles/sectionSpecificStyles.css';
 
 function App() {
   console.log('🚀 App component rendering...');

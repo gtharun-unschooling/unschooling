@@ -62,6 +62,36 @@ const WhatWeDoPage = () => {
     marginBottom: spacing.xl,
   };
 
+  // Enhanced button style that matches the hero section vibe
+  const heroButtonStyle = {
+    background: 'linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 50%, #45b7d1 100%)',
+    color: 'white',
+    border: 'none',
+    borderRadius: '25px',
+    padding: 'clamp(0.8rem, 2.5vw, 1.2rem) clamp(2rem, 5vw, 3rem)',
+    fontSize: 'clamp(1rem, 2.5vw, 1.2rem)',
+    fontWeight: '700',
+    cursor: 'pointer',
+    transition: 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+    textDecoration: 'none',
+    display: 'inline-block',
+    position: 'relative',
+    overflow: 'hidden',
+    boxShadow: '0 8px 25px rgba(255, 107, 107, 0.3), 0 4px 12px rgba(78, 205, 196, 0.2)',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px',
+    border: '2px solid rgba(255, 255, 255, 0.2)',
+    backdropFilter: 'blur(10px)',
+  };
+
+  // Hover effects for the hero button
+  const heroButtonHoverStyle = {
+    transform: 'translateY(-3px) scale(1.05)',
+    boxShadow: '0 15px 35px rgba(255, 107, 107, 0.4), 0 8px 20px rgba(78, 205, 196, 0.3)',
+    background: 'linear-gradient(135deg, #ff5252 0%, #26c6da 50%, #29b6f6 100%)',
+  };
+
+  // Standard button style for other sections
   const buttonStyle = {
     background: 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)',
     color: 'white',
@@ -140,33 +170,118 @@ const WhatWeDoPage = () => {
         `}
       </style>
       {/* Hero Section */}
-      <div style={heroStyle}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1rem' }}>
+      <div style={{
+        ...heroStyle,
+        position: 'relative',
+        overflow: 'hidden'
+      }}>
+        {/* Background Pattern */}
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: `
+            radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 50%),
+            radial-gradient(circle at 40% 40%, rgba(255,255,255,0.05) 0%, transparent 50%)
+          `,
+          pointerEvents: 'none'
+        }}></div>
+        
+        {/* Floating Elements */}
+        <div style={{
+          position: 'absolute',
+          top: '10%',
+          left: '5%',
+          fontSize: '2rem',
+          opacity: 0.3,
+          animation: 'float 6s ease-in-out infinite'
+        }}>✨</div>
+        <div style={{
+          position: 'absolute',
+          top: '20%',
+          right: '10%',
+          fontSize: '1.5rem',
+          opacity: 0.3,
+          animation: 'float 8s ease-in-out infinite reverse'
+        }}>🌟</div>
+        <div style={{
+          position: 'absolute',
+          bottom: '15%',
+          left: '15%',
+          fontSize: '1.8rem',
+          opacity: 0.3,
+          animation: 'float 7s ease-in-out infinite'
+        }}>💫</div>
+        
+        <div style={{ 
+          maxWidth: '1200px', 
+          margin: '0 auto', 
+          padding: '0 1rem',
+          position: 'relative',
+          zIndex: 2
+        }}>
           <h1 style={{ 
             fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', 
             margin: '0 0 1rem 0', 
             fontWeight: '700',
-            textAlign: 'center'
+            textAlign: 'center',
+            textShadow: '0 4px 20px rgba(0,0,0,0.3)',
+            letterSpacing: '-0.02em'
           }}>
             What We Do 🌟
           </h1>
+          
+          {/* Decorative line */}
+          <div style={{
+            width: '120px',
+            height: '6px',
+            background: 'linear-gradient(90deg, #ffd700, #ff6b6b, #4ecdc4)',
+            margin: '0 auto 2rem auto',
+            borderRadius: '3px',
+            boxShadow: '0 2px 10px rgba(255,255,255,0.3)'
+          }}></div>
+          
           <p style={{ 
             fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', 
             margin: '0 auto 2rem auto', 
-            opacity: 0.9, 
+            opacity: 0.95, 
             maxWidth: '800px',
             textAlign: 'center',
-            lineHeight: '1.6'
+            lineHeight: '1.8',
+            fontWeight: '500',
+            textShadow: '0 2px 10px rgba(0,0,0,0.2)'
           }}>
             Transforming how children learn through personalized, engaging experiences that adapt to their unique needs and interests
           </p>
-          <div style={{ textAlign: 'center' }}>
-            <Link to="/plans" style={{
-              ...buttonStyle,
-              fontSize: 'clamp(0.9rem, 2vw, 1rem)',
-              padding: 'clamp(0.8rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem)'
-            }}>
-              Get Started Today
+          
+          <div style={{ 
+            textAlign: 'center',
+            position: 'relative',
+            zIndex: 2,
+            marginTop: '2rem'
+          }}>
+            <Link 
+              to="/plans" 
+              style={heroButtonStyle}
+              onMouseEnter={(e) => {
+                Object.assign(e.target.style, heroButtonHoverStyle);
+              }}
+              onMouseLeave={(e) => {
+                Object.assign(e.target.style, heroButtonStyle);
+              }}
+            >
+              <span style={{
+                position: 'relative',
+                zIndex: 2,
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem'
+              }}>
+                🚀 Start Your Journey
+              </span>
             </Link>
           </div>
         </div>
@@ -515,7 +630,7 @@ const WhatWeDoPage = () => {
               {/* Pillar 2 - Right */}
               <Link to="/growth" style={{
                 position: 'absolute',
-                right: '60px',
+                right: '30px',
                 top: '50%',
                 transform: 'translateY(-50%)',
                 ...textStyle,
@@ -548,7 +663,7 @@ const WhatWeDoPage = () => {
               {/* Pillar 4 - Left */}
               <div style={{
                 position: 'absolute',
-                left: '60px',
+                left: '30px',
                 top: '50%',
                 transform: 'translateY(-50%)',
                 ...textStyle

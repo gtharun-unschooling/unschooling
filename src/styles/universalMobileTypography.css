@@ -1,0 +1,481 @@
+/* Universal Mobile Typography System */
+/* This file provides consistent typography across all pages for mobile devices */
+
+/* Import the typography system */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Base font family for all elements */
+* {
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* ========================================
+   DESKTOP TYPOGRAPHY (Default)
+   ======================================== */
+
+/* H1 Headings - Main page titles */
+h1 {
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  color: #1e293b !important;
+  margin: 0 0 1.5rem 0 !important;
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* H2 Headings - Section titles */
+h2 {
+  font-size: 36px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  color: #1e293b !important;
+  margin: 0 0 1.25rem 0 !important;
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* H3 Headings - Subsection titles */
+h3 {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  color: #1e293b !important;
+  margin: 0 0 1rem 0 !important;
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* H4 Headings - Card titles */
+h4 {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  color: #1e293b !important;
+  margin: 0 0 0.75rem 0 !important;
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* H5 Headings - Small titles */
+h5 {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 1.3 !important;
+  color: #1e293b !important;
+  margin: 0 0 0.5rem 0 !important;
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* H6 Headings - Smallest titles */
+h6 {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 1.3 !important;
+  color: #1e293b !important;
+  margin: 0 0 0.5rem 0 !important;
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Body text */
+p, span, div {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+  color: #374151 !important;
+  margin: 0 0 1rem 0 !important;
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* ========================================
+   TABLET TYPOGRAPHY (768px and below)
+   ======================================== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px !important;
+  }
+  
+  h2 {
+    font-size: 28px !important;
+  }
+  
+  h3 {
+    font-size: 20px !important;
+  }
+  
+  h4 {
+    font-size: 18px !important;
+  }
+  
+  h5 {
+    font-size: 14px !important;
+  }
+  
+  h6 {
+    font-size: 12px !important;
+  }
+  
+  p, span, div {
+    font-size: 14px !important;
+  }
+}
+
+/* ========================================
+   MOBILE TYPOGRAPHY (480px and below)
+   ======================================== */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px !important;
+  }
+  
+  h2 {
+    font-size: 24px !important;
+  }
+  
+  h3 {
+    font-size: 18px !important;
+  }
+  
+  h4 {
+    font-size: 16px !important;
+  }
+  
+  h5 {
+    font-size: 12px !important;
+  }
+  
+  h6 {
+    font-size: 10px !important;
+  }
+  
+  p, span, div {
+    font-size: 12px !important;
+  }
+}
+
+/* ========================================
+   NICHE PAGE SPECIFIC ADJUSTMENTS
+   ======================================== */
+
+/* Base positioning for niche title - will be overridden by media queries */
+.niche-hero-section h2 {
+  position: absolute !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+  z-index: 2 !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 2rem !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+/* Niche page hero sections - prevent overlap with back button */
+@media (max-width: 768px) {
+  .niche-hero-section {
+    padding-top: 80px !important; /* Make room for back button */
+  }
+  
+  .niche-hero-content {
+    margin-top: 2rem !important; /* Additional spacing */
+  }
+  
+  .niche-hero-tagline {
+    font-size: 1.8rem !important; /* Slightly smaller for mobile */
+    line-height: 1.3 !important;
+  }
+  
+  .niche-hero-subheading {
+    font-size: 0.85rem !important; /* Smaller subheading */
+    line-height: 1.4 !important;
+  }
+  
+  /* Center the niche title on mobile only */
+  .niche-hero-section h2 {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 2.5rem !important;
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .niche-hero-section {
+    padding-top: 70px !important; /* Smaller padding for very small screens */
+  }
+  
+  .niche-hero-tagline {
+    font-size: 1.5rem !important; /* Even smaller for very small screens */
+  }
+  
+  .niche-hero-subheading {
+    font-size: 0.8rem !important;
+  }
+  
+  /* Ensure title is centered on very small screens */
+  .niche-hero-section h2 {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 2.5rem !important;
+    font-size: 1.4rem !important;
+  }
+}
+
+/* Desktop and tablet - title should NOT be centered */
+@media (min-width: 769px) {
+  .niche-hero-section h2 {
+    left: 7rem !important;
+    transform: none !important;
+    top: 1.5rem !important;
+    font-size: 1.5rem !important;
+    position: absolute !important;
+  }
+}
+
+/* Specific override for tablet range */
+@media (min-width: 481px) and (max-width: 768px) {
+  .niche-hero-section h2 {
+    left: 7rem !important;
+    transform: none !important;
+    top: 1.5rem !important;
+    font-size: 1.5rem !important;
+    position: absolute !important;
+  }
+}
+
+/* Icon sizing adjustments - ALL DEVICES */
+.niche-icon {
+  font-size: 10rem !important; /* Large icon on all devices */
+  width: 160px !important;
+  height: 160px !important;
+  line-height: 1 !important;
+}
+
+/* Make the actual emoji/icon content large on DESKTOP ONLY */
+@media (min-width: 769px) {
+  .niche-icon span {
+    font-size: 10rem !important; /* Make the emoji itself large on desktop */
+    line-height: 1 !important;
+  }
+}
+
+/* Icon container adjustments - ALL DEVICES */
+.niche-hero-section div[style*="border-radius: 50%"] {
+  width: 180px !important;
+  height: 180px !important;
+  padding: 2.5rem !important;
+}
+
+/* Mobile adjustments - Smaller icon */
+@media (max-width: 768px) {
+  .niche-icon {
+    font-size: 120px !important; /* Smaller icon on mobile */
+    width: 120px !important;
+    height: 120px !important;
+  }
+  
+  /* Make the actual emoji/icon content smaller on mobile */
+  .niche-icon span {
+    font-size: 120px !important; /* Make the emoji itself smaller */
+    line-height: 1 !important;
+  }
+  
+  /* Icon container adjustments */
+  .niche-hero-section div[style*="border-radius: 50%"] {
+    width: 160px !important;
+    height: 160px !important;
+    padding: 1.5rem !important;
+  }
+}
+
+/* Very small screens - also smaller */
+@media (max-width: 480px) {
+  .niche-icon {
+    font-size: 100px !important; /* Smaller icon on very small screens */
+    width: 100px !important;
+    height: 100px !important;
+  }
+  
+  /* Make the actual emoji/icon content smaller on very small screens */
+  .niche-icon span {
+    font-size: 100px !important; /* Make the emoji itself smaller */
+    line-height: 1 !important;
+  }
+  
+  .niche-hero-section div[style*="border-radius: 50%"] {
+    width: 140px !important;
+    height: 140px !important;
+    padding: 1.2rem !important;
+  }
+}
+
+/* Hero tagline adjustments for tablet - more specific selector */
+.niche-hero-section .niche-hero-tagline {
+  font-weight: 800 !important;
+  line-height: 1.3 !important;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .niche-hero-section .niche-hero-tagline {
+    font-size: 35.2px !important; /* Balanced tagline on tablet - 2.2rem */
+  }
+}
+
+/* Hero tagline adjustments for desktop */
+@media (min-width: 1025px) {
+  .niche-hero-section .niche-hero-tagline {
+    font-size: 40px !important; /* Balanced tagline on desktop - 2.5rem */
+  }
+}
+
+/* Hero tagline adjustments for mobile */
+@media (max-width: 768px) {
+  .niche-hero-tagline {
+    font-size: 1.8rem !important; /* Appropriate tagline on mobile */
+    font-weight: 800 !important;
+    line-height: 1.3 !important;
+  }
+}
+
+/* Topic cards mobile adjustments */
+@media (max-width: 768px) {
+  .topic-card {
+    padding: 1rem 1.2rem !important; /* Slightly smaller padding on mobile */
+    margin-bottom: 0.8rem !important; /* Reduce gap between cards */
+    border-radius: 0.8rem !important; /* Slightly smaller border radius */
+  }
+  
+  .topic-number {
+    width: 40px !important;
+    height: 35px !important;
+    font-size: 1rem !important;
+  }
+  
+  .topic-name {
+    font-size: 1rem !important; /* Slightly smaller text on mobile */
+    padding: 0 0.8rem !important;
+  }
+  
+  .topic-age {
+    font-size: 0.85rem !important;
+    padding: 0.25rem 0.6rem !important;
+  }
+  
+  .topics-list-wrapper {
+    gap: 0.8rem !important; /* Reduce gap between topic cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .topic-card {
+    padding: 0.9rem 1rem !important; /* Even smaller padding on very small screens */
+    margin-bottom: 0.6rem !important;
+    border-radius: 0.7rem !important;
+  }
+  
+  .topic-number {
+    width: 35px !important;
+    height: 30px !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .topic-name {
+    font-size: 0.95rem !important;
+    padding: 0 0.6rem !important;
+  }
+  
+  .topic-age {
+    font-size: 0.8rem !important;
+    padding: 0.2rem 0.5rem !important;
+  }
+  
+  .topics-list-wrapper {
+    gap: 0.6rem !important;
+  }
+}
+
+/* ========================================
+   UTILITY CLASSES FOR SPECIFIC USE CASES
+   ======================================== */
+
+/* Large display text */
+.display-large {
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+  line-height: 1.1 !important;
+}
+
+.display-medium {
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
+}
+
+.display-small {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+}
+
+/* Body text variants */
+.body-large {
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+}
+
+.body-medium {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+}
+
+.body-small {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+/* Mobile responsive display text */
+@media (max-width: 768px) {
+  .display-large {
+    font-size: 2.5rem !important;
+  }
+  
+  .display-medium {
+    font-size: 2rem !important;
+  }
+  
+  .display-small {
+    font-size: 1.8rem !important;
+  }
+  
+  .body-large {
+    font-size: 16px !important;
+  }
+  
+  .body-medium {
+    font-size: 14px !important;
+  }
+  
+  .body-small {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .display-large {
+    font-size: 2rem !important;
+  }
+  
+  .display-medium {
+    font-size: 1.8rem !important;
+  }
+  
+  .display-small {
+    font-size: 1.5rem !important;
+  }
+  
+  .body-large {
+    font-size: 14px !important;
+  }
+  
+  .body-medium {
+    font-size: 12px !important;
+  }
+  
+  .body-small {
+    font-size: 11px !important;
+  }
+}

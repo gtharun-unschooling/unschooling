@@ -3,6 +3,7 @@ import { Link, useParams, useLocation } from 'react-router-dom';
 import config from '../../config/config';
 import MinimalBackButton from '../../components/ui/MinimalBackButton';
 import NicheIcon from '../../components/ui/NicheIcon';
+import '../../styles/universalMobileTypography.css';
 
 const DynamicNichePage = () => {
   const { nicheSlug } = useParams();
@@ -206,13 +207,12 @@ const DynamicNichePage = () => {
       borderRadius: '1rem',
       marginBottom: '2rem',
       boxShadow: `0 8px 32px ${nicheColor}30`,
+      // Add padding-top for mobile to prevent back button overlap
+      paddingTop: isMobile ? '80px' : '0',
     };
   
     const titleStyle = {
-      position: 'absolute',
-      top: '1.5rem', // Same vertical position as back button
-      left: '7rem', // Moved to the right of the back button (2rem + 48px + 1rem)
-      fontSize: '1.5rem',
+      // Remove positioning properties - let CSS handle them
       fontWeight: '700',
       color: getTextColor(backgroundColor),
       margin: 0,
@@ -246,21 +246,21 @@ const DynamicNichePage = () => {
     };
   
     const taglineStyle = {
-      fontSize: isMobile ? '2rem' : '3rem',
+      fontSize: isMobile ? '1.8rem' : '2.5rem', // Smaller and more balanced
       fontWeight: '800',
       color: getTextColor(backgroundColor),
       marginBottom: '1rem',
-      lineHeight: 1.2,
+      lineHeight: 1.3, // Better line height
       textShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
     };
   
     const subheadingStyle = {
-      fontSize: isMobile ? '0.9rem' : '1rem',
+      fontSize: isMobile ? '0.85rem' : '1rem', // Using universal mobile typography
       fontWeight: '500',
       color: getTextColor(backgroundColor),
       maxWidth: '500px',
       margin: '0 auto',
-      lineHeight: 1.5,
+      lineHeight: 1.4, // Better line height for mobile
       opacity: 0.9,
     };
   
@@ -270,13 +270,18 @@ const DynamicNichePage = () => {
       alignItems: 'center',
       backgroundColor: 'rgba(255, 255, 255, 0.2)',
       borderRadius: '50%',
-      padding: '2rem',
+      padding: isMobile ? '2rem' : '3rem', // Larger padding for desktop
       backdropFilter: 'blur(10px)',
       boxShadow: `0 8px 32px ${nicheColor}40`,
+      // Make container appropriately sized
+      width: isMobile ? '160px' : '180px',
+      height: isMobile ? '160px' : '180px',
+      minWidth: isMobile ? '160px' : '180px',
+      minHeight: isMobile ? '160px' : '180px',
     };
   
     return (
-      <section style={sectionStyle}>
+      <section className="niche-hero-section" style={sectionStyle}>
         <MinimalBackButton 
           heroColors={{
             backgroundColor: backgroundColor,
@@ -286,18 +291,25 @@ const DynamicNichePage = () => {
         />
         <h2 style={titleStyle}>{`#${Niche}`}</h2>
 
-        <div style={leftSectionStyle}>
-          <div style={taglineStyle}>{heroTagline || `Explore ${Niche}`}</div>
+        <div className="niche-hero-content" style={leftSectionStyle}>
+          <div className="niche-hero-tagline" style={taglineStyle}>{heroTagline || `Explore ${Niche}`}</div>
+          {subheading && (
+            <div className="niche-hero-subheading" style={subheadingStyle}>{subheading}</div>
+          )}
         </div>
 
         <div style={rightSectionStyle}>
           <div style={iconContainerStyle}>
             <NicheIcon 
               niche={Niche} 
-              size="xlarge"
+              size={isMobile ? "massive" : "huge"}
+              className="niche-icon"
               style={{
-                fontSize: isMobile ? '4rem' : '6rem',
                 filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.2))',
+                fontSize: isMobile ? '120px' : '160px', // 120px icon on mobile, 160px on desktop
+                width: isMobile ? '120px' : '160px', // 120px width on mobile, 160px on desktop
+                height: isMobile ? '120px' : '160px', // 120px height on mobile, 160px on desktop
+                lineHeight: '1', // Prevent line height issues
               }}
             />
           </div>
@@ -437,9 +449,14 @@ const DynamicNichePage = () => {
     const headingStyle = {
       fontSize: '2rem',
       fontWeight: '700',
-      color: primaryColor,
+      color: backgroundColor || '#FFF9E5', // Use background color or light cream
+      textShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', // Add subtle shadow for readability
       marginBottom: '2rem',
       textAlign: 'center',
+      background: `linear-gradient(135deg, ${primaryColor} 0%, ${primaryColor}dd 100%)`,
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+      backgroundClip: 'text',
     };
   
     const listWrapperStyle = {
@@ -451,35 +468,113 @@ const DynamicNichePage = () => {
       margin: '0 auto',
     };
   
-    const topicRowStyle = {
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      backgroundColor: '#ffffff',
-      padding: '1rem 1.5rem',
-      borderRadius: '0.75rem',
-      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.06)',
-      fontSize: '1rem',
-      fontWeight: '500',
-      color: '#1f2937',
-      textDecoration: 'none',
+    // Create topic card style using niche colors
+    const getTopicCardStyle = (index) => {
+      // Use the niche's color scheme instead of multi-colors
+      const cardBackground = `linear-gradient(135deg, ${primaryColor} 0%, ${nicheColor} 100%)`;
+      
+      // Determine text color based on background brightness
+      const getTextColor = (bgColor) => {
+        if (!bgColor) return '#ffffff';
+        // Simple brightness check - if background is light, use dark text
+        const hex = bgColor.replace('#', '');
+        const r = parseInt(hex.substr(0, 2), 16);
+        const g = parseInt(hex.substr(2, 2), 16);
+        const b = parseInt(hex.substr(4, 2), 16);
+        const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+        return brightness > 128 ? '#1f2937' : '#ffffff';
+      };
+      
+      const textColor = getTextColor(primaryColor);
+      
+      return {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        background: cardBackground,
+        padding: '1.2rem 1.5rem',
+        borderRadius: '1rem',
+        boxShadow: `0 8px 25px ${nicheColor}30, 0 4px 12px ${nicheColor}20`,
+        fontSize: '1rem',
+        fontWeight: '600',
+        color: textColor,
+        textDecoration: 'none',
+        transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+        border: `1px solid ${primaryColor}40`,
+        backdropFilter: 'blur(10px)',
+        position: 'relative',
+        overflow: 'hidden',
+        cursor: 'pointer',
+      };
     };
   
-    const numberStyle = {
-      fontWeight: '700',
-      color: primaryColor,
-      width: '40px',
+    const getNumberStyle = (index) => {
+      return {
+        fontWeight: '800',
+        color: '#ffffff',
+        width: '50px',
+        fontSize: '1.1rem',
+        textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)',
+        backgroundColor: `${primaryColor}80`,
+        borderRadius: '50%',
+        height: '40px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backdropFilter: 'blur(10px)',
+        border: `2px solid ${primaryColor}60`,
+      };
     };
   
-    const topicNameStyle = {
-      flexGrow: 1,
-      padding: '0 1rem',
-      color: '#111827',
+    const getTopicNameStyle = (index) => {
+      // Determine text color based on primary color brightness
+      const getTextColor = (bgColor) => {
+        if (!bgColor) return '#ffffff';
+        const hex = bgColor.replace('#', '');
+        const r = parseInt(hex.substr(0, 2), 16);
+        const g = parseInt(hex.substr(2, 2), 16);
+        const b = parseInt(hex.substr(4, 2), 16);
+        const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+        return brightness > 128 ? '#1f2937' : '#ffffff';
+      };
+      
+      const textColor = getTextColor(primaryColor);
+      
+      return {
+        flexGrow: 1,
+        padding: '0 1rem',
+        color: textColor,
+        fontWeight: '600',
+        fontSize: '1.05rem',
+        textShadow: textColor === '#ffffff' ? '0 2px 4px rgba(0, 0, 0, 0.3)' : 'none',
+      };
     };
   
-    const ageStyle = {
-      fontStyle: 'italic',
-      color: '#6b7280',
+    const getAgeStyle = (index) => {
+      // Determine text color based on primary color brightness
+      const getTextColor = (bgColor) => {
+        if (!bgColor) return '#ffffff';
+        const hex = bgColor.replace('#', '');
+        const r = parseInt(hex.substr(0, 2), 16);
+        const g = parseInt(hex.substr(2, 2), 16);
+        const b = parseInt(hex.substr(4, 2), 16);
+        const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+        return brightness > 128 ? '#1f2937' : '#ffffff';
+      };
+      
+      const textColor = getTextColor(primaryColor);
+      
+      return {
+        fontStyle: 'italic',
+        color: textColor === '#ffffff' ? 'rgba(255, 255, 255, 0.8)' : '#6b7280',
+        fontWeight: '500',
+        fontSize: '0.95rem',
+        backgroundColor: `${primaryColor}20`,
+        padding: '0.3rem 0.8rem',
+        borderRadius: '1rem',
+        backdropFilter: 'blur(10px)',
+        border: `1px solid ${primaryColor}40`,
+      };
     };
   
     const buttonStyle = {
@@ -500,30 +595,39 @@ const DynamicNichePage = () => {
       <section style={sectionStyle}>
         <h2 style={headingStyle}>What Your Child Will Learn</h2>
         
-        <div style={{
-          textAlign: 'center',
-          marginBottom: '2rem',
-          fontSize: '1.1rem',
-          color: '#6b7280',
-          fontWeight: '500',
-        }}>
-          Total {topicList.length} topics available
-        </div>
 
-        <div style={listWrapperStyle}>
+        <div className="topics-list-wrapper" style={listWrapperStyle}>
             {topicList.slice(0, visibleLessons).map((topic, idx) => {
             if (!topic || !topic.Topic) return null;
             const topicSlug = topic.Topic.toLowerCase().replace(/\s+/g, '-');
-                    return (
+            const cardStyle = getTopicCardStyle(idx);
+            const numberStyle = getNumberStyle(idx);
+            const topicNameStyle = getTopicNameStyle(idx);
+            const ageStyle = getAgeStyle(idx);
+            
+            return (
                 <Link
                 key={idx}
+                className="topic-card"
                 to={`/niche/${nicheSlug}/${topicSlug}`} // use outer scope's `nicheSlug`
                 state={{ from: 'niches' }}
-                style={topicRowStyle}
+                style={cardStyle}
+                onMouseEnter={(e) => {
+                  if (window.innerWidth > 768) { // Only on desktop
+                    e.currentTarget.style.transform = 'translateY(-3px) scale(1.02)';
+                    e.currentTarget.style.boxShadow = '0 12px 35px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.15)';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (window.innerWidth > 768) { // Only on desktop
+                    e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                    e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.15), 0 4px 12px rgba(0, 0, 0, 0.1)';
+                  }
+                }}
               >
-                <span style={numberStyle}>#{idx + 1}</span>
-                <span style={topicNameStyle}>{topic.Topic}</span>
-                <span style={ageStyle}>Age {topic.Age}</span>
+                <span className="topic-number" style={numberStyle}>#{idx + 1}</span>
+                <span className="topic-name" style={topicNameStyle}>{topic.Topic}</span>
+                <span className="topic-age" style={ageStyle}>Age {topic.Age}</span>
                 </Link>
             );
           })}

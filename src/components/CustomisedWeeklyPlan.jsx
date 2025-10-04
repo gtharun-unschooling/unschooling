@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { db, auth } from '../firebase';
 import { doc, getDoc, collection, getDocs, query, orderBy, updateDoc } from 'firebase/firestore';
-import { useAuthState } from 'react-firebase-hooks/auth';
+import { useAuth } from '../contexts/AuthContext';
 import { useLocation, useNavigate } from 'react-router-dom';
 import config from '../config/config';
 
 const CustomisedWeeklyPlan = () => {
-  const [user, authLoading, authError] = useAuthState(auth);
+  const { currentUser: user, loading: authLoading, error: authError } = useAuth();
   const [plans, setPlans] = useState({});
   const [selectedMonth, setSelectedMonth] = useState('');
   const [loading, setLoading] = useState(false);
@@ -20,82 +20,62 @@ const CustomisedWeeklyPlan = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Load available children
+  // Load available children (using same method as ProfileForm.jsx)
   const loadAvailableChildren = async () => {
+    if (!user) {
+      console.log('❌ No user found, skipping loadAvailableChildren');
+      return;
+    }
+    
+    console.log('🔍 Starting loadAvailableChildren...');
+    console.log('👤 User UID:', user.uid);
+    console.log('🔗 Database instance:', db);
+    
     try {
-      console.log('🔍 Loading children for user:', user.uid);
-      console.log('🔍 Firebase db object:', db);
+      console.log('📂 Creating collection reference...');
+      const childrenRef = collection(db, `users/${user.uid}/children`);
+      console.log('📂 Collection ref:', childrenRef);
+      console.log('📂 Collection path:', childrenRef.path);
       
-      // Try different possible collection paths
-      const possiblePaths = [
-        `users/${user.uid}/children`,
-        `users/${user.uid}/child_profiles`,
-        `children`,
-        `child_profiles`
-      ];
+      console.log('📥 Fetching documents...');
+      console.log('📥 Full collection path:', `users/${user.uid}/children`);
       
-      let children = [];
-      let foundPath = null;
+      const childrenSnapshot = await getDocs(childrenRef);
+      console.log('📥 Snapshot received:', childrenSnapshot);
+      console.log('📊 Snapshot size:', childrenSnapshot.size);
       
-      for (const path of possiblePaths) {
-        try {
-          console.log(`🔍 Trying path: ${path}`);
-          const childrenRef = collection(db, path);
-          const childrenQuery = query(childrenRef, orderBy('createdAt', 'asc'));
-          const childrenSnapshot = await getDocs(childrenQuery);
-          
-          const pathChildren = [];
-          childrenSnapshot.forEach((doc) => {
-            const data = doc.data();
-            console.log('📄 Raw child data:', data);
-            const child = {
-              id: doc.id,
-              name: data.name || data.child_name || data.firstName || 'Child',
-              age: data.age || data.child_age || data.childAge || 5,
-              interests: data.interests || data.child_interests || []
-            };
-            pathChildren.push(child);
-            console.log('👶 Processed child:', child);
-          });
-          
-          if (pathChildren.length > 0) {
-            children = pathChildren;
-            foundPath = path;
-            console.log(`✅ Found ${children.length} children in path: ${path}`);
-            break;
-          }
-        } catch (pathError) {
-          console.log(`❌ Path ${path} failed:`, pathError.message);
-        }
-      }
+      const childrenList = [];
       
-      console.log('📊 Total children loaded:', children.length);
-      console.log('📊 Found path:', foundPath);
-      setAvailableChildren(children);
+      childrenSnapshot.forEach((doc) => {
+        console.log('📄 Processing doc:', doc.id, doc.data());
+        const data = doc.data();
+        childrenList.push({
+          id: doc.id,
+          name: data.child_name || data.name || doc.id,
+          age: data.child_age || data.age || 5,
+          interests: data.interests || data.child_interests || [],
+          ...data
+        });
+      });
       
-      if (children.length > 0 && !selectedChild) {
-        console.log('🎯 Auto-selecting first child:', children[0]);
-        setSelectedChild(children[0].id);
-        setChildName(children[0].name);
-        loadPlansForChild(children[0].id);
-      } else if (children.length === 0) {
-        console.log('⚠️ No children found in any path');
+      console.log('✅ Final children list:', childrenList);
+      setAvailableChildren(childrenList);
+      console.log('💾 Available children state updated');
+      
+      // If there are children, select the first one by default
+      if (childrenList.length > 0 && !selectedChild) {
+        console.log('🎯 Auto-selecting first child:', childrenList[0]);
+        setSelectedChild(childrenList[0].id);
+        setChildName(childrenList[0].name);
+        loadPlansForChild(childrenList[0].id);
+      } else if (childrenList.length === 0) {
+        console.log('⚠️ No children found in Firestore');
+        console.log('👶 User needs to create child profiles first');
         
-        // Create a test child for debugging
-        console.log('🧪 Creating test child for debugging...');
-        const testChild = {
-          id: 'test-child-' + Date.now(),
-          name: 'Test Child',
-          age: 6,
-          interests: ['science', 'art']
-        };
-        
-        console.log('✅ Test child created:', testChild);
-        setAvailableChildren([testChild]);
-        setSelectedChild(testChild.id);
-        setChildName(testChild.name);
-        
-        // Clear any previous error
+        // Clear state when no children found
+        setAvailableChildren([]);
+        setSelectedChild('');
+        setChildName('');
         setError('');
       }
     } catch (error) {
@@ -150,7 +130,7 @@ const CustomisedWeeklyPlan = () => {
         plan_type: 'hybrid'
       };
       
-      const response = await fetch('https://llm-agents-44gsrw22gq-uc.a.run.app/api/generate-plan', {
+      const response = await fetch('http://localhost:8000/api/generate-plan', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -534,9 +514,41 @@ const CustomisedWeeklyPlan = () => {
               padding: '20px',
               marginBottom: '30px'
             }}>
-              <h4 style={{ margin: '0 0 20px 0', color: '#333' }}>
-                📅 {selectedMonth} Learning Plan for {childName}
-              </h4>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+                <h4 style={{ margin: '0', color: '#333' }}>
+                  📅 {selectedMonth} Learning Plan for {childName}
+                </h4>
+                <button
+                  onClick={() => {
+                    const childData = availableChildren.find(child => child.id === selectedChild);
+                    if (childData) {
+                      generateNewPlan(childData);
+                    }
+                  }}
+                  style={{
+                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    color: 'white',
+                    border: 'none',
+                    padding: '10px 20px',
+                    borderRadius: '6px',
+                    cursor: 'pointer',
+                    fontSize: '14px',
+                    fontWeight: '600',
+                    boxShadow: '0 4px 12px rgba(102, 126, 234, 0.3)',
+                    transition: 'all 0.3s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.transform = 'translateY(-2px)';
+                    e.target.style.boxShadow = '0 6px 16px rgba(102, 126, 234, 0.4)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.transform = 'translateY(0)';
+                    e.target.style.boxShadow = '0 4px 12px rgba(102, 126, 234, 0.3)';
+                  }}
+                >
+                  🚀 Generate New Plan
+                </button>
+              </div>
               
               {/* Weekly Plan Display */}
               {currentPlan.weekly_plan && (
@@ -620,21 +632,21 @@ const CustomisedWeeklyPlan = () => {
               marginTop: '30px'
             }}>
               <h3 style={{ margin: '0 0 20px 0', color: '#007bff' }}>
-                🤖 Agent Performance Metrics
+                🤖 Agent Performance Metrics & JSON Breakdown
               </h3>
               
               {/* Agent Execution Times */}
               <div style={{ marginBottom: '20px' }}>
                 <h4 style={{ margin: '0 0 10px 0', color: '#495057' }}>⚡ Execution Times</h4>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '10px' }}>
-                  {Object.entries(agentPerformance).map(([agentName, timing]) => (
+                  {Object.entries(agentPerformance).filter(([key]) => !key.includes('total_execution_time')).map(([agentName, timing]) => (
                     <div key={agentName} style={{
                       background: 'white',
                       padding: '10px',
                       borderRadius: '6px',
                       border: '1px solid #ddd'
                     }}>
-                      <strong>{agentName}:</strong> {timing.execution_time_seconds?.toFixed(4)}s
+                      <strong>{agentName.replace('_', ' ').toUpperCase()}:</strong> {timing.execution_time_seconds?.toFixed(4)}s
                     </div>
                   ))}
                 </div>
@@ -656,14 +668,14 @@ const CustomisedWeeklyPlan = () => {
               <div style={{ marginBottom: '20px' }}>
                 <h4 style={{ margin: '0 0 10px 0', color: '#495057' }}>🧠 LLM Usage</h4>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '10px' }}>
-                  {Object.entries(agentPerformance).map(([agentName, timing]) => (
+                  {Object.entries(agentPerformance).filter(([key]) => !key.includes('total_execution_time')).map(([agentName, timing]) => (
                     <div key={agentName} style={{
                       background: 'white',
                       padding: '10px',
                       borderRadius: '6px',
                       border: '1px solid #ddd'
                     }}>
-                      <div><strong>{agentName}:</strong></div>
+                      <div><strong>{agentName.replace('_', ' ').toUpperCase()}:</strong></div>
                       <div>LLM Used: {timing.llm_used ? '✅ Yes' : '❌ No'}</div>
                       <div>Tokens: {timing.tokens_used || 0}</div>
                     </div>
@@ -671,10 +683,136 @@ const CustomisedWeeklyPlan = () => {
                 </div>
               </div>
 
+              {/* Detailed Agent Breakdown */}
+              <div style={{ marginTop: '30px' }}>
+                <h4 style={{ margin: '0 0 20px 0', color: '#495057' }}>📊 Detailed Agent Breakdown</h4>
+                {Object.entries(agentPerformance).filter(([key]) => !key.includes('total_execution_time')).map(([agentName, timing]) => (
+                  <div key={agentName} style={{
+                    background: 'white',
+                    border: '1px solid #ddd',
+                    borderRadius: '8px',
+                    padding: '20px',
+                    marginBottom: '20px'
+                  }}>
+                    <h5 style={{
+                      margin: '0 0 15px 0',
+                      color: '#007bff',
+                      fontSize: '1.1rem',
+                      borderBottom: '2px solid #007bff',
+                      paddingBottom: '8px'
+                    }}>
+                      {agentName.replace('_', ' ').toUpperCase()} AGENT
+                    </h5>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+                      {/* LLM Input/Output */}
+                      <div>
+                        <h6 style={{
+                          margin: '0 0 8px 0',
+                          fontSize: '0.9rem',
+                          fontWeight: '600',
+                          color: '#dc2626',
+                          borderBottom: '1px solid #fecaca',
+                          paddingBottom: '4px'
+                        }}>
+                          🤖 LLM Input/Output
+                        </h6>
+                        <div style={{ marginBottom: '12px' }}>
+                          <div style={{ fontSize: '0.8rem', fontWeight: '600', color: '#374151', marginBottom: '4px' }}>Input (Prompt):</div>
+                          <div style={{
+                            background: '#fef2f2',
+                            border: '1px solid #fecaca',
+                            borderRadius: '4px',
+                            padding: '8px',
+                            fontSize: '0.8rem',
+                            color: '#991b1b',
+                            fontFamily: 'monospace',
+                            maxHeight: '100px',
+                            overflowY: 'auto'
+                          }}>
+                            <pre style={{ margin: 0, whiteSpace: 'pre-wrap' }}>
+                              {timing.llm_prompt || 'No LLM prompt available'}
+                            </pre>
+                          </div>
+                        </div>
+                        <div>
+                          <div style={{ fontSize: '0.8rem', fontWeight: '600', color: '#374151', marginBottom: '4px' }}>Output (Response):</div>
+                          <div style={{
+                            background: '#fef2f2',
+                            border: '1px solid #fecaca',
+                            borderRadius: '4px',
+                            padding: '8px',
+                            fontSize: '0.8rem',
+                            color: '#991b1b',
+                            fontFamily: 'monospace',
+                            maxHeight: '150px',
+                            overflowY: 'auto'
+                          }}>
+                            <pre style={{ margin: 0, whiteSpace: 'pre-wrap' }}>
+                              {timing.llm_response || 'No LLM response available'}
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Agent Processing Data */}
+                      <div>
+                        <h6 style={{
+                          margin: '0 0 8px 0',
+                          fontSize: '0.9rem',
+                          fontWeight: '600',
+                          color: '#059669',
+                          borderBottom: '1px solid #bbf7d0',
+                          paddingBottom: '4px'
+                        }}>
+                          🎯 Agent Processing Data
+                        </h6>
+                        <div style={{ marginBottom: '12px' }}>
+                          <div style={{ fontSize: '0.8rem', fontWeight: '600', color: '#374151', marginBottom: '4px' }}>Input Data:</div>
+                          <div style={{
+                            background: '#f0fdf4',
+                            border: '1px solid #bbf7d0',
+                            borderRadius: '4px',
+                            padding: '8px',
+                            fontSize: '0.8rem',
+                            color: '#166534',
+                            fontFamily: 'monospace',
+                            maxHeight: '100px',
+                            overflowY: 'auto'
+                          }}>
+                            <pre style={{ margin: 0, whiteSpace: 'pre-wrap' }}>
+                              {JSON.stringify(timing.input_data || {}, null, 2)}
+                            </pre>
+                          </div>
+                        </div>
+                        <div>
+                          <div style={{ fontSize: '0.8rem', fontWeight: '600', color: '#374151', marginBottom: '4px' }}>Output Data:</div>
+                          <div style={{
+                            background: '#f0fdf4',
+                            border: '1px solid #bbf7d0',
+                            borderRadius: '4px',
+                            padding: '8px',
+                            fontSize: '0.8rem',
+                            color: '#166534',
+                            fontFamily: 'monospace',
+                            maxHeight: '150px',
+                            overflowY: 'auto'
+                          }}>
+                            <pre style={{ margin: 0, whiteSpace: 'pre-wrap' }}>
+                              {JSON.stringify(timing.output_data || {}, null, 2)}
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
               {/* Raw Agent Data */}
               <details style={{ marginTop: '20px' }}>
                 <summary style={{ cursor: 'pointer', fontWeight: 'bold', color: '#007bff' }}>
-                  🔍 View Raw Agent Data
+                  🔍 View Complete Raw Agent Data
                 </summary>
                 <pre style={{
                   background: '#f5f5f5',

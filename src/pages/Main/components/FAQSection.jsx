@@ -148,7 +148,7 @@ const FAQSection = () => {
   }, []);
 
   return (
-    <section style={{
+    <section className="faq-section" style={{
       ...styles.section,
       ...(isMobile ? styles.mobileSection : {})
     }}>

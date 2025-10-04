@@ -116,7 +116,9 @@ const NicheIcon = ({ niche, size = 'medium', className = '', style = {} }) => {
     small: { width: 32, height: 32 },
     medium: { width: 48, height: 48 },
     large: { width: 64, height: 64 },
-    xlarge: { width: 80, height: 80 }
+    xlarge: { width: 80, height: 80 },
+    huge: { width: 150, height: 150 },
+    massive: { width: 250, height: 250 }
   };
 
   const iconSize = sizeConfig[size] || sizeConfig.medium;

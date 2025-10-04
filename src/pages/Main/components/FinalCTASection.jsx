@@ -33,7 +33,7 @@ const FinalCTASection = () => {
   };
   
   return (
-    <section style={ctaStyles.container}>
+    <section className="final-cta-section" style={ctaStyles.container}>
       <h2 style={ctaStyles.heading}>Let's Rethink Learning Together</h2>
       <p style={ctaStyles.subtext}>
         Unschooling is the future. Your child leads. We guide.

@@ -112,11 +112,18 @@ const AuthForm = () => {
     setErrorCode('');
     
     try {
+      // Check if Firebase is available
+      if (!auth) {
+        throw new Error('Firebase authentication is not available. Please refresh the page and try again.');
+      }
+      
       const provider = new GoogleAuthProvider();
       provider.addScope('email');
       provider.addScope('profile');
       
+      console.log('🔍 Attempting Google sign-in...');
       const userCredential = await signInWithPopup(auth, provider);
+      console.log('✅ Google sign-in successful:', userCredential.user.email);
       
       // For Google OAuth, email is automatically verified
       if (userCredential.user.metadata.creationTime === userCredential.user.metadata.lastSignInTime) {
@@ -126,8 +133,22 @@ const AuthForm = () => {
         navigate('/dashboard');
       }
     } catch (error) {
+      console.error('❌ Google sign-in error:', error);
       const code = error.code || 'default';
-      const userFriendlyMessage = getAuthErrorMessage(code, isLogin);
+      let userFriendlyMessage;
+      
+      if (error.code === 'auth/popup-closed-by-user') {
+        userFriendlyMessage = 'Sign-in popup was closed. Please try again.';
+      } else if (error.code === 'auth/popup-blocked') {
+        userFriendlyMessage = 'Popup was blocked by your browser. Please allow popups for this site and try again.';
+      } else if (error.code === 'auth/cancelled-popup-request') {
+        userFriendlyMessage = 'Sign-in was cancelled. Please try again.';
+      } else if (error.message.includes('Cross-Origin-Opener-Policy')) {
+        userFriendlyMessage = 'Browser security settings are blocking the sign-in popup. Please try using a different browser or check your browser settings.';
+      } else {
+        userFriendlyMessage = getAuthErrorMessage(code, isLogin);
+      }
+      
       setErrorCode(code);
       setError(userFriendlyMessage);
     } finally {

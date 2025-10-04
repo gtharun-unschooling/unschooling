@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { colors, spacing, typography } from '../../../styles/designTokens';
 import { applyTextStyle } from '../../../styles/typography';
 import { colorSystem } from '../../../styles/colors';
+import unifiedDesignSystem from '../../../styles/unifiedDesignSystem';
 
 const HeroSection = () => {
   const words = ['Boring', 'Outdated', 'Theoretical', 'Expensive'];
@@ -67,10 +68,12 @@ const HeroSection = () => {
   };
 
   // ========================================
-  // DESKTOP STYLES (768px and above)
+  // UNIFIED DESIGN SYSTEM STYLES
   // ========================================
+  const heroVariant = unifiedDesignSystem.sectionVariants.hero;
+  
   const desktopSectionStyle = {
-    backgroundColor: colors.brand.lightBlue,
+    background: heroVariant.background,
     minHeight: '100vh',
     padding: '2vh 2vw',
     boxSizing: 'border-box',
@@ -78,6 +81,7 @@ const HeroSection = () => {
     flexDirection: 'column',
     justifyContent: 'center',
     position: 'relative',
+    overflow: 'hidden',
   };
 
   const desktopTextRowStyle = {
@@ -93,19 +97,22 @@ const HeroSection = () => {
 
   const desktopStaticTextStyle = {
     ...applyTextStyle('h1', false),
-    fontSize: 'clamp(3rem, 8vw, 7rem)', // Keep large hero text for impact
+    fontSize: 'clamp(3rem, 8vw, 7rem)',
     marginRight: spacing.md,
+    color: heroVariant.textColor,
+    textShadow: '0 4px 20px rgba(0,0,0,0.3)',
   };
 
   const desktopAnimatedTextStyle = {
     ...applyTextStyle('h1', false),
-    fontSize: 'clamp(2rem, 6vw, 5rem)', // Keep large animated text for impact
+    fontSize: 'clamp(2rem, 6vw, 5rem)',
     minWidth: '10rem',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
-    borderRight: `2px solid ${colorSystem.text.primary}`,
+    borderRight: `2px solid ${heroVariant.textColor}`,
     animation: 'blink 0.75s step-end infinite',
     textAlign: 'left',
+    textShadow: '0 4px 20px rgba(0,0,0,0.3)',
   };
 
   // ========================================
@@ -114,7 +121,7 @@ const HeroSection = () => {
   const mobileSectionStyle = {
     backgroundColor: colors.brand.lightBlue,
     minHeight: '100vh',
-    padding: '1vh 4vw',
+    padding: '2vh 8vw', // Increased padding for better spacing
     boxSizing: 'border-box',
     display: 'flex',
     flexDirection: 'column',
@@ -130,24 +137,28 @@ const HeroSection = () => {
     paddingLeft: '0',
     flexDirection: 'column',
     textAlign: 'center',
-    gap: spacing.sm,
+    gap: '1.5rem', // Increased gap between text elements
   };
 
   const mobileStaticTextStyle = {
     ...applyTextStyle('h1', true),
-    fontSize: 'clamp(2.5rem, 7vw, 4rem)', // Keep large mobile hero text
+    fontSize: 'clamp(3.5rem, 9vw, 5rem)', // Significantly increased text size
     marginRight: 0,
+    fontWeight: '700',
+    lineHeight: '1.1',
   };
 
   const mobileAnimatedTextStyle = {
     ...applyTextStyle('h1', true),
-    fontSize: 'clamp(2rem, 6vw, 3.5rem)', // Keep large mobile animated text
-    minWidth: '8rem',
+    fontSize: 'clamp(3rem, 8vw, 4.5rem)', // Significantly increased animated text size
+    minWidth: '10rem',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
-    borderRight: `2px solid ${colorSystem.text.primary}`,
+    borderRight: `3px solid ${colorSystem.text.primary}`, // Thicker cursor
     animation: 'blink 0.75s step-end infinite',
     textAlign: 'center',
+    fontWeight: '700',
+    lineHeight: '1.1',
   };
 
   // ========================================
@@ -159,18 +170,30 @@ const HeroSection = () => {
   const animatedTextStyle = isMobile ? mobileAnimatedTextStyle : desktopAnimatedTextStyle;
 
   return (
-    <section style={sectionStyle}>
-      <div style={textRowStyle}>
-        <div style={staticTextStyle}>Schooling is</div>
-        <div 
-          style={{
-            ...animatedTextStyle,
-            color: getColorByWord(words[currentWordIndex])
-          }}
-        >
-          {displayText}
+    <section className="hero-section" style={sectionStyle}>
+        {/* Background Pattern */}
+        <div className="hero-pattern" style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: heroVariant.pattern,
+          pointerEvents: 'none'
+        }}></div>
+        
+        <div className="hero-text-container" style={textRowStyle}>
+          <div className="hero-static-text" style={staticTextStyle}>Schooling is</div>
+          <div
+            className="hero-animated-text"
+            style={{
+              ...animatedTextStyle,
+              color: getColorByWord(words[currentWordIndex])
+            }}
+          >
+            {displayText}
+          </div>
         </div>
-      </div>
     </section>
   );
 };

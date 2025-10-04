@@ -13,14 +13,13 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       console.log('🚪 Logout initiated...');
-      setIsProfileDropdownOpen(false); // Close dropdown immediately
+      setIsProfileDropdownOpen(false);
       await signOut();
-      console.log('🚪 Sign out completed, navigating to login...');
-      navigate('/login');
+      console.log('🚪 Sign out completed, navigating to homepage...');
+      navigate('/');
     } catch (error) {
       console.error('Logout error:', error);
-      // Even if there's an error, try to navigate to login
-      navigate('/login');
+      navigate('/');
     }
   };
 
@@ -32,105 +31,15 @@ const Navbar = () => {
     setIsHamburgerOpen(false);
   };
 
-  const toggleProfileDropdown = () => {
+  const toggleProfileDropdown = (e) => {
     console.log('🔄 toggleProfileDropdown called, current state:', isProfileDropdownOpen);
+    e.preventDefault();
+    e.stopPropagation();
     const newState = !isProfileDropdownOpen;
     console.log('🔄 Setting new state to:', newState);
     setIsProfileDropdownOpen(newState);
-    
-    // Force dropdown to be positioned to the LEFT on mobile
-    if (newState && window.innerWidth <= 768) {
-      setTimeout(() => {
-        const dropdown = document.querySelector('.profile-dropdown');
-        
-        if (dropdown) {
-          // Force LEFT positioning on mobile - position near the button but ensure it's visible
-          dropdown.style.position = 'fixed';
-          
-          // Position dropdown to the left of the button, but ensure it doesn't go off-screen
-          const buttonElement = document.querySelector('.profile-btn');
-          const buttonRect = buttonElement.getBoundingClientRect();
-          const viewportWidth = window.innerWidth;
-          const dropdownWidth = 200; // Preferred width (compact for mobile)
-          
-          // Position dropdown at the right edge of screen
-          const rightPosition = 10; // 10px margin from right edge
-          
-          dropdown.style.left = 'auto';
-          dropdown.style.right = `${rightPosition}px`;
-          dropdown.style.top = '70px';
-          dropdown.style.transform = 'none';
-          dropdown.style.transformOrigin = 'top right';
-          
-          // Move dropdown to body to avoid parent positioning issues
-          document.body.appendChild(dropdown);
-          
-          // Ensure dropdown width doesn't exceed viewport
-          const maxWidth = viewportWidth - 20; // 10px margin on each side
-          const preferredWidth = Math.min(200, maxWidth);
-          
-          dropdown.style.width = `${preferredWidth}px`;
-          dropdown.style.maxWidth = `${maxWidth}px`;
-        }
-      }, 10);
-    }
+    console.log('🔄 State update triggered');
   };
-
-  const closeProfileDropdown = () => {
-    setIsProfileDropdownOpen(false);
-  };
-
-  // Function to get gender-based emoji
-  const getGenderEmoji = (user) => {
-    // Check if user has gender preference stored
-    const userGender = user?.gender || user?.metadata?.gender;
-    
-    if (userGender) {
-      switch (userGender.toLowerCase()) {
-        case 'male':
-        case 'm':
-          return '👨';
-        case 'female':
-        case 'f':
-          return '👩';
-        case 'non-binary':
-        case 'nb':
-          return '🧑';
-        default:
-          return '👤';
-      }
-    }
-    
-    // Fallback: try to guess from name or use default
-    const name = user?.displayName || user?.email?.split('@')[0] || '';
-    
-    // Simple heuristic based on common names (you can expand this)
-    const maleNames = ['john', 'mike', 'david', 'chris', 'alex', 'sam', 'james', 'robert', 'william', 'richard', 'tharun', 'tarun', 'arun', 'kumar', 'raj', 'suresh', 'ramesh', 'vijay', 'suresh', 'prakash'];
-    const femaleNames = ['sarah', 'jessica', 'emily', 'jennifer', 'lisa', 'maria', 'susan', 'karen', 'nancy', 'helen', 'priya', 'sita', 'laxmi', 'kavya', 'anjali', 'meera', 'radha', 'geeta', 'sunita', 'rekha'];
-    
-    const lowerName = name.toLowerCase();
-    
-    if (maleNames.some(maleName => lowerName.includes(maleName))) {
-      return '👨';
-    } else if (femaleNames.some(femaleName => lowerName.includes(femaleName))) {
-      return '👩';
-    }
-    
-    // Default neutral emoji
-    return '👤';
-  };
-
-  // Close profile dropdown when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (profileDropdownRef.current && !profileDropdownRef.current.contains(event.target)) {
-        setIsProfileDropdownOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
 
   const handleProfileOption = (action) => {
     switch (action) {
@@ -147,8 +56,7 @@ const Navbar = () => {
         navigate('/help');
         break;
       case 'preferences':
-        // For now, just show an alert. You can create a preferences page later
-        alert('Preferences feature coming soon! You can set your gender preference here.');
+        alert('Preferences feature coming soon!');
         break;
       case 'logout':
         handleLogout();
@@ -158,6 +66,69 @@ const Navbar = () => {
     }
     setIsProfileDropdownOpen(false);
   };
+
+  // Function to get user initials for mobile
+  const getUserInitials = (user) => {
+    if (!user) return 'U';
+    
+    const displayName = user.displayName || '';
+    const email = user.email || '';
+    
+    // If we have a display name, use first letters of first and last name
+    if (displayName && displayName.trim()) {
+      const names = displayName.trim().split(' ');
+      if (names.length >= 2) {
+        return (names[0][0] + names[names.length - 1][0]).toUpperCase();
+      } else {
+        return names[0][0].toUpperCase();
+      }
+    }
+    
+    // If no display name, use first letter of email username
+    if (email) {
+      const username = email.split('@')[0];
+      if (username.length >= 2) {
+        return username.substring(0, 2).toUpperCase();
+      } else {
+        return username[0].toUpperCase();
+      }
+    }
+    
+    return 'U'; // Default
+  };
+
+  // Function to get gender-based emoji
+  const getGenderEmoji = (user) => {
+    if (!user) return '👤';
+    
+    // Try to get gender from user profile or email
+    const email = user.email?.toLowerCase() || '';
+    const displayName = user.displayName?.toLowerCase() || '';
+    
+    // Simple heuristic based on common names
+    const maleNames = ['john', 'mike', 'david', 'james', 'robert', 'william', 'tharun'];
+    const femaleNames = ['mary', 'jane', 'sarah', 'lisa', 'emma', 'sophia'];
+    
+    if (maleNames.some(name => email.includes(name) || displayName.includes(name))) {
+      return '👨';
+    } else if (femaleNames.some(name => email.includes(name) || displayName.includes(name))) {
+      return '👩';
+    }
+    
+    return '👤'; // Default
+  };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (profileDropdownRef.current && !profileDropdownRef.current.contains(event.target)) {
+        setIsProfileDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   return (
     <>
@@ -196,42 +167,42 @@ const Navbar = () => {
                   onClick={toggleProfileDropdown}
                   aria-label="Open profile menu"
                 >
-                  <span className="profile-name-short">
+                  {/* Desktop: Show full name */}
+                  <span className="profile-name-short desktop-profile">
                     {currentUser.displayName || currentUser.email?.split('@')[0] || 'User'}
+                  </span>
+                  {/* Mobile: Show initials only */}
+                  <span className="profile-initials mobile-profile">
+                    {getUserInitials(currentUser)}
                   </span>
                   <span className="dropdown-arrow">▼</span>
                 </button>
                 
                 {isProfileDropdownOpen && (
                   <div 
-                    className="profile-dropdown-container"
-                    style={{ 
-                      position: 'relative',
-                      zIndex: 1000,
+                    className="profile-dropdown mobile-dropdown-left"
+                    style={{
+                      position: 'absolute',
+                      top: '100%',
+                      right: 0,
+                      zIndex: 1002,
                       pointerEvents: 'auto'
                     }}
                   >
-                    <div 
-                      className="profile-dropdown mobile-dropdown-left"
-                      style={{
-                        pointerEvents: 'auto',
-                        zIndex: 1002
-                      }}
-                    >
-        <div className="profile-header">
-          <div className="profile-emoji">
-            {getGenderEmoji(currentUser)}
-          </div>
-          <div className="profile-info">
-            <div className="profile-name">
-              <span className="profile-emoji-inline">{getGenderEmoji(currentUser)}</span>
-              {currentUser.displayName || currentUser.email?.split('@')[0] || 'User'}
-            </div>
-            <div className="profile-email-display">
-              {currentUser.email}
-            </div>
-          </div>
-        </div>
+                    <div className="profile-header">
+                      <div className="profile-emoji">
+                        {getGenderEmoji(currentUser)}
+                      </div>
+                      <div className="profile-info">
+                        <div className="profile-name">
+                          <span className="profile-emoji-inline">{getGenderEmoji(currentUser)}</span>
+                          {currentUser.displayName || currentUser.email?.split('@')[0] || 'User'}
+                        </div>
+                        <div className="profile-email-display">
+                          {currentUser.email}
+                        </div>
+                      </div>
+                    </div>
 
                     <div className="profile-options">
                       <button 
@@ -278,33 +249,12 @@ const Navbar = () => {
 
                       <button 
                         className="profile-option profile-option-logout"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          e.stopPropagation();
-                          console.log('🚪 Logout button clicked directly');
-                          handleLogout();
-                        }}
-                        onMouseDown={(e) => {
-                          e.preventDefault();
-                          console.log('🚪 Logout button mouse down');
-                        }}
-                        onMouseUp={(e) => {
-                          e.preventDefault();
-                          console.log('🚪 Logout button mouse up');
-                        }}
-                        style={{ 
-                          cursor: 'pointer',
-                          pointerEvents: 'auto',
-                          zIndex: 1004,
-                          position: 'relative'
-                        }}
+                        onClick={() => handleProfileOption('logout')}
                       >
                         <span className="option-icon">🚪</span>
                         <span className="option-text">Logout</span>
                       </button>
                     </div>
-                    
-                  </div>
                   </div>
                 )}
               </div>
@@ -326,7 +276,6 @@ const Navbar = () => {
           </button>
         </div>
         <div className="hamburger-content">
-          {/* Main Navigation */}
           <div className="menu-section">
             <h4>🏠 Main</h4>
             <Link to="/" className="menu-link" onClick={closeHamburger}>
@@ -355,7 +304,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Learning & Progress */}
           {currentUser && (
             <div className="menu-section">
               <h4>📚 Learning</h4>
@@ -367,68 +315,61 @@ const Navbar = () => {
                 <span className="menu-icon">👶</span>
                 <span>Child Profile</span>
               </Link>
-              <Link to="/deliveries" className="menu-link" onClick={closeHamburger}>
-                <span className="menu-icon">📦</span>
-                <span>My Deliveries</span>
+              <Link to="/customised-weekly-plan" className="menu-link" onClick={closeHamburger}>
+                <span className="menu-icon">🗓️</span>
+                <span>Weekly Plan</span>
               </Link>
-            </div>
-          )}
-
-          {/* Account & Billing */}
-          {currentUser && (
-            <div className="menu-section">
-              <h4>👤 Account</h4>
+              <Link to="/progress" className="menu-link" onClick={closeHamburger}>
+                <span className="menu-icon">📈</span>
+                <span>Progress Tracker</span>
+              </Link>
               <Link to="/billing" className="menu-link" onClick={closeHamburger}>
                 <span className="menu-icon">💳</span>
                 <span>Billing</span>
               </Link>
-              <Link to="/help" className="menu-link" onClick={closeHamburger}>
-                <span className="menu-icon">❓</span>
-                <span>Help & Support</span>
+              <Link to="/settings" className="menu-link" onClick={closeHamburger}>
+                <span className="menu-icon">⚙️</span>
+                <span>Settings</span>
               </Link>
+              <button className="menu-link logout-link" onClick={handleLogout}>
+                <span className="menu-icon">🚪</span>
+                <span>Logout</span>
+              </button>
             </div>
           )}
 
-
-          {/* Company Info */}
-          <div className="menu-section">
-            <h4>🏢 Company</h4>
-            <Link to="/safety" className="menu-link" onClick={closeHamburger}>
-              <span className="menu-icon">🛡️</span>
-              <span>Safety</span>
-            </Link>
-            <Link to="/privacy" className="menu-link" onClick={closeHamburger}>
-              <span className="menu-icon">🔒</span>
-              <span>Privacy Policy</span>
-            </Link>
-            <Link to="/terms" className="menu-link" onClick={closeHamburger}>
-              <span className="menu-icon">📋</span>
-              <span>Terms of Service</span>
-            </Link>
-          </div>
-
-          {/* Authentication */}
-          {!currentUser && (
+          {currentUser && (currentUser.role === 'admin' || currentUser.role === 'founder') && (
             <div className="menu-section">
-              <h4>🔐 Account</h4>
-              <Link to="/login" className="menu-link" onClick={closeHamburger}>
-                <span className="menu-icon">🔑</span>
-                <span>Sign In</span>
+              <h4>👑 Admin</h4>
+              <Link to="/admin/dashboard" className="menu-link" onClick={closeHamburger}>
+                <span className="menu-icon">👑</span>
+                <span>Admin Dashboard</span>
               </Link>
-              <Link to="/register" className="menu-link" onClick={closeHamburger}>
+              <Link to="/admin/tracker" className="menu-link" onClick={closeHamburger}>
+                <span className="menu-icon">🔍</span>
+                <span>Admin Tracker</span>
+              </Link>
+              <Link to="/admin/schedule" className="menu-link" onClick={closeHamburger}>
+                <span className="menu-icon">📅</span>
+                <span>Admin Schedule</span>
+              </Link>
+              <Link to="/admin/content" className="menu-link" onClick={closeHamburger}>
                 <span className="menu-icon">📝</span>
-                <span>Sign Up</span>
+                <span>Content Management</span>
+              </Link>
+              <Link to="/admin/child-progress" className="menu-link" onClick={closeHamburger}>
+                <span className="menu-icon">👶📈</span>
+                <span>Child Progress</span>
+              </Link>
+              <Link to="/admin/agent-reporting" className="menu-link" onClick={closeHamburger}>
+                <span className="menu-icon">🤖</span>
+                <span>Agent Reporting</span>
               </Link>
             </div>
           )}
         </div>
       </div>
-
-      {/* Overlay to close menu when clicking outside */}
-      {isHamburgerOpen && (
-        <div className="hamburger-overlay" onClick={closeHamburger}></div>
-      )}
-
+      {isHamburgerOpen && <div className="hamburger-overlay" onClick={closeHamburger}></div>}
     </>
   );
 };

@@ -229,7 +229,7 @@ const WhyUnschoolingWorks = () => {
   }, []);
 
   return (
-    <section style={sectionStyle}>
+    <section className="why-unschooling-section" style={sectionStyle}>
       <h2 style={headingStyle} className="why-unschooling-heading">
         <span role="img" aria-label="spark">✨</span> Why Unschooling Works <span role="img" aria-label="spark">✨</span>
       </h2>
@@ -242,8 +242,16 @@ const WhyUnschoolingWorks = () => {
             onMouseEnter={e => Object.assign(e.currentTarget.style, cardHoverStyle)}
             onMouseLeave={e => Object.assign(e.currentTarget.style, cardStyle(index))}
           >
-            <div style={iconStyle}>{icons[index]}</div>
-            <h3 style={tileTitle}>{tile.title}</h3>
+            <h3 style={{
+              ...tileTitle,
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              justifyContent: 'center'
+            }}>
+              <span style={{ fontSize: '1.2rem' }}>{icons[index]}</span>
+              {tile.title}
+            </h3>
             <p style={tileDescription}>{tile.description}</p>
           </div>
         ))}

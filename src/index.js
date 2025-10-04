@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import { auth, db } from './firebase';
 
 console.log('🚀 index.js executing...');
 console.log('🚀 Root element:', document.getElementById('root'));

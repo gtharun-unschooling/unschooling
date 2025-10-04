@@ -5,6 +5,7 @@ import { colors, spacing, typography } from '../../../styles/designTokens';
 import { applyTextStyle } from '../../../styles/typography';
 import { colorSystem } from '../../../styles/colors';
 import config from '../../../config/config';
+import unifiedDesignSystem from '../../../styles/unifiedDesignSystem';
 
 const DEFAULT_ICON = '🌟';
 
@@ -261,64 +262,112 @@ const OurApproach = () => {
 
   const essentialGrowth = [
     {
-      icon: '🧠',
-      title: 'Cognitive Development',
-      color: '#9B59B6',
-      gradient: 'linear-gradient(135deg, #9B59B6 0%, #8E44AD 100%)'
-    },
-    {
-      icon: '💪',
-      title: 'Physical Growth',
-      color: '#E74C3C',
-      gradient: 'linear-gradient(135deg, #E74C3C 0%, #C0392B 100%)'
-    },
-    {
-      icon: '❤️',
-      title: 'Emotional Intelligence',
-      color: '#F39C12',
-      gradient: 'linear-gradient(135deg, #F39C12 0%, #E67E22 100%)'
-    },
-    {
-      icon: '🤝',
-      title: 'Social Skills',
-      color: '#3498DB',
-      gradient: 'linear-gradient(135deg, #3498DB 0%, #2980B9 100%)'
-    },
-    {
       icon: '🎨',
-      title: 'Creativity',
+      title: 'Play & Creativity',
       color: '#E91E63',
       gradient: 'linear-gradient(135deg, #E91E63 0%, #C2185B 100%)'
     },
     {
-      icon: '🔍',
-      title: 'Critical Thinking',
+      icon: '🧠',
+      title: 'Cognitive Skills',
+      color: '#3498DB',
+      gradient: 'linear-gradient(135deg, #3498DB 0%, #2980B9 100%)'
+    },
+    {
+      icon: '💪',
+      title: 'Physical & Social Play',
       color: '#2ECC71',
       gradient: 'linear-gradient(135deg, #2ECC71 0%, #27AE60 100%)'
     },
     {
-      icon: '🎯',
-      title: 'Focus & Attention',
-      color: '#F1C40F',
-      gradient: 'linear-gradient(135deg, #F1C40F 0%, #F39C12 100%)'
+      icon: '🗣️',
+      title: 'Language & Speech',
+      color: '#F39C12',
+      gradient: 'linear-gradient(135deg, #F39C12 0%, #E67E22 100%)'
     },
     {
-      icon: '🌟',
-      title: 'Confidence Building',
-      color: '#1ABC9C',
-      gradient: 'linear-gradient(135deg, #1ABC9C 0%, #16A085 100%)'
+      icon: '📚',
+      title: 'Learning Tools',
+      color: '#9B59B6',
+      gradient: 'linear-gradient(135deg, #9B59B6 0%, #8E44AD 100%)'
     },
     {
-      icon: '🧩',
-      title: 'Problem Solving',
+      icon: '🌿',
+      title: 'Nature & Exploration',
+      color: '#E74C3C',
+      gradient: 'linear-gradient(135deg, #E74C3C 0%, #C0392B 100%)'
+    },
+    {
+      icon: '🧘',
+      title: 'Mindfulness & Well-being',
       color: '#8E44AD',
       gradient: 'linear-gradient(135deg, #8E44AD 0%, #9B59B6 100%)'
     },
     {
-      icon: '🌱',
-      title: 'Resilience',
-      color: '#27AE60',
-      gradient: 'linear-gradient(135deg, #27AE60 0%, #2ECC71 100%)'
+      icon: '🎵',
+      title: 'Music & Rhythm',
+      color: '#1ABC9C',
+      gradient: 'linear-gradient(135deg, #1ABC9C 0%, #16A085 100%)'
+    },
+    {
+      icon: '🎭',
+      title: 'Visual Arts',
+      color: '#F1C40F',
+      gradient: 'linear-gradient(135deg, #F1C40F 0%, #F39C12 100%)'
+    },
+    {
+      icon: '🔬',
+      title: 'Science & Innovation',
+      color: '#17A2B8',
+      gradient: 'linear-gradient(135deg, #17A2B8 0%, #138496 100%)'
+    },
+    {
+      icon: '❤️',
+      title: 'Emotional Intelligence',
+      color: '#FD7E14',
+      gradient: 'linear-gradient(135deg, #FD7E14 0%, #E55100 100%)'
+    },
+    {
+      icon: '🌍',
+      title: 'Cultural Awareness',
+      color: '#6F42C1',
+      gradient: 'linear-gradient(135deg, #6F42C1 0%, #5A32A3 100%)'
+    },
+    {
+      icon: '👥',
+      title: 'Teamwork & Leadership',
+      color: '#20C997',
+      gradient: 'linear-gradient(135deg, #20C997 0%, #1AA085 100%)'
+    },
+    {
+      icon: '🧩',
+      title: 'Problem Solving & Logic',
+      color: '#6C757D',
+      gradient: 'linear-gradient(135deg, #6C757D 0%, #5A6268 100%)'
+    },
+    {
+      icon: '🏃',
+      title: 'Health & Fitness',
+      color: '#E83E8C',
+      gradient: 'linear-gradient(135deg, #E83E8C 0%, #D91A72 100%)'
+    },
+    {
+      icon: '🤝',
+      title: 'Social Skills',
+      color: '#28A745',
+      gradient: 'linear-gradient(135deg, #28A745 0%, #1E7E34 100%)'
+    },
+    {
+      icon: '✋',
+      title: 'Fine Motor Skills',
+      color: '#FFC107',
+      gradient: 'linear-gradient(135deg, #FFC107 0%, #E0A800 100%)'
+    },
+    {
+      icon: '🧠',
+      title: 'Memory & Recall',
+      color: '#DC3545',
+      gradient: 'linear-gradient(135deg, #DC3545 0%, #C82333 100%)'
     }
   ];
 
@@ -326,9 +375,12 @@ const OurApproach = () => {
   const shortDescription = "Where passion meets purpose. We blend specialized learning with essential growth to unlock every child's potential.";
   const fullDescription = shortDescription + ' Our unique approach combines hands-on projects, real-world skills, and a nurturing environment to help every child discover their strengths and passions. With guidance from experts and a focus on holistic development, we ensure that learning is joyful, meaningful, and tailored to each child.';
 
+  // Use unified design system
+  const approachVariant = unifiedDesignSystem.sectionVariants.approach;
+  
   const sectionStyle = {
-    backgroundColor: colorSystem.background.secondary,
-    padding: isMobile ? `${spacing.lg} 0` : `${spacing.xl} 0`,
+    background: approachVariant.background,
+    padding: isMobile ? `${spacing.xs} 0` : `${spacing.sm} 0`,
     position: 'relative',
     overflow: 'hidden',
   };
@@ -339,16 +391,16 @@ const OurApproach = () => {
     left: 0,
     right: 0,
     bottom: 0,
-    background: 'radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.08) 0%, transparent 50%)',
+    background: approachVariant.pattern,
     pointerEvents: 'none',
   };
 
   const mainContainerStyle = {
-    backgroundColor: '#ffffff',
-    borderRadius: isMobile ? '16px' : '24px',
-    boxShadow: '0 20px 60px rgba(0, 0, 0, 0.1)',
-    padding: isMobile ? spacing.lg : spacing['3xl'],
-    border: '1px solid rgba(255, 255, 255, 0.2)',
+    backgroundColor: approachVariant.cardBackground,
+    borderRadius: isMobile ? unifiedDesignSystem.effects.borderRadius.large : unifiedDesignSystem.effects.borderRadius.xlarge,
+    boxShadow: unifiedDesignSystem.effects.shadows.heavy,
+    padding: isMobile ? spacing.md : spacing.xl,
+    border: `1px solid ${approachVariant.borderColor}`,
     position: 'relative',
     overflow: 'hidden',
   };
@@ -419,8 +471,12 @@ const OurApproach = () => {
   const sectionTitleStyle = {
     ...applyTextStyle('h2', isMobile),
     textAlign: 'center',
-    marginBottom: isMobile ? spacing.sm : spacing.md,
+    marginBottom: isMobile ? spacing.xs : spacing.sm,
     position: 'relative',
+    color: approachVariant.textColor,
+    fontSize: isMobile ? unifiedDesignSystem.typography.sectionTitle.fontSize.mobile : unifiedDesignSystem.typography.sectionTitle.fontSize.desktop,
+    fontWeight: unifiedDesignSystem.typography.sectionTitle.fontWeight,
+    lineHeight: unifiedDesignSystem.typography.sectionTitle.lineHeight,
   };
 
   const sectionSubtitleStyle = {
@@ -428,20 +484,29 @@ const OurApproach = () => {
     textAlign: 'center',
     maxWidth: isMobile ? '100%' : '500px',
     margin: '0 auto',
-    marginBottom: isMobile ? spacing.md : spacing.lg,
-    padding: isMobile ? `0 ${spacing.md}` : 0,
+    marginBottom: isMobile ? spacing.sm : spacing.md,
+    padding: isMobile ? `0 ${spacing.sm}` : 0,
+    color: approachVariant.textColor,
+    fontSize: isMobile ? unifiedDesignSystem.typography.sectionSubtitle.fontSize.mobile : unifiedDesignSystem.typography.sectionSubtitle.fontSize.desktop,
+    fontWeight: unifiedDesignSystem.typography.sectionSubtitle.fontWeight,
+    lineHeight: unifiedDesignSystem.typography.sectionSubtitle.lineHeight,
   };
 
   const columnTitleStyle = {
     ...applyTextStyle('h4', isMobile),
-    marginBottom: isMobile ? spacing.md : spacing.lg,
+    marginBottom: isMobile ? spacing.sm : spacing.md,
     textAlign: 'center',
+    color: approachVariant.textColor,
   };
 
   return (
-    <Section style={sectionStyle}>
+    <Section className="our-approach-section" style={sectionStyle}>
       <div style={backgroundPattern}></div>
-      <Container style={{ position: 'relative', zIndex: 1 }}>
+      <Container style={{ 
+        position: 'relative', 
+        zIndex: 1,
+        padding: isMobile ? '0 4px' : '0 8px'
+      }}>
         <Flex direction="column" align="center" style={{ marginBottom: isMobile ? spacing.md : spacing.lg }}>
           <Heading 
             level={1} 
@@ -462,7 +527,7 @@ const OurApproach = () => {
           {/* Responsive Layout */}
           <Flex 
             direction="column"
-            gap={isMobile ? spacing.lg : spacing.xl}
+            gap={isMobile ? spacing.md : spacing.lg}
             style={{ 
               alignItems: 'center',
               position: 'relative',
@@ -497,6 +562,7 @@ const OurApproach = () => {
                   alignItems: 'stretch',
                   flexWrap: 'wrap',
                   maxWidth: '100%',
+                  padding: isMobile ? '0 4px' : '0',
                 }}
               >
                 {displayNiches.length === 0 ? (
@@ -516,9 +582,9 @@ const OurApproach = () => {
                     variant="elevated"
                     style={{
                       ...cardStyle,
-                      // Fixed consistent size for all niche boxes
-                      width: isMobile ? '90px' : '110px',
-                      height: isMobile ? '110px' : '130px',
+                      // Fixed consistent size for all niche boxes - increased mobile size
+                      width: isMobile ? '110px' : '110px',
+                      height: isMobile ? '130px' : '130px',
                       flex: '0 0 auto', // Don't grow or shrink
                       backgroundColor: getNicheBackgroundColor(niche.title),
                       padding: isMobile ? '12px' : '16px',
@@ -561,12 +627,12 @@ const OurApproach = () => {
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      width: isMobile ? '40px' : '50px',
-                      height: isMobile ? '40px' : '50px',
+                      width: isMobile ? '45px' : '50px',
+                      height: isMobile ? '45px' : '50px',
                       borderRadius: '50%',
                       marginBottom: '8px',
                       transition: 'transform 0.3s ease',
-                      fontSize: isMobile ? '24px' : '28px',
+                      fontSize: isMobile ? '26px' : '28px',
                     }}>
                       {niche.icon}
                     </div>
@@ -592,9 +658,9 @@ const OurApproach = () => {
                     key="show-more-tile"
                     variant="elevated"
                     style={{
-                      // Same fixed size as other niche boxes
-                      width: isMobile ? '90px' : '110px',
-                      height: isMobile ? '110px' : '130px',
+                      // Same fixed size as other niche boxes - increased mobile size
+                      width: isMobile ? '110px' : '110px',
+                      height: isMobile ? '130px' : '130px',
                       flex: '0 0 auto',
                       background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
                       color: '#fff',
@@ -648,22 +714,32 @@ const OurApproach = () => {
               {safeNiches.length > 9 && (
                 <button
                   style={{
-                    margin: isMobile ? '1rem auto' : '1.5rem auto',
+                    margin: isMobile ? '0.8rem auto' : '1rem auto',
                     display: 'block',
-                    padding: '0.5rem 1.2rem',
-                    fontSize: '1rem',
-                    borderRadius: '0.5rem',
+                    padding: isMobile ? '0.4rem 0.8rem' : '0.5rem 1rem',
+                    fontSize: isMobile ? '0.8rem' : '0.9rem',
+                    borderRadius: '0.4rem',
                     border: 'none',
                     background: '#764ba2',
                     color: '#fff',
                     cursor: 'pointer',
-                    fontWeight: 600,
-                    boxShadow: '0 2px 8px rgba(118,75,162,0.15)',
-                    transition: 'background 0.2s',
+                    fontWeight: 500,
+                    boxShadow: '0 2px 6px rgba(118,75,162,0.15)',
+                    transition: 'all 0.2s ease',
                   }}
                   onClick={() => navigate('/niche')}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = '#6a4190';
+                    e.currentTarget.style.transform = 'translateY(-1px)';
+                    e.currentTarget.style.boxShadow = '0 4px 8px rgba(118,75,162,0.25)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = '#764ba2';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = '0 2px 6px rgba(118,75,162,0.15)';
+                  }}
                 >
-                  Explore more
+                  Explore Niches
                 </button>
               )}
             </Flex>
@@ -679,10 +755,11 @@ const OurApproach = () => {
               <Flex 
                 direction="row" 
                 wrap={true} 
-                gap={isMobile ? spacing.xs : spacing.xs}
+                gap={isMobile ? spacing.sm : spacing.md}
                 style={{ 
                   justifyContent: 'center',
                   alignItems: 'stretch',
+                  padding: isMobile ? '0 4px' : '0',
                 }}
               >
                 {essentialGrowth.map((growth, index) => (
@@ -691,9 +768,9 @@ const OurApproach = () => {
                     variant="elevated"
                     style={{
                       ...cardStyle,
-                      // Fixed consistent size for all essential growth boxes
-                      width: isMobile ? '90px' : '110px',
-                      height: isMobile ? '110px' : '130px',
+                      // Fixed consistent size for all essential growth boxes - increased mobile size
+                      width: isMobile ? '110px' : '110px',
+                      height: isMobile ? '130px' : '130px',
                       flex: '0 0 auto', // Don't grow or shrink
                       backgroundColor: getEssentialGrowthBackgroundColor(growth.title),
                       padding: isMobile ? '12px' : '16px',
@@ -732,12 +809,12 @@ const OurApproach = () => {
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      width: isMobile ? '40px' : '50px',
-                      height: isMobile ? '40px' : '50px',
+                      width: isMobile ? '45px' : '50px',
+                      height: isMobile ? '45px' : '50px',
                       borderRadius: '50%',
                       marginBottom: '8px',
                       transition: 'transform 0.3s ease',
-                      fontSize: isMobile ? '24px' : '28px',
+                      fontSize: isMobile ? '26px' : '28px',
                     }}>
                       {growth.icon}
                     </div>
@@ -760,28 +837,32 @@ const OurApproach = () => {
                 ))}
               </Flex>
               
-              {/* Explore More button for Essential Growth */}
+              {/* Explore Essential Growth button */}
               <button
                 style={{
-                  margin: isMobile ? '1rem auto' : '1.5rem auto',
+                  margin: isMobile ? '0.8rem auto' : '1rem auto',
                   display: 'block',
-                  padding: '0.5rem 1.2rem',
-                  fontSize: '1rem',
-                  borderRadius: '0.5rem',
+                  padding: isMobile ? '0.4rem 0.8rem' : '0.5rem 1rem',
+                  fontSize: isMobile ? '0.8rem' : '0.9rem',
+                  borderRadius: '0.4rem',
                   border: 'none',
                   background: colorSystem.primary[500],
                   color: colorSystem.text.inverse,
                   cursor: 'pointer',
-                  fontWeight: 600,
-                  boxShadow: `0 2px 8px ${colorSystem.shadow.colored}`,
-                  transition: 'background 0.2s',
+                  fontWeight: 500,
+                  boxShadow: `0 2px 6px ${colorSystem.shadow.colored}`,
+                  transition: 'all 0.2s ease',
                 }}
                 onClick={() => window.location.href = '/essential-growth'}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = colorSystem.primary[600];
+                  e.currentTarget.style.transform = 'translateY(-1px)';
+                  e.currentTarget.style.boxShadow = `0 4px 8px ${colorSystem.shadow.colored}`;
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.background = colorSystem.primary[500];
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = `0 2px 6px ${colorSystem.shadow.colored}`;
                 }}
               >
                 Explore Essential Growth

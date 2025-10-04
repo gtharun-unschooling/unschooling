@@ -1,0 +1,254 @@
+/* Typography Consistency Overrides for Homepage */
+/* This ensures all headings and text use consistent fonts, sizes, and weights */
+
+/* Import the typography system */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Base font family for all elements */
+* {
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* H1 Headings - Main page titles */
+h1 {
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  color: #1e293b !important;
+  margin: 0 0 1.5rem 0 !important;
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* H2 Headings - Section titles */
+h2 {
+  font-size: 36px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  color: #1e293b !important;
+  margin: 0 0 1.25rem 0 !important;
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* H3 Headings - Subsection titles */
+h3 {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  color: #1e293b !important;
+  margin: 0 0 1rem 0 !important;
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* H4 Headings - Card titles */
+h4 {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  color: #1e293b !important;
+  margin: 0 0 0.75rem 0 !important;
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* H5 Headings - Small headings */
+h5 {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  color: #1e293b !important;
+  margin: 0 0 0.5rem 0 !important;
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* H6 Headings - Smallest headings */
+h6 {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+  color: #1e293b !important;
+  margin: 0 0 0.5rem 0 !important;
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Paragraph text */
+p {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #475569 !important;
+  margin: 0 0 0.75rem 0 !important;
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Span elements */
+span {
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Div elements with text content */
+div {
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Specific overrides for problematic elements */
+
+/* Hero section text */
+.hero-section h1,
+.hero-section .hero-static-text {
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Allow animated text to use dynamic colors */
+.hero-section .hero-animated-text {
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  /* Don't override color - let the component handle dynamic colors */
+}
+
+/* Our Approach section */
+.our-approach h1,
+.our-approach h2 {
+  font-size: 36px !important;
+  font-weight: 600 !important;
+  color: #1e293b !important;
+}
+
+/* Why Unschooling Works section */
+.why-unschooling h2 {
+  font-size: 36px !important;
+  font-weight: 600 !important;
+  color: #1e293b !important;
+}
+
+/* How it Works section */
+.how-it-works h2 {
+  font-size: 36px !important;
+  font-weight: 600 !important;
+  color: #1e293b !important;
+}
+
+/* Testimonials section */
+.testimonials h2 {
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+}
+
+/* Pricing section */
+.pricing h2 {
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+}
+
+/* FAQ section */
+.faq h2 {
+  font-size: 36px !important;
+  font-weight: 600 !important;
+  color: #1e293b !important;
+}
+
+/* Final CTA section */
+.final-cta h2 {
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+}
+
+/* Special cases for niche and essential growth cards */
+.niche-card h5,
+.essential-growth-card h5 {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  color: #1e293b !important;
+}
+
+/* FAQ questions */
+.faq-question h3 {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  color: #1e293b !important;
+}
+
+/* How it works steps */
+.how-it-works-step h3 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px !important;
+  }
+  
+  h2 {
+    font-size: 28px !important;
+  }
+  
+  h3 {
+    font-size: 20px !important;
+  }
+  
+  h4 {
+    font-size: 18px !important;
+  }
+  
+  h5 {
+    font-size: 14px !important;
+  }
+  
+  p {
+    font-size: 14px !important;
+  }
+  
+  .hero-section h1,
+  .hero-section .hero-static-text {
+    font-size: 36px !important;
+  }
+  
+  .hero-section .hero-animated-text {
+    font-size: 36px !important;
+    /* Don't override color - let the component handle dynamic colors */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px !important;
+  }
+  
+  h2 {
+    font-size: 24px !important;
+  }
+  
+  h3 {
+    font-size: 18px !important;
+  }
+  
+  h4 {
+    font-size: 16px !important;
+  }
+  
+  h5 {
+    font-size: 12px !important;
+  }
+  
+  p {
+    font-size: 12px !important;
+  }
+  
+  .hero-section h1,
+  .hero-section .hero-static-text {
+    font-size: 28px !important;
+  }
+  
+  .hero-section .hero-animated-text {
+    font-size: 28px !important;
+    /* Don't override color - let the component handle dynamic colors */
+  }
+}

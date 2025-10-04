@@ -169,36 +169,52 @@ const HowItWorks = () => {
     },
     // Mobile responsive styles
     mobileContainer: {
-      padding: '2rem 2vw',
+      padding: '3rem 6vw', // Increased padding for better spacing
       minHeight: 'auto',
     },
     mobileStepRung: {
-      width: '90vw',
-      maxWidth: '400px',
-      padding: '1.2rem 1.5rem',
+      width: '100%', // Full width for better mobile experience
+      maxWidth: 'none', // Remove max-width constraint
+      padding: '2rem 1.5rem', // Increased padding
       flexDirection: 'column',
       textAlign: 'center',
-      gap: '0.6rem',
-      minHeight: '70px',
+      gap: '1rem', // Increased gap
+      minHeight: '120px', // Increased height for better readability
+      marginLeft: '0', // Remove left margin to center tiles
+      marginRight: '0',
+      marginBottom: '1.5rem',
     },
-    // Removed mobile ladder rail
+    // Mobile steps container - centered
     mobileStepsContainer: {
-      marginLeft: '4rem',
+      marginLeft: '0', // Center the container
       gap: '1.5rem',
+      alignItems: 'center', // Center all tiles
+      width: '100%',
     },
     mobileStepIcon: {
-      fontSize: '3rem',
+      fontSize: '3.5rem', // Increased icon size
       marginRight: '0',
-      marginBottom: '0.6rem',
+      marginBottom: '1rem', // Increased margin
     },
     mobileHeading: {
-      fontSize: '2rem',
-      marginBottom: '1.5rem',
+      fontSize: '2.5rem', // Increased heading size
+      marginBottom: '2rem',
+      fontWeight: '700',
+    },
+    mobileStepTitle: {
+      fontSize: '1.4rem', // Increased title size
+      fontWeight: '700',
+      marginBottom: '0.8rem',
+    },
+    mobileStepDescription: {
+      fontSize: '1.1rem', // Increased description size
+      lineHeight: '1.5',
     },
   };
 
   return (
     <div 
+      className="how-it-works-section"
       ref={containerRef} 
       style={{
         ...ladderStyles.container,
@@ -206,25 +222,26 @@ const HowItWorks = () => {
       }}
     >
       <div style={ladderStyles.backgroundPattern} />
-      <h2 style={{
+      <h2 className="how-it-works-heading" style={{
         ...ladderStyles.heading,
         ...(isMobile ? ladderStyles.mobileHeading : {})
       }}>
         How it Works
       </h2>
       <div style={ladderStyles.ladderWrapper}>
-        <div style={{
+        <div className="how-it-works-steps" style={{
           ...ladderStyles.stepsContainer,
           ...(isMobile ? ladderStyles.mobileStepsContainer : {})
         }}>
           {ladderSteps.map((step, index) => (
             <div
               key={index}
+              className="how-it-works-step"
               style={{
                 ...ladderStyles.stepRung,
                 ...(isMobile ? ladderStyles.mobileStepRung : {}),
                 background: step.color,
-                // Create staircase effect - first step further left, others offset to the right
+                // Create staircase effect - first step further left, others offset to the right (desktop only)
                 marginLeft: !isMobile ? (index === 0 ? '-60px' : `${index * 20}px`) : '0px',
                 transform: !isMobile ? (index === 0 ? 'translateX(-30px)' : `translateX(${index * 10}px)`) : 'none',
               }}
@@ -241,15 +258,22 @@ const HowItWorks = () => {
                 }
               }}
             >
-              <div style={{
-                ...ladderStyles.stepIcon,
-                ...(isMobile ? ladderStyles.mobileStepIcon : {})
-              }}>
-                {step.icon}
-              </div>
               <div style={ladderStyles.stepContent}>
-                <h3 style={ladderStyles.stepTitle}>{step.title}</h3>
-                <p style={ladderStyles.stepDescription}>{step.description}</p>
+                <h3 className="how-it-works-step-title" style={{
+                  ...ladderStyles.stepTitle,
+                  ...(isMobile ? ladderStyles.mobileStepTitle : {}),
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  justifyContent: isMobile ? 'center' : 'flex-start'
+                }}>
+                  <span style={{ fontSize: isMobile ? '1.5rem' : '1.2rem' }}>{step.icon}</span>
+                  {step.title}
+                </h3>
+                <p className="how-it-works-step-description" style={{
+                  ...ladderStyles.stepDescription,
+                  ...(isMobile ? ladderStyles.mobileStepDescription : {})
+                }}>{step.description}</p>
               </div>
             </div>
           ))}

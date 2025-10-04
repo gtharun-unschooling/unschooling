@@ -4,6 +4,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
+// Make Firebase available globally for debugging
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import "firebase/compat/firestore";
+import "firebase/compat/storage";
+
 // Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBX2bZmOUosU-2PXZFQVN_WLLuee_zkFzI",
@@ -22,4 +28,14 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 const storage = getStorage(app);
 
-export { app, auth, db, storage };
+// Initialize Firebase compat for global access
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}
+
+// Make Firebase available globally for debugging
+if (typeof window !== 'undefined') {
+  window.firebase = firebase;
+}
+
+export { app, auth, db, storage, firebase };

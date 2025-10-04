@@ -1,0 +1,293 @@
+/* src/styles/mobile-responsive.css */
+
+/* General Mobile Adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Ensure base font size is readable */
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Ensure padding and margins are reduced */
+  .container, .main-content {
+    padding: 10px;
+  }
+
+  /* Flex and Grid adjustments */
+  .flex-container.mobile-stack {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .grid-container.mobile-grid-1-col {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* Buttons and Inputs */
+  button, input[type="submit"] {
+    padding: 12px 15px;
+    font-size: 16px;
+    min-height: 48px; /* Ensure touch target size */
+  }
+
+  input[type="text"], input[type="email"], input[type="password"], textarea, select {
+    padding: 10px;
+    font-size: 16px;
+    min-height: 48px; /* Ensure touch target size */
+  }
+
+  /* Card and Section Styling */
+  .card, .section-container {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* Text wrapping */
+  p, li, span {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* NAVBAR MOBILE FIXES */
+  .navbar,
+  .nav-container,
+  .header {
+    padding: 0.5rem !important;
+    height: auto !important;
+    min-height: 60px !important;
+  }
+  
+  .navbar-brand,
+  .logo {
+    font-size: 1.2rem !important;
+  }
+  
+  .nav-links,
+  .navbar-nav {
+    display: none !important; /* Hide desktop nav */
+  }
+  
+  .mobile-menu-toggle {
+    display: block !important;
+    padding: 0.5rem !important; /* Reduced padding */
+    font-size: 1.2rem !important; /* Reduced font size */
+    width: 40px !important; /* Fixed width */
+    height: 40px !important; /* Fixed height */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important; /* Make it round */
+    background-color: rgba(255, 255, 255, 0.1) !important; /* Subtle background */
+  }
+  
+  .hamburger-icon {
+    width: 20px !important; /* Smaller lines */
+    height: 2px !important; /* Thinner lines */
+    background-color: white !important;
+    position: relative !important;
+    transition: background-color 0.3s ease !important;
+  }
+  
+  .hamburger-icon::before,
+  .hamburger-icon::after {
+    content: '' !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: white !important;
+    transition: transform 0.3s ease !important;
+  }
+  
+  .hamburger-icon::before {
+    top: -6px !important; /* Reduced gap */
+  }
+  
+  .hamburger-icon::after {
+    top: 6px !important; /* Reduced gap */
+  }
+  
+  .hamburger-menu {
+    width: 75% !important; /* Changed from 100% to 75% as requested */
+    left: -75% !important; /* Changed from -100% to -75% to match width */
+    top: 60px !important;
+  }
+  
+  .hamburger-menu.open {
+    left: 0 !important;
+  }
+
+  /* HERO SECTION MOBILE IMPROVEMENTS */
+  .hero-section {
+    padding: 2vh 8vw !important; /* Increased padding for better spacing */
+  }
+
+  .hero-text-container {
+    gap: 1.5rem !important; /* Increased gap between text elements */
+  }
+
+  .hero-static-text {
+    font-size: clamp(3.5rem, 9vw, 5rem) !important; /* Significantly increased text size */
+    font-weight: 700 !important;
+    line-height: 1.1 !important;
+  }
+
+  .hero-animated-text {
+    font-size: clamp(3rem, 8vw, 4.5rem) !important; /* Significantly increased animated text size */
+    font-weight: 700 !important;
+    line-height: 1.1 !important;
+    border-right: 3px solid !important; /* Thicker cursor */
+  }
+
+  /* HOW IT WORKS SECTION MOBILE IMPROVEMENTS */
+  .how-it-works-section {
+    padding: 3rem 6vw !important; /* Increased padding for better spacing */
+  }
+
+  .how-it-works-heading {
+    font-size: 2.5rem !important; /* Increased heading size */
+    margin-bottom: 2rem !important;
+    font-weight: 700 !important;
+  }
+
+  .how-it-works-steps {
+    margin-left: 0 !important; /* Center the container */
+    align-items: center !important; /* Center all tiles */
+    width: 100% !important;
+  }
+
+  .how-it-works-step {
+    width: 100% !important; /* Full width for better mobile experience */
+    max-width: none !important; /* Remove max-width constraint */
+    padding: 2rem 1.5rem !important; /* Increased padding */
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 1rem !important; /* Increased gap */
+    min-height: 120px !important; /* Increased height for better readability */
+    margin-left: 0 !important; /* Remove left margin to center tiles */
+    margin-right: 0 !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .how-it-works-step-icon {
+    font-size: 3.5rem !important; /* Increased icon size */
+    margin-right: 0 !important;
+    margin-bottom: 1rem !important; /* Increased margin */
+  }
+
+  .how-it-works-step-title {
+    font-size: 1.4rem !important; /* Increased title size */
+    font-weight: 700 !important;
+    margin-bottom: 0.8rem !important;
+  }
+
+  .how-it-works-step-description {
+    font-size: 1.1rem !important; /* Increased description size */
+    line-height: 1.5 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .container, .main-content {
+    padding: 5px;
+  }
+
+  button, input[type="submit"] {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  input[type="text"], input[type="email"], input[type="password"], textarea, select {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .card, .section-container {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Smaller hamburger button for very small screens */
+  .mobile-menu-toggle {
+    width: 36px !important;
+    height: 36px !important;
+    padding: 0.4rem !important;
+  }
+  
+  .hamburger-icon {
+    width: 18px !important;
+  }
+  
+  .hamburger-icon::before {
+    top: -5px !important;
+  }
+  
+  .hamburger-icon::after {
+    top: 5px !important;
+  }
+
+  /* HERO SECTION MOBILE IMPROVEMENTS - SMALL SCREENS */
+  .hero-section {
+    padding: 1.5vh 6vw !important; /* Slightly reduced padding for very small screens */
+  }
+
+  .hero-static-text {
+    font-size: clamp(3rem, 8vw, 4.5rem) !important; /* Slightly smaller for very small screens */
+  }
+
+  .hero-animated-text {
+    font-size: clamp(2.5rem, 7vw, 4rem) !important; /* Slightly smaller for very small screens */
+  }
+
+  /* HOW IT WORKS SECTION MOBILE IMPROVEMENTS - SMALL SCREENS */
+  .how-it-works-section {
+    padding: 2rem 4vw !important; /* Reduced padding for very small screens */
+  }
+
+  .how-it-works-heading {
+    font-size: 2rem !important; /* Smaller heading for very small screens */
+  }
+
+  .how-it-works-step {
+    padding: 1.5rem 1rem !important; /* Reduced padding for very small screens */
+    min-height: 100px !important; /* Reduced height for very small screens */
+  }
+
+  .how-it-works-step-icon {
+    font-size: 3rem !important; /* Slightly smaller icons for very small screens */
+  }
+
+  .how-it-works-step-title {
+    font-size: 1.2rem !important; /* Smaller titles for very small screens */
+  }
+
+  .how-it-works-step-description {
+    font-size: 1rem !important; /* Smaller descriptions for very small screens */
+  }
+}

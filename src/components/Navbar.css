@@ -25,6 +25,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-left: -0.5rem; /* Move hamburger menu slightly left */
 }
 
 /* Hamburger Button Styles */
@@ -539,6 +540,10 @@
     padding: 0 1rem;
   }
   
+  .navbar-left {
+    margin-left: -0.75rem; /* Move hamburger menu more left on mobile */
+  }
+  
   .navbar-menu {
     gap: 1rem;
   }
@@ -560,17 +565,67 @@
   }
 }
 
+/* PROFILE INITIALS STYLING */
+.profile-initials {
+  display: none; /* Hidden by default (desktop) */
+  font-weight: 700;
+  font-size: 0.9rem;
+  min-width: 24px;
+  text-align: center;
+}
+
+.desktop-profile {
+  display: block; /* Show by default (desktop) */
+}
+
+.mobile-profile {
+  display: none; /* Hidden by default (desktop) */
+}
+
 /* MOBILE PROFILE BUTTON */
-@media (max-width: 480px) {
-  .profile-btn {
-    padding: 0.3rem 0.6rem;
-    font-size: 0.75rem;
-    height: 32px;
+@media (max-width: 768px) {
+  .desktop-profile {
+    display: none !important; /* Hide desktop profile on mobile */
   }
   
-  .profile-name-short {
-    max-width: 60px;
+  .mobile-profile {
+    display: block !important; /* Show mobile profile on mobile */
+  }
+  
+  .profile-btn {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+    height: 36px;
+    gap: 0.2rem;
+  }
+  
+  .profile-initials {
+    font-size: 0.8rem;
+    font-weight: 700;
+    min-width: 20px;
+  }
+  
+  .dropdown-arrow {
     font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-btn {
+    padding: 0.25rem 0.4rem;
+    font-size: 0.75rem;
+    height: 32px;
+    gap: 0.1rem;
+  }
+  
+  .profile-initials {
+    font-size: 0.75rem;
+    font-weight: 700;
+    min-width: 18px;
+  }
+  
+  .dropdown-arrow {
+    font-size: 0.6rem;
   }
   
   .hamburger-menu {

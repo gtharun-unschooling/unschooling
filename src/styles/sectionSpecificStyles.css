@@ -1,0 +1,323 @@
+/* Section-Specific Styles for Homepage */
+/* This maintains typography consistency while giving each section unique visual identity */
+
+/* ========================================
+   HERO SECTION - Keep original colors
+   ======================================== */
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: #ffffff !important;
+}
+
+.hero-section h1,
+.hero-section .hero-static-text {
+  color: #ffffff !important;
+  font-size: 48px !important;
+  font-weight: 700 !important;
+}
+
+/* Allow animated text to use dynamic colors */
+.hero-section .hero-animated-text {
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  /* Don't override color - let the component handle dynamic colors */
+}
+
+/* Hero section pattern overlay */
+.hero-section .hero-pattern {
+  background: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 0%, transparent 50%) !important;
+}
+
+/* ========================================
+   OUR APPROACH SECTION - Unique identifier
+   ======================================== */
+.our-approach-section {
+  background: #ffffff !important;
+  border-top: 4px solid #667eea !important;
+  border-bottom: 2px solid #f1f5f9 !important;
+}
+
+.our-approach-section::before {
+  content: "🎯";
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #667eea;
+}
+
+.our-approach-section h1 {
+  color: #667eea !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+}
+
+/* ========================================
+   WHY UNSCHOOLING WORKS SECTION - Unique identifier
+   ======================================== */
+.why-unschooling-section {
+  background: #f8fafc !important;
+  border-top: 4px solid #f59e0b !important;
+  border-bottom: 2px solid #f1f5f9 !important;
+}
+
+.why-unschooling-section::before {
+  content: "✨";
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #f59e0b;
+}
+
+.why-unschooling-section h2 {
+  color: #f59e0b !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+}
+
+/* ========================================
+   HOW IT WORKS SECTION - Unique identifier
+   ======================================== */
+.how-it-works-section {
+  background: #fefce8 !important;
+  border-top: 4px solid #22c55e !important;
+  border-bottom: 2px solid #f1f5f9 !important;
+}
+
+.how-it-works-section::before {
+  content: "🚀";
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #22c55e;
+}
+
+.how-it-works-section h2 {
+  color: #22c55e !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+}
+
+/* ========================================
+   TESTIMONIALS SECTION - Unique identifier
+   ======================================== */
+.testimonials-section {
+  background: #fff7ed !important;
+  border-top: 4px solid #f97316 !important;
+  border-bottom: 2px solid #f1f5f9 !important;
+}
+
+.testimonials-section::before {
+  content: "💬";
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #f97316;
+}
+
+.testimonials-section h2 {
+  color: #f97316 !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+}
+
+/* ========================================
+   PRICING SECTION - Unique identifier
+   ======================================== */
+.pricing-section {
+  background: #f0f9ff !important;
+  border-top: 4px solid #3b82f6 !important;
+  border-bottom: 2px solid #f1f5f9 !important;
+}
+
+.pricing-section::before {
+  content: "💰";
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #3b82f6;
+}
+
+.pricing-section h2 {
+  color: #3b82f6 !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+}
+
+/* ========================================
+   FAQ SECTION - Unique identifier
+   ======================================== */
+.faq-section {
+  background: #fdf2f8 !important;
+  border-top: 4px solid #ec4899 !important;
+  border-bottom: 2px solid #f1f5f9 !important;
+}
+
+.faq-section::before {
+  content: "❓";
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ec4899;
+}
+
+.faq-section h2 {
+  color: #ec4899 !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+}
+
+/* ========================================
+   FINAL CTA SECTION - Unique identifier
+   ======================================== */
+.final-cta-section {
+  background: #fef3c7 !important;
+  border-top: 4px solid #eab308 !important;
+  border-bottom: 2px solid #f1f5f9 !important;
+}
+
+.final-cta-section::before {
+  content: "🌟";
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #eab308;
+}
+
+.final-cta-section h2 {
+  color: #eab308 !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+}
+
+/* ========================================
+   SUBSECTION STYLING - Keep consistent but themed
+   ======================================== */
+
+/* Our Approach subsections */
+.our-approach-section h3 {
+  color: #667eea !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+.our-approach-section h5 {
+  color: #667eea !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+/* Why Unschooling Works subsections */
+.why-unschooling-section h3 {
+  color: #f59e0b !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+/* How It Works subsections */
+.how-it-works-section h3 {
+  color: #22c55e !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
+
+/* Testimonials subsections */
+.testimonials-section h3 {
+  color: #f97316 !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+/* Pricing subsections */
+.pricing-section h3 {
+  color: #3b82f6 !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+/* FAQ subsections */
+.faq-section h3 {
+  color: #ec4899 !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+/* Final CTA subsections */
+.final-cta-section h3 {
+  color: #eab308 !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+/* ========================================
+   MOBILE RESPONSIVE ADJUSTMENTS
+   ======================================== */
+@media (max-width: 768px) {
+  .hero-section h1,
+  .hero-section .hero-static-text {
+    font-size: 36px !important;
+  }
+  
+  .hero-section .hero-animated-text {
+    font-size: 36px !important;
+    /* Don't override color - let the component handle dynamic colors */
+  }
+  
+  .our-approach-section h1,
+  .why-unschooling-section h2,
+  .how-it-works-section h2,
+  .testimonials-section h2,
+  .pricing-section h2,
+  .faq-section h2,
+  .final-cta-section h2 {
+    font-size: 28px !important;
+  }
+  
+  .our-approach-section h3,
+  .why-unschooling-section h3,
+  .how-it-works-section h3,
+  .testimonials-section h3,
+  .pricing-section h3,
+  .faq-section h3,
+  .final-cta-section h3 {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1,
+  .hero-section .hero-static-text {
+    font-size: 28px !important;
+  }
+  
+  .hero-section .hero-animated-text {
+    font-size: 28px !important;
+    /* Don't override color - let the component handle dynamic colors */
+  }
+  
+  .our-approach-section h1,
+  .why-unschooling-section h2,
+  .how-it-works-section h2,
+  .testimonials-section h2,
+  .pricing-section h2,
+  .faq-section h2,
+  .final-cta-section h2 {
+    font-size: 24px !important;
+  }
+  
+  .our-approach-section h3,
+  .why-unschooling-section h3,
+  .how-it-works-section h3,
+  .testimonials-section h3,
+  .pricing-section h3,
+  .faq-section h3,
+  .final-cta-section h3 {
+    font-size: 16px !important;
+  }
+}
