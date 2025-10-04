@@ -1,0 +1,42 @@
+name: 🔧 Deploy to Firebase Development
+
+on:
+  push:
+    branches: [ development ]
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  build-and-deploy-dev:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout Repository
+      uses: actions/checkout@v4
+      
+    - name: 🔧 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: 📦 Install Dependencies
+      run: npm ci
+      
+    - name: 🏗️ Build Application
+      run: npm run build
+      env:
+        CI: false
+        
+    - name: 🔐 Deploy to Firebase Development
+      uses: FirebaseExtended/action-hosting-deploy@v0
+      with:
+        repoToken: '${{ secrets.GITHUB_TOKEN }}'
+        firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
+        channelId: development
+        projectId: unschooling-464413
+        
+    - name: ✅ Development Deployment Success
+      run: |
+        echo "🎉 Development deployment completed!"
+        echo "🔧 Dev URL: https://unschooling-464413--development.web.app"
+        echo "📅 Deployed at: $(date)"
