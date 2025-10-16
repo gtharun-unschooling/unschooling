@@ -798,8 +798,8 @@ AVAILABLE NICHE TOPICS ({len(topic_summaries)}):
 
 REQUIREMENTS:
 1. Select EXACTLY {count} topics
-2. BALANCE across ALL interests ({', '.join(interests)})
-   - Distribute evenly: ~{count // len(interests)} topics per interest
+2. BALANCE across ALL interests ({', '.join(interests) if interests else 'general topics'})
+   - Distribute evenly: ~{count // max(1, len(interests))} topics per interest
 3. Focus on interest-driven learning (AI, Finance, Entrepreneurship, etc.)
 4. Age-appropriate for {child_age} years old
 5. Consider {learning_style} learning style
@@ -996,7 +996,7 @@ CRITICAL: Select activities from MULTIPLE DIFFERENT pillars! NO MORE than 3 from
     
     def _fallback_balanced_selection(self, topics_pool: List[Dict], interests: List[str], total_needed: int) -> List[Dict]:
         """Fallback: Balance topics manually across interests."""
-        topics_per_interest = total_needed // len(interests)
+        topics_per_interest = total_needed // max(1, len(interests))
         matched = []
         
         for interest in interests:
