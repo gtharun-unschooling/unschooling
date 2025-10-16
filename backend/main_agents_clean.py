@@ -40,7 +40,7 @@ app.add_middleware(
 def load_topics_data():
     """Load topics data from the original data source."""
     try:
-        topics_file = "src/data/topicsdata.json"
+        topics_file = "data/topicsdata.json"
         logger.info(f"📁 Loading topics data from {topics_file}")
         
         if not os.path.exists(topics_file):
@@ -59,7 +59,7 @@ def load_topics_data():
 def load_niches_data():
     """Load niches data from the original data source."""
     try:
-        niches_file = "src/data/nichesdata.json"
+        niches_file = "data/nichesdata.json"
         logger.info(f"📁 Loading niches data from {niches_file}")
         
         if not os.path.exists(niches_file):
@@ -78,7 +78,7 @@ def load_niches_data():
 def load_essential_growth_data():
     """Load essential growth data from the original data source."""
     try:
-        essential_file = "src/data/essential-growth/index.json"
+        essential_file = "data/essential-growth/index.json"
         logger.info(f"📁 Loading essential growth data from {essential_file}")
         
         if not os.path.exists(essential_file):
