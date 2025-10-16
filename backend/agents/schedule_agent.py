@@ -5,6 +5,15 @@ def run_schedule_agent(state):
     
     print(f"🎯 Schedule Agent: Creating systematic 4-week plan for {len(matched_topics)} topics")
     
+    # Check if we have any topics at all
+    if not matched_topics or len(matched_topics) == 0:
+        print(f"❌ ERROR: No matched topics available - cannot create plan")
+        return {
+            "profile": profile,
+            "weekly_plan": {},
+            "error": "No topics matched for plan generation"
+        }
+    
     # Ensure we have enough topics for 4 weeks × 7 days = 28 activities
     if len(matched_topics) < 28:
         print(f"⚠️ Warning: Only {len(matched_topics)} topics available, need 28 for full plan")
@@ -101,17 +110,19 @@ def run_schedule_agent(state):
                 attempts += 1
             
             # If we still don't have a topic, use the next available one
-            if topic is None:
+            if topic is None and matched_topics:
                 topic_index = (week_num * 7 + day_num) % len(matched_topics)
                 topic = matched_topics[topic_index]
                 print(f"⚠️ Using fallback topic for {week_key} {day_name}: {topic.get('Topic', 'Unknown')}")
             
             # Create day-specific activity based on week theme and actual topic
-            day_activity = create_day_activity(topic, profile, week_num, day_name, day_num)
-            week_data["days"][day_name] = day_activity
+            if topic:
+                day_activity = create_day_activity(topic, profile, week_num, day_name, day_num)
+                week_data["days"][day_name] = day_activity
             
             # Move to next topic for next iteration
-            topic_rotation_index = (topic_rotation_index + 1) % len(matched_topics)
+            if matched_topics:
+                topic_rotation_index = (topic_rotation_index + 1) % len(matched_topics)
     
     # Create systematic approach summary
     systematic_approach = {
