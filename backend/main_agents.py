@@ -996,14 +996,16 @@ CRITICAL: Select activities from MULTIPLE DIFFERENT pillars! NO MORE than 3 from
     
     def _fallback_balanced_selection(self, topics_pool: List[Dict], interests: List[str], total_needed: int) -> List[Dict]:
         """Fallback: Balance topics manually across interests."""
-        topics_per_interest = total_needed // max(1, len(interests))
         matched = []
         
-        for interest in interests:
-            interest_topics = [t for t in topics_pool if interest.lower() in t.get('Niche', '').lower()]
-            matched.extend(interest_topics[:topics_per_interest])
+        # If interests provided, try to balance across them
+        if interests:
+            topics_per_interest = total_needed // max(1, len(interests))
+            for interest in interests:
+                interest_topics = [t for t in topics_pool if interest.lower() in t.get('Niche', '').lower()]
+                matched.extend(interest_topics[:topics_per_interest])
         
-        # Fill remaining slots with any suitable topics
+        # Fill remaining slots with any suitable topics (or all if no interests)
         while len(matched) < total_needed and len(matched) < len(topics_pool):
             for topic in topics_pool:
                 if topic not in matched:
