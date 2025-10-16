@@ -210,7 +210,7 @@ const LearningProgressTracker = () => {
       }}>
         <Box sx={{ textAlign: 'center' }}>
           <CircularProgress size={80} sx={{ mb: 2 }} />
-          <Typography variant="h6" color="text.secondary">
+          <Typography  color="text.secondary">
             Loading learning progress...
           </Typography>
         </Box>
@@ -228,7 +228,7 @@ const LearningProgressTracker = () => {
         backgroundColor: '#f5f5f5'
       }}>
         <Alert severity="error" sx={{ maxWidth: 500 }}>
-          <Typography variant="h6" gutterBottom>
+          <Typography  gutterBottom>
             Error Loading Progress
           </Typography>
           <Typography>{error}</Typography>
@@ -248,7 +248,7 @@ const LearningProgressTracker = () => {
       }}>
         <Paper sx={{ p: 4, textAlign: 'center', maxWidth: 400 }}>
           <School sx={{ fontSize: 64, color: 'primary.main', mb: 2 }} />
-          <Typography variant="h5" gutterBottom>
+          <Typography  gutterBottom>
             No Learning History
           </Typography>
           <Typography color="text.secondary">
@@ -266,10 +266,10 @@ const LearningProgressTracker = () => {
       {/* Header */}
       <Paper elevation={1} sx={{ mb: 3 }}>
         <Box sx={{ p: 3 }}>
-          <Typography variant="h3" component="h1" gutterBottom color="primary">
+          <Typography  component="h1" gutterBottom color="primary">
             Learning Progress Tracker
           </Typography>
-          <Typography variant="h6" color="text.secondary">
+          <Typography  color="text.secondary">
             Track your child's learning journey, achievements, and progress
           </Typography>
         </Box>
@@ -280,7 +280,7 @@ const LearningProgressTracker = () => {
         {children.length > 0 && (
           <Card sx={{ mb: 3 }}>
             <CardContent>
-              <Typography variant="h6" gutterBottom>
+              <Typography  gutterBottom>
                 Select Child
               </Typography>
               <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2 }}>
@@ -297,10 +297,10 @@ const LearningProgressTracker = () => {
                     }}
                   >
                     <Box>
-                      <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
+                      <Typography  sx={{ fontWeight: 'bold' }}>
                         {child.name}
                       </Typography>
-                      <Typography variant="body2" color="text.secondary">
+                      <Typography  color="text.secondary">
                         Age: {child.age} • {child.learningStyle}
                       </Typography>
                     </Box>
@@ -316,10 +316,10 @@ const LearningProgressTracker = () => {
           <Grid item xs={12} sm={6} md={3}>
             <Card sx={{ textAlign: 'center', p: 2 }}>
               <CardContent>
-                <Typography variant="h3" color="primary.main" gutterBottom>
+                <Typography  color="primary.main" gutterBottom>
                   {progress.total_topics_completed}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography  color="text.secondary">
                   Topics Completed
                 </Typography>
               </CardContent>
@@ -328,10 +328,10 @@ const LearningProgressTracker = () => {
           <Grid item xs={12} sm={6} md={3}>
             <Card sx={{ textAlign: 'center', p: 2 }}>
               <CardContent>
-                <Typography variant="h3" color="success.main" gutterBottom>
+                <Typography  color="success.main" gutterBottom>
                   {formatTime(progress.total_learning_time_minutes)}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography  color="text.secondary">
                   Total Learning Time
                 </Typography>
               </CardContent>
@@ -340,10 +340,10 @@ const LearningProgressTracker = () => {
           <Grid item xs={12} sm={6} md={3}>
             <Card sx={{ textAlign: 'center', p: 2 }}>
               <CardContent>
-                <Typography variant="h3" color="secondary.main" gutterBottom>
+                <Typography  color="secondary.main" gutterBottom>
                   {progress.learning_streak_days}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography  color="text.secondary">
                   Learning Streak (Days)
                 </Typography>
               </CardContent>
@@ -352,10 +352,10 @@ const LearningProgressTracker = () => {
           <Grid item xs={12} sm={6} md={3}>
             <Card sx={{ textAlign: 'center', p: 2 }}>
               <CardContent>
-                <Typography variant="h3" color="warning.main" gutterBottom>
+                <Typography  color="warning.main" gutterBottom>
                   {progress.average_parent_rating}/5
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography  color="text.secondary">
                   Average Rating
                 </Typography>
               </CardContent>
@@ -368,7 +368,7 @@ const LearningProgressTracker = () => {
           <Grid item xs={12} lg={8}>
             <Card>
               <Box sx={{ p: 2, borderBottom: 1, borderColor: 'divider' }}>
-                <Typography variant="h6" component="h2">
+                <Typography  component="h2">
                   Recent Learning Sessions
                 </Typography>
               </Box>
@@ -384,7 +384,7 @@ const LearningProgressTracker = () => {
                       <ListItemText
                         primary={
                           <Box>
-                            <Typography variant="h6" gutterBottom>
+                            <Typography  gutterBottom>
                               {session.topic_name}
                             </Typography>
                             <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mb: 2 }}>
@@ -395,13 +395,13 @@ const LearningProgressTracker = () => {
                             </Box>
                             <Grid container spacing={2} sx={{ mb: 2 }}>
                               <Grid item xs={6}>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography  color="text.secondary">
                                   <Timer sx={{ fontSize: 16, mr: 1, verticalAlign: 'middle' }} />
                                   Time: {formatTime(session.time_spent_minutes)}
                                 </Typography>
                               </Grid>
                               <Grid item xs={6}>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography  color="text.secondary">
                                   <TrendingUp sx={{ fontSize: 16, mr: 1, verticalAlign: 'middle' }} />
                                   Engagement: {session.child_engagement}
                                 </Typography>
@@ -409,7 +409,7 @@ const LearningProgressTracker = () => {
                             </Grid>
                             {session.activities_completed.length > 0 && (
                               <Box sx={{ mb: 2 }}>
-                                <Typography variant="body2" color="text.secondary" gutterBottom>
+                                <Typography  color="text.secondary" gutterBottom>
                                   Activities:
                                 </Typography>
                                 <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
@@ -419,14 +419,14 @@ const LearningProgressTracker = () => {
                                       label={activity} 
                                       size="small" 
                                       color="success" 
-                                      variant="outlined"
+                                      
                                     />
                                   ))}
                                 </Box>
                               </Box>
                             )}
                             {session.notes && (
-                              <Typography variant="body2" color="text.secondary" sx={{ fontStyle: 'italic' }}>
+                              <Typography  color="text.secondary" sx={{ fontStyle: 'italic' }}>
                                 "{session.notes}"
                               </Typography>
                             )}
@@ -434,12 +434,12 @@ const LearningProgressTracker = () => {
                         }
                         secondary={
                           <Box sx={{ textAlign: 'right' }}>
-                            <Typography variant="body2" color="text.secondary">
+                            <Typography  color="text.secondary">
                               {new Date(session.completed_at).toLocaleDateString()}
                             </Typography>
                             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', mt: 1 }}>
                               <Star sx={{ color: 'warning.main', mr: 0.5 }} />
-                              <Typography variant="h6" color="warning.main">
+                              <Typography  color="warning.main">
                                 {session.parent_rating}/5
                               </Typography>
                             </Box>
@@ -460,7 +460,7 @@ const LearningProgressTracker = () => {
               {/* Achievements */}
               <Card>
                 <Box sx={{ p: 2, borderBottom: 1, borderColor: 'divider' }}>
-                  <Typography variant="h6" component="h2">
+                  <Typography  component="h2">
                     Achievements
                   </Typography>
                 </Box>
@@ -481,13 +481,13 @@ const LearningProgressTracker = () => {
                               <EmojiEvents />
                             </Avatar>
                             <Box>
-                              <Typography variant="subtitle1" fontWeight="bold">
+                              <Typography  fontWeight="bold">
                                 {achievement.name}
                               </Typography>
-                              <Typography variant="body2" color="text.secondary">
+                              <Typography  color="text.secondary">
                                 {achievement.description}
                               </Typography>
-                              <Typography variant="caption" color="text.secondary">
+                              <Typography  color="text.secondary">
                                 {new Date(achievement.unlocked_at).toLocaleDateString()}
                               </Typography>
                             </Box>
@@ -509,7 +509,7 @@ const LearningProgressTracker = () => {
               {progress.strengths.length > 0 && (
                 <Card>
                   <Box sx={{ p: 2, borderBottom: 1, borderColor: 'divider' }}>
-                    <Typography variant="h6" component="h2">
+                    <Typography  component="h2">
                       Strengths
                     </Typography>
                   </Box>
@@ -534,7 +534,7 @@ const LearningProgressTracker = () => {
               {progress.areas_for_growth.length > 0 && (
                 <Card>
                   <Box sx={{ p: 2, borderBottom: 1, borderColor: 'divider' }}>
-                    <Typography variant="h6" component="h2">
+                    <Typography  component="h2">
                       Areas for Growth
                     </Typography>
                   </Box>
@@ -559,7 +559,7 @@ const LearningProgressTracker = () => {
               {progress.recommended_next_topics.length > 0 && (
                 <Card>
                   <Box sx={{ p: 2, borderBottom: 1, borderColor: 'divider' }}>
-                    <Typography variant="h6" component="h2">
+                    <Typography  component="h2">
                       Recommendations
                     </Typography>
                   </Box>
@@ -575,17 +575,17 @@ const LearningProgressTracker = () => {
                             borderColor: 'primary.200'
                           }}
                         >
-                          <Typography variant="subtitle2" color="primary.main" gutterBottom>
+                          <Typography  color="primary.main" gutterBottom>
                             {rec.type.replace('_', ' ')}
                           </Typography>
-                          <Typography variant="body2" color="primary.dark" gutterBottom>
+                          <Typography  color="primary.dark" gutterBottom>
                             {rec.reason}
                           </Typography>
                           <Chip 
                             label={`Priority: ${rec.priority}`} 
                             size="small" 
                             color="primary" 
-                            variant="outlined"
+                            
                           />
                         </Paper>
                       ))}
@@ -603,7 +603,7 @@ const LearningProgressTracker = () => {
           <Grid item xs={12} lg={6}>
             <Card>
               <Box sx={{ p: 2, borderBottom: 1, borderColor: 'divider' }}>
-                <Typography variant="h6" component="h2">
+                <Typography  component="h2">
                   Progress by Niche
                 </Typography>
               </Box>
@@ -611,15 +611,15 @@ const LearningProgressTracker = () => {
                 {Object.entries(progress.niche_progress).map(([niche, data]) => (
                   <Box key={niche} sx={{ mb: 3 }}>
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1 }}>
-                      <Typography variant="subtitle2" fontWeight="bold">
+                      <Typography  fontWeight="bold">
                         {niche}
                       </Typography>
-                      <Typography variant="body2" color="text.secondary">
+                      <Typography  color="text.secondary">
                         {data.completed} topics • {formatTime(data.total_time)}
                       </Typography>
                     </Box>
                     <LinearProgress 
-                      variant="determinate" 
+                       
                       value={(data.completed / Math.max(progress.total_topics_completed, 1)) * 100}
                       sx={{ 
                         height: 8, 
@@ -640,7 +640,7 @@ const LearningProgressTracker = () => {
           <Grid item xs={12} lg={6}>
             <Card>
               <Box sx={{ p: 2, borderBottom: 1, borderColor: 'divider' }}>
-                <Typography variant="h6" component="h2">
+                <Typography  component="h2">
                   Progress by Learning Stage
                 </Typography>
               </Box>
@@ -648,15 +648,15 @@ const LearningProgressTracker = () => {
                 {Object.entries(progress.stage_progress).map(([stage, data]) => (
                   <Box key={stage} sx={{ mb: 3 }}>
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1 }}>
-                      <Typography variant="subtitle2" fontWeight="bold" sx={{ textTransform: 'capitalize' }}>
+                      <Typography  fontWeight="bold" sx={{ textTransform: 'capitalize' }}>
                         {stage}
                       </Typography>
-                      <Typography variant="body2" color="text.secondary">
+                      <Typography  color="text.secondary">
                         {data.completed} topics • {formatTime(data.total_time)}
                       </Typography>
                     </Box>
                     <LinearProgress 
-                      variant="determinate" 
+                       
                       value={(data.completed / Math.max(progress.total_topics_completed, 1)) * 100}
                       sx={{ 
                         height: 8, 

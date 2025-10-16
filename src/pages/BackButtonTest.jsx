@@ -1,5 +1,5 @@
 import React from 'react';
-import UniversalBackButton from '../components/ui/UniversalBackButton';
+import MinimalBackButton from '../components/ui/UniversalBackButton';
 import BackButtonDemo from '../components/ui/BackButtonDemo';
 
 const BackButtonTestPage = () => {
@@ -9,7 +9,7 @@ const BackButtonTestPage = () => {
       backgroundColor: '#fafbfc',
       minHeight: '100vh'
     }}>
-      <UniversalBackButton text="← Back to Home" variant="luxury" />
+      <MinimalBackButton text="← Back to Home"  />
       <BackButtonDemo />
     </div>
   );

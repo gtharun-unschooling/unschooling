@@ -12,6 +12,7 @@ import json
 import time
 from typing import Dict, Any, List
 import google.generativeai as genai
+from google.cloud import firestore
 from real_usage_tracker import real_usage_tracker
 from child_activity_tracker import child_activity_tracker
 
@@ -584,6 +585,56 @@ async def generate_plan(request: Request):
         logger.info("Step 4: Reviewer Agent - Quality Assurance")
         reviewer_result = reviewer_agent.run(schedule_result)
         reviewer_timing = reviewer_result["agent_timing"]
+        
+        # Save plan to Firebase
+        try:
+            from firebase_service import firebase_service
+            
+            user_id = profile.get("userId") or profile.get("user_id")
+            child_id = profile.get("childId") or profile.get("child_id")
+            
+            if user_id and child_id and firebase_service.initialized:
+                logger.info(f"💾 Saving plan to Firebase: user={user_id}, child={child_id}")
+                
+                # Create plan document - Save actual ReviewerAgent output
+                plan_data = {
+                    "profile": profile_result.get("profile", {}),
+                    "profile_analysis": profile_result.get("profile_analysis", {}),
+                    "matched_topics": match_result.get("matched_topics", []),
+                    "match_analysis": match_result.get("match_analysis", {}),
+                    "weekly_plan": reviewer_result.get("weekly_plan", {}),  # ✅ Actual plan data from ReviewerAgent
+                    "learning_objectives": reviewer_result.get("learning_objectives", []),
+                    "recommended_activities": reviewer_result.get("recommended_activities", []),
+                    "progress_tracking": reviewer_result.get("progress_tracking", {}),
+                    "review_insights": reviewer_result.get("review_insights", {}),  # ✅ Review from ReviewerAgent
+                    "review_analysis": reviewer_result.get("review_analysis", {}),  # ✅ Analysis from ReviewerAgent
+                    "plan_type": profile.get("planType", "hybrid"),
+                    "created_at": firestore.SERVER_TIMESTAMP,
+                    "updated_at": firestore.SERVER_TIMESTAMP,
+                    "agent_timings": {
+                        "profile_agent": profile_timing["execution_time_seconds"],
+                        "match_agent": match_timing["execution_time_seconds"],
+                        "schedule_agent": schedule_timing["execution_time_seconds"],
+                        "reviewer_agent": reviewer_timing["execution_time_seconds"],
+                        "total": sum([
+                            profile_timing["execution_time_seconds"],
+                            match_timing["execution_time_seconds"],
+                            schedule_timing["execution_time_seconds"],
+                            reviewer_timing["execution_time_seconds"]
+                        ])
+                    }
+                }
+                
+                # Save to Firebase
+                plan_ref = firebase_service.db.collection('users').document(user_id).collection('children').document(child_id).collection('plans').document()
+                plan_ref.set(plan_data)
+                
+                logger.info(f"✅ Plan saved to Firebase with ID: {plan_ref.id}")
+            else:
+                logger.warning("⚠️ Could not save to Firebase: missing user_id, child_id, or Firebase not initialized")
+        except Exception as e:
+            logger.error(f"❌ Error saving plan to Firebase: {e}")
+            # Don't fail the request if save fails, just log it
         
         # Combine all results
         final_result = {

@@ -74,7 +74,7 @@ const SocialShare = ({
 
   const ShareButton = ({ platform, icon: Icon, color, label }) => (
     <Button
-      variant="outlined"
+      
       startIcon={<Icon />}
       onClick={() => handleShare(platform)}
       sx={{ 
@@ -125,7 +125,7 @@ const SocialShare = ({
           sx: { p: 2, minWidth: 250 }
         }}
       >
-        <Typography variant="h6" gutterBottom>
+        <Typography  gutterBottom>
           Share this page
         </Typography>
 
@@ -176,7 +176,7 @@ const SocialShare = ({
         {navigator.share && (
           <>
             <Divider sx={{ my: 2 }} />
-            <Typography variant="body2" color="text.secondary" gutterBottom>
+            <Typography  color="text.secondary" gutterBottom>
               Custom message:
             </Typography>
             <TextField
@@ -190,7 +190,7 @@ const SocialShare = ({
               sx={{ mb: 2 }}
             />
             <Button
-              variant="contained"
+              
               onClick={handleCustomShare}
               fullWidth
               startIcon={<Share />}

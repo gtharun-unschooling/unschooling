@@ -1,0 +1,1940 @@
+{
+  "lastUpdated": "2025-10-12",
+  "totalThemes": 239,
+  "themes": [
+    {
+      "planType": "Holistic",
+      "sno": 1,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Little Gardeners",
+      "shortDescription": "Explore plants, soil, and watering to learn how things grow",
+      "coreFocusArea": "Nature & Responsibility"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 2,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Color Carnival",
+      "shortDescription": "Discover colors through painting, sorting, and nature walks",
+      "coreFocusArea": "Creativity & Observation"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 3,
+      "ageGroup": "3–5 yrs",
+      "themeName": "My Feelings Rainbow",
+      "shortDescription": "Learn to name, express, and manage emotions",
+      "coreFocusArea": "Emotional Awareness"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 4,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Tiny Builders",
+      "shortDescription": "Build with blocks, paper, and clay to understand shapes and balance",
+      "coreFocusArea": "STEM Exploration"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 5,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Sound Safari",
+      "shortDescription": "Listen to animal, musical, and daily sounds to improve listening",
+      "coreFocusArea": "Sensory Development"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 6,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Family & Friends",
+      "shortDescription": "Know about family members, sharing, and kindness",
+      "coreFocusArea": "Social Skills"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 7,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Little Chefs",
+      "shortDescription": "Try safe food-prep tasks, learn textures and tastes",
+      "coreFocusArea": "Life Skills"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 8,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Move & Groove",
+      "shortDescription": "Engage in dance, yoga, and playful movement",
+      "coreFocusArea": "Physical Awareness"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 9,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Animal Adventures",
+      "shortDescription": "Learn about animals, habitats, and caring for pets",
+      "coreFocusArea": "Curiosity & Compassion"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 10,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Story Explorers",
+      "shortDescription": "Listen, imagine, and create simple stories",
+      "coreFocusArea": "Language & Imagination"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 11,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Tiny Scientists",
+      "shortDescription": "Discover cause-effect through experiments",
+      "coreFocusArea": "Cognitive & STEM"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 12,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Shapes & Spaces",
+      "shortDescription": "Identify shapes, patterns, and simple spatial concepts",
+      "coreFocusArea": "Cognitive & STEM"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 13,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Colorful Emotions",
+      "shortDescription": "Express feelings through drawing, painting, and crafts",
+      "coreFocusArea": "Emotional & Creative"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 14,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Little Inventors",
+      "shortDescription": "Simple building, problem-solving, and imaginative design",
+      "coreFocusArea": "Creativity & STEM"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 15,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Nature Detectives",
+      "shortDescription": "Explore outdoor spaces, observe insects, plants, and weather",
+      "coreFocusArea": "Environmental Awareness"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 16,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Music & Motion",
+      "shortDescription": "Rhythm, singing, and movement activities",
+      "coreFocusArea": "Creativity & Physical"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 17,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Helping Hands",
+      "shortDescription": "Practice cooperation, sharing, and teamwork",
+      "coreFocusArea": "Social Skills"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 18,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Tiny Explorers",
+      "shortDescription": "Simple exploration games to discover surroundings",
+      "coreFocusArea": "Cognitive & Curiosity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 19,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Little Artists",
+      "shortDescription": "Drawing, coloring, collage, and crafting",
+      "coreFocusArea": "Creativity & Fine Motor"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 20,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Mini Mathematicians",
+      "shortDescription": "Counting, sorting, and pattern recognition",
+      "coreFocusArea": "Cognitive & STEM"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 21,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Healthy Habits",
+      "shortDescription": "Hygiene, handwashing, balanced snacks",
+      "coreFocusArea": "Life Skills & Wellness"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 22,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Story Builders",
+      "shortDescription": "Create small stories using puppets, toys, or drawings",
+      "coreFocusArea": "Language & Creativity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 23,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Adventure Walks",
+      "shortDescription": "Outdoor walking, exploring nature safely",
+      "coreFocusArea": "Physical & Environmental"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 24,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Little Garden Scientists",
+      "shortDescription": "Observe plant growth, weather, and small experiments",
+      "coreFocusArea": "STEM & Environmental"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 25,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Imagination Station",
+      "shortDescription": "Role play, dress-up, and pretend games",
+      "coreFocusArea": "Creativity & Social"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 26,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Tiny Problem Solvers",
+      "shortDescription": "Simple puzzles, matching, stacking, sorting",
+      "coreFocusArea": "Cognitive & STEM"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 27,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Mindful Moments",
+      "shortDescription": "Simple breathing, guided attention, calming routines",
+      "coreFocusArea": "Emotional & Life Skills"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 28,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Sound & Rhythm",
+      "shortDescription": "Music, clapping, instruments, and rhythm games",
+      "coreFocusArea": "Sensory & Creativity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 29,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Community Helpers",
+      "shortDescription": "Learn about roles in community, helping others",
+      "coreFocusArea": "Social & Civic Awareness"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 30,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Little Storytellers",
+      "shortDescription": "Narrate experiences, share ideas, and illustrate",
+      "coreFocusArea": "Language & Creativity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 1,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Young Explorers",
+      "shortDescription": "Discover the world through outdoor exploration and observation",
+      "coreFocusArea": "Environmental & Curiosity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 2,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Science Detectives",
+      "shortDescription": "Conduct simple experiments to understand basic scientific concepts",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 3,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Story Architects",
+      "shortDescription": "Create stories using imagination, writing, and illustrations",
+      "coreFocusArea": "Language & Creativity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 4,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Math Wizards",
+      "shortDescription": "Practice counting, patterns, and problem-solving with fun activities",
+      "coreFocusArea": "Cognitive & STEM"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 5,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Art Adventures",
+      "shortDescription": "Explore drawing, painting, collage, and 3D crafts",
+      "coreFocusArea": "Creativity & Fine Motor"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 6,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Healthy Heroes",
+      "shortDescription": "Learn about nutrition, exercise, and personal hygiene",
+      "coreFocusArea": "Wellness & Life Skills"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 7,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Little Coders",
+      "shortDescription": "Introduction to logic, sequences, and basic programming concepts",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 8,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Kindness Quest",
+      "shortDescription": "Activities focused on empathy, sharing, and helping others",
+      "coreFocusArea": "Social & Emotional"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 9,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Musical Minds",
+      "shortDescription": "Explore rhythm, melody, and musical expression",
+      "coreFocusArea": "Creativity & Sensory"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 10,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Nature Rangers",
+      "shortDescription": "Study plants, animals, and ecosystems through interactive activities",
+      "coreFocusArea": "Environmental & Curiosity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 11,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Tiny Engineers",
+      "shortDescription": "Hands-on building, designing, and simple mechanical experiments",
+      "coreFocusArea": "STEM & Creativity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 12,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Adventure Seekers",
+      "shortDescription": "Outdoor challenges and games to build confidence and teamwork",
+      "coreFocusArea": "Physical & Social"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 13,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Word Explorers",
+      "shortDescription": "Vocabulary building, word games, and storytelling",
+      "coreFocusArea": "Language & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 14,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Creative Chefs",
+      "shortDescription": "Cooking simple recipes to learn measurements, sequences, and nutrition",
+      "coreFocusArea": "Life Skills & Creativity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 15,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Mindful Moments",
+      "shortDescription": "Simple meditation, breathing exercises, and emotional awareness activities",
+      "coreFocusArea": "Emotional & Life Skills"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 16,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Puzzle Masters",
+      "shortDescription": "Engage with puzzles, patterns, and logic games",
+      "coreFocusArea": "Cognitive & STEM"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 17,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Animal Investigators",
+      "shortDescription": "Study animal behavior, habitats, and care",
+      "coreFocusArea": "Environmental & Curiosity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 18,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Community Builders",
+      "shortDescription": "Learn about community helpers, civic responsibility, and teamwork",
+      "coreFocusArea": "Social & Civic Awareness"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 19,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Creative Builders",
+      "shortDescription": "Construct models, simple machines, and artistic creations",
+      "coreFocusArea": "STEM & Creativity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 20,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Science Explorers",
+      "shortDescription": "Explore magnetism, light, water, and simple physics phenomena",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 21,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Story Detectives",
+      "shortDescription": "Read and analyze stories to identify characters, plot, and lessons",
+      "coreFocusArea": "Language & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 22,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Dance & Movement",
+      "shortDescription": "Movement, coordination, rhythm, and physical fitness",
+      "coreFocusArea": "Physical & Creativity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 23,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Nature Artists",
+      "shortDescription": "Draw and craft using natural materials, observe patterns in nature",
+      "coreFocusArea": "Creativity & Environmental"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 24,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Young Historians",
+      "shortDescription": "Learn about local history, landmarks, and traditions",
+      "coreFocusArea": "Social & Cultural"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 25,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Eco Heroes",
+      "shortDescription": "Activities to understand recycling, sustainability, and caring for Earth",
+      "coreFocusArea": "Environmental & Social"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 26,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Little Mathematicians",
+      "shortDescription": "Fun math games to strengthen arithmetic and logical thinking",
+      "coreFocusArea": "Cognitive & STEM"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 27,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Science Storytellers",
+      "shortDescription": "Combine storytelling with experiments to explain scientific concepts",
+      "coreFocusArea": "Language & STEM"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 28,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Outdoor Adventurers",
+      "shortDescription": "Hiking, scavenger hunts, and exploration activities",
+      "coreFocusArea": "Physical & Environmental"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 29,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Empathy Builders",
+      "shortDescription": "Role-playing, discussions, and activities to develop empathy",
+      "coreFocusArea": "Social & Emotional"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 30,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Inventors’ Lab",
+      "shortDescription": "Design and test simple inventions, encouraging curiosity and problem-solving",
+      "coreFocusArea": "Creativity & STEM"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 1,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Young Scientists",
+      "shortDescription": "Conduct experiments and explore natural phenomena",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 2,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Creative Storytellers",
+      "shortDescription": "Write, illustrate, and present original stories",
+      "coreFocusArea": "Language & Creativity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 3,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Math Explorers",
+      "shortDescription": "Solve puzzles, logic challenges, and practical math problems",
+      "coreFocusArea": "Cognitive & STEM"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 4,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Eco Warriors",
+      "shortDescription": "Learn about sustainability, recycling, and environmental action",
+      "coreFocusArea": "Environmental & Social"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 5,
+      "ageGroup": "9–12 yrs",
+      "themeName": "History Detectives",
+      "shortDescription": "Study historical events, local culture, and traditions",
+      "coreFocusArea": "Social & Cultural"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 6,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Code & Logic",
+      "shortDescription": "Introduction to coding, algorithms, and problem-solving",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 7,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Art Innovators",
+      "shortDescription": "Drawing, painting, sculpture, and mixed media projects",
+      "coreFocusArea": "Creativity & Fine Motor"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 8,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Mindful Moments",
+      "shortDescription": "Meditation, emotional awareness, and stress management techniques",
+      "coreFocusArea": "Emotional & Life Skills"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 9,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Adventure Seekers",
+      "shortDescription": "Outdoor challenges, team games, and exploration",
+      "coreFocusArea": "Physical & Social"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 10,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Global Citizens",
+      "shortDescription": "Learn empathy, diversity, and global awareness",
+      "coreFocusArea": "Social & Civic"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 11,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Young Engineers",
+      "shortDescription": "Build models, simple machines, and robotics basics",
+      "coreFocusArea": "STEM & Creativity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 12,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Nature Explorers",
+      "shortDescription": "Study ecosystems, flora, fauna, and conservation",
+      "coreFocusArea": "Environmental & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 13,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Music Makers",
+      "shortDescription": "Explore instruments, rhythm, composition, and performance",
+      "coreFocusArea": "Creativity & Sensory"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 14,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Problem Solvers",
+      "shortDescription": "Puzzles, logic games, and group problem-solving challenges",
+      "coreFocusArea": "Cognitive & STEM"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 15,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Science Storytellers",
+      "shortDescription": "Explain scientific concepts through stories, experiments, and presentations",
+      "coreFocusArea": "STEM & Language"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 16,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Young Authors",
+      "shortDescription": "Creative writing, journaling, and publishing mini-books",
+      "coreFocusArea": "Language & Creativity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 17,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Healthy Habits",
+      "shortDescription": "Nutrition, exercise, hygiene, and personal wellness",
+      "coreFocusArea": "Life Skills & Physical"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 18,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Inventors’ Lab",
+      "shortDescription": "Design, test, and improve simple inventions and prototypes",
+      "coreFocusArea": "Creativity & STEM"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 19,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Debate & Discussion",
+      "shortDescription": "Learn critical thinking, public speaking, and respectful debate",
+      "coreFocusArea": "Social & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 20,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Tech Explorers",
+      "shortDescription": "Introduction to technology, apps, and digital creation",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 21,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Outdoor Adventurers",
+      "shortDescription": "Hiking, scavenger hunts, and survival skills",
+      "coreFocusArea": "Physical & Environmental"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 22,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Cultural Explorers",
+      "shortDescription": "Learn about arts, music, and traditions from different cultures",
+      "coreFocusArea": "Cultural & Social"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 23,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Mind & Body",
+      "shortDescription": "Yoga, mindfulness, and movement for focus and wellness",
+      "coreFocusArea": "Physical & Emotional"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 24,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Little Historians",
+      "shortDescription": "Research local history and create presentations",
+      "coreFocusArea": "Social & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 25,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Creative Builders",
+      "shortDescription": "Build, design, and engineer creative projects",
+      "coreFocusArea": "STEM & Creativity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 26,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Nature Artists",
+      "shortDescription": "Observe nature and create art inspired by environment",
+      "coreFocusArea": "Creativity & Environmental"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 27,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Social Innovators",
+      "shortDescription": "Plan community projects and activities",
+      "coreFocusArea": "Social & Civic"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 28,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Exploratory Scientists",
+      "shortDescription": "Investigate chemistry, physics, and biology experiments",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 29,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Music & Movement",
+      "shortDescription": "Combine music, dance, and rhythm activities",
+      "coreFocusArea": "Creativity & Physical"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 30,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Young Entrepreneurs",
+      "shortDescription": "Plan, design, and execute mini business or service projects",
+      "coreFocusArea": "Cognitive & Life Skills"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 1,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Young Innovators",
+      "shortDescription": "Design and prototype creative solutions to real-world problems",
+      "coreFocusArea": "STEM & Creativity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 2,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Global Citizens",
+      "shortDescription": "Explore diversity, empathy, social responsibility, and cultural awareness",
+      "coreFocusArea": "Social & Civic"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 3,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Scientific Explorers",
+      "shortDescription": "Conduct advanced experiments and scientific investigations",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 4,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Creative Storytellers",
+      "shortDescription": "Develop complex stories, scripts, or multimedia narratives",
+      "coreFocusArea": "Language & Creativity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 5,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Mindful Living",
+      "shortDescription": "Meditation, mindfulness practices, and emotional resilience",
+      "coreFocusArea": "Emotional & Life Skills"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 6,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Healthy Lifestyle",
+      "shortDescription": "Nutrition, fitness, sleep, and mental wellness education",
+      "coreFocusArea": "Wellness & Physical"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 7,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Young Entrepreneurs",
+      "shortDescription": "Plan, execute, and manage small business or social projects",
+      "coreFocusArea": "Cognitive & Life Skills"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 8,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Art & Design Lab",
+      "shortDescription": "Explore painting, sculpture, digital art, and design principles",
+      "coreFocusArea": "Creativity & Fine Motor"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 9,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Debate & Public Speaking",
+      "shortDescription": "Develop argumentation, persuasion, and presentation skills",
+      "coreFocusArea": "Language & Social"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 10,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Environmental Leaders",
+      "shortDescription": "Investigate environmental issues, sustainability projects, and conservation",
+      "coreFocusArea": "Environmental & Civic"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 11,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Coding & Robotics",
+      "shortDescription": "Programming, robotics challenges, and logical problem-solving",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 12,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Music & Performance",
+      "shortDescription": "Instrumental, vocal, and stage performance skills",
+      "coreFocusArea": "Creativity & Sensory"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 13,
+      "ageGroup": "13–18 yrs",
+      "themeName": "STEM Challenge",
+      "shortDescription": "Advanced STEM projects integrating math, science, and technology",
+      "coreFocusArea": "STEM & Problem Solving"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 14,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Civic Action",
+      "shortDescription": "Plan and implement community service initiatives",
+      "coreFocusArea": "Social & Civic"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 15,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Cultural Explorers",
+      "shortDescription": "Study global arts, music, and traditions",
+      "coreFocusArea": "Cultural & Social"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 16,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Life Skills Lab",
+      "shortDescription": "Personal finance, time management, goal setting",
+      "coreFocusArea": "Life Skills & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 17,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Young Historians",
+      "shortDescription": "Research historical events, figures, and their societal impact",
+      "coreFocusArea": "Social & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 18,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Outdoor Adventurers",
+      "shortDescription": "Hiking, camping, survival skills, and team-based outdoor activities",
+      "coreFocusArea": "Physical & Environmental"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 19,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Debate & Ethics",
+      "shortDescription": "Discuss moral dilemmas, ethics, and philosophy",
+      "coreFocusArea": "Social & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 20,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Creative Writers",
+      "shortDescription": "Poetry, short stories, and advanced narrative creation",
+      "coreFocusArea": "Language & Creativity"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 21,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Media Literacy",
+      "shortDescription": "Analyze media, digital content, and communication critically",
+      "coreFocusArea": "Cognitive & Social"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 22,
+      "ageGroup": "13–18 yrs",
+      "themeName": "STEM Innovators",
+      "shortDescription": "Explore renewable energy, coding, and engineering projects",
+      "coreFocusArea": "STEM & Problem Solving"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 23,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Social Innovators",
+      "shortDescription": "Develop ideas for social change and innovation",
+      "coreFocusArea": "Social & Civic"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 24,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Wellness & Mindset",
+      "shortDescription": "Emotional regulation, self-reflection, and mental health",
+      "coreFocusArea": "Emotional & Life Skills"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 25,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Exploratory Scientists",
+      "shortDescription": "Investigate biology, chemistry, and physics in applied projects",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 26,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Visual Storytelling",
+      "shortDescription": "Photography, videography, and multimedia projects",
+      "coreFocusArea": "Creativity & Technical"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 27,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Fitness & Sports Lab",
+      "shortDescription": "Advanced physical activities, sports, and teamwork",
+      "coreFocusArea": "Physical & Wellness"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 28,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Debate Club",
+      "shortDescription": "Structured debates to build critical thinking and reasoning",
+      "coreFocusArea": "Social & Cognitive"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 29,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Young Activists",
+      "shortDescription": "Learn advocacy, community awareness, and project management",
+      "coreFocusArea": "Social & Civic"
+    },
+    {
+      "planType": "Holistic",
+      "sno": 30,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Tech & Innovation Lab",
+      "shortDescription": "Build apps, gadgets, or prototypes solving real-world problems",
+      "coreFocusArea": "STEM & Creativity"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 1,
+      "ageGroup": "3–5 yrs",
+      "themeName": "My Healthy Body",
+      "shortDescription": "Focused exploration of hygiene, nutrition, and movement",
+      "coreFocusArea": "Wellness & Life Skills"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 2,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Animal Kingdom",
+      "shortDescription": "In-depth study of animals, habitats, and behaviors",
+      "coreFocusArea": "Environmental & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 3,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Colors & Shapes",
+      "shortDescription": "Concentrated learning on identifying and creating shapes/colors",
+      "coreFocusArea": "Cognitive & Creative"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 4,
+      "ageGroup": "3–5 yrs",
+      "themeName": "My Family & Friends",
+      "shortDescription": "Understanding relationships, empathy, and social skills",
+      "coreFocusArea": "Social & Emotional"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 5,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Little Scientists",
+      "shortDescription": "Investigate simple cause-effect, experiment routines",
+      "coreFocusArea": "Cognitive & STEM"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 6,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Music & Movement",
+      "shortDescription": "Rhythm, songs, and body coordination",
+      "coreFocusArea": "Creative & Physical"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 7,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Story World",
+      "shortDescription": "Focused storytelling, imagination, and role play",
+      "coreFocusArea": "Language & Creativity"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 8,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Tiny Gardeners",
+      "shortDescription": "Deep dive into plants, soil, and nurturing activities",
+      "coreFocusArea": "Environmental & Responsibility"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 9,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Busy Builders",
+      "shortDescription": "Constructing blocks, stacking, and motor challenges",
+      "coreFocusArea": "STEM & Motor"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 10,
+      "ageGroup": "3–5 yrs",
+      "themeName": "My Emotions",
+      "shortDescription": "Concentrated exploration of feelings, expression, and empathy",
+      "coreFocusArea": "Emotional & Social"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 11,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Little Coders",
+      "shortDescription": "Logic-based activities introducing sequencing",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 12,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Creative Chefs",
+      "shortDescription": "Hands-on food prep, measurement, and nutrition",
+      "coreFocusArea": "Life Skills & Creative"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 13,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Adventure Walks",
+      "shortDescription": "Exploring nature with focused observation tasks",
+      "coreFocusArea": "Physical & Environmental"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 14,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Tiny Artists",
+      "shortDescription": "Concentrated drawing, painting, and crafts",
+      "coreFocusArea": "Creative & Fine Motor"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 15,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Number Fun",
+      "shortDescription": "Focused counting, matching, and pattern activities",
+      "coreFocusArea": "Cognitive & STEM"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 16,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Sensory Explorers",
+      "shortDescription": "Deep dive into textures, sounds, and tactile play",
+      "coreFocusArea": "Sensory & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 17,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Dance & Rhythm",
+      "shortDescription": "Movement sequences and rhythm-focused play",
+      "coreFocusArea": "Physical & Creative"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 18,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Animal Care",
+      "shortDescription": "Learn how to care for pets and understand needs",
+      "coreFocusArea": "Environmental & Emotional"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 19,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Story Builders",
+      "shortDescription": "Focused story creation using props and imagination",
+      "coreFocusArea": "Language & Creativity"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 20,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Little Engineers",
+      "shortDescription": "Hands-on building, problem-solving challenges",
+      "coreFocusArea": "STEM & Creativity"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 21,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Healthy Habits",
+      "shortDescription": "Consistent hygiene, sleep, and exercise routines",
+      "coreFocusArea": "Life Skills & Wellness"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 22,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Tiny Detectives",
+      "shortDescription": "Observation and investigation games",
+      "coreFocusArea": "Cognitive & Curiosity"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 23,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Social Stars",
+      "shortDescription": "Concentrated teamwork and cooperation activities",
+      "coreFocusArea": "Social & Emotional"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 24,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Music Makers",
+      "shortDescription": "Focused exploration of instruments and sound creation",
+      "coreFocusArea": "Creativity & Sensory"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 25,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Mini Mathematicians",
+      "shortDescription": "Early numeracy, patterns, and logic puzzles",
+      "coreFocusArea": "Cognitive & STEM"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 26,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Imagination Station",
+      "shortDescription": "Role play and pretend play deep dive",
+      "coreFocusArea": "Creativity & Social"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 27,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Little Garden Scientists",
+      "shortDescription": "Plant growth experiments and observations",
+      "coreFocusArea": "STEM & Environmental"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 28,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Story Explorers",
+      "shortDescription": "Focused story listening, comprehension, and narration",
+      "coreFocusArea": "Language & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 29,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Tiny Movers",
+      "shortDescription": "Movement, balance, and coordination challenges",
+      "coreFocusArea": "Physical & Motor"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 30,
+      "ageGroup": "3–5 yrs",
+      "themeName": "Helping Hands",
+      "shortDescription": "Deep dive into empathy, kindness, and sharing",
+      "coreFocusArea": "Social & Emotional"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 1,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Healthy Habits",
+      "shortDescription": "Deep dive into nutrition, exercise, and personal hygiene",
+      "coreFocusArea": "Wellness & Life Skills"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 2,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Animal Kingdom",
+      "shortDescription": "Focused study of animals, habitats, and behavior",
+      "coreFocusArea": "Environmental & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 3,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Math Wizards",
+      "shortDescription": "Concentrated activities for arithmetic, patterns, and logic",
+      "coreFocusArea": "Cognitive & STEM"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 4,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Story Builders",
+      "shortDescription": "Writing, illustrating, and creating stories",
+      "coreFocusArea": "Language & Creativity"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 5,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Tiny Scientists",
+      "shortDescription": "Hands-on experiments exploring basic science",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 6,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Music & Movement",
+      "shortDescription": "Focused rhythm, singing, and dance activities",
+      "coreFocusArea": "Creative & Physical"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 7,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Young Gardeners",
+      "shortDescription": "Plants, soil, and observation experiments",
+      "coreFocusArea": "Environmental & Responsibility"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 8,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Tiny Engineers",
+      "shortDescription": "Building, problem-solving, and STEM challenges",
+      "coreFocusArea": "STEM & Creativity"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 9,
+      "ageGroup": "6–8 yrs",
+      "themeName": "My Emotions",
+      "shortDescription": "Explore, recognize, and express feelings",
+      "coreFocusArea": "Emotional & Social"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 10,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Creative Artists",
+      "shortDescription": "Drawing, painting, and craft projects",
+      "coreFocusArea": "Creativity & Fine Motor"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 11,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Adventure Walks",
+      "shortDescription": "Focused exploration, observation, and physical activity",
+      "coreFocusArea": "Physical & Environmental"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 12,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Little Coders",
+      "shortDescription": "Logic, sequencing, and early coding concepts",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 13,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Social Stars",
+      "shortDescription": "Cooperation, teamwork, and empathy challenges",
+      "coreFocusArea": "Social & Emotional"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 14,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Music Makers",
+      "shortDescription": "Explore instruments, melody, and rhythm",
+      "coreFocusArea": "Creativity & Sensory"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 15,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Mini Mathematicians",
+      "shortDescription": "Fun number games, patterns, and puzzles",
+      "coreFocusArea": "Cognitive & STEM"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 16,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Tiny Detectives",
+      "shortDescription": "Observation, exploration, and problem-solving",
+      "coreFocusArea": "Cognitive & Curiosity"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 17,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Life Skills Lab",
+      "shortDescription": "Personal hygiene, time management, and self-care",
+      "coreFocusArea": "Life Skills & Wellness"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 18,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Animal Care",
+      "shortDescription": "Learn to care for pets, farm, and wild animals",
+      "coreFocusArea": "Environmental & Emotional"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 19,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Story Explorers",
+      "shortDescription": "Focused listening, comprehension, and narrative creation",
+      "coreFocusArea": "Language & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 20,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Tiny Builders",
+      "shortDescription": "Construction, design, and STEM projects",
+      "coreFocusArea": "STEM & Creativity"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 21,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Imagination Station",
+      "shortDescription": "Role play, pretend games, and creative exploration",
+      "coreFocusArea": "Creativity & Social"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 22,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Nature Detectives",
+      "shortDescription": "Explore plants, insects, and ecosystems",
+      "coreFocusArea": "Environmental & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 23,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Mindful Moments",
+      "shortDescription": "Breathing, focus, and emotional awareness",
+      "coreFocusArea": "Emotional & Life Skills"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 24,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Outdoor Adventurers",
+      "shortDescription": "Team games, hiking, and exploration",
+      "coreFocusArea": "Physical & Social"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 25,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Tiny Artists",
+      "shortDescription": "Drawing, coloring, and craft deep dive",
+      "coreFocusArea": "Creativity & Fine Motor"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 27,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Little Scientists Lab",
+      "shortDescription": "Experiments, observation, and STEM exploration",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 28,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Helping Hands",
+      "shortDescription": "Focused empathy and community activities",
+      "coreFocusArea": "Social & Emotional"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 29,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Movement & Dance",
+      "shortDescription": "Physical coordination, dance, and balance",
+      "coreFocusArea": "Physical & Creative"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 30,
+      "ageGroup": "6–8 yrs",
+      "themeName": "Music & Rhythm",
+      "shortDescription": "Rhythm games, instruments, and creative music",
+      "coreFocusArea": "Creative & Sensory"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 1,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Young Scientists",
+      "shortDescription": "Experiments and scientific investigations",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 2,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Creative Storytellers",
+      "shortDescription": "Writing, illustrating, and presenting stories",
+      "coreFocusArea": "Language & Creativity"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 3,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Math Explorers",
+      "shortDescription": "Problem-solving, arithmetic, and logic challenges",
+      "coreFocusArea": "Cognitive & STEM"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 4,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Eco Warriors",
+      "shortDescription": "Focused sustainability and environmental action",
+      "coreFocusArea": "Environmental & Civic"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 5,
+      "ageGroup": "9–12 yrs",
+      "themeName": "History Detectives",
+      "shortDescription": "Study historical events, figures, and local culture",
+      "coreFocusArea": "Social & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 6,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Code & Logic",
+      "shortDescription": "Coding, sequencing, and logic-based activities",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 7,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Art Innovators",
+      "shortDescription": "Drawing, painting, sculpture, and mixed media",
+      "coreFocusArea": "Creativity & Fine Motor"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 8,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Mindful Moments",
+      "shortDescription": "Meditation, focus, and emotional awareness",
+      "coreFocusArea": "Emotional & Life Skills"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 9,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Adventure Seekers",
+      "shortDescription": "Outdoor games, exploration, and confidence building",
+      "coreFocusArea": "Physical & Social"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 10,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Global Citizens",
+      "shortDescription": "Empathy, diversity, and cultural awareness",
+      "coreFocusArea": "Social & Civic"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 11,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Young Engineers",
+      "shortDescription": "Model building, machines, and robotics basics",
+      "coreFocusArea": "STEM & Creativity"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 12,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Nature Explorers",
+      "shortDescription": "Ecosystem study, plants, animals, and conservation",
+      "coreFocusArea": "Environmental & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 13,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Music Makers",
+      "shortDescription": "Instruments, rhythm, and composition",
+      "coreFocusArea": "Creativity & Sensory"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 14,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Puzzle Masters",
+      "shortDescription": "Logic, problem-solving, and cognitive challenges",
+      "coreFocusArea": "Cognitive & STEM"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 15,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Science Storytellers",
+      "shortDescription": "Combine experiments with storytelling",
+      "coreFocusArea": "STEM & Language"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 16,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Young Authors",
+      "shortDescription": "Journaling, creative writing, and short stories",
+      "coreFocusArea": "Language & Creativity"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 17,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Healthy Habits",
+      "shortDescription": "Nutrition, exercise, and personal wellness",
+      "coreFocusArea": "Life Skills & Physical"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 18,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Inventors’ Lab",
+      "shortDescription": "Prototype and test creative ideas",
+      "coreFocusArea": "Creativity & STEM"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 19,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Debate & Discussion",
+      "shortDescription": "Public speaking, reasoning, and critical thinking",
+      "coreFocusArea": "Social & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 20,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Tech Explorers",
+      "shortDescription": "Technology, apps, and digital creation",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 21,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Outdoor Adventurers",
+      "shortDescription": "Hiking, scavenger hunts, and teamwork",
+      "coreFocusArea": "Physical & Environmental"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 22,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Cultural Explorers",
+      "shortDescription": "Arts, music, and global traditions",
+      "coreFocusArea": "Cultural & Social"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 23,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Mind & Body",
+      "shortDescription": "Yoga, mindfulness, and movement",
+      "coreFocusArea": "Physical & Emotional"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 24,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Little Historians",
+      "shortDescription": "Research and present historical topics",
+      "coreFocusArea": "Social & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 25,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Creative Builders",
+      "shortDescription": "Build and design creative projects",
+      "coreFocusArea": "STEM & Creativity"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 26,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Nature Artists",
+      "shortDescription": "Create art inspired by nature",
+      "coreFocusArea": "Creativity & Environmental"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 27,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Social Innovators",
+      "shortDescription": "Plan and implement community activities",
+      "coreFocusArea": "Social & Civic"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 28,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Exploratory Scientists",
+      "shortDescription": "Hands-on physics, chemistry, and biology",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 29,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Music & Movement",
+      "shortDescription": "Combine music, dance, and rhythm activities",
+      "coreFocusArea": "Creativity & Physical"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 30,
+      "ageGroup": "9–12 yrs",
+      "themeName": "Young Entrepreneurs",
+      "shortDescription": "Mini business or service project planning",
+      "coreFocusArea": "Cognitive & Life Skills"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 1,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Young Innovators",
+      "shortDescription": "Deep dive into designing and prototyping solutions",
+      "coreFocusArea": "STEM & Creativity"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 2,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Global Citizens",
+      "shortDescription": "Explore empathy, social responsibility, and cultural awareness",
+      "coreFocusArea": "Social & Civic"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 3,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Scientific Explorers",
+      "shortDescription": "Advanced experiments and research projects",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 4,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Creative Storytellers",
+      "shortDescription": "Complex storytelling, scripts, or multimedia narratives",
+      "coreFocusArea": "Language & Creativity"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 5,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Mindful Living",
+      "shortDescription": "Meditation, emotional resilience, and focus",
+      "coreFocusArea": "Emotional & Life Skills"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 6,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Healthy Lifestyle",
+      "shortDescription": "Nutrition, fitness, and mental wellness",
+      "coreFocusArea": "Wellness & Physical"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 7,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Young Entrepreneurs",
+      "shortDescription": "Plan and execute small business or social projects",
+      "coreFocusArea": "Cognitive & Life Skills"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 8,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Art & Design Lab",
+      "shortDescription": "Advanced art, digital design, and sculpture",
+      "coreFocusArea": "Creativity & Fine Motor"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 9,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Debate & Public Speaking",
+      "shortDescription": "Argumentation, reasoning, and presentation skills",
+      "coreFocusArea": "Social & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 10,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Environmental Leaders",
+      "shortDescription": "Sustainability projects, conservation, and advocacy",
+      "coreFocusArea": "Environmental & Civic"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 11,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Coding & Robotics",
+      "shortDescription": "Programming, robotics, and logic challenges",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 12,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Music & Performance",
+      "shortDescription": "Instrumental, vocal, and stage performance",
+      "coreFocusArea": "Creativity & Sensory"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 13,
+      "ageGroup": "13–18 yrs",
+      "themeName": "STEM Challenge",
+      "shortDescription": "Integrated STEM projects with real-world focus",
+      "coreFocusArea": "STEM & Problem Solving"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 14,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Civic Action",
+      "shortDescription": "Plan and implement community service initiatives",
+      "coreFocusArea": "Social & Civic"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 15,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Cultural Explorers",
+      "shortDescription": "Arts, music, and traditions worldwide",
+      "coreFocusArea": "Cultural & Social"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 16,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Life Skills Lab",
+      "shortDescription": "Personal finance, time management, goal setting",
+      "coreFocusArea": "Life Skills & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 17,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Young Historians",
+      "shortDescription": "Research historical events and societal impact",
+      "coreFocusArea": "Social & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 18,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Outdoor Adventurers",
+      "shortDescription": "Hiking, camping, survival skills",
+      "coreFocusArea": "Physical & Environmental"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 19,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Debate & Ethics",
+      "shortDescription": "Discuss moral dilemmas and philosophy",
+      "coreFocusArea": "Social & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 20,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Creative Writers",
+      "shortDescription": "Poetry, short stories, and narrative creation",
+      "coreFocusArea": "Language & Creativity"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 21,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Media Literacy",
+      "shortDescription": "Analyze media and digital content critically",
+      "coreFocusArea": "Cognitive & Social"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 22,
+      "ageGroup": "13–18 yrs",
+      "themeName": "STEM Innovators",
+      "shortDescription": "Renewable energy, coding, and engineering projects",
+      "coreFocusArea": "STEM & Problem Solving"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 23,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Social Innovators",
+      "shortDescription": "Develop projects for social change",
+      "coreFocusArea": "Social & Civic"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 24,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Wellness & Mindset",
+      "shortDescription": "Emotional regulation, self-reflection, mental health",
+      "coreFocusArea": "Emotional & Life Skills"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 25,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Exploratory Scientists",
+      "shortDescription": "Applied biology, chemistry, and physics",
+      "coreFocusArea": "STEM & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 26,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Visual Storytelling",
+      "shortDescription": "Photography, videography, and multimedia projects",
+      "coreFocusArea": "Creativity & Technical"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 27,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Fitness & Sports Lab",
+      "shortDescription": "Physical activity, sports, and teamwork",
+      "coreFocusArea": "Physical & Wellness"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 28,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Debate Club",
+      "shortDescription": "Structured debates to develop critical thinking",
+      "coreFocusArea": "Social & Cognitive"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 29,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Young Activists",
+      "shortDescription": "Advocacy, awareness, and project management",
+      "coreFocusArea": "Social & Civic"
+    },
+    {
+      "planType": "Hybrid",
+      "sno": 30,
+      "ageGroup": "13–18 yrs",
+      "themeName": "Tech & Innovation Lab",
+      "shortDescription": "Build apps, gadgets, or prototypes for real-world problems",
+      "coreFocusArea": "STEM & Creativity"
+    }
+  ],
+  "statistics": {
+    "totalHolistic": 120,
+    "totalHybrid": 119,
+    "byAgeGroup": {
+      "3–5 yrs": {
+        "holistic": 30,
+        "hybrid": 30
+      },
+      "6–8 yrs": {
+        "holistic": 30,
+        "hybrid": 29
+      },
+      "9–12 yrs": {
+        "holistic": 30,
+        "hybrid": 30
+      },
+      "13–18 yrs": {
+        "holistic": 30,
+        "hybrid": 30
+      }
+    }
+  }
+}

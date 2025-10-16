@@ -19,7 +19,8 @@ const config = {
   IS_PRODUCTION: IS_PRODUCTION,
   
   // API Configuration
-  API_BASE_URL: 'https://api.your-domain.com',
+  API_BASE_URL: process.env.REACT_APP_API_BASE_URL || 
+    (IS_LOCAL ? 'http://localhost:8000' : 'https://llm-agents-44gsrw22gq-uc.a.run.app'),
   WAREHOUSE_API_URL: process.env.REACT_APP_WAREHOUSE_API_URL || "https://warehouse-api-44gsrw22gq-uc.a.run.app",
   USE_LOCAL_BACKEND: process.env.REACT_APP_USE_LOCAL_BACKEND === "true",
   API_TIMEOUT: parseInt(process.env.REACT_APP_API_TIMEOUT) || 90000,

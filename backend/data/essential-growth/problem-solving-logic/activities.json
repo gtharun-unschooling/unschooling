@@ -1,3 +1,3257 @@
 {
-  "ageGroups": []
+  "ageGroups": [
+    {
+      "ageGroup": "All Ages",
+      "categories": [
+        {
+          "category": "Problem Solving & Logic",
+          "description": "Activities for Problem Solving & Logic",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "Peek & Grab",
+              "objective": "Engage in Peek & Grab activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Peek & Grab within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Peek & Grab",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Reaching for Hidden Objects"
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "Surprise Object Reach",
+              "objective": "Engage in Surprise Object Reach activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Surprise Object Reach within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Surprise Object Reach",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Reaching for Hidden Objects"
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "Soft Toy Hide & Seek",
+              "objective": "Engage in Soft Toy Hide & Seek activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Soft Toy Hide & Seek within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Toy Hide & Seek",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Reaching for Hidden Objects"
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "Cushion Object Retrieval",
+              "objective": "Engage in Cushion Object Retrieval activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Cushion Object Retrieval within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Cushion Object Retrieval",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Reaching for Hidden Objects"
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "Blanket Lift Surprise",
+              "objective": "Engage in Blanket Lift Surprise activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Blanket Lift Surprise within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Blanket Lift Surprise",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Reaching for Hidden Objects"
+              }
+            },
+            {
+              "topicNumber": 6,
+              "topic": "Rattle Reaction Play",
+              "objective": "Engage in Rattle Reaction Play activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Rattle Reaction Play within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Rattle Reaction Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Cause-and-Effect Toys"
+              }
+            },
+            {
+              "topicNumber": 7,
+              "topic": "Push & Pop Toy Game",
+              "objective": "Engage in Push & Pop Toy Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Push & Pop Toy Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Push & Pop Toy Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Cause-and-Effect Toys"
+              }
+            },
+            {
+              "topicNumber": 8,
+              "topic": "Sound Button Exploration",
+              "objective": "Engage in Sound Button Exploration activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Sound Button Exploration within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Sound Button Exploration",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Cause-and-Effect Toys"
+              }
+            },
+            {
+              "topicNumber": 9,
+              "topic": "Drop & Roll Activity",
+              "objective": "Engage in Drop & Roll Activity activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Drop & Roll Activity within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Drop & Roll Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Cause-and-Effect Toys"
+              }
+            },
+            {
+              "topicNumber": 10,
+              "topic": "Light-Up Toy Response",
+              "objective": "Engage in Light-Up Toy Response activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Light-Up Toy Response within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Light-Up Toy Response",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Cause-and-Effect Toys"
+              }
+            },
+            {
+              "topicNumber": 11,
+              "topic": "Roll & Track Game",
+              "objective": "Engage in Roll & Track Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Roll & Track Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Roll & Track Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Puzzle Ball Rolling"
+              }
+            },
+            {
+              "topicNumber": 12,
+              "topic": "Soft Ball Roll Fun",
+              "objective": "Engage in Soft Ball Roll Fun activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Soft Ball Roll Fun within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Ball Roll Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Puzzle Ball Rolling"
+              }
+            },
+            {
+              "topicNumber": 13,
+              "topic": "Color Ball Puzzle Roll",
+              "objective": "Engage in Color Ball Puzzle Roll activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Color Ball Puzzle Roll within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Color Ball Puzzle Roll",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Puzzle Ball Rolling"
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "Mini Ball Rolling Path",
+              "objective": "Engage in Mini Ball Rolling Path activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Mini Ball Rolling Path within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Mini Ball Rolling Path",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Puzzle Ball Rolling"
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "Tummy Roll Ball Play",
+              "objective": "Engage in Tummy Roll Ball Play activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Tummy Roll Ball Play within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Tummy Roll Ball Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Puzzle Ball Rolling"
+              }
+            },
+            {
+              "topicNumber": 16,
+              "topic": "Cushion Crawl Challenge",
+              "objective": "Engage in Cushion Crawl Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Cushion Crawl Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Cushion Crawl Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Toy Obstacle Exploration"
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "Soft Tunnel Toy Path",
+              "objective": "Engage in Soft Tunnel Toy Path activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Soft Tunnel Toy Path within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Tunnel Toy Path",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Toy Obstacle Exploration"
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "Mini Obstacle Crawl",
+              "objective": "Engage in Mini Obstacle Crawl activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Mini Obstacle Crawl within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Mini Obstacle Crawl",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Toy Obstacle Exploration"
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "Block Path Adventure",
+              "objective": "Engage in Block Path Adventure activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Block Path Adventure within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Block Path Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Toy Obstacle Exploration"
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "Toy Maze Crawl",
+              "objective": "Engage in Toy Maze Crawl activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Toy Maze Crawl within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Toy Maze Crawl",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Toy Obstacle Exploration"
+              }
+            },
+            {
+              "topicNumber": 21,
+              "topic": "Tower Up Challenge",
+              "objective": "Engage in Tower Up Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Tower Up Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Tower Up Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Stacking Cups & Rings"
+              }
+            },
+            {
+              "topicNumber": 22,
+              "topic": "Ring Stack Race",
+              "objective": "Engage in Ring Stack Race activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Ring Stack Race within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Ring Stack Race",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Stacking Cups & Rings"
+              }
+            },
+            {
+              "topicNumber": 23,
+              "topic": "Colorful Cup Tower",
+              "objective": "Engage in Colorful Cup Tower activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Colorful Cup Tower within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Colorful Cup Tower",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Stacking Cups & Rings"
+              }
+            },
+            {
+              "topicNumber": 24,
+              "topic": "Build & Knock Game",
+              "objective": "Engage in Build & Knock Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Build & Knock Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Build & Knock Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Stacking Cups & Rings"
+              }
+            },
+            {
+              "topicNumber": 25,
+              "topic": "Shape Stack Play",
+              "objective": "Engage in Shape Stack Play activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Shape Stack Play within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Shape Stack Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Stacking Cups & Rings"
+              }
+            },
+            {
+              "topicNumber": 26,
+              "topic": "Puzzle Piece Match",
+              "objective": "Engage in Puzzle Piece Match activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Puzzle Piece Match within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Puzzle Piece Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Simple Puzzles"
+              }
+            },
+            {
+              "topicNumber": 27,
+              "topic": "Shape Sorting Fun",
+              "objective": "Engage in Shape Sorting Fun activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Shape Sorting Fun within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Shape Sorting Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Simple Puzzles"
+              }
+            },
+            {
+              "topicNumber": 28,
+              "topic": "Animal Puzzle Adventure",
+              "objective": "Engage in Animal Puzzle Adventure activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Animal Puzzle Adventure within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Animal Puzzle Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Simple Puzzles"
+              }
+            },
+            {
+              "topicNumber": 29,
+              "topic": "Color Puzzle Play",
+              "objective": "Engage in Color Puzzle Play activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Color Puzzle Play within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Color Puzzle Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Simple Puzzles"
+              }
+            },
+            {
+              "topicNumber": 30,
+              "topic": "Wooden Puzzle Challenge",
+              "objective": "Engage in Wooden Puzzle Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Wooden Puzzle Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Wooden Puzzle Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Simple Puzzles"
+              }
+            },
+            {
+              "topicNumber": 31,
+              "topic": "Match the Toy",
+              "objective": "Engage in Match the Toy activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Match the Toy within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Match the Toy",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Object Matching Challenges"
+              }
+            },
+            {
+              "topicNumber": 32,
+              "topic": "Picture Match Game",
+              "objective": "Engage in Picture Match Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Picture Match Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Picture Match Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Object Matching Challenges"
+              }
+            },
+            {
+              "topicNumber": 33,
+              "topic": "Color Match Challenge",
+              "objective": "Engage in Color Match Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Color Match Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Color Match Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Object Matching Challenges"
+              }
+            },
+            {
+              "topicNumber": 34,
+              "topic": "Shape Pairing Game",
+              "objective": "Engage in Shape Pairing Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Shape Pairing Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Shape Pairing Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Object Matching Challenges"
+              }
+            },
+            {
+              "topicNumber": 35,
+              "topic": "Everyday Object Match",
+              "objective": "Engage in Everyday Object Match activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Everyday Object Match within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Everyday Object Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Object Matching Challenges"
+              }
+            },
+            {
+              "topicNumber": 36,
+              "topic": "Peg Board Fun",
+              "objective": "Engage in Peg Board Fun activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Peg Board Fun within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Peg Board Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Trial-and-Error Activities"
+              }
+            },
+            {
+              "topicNumber": 37,
+              "topic": "Push & Pull Challenge",
+              "objective": "Engage in Push & Pull Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Push & Pull Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Push & Pull Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Trial-and-Error Activities"
+              }
+            },
+            {
+              "topicNumber": 38,
+              "topic": "Hidden Object Discovery",
+              "objective": "Engage in Hidden Object Discovery activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Hidden Object Discovery within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Hidden Object Discovery",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Trial-and-Error Activities"
+              }
+            },
+            {
+              "topicNumber": 39,
+              "topic": "Stack & Try Game",
+              "objective": "Engage in Stack & Try Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Stack & Try Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Stack & Try Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Trial-and-Error Activities"
+              }
+            },
+            {
+              "topicNumber": 40,
+              "topic": "Shape Fit Experiment",
+              "objective": "Engage in Shape Fit Experiment activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Shape Fit Experiment within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Shape Fit Experiment",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Trial-and-Error Activities"
+              }
+            },
+            {
+              "topicNumber": 41,
+              "topic": "Story Riddle Challenge",
+              "objective": "Engage in Story Riddle Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Story Riddle Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Story Riddle Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Riddle & Answer Games"
+              }
+            },
+            {
+              "topicNumber": 42,
+              "topic": "Picture Riddle Fun",
+              "objective": "Engage in Picture Riddle Fun activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Picture Riddle Fun within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Picture Riddle Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Riddle & Answer Games"
+              }
+            },
+            {
+              "topicNumber": 43,
+              "topic": "Sound Clue Riddle",
+              "objective": "Engage in Sound Clue Riddle activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Sound Clue Riddle within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Sound Clue Riddle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Riddle & Answer Games"
+              }
+            },
+            {
+              "topicNumber": 44,
+              "topic": "Character Guess Game",
+              "objective": "Engage in Character Guess Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Character Guess Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Character Guess Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Riddle & Answer Games"
+              }
+            },
+            {
+              "topicNumber": 45,
+              "topic": "Mini Brain Teasers",
+              "objective": "Engage in Mini Brain Teasers activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Mini Brain Teasers within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Mini Brain Teasers",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Riddle & Answer Games"
+              }
+            },
+            {
+              "topicNumber": 46,
+              "topic": "Treasure Maze Story",
+              "objective": "Engage in Treasure Maze Story activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Treasure Maze Story within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Treasure Maze Story",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Mazes with Stories"
+              }
+            },
+            {
+              "topicNumber": 47,
+              "topic": "Animal Maze Adventure",
+              "objective": "Engage in Animal Maze Adventure activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Animal Maze Adventure within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Animal Maze Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Mazes with Stories"
+              }
+            },
+            {
+              "topicNumber": 48,
+              "topic": "Color Path Maze",
+              "objective": "Engage in Color Path Maze activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Color Path Maze within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Color Path Maze",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Mazes with Stories"
+              }
+            },
+            {
+              "topicNumber": 49,
+              "topic": "Story Map Challenge",
+              "objective": "Engage in Story Map Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Story Map Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Story Map Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Mazes with Stories"
+              }
+            },
+            {
+              "topicNumber": 50,
+              "topic": "Shape Maze Game",
+              "objective": "Engage in Shape Maze Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Shape Maze Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Shape Maze Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Mazes with Stories"
+              }
+            },
+            {
+              "topicNumber": 51,
+              "topic": "Broken Toy Fix Game",
+              "objective": "Engage in Broken Toy Fix Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Broken Toy Fix Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Broken Toy Fix Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "“Fix the Problem” Roleplay"
+              }
+            },
+            {
+              "topicNumber": 52,
+              "topic": "Puppet Problem Solver",
+              "objective": "Engage in Puppet Problem Solver activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Puppet Problem Solver within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Puppet Problem Solver",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "“Fix the Problem” Roleplay"
+              }
+            },
+            {
+              "topicNumber": 53,
+              "topic": "Story Problem Challenge",
+              "objective": "Engage in Story Problem Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Story Problem Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Story Problem Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "“Fix the Problem” Roleplay"
+              }
+            },
+            {
+              "topicNumber": 54,
+              "topic": "Mini Repair Shop",
+              "objective": "Engage in Mini Repair Shop activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Mini Repair Shop within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Mini Repair Shop",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "“Fix the Problem” Roleplay"
+              }
+            },
+            {
+              "topicNumber": 55,
+              "topic": "Creative Fix Adventure",
+              "objective": "Engage in Creative Fix Adventure activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Creative Fix Adventure within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Creative Fix Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "“Fix the Problem” Roleplay"
+              }
+            },
+            {
+              "topicNumber": 56,
+              "topic": "Shape Sorting Race",
+              "objective": "Engage in Shape Sorting Race activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Shape Sorting Race within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Shape Sorting Race",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Logic Sorting Activities"
+              }
+            },
+            {
+              "topicNumber": 57,
+              "topic": "Color Pattern Sort",
+              "objective": "Engage in Color Pattern Sort activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Color Pattern Sort within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Color Pattern Sort",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Logic Sorting Activities"
+              }
+            },
+            {
+              "topicNumber": 58,
+              "topic": "Toy Category Game",
+              "objective": "Engage in Toy Category Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Toy Category Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Toy Category Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Logic Sorting Activities"
+              }
+            },
+            {
+              "topicNumber": 59,
+              "topic": "Animal Sorting Fun",
+              "objective": "Engage in Animal Sorting Fun activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Animal Sorting Fun within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Animal Sorting Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Logic Sorting Activities"
+              }
+            },
+            {
+              "topicNumber": 60,
+              "topic": "Daily Object Sort",
+              "objective": "Engage in Daily Object Sort activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Daily Object Sort within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Daily Object Sort",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Logic Sorting Activities"
+              }
+            },
+            {
+              "topicNumber": 61,
+              "topic": "Race to Complete Puzzle",
+              "objective": "Engage in Race to Complete Puzzle activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Race to Complete Puzzle within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Race to Complete Puzzle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Puzzle Time Competitions"
+              }
+            },
+            {
+              "topicNumber": 62,
+              "topic": "Brain Team Quest",
+              "objective": "Engage in Brain Team Quest activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Brain Team Quest within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Brain Team Quest",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Puzzle Time Competitions"
+              }
+            },
+            {
+              "topicNumber": 63,
+              "topic": "Speed Puzzle Race",
+              "objective": "Engage in Speed Puzzle Race activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Speed Puzzle Race within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Speed Puzzle Race",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Puzzle Time Competitions"
+              }
+            },
+            {
+              "topicNumber": 64,
+              "topic": "Shape Puzzle Competition",
+              "objective": "Engage in Shape Puzzle Competition activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Shape Puzzle Competition within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Shape Puzzle Competition",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Puzzle Time Competitions"
+              }
+            },
+            {
+              "topicNumber": 65,
+              "topic": "Story Puzzle Quest",
+              "objective": "Engage in Story Puzzle Quest activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Story Puzzle Quest within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Story Puzzle Quest",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Puzzle Time Competitions"
+              }
+            },
+            {
+              "topicNumber": 66,
+              "topic": "Adventure Board Quest",
+              "objective": "Engage in Adventure Board Quest activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Adventure Board Quest within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Adventure Board Quest",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Multi-Step Board Games"
+              }
+            },
+            {
+              "topicNumber": 67,
+              "topic": "Step Challenge Board",
+              "objective": "Engage in Step Challenge Board activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Step Challenge Board within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Step Challenge Board",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Multi-Step Board Games"
+              }
+            },
+            {
+              "topicNumber": 68,
+              "topic": "Treasure Hunt Board",
+              "objective": "Engage in Treasure Hunt Board activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Treasure Hunt Board within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Treasure Hunt Board",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Multi-Step Board Games"
+              }
+            },
+            {
+              "topicNumber": 69,
+              "topic": "Journey Game Challenge",
+              "objective": "Engage in Journey Game Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Journey Game Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Journey Game Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Multi-Step Board Games"
+              }
+            },
+            {
+              "topicNumber": 70,
+              "topic": "Strategy Board Play",
+              "objective": "Engage in Strategy Board Play activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Strategy Board Play within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Strategy Board Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Multi-Step Board Games"
+              }
+            },
+            {
+              "topicNumber": 71,
+              "topic": "Stepwise Logic Challenge",
+              "objective": "Engage in Stepwise Logic Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Stepwise Logic Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Stepwise Logic Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Logic Ladder Tasks"
+              }
+            },
+            {
+              "topicNumber": 72,
+              "topic": "Ladder Puzzle Fun",
+              "objective": "Engage in Ladder Puzzle Fun activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Ladder Puzzle Fun within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Ladder Puzzle Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Logic Ladder Tasks"
+              }
+            },
+            {
+              "topicNumber": 73,
+              "topic": "Pattern Ladder Game",
+              "objective": "Engage in Pattern Ladder Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Pattern Ladder Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Pattern Ladder Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Logic Ladder Tasks"
+              }
+            },
+            {
+              "topicNumber": 74,
+              "topic": "Sequence Climb Challenge",
+              "objective": "Engage in Sequence Climb Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Sequence Climb Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Sequence Climb Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Logic Ladder Tasks"
+              }
+            },
+            {
+              "topicNumber": 75,
+              "topic": "Number Ladder Race",
+              "objective": "Engage in Number Ladder Race activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Number Ladder Race within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Number Ladder Race",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Logic Ladder Tasks"
+              }
+            },
+            {
+              "topicNumber": 76,
+              "topic": "What Happens Next Game",
+              "objective": "Engage in What Happens Next Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on What Happens Next Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "What Happens Next Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Scenario-Based Solutions"
+              }
+            },
+            {
+              "topicNumber": 77,
+              "topic": "Story Problem Solver",
+              "objective": "Engage in Story Problem Solver activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Story Problem Solver within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Story Problem Solver",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Scenario-Based Solutions"
+              }
+            },
+            {
+              "topicNumber": 78,
+              "topic": "Rescue Mission Challenge",
+              "objective": "Engage in Rescue Mission Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Rescue Mission Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Rescue Mission Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Scenario-Based Solutions"
+              }
+            },
+            {
+              "topicNumber": 79,
+              "topic": "Imagination Scenario Game",
+              "objective": "Engage in Imagination Scenario Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Imagination Scenario Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Imagination Scenario Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Scenario-Based Solutions"
+              }
+            },
+            {
+              "topicNumber": 80,
+              "topic": "Story Adventure Puzzle",
+              "objective": "Engage in Story Adventure Puzzle activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Story Adventure Puzzle within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Story Adventure Puzzle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Scenario-Based Solutions"
+              }
+            },
+            {
+              "topicNumber": 81,
+              "topic": "Riddle Challenge Pack",
+              "objective": "Engage in Riddle Challenge Pack activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Riddle Challenge Pack within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Riddle Challenge Pack",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Brain Teaser Packs"
+              }
+            },
+            {
+              "topicNumber": 82,
+              "topic": "Puzzle Challenge Kit",
+              "objective": "Engage in Puzzle Challenge Kit activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Puzzle Challenge Kit within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Puzzle Challenge Kit",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Brain Teaser Packs"
+              }
+            },
+            {
+              "topicNumber": 83,
+              "topic": "Logic Brain Pack",
+              "objective": "Engage in Logic Brain Pack activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Logic Brain Pack within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Logic Brain Pack",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Brain Teaser Packs"
+              }
+            },
+            {
+              "topicNumber": 84,
+              "topic": "Mind Teaser Kit",
+              "objective": "Engage in Mind Teaser Kit activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Mind Teaser Kit within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mind Teaser Kit",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Brain Teaser Packs"
+              }
+            },
+            {
+              "topicNumber": 85,
+              "topic": "Fun Brain Pack",
+              "objective": "Engage in Fun Brain Pack activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Fun Brain Pack within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Fun Brain Pack",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Brain Teaser Packs"
+              }
+            },
+            {
+              "topicNumber": 86,
+              "topic": "Secret Challenge Box",
+              "objective": "Engage in Secret Challenge Box activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Secret Challenge Box within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Secret Challenge Box",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Mystery Challenge Boxes"
+              }
+            },
+            {
+              "topicNumber": 87,
+              "topic": "Hidden Puzzle Box",
+              "objective": "Engage in Hidden Puzzle Box activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Hidden Puzzle Box within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Hidden Puzzle Box",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Mystery Challenge Boxes"
+              }
+            },
+            {
+              "topicNumber": 88,
+              "topic": "Logic Mystery Box",
+              "objective": "Engage in Logic Mystery Box activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Logic Mystery Box within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Logic Mystery Box",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Mystery Challenge Boxes"
+              }
+            },
+            {
+              "topicNumber": 89,
+              "topic": "Creative Challenge Pack",
+              "objective": "Engage in Creative Challenge Pack activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Creative Challenge Pack within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Creative Challenge Pack",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Mystery Challenge Boxes"
+              }
+            },
+            {
+              "topicNumber": 90,
+              "topic": "Team Mystery Box",
+              "objective": "Engage in Team Mystery Box activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Team Mystery Box within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Team Mystery Box",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Mystery Challenge Boxes"
+              }
+            },
+            {
+              "topicNumber": 91,
+              "topic": "Domino Chain Challenge",
+              "objective": "Engage in Domino Chain Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Domino Chain Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Domino Chain Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Building Chain Reactions"
+              }
+            },
+            {
+              "topicNumber": 92,
+              "topic": "Marble Run Project",
+              "objective": "Engage in Marble Run Project activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Marble Run Project within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Marble Run Project",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Building Chain Reactions"
+              }
+            },
+            {
+              "topicNumber": 93,
+              "topic": "Chain Reaction Lab",
+              "objective": "Engage in Chain Reaction Lab activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Chain Reaction Lab within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Chain Reaction Lab",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Building Chain Reactions"
+              }
+            },
+            {
+              "topicNumber": 94,
+              "topic": "Mini Physics Chain",
+              "objective": "Engage in Mini Physics Chain activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Mini Physics Chain within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mini Physics Chain",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Building Chain Reactions"
+              }
+            },
+            {
+              "topicNumber": 95,
+              "topic": "Domino Puzzle Fun",
+              "objective": "Engage in Domino Puzzle Fun activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Domino Puzzle Fun within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Domino Puzzle Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Building Chain Reactions"
+              }
+            },
+            {
+              "topicNumber": 96,
+              "topic": "Countdown Challenge",
+              "objective": "Engage in Countdown Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Countdown Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Countdown Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Time-Bound Problem Solving"
+              }
+            },
+            {
+              "topicNumber": 97,
+              "topic": "Quick Logic Race",
+              "objective": "Engage in Quick Logic Race activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Quick Logic Race within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Quick Logic Race",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Time-Bound Problem Solving"
+              }
+            },
+            {
+              "topicNumber": 98,
+              "topic": "Beat the Clock Challenge",
+              "objective": "Engage in Beat the Clock Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Beat the Clock Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Beat the Clock Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Time-Bound Problem Solving"
+              }
+            },
+            {
+              "topicNumber": 99,
+              "topic": "Fast Puzzle Quest",
+              "objective": "Engage in Fast Puzzle Quest activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Fast Puzzle Quest within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Fast Puzzle Quest",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Time-Bound Problem Solving"
+              }
+            },
+            {
+              "topicNumber": 100,
+              "topic": "Speed Problem Solving",
+              "objective": "Engage in Speed Problem Solving activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Speed Problem Solving within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Speed Problem Solving",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Time-Bound Problem Solving"
+              }
+            },
+            {
+              "topicNumber": 101,
+              "topic": "Mini Escape Challenge",
+              "objective": "Engage in Mini Escape Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Mini Escape Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Mini Escape Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Escape Room Simulations"
+              }
+            },
+            {
+              "topicNumber": 102,
+              "topic": "Puzzle Escape Quest",
+              "objective": "Engage in Puzzle Escape Quest activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Puzzle Escape Quest within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Puzzle Escape Quest",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Escape Room Simulations"
+              }
+            },
+            {
+              "topicNumber": 103,
+              "topic": "Locked Room Logic",
+              "objective": "Engage in Locked Room Logic activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Locked Room Logic within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Locked Room Logic",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Escape Room Simulations"
+              }
+            },
+            {
+              "topicNumber": 104,
+              "topic": "Team Escape Challenge",
+              "objective": "Engage in Team Escape Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Team Escape Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Team Escape Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Escape Room Simulations"
+              }
+            },
+            {
+              "topicNumber": 105,
+              "topic": "Mystery Escape Game",
+              "objective": "Engage in Mystery Escape Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Mystery Escape Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Mystery Escape Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Escape Room Simulations"
+              }
+            },
+            {
+              "topicNumber": 106,
+              "topic": "Plan & Execute Game",
+              "objective": "Engage in Plan & Execute Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Plan & Execute Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Plan & Execute Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Strategic Planning Exercises"
+              }
+            },
+            {
+              "topicNumber": 107,
+              "topic": "Strategy Challenge Quest",
+              "objective": "Engage in Strategy Challenge Quest activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Strategy Challenge Quest within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Strategy Challenge Quest",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Strategic Planning Exercises"
+              }
+            },
+            {
+              "topicNumber": 108,
+              "topic": "Team Strategy Lab",
+              "objective": "Engage in Team Strategy Lab activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Team Strategy Lab within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Team Strategy Lab",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Strategic Planning Exercises"
+              }
+            },
+            {
+              "topicNumber": 109,
+              "topic": "Mission Planning Game",
+              "objective": "Engage in Mission Planning Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Mission Planning Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Mission Planning Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Strategic Planning Exercises"
+              }
+            },
+            {
+              "topicNumber": 110,
+              "topic": "Critical Thinking Exercise",
+              "objective": "Engage in Critical Thinking Exercise activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Critical Thinking Exercise within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Critical Thinking Exercise",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Strategic Planning Exercises"
+              }
+            },
+            {
+              "topicNumber": 111,
+              "topic": "Deconstruct & Build Game",
+              "objective": "Engage in Deconstruct & Build Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Deconstruct & Build Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Deconstruct & Build Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Reverse Engineering Tasks"
+              }
+            },
+            {
+              "topicNumber": 112,
+              "topic": "Take-Apart Challenge",
+              "objective": "Engage in Take-Apart Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Take-Apart Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Take-Apart Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Reverse Engineering Tasks"
+              }
+            },
+            {
+              "topicNumber": 113,
+              "topic": "Product Deconstruction Lab",
+              "objective": "Engage in Product Deconstruction Lab activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Product Deconstruction Lab within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Product Deconstruction Lab",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Reverse Engineering Tasks"
+              }
+            },
+            {
+              "topicNumber": 114,
+              "topic": "Rebuild & Innovate Game",
+              "objective": "Engage in Rebuild & Innovate Game activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Rebuild & Innovate Game within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Rebuild & Innovate Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Reverse Engineering Tasks"
+              }
+            },
+            {
+              "topicNumber": 115,
+              "topic": "System Analysis Challenge",
+              "objective": "Engage in System Analysis Challenge activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on System Analysis Challenge within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "System Analysis Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Reverse Engineering Tasks"
+              }
+            },
+            {
+              "topicNumber": 116,
+              "topic": "Design Your Solution",
+              "objective": "Engage in Design Your Solution activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Design Your Solution within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Design Your Solution",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Real-Life Problem Design"
+              }
+            },
+            {
+              "topicNumber": 117,
+              "topic": "Community Problem Solver",
+              "objective": "Engage in Community Problem Solver activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Community Problem Solver within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Community Problem Solver",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Real-Life Problem Design"
+              }
+            },
+            {
+              "topicNumber": 118,
+              "topic": "Project Innovation Lab",
+              "objective": "Engage in Project Innovation Lab activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Project Innovation Lab within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Project Innovation Lab",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Real-Life Problem Design"
+              }
+            },
+            {
+              "topicNumber": 119,
+              "topic": "Life Challenge Simulation",
+              "objective": "Engage in Life Challenge Simulation activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Life Challenge Simulation within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Life Challenge Simulation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Real-Life Problem Design"
+              }
+            },
+            {
+              "topicNumber": 120,
+              "topic": "Practical Problem Quest",
+              "objective": "Engage in Practical Problem Quest activities to develop problem solving & logic skills",
+              "explanation": "This activity focuses on Practical Problem Quest within the Problem Solving & Logic pillar.",
+              "hashtags": [
+                "#ProblemSolving&Logic",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Practical Problem Quest",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Problem Solving & Logic"
+                ],
+                "category": "Real-Life Problem Design"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totalActivities": 120,
+  "lastUpdated": "2025-10-12T01:20:25.362936"
 }

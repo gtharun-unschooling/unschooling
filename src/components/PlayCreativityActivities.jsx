@@ -9,7 +9,7 @@ import {
   Psychology, FitnessCenter, School, Nature, EmojiEvents,
   Star, Favorite, Share, Bookmark, PlayArrow
 } from '@mui/icons-material';
-import SimpleBackButton from './ui/SimpleBackButton';
+import MinimalBackButton from './ui/SimpleBackButton';
 
 const PlayCreativityActivities = ({ onBackClick }) => {
   const navigate = useNavigate();
@@ -89,7 +89,7 @@ const PlayCreativityActivities = ({ onBackClick }) => {
   if (loading) {
     return (
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="400px">
-        <Typography variant="h6">Loading Play & Creativity activities...</Typography>
+        <Typography >Loading Play & Creativity activities...</Typography>
       </Box>
     );
   }
@@ -97,7 +97,7 @@ const PlayCreativityActivities = ({ onBackClick }) => {
   if (!activitiesData || !activitiesData.ageGroups) {
     return (
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="400px">
-        <Typography variant="h6" color="error">
+        <Typography  color="error">
           Unable to load Play & Creativity activities
         </Typography>
       </Box>
@@ -113,7 +113,7 @@ const PlayCreativityActivities = ({ onBackClick }) => {
       <Container maxWidth="lg">
         {/* Back Button */}
         <Box mb={4}>
-          <SimpleBackButton 
+          <MinimalBackButton 
             onClick={onBackClick}
             size="medium"
           />
@@ -122,14 +122,14 @@ const PlayCreativityActivities = ({ onBackClick }) => {
         {/* Hero Header */}
         <Fade in timeout={800}>
           <Box textAlign="center" mb={6} sx={{ color: 'white' }}>
-            <Typography variant="h2" component="h1" gutterBottom sx={{ 
+            <Typography  component="h1" gutterBottom sx={{ 
               fontWeight: 'bold',
               textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
               mb: 2
             }}>
               🎨 Play & Creativity Activities
             </Typography>
-            <Typography variant="h5" sx={{ 
+            <Typography  sx={{ 
               opacity: 0.9,
               maxWidth: '700px',
               margin: '0 auto',
@@ -143,7 +143,7 @@ const PlayCreativityActivities = ({ onBackClick }) => {
         {/* Age Group Selection */}
         <Fade in timeout={1000}>
           <Box mb={6}>
-            <Typography variant="h4" gutterBottom sx={{ 
+            <Typography  gutterBottom sx={{ 
               fontWeight: '700', 
               mb: 4, 
               color: 'white',
@@ -198,7 +198,7 @@ const PlayCreativityActivities = ({ onBackClick }) => {
                         >
                           {getAgeGroupIcon(ageGroup.ageGroup)}
                         </Avatar>
-                        <Typography variant="h6" component="h3" gutterBottom sx={{
+                        <Typography  component="h3" gutterBottom sx={{
                           fontWeight: 'bold',
                           color: selectedAgeGroup === ageGroup.ageGroup ? 'white' : '#2d3748'
                         }}>
@@ -248,14 +248,14 @@ const PlayCreativityActivities = ({ onBackClick }) => {
                   {getAgeGroupIcon(selectedAgeGroup)}
                 </Avatar>
                 <Box>
-                  <Typography variant="h3" sx={{ 
+                  <Typography  sx={{ 
                     fontWeight: 'bold',
                     color: '#2d3748',
                     mb: 1
                   }}>
                     {selectedAgeGroup} Activities
                   </Typography>
-                  <Typography variant="h6" sx={{ 
+                  <Typography  sx={{ 
                     color: '#718096',
                     fontWeight: '500'
                   }}>
@@ -301,14 +301,14 @@ const PlayCreativityActivities = ({ onBackClick }) => {
                                 {getCategoryIcon(category.category)}
                               </Avatar>
                               <Box flexGrow={1}>
-                                <Typography variant="h6" sx={{ 
+                                <Typography  sx={{ 
                                   fontWeight: 'bold',
                                   color: '#2d3748',
                                   mb: 0.5
                                 }}>
                                   {category.category}
                                 </Typography>
-                                <Typography variant="body2" sx={{ 
+                                <Typography  sx={{ 
                                   color: '#718096',
                                   lineHeight: 1.4
                                 }}>
@@ -358,14 +358,14 @@ const PlayCreativityActivities = ({ onBackClick }) => {
                                 >
                                   <Box display="flex" alignItems="start" justifyContent="space-between">
                                     <Box flexGrow={1}>
-                                      <Typography variant="h6" sx={{ 
+                                      <Typography  sx={{ 
                                         fontWeight: '600',
                                         color: '#2d3748',
                                         mb: 1
                                       }}>
                                         {activity.topic}
                                       </Typography>
-                                      <Typography variant="body2" sx={{ 
+                                      <Typography  sx={{ 
                                         color: '#718096',
                                         mb: 2,
                                         lineHeight: 1.5

@@ -100,15 +100,15 @@ const SupportTicket = ({ onTicketCreated }) => {
         <Avatar sx={{ bgcolor: 'success.main', mx: 'auto', mb: 2 }}>
           <Support />
         </Avatar>
-        <Typography variant="h5" gutterBottom color="success.main">
+        <Typography  gutterBottom color="success.main">
           Ticket Created Successfully!
         </Typography>
-        <Typography variant="body1" paragraph>
+        <Typography  paragraph>
           We've received your support request and will get back to you within 24 hours.
           You'll receive an email confirmation shortly.
         </Typography>
         <Button
-          variant="contained"
+          
           onClick={() => {
             setIsSuccess(false);
             setFormData({
@@ -130,7 +130,7 @@ const SupportTicket = ({ onTicketCreated }) => {
     <Paper elevation={3} sx={{ p: 4 }}>
       <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
         <Support sx={{ mr: 1, color: 'primary.main' }} />
-        <Typography variant="h5">
+        <Typography >
           Create Support Ticket
         </Typography>
       </Box>
@@ -214,7 +214,7 @@ const SupportTicket = ({ onTicketCreated }) => {
 
           <Grid item xs={12}>
             <Divider sx={{ my: 2 }} />
-            <Typography variant="body2" color="text.secondary" paragraph>
+            <Typography  color="text.secondary" paragraph>
               <strong>Response Time:</strong><br />
               • High Priority: 2-4 hours<br />
               • Medium Priority: 4-8 hours<br />
@@ -225,7 +225,7 @@ const SupportTicket = ({ onTicketCreated }) => {
           <Grid item xs={12}>
             <Button
               type="submit"
-              variant="contained"
+              
               size="large"
               fullWidth
               disabled={isSubmitting}

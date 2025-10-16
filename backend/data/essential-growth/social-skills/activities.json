@@ -1,3 +1,3257 @@
 {
-  "ageGroups": []
+  "ageGroups": [
+    {
+      "ageGroup": "All Ages",
+      "categories": [
+        {
+          "category": "Social Skills",
+          "description": "Activities for Social Skills",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "Mirror Smile Play",
+              "objective": "Engage in Mirror Smile Play activities to develop social skills skills",
+              "explanation": "This activity focuses on Mirror Smile Play within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Mirror Smile Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Smiling Back Games"
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "Peek-a-Boo Grin",
+              "objective": "Engage in Peek-a-Boo Grin activities to develop social skills skills",
+              "explanation": "This activity focuses on Peek-a-Boo Grin within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Peek-a-Boo Grin",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Smiling Back Games"
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "Baby Giggle Response",
+              "objective": "Engage in Baby Giggle Response activities to develop social skills skills",
+              "explanation": "This activity focuses on Baby Giggle Response within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Baby Giggle Response",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Smiling Back Games"
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "Face-to-Face Fun",
+              "objective": "Engage in Face-to-Face Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Face-to-Face Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Face-to-Face Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Smiling Back Games"
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "Happy Interaction Moments",
+              "objective": "Engage in Happy Interaction Moments activities to develop social skills skills",
+              "explanation": "This activity focuses on Happy Interaction Moments within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Happy Interaction Moments",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Smiling Back Games"
+              }
+            },
+            {
+              "topicNumber": 6,
+              "topic": "Clap & Repeat Game",
+              "objective": "Engage in Clap & Repeat Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Clap & Repeat Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Clap & Repeat Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Clapping Together"
+              }
+            },
+            {
+              "topicNumber": 7,
+              "topic": "Rhythm Clap Fun",
+              "objective": "Engage in Rhythm Clap Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Rhythm Clap Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Rhythm Clap Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Clapping Together"
+              }
+            },
+            {
+              "topicNumber": 8,
+              "topic": "Clap & Wiggle",
+              "objective": "Engage in Clap & Wiggle activities to develop social skills skills",
+              "explanation": "This activity focuses on Clap & Wiggle within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Clap & Wiggle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Clapping Together"
+              }
+            },
+            {
+              "topicNumber": 9,
+              "topic": "Musical Clap Play",
+              "objective": "Engage in Musical Clap Play activities to develop social skills skills",
+              "explanation": "This activity focuses on Musical Clap Play within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Musical Clap Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Clapping Together"
+              }
+            },
+            {
+              "topicNumber": 10,
+              "topic": "Gentle Clap Sequence",
+              "objective": "Engage in Gentle Clap Sequence activities to develop social skills skills",
+              "explanation": "This activity focuses on Gentle Clap Sequence within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Gentle Clap Sequence",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Clapping Together"
+              }
+            },
+            {
+              "topicNumber": 11,
+              "topic": "Observation Peek",
+              "objective": "Engage in Observation Peek activities to develop social skills skills",
+              "explanation": "This activity focuses on Observation Peek within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Observation Peek",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Watching Group Interaction"
+              }
+            },
+            {
+              "topicNumber": 12,
+              "topic": "Playtime Watch & Learn",
+              "objective": "Engage in Playtime Watch & Learn activities to develop social skills skills",
+              "explanation": "This activity focuses on Playtime Watch & Learn within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Playtime Watch & Learn",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Watching Group Interaction"
+              }
+            },
+            {
+              "topicNumber": 13,
+              "topic": "Group Smile Moments",
+              "objective": "Engage in Group Smile Moments activities to develop social skills skills",
+              "explanation": "This activity focuses on Group Smile Moments within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Group Smile Moments",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Watching Group Interaction"
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "Tiny Observer Game",
+              "objective": "Engage in Tiny Observer Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Tiny Observer Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Tiny Observer Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Watching Group Interaction"
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "Social Gaze Fun",
+              "objective": "Engage in Social Gaze Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Social Gaze Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Social Gaze Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Watching Group Interaction"
+              }
+            },
+            {
+              "topicNumber": 16,
+              "topic": "Mimic Motion Game",
+              "objective": "Engage in Mimic Motion Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Mimic Motion Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Mimic Motion Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Imitating Family Gestures"
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "Copycat Movements",
+              "objective": "Engage in Copycat Movements activities to develop social skills skills",
+              "explanation": "This activity focuses on Copycat Movements within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Copycat Movements",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Imitating Family Gestures"
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "Gesture Matching",
+              "objective": "Engage in Gesture Matching activities to develop social skills skills",
+              "explanation": "This activity focuses on Gesture Matching within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Gesture Matching",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Imitating Family Gestures"
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "Family Move Fun",
+              "objective": "Engage in Family Move Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Family Move Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Family Move Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Imitating Family Gestures"
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "Hand & Face Mimic",
+              "objective": "Engage in Hand & Face Mimic activities to develop social skills skills",
+              "explanation": "This activity focuses on Hand & Face Mimic within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Hand & Face Mimic",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Imitating Family Gestures"
+              }
+            },
+            {
+              "topicNumber": 21,
+              "topic": "Hello & Wave Fun",
+              "objective": "Engage in Hello & Wave Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Hello & Wave Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Hello & Wave Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Greeting with Words & Gestures"
+              }
+            },
+            {
+              "topicNumber": 22,
+              "topic": "Friend Hello Game",
+              "objective": "Engage in Friend Hello Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Friend Hello Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Friend Hello Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Greeting with Words & Gestures"
+              }
+            },
+            {
+              "topicNumber": 23,
+              "topic": "Gesture Greetings",
+              "objective": "Engage in Gesture Greetings activities to develop social skills skills",
+              "explanation": "This activity focuses on Gesture Greetings within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Gesture Greetings",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Greeting with Words & Gestures"
+              }
+            },
+            {
+              "topicNumber": 24,
+              "topic": "Name & Wave Challenge",
+              "objective": "Engage in Name & Wave Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Name & Wave Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Name & Wave Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Greeting with Words & Gestures"
+              }
+            },
+            {
+              "topicNumber": 25,
+              "topic": "Hi-Five Fun",
+              "objective": "Engage in Hi-Five Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Hi-Five Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Hi-Five Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Greeting with Words & Gestures"
+              }
+            },
+            {
+              "topicNumber": 26,
+              "topic": "Turn-Taking Challenge",
+              "objective": "Engage in Turn-Taking Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Turn-Taking Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Turn-Taking Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Waiting Your Turn Games"
+              }
+            },
+            {
+              "topicNumber": 27,
+              "topic": "Share & Wait Game",
+              "objective": "Engage in Share & Wait Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Share & Wait Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Share & Wait Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Waiting Your Turn Games"
+              }
+            },
+            {
+              "topicNumber": 28,
+              "topic": "Queue Fun",
+              "objective": "Engage in Queue Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Queue Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Queue Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Waiting Your Turn Games"
+              }
+            },
+            {
+              "topicNumber": 29,
+              "topic": "Patience Play",
+              "objective": "Engage in Patience Play activities to develop social skills skills",
+              "explanation": "This activity focuses on Patience Play within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Patience Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Waiting Your Turn Games"
+              }
+            },
+            {
+              "topicNumber": 30,
+              "topic": "Take Your Turn Relay",
+              "objective": "Engage in Take Your Turn Relay activities to develop social skills skills",
+              "explanation": "This activity focuses on Take Your Turn Relay within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Take Your Turn Relay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Waiting Your Turn Games"
+              }
+            },
+            {
+              "topicNumber": 31,
+              "topic": "Sharing Fun Exchange",
+              "objective": "Engage in Sharing Fun Exchange activities to develop social skills skills",
+              "explanation": "This activity focuses on Sharing Fun Exchange within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Sharing Fun Exchange",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Sharing Toys Activities"
+              }
+            },
+            {
+              "topicNumber": 32,
+              "topic": "Share & Play",
+              "objective": "Engage in Share & Play activities to develop social skills skills",
+              "explanation": "This activity focuses on Share & Play within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Share & Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Sharing Toys Activities"
+              }
+            },
+            {
+              "topicNumber": 33,
+              "topic": "Sharing Circle",
+              "objective": "Engage in Sharing Circle activities to develop social skills skills",
+              "explanation": "This activity focuses on Sharing Circle within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Sharing Circle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Sharing Toys Activities"
+              }
+            },
+            {
+              "topicNumber": 34,
+              "topic": "Sharing Relay",
+              "objective": "Engage in Sharing Relay activities to develop social skills skills",
+              "explanation": "This activity focuses on Sharing Relay within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Sharing Relay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Sharing Toys Activities"
+              }
+            },
+            {
+              "topicNumber": 35,
+              "topic": "Toy Sharing Adventure",
+              "objective": "Engage in Toy Sharing Adventure activities to develop social skills skills",
+              "explanation": "This activity focuses on Toy Sharing Adventure within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Toy Sharing Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Sharing Toys Activities"
+              }
+            },
+            {
+              "topicNumber": 36,
+              "topic": "Buddy Playtime",
+              "objective": "Engage in Buddy Playtime activities to develop social skills skills",
+              "explanation": "This activity focuses on Buddy Playtime within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Buddy Playtime",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Playing with a Friend"
+              }
+            },
+            {
+              "topicNumber": 37,
+              "topic": "Partner Fun Game",
+              "objective": "Engage in Partner Fun Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Partner Fun Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Partner Fun Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Playing with a Friend"
+              }
+            },
+            {
+              "topicNumber": 38,
+              "topic": "Cooperative Play Challenge",
+              "objective": "Engage in Cooperative Play Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Cooperative Play Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Cooperative Play Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Playing with a Friend"
+              }
+            },
+            {
+              "topicNumber": 39,
+              "topic": "Friend Matching Activity",
+              "objective": "Engage in Friend Matching Activity activities to develop social skills skills",
+              "explanation": "This activity focuses on Friend Matching Activity within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Friend Matching Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Playing with a Friend"
+              }
+            },
+            {
+              "topicNumber": 40,
+              "topic": "Pair Adventure Game",
+              "objective": "Engage in Pair Adventure Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Pair Adventure Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Pair Adventure Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Playing with a Friend"
+              }
+            },
+            {
+              "topicNumber": 41,
+              "topic": "Puppet Politeness Show",
+              "objective": "Engage in Puppet Politeness Show activities to develop social skills skills",
+              "explanation": "This activity focuses on Puppet Politeness Show within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Puppet Politeness Show",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Manners Through Puppet Play"
+              }
+            },
+            {
+              "topicNumber": 42,
+              "topic": "Please & Thank You Puppet",
+              "objective": "Engage in Please & Thank You Puppet activities to develop social skills skills",
+              "explanation": "This activity focuses on Please & Thank You Puppet within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Please & Thank You Puppet",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Manners Through Puppet Play"
+              }
+            },
+            {
+              "topicNumber": 43,
+              "topic": "Puppet Greeting Fun",
+              "objective": "Engage in Puppet Greeting Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Puppet Greeting Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Puppet Greeting Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Manners Through Puppet Play"
+              }
+            },
+            {
+              "topicNumber": 44,
+              "topic": "Puppet Sharing Story",
+              "objective": "Engage in Puppet Sharing Story activities to develop social skills skills",
+              "explanation": "This activity focuses on Puppet Sharing Story within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Puppet Sharing Story",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Manners Through Puppet Play"
+              }
+            },
+            {
+              "topicNumber": 45,
+              "topic": "Puppet Turn-Taking Game",
+              "objective": "Engage in Puppet Turn-Taking Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Puppet Turn-Taking Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Puppet Turn-Taking Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Manners Through Puppet Play"
+              }
+            },
+            {
+              "topicNumber": 46,
+              "topic": "Hello & Name Game",
+              "objective": "Engage in Hello & Name Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Hello & Name Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Hello & Name Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Making Introductions"
+              }
+            },
+            {
+              "topicNumber": 47,
+              "topic": "Meet & Greet Fun",
+              "objective": "Engage in Meet & Greet Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Meet & Greet Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Meet & Greet Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Making Introductions"
+              }
+            },
+            {
+              "topicNumber": 48,
+              "topic": "Introduction Relay",
+              "objective": "Engage in Introduction Relay activities to develop social skills skills",
+              "explanation": "This activity focuses on Introduction Relay within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Introduction Relay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Making Introductions"
+              }
+            },
+            {
+              "topicNumber": 49,
+              "topic": "Friend Introduction Challenge",
+              "objective": "Engage in Friend Introduction Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Friend Introduction Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Friend Introduction Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Making Introductions"
+              }
+            },
+            {
+              "topicNumber": 50,
+              "topic": "Name Exchange Fun",
+              "objective": "Engage in Name Exchange Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Name Exchange Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Name Exchange Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Making Introductions"
+              }
+            },
+            {
+              "topicNumber": 51,
+              "topic": "Ask Nicely Game",
+              "objective": "Engage in Ask Nicely Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Ask Nicely Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Ask Nicely Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Practicing Polite Requests"
+              }
+            },
+            {
+              "topicNumber": 52,
+              "topic": "Polite Phrase Fun",
+              "objective": "Engage in Polite Phrase Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Polite Phrase Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Polite Phrase Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Practicing Polite Requests"
+              }
+            },
+            {
+              "topicNumber": 53,
+              "topic": "Request & Respond",
+              "objective": "Engage in Request & Respond activities to develop social skills skills",
+              "explanation": "This activity focuses on Request & Respond within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Request & Respond",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Practicing Polite Requests"
+              }
+            },
+            {
+              "topicNumber": 54,
+              "topic": "Polite Ask Challenge",
+              "objective": "Engage in Polite Ask Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Polite Ask Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Polite Ask Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Practicing Polite Requests"
+              }
+            },
+            {
+              "topicNumber": 55,
+              "topic": "Roleplay Politeness",
+              "objective": "Engage in Roleplay Politeness activities to develop social skills skills",
+              "explanation": "This activity focuses on Roleplay Politeness within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Roleplay Politeness",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Practicing Polite Requests"
+              }
+            },
+            {
+              "topicNumber": 56,
+              "topic": "Apology Practice Game",
+              "objective": "Engage in Apology Practice Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Apology Practice Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Apology Practice Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Saying Sorry and Thank You"
+              }
+            },
+            {
+              "topicNumber": 57,
+              "topic": "Thank You Circle",
+              "objective": "Engage in Thank You Circle activities to develop social skills skills",
+              "explanation": "This activity focuses on Thank You Circle within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Thank You Circle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Saying Sorry and Thank You"
+              }
+            },
+            {
+              "topicNumber": 58,
+              "topic": "Sorry & Thanks Roleplay",
+              "objective": "Engage in Sorry & Thanks Roleplay activities to develop social skills skills",
+              "explanation": "This activity focuses on Sorry & Thanks Roleplay within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Sorry & Thanks Roleplay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Saying Sorry and Thank You"
+              }
+            },
+            {
+              "topicNumber": 59,
+              "topic": "Gratitude & Apology Game",
+              "objective": "Engage in Gratitude & Apology Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Gratitude & Apology Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Gratitude & Apology Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Saying Sorry and Thank You"
+              }
+            },
+            {
+              "topicNumber": 60,
+              "topic": "Polite Response Challenge",
+              "objective": "Engage in Polite Response Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Polite Response Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Polite Response Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Saying Sorry and Thank You"
+              }
+            },
+            {
+              "topicNumber": 61,
+              "topic": "Roleplay Story Challenge",
+              "objective": "Engage in Roleplay Story Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Roleplay Story Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Roleplay Story Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Social Scenario Roleplays"
+              }
+            },
+            {
+              "topicNumber": 62,
+              "topic": "Peer Situation Game",
+              "objective": "Engage in Peer Situation Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Peer Situation Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Peer Situation Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Social Scenario Roleplays"
+              }
+            },
+            {
+              "topicNumber": 63,
+              "topic": "Friendly Interaction Roleplay",
+              "objective": "Engage in Friendly Interaction Roleplay activities to develop social skills skills",
+              "explanation": "This activity focuses on Friendly Interaction Roleplay within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Friendly Interaction Roleplay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Social Scenario Roleplays"
+              }
+            },
+            {
+              "topicNumber": 64,
+              "topic": "Classroom Scenario Fun",
+              "objective": "Engage in Classroom Scenario Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Classroom Scenario Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Classroom Scenario Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Social Scenario Roleplays"
+              }
+            },
+            {
+              "topicNumber": 65,
+              "topic": "Problem-Solving Roleplay",
+              "objective": "Engage in Problem-Solving Roleplay activities to develop social skills skills",
+              "explanation": "This activity focuses on Problem-Solving Roleplay within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Problem-Solving Roleplay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Social Scenario Roleplays"
+              }
+            },
+            {
+              "topicNumber": 66,
+              "topic": "Express It Game",
+              "objective": "Engage in Express It Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Express It Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Express It Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Expressing Needs Appropriately"
+              }
+            },
+            {
+              "topicNumber": 67,
+              "topic": "Need & Want Challenge",
+              "objective": "Engage in Need & Want Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Need & Want Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Need & Want Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Expressing Needs Appropriately"
+              }
+            },
+            {
+              "topicNumber": 68,
+              "topic": "Saying It Nicely",
+              "objective": "Engage in Saying It Nicely activities to develop social skills skills",
+              "explanation": "This activity focuses on Saying It Nicely within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Saying It Nicely",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Expressing Needs Appropriately"
+              }
+            },
+            {
+              "topicNumber": 69,
+              "topic": "Assertive Expression Game",
+              "objective": "Engage in Assertive Expression Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Assertive Expression Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Assertive Expression Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Expressing Needs Appropriately"
+              }
+            },
+            {
+              "topicNumber": 70,
+              "topic": "Sharing Feelings Fun",
+              "objective": "Engage in Sharing Feelings Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Sharing Feelings Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Sharing Feelings Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Expressing Needs Appropriately"
+              }
+            },
+            {
+              "topicNumber": 71,
+              "topic": "Listening Challenge",
+              "objective": "Engage in Listening Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Listening Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Listening Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Listening Without Interrupting"
+              }
+            },
+            {
+              "topicNumber": 72,
+              "topic": "Attention Game",
+              "objective": "Engage in Attention Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Attention Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Attention Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Listening Without Interrupting"
+              }
+            },
+            {
+              "topicNumber": 73,
+              "topic": "Wait & Listen Fun",
+              "objective": "Engage in Wait & Listen Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Wait & Listen Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Wait & Listen Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Listening Without Interrupting"
+              }
+            },
+            {
+              "topicNumber": 74,
+              "topic": "Story Listening Relay",
+              "objective": "Engage in Story Listening Relay activities to develop social skills skills",
+              "explanation": "This activity focuses on Story Listening Relay within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Story Listening Relay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Listening Without Interrupting"
+              }
+            },
+            {
+              "topicNumber": 75,
+              "topic": "Active Listening Activity",
+              "objective": "Engage in Active Listening Activity activities to develop social skills skills",
+              "explanation": "This activity focuses on Active Listening Activity within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Active Listening Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Listening Without Interrupting"
+              }
+            },
+            {
+              "topicNumber": 76,
+              "topic": "Mini Debate Fun",
+              "objective": "Engage in Mini Debate Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Mini Debate Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Mini Debate Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Friendly Debate Activities"
+              }
+            },
+            {
+              "topicNumber": 77,
+              "topic": "Opinion Sharing Game",
+              "objective": "Engage in Opinion Sharing Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Opinion Sharing Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Opinion Sharing Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Friendly Debate Activities"
+              }
+            },
+            {
+              "topicNumber": 78,
+              "topic": "Debate Relay Challenge",
+              "objective": "Engage in Debate Relay Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Debate Relay Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Debate Relay Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Friendly Debate Activities"
+              }
+            },
+            {
+              "topicNumber": 79,
+              "topic": "Discussion Roleplay",
+              "objective": "Engage in Discussion Roleplay activities to develop social skills skills",
+              "explanation": "This activity focuses on Discussion Roleplay within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Discussion Roleplay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Friendly Debate Activities"
+              }
+            },
+            {
+              "topicNumber": 80,
+              "topic": "Talk & Listen Game",
+              "objective": "Engage in Talk & Listen Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Talk & Listen Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Talk & Listen Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Friendly Debate Activities"
+              }
+            },
+            {
+              "topicNumber": 81,
+              "topic": "Peer Conflict Practice",
+              "objective": "Engage in Peer Conflict Practice activities to develop social skills skills",
+              "explanation": "This activity focuses on Peer Conflict Practice within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Peer Conflict Practice",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Conflict Role Rehearsals"
+              }
+            },
+            {
+              "topicNumber": 82,
+              "topic": "Roleplay Disagreements",
+              "objective": "Engage in Roleplay Disagreements activities to develop social skills skills",
+              "explanation": "This activity focuses on Roleplay Disagreements within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Roleplay Disagreements",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Conflict Role Rehearsals"
+              }
+            },
+            {
+              "topicNumber": 83,
+              "topic": "Scenario Practice Game",
+              "objective": "Engage in Scenario Practice Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Scenario Practice Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Scenario Practice Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Conflict Role Rehearsals"
+              }
+            },
+            {
+              "topicNumber": 84,
+              "topic": "Resolution Relay",
+              "objective": "Engage in Resolution Relay activities to develop social skills skills",
+              "explanation": "This activity focuses on Resolution Relay within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Resolution Relay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Conflict Role Rehearsals"
+              }
+            },
+            {
+              "topicNumber": 85,
+              "topic": "Negotiation Practice",
+              "objective": "Engage in Negotiation Practice activities to develop social skills skills",
+              "explanation": "This activity focuses on Negotiation Practice within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Negotiation Practice",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Conflict Role Rehearsals"
+              }
+            },
+            {
+              "topicNumber": 86,
+              "topic": "Listening Hearts Game",
+              "objective": "Engage in Listening Hearts Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Listening Hearts Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Listening Hearts Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Empathetic Listening Skills"
+              }
+            },
+            {
+              "topicNumber": 87,
+              "topic": "Emotion Listener Activity",
+              "objective": "Engage in Emotion Listener Activity activities to develop social skills skills",
+              "explanation": "This activity focuses on Emotion Listener Activity within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Emotion Listener Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Empathetic Listening Skills"
+              }
+            },
+            {
+              "topicNumber": 88,
+              "topic": "Feelings Reflection Game",
+              "objective": "Engage in Feelings Reflection Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Feelings Reflection Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Feelings Reflection Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Empathetic Listening Skills"
+              }
+            },
+            {
+              "topicNumber": 89,
+              "topic": "Listening Challenge Relay",
+              "objective": "Engage in Listening Challenge Relay activities to develop social skills skills",
+              "explanation": "This activity focuses on Listening Challenge Relay within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Listening Challenge Relay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Empathetic Listening Skills"
+              }
+            },
+            {
+              "topicNumber": 90,
+              "topic": "Peer Listening Practice",
+              "objective": "Engage in Peer Listening Practice activities to develop social skills skills",
+              "explanation": "This activity focuses on Peer Listening Practice within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Peer Listening Practice",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Empathetic Listening Skills"
+              }
+            },
+            {
+              "topicNumber": 91,
+              "topic": "Team Talk Relay",
+              "objective": "Engage in Team Talk Relay activities to develop social skills skills",
+              "explanation": "This activity focuses on Team Talk Relay within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Team Talk Relay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Group Communication Games"
+              }
+            },
+            {
+              "topicNumber": 92,
+              "topic": "Message Passing Fun",
+              "objective": "Engage in Message Passing Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Message Passing Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Message Passing Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Group Communication Games"
+              }
+            },
+            {
+              "topicNumber": 93,
+              "topic": "Communication Maze",
+              "objective": "Engage in Communication Maze activities to develop social skills skills",
+              "explanation": "This activity focuses on Communication Maze within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Communication Maze",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Group Communication Games"
+              }
+            },
+            {
+              "topicNumber": 94,
+              "topic": "Story Exchange Challenge",
+              "objective": "Engage in Story Exchange Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Story Exchange Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Story Exchange Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Group Communication Games"
+              }
+            },
+            {
+              "topicNumber": 95,
+              "topic": "Peer Talk Game",
+              "objective": "Engage in Peer Talk Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Peer Talk Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Peer Talk Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Group Communication Games"
+              }
+            },
+            {
+              "topicNumber": 96,
+              "topic": "Online Manners Challenge",
+              "objective": "Engage in Online Manners Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Online Manners Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Online Manners Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Digital Etiquette Simulations"
+              }
+            },
+            {
+              "topicNumber": 97,
+              "topic": "Screen Time Roleplay",
+              "objective": "Engage in Screen Time Roleplay activities to develop social skills skills",
+              "explanation": "This activity focuses on Screen Time Roleplay within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Screen Time Roleplay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Digital Etiquette Simulations"
+              }
+            },
+            {
+              "topicNumber": 98,
+              "topic": "Online Interaction Game",
+              "objective": "Engage in Online Interaction Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Online Interaction Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Online Interaction Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Digital Etiquette Simulations"
+              }
+            },
+            {
+              "topicNumber": 99,
+              "topic": "Social Media Practice",
+              "objective": "Engage in Social Media Practice activities to develop social skills skills",
+              "explanation": "This activity focuses on Social Media Practice within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Social Media Practice",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Digital Etiquette Simulations"
+              }
+            },
+            {
+              "topicNumber": 100,
+              "topic": "Netiquette Challenge",
+              "objective": "Engage in Netiquette Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Netiquette Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Netiquette Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Digital Etiquette Simulations"
+              }
+            },
+            {
+              "topicNumber": 101,
+              "topic": "Talk It Right Activity",
+              "objective": "Engage in Talk It Right Activity activities to develop social skills skills",
+              "explanation": "This activity focuses on Talk It Right Activity within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Talk It Right Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Assertive vs. Aggressive Talk"
+              }
+            },
+            {
+              "topicNumber": 102,
+              "topic": "Communication Styles Game",
+              "objective": "Engage in Communication Styles Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Communication Styles Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Communication Styles Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Assertive vs. Aggressive Talk"
+              }
+            },
+            {
+              "topicNumber": 103,
+              "topic": "Peer Talk Practice",
+              "objective": "Engage in Peer Talk Practice activities to develop social skills skills",
+              "explanation": "This activity focuses on Peer Talk Practice within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Peer Talk Practice",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Assertive vs. Aggressive Talk"
+              }
+            },
+            {
+              "topicNumber": 104,
+              "topic": "Expressive Dialogue Game",
+              "objective": "Engage in Expressive Dialogue Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Expressive Dialogue Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Expressive Dialogue Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Assertive vs. Aggressive Talk"
+              }
+            },
+            {
+              "topicNumber": 105,
+              "topic": "Conversation Roleplay",
+              "objective": "Engage in Conversation Roleplay activities to develop social skills skills",
+              "explanation": "This activity focuses on Conversation Roleplay within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Conversation Roleplay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Assertive vs. Aggressive Talk"
+              }
+            },
+            {
+              "topicNumber": 106,
+              "topic": "Peer Choice Challenge",
+              "objective": "Engage in Peer Choice Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Peer Choice Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Peer Choice Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Managing Peer Pressure"
+              }
+            },
+            {
+              "topicNumber": 107,
+              "topic": "Decision Influence Game",
+              "objective": "Engage in Decision Influence Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Decision Influence Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Decision Influence Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Managing Peer Pressure"
+              }
+            },
+            {
+              "topicNumber": 108,
+              "topic": "Pressure Situations Roleplay",
+              "objective": "Engage in Pressure Situations Roleplay activities to develop social skills skills",
+              "explanation": "This activity focuses on Pressure Situations Roleplay within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Pressure Situations Roleplay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Managing Peer Pressure"
+              }
+            },
+            {
+              "topicNumber": 109,
+              "topic": "Peer Influence Challenge",
+              "objective": "Engage in Peer Influence Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Peer Influence Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Peer Influence Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Managing Peer Pressure"
+              }
+            },
+            {
+              "topicNumber": 110,
+              "topic": "Standing Strong Activity",
+              "objective": "Engage in Standing Strong Activity activities to develop social skills skills",
+              "explanation": "This activity focuses on Standing Strong Activity within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Standing Strong Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Managing Peer Pressure"
+              }
+            },
+            {
+              "topicNumber": 111,
+              "topic": "Feedback Circle Game",
+              "objective": "Engage in Feedback Circle Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Feedback Circle Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Feedback Circle Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Giving and Receiving Feedback"
+              }
+            },
+            {
+              "topicNumber": 112,
+              "topic": "Constructive Critique Challenge",
+              "objective": "Engage in Constructive Critique Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Constructive Critique Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Constructive Critique Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Giving and Receiving Feedback"
+              }
+            },
+            {
+              "topicNumber": 113,
+              "topic": "Peer Review Fun",
+              "objective": "Engage in Peer Review Fun activities to develop social skills skills",
+              "explanation": "This activity focuses on Peer Review Fun within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Peer Review Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Giving and Receiving Feedback"
+              }
+            },
+            {
+              "topicNumber": 114,
+              "topic": "Positive Feedback Practice",
+              "objective": "Engage in Positive Feedback Practice activities to develop social skills skills",
+              "explanation": "This activity focuses on Positive Feedback Practice within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Positive Feedback Practice",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Giving and Receiving Feedback"
+              }
+            },
+            {
+              "topicNumber": 115,
+              "topic": "Review & Reflect Activity",
+              "objective": "Engage in Review & Reflect Activity activities to develop social skills skills",
+              "explanation": "This activity focuses on Review & Reflect Activity within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Review & Reflect Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Giving and Receiving Feedback"
+              }
+            },
+            {
+              "topicNumber": 116,
+              "topic": "Respect Talk Relay",
+              "objective": "Engage in Respect Talk Relay activities to develop social skills skills",
+              "explanation": "This activity focuses on Respect Talk Relay within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Respect Talk Relay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Building Respectful Dialogue"
+              }
+            },
+            {
+              "topicNumber": 117,
+              "topic": "Dialogue Roleplay Challenge",
+              "objective": "Engage in Dialogue Roleplay Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Dialogue Roleplay Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Dialogue Roleplay Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Building Respectful Dialogue"
+              }
+            },
+            {
+              "topicNumber": 118,
+              "topic": "Peer Listening & Talk Game",
+              "objective": "Engage in Peer Listening & Talk Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Peer Listening & Talk Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Peer Listening & Talk Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Building Respectful Dialogue"
+              }
+            },
+            {
+              "topicNumber": 119,
+              "topic": "Conversation Skills Challenge",
+              "objective": "Engage in Conversation Skills Challenge activities to develop social skills skills",
+              "explanation": "This activity focuses on Conversation Skills Challenge within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Conversation Skills Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Building Respectful Dialogue"
+              }
+            },
+            {
+              "topicNumber": 120,
+              "topic": "Positive Interaction Game",
+              "objective": "Engage in Positive Interaction Game activities to develop social skills skills",
+              "explanation": "This activity focuses on Positive Interaction Game within the Social Skills pillar.",
+              "hashtags": [
+                "#SocialSkills",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Positive Interaction Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Social Skills"
+                ],
+                "category": "Building Respectful Dialogue"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totalActivities": 120,
+  "lastUpdated": "2025-10-12T01:20:25.367792"
 }

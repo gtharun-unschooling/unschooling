@@ -1,3 +1,3257 @@
 {
-  "ageGroups": []
+  "ageGroups": [
+    {
+      "ageGroup": "All Ages",
+      "categories": [
+        {
+          "category": "Learning Tools",
+          "description": "Activities for Learning Tools",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "Bold Pattern Cards",
+              "objective": "Engage in Bold Pattern Cards activities to develop learning tools skills",
+              "explanation": "This activity focuses on Bold Pattern Cards within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Bold Pattern Cards",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "High-Contrast Visual Cards"
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "Black & White Flash Mats",
+              "objective": "Engage in Black & White Flash Mats activities to develop learning tools skills",
+              "explanation": "This activity focuses on Black & White Flash Mats within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Black & White Flash Mats",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "High-Contrast Visual Cards"
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "Shape Contrast Cards",
+              "objective": "Engage in Shape Contrast Cards activities to develop learning tools skills",
+              "explanation": "This activity focuses on Shape Contrast Cards within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Shape Contrast Cards",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "High-Contrast Visual Cards"
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "Visual Stimulation Cards",
+              "objective": "Engage in Visual Stimulation Cards activities to develop learning tools skills",
+              "explanation": "This activity focuses on Visual Stimulation Cards within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Visual Stimulation Cards",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "High-Contrast Visual Cards"
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "Pattern Peek Cards",
+              "objective": "Engage in Pattern Peek Cards activities to develop learning tools skills",
+              "explanation": "This activity focuses on Pattern Peek Cards within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Pattern Peek Cards",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "High-Contrast Visual Cards"
+              }
+            },
+            {
+              "topicNumber": 6,
+              "topic": "Soft Texture Storybook",
+              "objective": "Engage in Soft Texture Storybook activities to develop learning tools skills",
+              "explanation": "This activity focuses on Soft Texture Storybook within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Texture Storybook",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Touch-and-Feel Books"
+              }
+            },
+            {
+              "topicNumber": 7,
+              "topic": "Sensory Fabric Pages",
+              "objective": "Engage in Sensory Fabric Pages activities to develop learning tools skills",
+              "explanation": "This activity focuses on Sensory Fabric Pages within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Sensory Fabric Pages",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Touch-and-Feel Books"
+              }
+            },
+            {
+              "topicNumber": 8,
+              "topic": "Baby Touch Book",
+              "objective": "Engage in Baby Touch Book activities to develop learning tools skills",
+              "explanation": "This activity focuses on Baby Touch Book within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Baby Touch Book",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Touch-and-Feel Books"
+              }
+            },
+            {
+              "topicNumber": 9,
+              "topic": "Tactile Story Pages",
+              "objective": "Engage in Tactile Story Pages activities to develop learning tools skills",
+              "explanation": "This activity focuses on Tactile Story Pages within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Tactile Story Pages",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Touch-and-Feel Books"
+              }
+            },
+            {
+              "topicNumber": 10,
+              "topic": "Soft Object Stories",
+              "objective": "Engage in Soft Object Stories activities to develop learning tools skills",
+              "explanation": "This activity focuses on Soft Object Stories within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Object Stories",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Touch-and-Feel Books"
+              }
+            },
+            {
+              "topicNumber": 11,
+              "topic": "Spinning Color Mobile",
+              "objective": "Engage in Spinning Color Mobile activities to develop learning tools skills",
+              "explanation": "This activity focuses on Spinning Color Mobile within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Spinning Color Mobile",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Interactive Mobiles"
+              }
+            },
+            {
+              "topicNumber": 12,
+              "topic": "Musical Baby Mobile",
+              "objective": "Engage in Musical Baby Mobile activities to develop learning tools skills",
+              "explanation": "This activity focuses on Musical Baby Mobile within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Musical Baby Mobile",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Interactive Mobiles"
+              }
+            },
+            {
+              "topicNumber": 13,
+              "topic": "Light & Motion Mobile",
+              "objective": "Engage in Light & Motion Mobile activities to develop learning tools skills",
+              "explanation": "This activity focuses on Light & Motion Mobile within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Light & Motion Mobile",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Interactive Mobiles"
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "Animal Mobile Play",
+              "objective": "Engage in Animal Mobile Play activities to develop learning tools skills",
+              "explanation": "This activity focuses on Animal Mobile Play within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Animal Mobile Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Interactive Mobiles"
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "Sensory Hanging Toys",
+              "objective": "Engage in Sensory Hanging Toys activities to develop learning tools skills",
+              "explanation": "This activity focuses on Sensory Hanging Toys within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Sensory Hanging Toys",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Interactive Mobiles"
+              }
+            },
+            {
+              "topicNumber": 16,
+              "topic": "Crinkly Soft Book",
+              "objective": "Engage in Crinkly Soft Book activities to develop learning tools skills",
+              "explanation": "This activity focuses on Crinkly Soft Book within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Crinkly Soft Book",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Textured Soft Books"
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "Plush Fabric Storybook",
+              "objective": "Engage in Plush Fabric Storybook activities to develop learning tools skills",
+              "explanation": "This activity focuses on Plush Fabric Storybook within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Plush Fabric Storybook",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Textured Soft Books"
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "Sensory Page Book",
+              "objective": "Engage in Sensory Page Book activities to develop learning tools skills",
+              "explanation": "This activity focuses on Sensory Page Book within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Sensory Page Book",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Textured Soft Books"
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "Textured Animal Book",
+              "objective": "Engage in Textured Animal Book activities to develop learning tools skills",
+              "explanation": "This activity focuses on Textured Animal Book within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Textured Animal Book",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Textured Soft Books"
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "Soft Touch Book",
+              "objective": "Engage in Soft Touch Book activities to develop learning tools skills",
+              "explanation": "This activity focuses on Soft Touch Book within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Touch Book",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Textured Soft Books"
+              }
+            },
+            {
+              "topicNumber": 21,
+              "topic": "Board Book Adventure",
+              "objective": "Engage in Board Book Adventure activities to develop learning tools skills",
+              "explanation": "This activity focuses on Board Book Adventure within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Board Book Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Chunky Board Books"
+              }
+            },
+            {
+              "topicNumber": 22,
+              "topic": "Thick Page Storybook",
+              "objective": "Engage in Thick Page Storybook activities to develop learning tools skills",
+              "explanation": "This activity focuses on Thick Page Storybook within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Thick Page Storybook",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Chunky Board Books"
+              }
+            },
+            {
+              "topicNumber": 23,
+              "topic": "Mini Picture Board Book",
+              "objective": "Engage in Mini Picture Board Book activities to develop learning tools skills",
+              "explanation": "This activity focuses on Mini Picture Board Book within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Mini Picture Board Book",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Chunky Board Books"
+              }
+            },
+            {
+              "topicNumber": 24,
+              "topic": "Animal Chunky Book",
+              "objective": "Engage in Animal Chunky Book activities to develop learning tools skills",
+              "explanation": "This activity focuses on Animal Chunky Book within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Animal Chunky Book",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Chunky Board Books"
+              }
+            },
+            {
+              "topicNumber": 25,
+              "topic": "Everyday Object Board Book",
+              "objective": "Engage in Everyday Object Board Book activities to develop learning tools skills",
+              "explanation": "This activity focuses on Everyday Object Board Book within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Everyday Object Board Book",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Chunky Board Books"
+              }
+            },
+            {
+              "topicNumber": 26,
+              "topic": "Fridge Letter Fun",
+              "objective": "Engage in Fridge Letter Fun activities to develop learning tools skills",
+              "explanation": "This activity focuses on Fridge Letter Fun within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Fridge Letter Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Magnetic Alphabets"
+              }
+            },
+            {
+              "topicNumber": 27,
+              "topic": "Alphabet Match Game",
+              "objective": "Engage in Alphabet Match Game activities to develop learning tools skills",
+              "explanation": "This activity focuses on Alphabet Match Game within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Alphabet Match Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Magnetic Alphabets"
+              }
+            },
+            {
+              "topicNumber": 28,
+              "topic": "Letter Sorting Activity",
+              "objective": "Engage in Letter Sorting Activity activities to develop learning tools skills",
+              "explanation": "This activity focuses on Letter Sorting Activity within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Letter Sorting Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Magnetic Alphabets"
+              }
+            },
+            {
+              "topicNumber": 29,
+              "topic": "Word Formation Play",
+              "objective": "Engage in Word Formation Play activities to develop learning tools skills",
+              "explanation": "This activity focuses on Word Formation Play within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Word Formation Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Magnetic Alphabets"
+              }
+            },
+            {
+              "topicNumber": 30,
+              "topic": "Alphabet Puzzle Fun",
+              "objective": "Engage in Alphabet Puzzle Fun activities to develop learning tools skills",
+              "explanation": "This activity focuses on Alphabet Puzzle Fun within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Alphabet Puzzle Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Magnetic Alphabets"
+              }
+            },
+            {
+              "topicNumber": 31,
+              "topic": "Color & Shape Cards",
+              "objective": "Engage in Color & Shape Cards activities to develop learning tools skills",
+              "explanation": "This activity focuses on Color & Shape Cards within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Color & Shape Cards",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Flashcard Matching Games"
+              }
+            },
+            {
+              "topicNumber": 32,
+              "topic": "Animal Flash Match",
+              "objective": "Engage in Animal Flash Match activities to develop learning tools skills",
+              "explanation": "This activity focuses on Animal Flash Match within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Animal Flash Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Flashcard Matching Games"
+              }
+            },
+            {
+              "topicNumber": 33,
+              "topic": "Everyday Objects Cards",
+              "objective": "Engage in Everyday Objects Cards activities to develop learning tools skills",
+              "explanation": "This activity focuses on Everyday Objects Cards within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Everyday Objects Cards",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Flashcard Matching Games"
+              }
+            },
+            {
+              "topicNumber": 34,
+              "topic": "Number Flash Game",
+              "objective": "Engage in Number Flash Game activities to develop learning tools skills",
+              "explanation": "This activity focuses on Number Flash Game within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Number Flash Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Flashcard Matching Games"
+              }
+            },
+            {
+              "topicNumber": 35,
+              "topic": "Opposite Cards Game",
+              "objective": "Engage in Opposite Cards Game activities to develop learning tools skills",
+              "explanation": "This activity focuses on Opposite Cards Game within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Opposite Cards Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Flashcard Matching Games"
+              }
+            },
+            {
+              "topicNumber": 36,
+              "topic": "Tablet Learning Game",
+              "objective": "Engage in Tablet Learning Game activities to develop learning tools skills",
+              "explanation": "This activity focuses on Tablet Learning Game within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Tablet Learning Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Touch-Screen Learning Toys"
+              }
+            },
+            {
+              "topicNumber": 37,
+              "topic": "Interactive App Fun",
+              "objective": "Engage in Interactive App Fun activities to develop learning tools skills",
+              "explanation": "This activity focuses on Interactive App Fun within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Interactive App Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Touch-Screen Learning Toys"
+              }
+            },
+            {
+              "topicNumber": 38,
+              "topic": "Baby Puzzle App",
+              "objective": "Engage in Baby Puzzle App activities to develop learning tools skills",
+              "explanation": "This activity focuses on Baby Puzzle App within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Baby Puzzle App",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Touch-Screen Learning Toys"
+              }
+            },
+            {
+              "topicNumber": 39,
+              "topic": "Color & Sound Game",
+              "objective": "Engage in Color & Sound Game activities to develop learning tools skills",
+              "explanation": "This activity focuses on Color & Sound Game within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Color & Sound Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Touch-Screen Learning Toys"
+              }
+            },
+            {
+              "topicNumber": 40,
+              "topic": "Shape Matching App",
+              "objective": "Engage in Shape Matching App activities to develop learning tools skills",
+              "explanation": "This activity focuses on Shape Matching App within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Shape Matching App",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Touch-Screen Learning Toys"
+              }
+            },
+            {
+              "topicNumber": 41,
+              "topic": "Beginner Puzzle Book",
+              "objective": "Engage in Beginner Puzzle Book activities to develop learning tools skills",
+              "explanation": "This activity focuses on Beginner Puzzle Book within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Beginner Puzzle Book",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Puzzle & Activity Books"
+              }
+            },
+            {
+              "topicNumber": 42,
+              "topic": "Dot-to-Dot Fun",
+              "objective": "Engage in Dot-to-Dot Fun activities to develop learning tools skills",
+              "explanation": "This activity focuses on Dot-to-Dot Fun within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Dot-to-Dot Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Puzzle & Activity Books"
+              }
+            },
+            {
+              "topicNumber": 43,
+              "topic": "Maze Challenge Book",
+              "objective": "Engage in Maze Challenge Book activities to develop learning tools skills",
+              "explanation": "This activity focuses on Maze Challenge Book within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Maze Challenge Book",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Puzzle & Activity Books"
+              }
+            },
+            {
+              "topicNumber": 44,
+              "topic": "Picture Puzzle Book",
+              "objective": "Engage in Picture Puzzle Book activities to develop learning tools skills",
+              "explanation": "This activity focuses on Picture Puzzle Book within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Picture Puzzle Book",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Puzzle & Activity Books"
+              }
+            },
+            {
+              "topicNumber": 45,
+              "topic": "Sticker Activity Book",
+              "objective": "Engage in Sticker Activity Book activities to develop learning tools skills",
+              "explanation": "This activity focuses on Sticker Activity Book within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Sticker Activity Book",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Puzzle & Activity Books"
+              }
+            },
+            {
+              "topicNumber": 46,
+              "topic": "Letter & Number App",
+              "objective": "Engage in Letter & Number App activities to develop learning tools skills",
+              "explanation": "This activity focuses on Letter & Number App within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Letter & Number App",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Beginner Educational Apps"
+              }
+            },
+            {
+              "topicNumber": 47,
+              "topic": "Interactive Learning App",
+              "objective": "Engage in Interactive Learning App activities to develop learning tools skills",
+              "explanation": "This activity focuses on Interactive Learning App within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Interactive Learning App",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Beginner Educational Apps"
+              }
+            },
+            {
+              "topicNumber": 48,
+              "topic": "Color & Shape App",
+              "objective": "Engage in Color & Shape App activities to develop learning tools skills",
+              "explanation": "This activity focuses on Color & Shape App within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Color & Shape App",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Beginner Educational Apps"
+              }
+            },
+            {
+              "topicNumber": 49,
+              "topic": "Animal Sounds App",
+              "objective": "Engage in Animal Sounds App activities to develop learning tools skills",
+              "explanation": "This activity focuses on Animal Sounds App within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Animal Sounds App",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Beginner Educational Apps"
+              }
+            },
+            {
+              "topicNumber": 50,
+              "topic": "Mini Math Game App",
+              "objective": "Engage in Mini Math Game App activities to develop learning tools skills",
+              "explanation": "This activity focuses on Mini Math Game App within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Mini Math Game App",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Beginner Educational Apps"
+              }
+            },
+            {
+              "topicNumber": 51,
+              "topic": "Illustrated Word Book",
+              "objective": "Engage in Illustrated Word Book activities to develop learning tools skills",
+              "explanation": "This activity focuses on Illustrated Word Book within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Illustrated Word Book",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Picture Dictionaries"
+              }
+            },
+            {
+              "topicNumber": 52,
+              "topic": "Animal Picture Dictionary",
+              "objective": "Engage in Animal Picture Dictionary activities to develop learning tools skills",
+              "explanation": "This activity focuses on Animal Picture Dictionary within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Animal Picture Dictionary",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Picture Dictionaries"
+              }
+            },
+            {
+              "topicNumber": 53,
+              "topic": "Everyday Object Dictionary",
+              "objective": "Engage in Everyday Object Dictionary activities to develop learning tools skills",
+              "explanation": "This activity focuses on Everyday Object Dictionary within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Everyday Object Dictionary",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Picture Dictionaries"
+              }
+            },
+            {
+              "topicNumber": 54,
+              "topic": "Shape & Color Dictionary",
+              "objective": "Engage in Shape & Color Dictionary activities to develop learning tools skills",
+              "explanation": "This activity focuses on Shape & Color Dictionary within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Shape & Color Dictionary",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Picture Dictionaries"
+              }
+            },
+            {
+              "topicNumber": 55,
+              "topic": "Food & Object Dictionary",
+              "objective": "Engage in Food & Object Dictionary activities to develop learning tools skills",
+              "explanation": "This activity focuses on Food & Object Dictionary within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Food & Object Dictionary",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Picture Dictionaries"
+              }
+            },
+            {
+              "topicNumber": 56,
+              "topic": "Listen & Learn Story",
+              "objective": "Engage in Listen & Learn Story activities to develop learning tools skills",
+              "explanation": "This activity focuses on Listen & Learn Story within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Listen & Learn Story",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Audio Story Devices"
+              }
+            },
+            {
+              "topicNumber": 57,
+              "topic": "Musical Story Player",
+              "objective": "Engage in Musical Story Player activities to develop learning tools skills",
+              "explanation": "This activity focuses on Musical Story Player within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Musical Story Player",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Audio Story Devices"
+              }
+            },
+            {
+              "topicNumber": 58,
+              "topic": "Talking Story Device",
+              "objective": "Engage in Talking Story Device activities to develop learning tools skills",
+              "explanation": "This activity focuses on Talking Story Device within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Talking Story Device",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Audio Story Devices"
+              }
+            },
+            {
+              "topicNumber": 59,
+              "topic": "Story Sound Box",
+              "objective": "Engage in Story Sound Box activities to develop learning tools skills",
+              "explanation": "This activity focuses on Story Sound Box within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Story Sound Box",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Audio Story Devices"
+              }
+            },
+            {
+              "topicNumber": 60,
+              "topic": "Audio Puppet Tales",
+              "objective": "Engage in Audio Puppet Tales activities to develop learning tools skills",
+              "explanation": "This activity focuses on Audio Puppet Tales within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Audio Puppet Tales",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Audio Story Devices"
+              }
+            },
+            {
+              "topicNumber": 61,
+              "topic": "Activity Workbook Challenge",
+              "objective": "Engage in Activity Workbook Challenge activities to develop learning tools skills",
+              "explanation": "This activity focuses on Activity Workbook Challenge within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Activity Workbook Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Workbooks with Activities"
+              }
+            },
+            {
+              "topicNumber": 62,
+              "topic": "Math & Logic Workbook",
+              "objective": "Engage in Math & Logic Workbook activities to develop learning tools skills",
+              "explanation": "This activity focuses on Math & Logic Workbook within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Math & Logic Workbook",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Workbooks with Activities"
+              }
+            },
+            {
+              "topicNumber": 63,
+              "topic": "Creative Writing Workbook",
+              "objective": "Engage in Creative Writing Workbook activities to develop learning tools skills",
+              "explanation": "This activity focuses on Creative Writing Workbook within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Creative Writing Workbook",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Workbooks with Activities"
+              }
+            },
+            {
+              "topicNumber": 64,
+              "topic": "Puzzle & Game Workbook",
+              "objective": "Engage in Puzzle & Game Workbook activities to develop learning tools skills",
+              "explanation": "This activity focuses on Puzzle & Game Workbook within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Puzzle & Game Workbook",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Workbooks with Activities"
+              }
+            },
+            {
+              "topicNumber": 65,
+              "topic": "Science Activity Workbook",
+              "objective": "Engage in Science Activity Workbook activities to develop learning tools skills",
+              "explanation": "This activity focuses on Science Activity Workbook within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Science Activity Workbook",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Workbooks with Activities"
+              }
+            },
+            {
+              "topicNumber": 66,
+              "topic": "Story Reader Fun",
+              "objective": "Engage in Story Reader Fun activities to develop learning tools skills",
+              "explanation": "This activity focuses on Story Reader Fun within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Story Reader Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Interactive e-Readers"
+              }
+            },
+            {
+              "topicNumber": 67,
+              "topic": "Digital Story Adventure",
+              "objective": "Engage in Digital Story Adventure activities to develop learning tools skills",
+              "explanation": "This activity focuses on Digital Story Adventure within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Digital Story Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Interactive e-Readers"
+              }
+            },
+            {
+              "topicNumber": 68,
+              "topic": "Read-Aloud Device",
+              "objective": "Engage in Read-Aloud Device activities to develop learning tools skills",
+              "explanation": "This activity focuses on Read-Aloud Device within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Read-Aloud Device",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Interactive e-Readers"
+              }
+            },
+            {
+              "topicNumber": 69,
+              "topic": "eBook Exploration Game",
+              "objective": "Engage in eBook Exploration Game activities to develop learning tools skills",
+              "explanation": "This activity focuses on eBook Exploration Game within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "eBook Exploration Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Interactive e-Readers"
+              }
+            },
+            {
+              "topicNumber": 70,
+              "topic": "Interactive Story Challenge",
+              "objective": "Engage in Interactive Story Challenge activities to develop learning tools skills",
+              "explanation": "This activity focuses on Interactive Story Challenge within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Interactive Story Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Interactive e-Readers"
+              }
+            },
+            {
+              "topicNumber": 71,
+              "topic": "Math Puzzle Race",
+              "objective": "Engage in Math Puzzle Race activities to develop learning tools skills",
+              "explanation": "This activity focuses on Math Puzzle Race within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Math Puzzle Race",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Math & Spelling Games"
+              }
+            },
+            {
+              "topicNumber": 72,
+              "topic": "Word Scramble Challenge",
+              "objective": "Engage in Word Scramble Challenge activities to develop learning tools skills",
+              "explanation": "This activity focuses on Word Scramble Challenge within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Word Scramble Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Math & Spelling Games"
+              }
+            },
+            {
+              "topicNumber": 73,
+              "topic": "Spelling Bee Game",
+              "objective": "Engage in Spelling Bee Game activities to develop learning tools skills",
+              "explanation": "This activity focuses on Spelling Bee Game within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Spelling Bee Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Math & Spelling Games"
+              }
+            },
+            {
+              "topicNumber": 74,
+              "topic": "Number Match Game",
+              "objective": "Engage in Number Match Game activities to develop learning tools skills",
+              "explanation": "This activity focuses on Number Match Game within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Number Match Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Math & Spelling Games"
+              }
+            },
+            {
+              "topicNumber": 75,
+              "topic": "Addition & Subtraction Fun",
+              "objective": "Engage in Addition & Subtraction Fun activities to develop learning tools skills",
+              "explanation": "This activity focuses on Addition & Subtraction Fun within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Addition & Subtraction Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Math & Spelling Games"
+              }
+            },
+            {
+              "topicNumber": 76,
+              "topic": "Tablet Puzzle Adventure",
+              "objective": "Engage in Tablet Puzzle Adventure activities to develop learning tools skills",
+              "explanation": "This activity focuses on Tablet Puzzle Adventure within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Tablet Puzzle Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Learning Tablets"
+              }
+            },
+            {
+              "topicNumber": 77,
+              "topic": "Interactive Learning Tablet",
+              "objective": "Engage in Interactive Learning Tablet activities to develop learning tools skills",
+              "explanation": "This activity focuses on Interactive Learning Tablet within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Interactive Learning Tablet",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Learning Tablets"
+              }
+            },
+            {
+              "topicNumber": 78,
+              "topic": "Story & Quiz Tablet",
+              "objective": "Engage in Story & Quiz Tablet activities to develop learning tools skills",
+              "explanation": "This activity focuses on Story & Quiz Tablet within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Story & Quiz Tablet",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Learning Tablets"
+              }
+            },
+            {
+              "topicNumber": 79,
+              "topic": "Shape & Number Tablet",
+              "objective": "Engage in Shape & Number Tablet activities to develop learning tools skills",
+              "explanation": "This activity focuses on Shape & Number Tablet within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Shape & Number Tablet",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Learning Tablets"
+              }
+            },
+            {
+              "topicNumber": 80,
+              "topic": "Reading Adventure Tablet",
+              "objective": "Engage in Reading Adventure Tablet activities to develop learning tools skills",
+              "explanation": "This activity focuses on Reading Adventure Tablet within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Reading Adventure Tablet",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Learning Tablets"
+              }
+            },
+            {
+              "topicNumber": 81,
+              "topic": "DIY Engineering Kit",
+              "objective": "Engage in DIY Engineering Kit activities to develop learning tools skills",
+              "explanation": "This activity focuses on DIY Engineering Kit within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "DIY Engineering Kit",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Project-Based Learning Kits"
+              }
+            },
+            {
+              "topicNumber": 82,
+              "topic": "Mini Robotics Kit",
+              "objective": "Engage in Mini Robotics Kit activities to develop learning tools skills",
+              "explanation": "This activity focuses on Mini Robotics Kit within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mini Robotics Kit",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Project-Based Learning Kits"
+              }
+            },
+            {
+              "topicNumber": 83,
+              "topic": "Science Lab Kit",
+              "objective": "Engage in Science Lab Kit activities to develop learning tools skills",
+              "explanation": "This activity focuses on Science Lab Kit within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Science Lab Kit",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Project-Based Learning Kits"
+              }
+            },
+            {
+              "topicNumber": 84,
+              "topic": "Coding Project Kit",
+              "objective": "Engage in Coding Project Kit activities to develop learning tools skills",
+              "explanation": "This activity focuses on Coding Project Kit within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Coding Project Kit",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Project-Based Learning Kits"
+              }
+            },
+            {
+              "topicNumber": 85,
+              "topic": "Creative Maker Kit",
+              "objective": "Engage in Creative Maker Kit activities to develop learning tools skills",
+              "explanation": "This activity focuses on Creative Maker Kit within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Creative Maker Kit",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Project-Based Learning Kits"
+              }
+            },
+            {
+              "topicNumber": 86,
+              "topic": "Beginner Coding App",
+              "objective": "Engage in Beginner Coding App activities to develop learning tools skills",
+              "explanation": "This activity focuses on Beginner Coding App within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Beginner Coding App",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Coding for Kids Tools"
+              }
+            },
+            {
+              "topicNumber": 87,
+              "topic": "Scratch Project Fun",
+              "objective": "Engage in Scratch Project Fun activities to develop learning tools skills",
+              "explanation": "This activity focuses on Scratch Project Fun within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Scratch Project Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Coding for Kids Tools"
+              }
+            },
+            {
+              "topicNumber": 88,
+              "topic": "Coding Game Challenge",
+              "objective": "Engage in Coding Game Challenge activities to develop learning tools skills",
+              "explanation": "This activity focuses on Coding Game Challenge within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Coding Game Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Coding for Kids Tools"
+              }
+            },
+            {
+              "topicNumber": 89,
+              "topic": "Learn Coding Puzzle",
+              "objective": "Engage in Learn Coding Puzzle activities to develop learning tools skills",
+              "explanation": "This activity focuses on Learn Coding Puzzle within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Learn Coding Puzzle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Coding for Kids Tools"
+              }
+            },
+            {
+              "topicNumber": 90,
+              "topic": "Mini Coding Project",
+              "objective": "Engage in Mini Coding Project activities to develop learning tools skills",
+              "explanation": "This activity focuses on Mini Coding Project within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mini Coding Project",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Coding for Kids Tools"
+              }
+            },
+            {
+              "topicNumber": 91,
+              "topic": "Research Detective Challenge",
+              "objective": "Engage in Research Detective Challenge activities to develop learning tools skills",
+              "explanation": "This activity focuses on Research Detective Challenge within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Research Detective Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Online Research Tools"
+              }
+            },
+            {
+              "topicNumber": 92,
+              "topic": "Fact Finder Game",
+              "objective": "Engage in Fact Finder Game activities to develop learning tools skills",
+              "explanation": "This activity focuses on Fact Finder Game within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Fact Finder Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Online Research Tools"
+              }
+            },
+            {
+              "topicNumber": 93,
+              "topic": "Internet Treasure Hunt",
+              "objective": "Engage in Internet Treasure Hunt activities to develop learning tools skills",
+              "explanation": "This activity focuses on Internet Treasure Hunt within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Internet Treasure Hunt",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Online Research Tools"
+              }
+            },
+            {
+              "topicNumber": 94,
+              "topic": "Mini Research Project",
+              "objective": "Engage in Mini Research Project activities to develop learning tools skills",
+              "explanation": "This activity focuses on Mini Research Project within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mini Research Project",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Online Research Tools"
+              }
+            },
+            {
+              "topicNumber": 95,
+              "topic": "Knowledge Explorer Game",
+              "objective": "Engage in Knowledge Explorer Game activities to develop learning tools skills",
+              "explanation": "This activity focuses on Knowledge Explorer Game within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Knowledge Explorer Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Online Research Tools"
+              }
+            },
+            {
+              "topicNumber": 96,
+              "topic": "Science Explorer Workbook",
+              "objective": "Engage in Science Explorer Workbook activities to develop learning tools skills",
+              "explanation": "This activity focuses on Science Explorer Workbook within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Science Explorer Workbook",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Subject-specific Activity Books"
+              }
+            },
+            {
+              "topicNumber": 97,
+              "topic": "History Adventure Workbook",
+              "objective": "Engage in History Adventure Workbook activities to develop learning tools skills",
+              "explanation": "This activity focuses on History Adventure Workbook within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "History Adventure Workbook",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Subject-specific Activity Books"
+              }
+            },
+            {
+              "topicNumber": 98,
+              "topic": "Geography Activity Book",
+              "objective": "Engage in Geography Activity Book activities to develop learning tools skills",
+              "explanation": "This activity focuses on Geography Activity Book within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Geography Activity Book",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Subject-specific Activity Books"
+              }
+            },
+            {
+              "topicNumber": 99,
+              "topic": "Math Explorer Workbook",
+              "objective": "Engage in Math Explorer Workbook activities to develop learning tools skills",
+              "explanation": "This activity focuses on Math Explorer Workbook within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Math Explorer Workbook",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Subject-specific Activity Books"
+              }
+            },
+            {
+              "topicNumber": 100,
+              "topic": "Language Fun Workbook",
+              "objective": "Engage in Language Fun Workbook activities to develop learning tools skills",
+              "explanation": "This activity focuses on Language Fun Workbook within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Language Fun Workbook",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Subject-specific Activity Books"
+              }
+            },
+            {
+              "topicNumber": 101,
+              "topic": "Daily Study Planner",
+              "objective": "Engage in Daily Study Planner activities to develop learning tools skills",
+              "explanation": "This activity focuses on Daily Study Planner within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Daily Study Planner",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Study Planning Tools"
+              }
+            },
+            {
+              "topicNumber": 102,
+              "topic": "Goal Setting Journal",
+              "objective": "Engage in Goal Setting Journal activities to develop learning tools skills",
+              "explanation": "This activity focuses on Goal Setting Journal within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Goal Setting Journal",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Study Planning Tools"
+              }
+            },
+            {
+              "topicNumber": 103,
+              "topic": "Exam Prep Organizer",
+              "objective": "Engage in Exam Prep Organizer activities to develop learning tools skills",
+              "explanation": "This activity focuses on Exam Prep Organizer within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Exam Prep Organizer",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Study Planning Tools"
+              }
+            },
+            {
+              "topicNumber": 104,
+              "topic": "Weekly Study Tracker",
+              "objective": "Engage in Weekly Study Tracker activities to develop learning tools skills",
+              "explanation": "This activity focuses on Weekly Study Tracker within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Weekly Study Tracker",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Study Planning Tools"
+              }
+            },
+            {
+              "topicNumber": 105,
+              "topic": "Study Routine Planner",
+              "objective": "Engage in Study Routine Planner activities to develop learning tools skills",
+              "explanation": "This activity focuses on Study Routine Planner within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Study Routine Planner",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Study Planning Tools"
+              }
+            },
+            {
+              "topicNumber": 106,
+              "topic": "Coding Skills Course",
+              "objective": "Engage in Coding Skills Course activities to develop learning tools skills",
+              "explanation": "This activity focuses on Coding Skills Course within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Coding Skills Course",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Skill-based Digital Courses"
+              }
+            },
+            {
+              "topicNumber": 107,
+              "topic": "Digital Art Workshop",
+              "objective": "Engage in Digital Art Workshop activities to develop learning tools skills",
+              "explanation": "This activity focuses on Digital Art Workshop within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Digital Art Workshop",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Skill-based Digital Courses"
+              }
+            },
+            {
+              "topicNumber": 108,
+              "topic": "Language Learning App",
+              "objective": "Engage in Language Learning App activities to develop learning tools skills",
+              "explanation": "This activity focuses on Language Learning App within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Language Learning App",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Skill-based Digital Courses"
+              }
+            },
+            {
+              "topicNumber": 109,
+              "topic": "Music Production Tutorial",
+              "objective": "Engage in Music Production Tutorial activities to develop learning tools skills",
+              "explanation": "This activity focuses on Music Production Tutorial within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Music Production Tutorial",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Skill-based Digital Courses"
+              }
+            },
+            {
+              "topicNumber": 110,
+              "topic": "Video Editing Class",
+              "objective": "Engage in Video Editing Class activities to develop learning tools skills",
+              "explanation": "This activity focuses on Video Editing Class within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Video Editing Class",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Skill-based Digital Courses"
+              }
+            },
+            {
+              "topicNumber": 111,
+              "topic": "Personal Portfolio Project",
+              "objective": "Engage in Personal Portfolio Project activities to develop learning tools skills",
+              "explanation": "This activity focuses on Personal Portfolio Project within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Personal Portfolio Project",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Learning Portfolios"
+              }
+            },
+            {
+              "topicNumber": 112,
+              "topic": "Digital Showcase Portfolio",
+              "objective": "Engage in Digital Showcase Portfolio activities to develop learning tools skills",
+              "explanation": "This activity focuses on Digital Showcase Portfolio within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Digital Showcase Portfolio",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Learning Portfolios"
+              }
+            },
+            {
+              "topicNumber": 113,
+              "topic": "Skill Progress Portfolio",
+              "objective": "Engage in Skill Progress Portfolio activities to develop learning tools skills",
+              "explanation": "This activity focuses on Skill Progress Portfolio within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Skill Progress Portfolio",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Learning Portfolios"
+              }
+            },
+            {
+              "topicNumber": 114,
+              "topic": "Project Collection Portfolio",
+              "objective": "Engage in Project Collection Portfolio activities to develop learning tools skills",
+              "explanation": "This activity focuses on Project Collection Portfolio within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Project Collection Portfolio",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Learning Portfolios"
+              }
+            },
+            {
+              "topicNumber": 115,
+              "topic": "Creative Work Portfolio",
+              "objective": "Engage in Creative Work Portfolio activities to develop learning tools skills",
+              "explanation": "This activity focuses on Creative Work Portfolio within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Creative Work Portfolio",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Learning Portfolios"
+              }
+            },
+            {
+              "topicNumber": 116,
+              "topic": "Listen & Summarize Podcast",
+              "objective": "Engage in Listen & Summarize Podcast activities to develop learning tools skills",
+              "explanation": "This activity focuses on Listen & Summarize Podcast within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Listen & Summarize Podcast",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Educational Podcast & Note Apps"
+              }
+            },
+            {
+              "topicNumber": 117,
+              "topic": "Note-Taking Challenge",
+              "objective": "Engage in Note-Taking Challenge activities to develop learning tools skills",
+              "explanation": "This activity focuses on Note-Taking Challenge within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Note-Taking Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Educational Podcast & Note Apps"
+              }
+            },
+            {
+              "topicNumber": 118,
+              "topic": "Podcast Reflection Activity",
+              "objective": "Engage in Podcast Reflection Activity activities to develop learning tools skills",
+              "explanation": "This activity focuses on Podcast Reflection Activity within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Podcast Reflection Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Educational Podcast & Note Apps"
+              }
+            },
+            {
+              "topicNumber": 119,
+              "topic": "Learning App Notes",
+              "objective": "Engage in Learning App Notes activities to develop learning tools skills",
+              "explanation": "This activity focuses on Learning App Notes within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Learning App Notes",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Educational Podcast & Note Apps"
+              }
+            },
+            {
+              "topicNumber": 120,
+              "topic": "Audio Learning Journal",
+              "objective": "Engage in Audio Learning Journal activities to develop learning tools skills",
+              "explanation": "This activity focuses on Audio Learning Journal within the Learning Tools pillar.",
+              "hashtags": [
+                "#LearningTools",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Audio Learning Journal",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Learning Tools"
+                ],
+                "category": "Educational Podcast & Note Apps"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totalActivities": 120,
+  "lastUpdated": "2025-10-12T01:20:25.334094"
 }

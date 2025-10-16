@@ -21,23 +21,23 @@ const DataProtection = () => {
       <Navbar />
       <Container maxWidth="md" sx={{ py: 4 }}>
         <Paper elevation={3} sx={{ p: 4 }}>
-          <Typography variant="h3" component="h1" gutterBottom align="center" color="primary">
+          <Typography  component="h1" gutterBottom align="center" color="primary">
             Data Protection Rights
           </Typography>
           
-          <Typography variant="body2" color="text.secondary" align="center" sx={{ mb: 4 }}>
+          <Typography  color="text.secondary" align="center" sx={{ mb: 4 }}>
             Exercise your data protection rights under GDPR
           </Typography>
 
           <Alert severity="info" sx={{ mb: 4 }}>
-            <Typography variant="body2">
+            <Typography >
               Under the General Data Protection Regulation (GDPR), you have several rights regarding your personal data. 
               Use the form below to exercise these rights.
             </Typography>
           </Alert>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               Your Data Protection Rights
             </Typography>
             
@@ -45,9 +45,9 @@ const DataProtection = () => {
               <Paper sx={{ p: 2, border: '1px solid #e0e0e0' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                   <Download color="primary" sx={{ mr: 1 }} />
-                  <Typography variant="h6">Right to Access</Typography>
+                  <Typography >Right to Access</Typography>
                 </Box>
-                <Typography variant="body2" color="text.secondary">
+                <Typography  color="text.secondary">
                   Request a copy of all personal data we hold about you in a structured, machine-readable format.
                 </Typography>
               </Paper>
@@ -55,9 +55,9 @@ const DataProtection = () => {
               <Paper sx={{ p: 2, border: '1px solid #e0e0e0' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                   <Email color="primary" sx={{ mr: 1 }} />
-                  <Typography variant="h6">Right to Rectification</Typography>
+                  <Typography >Right to Rectification</Typography>
                 </Box>
-                <Typography variant="body2" color="text.secondary">
+                <Typography  color="text.secondary">
                   Request correction of inaccurate or incomplete personal data.
                 </Typography>
               </Paper>
@@ -65,9 +65,9 @@ const DataProtection = () => {
               <Paper sx={{ p: 2, border: '1px solid #e0e0e0' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                   <Delete color="primary" sx={{ mr: 1 }} />
-                  <Typography variant="h6">Right to Erasure</Typography>
+                  <Typography >Right to Erasure</Typography>
                 </Box>
-                <Typography variant="body2" color="text.secondary">
+                <Typography  color="text.secondary">
                   Request deletion of your personal data ("right to be forgotten").
                 </Typography>
               </Paper>
@@ -75,9 +75,9 @@ const DataProtection = () => {
               <Paper sx={{ p: 2, border: '1px solid #e0e0e0' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                   <Security color="primary" sx={{ mr: 1 }} />
-                  <Typography variant="h6">Right to Restrict Processing</Typography>
+                  <Typography >Right to Restrict Processing</Typography>
                 </Box>
-                <Typography variant="body2" color="text.secondary">
+                <Typography  color="text.secondary">
                   Request limitation of processing of your personal data in certain circumstances.
                 </Typography>
               </Paper>
@@ -85,13 +85,13 @@ const DataProtection = () => {
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               Submit a Data Protection Request
             </Typography>
             
             {isSubmitted ? (
               <Alert severity="success" sx={{ mb: 3 }}>
-                <Typography variant="body1">
+                <Typography >
                   Your data protection request has been submitted successfully. 
                   We will process your request within 30 days and contact you at the provided email address.
                 </Typography>
@@ -139,7 +139,7 @@ const DataProtection = () => {
 
                   <Button
                     type="submit"
-                    variant="contained"
+                    
                     size="large"
                     fullWidth
                   >
@@ -151,20 +151,20 @@ const DataProtection = () => {
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               Processing Timeline
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               We will process your data protection request within 30 days of receipt. For complex requests, 
               we may extend this period by up to 2 months and will notify you of the extension.
             </Typography>
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               Verification Process
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               To protect your privacy, we may need to verify your identity before processing your request. 
               This may involve:
             </Typography>
@@ -176,13 +176,13 @@ const DataProtection = () => {
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               Contact Information
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               For questions about data protection or to submit requests via email:
             </Typography>
-            <Typography variant="body1">
+            <Typography >
               Data Protection Officer: dpo@unschooling.in<br />
               General Inquiries: privacy@unschooling.in<br />
               Phone: +91-XXXX-XXXX

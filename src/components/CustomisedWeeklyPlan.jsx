@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { db, auth } from '../firebase';
-import { doc, getDoc, collection, getDocs, query, orderBy, updateDoc } from 'firebase/firestore';
+import { doc, getDoc, collection, getDocs, query, orderBy, updateDoc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { useAuth } from '../contexts/AuthContext';
 import { useLocation, useNavigate } from 'react-router-dom';
 import config from '../config/config';
+import MinimalBackButton from './ui/MinimalBackButton';
 
 const CustomisedWeeklyPlan = () => {
   const { currentUser: user, loading: authLoading, error: authError } = useAuth();
@@ -84,51 +85,78 @@ const CustomisedWeeklyPlan = () => {
     }
   };
 
-  // Load plans for specific child
+  // Load plans for specific child (UPDATED: reads from subcollection)
   const loadPlansForChild = async (childId) => {
     try {
       setLoading(true);
-      const childRef = doc(db, `users/${user.uid}/children`, childId);
-      const childSnap = await getDoc(childRef);
+      console.log('📂 Loading plans for child:', childId);
       
-      if (childSnap.exists()) {
-        const childData = childSnap.data();
-        const existingPlans = childData.plans || {};
-        setPlans(existingPlans);
-        
-        if (Object.keys(existingPlans).length === 0) {
-          // No plans exist, generate new one
-          generateNewPlan(childData);
-        } else {
-          // Set the first available month as selected
-          const months = Object.keys(existingPlans);
-          if (months.length > 0) {
-            setSelectedMonth(months[0]);
-            setCurrentPlan(existingPlans[months[0]]);
-          }
+      // Read plans from subcollection (not nested object)
+      const plansRef = collection(db, `users/${user.uid}/children/${childId}/plans`);
+      const plansQuery = query(plansRef, orderBy('created_at', 'desc'));
+      const plansSnapshot = await getDocs(plansQuery);
+      
+      console.log('📊 Found plans:', plansSnapshot.size);
+      
+      const existingPlans = {};
+      plansSnapshot.forEach((planDoc) => {
+        const planData = planDoc.data();
+        // Use month field or create one from created_at
+        const monthKey = planData.month || (
+          planData.created_at 
+            ? new Date(planData.created_at.toDate()).toLocaleString('default', { month: 'long', year: 'numeric' })
+            : 'Latest Plan'
+        );
+        existingPlans[monthKey] = {
+          ...planData,
+          planId: planDoc.id // Store the document ID
+        };
+      });
+      
+      setPlans(existingPlans);
+      
+      if (Object.keys(existingPlans).length === 0) {
+        console.log('⚠️ No plans found, need to generate one');
+        // Get child data for generation
+        const childRef = doc(db, `users/${user.uid}/children`, childId);
+        const childSnap = await getDoc(childRef);
+        if (childSnap.exists()) {
+          generateNewPlan(childSnap.data());
+        }
+      } else {
+        console.log('✅ Loaded plans:', Object.keys(existingPlans));
+        // Set the first available month as selected
+        const months = Object.keys(existingPlans);
+        if (months.length > 0) {
+          setSelectedMonth(months[0]);
+          setCurrentPlan(existingPlans[months[0]]);
         }
       }
     } catch (error) {
       console.error('❌ Error loading plans:', error);
-      setError('Failed to load plans');
+      setError('Failed to load plans: ' + error.message);
     } finally {
       setLoading(false);
     }
   };
 
-  // Generate new plan
+  // Generate new plan (UPDATED: saves to subcollection)
   const generateNewPlan = async (childData) => {
     try {
       setGeneratingPlan(true);
       setError('');
       
       const profileData = {
+        userId: user.uid,
+        childId: selectedChild,
         child_name: childData.name || childData.child_name || 'Child',
         child_age: childData.age || childData.child_age || 5,
         interests: childData.interests || [],
-        preferred_learning_style: 'mixed',
-        plan_type: 'hybrid'
+        preferred_learning_style: childData.preferred_learning_style || 'mixed',
+        plan_type: childData.plan_type || 'hybrid'
       };
+      
+      console.log('🚀 Generating plan with profile:', profileData);
       
       const response = await fetch('http://localhost:8000/api/generate-plan', {
         method: 'POST',
@@ -144,17 +172,31 @@ const CustomisedWeeklyPlan = () => {
         const result = await response.json();
         
         if (result.success && result.data) {
-          const currentMonth = new Date().toLocaleString('default', { month: 'long' }) + ' ' + new Date().getFullYear();
-          const newPlans = {
-            ...plans,
-            [currentMonth]: result.data
+          const currentMonth = new Date().toLocaleString('default', { month: 'long', year: 'numeric' });
+          
+          console.log('✅ Plan generated successfully');
+          
+          // Save to subcollection (NOT nested in child document)
+          const planRef = doc(collection(db, `users/${user.uid}/children/${selectedChild}/plans`));
+          const planDocument = {
+            ...result.data,
+            month: currentMonth,
+            status: 'active',
+            created_at: serverTimestamp(),
+            updated_at: serverTimestamp()
           };
           
-          // Save to Firebase
-          const childRef = doc(db, `users/${user.uid}/children`, selectedChild);
-          await updateDoc(childRef, {
-            plans: newPlans
-          });
+          await setDoc(planRef, planDocument);
+          console.log('💾 Plan saved to subcollection:', planRef.id);
+          
+          // Update local state
+          const newPlans = {
+            ...plans,
+            [currentMonth]: {
+              ...result.data,
+              planId: planRef.id
+            }
+          };
           
           setPlans(newPlans);
           setSelectedMonth(currentMonth);
@@ -186,7 +228,14 @@ const CustomisedWeeklyPlan = () => {
 
   if (authLoading) {
     return (
-      <div style={{ padding: '20px', textAlign: 'center' }}>
+      <div style={{ padding: '20px', textAlign: 'center', position: 'relative' }}>
+        <MinimalBackButton 
+          heroColors={{
+            backgroundColor: '#ffffff',
+            primaryColor: '#667eea',
+            nicheColor: '#764ba2'
+          }}
+        />
         <div>Loading...</div>
       </div>
     );
@@ -194,7 +243,14 @@ const CustomisedWeeklyPlan = () => {
 
   if (authError) {
     return (
-      <div style={{ padding: '20px', textAlign: 'center', color: 'red' }}>
+      <div style={{ padding: '20px', textAlign: 'center', color: 'red', position: 'relative' }}>
+        <MinimalBackButton 
+          heroColors={{
+            backgroundColor: '#ffffff',
+            primaryColor: '#667eea',
+            nicheColor: '#764ba2'
+          }}
+        />
         <div>Error: {authError.message}</div>
       </div>
     );
@@ -202,7 +258,14 @@ const CustomisedWeeklyPlan = () => {
 
   if (!user) {
     return (
-      <div style={{ padding: '20px', textAlign: 'center' }}>
+      <div style={{ padding: '20px', textAlign: 'center', position: 'relative' }}>
+        <MinimalBackButton 
+          heroColors={{
+            backgroundColor: '#ffffff',
+            primaryColor: '#667eea',
+            nicheColor: '#764ba2'
+          }}
+        />
         <div>Please log in to view your learning plans.</div>
         <button 
           onClick={() => navigate('/login')}
@@ -223,27 +286,15 @@ const CustomisedWeeklyPlan = () => {
   }
 
   return (
-    <div style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto' }}>
-      {/* Back Button */}
-      <button 
-        onClick={() => navigate('/dashboard')}
-        style={{
-          background: '#4CAF50',
-          color: 'white',
-          border: 'none',
-          padding: '12px 24px',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          fontSize: '16px',
-          fontWeight: 'bold',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          marginBottom: '20px'
+    <div style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto', position: 'relative' }}>
+      {/* Back Button - Standard minimal button */}
+      <MinimalBackButton 
+        heroColors={{
+          backgroundColor: '#ffffff',
+          primaryColor: '#667eea',
+          nicheColor: '#764ba2'
         }}
-      >
-        ← Back to Dashboard
-      </button>
+      />
 
       {/* Header */}
       <div style={{
@@ -262,83 +313,6 @@ const CustomisedWeeklyPlan = () => {
         </p>
       </div>
 
-      {/* Debug Info */}
-      <div style={{
-        background: '#e3f2fd',
-        border: '1px solid #2196f3',
-        borderRadius: '8px',
-        padding: '15px',
-        marginBottom: '20px',
-        fontSize: '14px'
-      }}>
-        <h4 style={{ margin: '0 0 10px 0', color: '#1976d2' }}>🔍 Debug Information</h4>
-        <div><strong>Available Children:</strong> {availableChildren.length}</div>
-        <div><strong>Selected Child:</strong> {selectedChild || 'None'}</div>
-        <div><strong>Child Name:</strong> {childName || 'Not set'}</div>
-        <div><strong>Current Plan:</strong> {currentPlan ? 'Loaded' : 'None'}</div>
-        <div><strong>User ID:</strong> {user?.uid || 'Not authenticated'}</div>
-        <div><strong>Firebase DB:</strong> {db ? 'Connected' : 'Not connected'}</div>
-        <div style={{ marginTop: '10px' }}>
-          <button
-            onClick={loadAvailableChildren}
-            style={{
-              background: '#2196f3',
-              color: 'white',
-              border: 'none',
-              padding: '8px 16px',
-              borderRadius: '4px',
-              cursor: 'pointer',
-              marginRight: '10px'
-            }}
-          >
-            🔄 Reload Children
-          </button>
-          <button
-            onClick={() => {
-              console.log('🔍 Manual debug - User:', user);
-              console.log('🔍 Manual debug - DB:', db);
-              console.log('🔍 Manual debug - Available children:', availableChildren);
-            }}
-            style={{
-              background: '#ff9800',
-              color: 'white',
-              border: 'none',
-              padding: '8px 16px',
-              borderRadius: '4px',
-              cursor: 'pointer',
-              marginRight: '10px'
-            }}
-          >
-            🐛 Console Debug
-          </button>
-          <button
-            onClick={() => {
-              console.log('🧪 Creating manual test child...');
-              const testChild = {
-                id: 'manual-test-' + Date.now(),
-                name: 'Manual Test Child',
-                age: 7,
-                interests: ['science', 'art', 'music']
-              };
-              setAvailableChildren([testChild]);
-              setSelectedChild(testChild.id);
-              setChildName(testChild.name);
-              setError('');
-              console.log('✅ Manual test child created:', testChild);
-            }}
-            style={{
-              background: '#4caf50',
-              color: 'white',
-              border: 'none',
-              padding: '8px 16px',
-              borderRadius: '4px',
-              cursor: 'pointer'
-            }}
-          >
-            🧪 Create Test Child
-          </button>
-        </div>
-      </div>
 
       {/* Child Profile Selection */}
       {availableChildren.length > 0 && (
@@ -349,39 +323,71 @@ const CustomisedWeeklyPlan = () => {
           padding: '20px',
           marginBottom: '20px'
         }}>
-          <h3 style={{ margin: '0 0 15px 0', color: '#495057' }}>👶 Select Child Profile</h3>
+          <h4 style={{ margin: '0 0 15px 0', color: '#495057' }}>👶 Select Child Profile</h4>
           <select
             value={selectedChild}
             onChange={(e) => {
               const childId = e.target.value;
-              console.log('🔄 Child selection changed:', childId);
               const child = availableChildren.find(c => c.id === childId);
               if (child) {
-                console.log('👶 Selected child:', child);
                 setSelectedChild(childId);
                 setChildName(child.name);
-                setCurrentPlan(null); // Clear current plan
-                setAgentPerformance(null); // Clear performance data
+                setCurrentPlan(null);
+                setAgentPerformance(null);
                 loadPlansForChild(childId);
               }
             }}
             style={{
               padding: '12px',
               borderRadius: '6px',
-              border: '2px solid #ddd',
+              border: '1px solid #ced4da',
               fontSize: '16px',
               width: '100%',
-              maxWidth: '400px',
-              background: 'white'
+              background: 'white',
+              marginBottom: '20px',
+              cursor: 'pointer'
             }}
           >
-            <option value="">Select a child...</option>
             {availableChildren.map((child) => (
               <option key={child.id} value={child.id}>
                 {child.name} (Age {child.age})
               </option>
             ))}
           </select>
+          
+          {/* Month Selector - Always show when plans exist */}
+          {Object.keys(plans).length > 0 && (
+            <>
+              <h4 style={{ margin: '0 0 10px 0', color: '#495057' }}>📅 Select Month</h4>
+              <select
+                value={selectedMonth}
+                onChange={(e) => {
+                  setSelectedMonth(e.target.value);
+                  setCurrentPlan(plans[e.target.value]);
+                }}
+                style={{
+                  padding: '12px',
+                  borderRadius: '6px',
+                  border: '1px solid #ced4da',
+                  fontSize: '16px',
+                  width: '100%',
+                  background: 'white',
+                  cursor: 'pointer'
+                }}
+              >
+                {Object.keys(plans).sort((a, b) => {
+                  // Sort descending - newest first
+                  const dateA = new Date(a);
+                  const dateB = new Date(b);
+                  return dateB - dateA;
+                }).map(month => (
+                  <option key={month} value={month}>
+                    {month}
+                  </option>
+                ))}
+              </select>
+            </>
+          )}
         </div>
       )}
 
@@ -475,38 +481,8 @@ const CustomisedWeeklyPlan = () => {
       )}
 
       {/* Plans Display */}
-      {Object.keys(plans).length > 0 && (
+      {currentPlan && (
         <div>
-          <h3 style={{ marginBottom: '20px', color: '#333' }}>
-            📅 Learning Plans for {childName}
-          </h3>
-          
-          {/* Month Selection */}
-          {Object.keys(plans).length > 1 && (
-            <div style={{ marginBottom: '20px' }}>
-              <label style={{ display: 'block', marginBottom: '8px', fontWeight: 'bold' }}>
-                Select Month:
-              </label>
-              <select
-                value={selectedMonth}
-                onChange={(e) => setSelectedMonth(e.target.value)}
-                style={{
-                  padding: '10px',
-                  borderRadius: '4px',
-                  border: '1px solid #ccc',
-                  fontSize: '16px',
-                  minWidth: '200px'
-                }}
-              >
-                {Object.keys(plans).map((month) => (
-                  <option key={month} value={month}>{month}</option>
-                ))}
-              </select>
-            </div>
-          )}
-
-          {/* Plan Content */}
-          {currentPlan && (
             <div style={{
               background: 'white',
               border: '1px solid #ddd',
@@ -514,106 +490,98 @@ const CustomisedWeeklyPlan = () => {
               padding: '20px',
               marginBottom: '30px'
             }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+              <div style={{ marginBottom: '20px' }}>
                 <h4 style={{ margin: '0', color: '#333' }}>
-                  📅 {selectedMonth} Learning Plan for {childName}
+                  📅 Learning Plan ({selectedMonth})
                 </h4>
-                <button
-                  onClick={() => {
-                    const childData = availableChildren.find(child => child.id === selectedChild);
-                    if (childData) {
-                      generateNewPlan(childData);
-                    }
-                  }}
-                  style={{
-                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                    color: 'white',
-                    border: 'none',
-                    padding: '10px 20px',
-                    borderRadius: '6px',
-                    cursor: 'pointer',
-                    fontSize: '14px',
-                    fontWeight: '600',
-                    boxShadow: '0 4px 12px rgba(102, 126, 234, 0.3)',
-                    transition: 'all 0.3s ease'
-                  }}
-                  onMouseEnter={(e) => {
-                    e.target.style.transform = 'translateY(-2px)';
-                    e.target.style.boxShadow = '0 6px 16px rgba(102, 126, 234, 0.4)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.target.style.transform = 'translateY(0)';
-                    e.target.style.boxShadow = '0 4px 12px rgba(102, 126, 234, 0.3)';
-                  }}
-                >
-                  🚀 Generate New Plan
-                </button>
               </div>
               
-              {/* Weekly Plan Display */}
+              {/* Weekly Plan Display - Responsive Cards */}
               {currentPlan.weekly_plan && (
                 <div>
                   {Object.entries(currentPlan.weekly_plan).map(([weekKey, weekData]) => (
                     <div key={weekKey} style={{ marginBottom: '30px' }}>
                       <h5 style={{ 
-                        background: '#f8f9fa', 
-                        padding: '10px', 
-                        borderRadius: '6px',
+                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 
+                        color: 'white',
+                        padding: '12px 16px', 
+                        borderRadius: '8px',
                         margin: '0 0 15px 0',
-                        color: '#495057',
-                        textTransform: 'capitalize'
+                        textTransform: 'capitalize',
+                        fontSize: '1.1rem',
+                        fontWeight: '700',
+                        boxShadow: '0 2px 8px rgba(102, 126, 234, 0.2)'
                       }}>
                         {weekKey.replace('_', ' ')} Week
                       </h5>
                       
-                      <div style={{ overflowX: 'auto' }}>
-                        <table style={{
-                          width: '100%',
-                          borderCollapse: 'collapse',
-                          border: '1px solid #ddd',
-                          borderRadius: '6px',
-                          overflow: 'hidden'
-                        }}>
-                          <thead>
-                            <tr style={{ background: '#f8f9fa' }}>
-                              <th style={{ padding: '12px', border: '1px solid #ddd', textAlign: 'left' }}>Day</th>
-                              <th style={{ padding: '12px', border: '1px solid #ddd', textAlign: 'left' }}>Topic</th>
-                              <th style={{ padding: '12px', border: '1px solid #ddd', textAlign: 'left' }}>Activity</th>
-                              <th style={{ padding: '12px', border: '1px solid #ddd', textAlign: 'left' }}>Duration</th>
-                              <th style={{ padding: '12px', border: '1px solid #ddd', textAlign: 'left' }}>Materials</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {Object.entries(weekData).map(([dayKey, dayData]) => (
-                              <tr key={dayKey}>
-                                <td style={{ padding: '12px', border: '1px solid #ddd', fontWeight: 'bold' }}>
-                                  {dayKey.charAt(0).toUpperCase() + dayKey.slice(1)}
-                                </td>
-                                <td style={{ padding: '12px', border: '1px solid #ddd' }}>
-                                  {dayData.topic || 'N/A'}
-                                </td>
-                                <td style={{ padding: '12px', border: '1px solid #ddd', maxWidth: '300px' }}>
-                                  <div style={{ fontSize: '14px' }}>
-                                    {dayData.activity ? (
-                                      typeof dayData.activity === 'string' ? 
-                                        dayData.activity.substring(0, 100) + '...' : 
-                                        'Activity details available'
-                                    ) : 'N/A'}
-                                  </div>
-                                </td>
-                                <td style={{ padding: '12px', border: '1px solid #ddd' }}>
-                                  {dayData.duration || 'N/A'}
-                                </td>
-                                <td style={{ padding: '12px', border: '1px solid #ddd' }}>
-                                  {dayData.materials_needed ? 
-                                    (Array.isArray(dayData.materials_needed) ? 
-                                      dayData.materials_needed.join(', ') : 
-                                      dayData.materials_needed) : 'N/A'}
-                                </td>
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
+                      {/* Mobile-Friendly Card Layout */}
+                      <div style={{ 
+                        display: 'grid',
+                        gap: '15px'
+                      }}>
+                        {Object.entries(weekData).map(([dayKey, dayData]) => (
+                          <div key={dayKey} style={{
+                            background: 'white',
+                            border: '1px solid #e0e0e0',
+                            borderRadius: '10px',
+                            padding: '14px 18px',
+                            boxShadow: '0 1px 4px rgba(0, 0, 0, 0.06)',
+                            transition: 'all 0.2s ease',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            gap: '15px'
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.boxShadow = '0 3px 10px rgba(0, 0, 0, 0.1)';
+                            e.currentTarget.style.transform = 'translateX(4px)';
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.boxShadow = '0 1px 4px rgba(0, 0, 0, 0.06)';
+                            e.currentTarget.style.transform = 'translateX(0)';
+                          }}>
+                            
+                            {/* Day */}
+                            <div style={{
+                              minWidth: '90px',
+                              fontWeight: '700',
+                              color: '#667eea',
+                              fontSize: '0.95rem',
+                              textTransform: 'capitalize'
+                            }}>
+                              {dayKey}
+                            </div>
+                            
+                            {/* Topic Title */}
+                            <div style={{
+                              flex: '1',
+                              fontSize: '1rem',
+                              fontWeight: '600',
+                              color: '#333',
+                              lineHeight: '1.3'
+                            }}>
+                              {dayData.topic || 'Activity'}
+                            </div>
+                            
+                            {/* Duration */}
+                            {dayData.duration && (
+                              <div style={{
+                                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                                color: 'white',
+                                padding: '6px 14px',
+                                borderRadius: '20px',
+                                fontSize: '0.85rem',
+                                fontWeight: '700',
+                                whiteSpace: 'nowrap',
+                                minWidth: '70px',
+                                textAlign: 'center'
+                              }}>
+                                {dayData.duration}
+                              </div>
+                            )}
+                          </div>
+                        ))}
                       </div>
                     </div>
                   ))}

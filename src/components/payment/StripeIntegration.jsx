@@ -118,16 +118,16 @@ const PaymentForm = ({
     <Paper elevation={3} sx={{ p: 4 }}>
       <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
         <CreditCard sx={{ mr: 1, color: 'primary.main' }} />
-        <Typography variant="h5">
+        <Typography >
           Complete Your Subscription
         </Typography>
       </Box>
 
       <Box sx={{ mb: 3 }}>
-        <Typography variant="h6" gutterBottom>
+        <Typography  gutterBottom>
           {planName} Plan
         </Typography>
-        <Typography variant="h4" color="primary.main">
+        <Typography  color="primary.main">
           ₹{planPrice}/month
         </Typography>
       </Box>
@@ -140,7 +140,7 @@ const PaymentForm = ({
 
       <form onSubmit={handleSubmit}>
         <Box sx={{ mb: 3 }}>
-          <Typography variant="subtitle1" gutterBottom>
+          <Typography  gutterBottom>
             Card Information
           </Typography>
           <Box sx={{ 
@@ -155,7 +155,7 @@ const PaymentForm = ({
 
         <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
           <Security sx={{ mr: 1, color: 'success.main', fontSize: 20 }} />
-          <Typography variant="body2" color="text.secondary">
+          <Typography  color="text.secondary">
             Your payment information is secure and encrypted
           </Typography>
         </Box>
@@ -164,7 +164,7 @@ const PaymentForm = ({
 
         <Button
           type="submit"
-          variant="contained"
+          
           size="large"
           fullWidth
           disabled={!stripe || isProcessing}

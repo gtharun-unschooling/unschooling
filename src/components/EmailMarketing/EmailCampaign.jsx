@@ -179,14 +179,14 @@ The Unschooling Team`
         <Avatar sx={{ bgcolor: 'success.main', mx: 'auto', mb: 2 }}>
           <Send />
         </Avatar>
-        <Typography variant="h5" gutterBottom color="success.main">
+        <Typography  gutterBottom color="success.main">
           Campaign Sent Successfully!
         </Typography>
-        <Typography variant="body1" paragraph>
+        <Typography  paragraph>
           Your email campaign has been sent to {audienceOptions.find(a => a.value === campaignData.audience)?.count} subscribers.
         </Typography>
         <Button
-          variant="contained"
+          
           onClick={() => {
             setIsSuccess(false);
             setCampaignData({
@@ -211,7 +211,7 @@ The Unschooling Team`
     <Paper elevation={3} sx={{ p: 4 }}>
       <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
         <Email sx={{ mr: 1, color: 'primary.main' }} />
-        <Typography variant="h5">
+        <Typography >
           Email Campaign
         </Typography>
       </Box>
@@ -325,7 +325,7 @@ The Unschooling Team`
 
           <Grid item xs={12}>
             <Divider sx={{ my: 2 }} />
-            <Typography variant="h6" gutterBottom>
+            <Typography  gutterBottom>
               Campaign Settings
             </Typography>
           </Grid>
@@ -357,7 +357,7 @@ The Unschooling Team`
           <Grid item xs={12}>
             <Button
               type="submit"
-              variant="contained"
+              
               size="large"
               fullWidth
               disabled={isSending}

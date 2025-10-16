@@ -8,7 +8,7 @@ import {
   AccessTime, School, Psychology, FitnessCenter, MusicNote, Palette,
   ArrowBack, PlayArrow, Star, Bookmark, Share
 } from '@mui/icons-material';
-import SimpleBackButton from '../../components/ui/SimpleBackButton';
+import MinimalBackButton from '../../components/ui/SimpleBackButton';
 
 const ActivityDetailPage = () => {
   const { ageGroup, category, activitySlug } = useParams();
@@ -61,7 +61,7 @@ const ActivityDetailPage = () => {
   if (loading) {
     return (
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="400px">
-        <Typography variant="h6">Loading activity...</Typography>
+        <Typography >Loading activity...</Typography>
       </Box>
     );
   }
@@ -69,7 +69,7 @@ const ActivityDetailPage = () => {
   if (!activity) {
     return (
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="400px">
-        <Typography variant="h6" color="error">Activity not found</Typography>
+        <Typography  color="error">Activity not found</Typography>
       </Box>
     );
   }
@@ -90,21 +90,21 @@ const ActivityDetailPage = () => {
           <CardContent sx={{ p: 4 }}>
             {/* Back Button */}
             <Box mb={3}>
-              <SimpleBackButton 
+              <MinimalBackButton 
                 onClick={handleBackClick}
                 size="medium"
               />
             </Box>
             {/* Header */}
             <Box textAlign="center" mb={4}>
-              <Typography variant="h2" sx={{ 
+              <Typography  sx={{ 
                 fontWeight: 'bold',
                 color: '#2d3748',
                 mb: 2
               }}>
                 {activity.topic}
               </Typography>
-              <Typography variant="h5" sx={{ 
+              <Typography  sx={{ 
                 color: '#718096',
                 mb: 3
               }}>
@@ -139,10 +139,10 @@ const ActivityDetailPage = () => {
             <Box>
               {/* What This Activity Does - Full Width */}
               <Paper sx={{ p: 3, borderRadius: '16px', background: 'rgba(102, 126, 234, 0.05)', mb: 4 }}>
-                <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
+                <Typography  sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
                   What This Activity Does
                 </Typography>
-                <Typography variant="body1" sx={{ lineHeight: 1.6, color: '#4a5568' }}>
+                <Typography  sx={{ lineHeight: 1.6, color: '#4a5568' }}>
                   {activity.explanation}
                 </Typography>
               </Paper>
@@ -151,7 +151,7 @@ const ActivityDetailPage = () => {
               <Box sx={{ display: 'flex', gap: 3, mb: 4, flexDirection: { xs: 'column', md: 'row' } }}>
                 <Box sx={{ flex: 1 }}>
                   <Paper sx={{ p: 3, borderRadius: '16px', background: 'rgba(34, 197, 94, 0.05)', height: '100%' }}>
-                    <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
+                    <Typography  sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
                       Materials Needed
                     </Typography>
                     <List>
@@ -172,7 +172,7 @@ const ActivityDetailPage = () => {
 
                 <Box sx={{ flex: 1 }}>
                   <Paper sx={{ p: 3, borderRadius: '16px', background: 'rgba(255, 193, 7, 0.05)', height: '100%' }}>
-                    <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
+                    <Typography  sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
                       Skills Your Child Will Develop
                     </Typography>
                     <Box>
@@ -213,7 +213,7 @@ const ActivityDetailPage = () => {
 
               {/* Steps - Full Width */}
               <Paper sx={{ p: 3, borderRadius: '16px', background: 'rgba(168, 85, 247, 0.05)', mb: 4 }}>
-                <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
+                <Typography  sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
                   Steps to Follow
                 </Typography>
                 <List>
@@ -265,7 +265,7 @@ const ActivityDetailPage = () => {
 
               {/* Tags - Single Line, Small */}
               <Box sx={{ textAlign: 'center', mb: 2 }}>
-                <Typography variant="body2" sx={{ color: '#666', mb: 1 }}>
+                <Typography  sx={{ color: '#666', mb: 1 }}>
                   Tags:
                 </Typography>
                 <Box display="flex" gap={1} flexWrap="wrap" justifyContent="center">
@@ -306,7 +306,7 @@ const ActivityDetailPage = () => {
             {/* Action Buttons */}
             <Box textAlign="center" mt={4}>
               <Button
-                variant="contained"
+                
                 size="large"
                 startIcon={<PlayArrow />}
                 sx={{

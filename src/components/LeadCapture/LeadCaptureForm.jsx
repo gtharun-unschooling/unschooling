@@ -153,15 +153,15 @@ const LeadCaptureForm = ({
         <Box sx={{ color: 'success.main', mb: 2 }}>
           <Email sx={{ fontSize: 48 }} />
         </Box>
-        <Typography variant="h5" gutterBottom color="success.main">
+        <Typography  gutterBottom color="success.main">
           Thank You!
         </Typography>
-        <Typography variant="body1" paragraph>
+        <Typography  paragraph>
           We've sent your personalized learning plan to your email. 
           Check your inbox and start your child's learning journey today!
         </Typography>
         <Button
-          variant="contained"
+          
           startIcon={<Download />}
           sx={{ mt: 2 }}
         >
@@ -173,10 +173,10 @@ const LeadCaptureForm = ({
 
   return (
     <Paper elevation={3} sx={{ p: 4 }}>
-      <Typography variant="h4" gutterBottom align="center" color="primary">
+      <Typography  gutterBottom align="center" color="primary">
         {title}
       </Typography>
-      <Typography variant="body1" paragraph align="center" color="text.secondary">
+      <Typography  paragraph align="center" color="text.secondary">
         {subtitle}
       </Typography>
 
@@ -238,7 +238,7 @@ const LeadCaptureForm = ({
                   ))}
                 </Select>
                 {errors.childAge && (
-                  <Typography variant="caption" color="error">
+                  <Typography  color="error">
                     {errors.childAge}
                   </Typography>
                 )}
@@ -248,7 +248,7 @@ const LeadCaptureForm = ({
           
           {showInterestSelector && (
             <Grid item xs={12}>
-              <Typography variant="subtitle1" gutterBottom>
+              <Typography  gutterBottom>
                 What interests your child? (Select all that apply)
               </Typography>
               <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
@@ -267,7 +267,7 @@ const LeadCaptureForm = ({
                 ))}
               </Box>
               {errors.interests && (
-                <Typography variant="caption" color="error">
+                <Typography  color="error">
                   {errors.interests}
                 </Typography>
               )}
@@ -313,7 +313,7 @@ const LeadCaptureForm = ({
           <Grid item xs={12}>
             <Button
               type="submit"
-              variant="contained"
+              
               size="large"
               fullWidth
               disabled={isSubmitting}

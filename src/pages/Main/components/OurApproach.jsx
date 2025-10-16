@@ -515,7 +515,7 @@ const OurApproach = () => {
             Our Approach
           </Heading>
           <Text 
-            variant="body" 
+             
             style={sectionSubtitleStyle}
           >
             Where passion meets purpose. We blend specialized learning with essential growth to unlock every child's potential.
@@ -579,7 +579,7 @@ const OurApproach = () => {
                   displayNiches.map((niche, index) => (
                   <Card 
                     key={index} 
-                    variant="elevated"
+                    
                     style={{
                       ...cardStyle,
                       // Fixed consistent size for all niche boxes - increased mobile size
@@ -656,7 +656,7 @@ const OurApproach = () => {
                 {visibleNiches < safeNiches.length && (
                   <Card
                     key="show-more-tile"
-                    variant="elevated"
+                    
                     style={{
                       // Same fixed size as other niche boxes - increased mobile size
                       width: isMobile ? '110px' : '110px',
@@ -765,7 +765,7 @@ const OurApproach = () => {
                 {essentialGrowth.map((growth, index) => (
                   <Card 
                     key={index} 
-                    variant="elevated"
+                    
                     style={{
                       ...cardStyle,
                       // Fixed consistent size for all essential growth boxes - increased mobile size

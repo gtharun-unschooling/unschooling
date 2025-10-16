@@ -1,3 +1,3257 @@
 {
-  "ageGroups": []
+  "ageGroups": [
+    {
+      "ageGroup": "All Ages",
+      "categories": [
+        {
+          "category": "Physical & Social Play",
+          "description": "Activities for Physical & Social Play",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "Tiny Trail Adventure",
+              "objective": "Engage in Tiny Trail Adventure activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Tiny Trail Adventure within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Tiny Trail Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Crawling Encouragement"
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "Soft Tunnel Crawl",
+              "objective": "Engage in Soft Tunnel Crawl activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Soft Tunnel Crawl within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Tunnel Crawl",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Crawling Encouragement"
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "Cushion Path Challenge",
+              "objective": "Engage in Cushion Path Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Cushion Path Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Cushion Path Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Crawling Encouragement"
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "Color Crawl Mats",
+              "objective": "Engage in Color Crawl Mats activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Color Crawl Mats within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Color Crawl Mats",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Crawling Encouragement"
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "Peek & Crawl",
+              "objective": "Engage in Peek & Crawl activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Peek & Crawl within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Peek & Crawl",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Crawling Encouragement"
+              }
+            },
+            {
+              "topicNumber": 6,
+              "topic": "Gentle Wiggle Massage",
+              "objective": "Engage in Gentle Wiggle Massage activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Gentle Wiggle Massage within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Gentle Wiggle Massage",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Baby Massage Interaction"
+              }
+            },
+            {
+              "topicNumber": 7,
+              "topic": "Tummy Rub Time",
+              "objective": "Engage in Tummy Rub Time activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Tummy Rub Time within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Tummy Rub Time",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Baby Massage Interaction"
+              }
+            },
+            {
+              "topicNumber": 8,
+              "topic": "Baby Foot Massage",
+              "objective": "Engage in Baby Foot Massage activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Baby Foot Massage within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Baby Foot Massage",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Baby Massage Interaction"
+              }
+            },
+            {
+              "topicNumber": 9,
+              "topic": "Relaxing Arm Massage",
+              "objective": "Engage in Relaxing Arm Massage activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Relaxing Arm Massage within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Relaxing Arm Massage",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Baby Massage Interaction"
+              }
+            },
+            {
+              "topicNumber": 10,
+              "topic": "Massage & Song",
+              "objective": "Engage in Massage & Song activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Massage & Song within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Massage & Song",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Baby Massage Interaction"
+              }
+            },
+            {
+              "topicNumber": 11,
+              "topic": "Mirror Smile Games",
+              "objective": "Engage in Mirror Smile Games activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Mirror Smile Games within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Mirror Smile Games",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Mirror Play"
+              }
+            },
+            {
+              "topicNumber": 12,
+              "topic": "Peek-in-the-Mirror",
+              "objective": "Engage in Peek-in-the-Mirror activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Peek-in-the-Mirror within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Peek-in-the-Mirror",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Mirror Play"
+              }
+            },
+            {
+              "topicNumber": 13,
+              "topic": "Reflect & Reach",
+              "objective": "Engage in Reflect & Reach activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Reflect & Reach within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Reflect & Reach",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Mirror Play"
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "Baby Mirror Motions",
+              "objective": "Engage in Baby Mirror Motions activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Baby Mirror Motions within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Baby Mirror Motions",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Mirror Play"
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "Self-Discovery Play",
+              "objective": "Engage in Self-Discovery Play activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Self-Discovery Play within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Self-Discovery Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Mirror Play"
+              }
+            },
+            {
+              "topicNumber": 16,
+              "topic": "Toy Reach Challenge",
+              "objective": "Engage in Toy Reach Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Toy Reach Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Toy Reach Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Floor-Based Reaching Activities"
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "Rolling Toy Hunt",
+              "objective": "Engage in Rolling Toy Hunt activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Rolling Toy Hunt within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Rolling Toy Hunt",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Floor-Based Reaching Activities"
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "Mat Stretch & Grab",
+              "objective": "Engage in Mat Stretch & Grab activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Mat Stretch & Grab within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Mat Stretch & Grab",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Floor-Based Reaching Activities"
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "Soft Object Reach",
+              "objective": "Engage in Soft Object Reach activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Soft Object Reach within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Object Reach",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Floor-Based Reaching Activities"
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "Color Grab Crawl",
+              "objective": "Engage in Color Grab Crawl activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Color Grab Crawl within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Color Grab Crawl",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Floor-Based Reaching Activities"
+              }
+            },
+            {
+              "topicNumber": 21,
+              "topic": "Mini Tunnel Adventure",
+              "objective": "Engage in Mini Tunnel Adventure activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Mini Tunnel Adventure within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Mini Tunnel Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Obstacle Crawl Spaces"
+              }
+            },
+            {
+              "topicNumber": 22,
+              "topic": "Cushion Crawl Maze",
+              "objective": "Engage in Cushion Crawl Maze activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Cushion Crawl Maze within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Cushion Crawl Maze",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Obstacle Crawl Spaces"
+              }
+            },
+            {
+              "topicNumber": 23,
+              "topic": "Step & Crawl Path",
+              "objective": "Engage in Step & Crawl Path activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Step & Crawl Path within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Step & Crawl Path",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Obstacle Crawl Spaces"
+              }
+            },
+            {
+              "topicNumber": 24,
+              "topic": "Soft Obstacle Hop",
+              "objective": "Engage in Soft Obstacle Hop activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Soft Obstacle Hop within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Soft Obstacle Hop",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Obstacle Crawl Spaces"
+              }
+            },
+            {
+              "topicNumber": 25,
+              "topic": "Zigzag Crawl Challenge",
+              "objective": "Engage in Zigzag Crawl Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Zigzag Crawl Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Zigzag Crawl Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Obstacle Crawl Spaces"
+              }
+            },
+            {
+              "topicNumber": 26,
+              "topic": "Animal Walk Parade",
+              "objective": "Engage in Animal Walk Parade activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Animal Walk Parade within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Animal Walk Parade",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Follow-the-Leader Games"
+              }
+            },
+            {
+              "topicNumber": 27,
+              "topic": "Line Dance Trail",
+              "objective": "Engage in Line Dance Trail activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Line Dance Trail within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Line Dance Trail",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Follow-the-Leader Games"
+              }
+            },
+            {
+              "topicNumber": 28,
+              "topic": "Follow the Beat Game",
+              "objective": "Engage in Follow the Beat Game activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Follow the Beat Game within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Follow the Beat Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Follow-the-Leader Games"
+              }
+            },
+            {
+              "topicNumber": 29,
+              "topic": "Leader Hop Challenge",
+              "objective": "Engage in Leader Hop Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Leader Hop Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Leader Hop Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Follow-the-Leader Games"
+              }
+            },
+            {
+              "topicNumber": 30,
+              "topic": "Movement Copy Game",
+              "objective": "Engage in Movement Copy Game activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Movement Copy Game within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Movement Copy Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Follow-the-Leader Games"
+              }
+            },
+            {
+              "topicNumber": 31,
+              "topic": "Soft Ball Kick",
+              "objective": "Engage in Soft Ball Kick activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Soft Ball Kick within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Soft Ball Kick",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Ball Kicking & Rolling"
+              }
+            },
+            {
+              "topicNumber": 32,
+              "topic": "Rolling Tunnel Kick",
+              "objective": "Engage in Rolling Tunnel Kick activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Rolling Tunnel Kick within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Rolling Tunnel Kick",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Ball Kicking & Rolling"
+              }
+            },
+            {
+              "topicNumber": 33,
+              "topic": "Color Ball Chase",
+              "objective": "Engage in Color Ball Chase activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Color Ball Chase within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Color Ball Chase",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Ball Kicking & Rolling"
+              }
+            },
+            {
+              "topicNumber": 34,
+              "topic": "Rolling Path Game",
+              "objective": "Engage in Rolling Path Game activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Rolling Path Game within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Rolling Path Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Ball Kicking & Rolling"
+              }
+            },
+            {
+              "topicNumber": 35,
+              "topic": "Gentle Kick Challenge",
+              "objective": "Engage in Gentle Kick Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Gentle Kick Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Gentle Kick Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Ball Kicking & Rolling"
+              }
+            },
+            {
+              "topicNumber": 36,
+              "topic": "Ribbon Dance Fun",
+              "objective": "Engage in Ribbon Dance Fun activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Ribbon Dance Fun within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Ribbon Dance Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Dance & Movement Play"
+              }
+            },
+            {
+              "topicNumber": 37,
+              "topic": "Music Move Game",
+              "objective": "Engage in Music Move Game activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Music Move Game within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Music Move Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Dance & Movement Play"
+              }
+            },
+            {
+              "topicNumber": 38,
+              "topic": "Freeze Dance Adventure",
+              "objective": "Engage in Freeze Dance Adventure activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Freeze Dance Adventure within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Freeze Dance Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Dance & Movement Play"
+              }
+            },
+            {
+              "topicNumber": 39,
+              "topic": "Animal Dance Moves",
+              "objective": "Engage in Animal Dance Moves activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Animal Dance Moves within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Animal Dance Moves",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Dance & Movement Play"
+              }
+            },
+            {
+              "topicNumber": 40,
+              "topic": "Music Step Trail",
+              "objective": "Engage in Music Step Trail activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Music Step Trail within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Music Step Trail",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Dance & Movement Play"
+              }
+            },
+            {
+              "topicNumber": 41,
+              "topic": "Partner Puzzle Build",
+              "objective": "Engage in Partner Puzzle Build activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Partner Puzzle Build within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Partner Puzzle Build",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Cooperative Play Activities"
+              }
+            },
+            {
+              "topicNumber": 42,
+              "topic": "Group Tower Challenge",
+              "objective": "Engage in Group Tower Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Group Tower Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Group Tower Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Cooperative Play Activities"
+              }
+            },
+            {
+              "topicNumber": 43,
+              "topic": "Team Shape Match",
+              "objective": "Engage in Team Shape Match activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Team Shape Match within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Team Shape Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Cooperative Play Activities"
+              }
+            },
+            {
+              "topicNumber": 44,
+              "topic": "Joint Story Adventure",
+              "objective": "Engage in Joint Story Adventure activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Joint Story Adventure within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Joint Story Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Cooperative Play Activities"
+              }
+            },
+            {
+              "topicNumber": 45,
+              "topic": "Collaborative Obstacle Run",
+              "objective": "Engage in Collaborative Obstacle Run activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Collaborative Obstacle Run within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Collaborative Obstacle Run",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Cooperative Play Activities"
+              }
+            },
+            {
+              "topicNumber": 46,
+              "topic": "Mini Soccer Match",
+              "objective": "Engage in Mini Soccer Match activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Mini Soccer Match within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Mini Soccer Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Simple Group Sports"
+              }
+            },
+            {
+              "topicNumber": 47,
+              "topic": "Balloon Volleyball",
+              "objective": "Engage in Balloon Volleyball activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Balloon Volleyball within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Balloon Volleyball",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Simple Group Sports"
+              }
+            },
+            {
+              "topicNumber": 48,
+              "topic": "Parachute Play",
+              "objective": "Engage in Parachute Play activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Parachute Play within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Parachute Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Simple Group Sports"
+              }
+            },
+            {
+              "topicNumber": 49,
+              "topic": "Hop Relay Race",
+              "objective": "Engage in Hop Relay Race activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Hop Relay Race within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Hop Relay Race",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Simple Group Sports"
+              }
+            },
+            {
+              "topicNumber": 50,
+              "topic": "Ring Toss Challenge",
+              "objective": "Engage in Ring Toss Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Ring Toss Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Ring Toss Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Simple Group Sports"
+              }
+            },
+            {
+              "topicNumber": 51,
+              "topic": "Slide & Climb Circuit",
+              "objective": "Engage in Slide & Climb Circuit activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Slide & Climb Circuit within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Slide & Climb Circuit",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Outdoor Playground Challenges"
+              }
+            },
+            {
+              "topicNumber": 52,
+              "topic": "Balance Beam Walk",
+              "objective": "Engage in Balance Beam Walk activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Balance Beam Walk within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Balance Beam Walk",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Outdoor Playground Challenges"
+              }
+            },
+            {
+              "topicNumber": 53,
+              "topic": "Swing & Jump Game",
+              "objective": "Engage in Swing & Jump Game activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Swing & Jump Game within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Swing & Jump Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Outdoor Playground Challenges"
+              }
+            },
+            {
+              "topicNumber": 54,
+              "topic": "Sandbox Treasure Hunt",
+              "objective": "Engage in Sandbox Treasure Hunt activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Sandbox Treasure Hunt within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Sandbox Treasure Hunt",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Outdoor Playground Challenges"
+              }
+            },
+            {
+              "topicNumber": 55,
+              "topic": "Mini Playground Obstacle",
+              "objective": "Engage in Mini Playground Obstacle activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Mini Playground Obstacle within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Mini Playground Obstacle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Outdoor Playground Challenges"
+              }
+            },
+            {
+              "topicNumber": 56,
+              "topic": "Dance Ribbon Trail",
+              "objective": "Engage in Dance Ribbon Trail activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Dance Ribbon Trail within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Dance Ribbon Trail",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Movement with Music"
+              }
+            },
+            {
+              "topicNumber": 57,
+              "topic": "Music Step Game",
+              "objective": "Engage in Music Step Game activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Music Step Game within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Music Step Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Movement with Music"
+              }
+            },
+            {
+              "topicNumber": 58,
+              "topic": "Rhythm Jump",
+              "objective": "Engage in Rhythm Jump activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Rhythm Jump within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Rhythm Jump",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Movement with Music"
+              }
+            },
+            {
+              "topicNumber": 59,
+              "topic": "Freeze Movement Game",
+              "objective": "Engage in Freeze Movement Game activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Freeze Movement Game within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Freeze Movement Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Movement with Music"
+              }
+            },
+            {
+              "topicNumber": 60,
+              "topic": "Follow the Sound Steps",
+              "objective": "Engage in Follow the Sound Steps activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Follow the Sound Steps within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Follow the Sound Steps",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Movement with Music"
+              }
+            },
+            {
+              "topicNumber": 61,
+              "topic": "Freeze Tag Adventure",
+              "objective": "Engage in Freeze Tag Adventure activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Freeze Tag Adventure within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Freeze Tag Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Team Tag Games"
+              }
+            },
+            {
+              "topicNumber": 62,
+              "topic": "Shadow Tag Challenge",
+              "objective": "Engage in Shadow Tag Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Shadow Tag Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Shadow Tag Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Team Tag Games"
+              }
+            },
+            {
+              "topicNumber": 63,
+              "topic": "Partner Tag Relay",
+              "objective": "Engage in Partner Tag Relay activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Partner Tag Relay within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Partner Tag Relay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Team Tag Games"
+              }
+            },
+            {
+              "topicNumber": 64,
+              "topic": "Obstacle Tag Run",
+              "objective": "Engage in Obstacle Tag Run activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Obstacle Tag Run within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Obstacle Tag Run",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Team Tag Games"
+              }
+            },
+            {
+              "topicNumber": 65,
+              "topic": "Color Tag Chase",
+              "objective": "Engage in Color Tag Chase activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Color Tag Chase within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Color Tag Chase",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Team Tag Games"
+              }
+            },
+            {
+              "topicNumber": 66,
+              "topic": "Group Hula Hoop Pass",
+              "objective": "Engage in Group Hula Hoop Pass activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Group Hula Hoop Pass within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Group Hula Hoop Pass",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Basic Teamwork Activities"
+              }
+            },
+            {
+              "topicNumber": 67,
+              "topic": "Team Puzzle Challenge",
+              "objective": "Engage in Team Puzzle Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Team Puzzle Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Team Puzzle Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Basic Teamwork Activities"
+              }
+            },
+            {
+              "topicNumber": 68,
+              "topic": "Relay Baton Race",
+              "objective": "Engage in Relay Baton Race activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Relay Baton Race within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Relay Baton Race",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Basic Teamwork Activities"
+              }
+            },
+            {
+              "topicNumber": 69,
+              "topic": "Partner Obstacle Build",
+              "objective": "Engage in Partner Obstacle Build activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Partner Obstacle Build within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Partner Obstacle Build",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Basic Teamwork Activities"
+              }
+            },
+            {
+              "topicNumber": 70,
+              "topic": "Team Bridge Build",
+              "objective": "Engage in Team Bridge Build activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Team Bridge Build within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Team Bridge Build",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Basic Teamwork Activities"
+              }
+            },
+            {
+              "topicNumber": 71,
+              "topic": "Cone Dash Adventure",
+              "objective": "Engage in Cone Dash Adventure activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Cone Dash Adventure within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Cone Dash Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Obstacle Courses & Races"
+              }
+            },
+            {
+              "topicNumber": 72,
+              "topic": "Balance Beam Race",
+              "objective": "Engage in Balance Beam Race activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Balance Beam Race within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Balance Beam Race",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Obstacle Courses & Races"
+              }
+            },
+            {
+              "topicNumber": 73,
+              "topic": "Tunnel Crawl Sprint",
+              "objective": "Engage in Tunnel Crawl Sprint activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Tunnel Crawl Sprint within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Tunnel Crawl Sprint",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Obstacle Courses & Races"
+              }
+            },
+            {
+              "topicNumber": 74,
+              "topic": "Jump & Hop Challenge",
+              "objective": "Engage in Jump & Hop Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Jump & Hop Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Jump & Hop Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Obstacle Courses & Races"
+              }
+            },
+            {
+              "topicNumber": 75,
+              "topic": "Zigzag Sprint Course",
+              "objective": "Engage in Zigzag Sprint Course activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Zigzag Sprint Course within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Zigzag Sprint Course",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Obstacle Courses & Races"
+              }
+            },
+            {
+              "topicNumber": 76,
+              "topic": "Ball Relay Fun",
+              "objective": "Engage in Ball Relay Fun activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Ball Relay Fun within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Ball Relay Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Relay & Coordination Games"
+              }
+            },
+            {
+              "topicNumber": 77,
+              "topic": "Baton Exchange Race",
+              "objective": "Engage in Baton Exchange Race activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Baton Exchange Race within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Baton Exchange Race",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Relay & Coordination Games"
+              }
+            },
+            {
+              "topicNumber": 78,
+              "topic": "Color Hop Relay",
+              "objective": "Engage in Color Hop Relay activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Color Hop Relay within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Color Hop Relay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Relay & Coordination Games"
+              }
+            },
+            {
+              "topicNumber": 79,
+              "topic": "Beanbag Toss Relay",
+              "objective": "Engage in Beanbag Toss Relay activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Beanbag Toss Relay within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Beanbag Toss Relay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Relay & Coordination Games"
+              }
+            },
+            {
+              "topicNumber": 80,
+              "topic": "Partner Jump Challenge",
+              "objective": "Engage in Partner Jump Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Partner Jump Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Partner Jump Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Relay & Coordination Games"
+              }
+            },
+            {
+              "topicNumber": 81,
+              "topic": "Treasure Hunt Expedition",
+              "objective": "Engage in Treasure Hunt Expedition activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Treasure Hunt Expedition within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Treasure Hunt Expedition",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Group Adventure Games"
+              }
+            },
+            {
+              "topicNumber": 82,
+              "topic": "Forest Trail Quest",
+              "objective": "Engage in Forest Trail Quest activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Forest Trail Quest within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Forest Trail Quest",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Group Adventure Games"
+              }
+            },
+            {
+              "topicNumber": 83,
+              "topic": "Obstacle Island Adventure",
+              "objective": "Engage in Obstacle Island Adventure activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Obstacle Island Adventure within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Obstacle Island Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Group Adventure Games"
+              }
+            },
+            {
+              "topicNumber": 84,
+              "topic": "Mountain Path Challenge",
+              "objective": "Engage in Mountain Path Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Mountain Path Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mountain Path Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Group Adventure Games"
+              }
+            },
+            {
+              "topicNumber": 85,
+              "topic": "Adventure Relay Mission",
+              "objective": "Engage in Adventure Relay Mission activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Adventure Relay Mission within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Adventure Relay Mission",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Group Adventure Games"
+              }
+            },
+            {
+              "topicNumber": 86,
+              "topic": "Blindfold Trust Walk",
+              "objective": "Engage in Blindfold Trust Walk activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Blindfold Trust Walk within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Blindfold Trust Walk",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Trust-Building Games"
+              }
+            },
+            {
+              "topicNumber": 87,
+              "topic": "Human Knot Challenge",
+              "objective": "Engage in Human Knot Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Human Knot Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Human Knot Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Trust-Building Games"
+              }
+            },
+            {
+              "topicNumber": 88,
+              "topic": "Trust Fall Exercise",
+              "objective": "Engage in Trust Fall Exercise activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Trust Fall Exercise within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Trust Fall Exercise",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Trust-Building Games"
+              }
+            },
+            {
+              "topicNumber": 89,
+              "topic": "Partner Balance Task",
+              "objective": "Engage in Partner Balance Task activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Partner Balance Task within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Partner Balance Task",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Trust-Building Games"
+              }
+            },
+            {
+              "topicNumber": 90,
+              "topic": "Cooperative Obstacle Challenge",
+              "objective": "Engage in Cooperative Obstacle Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Cooperative Obstacle Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Cooperative Obstacle Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Trust-Building Games"
+              }
+            },
+            {
+              "topicNumber": 91,
+              "topic": "Mini Drama Workshop",
+              "objective": "Engage in Mini Drama Workshop activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Mini Drama Workshop within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mini Drama Workshop",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Physical Theatre"
+              }
+            },
+            {
+              "topicNumber": 92,
+              "topic": "Story Movement Performance",
+              "objective": "Engage in Story Movement Performance activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Story Movement Performance within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Story Movement Performance",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Physical Theatre"
+              }
+            },
+            {
+              "topicNumber": 93,
+              "topic": "Character Expression Games",
+              "objective": "Engage in Character Expression Games activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Character Expression Games within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Character Expression Games",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Physical Theatre"
+              }
+            },
+            {
+              "topicNumber": 94,
+              "topic": "Action Scene Recreation",
+              "objective": "Engage in Action Scene Recreation activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Action Scene Recreation within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Action Scene Recreation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Physical Theatre"
+              }
+            },
+            {
+              "topicNumber": 95,
+              "topic": "Emotion Through Movement",
+              "objective": "Engage in Emotion Through Movement activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Emotion Through Movement within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Emotion Through Movement",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Physical Theatre"
+              }
+            },
+            {
+              "topicNumber": 96,
+              "topic": "Nature Treasure Hunt",
+              "objective": "Engage in Nature Treasure Hunt activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Nature Treasure Hunt within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Nature Treasure Hunt",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Scavenger Hunts"
+              }
+            },
+            {
+              "topicNumber": 97,
+              "topic": "Clue Adventure Quest",
+              "objective": "Engage in Clue Adventure Quest activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Clue Adventure Quest within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Clue Adventure Quest",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Scavenger Hunts"
+              }
+            },
+            {
+              "topicNumber": 98,
+              "topic": "Object Discovery Challenge",
+              "objective": "Engage in Object Discovery Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Object Discovery Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Object Discovery Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Scavenger Hunts"
+              }
+            },
+            {
+              "topicNumber": 99,
+              "topic": "Puzzle Hunt Expedition",
+              "objective": "Engage in Puzzle Hunt Expedition activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Puzzle Hunt Expedition within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Puzzle Hunt Expedition",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Scavenger Hunts"
+              }
+            },
+            {
+              "topicNumber": 100,
+              "topic": "Mystery Object Trail",
+              "objective": "Engage in Mystery Object Trail activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Mystery Object Trail within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mystery Object Trail",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Scavenger Hunts"
+              }
+            },
+            {
+              "topicNumber": 101,
+              "topic": "Soccer Skills Drill",
+              "objective": "Engage in Soccer Skills Drill activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Soccer Skills Drill within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Soccer Skills Drill",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Competitive Sports Training"
+              }
+            },
+            {
+              "topicNumber": 102,
+              "topic": "Basketball Circuit",
+              "objective": "Engage in Basketball Circuit activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Basketball Circuit within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Basketball Circuit",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Competitive Sports Training"
+              }
+            },
+            {
+              "topicNumber": 103,
+              "topic": "Track & Sprint Practice",
+              "objective": "Engage in Track & Sprint Practice activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Track & Sprint Practice within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Track & Sprint Practice",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Competitive Sports Training"
+              }
+            },
+            {
+              "topicNumber": 104,
+              "topic": "Volleyball Challenge",
+              "objective": "Engage in Volleyball Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Volleyball Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Volleyball Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Competitive Sports Training"
+              }
+            },
+            {
+              "topicNumber": 105,
+              "topic": "Gym Fitness Games",
+              "objective": "Engage in Gym Fitness Games activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Gym Fitness Games within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Gym Fitness Games",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Competitive Sports Training"
+              }
+            },
+            {
+              "topicNumber": 106,
+              "topic": "Strength Circuit",
+              "objective": "Engage in Strength Circuit activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Strength Circuit within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Strength Circuit",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Fitness & Workout Challenges"
+              }
+            },
+            {
+              "topicNumber": 107,
+              "topic": "Core Stability Training",
+              "objective": "Engage in Core Stability Training activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Core Stability Training within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Core Stability Training",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Fitness & Workout Challenges"
+              }
+            },
+            {
+              "topicNumber": 108,
+              "topic": "HIIT Challenge",
+              "objective": "Engage in HIIT Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on HIIT Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "HIIT Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Fitness & Workout Challenges"
+              }
+            },
+            {
+              "topicNumber": 109,
+              "topic": "Agility Ladder Drill",
+              "objective": "Engage in Agility Ladder Drill activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Agility Ladder Drill within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Agility Ladder Drill",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Fitness & Workout Challenges"
+              }
+            },
+            {
+              "topicNumber": 110,
+              "topic": "Endurance Run",
+              "objective": "Engage in Endurance Run activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Endurance Run within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Endurance Run",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Fitness & Workout Challenges"
+              }
+            },
+            {
+              "topicNumber": 111,
+              "topic": "Hiking Trail Adventure",
+              "objective": "Engage in Hiking Trail Adventure activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Hiking Trail Adventure within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Hiking Trail Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Group Outdoor Expeditions"
+              }
+            },
+            {
+              "topicNumber": 112,
+              "topic": "Kayaking Challenge",
+              "objective": "Engage in Kayaking Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Kayaking Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Kayaking Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Group Outdoor Expeditions"
+              }
+            },
+            {
+              "topicNumber": 113,
+              "topic": "Mountain Trek",
+              "objective": "Engage in Mountain Trek activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Mountain Trek within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Mountain Trek",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Group Outdoor Expeditions"
+              }
+            },
+            {
+              "topicNumber": 114,
+              "topic": "Orienteering Challenge",
+              "objective": "Engage in Orienteering Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Orienteering Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Orienteering Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Group Outdoor Expeditions"
+              }
+            },
+            {
+              "topicNumber": 115,
+              "topic": "Forest Navigation",
+              "objective": "Engage in Forest Navigation activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Forest Navigation within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Forest Navigation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Group Outdoor Expeditions"
+              }
+            },
+            {
+              "topicNumber": 116,
+              "topic": "Event Planning Drill",
+              "objective": "Engage in Event Planning Drill activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Event Planning Drill within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Event Planning Drill",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Social Leadership Simulations"
+              }
+            },
+            {
+              "topicNumber": 117,
+              "topic": "Peer Leadership Exercise",
+              "objective": "Engage in Peer Leadership Exercise activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Peer Leadership Exercise within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Peer Leadership Exercise",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Social Leadership Simulations"
+              }
+            },
+            {
+              "topicNumber": 118,
+              "topic": "Conflict Resolution Roleplay",
+              "objective": "Engage in Conflict Resolution Roleplay activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Conflict Resolution Roleplay within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Conflict Resolution Roleplay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Social Leadership Simulations"
+              }
+            },
+            {
+              "topicNumber": 119,
+              "topic": "Team Debate Simulation",
+              "objective": "Engage in Team Debate Simulation activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Team Debate Simulation within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Team Debate Simulation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Social Leadership Simulations"
+              }
+            },
+            {
+              "topicNumber": 120,
+              "topic": "Leadership Task Challenge",
+              "objective": "Engage in Leadership Task Challenge activities to develop physical & social play skills",
+              "explanation": "This activity focuses on Leadership Task Challenge within the Physical & Social Play pillar.",
+              "hashtags": [
+                "#Physical&SocialPlay",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Leadership Task Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Physical & Social Play"
+                ],
+                "category": "Social Leadership Simulations"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totalActivities": 120,
+  "lastUpdated": "2025-10-12T01:20:25.326153"
 }

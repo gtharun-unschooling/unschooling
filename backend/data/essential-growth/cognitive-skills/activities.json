@@ -1,907 +1,3053 @@
 {
   "ageGroups": [
     {
-      "ageGroup": "Infant (0-1)",
+      "ageGroup": "All Ages",
       "categories": [
         {
-          "category": "Visual Tracking & Focus",
-          "description": "Develop visual attention and tracking abilities through hands-on activities",
+          "category": "Cognitive Skills",
+          "description": "Activities for Cognitive Skills",
           "activities": [
             {
               "topicNumber": 1,
-              "topic": "High Contrast Card Play",
-              "objective": "Stimulate visual development and focus through engaging card activities",
-              "explanation": "Use high contrast cards to capture baby's attention and develop visual tracking skills through interactive play.",
-              "hashtags": [
-                "#VisualDevelopment",
-                "#FocusTraining",
-                "#InfantActivities"
-              ],
-              "estimatedTime": "5-10 min",
-              "age": "0-6 months",
+              "topic": "Peek-a-Boo Box",
+              "objective": "Help baby understand object permanence and develop attention",
+              "explanation": "Using a simple box hides the toy and teaches babies that objects exist even when out of sight",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "👶 Infant (0–1)",
               "activity": {
-                "name": "High Contrast Card Play",
+                "name": "Peek-a-Boo Box",
                 "materials": [
-                  "High contrast black and white cards (supplied by us)",
-                  "Soft play mat (available at home)",
-                  "Baby-safe mirror (supplied by us)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
+                  "• Small box",
+                  "• Soft toy"
                 ],
                 "steps": [
-                  "Place baby on soft play mat in comfortable position",
-                  "Hold high contrast cards 8-12 inches from baby's face",
-                  "Slowly move cards left to right, watching for eye tracking",
-                  "Use baby-safe mirror to show baby their own reflection",
-                  "Talk to baby about what they're seeing: 'Look at the black and white patterns!'",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
+                  "1. Place toy inside the box.",
+                  "2. Show baby the toy and cover it.",
+                  "3. Encourage baby to reach and uncover.",
+                  "4. Observe reactions and guide hands.",
+                  "5. Swap toys to keep engagement."
                 ],
                 "skills": [
-                  "Visual tracking",
-                  "Focus development",
-                  "Eye coordination",
-                  "Attention span",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
+                  "• Object permanence\n• Fine motor skills\n• Attention span"
                 ]
               }
             },
             {
               "topicNumber": 2,
-              "topic": "Floating Balloon Discovery",
-              "objective": "Encourage visual tracking and head movement through balloon play",
-              "explanation": "Use helium balloons to encourage baby to track movement and develop neck strength through safe, supervised play.",
-              "hashtags": [
-                "#VisualTracking",
-                "#NeckStrength",
-                "#BalloonPlay"
-              ],
-              "estimatedTime": "10-15 min",
-              "age": "2-8 months",
+              "topic": "Hide & Seek Toy",
+              "objective": "Stimulate memory and anticipation skills",
+              "explanation": "Encourages anticipation and memory as baby predicts toy location",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "👶 Infant (0–1)",
               "activity": {
-                "name": "Floating Balloon Discovery",
+                "name": "Hide & Seek Toy",
                 "materials": [
-                  "Helium balloon with string (supplied by us)",
-                  "Soft floor mat (available at home)",
-                  "Colorful ribbons (supplied by us)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
+                  "• Plush toy",
+                  "• Blanket"
                 ],
                 "steps": [
-                  "Tie balloon to baby's wrist or place nearby at safe distance",
-                  "Let baby watch balloon move naturally in the air",
-                  "Gently guide baby's hand to touch the balloon string",
-                  "Add colorful ribbons to make it more engaging",
-                  "Supervise closely and remove if baby shows signs of distress",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
+                  "1. Show toy and hide it under blanket.",
+                  "2. Encourage baby to lift blanket.",
+                  "3. Celebrate discovery.",
+                  "4. Change hiding spots.",
+                  "5. Observe anticipation."
                 ],
                 "skills": [
-                  "Visual tracking",
-                  "Head movement",
-                  "Cause and effect",
-                  "Neck strength",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
+                  "• Memory development\n• Problem-solving\n• Hand-eye coordination"
                 ]
               }
             },
             {
               "topicNumber": 3,
-              "topic": "Peek-a-Boo Object Game",
-              "objective": "Develop object permanence and attention through interactive hide-and-seek",
-              "explanation": "Hide and reveal favorite objects to help baby understand that things exist even when not seen, building memory and attention skills.",
-              "hashtags": [
-                "#ObjectPermanence",
-                "#AttentionTraining",
-                "#HideAndSeek"
-              ],
-              "estimatedTime": "5-10 min",
-              "age": "4-12 months",
+              "topic": "Covered Rattle Surprise",
+              "objective": "Develop cause-and-effect understanding",
+              "explanation": "Combines sound and touch to teach that actions produce reactions",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "👶 Infant (0–1)",
               "activity": {
-                "name": "Peek-a-Boo Object Game",
+                "name": "Covered Rattle Surprise",
                 "materials": [
-                  "Baby's favorite soft toy (available at home)",
-                  "Colorful scarves or cloths (supplied by us)",
-                  "Small soft balls (supplied by us)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
+                  "• Rattle",
+                  "• Small cloth"
                 ],
                 "steps": [
-                  "Show baby their favorite toy and let them touch it",
-                  "Cover the toy with a colorful scarf while baby watches",
-                  "Ask 'Where did the toy go?' with excitement",
-                  "Reveal the toy with a big smile and say 'Peek-a-boo!'",
-                  "Repeat with different objects and let baby try to find them",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
+                  "1. Wrap rattle lightly.",
+                  "2. Shake gently and let baby feel vibrations.",
+                  "3. Encourage uncovering.",
+                  "4. Observe reactions.",
+                  "5. Swap rattles or fabrics."
                 ],
                 "skills": [
-                  "Object permanence",
-                  "Attention span",
-                  "Memory development",
-                  "Social interaction",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
+                  "• Cause-and-effect\n• Tactile exploration\n• Attention span"
                 ]
               }
             },
             {
               "topicNumber": 4,
-              "topic": "Colorful Mobile Watching",
-              "objective": "Stimulate visual processing and focus through mobile observation",
-              "explanation": "Use colorful mobiles to encourage sustained visual attention and tracking, building focus and visual processing skills.",
-              "hashtags": [
-                "#VisualProcessing",
-                "#SustainedAttention",
-                "#MobilePlay"
-              ],
-              "estimatedTime": "10-15 min",
-              "age": "1-8 months",
+              "topic": "Rolling Object Hide",
+              "objective": "Promote reaching and motor planning",
+              "explanation": "Teaches tracking and prediction while promoting movement",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "👶 Infant (0–1)",
               "activity": {
-                "name": "Colorful Mobile Watching",
+                "name": "Rolling Object Hide",
                 "materials": [
-                  "Colorful baby mobile (supplied by us)",
-                  "Crib or play area (available at home)",
-                  "Soft music box (supplied by us)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
+                  "• Soft ball",
+                  "• Play mat"
                 ],
                 "steps": [
-                  "Hang mobile above baby's line of sight in crib or play area",
-                  "Wind up mobile and let baby watch it move",
-                  "Talk about colors and movement: 'Look at the red bird flying!'",
-                  "Play soft music while mobile moves",
-                  "Change mobile position occasionally to maintain interest",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
+                  "1. Place ball in front.",
+                  "2. Roll partially under barrier.",
+                  "3. Encourage crawling or reaching.",
+                  "4. Praise attempts.",
+                  "5. Vary direction and speed."
                 ],
                 "skills": [
-                  "Visual processing",
-                  "Color recognition",
-                  "Sustained attention",
-                  "Auditory processing",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
+                  "• Gross motor skills\n• Spatial awareness\n• Problem-solving"
                 ]
               }
             },
             {
               "topicNumber": 5,
-              "topic": "Light and Shadow Exploration",
-              "objective": "Develop visual discrimination and curiosity through light play",
-              "explanation": "Use flashlight to create shadows and light patterns for visual stimulation and curiosity development.",
-              "hashtags": [
-                "#VisualDiscrimination",
-                "#LightPlay",
-                "#ShadowFun"
-              ],
+              "topic": "Blanket Lift Game",
+              "objective": "Encourage exploration and anticipation",
+              "explanation": "Introduces exploration and understanding cause-effect",
+              "hashtags": [],
               "estimatedTime": "10 min",
-              "age": "3-12 months",
+              "age": "👶 Infant (0–1)",
               "activity": {
-                "name": "Light and Shadow Exploration",
+                "name": "Blanket Lift Game",
                 "materials": [
-                  "Child-safe flashlight (supplied by us)",
-                  "Colorful transparent objects (supplied by us)",
-                  "White wall or surface (available at home)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
+                  "• Small toys",
+                  "• Blanket"
                 ],
                 "steps": [
-                  "Turn off lights and use flashlight in dim room",
-                  "Create moving light patterns on wall or ceiling",
-                  "Let baby track the light with their eyes",
-                  "Use colorful transparent objects to create colored shadows",
-                  "Always supervise and never shine light directly in baby's eyes",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
+                  "1. Place toys under blanket.",
+                  "2. Encourage lifting.",
+                  "3. Name the toys.",
+                  "4. Rotate toys.",
+                  "5. Repeat with new setups."
                 ],
                 "skills": [
-                  "Visual discrimination",
-                  "Curiosity",
-                  "Light awareness",
-                  "Tracking skills",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "category": "Cause and Effect Learning",
-          "description": "Understand that actions have consequences through hands-on experiments",
-          "activities": [
-            {
-              "topicNumber": 1,
-              "topic": "Rattle Shake Response",
-              "objective": "Learn that shaking creates sound through interactive play",
-              "explanation": "Help baby understand that their actions (shaking) create sounds and effects, building cause-and-effect understanding.",
-              "hashtags": [
-                "#CauseAndEffect",
-                "#SoundResponse",
-                "#RattlePlay"
-              ],
-              "estimatedTime": "5-10 min",
-              "age": "2-8 months",
-              "activity": {
-                "name": "Rattle Shake Response",
-                "materials": [
-                  "Baby-safe rattle (supplied by us)",
-                  "Soft play mat (available at home)",
-                  "Different textured rattles (supplied by us)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
-                ],
-                "steps": [
-                  "Give baby a rattle and let them explore it",
-                  "Demonstrate shaking to make sound",
-                  "Encourage baby to shake and listen to the sound",
-                  "Try different rattles with different sounds",
-                  "Celebrate when baby makes sounds: 'Great shaking!'",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
-                ],
-                "skills": [
-                  "Cause and effect",
-                  "Sound recognition",
-                  "Motor control",
-                  "Hand-eye coordination",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
+                  "• Object permanence\n• Language exposure\n• Fine motor skills"
                 ]
               }
             },
             {
-              "topicNumber": 2,
-              "topic": "Button Press Discovery",
-              "objective": "Understand that pressing creates results through interactive toys",
-              "explanation": "Use toys with buttons that make sounds or light up when pressed, teaching cause-and-effect relationships.",
-              "hashtags": [
-                "#ButtonPressing",
-                "#ActionResponse",
-                "#ToyInteraction"
-              ],
-              "estimatedTime": "10-15 min",
-              "age": "4-12 months",
-              "activity": {
-                "name": "Button Press Discovery",
-                "materials": [
-                  "Interactive button toys (supplied by us)",
-                  "Soft play area (available at home)",
-                  "Musical instruments (supplied by us)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
-                ],
-                "steps": [
-                  "Show baby how to press buttons on interactive toys",
-                  "Let them press and see the result (sound, light, movement)",
-                  "Celebrate their success with clapping and praise",
-                  "Try different buttons with different effects",
-                  "Help baby understand the connection between pressing and results",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
-                ],
-                "skills": [
-                  "Button pressing",
-                  "Action understanding",
-                  "Success recognition",
-                  "Fine motor skills",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
-                ]
-              }
-            },
-            {
-              "topicNumber": 3,
-              "topic": "Drop and Retrieve Game",
-              "objective": "Learn about gravity and object behavior through hands-on exploration",
-              "explanation": "Drop soft objects and watch them fall, then help baby retrieve them, teaching about gravity and object behavior.",
-              "hashtags": [
-                "#GravityLearning",
-                "#ObjectBehavior",
-                "#DropAndRetrieve"
-              ],
+              "topicNumber": 6,
+              "topic": "Shake & See",
+              "objective": "Teach cause-and-effect",
+              "explanation": "Baby learns that shaking produces sound",
+              "hashtags": [],
               "estimatedTime": "10 min",
-              "age": "6-12 months",
+              "age": "👶 Infant (0–1)",
               "activity": {
-                "name": "Drop and Retrieve Game",
+                "name": "Shake & See",
                 "materials": [
-                  "Soft balls of different sizes (supplied by us)",
-                  "Soft toys (available at home)",
-                  "Soft play mat (available at home)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
+                  "• Rattle",
+                  "• Small object"
                 ],
                 "steps": [
-                  "Drop soft objects from different heights while baby watches",
-                  "Let baby watch them fall and land",
-                  "Help baby retrieve and drop objects again",
-                  "Talk about what's happening: 'The ball falls down!'",
-                  "Let baby try dropping objects themselves",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
+                  "1. Give baby a rattle.",
+                  "2. Shake together.",
+                  "3. Observe reaction.",
+                  "4. Encourage self-shaking.",
+                  "5. Praise attempts."
                 ],
                 "skills": [
-                  "Gravity understanding",
-                  "Object behavior",
-                  "Retrieval skills",
-                  "Hand-eye coordination",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
+                  "• Cause-and-effect\n• Auditory exploration\n• Attention span"
                 ]
               }
             },
             {
-              "topicNumber": 4,
-              "topic": "Water Splash Discovery",
-              "objective": "Explore cause and effect with water through supervised play",
-              "explanation": "Let baby splash in water and discover the effects of their actions, building cause-and-effect understanding.",
-              "hashtags": [
-                "#WaterPlay",
-                "#SplashDiscovery",
-                "#ActionEffects"
-              ],
-              "estimatedTime": "10-15 min",
-              "age": "6-12 months",
+              "topicNumber": 7,
+              "topic": "Light-Up Toy Tap",
+              "objective": "Develop cause-effect and hand-eye coordination",
+              "explanation": "Encourages coordination and understanding that actions produce results",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "👶 Infant (0–1)",
               "activity": {
-                "name": "Water Splash Discovery",
+                "name": "Light-Up Toy Tap",
                 "materials": [
-                  "Shallow water container (supplied by us)",
-                  "Soft towels (available at home)",
-                  "Water-safe toys (supplied by us)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
+                  "• Light-up toy"
                 ],
                 "steps": [
-                  "Let baby sit in shallow water in safe container",
-                  "Encourage splashing with hands and feet",
-                  "Talk about the water movement and splashes",
-                  "Add water-safe toys for more interaction",
-                  "Always supervise closely and dry baby thoroughly after",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
+                  "1. Place toy in front.",
+                  "2. Tap together to light it.",
+                  "3. Encourage baby to tap.",
+                  "4. Observe reactions.",
+                  "5. Swap positions for challenge."
                 ],
                 "skills": [
-                  "Water exploration",
-                  "Splash effects",
-                  "Motor coordination",
-                  "Sensory development",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
+                  "• Cause-and-effect\n• Visual attention\n• Fine motor skills"
                 ]
               }
             },
             {
-              "topicNumber": 5,
-              "topic": "Musical Instrument Response",
-              "objective": "Connect actions with musical sounds through instrument play",
-              "explanation": "Use simple musical instruments to show that hitting or shaking creates music, building cause-and-effect understanding.",
-              "hashtags": [
-                "#MusicalResponse",
-                "#SoundCreation",
-                "#InstrumentPlay"
-              ],
+              "topicNumber": 8,
+              "topic": "Sound Button Fun",
+              "objective": "Stimulate auditory feedback recognition",
+              "explanation": "Baby learns pressing produces sound",
+              "hashtags": [],
               "estimatedTime": "10 min",
-              "age": "4-12 months",
+              "age": "👶 Infant (0–1)",
               "activity": {
-                "name": "Musical Instrument Response",
+                "name": "Sound Button Fun",
                 "materials": [
-                  "Baby-safe musical instruments (supplied by us)",
-                  "Soft play mat (available at home)",
-                  "Simple rhythm instruments (supplied by us)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
+                  "• Sound button toy"
                 ],
                 "steps": [
-                  "Show baby how to play different instruments",
-                  "Let them try to make sounds with their hands",
-                  "Respond to their musical attempts with enthusiasm",
-                  "Try different instruments with different sounds",
-                  "Create simple rhythms together",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
+                  "1. Press button together.",
+                  "2. Encourage baby to press.",
+                  "3. Observe reaction to sound.",
+                  "4. Repeat with different buttons.",
+                  "5. Praise attempts."
                 ],
                 "skills": [
-                  "Musical response",
-                  "Sound creation",
-                  "Instrument interaction",
-                  "Rhythm awareness",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "category": "Memory Development",
-          "description": "Build early memory and recognition skills through engaging activities",
-          "activities": [
-            {
-              "topicNumber": 1,
-              "topic": "Familiar Face Recognition Game",
-              "objective": "Develop recognition of familiar people through photo play",
-              "explanation": "Help baby recognize and respond to familiar faces through repeated exposure and interactive photo games.",
-              "hashtags": [
-                "#FaceRecognition",
-                "#FamiliarPeople",
-                "#MemoryBuilding"
-              ],
-              "estimatedTime": "5-10 min",
-              "age": "2-12 months",
-              "activity": {
-                "name": "Familiar Face Recognition Game",
-                "materials": [
-                  "Family photos in safe frames (available at home)",
-                  "Baby-safe mirror (supplied by us)",
-                  "Photo album (supplied by us)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
-                ],
-                "steps": [
-                  "Show baby photos of family members one by one",
-                  "Point and name each person: 'This is Grandma!'",
-                  "Use mirror to show baby their own face",
-                  "Repeat names and faces regularly",
-                  "Celebrate when baby recognizes familiar faces",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
-                ],
-                "skills": [
-                  "Face recognition",
-                  "Familiarity",
-                  "Memory development",
-                  "Social connection",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
+                  "• Auditory discrimination\n• Cause-and-effect\n• Hand-eye coordination"
                 ]
               }
             },
             {
-              "topicNumber": 2,
-              "topic": "Routine Memory Building",
-              "objective": "Remember daily routines and sequences through consistent practice",
-              "explanation": "Establish consistent routines to help baby remember and anticipate what comes next, building memory and anticipation skills.",
-              "hashtags": [
-                "#RoutineMemory",
-                "#SequenceLearning",
-                "#DailyRoutines"
-              ],
-              "estimatedTime": "Throughout day",
-              "age": "3-12 months",
+              "topicNumber": 9,
+              "topic": "Push & Pop Toys",
+              "objective": "Build understanding of action-result",
+              "explanation": "Develops coordination and motor planning",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "👶 Infant (0–1)",
               "activity": {
-                "name": "Routine Memory Building",
+                "name": "Push & Pop Toys",
                 "materials": [
-                  "Daily routine items (available at home)",
-                  "Consistent schedule (available at home)",
-                  "Routine cards (supplied by us)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
+                  "• Push toys",
+                  "• Soft balls"
                 ],
                 "steps": [
-                  "Follow consistent daily routines (feeding, sleeping, playing)",
-                  "Use the same words and actions each time",
-                  "Let baby anticipate next steps in routine",
-                  "Use routine cards to show what comes next",
-                  "Celebrate when baby shows anticipation",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
+                  "1. Show baby how to push.",
+                  "2. Encourage pushing ball.",
+                  "3. Observe motion.",
+                  "4. Rotate toys.",
+                  "5. Celebrate successes."
                 ],
                 "skills": [
-                  "Routine memory",
-                  "Sequence learning",
-                  "Anticipation",
-                  "Predictability",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
+                  "• Gross motor skills\n• Cause-and-effect\n• Attention span"
                 ]
               }
             },
             {
-              "topicNumber": 3,
-              "topic": "Hidden Object Memory Game",
-              "objective": "Remember where objects are hidden through interactive play",
-              "explanation": "Hide favorite toys in predictable places and help baby remember where to find them, building memory and search skills.",
-              "hashtags": [
-                "#HiddenObjects",
-                "#LocationMemory",
-                "#ToyHunting"
-              ],
+              "topicNumber": 10,
+              "topic": "Drop & Bounce Game",
+              "objective": "Teach action-reaction and motor control",
+              "explanation": "Baby learns dropping produces results and predicts outcomes",
+              "hashtags": [],
               "estimatedTime": "10 min",
-              "age": "6-12 months",
+              "age": "👶 Infant (0–1)",
               "activity": {
-                "name": "Hidden Object Memory Game",
+                "name": "Drop & Bounce Game",
                 "materials": [
-                  "Baby's favorite toys (available at home)",
-                  "Soft hiding spots (available at home)",
-                  "Colorful scarves (supplied by us)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
+                  "• Soft balls",
+                  "• Container"
                 ],
                 "steps": [
-                  "Hide toy in same place several times while baby watches",
-                  "Let baby watch you hide it",
-                  "Help them find it and celebrate success",
-                  "Try different hiding spots",
-                  "Let baby hide toys for you to find",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
+                  "1. Drop ball into container.",
+                  "2. Encourage baby to drop.",
+                  "3. Observe bouncing.",
+                  "4. Praise attempts.",
+                  "5. Try different heights."
                 ],
                 "skills": [
-                  "Location memory",
-                  "Object permanence",
-                  "Search skills",
-                  "Problem solving",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
+                  "• Cause-and-effect\n• Hand-eye coordination\n• Fine motor skills"
                 ]
               }
             },
             {
-              "topicNumber": 4,
-              "topic": "Song and Rhyme Repetition",
-              "objective": "Build memory through repetition and rhythm",
-              "explanation": "Repeat favorite songs and rhymes to help baby remember and anticipate words, building memory and language skills.",
-              "hashtags": [
-                "#SongRepetition",
-                "#RhymeMemory",
-                "#MusicalMemory"
-              ],
-              "estimatedTime": "10-15 min",
-              "age": "3-12 months",
-              "activity": {
-                "name": "Song and Rhyme Repetition",
-                "materials": [
-                  "Familiar songs and rhymes (available at home)",
-                  "Musical instruments (supplied by us)",
-                  "Rhythm tools (supplied by us)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
-                ],
-                "steps": [
-                  "Sing the same songs repeatedly with baby",
-                  "Use hand gestures and movements",
-                  "Let baby anticipate familiar parts",
-                  "Add musical instruments for rhythm",
-                  "Celebrate when baby shows recognition",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
-                ],
-                "skills": [
-                  "Musical memory",
-                  "Rhyme recognition",
-                  "Anticipation",
-                  "Language development",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
-                ]
-              }
-            },
-            {
-              "topicNumber": 5,
-              "topic": "Familiar Object Recognition",
-              "objective": "Recognize and remember favorite objects through interactive play",
-              "explanation": "Help baby recognize and remember their favorite toys and objects, building memory and recognition skills.",
-              "hashtags": [
-                "#ObjectRecognition",
-                "#FavoriteToys",
-                "#MemoryBuilding"
-              ],
+              "topicNumber": 11,
+              "topic": "Peek-a-Boo Mirror",
+              "objective": "Encourage recognition and attention",
+              "explanation": "Mirrors help babies learn faces and expressions",
+              "hashtags": [],
               "estimatedTime": "10 min",
-              "age": "4-12 months",
+              "age": "👶 Infant (0–1)",
               "activity": {
-                "name": "Familiar Object Recognition",
+                "name": "Peek-a-Boo Mirror",
                 "materials": [
-                  "Baby's favorite toys (available at home)",
-                  "Familiar objects (available at home)",
-                  "Recognition games (supplied by us)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
+                  "• Baby-safe mirror"
                 ],
                 "steps": [
-                  "Show baby their favorite toys one by one",
-                  "Name each object consistently",
-                  "Let them choose between familiar items",
-                  "Hide and reveal favorite objects",
-                  "Celebrate recognition and choice making",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
+                  "1. Place mirror in front.",
+                  "2. Cover and reveal face.",
+                  "3. Encourage baby to peek.",
+                  "4. Smile and interact.",
+                  "5. Observe reactions."
                 ],
                 "skills": [
-                  "Object recognition",
-                  "Familiarity",
-                  "Choice making",
-                  "Memory development",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "category": "Problem Solving Basics",
-          "description": "Develop early problem-solving and decision-making skills through hands-on challenges",
-          "activities": [
-            {
-              "topicNumber": 1,
-              "topic": "Obstacle Navigation Challenge",
-              "objective": "Learn to navigate around obstacles through guided play",
-              "explanation": "Create simple obstacles for baby to navigate around or over, building problem-solving and movement skills.",
-              "hashtags": [
-                "#ObstacleNavigation",
-                "#ProblemSolving",
-                "#MovementSkills"
-              ],
-              "estimatedTime": "10-15 min",
-              "age": "6-12 months",
-              "activity": {
-                "name": "Obstacle Navigation Challenge",
-                "materials": [
-                  "Soft pillows and cushions (available at home)",
-                  "Soft play mat (available at home)",
-                  "Safe obstacle course materials (supplied by us)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
-                ],
-                "steps": [
-                  "Place soft obstacles in baby's path",
-                  "Encourage them to crawl around or over obstacles",
-                  "Guide them through the course",
-                  "Celebrate their navigation success",
-                  "Try different obstacle arrangements",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
-                ],
-                "skills": [
-                  "Obstacle navigation",
-                  "Problem solving",
-                  "Movement planning",
-                  "Spatial awareness",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
+                  "• Self-recognition\n• Attention span\n• Social-emotional skills"
                 ]
               }
             },
             {
-              "topicNumber": 2,
-              "topic": "Container Opening Challenge",
-              "objective": "Learn to open containers and lids through guided practice",
-              "explanation": "Provide containers with lids for baby to practice opening and closing, building fine motor skills and problem-solving abilities.",
-              "hashtags": [
-                "#ContainerOpening",
-                "#LidRemoval",
-                "#FineMotorSkills"
-              ],
-              "estimatedTime": "10-15 min",
-              "age": "8-12 months",
+              "topicNumber": 12,
+              "topic": "Face Peek Blocks",
+              "objective": "Promote recognition and object permanence",
+              "explanation": "Learning faces and anticipating hidden images",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "👶 Infant (0–1)",
               "activity": {
-                "name": "Container Opening Challenge",
+                "name": "Face Peek Blocks",
                 "materials": [
-                  "Containers with different lids (supplied by us)",
-                  "Small toys to put inside (available at home)",
-                  "Safe opening tools (supplied by us)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
+                  "• Block set with face pictures"
                 ],
                 "steps": [
-                  "Put small toys in containers with lids",
-                  "Show baby how to remove lids",
-                  "Let them practice opening and closing",
-                  "Try different types of lids",
-                  "Celebrate successful openings",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
+                  "1. Stack blocks with faces.",
+                  "2. Cover partially.",
+                  "3. Encourage baby to uncover.",
+                  "4. Praise discovery.",
+                  "5. Change arrangement."
                 ],
                 "skills": [
-                  "Container opening",
-                  "Lid manipulation",
-                  "Fine motor skills",
-                  "Problem solving",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
+                  "• Object permanence\n• Visual recognition\n• Fine motor skills"
                 ]
               }
             },
             {
-              "topicNumber": 3,
-              "topic": "Shape Fitting Practice",
-              "objective": "Learn to fit shapes into matching holes through guided play",
-              "explanation": "Use simple shape sorters to help baby learn shape recognition and fitting, building spatial and problem-solving skills.",
-              "hashtags": [
-                "#ShapeFitting",
-                "#ShapeRecognition",
-                "#SpatialSkills"
-              ],
+              "topicNumber": 13,
+              "topic": "Cloth Peek Surprise",
+              "objective": "Stimulate curiosity and tactile skills",
+              "explanation": "Combines touch and discovery for learning",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Cloth Peek Surprise",
+                "materials": [
+                  "• Soft cloth",
+                  "• Small toy"
+                ],
+                "steps": [
+                  "1. Wrap toy in cloth.",
+                  "2. Encourage uncovering.",
+                  "3. Praise exploration.",
+                  "4. Swap toys.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Tactile exploration\n• Object permanence\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "Peek & Smile Game",
+              "objective": "Build social interaction and anticipation",
+              "explanation": "Teaches anticipation and positive social interaction",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Peek & Smile Game",
+                "materials": [
+                  "• Baby-safe mirror",
+                  "• Cloth"
+                ],
+                "steps": [
+                  "1. Cover face with cloth.",
+                  "2. Reveal and smile.",
+                  "3. Encourage baby to imitate.",
+                  "4. Repeat rhythmically.",
+                  "5. Praise attempts."
+                ],
+                "skills": [
+                  "• Social-emotional skills\n• Object permanence\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "Hide-and-Find Toy",
+              "objective": "Develop memory and problem-solving",
+              "explanation": "Encourages memory through discovery play",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Hide-and-Find Toy",
+                "materials": [
+                  "• Small toys",
+                  "• Blanket"
+                ],
+                "steps": [
+                  "1. Hide toy under blanket.",
+                  "2. Encourage baby to find.",
+                  "3. Praise discovery.",
+                  "4. Change hiding spots.",
+                  "5. Observe problem-solving attempts."
+                ],
+                "skills": [
+                  "• Memory\n• Object permanence\n• Fine motor skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 16,
+              "topic": "Shape Puzzle Mat",
+              "objective": "Introduce shape recognition",
+              "explanation": "Early exposure to shapes enhances cognitive recognition",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Shape Puzzle Mat",
+                "materials": [
+                  "• Soft puzzle mat"
+                ],
+                "steps": [
+                  "1. Show puzzle shapes.",
+                  "2. Encourage placement.",
+                  "3. Assist if needed.",
+                  "4. Praise success.",
+                  "5. Rotate shapes."
+                ],
+                "skills": [
+                  "• Shape recognition\n• Hand-eye coordination\n• Fine motor skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "Color Block Mat",
+              "objective": "Teach colors and matching",
+              "explanation": "Develops visual discrimination and motor skills",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Color Block Mat",
+                "materials": [
+                  "• Colored mats",
+                  "• Toys"
+                ],
+                "steps": [
+                  "1. Place colored blocks.",
+                  "2. Encourage baby to touch/match.",
+                  "3. Observe choices.",
+                  "4. Swap colors.",
+                  "5. Praise attempts."
+                ],
+                "skills": [
+                  "• Color recognition\n• Fine motor skills\n• Matching skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "Animal Puzzle Mat",
+              "objective": "Encourage visual and tactile learning",
+              "explanation": "Introduces animals and shapes for learning",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Animal Puzzle Mat",
+                "materials": [
+                  "• Animal puzzle mat"
+                ],
+                "steps": [
+                  "1. Show baby puzzle pieces.",
+                  "2. Encourage placement.",
+                  "3. Assist gently.",
+                  "4. Praise completion.",
+                  "5. Repeat with new animals."
+                ],
+                "skills": [
+                  "• Fine motor skills\n• Visual discrimination\n• Problem-solving"
+                ]
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "Soft Shape Board",
+              "objective": "Teach shapes safely",
+              "explanation": "Safe tactile learning for shape familiarity",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Shape Board",
+                "materials": [
+                  "• Soft shape board"
+                ],
+                "steps": [
+                  "1. Show shapes.",
+                  "2. Encourage matching.",
+                  "3. Guide hands.",
+                  "4. Praise attempts.",
+                  "5. Swap shapes for variety."
+                ],
+                "skills": [
+                  "• Shape recognition\n• Hand-eye coordination\n• Fine motor skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "Textured Puzzle Play",
+              "objective": "Stimulate tactile and cognitive skills",
+              "explanation": "Combines texture and puzzle-solving for cognitive development",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Textured Puzzle Play",
+                "materials": [
+                  "• Textured puzzle pieces"
+                ],
+                "steps": [
+                  "1. Present puzzle.",
+                  "2. Encourage exploration.",
+                  "3. Guide placement.",
+                  "4. Praise attempts.",
+                  "5. Swap textures."
+                ],
+                "skills": [
+                  "• Tactile exploration\n• Problem-solving\n• Fine motor skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 21,
+              "topic": "Shape Sort Challenge",
+              "objective": "Develop shape recognition and fine motor skills",
+              "explanation": "Sorting shapes reinforces cognitive recognition and motor skills",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Shape Sort Challenge",
+                "materials": [
+                  "• Shape sorter",
+                  "• Blocks"
+                ],
+                "steps": [
+                  "1. Show shapes to toddler.",
+                  "2. Encourage placing in correct holes.",
+                  "3. Demonstrate if needed.",
+                  "4. Praise success.",
+                  "5. Repeat with different shapes."
+                ],
+                "skills": [
+                  "• Shape recognition\n• Fine motor skills\n• Hand-eye coordination"
+                ]
+              }
+            },
+            {
+              "topicNumber": 22,
+              "topic": "Color Match Boxes",
+              "objective": "Teach color recognition and matching",
+              "explanation": "Matching colors helps visual discrimination and cognitive mapping",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Color Match Boxes",
+                "materials": [
+                  "• Colored boxes",
+                  "• Objects of matching colors"
+                ],
+                "steps": [
+                  "1. Present colored objects and boxes.",
+                  "2. Encourage matching.",
+                  "3. Observe attempts.",
+                  "4. Praise successes.",
+                  "5. Rotate colors."
+                ],
+                "skills": [
+                  "• Color recognition\n• Matching skills\n• Fine motor development"
+                ]
+              }
+            },
+            {
+              "topicNumber": 23,
+              "topic": "Animal Pairing Game",
+              "objective": "Promote memory and categorization",
+              "explanation": "Teaches memory, recognition, and grouping",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Animal Pairing Game",
+                "materials": [
+                  "• Animal cards or toys"
+                ],
+                "steps": [
+                  "1. Show animal pairs.",
+                  "2. Mix and encourage matching.",
+                  "3. Praise correct matches.",
+                  "4. Repeat rounds.",
+                  "5. Swap animals."
+                ],
+                "skills": [
+                  "• Memory\n• Categorization\n• Attention span"
+                ]
+              }
+            },
+            {
+              "topicNumber": 24,
+              "topic": "Stack & Match",
+              "objective": "Develop problem-solving and spatial skills",
+              "explanation": "Stacking and matching develops planning and coordination",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Stack & Match",
+                "materials": [
+                  "• Stackable cups or blocks"
+                ],
+                "steps": [
+                  "1. Show stacking technique.",
+                  "2. Encourage toddler to replicate.",
+                  "3. Praise attempts.",
+                  "4. Introduce patterns.",
+                  "5. Rotate stacking objects."
+                ],
+                "skills": [
+                  "• Spatial reasoning\n• Fine motor skills\n• Problem-solving"
+                ]
+              }
+            },
+            {
+              "topicNumber": 25,
+              "topic": "Everyday Object Sorting",
+              "objective": "Build categorization and observation skills",
+              "explanation": "Toddlers learn to group objects by characteristics",
+              "hashtags": [],
               "estimatedTime": "15 min",
-              "age": "9-12 months",
+              "age": "🚼 Toddler (1–3)",
               "activity": {
-                "name": "Shape Fitting Practice",
+                "name": "Everyday Object Sorting",
                 "materials": [
-                  "Simple shape sorter (supplied by us)",
-                  "Basic shapes (supplied by us)",
-                  "Soft play mat (available at home)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
+                  "• Safe household items",
+                  "• Containers"
                 ],
                 "steps": [
-                  "Show baby how shapes fit into holes",
-                  "Let them try to match shapes",
-                  "Help and guide their attempts",
-                  "Celebrate successful fittings",
-                  "Try different shapes and orientations",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
+                  "1. Show items and categories.",
+                  "2. Encourage sorting.",
+                  "3. Observe choices.",
+                  "4. Praise correct sorting.",
+                  "5. Swap categories."
                 ],
                 "skills": [
-                  "Shape recognition",
-                  "Spatial fitting",
-                  "Problem solving",
-                  "Hand-eye coordination",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
+                  "• Categorization\n• Observation\n• Fine motor coordination"
                 ]
               }
             },
             {
-              "topicNumber": 4,
-              "topic": "Stacking and Building Challenge",
-              "objective": "Learn to stack objects and build structures through guided play",
-              "explanation": "Provide blocks or cups for baby to practice stacking and building, developing spatial skills and problem-solving abilities.",
-              "hashtags": [
-                "#Stacking",
-                "#Building",
-                "#SpatialSkills"
-              ],
+              "topicNumber": 26,
+              "topic": "Obstacle Find Game",
+              "objective": "Encourage problem-solving and movement",
+              "explanation": "Combines exploration with physical activity for cognitive growth",
+              "hashtags": [],
               "estimatedTime": "15 min",
-              "age": "8-12 months",
+              "age": "🚼 Toddler (1–3)",
               "activity": {
-                "name": "Stacking and Building Challenge",
+                "name": "Obstacle Find Game",
                 "materials": [
-                  "Soft blocks of different sizes (supplied by us)",
-                  "Stacking cups (supplied by us)",
-                  "Soft play mat (available at home)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
+                  "• Soft obstacles",
+                  "• Small toys"
                 ],
                 "steps": [
-                  "Show baby how to stack blocks",
-                  "Let them try to build towers",
-                  "Help guide their stacking attempts",
-                  "Celebrate when they succeed",
-                  "Try different stacking patterns",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
+                  "1. Arrange obstacles.",
+                  "2. Hide toys around.",
+                  "3. Encourage finding toys.",
+                  "4. Praise discovery.",
+                  "5. Repeat with new arrangements."
                 ],
                 "skills": [
-                  "Stacking skills",
-                  "Building",
-                  "Spatial understanding",
-                  "Problem solving",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
+                  "• Problem-solving\n• Gross motor skills\n• Attention"
                 ]
               }
             },
             {
-              "topicNumber": 5,
-              "topic": "Choice Making Practice",
-              "objective": "Learn to make simple choices between options through guided decision-making",
-              "explanation": "Present baby with two options and let them choose, building decision-making skills and independence.",
-              "hashtags": [
-                "#ChoiceMaking",
-                "#DecisionSkills",
-                "#PreferenceLearning"
-              ],
-              "estimatedTime": "10 min",
-              "age": "6-12 months",
+              "topicNumber": 27,
+              "topic": "Toy Rescue Challenge",
+              "objective": "Promote logic and problem-solving",
+              "explanation": "Encourages logical thinking and planning",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🚼 Toddler (1–3)",
               "activity": {
-                "name": "Choice Making Practice",
+                "name": "Toy Rescue Challenge",
                 "materials": [
-                  "Two different toys (available at home)",
-                  "Two different foods (available at home)",
-                  "Choice presentation tools (supplied by us)",
-                  "Cognitive development kit (supplied by us)",
-                  "Learning progress tracker (supplied by us)",
-                  "Skill assessment tools (supplied by us)"
+                  "• Toys",
+                  "• Containers or boxes"
                 ],
                 "steps": [
-                  "Present two options to baby",
-                  "Let them reach for their choice",
-                  "Respect and follow their selection",
-                  "Try different types of choices",
-                  "Celebrate their decision-making",
-                  "Use our cognitive development kit",
-                  "Follow our learning progress tracker",
-                  "Complete skill assessment",
-                  "Return materials when activity is complete"
+                  "1. Hide toy in container.",
+                  "2. Encourage retrieving.",
+                  "3. Guide if needed.",
+                  "4. Praise success.",
+                  "5. Change hiding spots."
                 ],
                 "skills": [
-                  "Choice making",
-                  "Decision skills",
-                  "Preference expression",
-                  "Independence",
-                  "Learning assessment",
-                  "Progress tracking",
-                  "Resource management"
+                  "• Problem-solving\n• Fine motor skills\n• Spatial awareness"
+                ]
+              }
+            },
+            {
+              "topicNumber": 28,
+              "topic": "Hidden Treasure Hunt",
+              "objective": "Stimulate attention, memory, and problem-solving",
+              "explanation": "Toddler learns to track, search, and retrieve objects",
+              "hashtags": [],
+              "estimatedTime": "15 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Hidden Treasure Hunt",
+                "materials": [
+                  "• Small toys",
+                  "• Safe containers"
+                ],
+                "steps": [
+                  "1. Hide items around room.",
+                  "2. Give clues or hints.",
+                  "3. Encourage searching.",
+                  "4. Praise discovery.",
+                  "5. Vary hiding places."
+                ],
+                "skills": [
+                  "• Memory\n• Problem-solving\n• Observation"
+                ]
+              }
+            },
+            {
+              "topicNumber": 29,
+              "topic": "Mini Maze Exploration",
+              "objective": "Enhance spatial awareness and planning",
+              "explanation": "Teaches problem-solving and directional thinking",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Mini Maze Exploration",
+                "materials": [
+                  "• Cardboard maze",
+                  "• Small ball or toy"
+                ],
+                "steps": [
+                  "1. Show maze.",
+                  "2. Encourage moving toy through paths.",
+                  "3. Praise successful navigation.",
+                  "4. Guide if needed.",
+                  "5. Repeat with varied paths."
+                ],
+                "skills": [
+                  "• Spatial awareness\n• Fine motor skills\n• Planning"
+                ]
+              }
+            },
+            {
+              "topicNumber": 30,
+              "topic": "Button & Latch Puzzle",
+              "objective": "Develop fine motor and problem-solving skills",
+              "explanation": "Strengthens dexterity and logical thinking",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Button & Latch Puzzle",
+                "materials": [
+                  "• Puzzle board with buttons and latches"
+                ],
+                "steps": [
+                  "1. Demonstrate unlocking/pressing.",
+                  "2. Encourage toddler to manipulate.",
+                  "3. Praise success.",
+                  "4. Swap configurations.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Fine motor skills\n• Problem-solving\n• Hand-eye coordination"
+                ]
+              }
+            },
+            {
+              "topicNumber": 31,
+              "topic": "Story Sequence Cards",
+              "objective": "Teach sequencing and memory",
+              "explanation": "Encourages understanding of order and narrative",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Story Sequence Cards",
+                "materials": [
+                  "• Picture cards"
+                ],
+                "steps": [
+                  "1. Show a simple story with cards.",
+                  "2. Mix and ask toddler to reorder.",
+                  "3. Praise correct sequence.",
+                  "4. Guide if needed.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Sequencing\n• Memory\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 32,
+              "topic": "Daily Routine Steps",
+              "objective": "Introduce planning and sequencing",
+              "explanation": "Reinforces daily routine understanding",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Daily Routine Steps",
+                "materials": [
+                  "• Visual cue cards"
+                ],
+                "steps": [
+                  "1. Show morning/evening routine.",
+                  "2. Encourage following steps.",
+                  "3. Assist as needed.",
+                  "4. Praise completion.",
+                  "5. Repeat daily."
+                ],
+                "skills": [
+                  "• Sequencing\n• Planning\n• Life skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 33,
+              "topic": "Snack Prep Order Game",
+              "objective": "Teach sequencing and basic problem-solving",
+              "explanation": "Develops early planning and independence",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Snack Prep Order Game",
+                "materials": [
+                  "• Safe snack items",
+                  "• Small plates"
+                ],
+                "steps": [
+                  "1. Show steps to prepare snack.",
+                  "2. Encourage following order.",
+                  "3. Praise attempts.",
+                  "4. Guide if needed.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Sequencing\n• Problem-solving\n• Life skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 34,
+              "topic": "Dress-Up Sequence",
+              "objective": "Enhance planning and sequencing skills",
+              "explanation": "Reinforces order of actions",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Dress-Up Sequence",
+                "materials": [
+                  "• Dress-up clothes",
+                  "• Dolls"
+                ],
+                "steps": [
+                  "1. Demonstrate dressing sequence.",
+                  "2. Encourage toddler to replicate.",
+                  "3. Praise success.",
+                  "4. Swap clothes.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Sequencing\n• Fine motor skills\n• Planning"
+                ]
+              }
+            },
+            {
+              "topicNumber": 35,
+              "topic": "Toy Train Order",
+              "objective": "Introduce logical ordering",
+              "explanation": "Combines play and logic for early cognitive skills",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Toy Train Order",
+                "materials": [
+                  "• Toy train set"
+                ],
+                "steps": [
+                  "1. Show train order.",
+                  "2. Encourage toddler to arrange cars.",
+                  "3. Praise correct order.",
+                  "4. Swap sequences.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Sequencing\n• Planning\n• Fine motor skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 36,
+              "topic": "Animal Sound Match",
+              "objective": "Develop auditory discrimination and memory",
+              "explanation": "Builds recognition of sounds and association",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Animal Sound Match",
+                "materials": [
+                  "• Animal sound toys",
+                  "• Cards"
+                ],
+                "steps": [
+                  "1. Play animal sound.",
+                  "2. Encourage matching card.",
+                  "3. Praise success.",
+                  "4. Repeat with other sounds.",
+                  "5. Swap sequence."
+                ],
+                "skills": [
+                  "• Auditory discrimination\n• Memory\n• Matching skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 37,
+              "topic": "Musical Instrument Match",
+              "objective": "Enhance auditory memory and matching",
+              "explanation": "Strengthens sound-object association",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Musical Instrument Match",
+                "materials": [
+                  "• Small instruments",
+                  "• Picture cards"
+                ],
+                "steps": [
+                  "1. Show instrument and card.",
+                  "2. Play sound.",
+                  "3. Encourage matching.",
+                  "4. Praise attempts.",
+                  "5. Rotate instruments."
+                ],
+                "skills": [
+                  "• Auditory discrimination\n• Matching\n• Fine motor skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 38,
+              "topic": "Everyday Sound Recognition",
+              "objective": "Promote auditory awareness and attention",
+              "explanation": "Recognizing everyday sounds develops auditory cognition",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Everyday Sound Recognition",
+                "materials": [
+                  "• Everyday object sounds"
+                ],
+                "steps": [
+                  "1. Play sound of object.",
+                  "2. Encourage toddler to identify.",
+                  "3. Praise correct guesses.",
+                  "4. Repeat.",
+                  "5. Introduce new sounds."
+                ],
+                "skills": [
+                  "• Auditory discrimination\n• Attention\n• Memory"
+                ]
+              }
+            },
+            {
+              "topicNumber": 39,
+              "topic": "Picture & Sound Pairing",
+              "objective": "Teach association between visual and auditory cues",
+              "explanation": "Combines visual and auditory learning",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Picture & Sound Pairing",
+                "materials": [
+                  "• Picture cards",
+                  "• Sound source"
+                ],
+                "steps": [
+                  "1. Show picture.",
+                  "2. Play corresponding sound.",
+                  "3. Encourage matching.",
+                  "4. Praise success.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Auditory-visual association\n• Memory\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 40,
+              "topic": "Echo Game",
+              "objective": "Reinforce listening and memory skills",
+              "explanation": "Helps with sound recognition and memory",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Echo Game",
+                "materials": [
+                  "• Voice or instrument",
+                  "• Echo cards"
+                ],
+                "steps": [
+                  "1. Produce sound.",
+                  "2. Encourage toddler to mimic.",
+                  "3. Praise attempts.",
+                  "4. Repeat with variations."
+                ],
+                "skills": [
+                  "• Auditory memory\n• Imitation\n• Listening skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 41,
+              "topic": "Color Pattern Tiles",
+              "objective": "Teach pattern recognition and visual sequencing",
+              "explanation": "Builds understanding of visual patterns and order",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Color Pattern Tiles",
+                "materials": [
+                  "• Pattern tiles",
+                  "• Board"
+                ],
+                "steps": [
+                  "1. Show a simple color pattern.",
+                  "2. Ask child to replicate.",
+                  "3. Praise success.",
+                  "4. Introduce new patterns.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Pattern recognition\n• Visual discrimination\n• Sequencing"
+                ]
+              }
+            },
+            {
+              "topicNumber": 42,
+              "topic": "Shape Sequencing",
+              "objective": "Develop shape recognition and order",
+              "explanation": "Encourages observation, prediction, and order recognition",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Shape Sequencing",
+                "materials": [
+                  "• Shape blocks",
+                  "• Mat"
+                ],
+                "steps": [
+                  "1. Create a sequence of shapes.",
+                  "2. Ask child to continue the sequence.",
+                  "3. Guide if needed.",
+                  "4. Praise attempts.",
+                  "5. Repeat with new shapes."
+                ],
+                "skills": [
+                  "• Shape recognition\n• Sequencing\n• Fine motor skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 43,
+              "topic": "Daily Routine Patterns",
+              "objective": "Teach sequencing through familiar routines",
+              "explanation": "Reinforces understanding of daily routines and order",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Daily Routine Patterns",
+                "materials": [
+                  "• Visual cards of routine steps"
+                ],
+                "steps": [
+                  "1. Show daily routine sequence.",
+                  "2. Ask child to arrange cards.",
+                  "3. Guide as needed.",
+                  "4. Praise correct order.",
+                  "5. Repeat with new routines."
+                ],
+                "skills": [
+                  "• Sequencing\n• Planning\n• Memory"
+                ]
+              }
+            },
+            {
+              "topicNumber": 44,
+              "topic": "Number Pattern Game",
+              "objective": "Promote numeric sequencing and counting",
+              "explanation": "Enhances numeric awareness and pattern logic",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Number Pattern Game",
+                "materials": [
+                  "• Number cards",
+                  "• Tokens"
+                ],
+                "steps": [
+                  "1. Lay out numbers in sequence.",
+                  "2. Ask child to continue the pattern.",
+                  "3. Praise correct completion.",
+                  "4. Introduce new number sequences.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Number recognition\n• Sequencing\n• Counting"
+                ]
+              }
+            },
+            {
+              "topicNumber": 45,
+              "topic": "Nature Pattern Hunt",
+              "objective": "Encourage observation and natural pattern recognition",
+              "explanation": "Connects cognitive skills with nature exploration",
+              "hashtags": [],
+              "estimatedTime": "15 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Nature Pattern Hunt",
+                "materials": [
+                  "• Nature items (leaves, stones, flowers)",
+                  "• Basket"
+                ],
+                "steps": [
+                  "1. Show example pattern.",
+                  "2. Ask child to find matching items.",
+                  "3. Arrange items in pattern.",
+                  "4. Praise effort.",
+                  "5. Repeat with new patterns."
+                ],
+                "skills": [
+                  "• Observation\n• Pattern recognition\n• Categorization"
+                ]
+              }
+            },
+            {
+              "topicNumber": 46,
+              "topic": "Animal Memory Cards",
+              "objective": "Improve memory and recognition",
+              "explanation": "Builds recall and visual memory",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Animal Memory Cards",
+                "materials": [
+                  "• Animal cards"
+                ],
+                "steps": [
+                  "1. Show cards in pairs.",
+                  "2. Mix and ask child to match.",
+                  "3. Praise correct matches.",
+                  "4. Rotate cards.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Memory\n• Attention\n• Categorization"
+                ]
+              }
+            },
+            {
+              "topicNumber": 47,
+              "topic": "Color Match Memory",
+              "objective": "Develop visual memory and color recognition",
+              "explanation": "Enhances cognitive mapping of colors",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Color Match Memory",
+                "materials": [
+                  "• Color cards",
+                  "• Matching board"
+                ],
+                "steps": [
+                  "1. Show matching pairs.",
+                  "2. Mix cards and ask child to find pairs.",
+                  "3. Praise success.",
+                  "4. Repeat with new colors.",
+                  "5. Observe attempts."
+                ],
+                "skills": [
+                  "• Memory\n• Color recognition\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 48,
+              "topic": "Toy Memory Tray",
+              "objective": "Improve attention and working memory",
+              "explanation": "Trains short-term memory and recall",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Toy Memory Tray",
+                "materials": [
+                  "• Small toys",
+                  "• Tray"
+                ],
+                "steps": [
+                  "1. Place toys on tray.",
+                  "2. Cover after 30 seconds.",
+                  "3. Ask child to recall items.",
+                  "4. Praise correct answers.",
+                  "5. Repeat with different toys."
+                ],
+                "skills": [
+                  "• Memory\n• Observation\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 49,
+              "topic": "Story Recall Game",
+              "objective": "Enhance auditory memory and sequencing",
+              "explanation": "Encourages recall, comprehension, and narrative skills",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Story Recall Game",
+                "materials": [
+                  "• Short story cards"
+                ],
+                "steps": [
+                  "1. Read a story aloud.",
+                  "2. Ask child to retell using cards.",
+                  "3. Guide if needed.",
+                  "4. Praise attempts.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Memory\n• Sequencing\n• Listening skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 50,
+              "topic": "Shape Memory Tiles",
+              "objective": "Build visual memory and recognition",
+              "explanation": "Improves recall and shape discrimination",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Shape Memory Tiles",
+                "materials": [
+                  "• Shape tiles"
+                ],
+                "steps": [
+                  "1. Display tiles for a few seconds.",
+                  "2. Cover and ask child to recall.",
+                  "3. Praise correct matches.",
+                  "4. Repeat with new shapes.",
+                  "5. Rotate tiles."
+                ],
+                "skills": [
+                  "• Memory\n• Shape recognition\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 51,
+              "topic": "First Board Adventure",
+              "objective": "Introduce basic board game rules and turn-taking",
+              "explanation": "Builds early understanding of games and rules",
+              "hashtags": [],
+              "estimatedTime": "15 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "First Board Adventure",
+                "materials": [
+                  "• Simple board game"
+                ],
+                "steps": [
+                  "1. Explain rules.",
+                  "2. Take turns moving pieces.",
+                  "3. Praise correct actions.",
+                  "4. Guide if needed.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Turn-taking\n• Problem-solving\n• Social skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 52,
+              "topic": "Counting Game Board",
+              "objective": "Reinforce counting and number recognition",
+              "explanation": "Strengthens numeric awareness and coordination",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Counting Game Board",
+                "materials": [
+                  "• Board with numbered squares",
+                  "• Tokens"
+                ],
+                "steps": [
+                  "1. Show board.",
+                  "2. Move token counting each square.",
+                  "3. Praise correct counting.",
+                  "4. Repeat.",
+                  "5. Encourage self-counting."
+                ],
+                "skills": [
+                  "• Counting\n• Number recognition\n• Fine motor skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 53,
+              "topic": "Color Race Game",
+              "objective": "Teach color recognition and quick responses",
+              "explanation": "Combines visual learning and motor response",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Color Race Game",
+                "materials": [
+                  "• Color cards",
+                  "• Tokens"
+                ],
+                "steps": [
+                  "1. Show target color.",
+                  "2. Ask child to place token on matching color.",
+                  "3. Praise quick matches.",
+                  "4. Repeat.",
+                  "5. Rotate colors."
+                ],
+                "skills": [
+                  "• Color recognition\n• Reaction time\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 54,
+              "topic": "Animal Path Game",
+              "objective": "Improve planning and logical thinking",
+              "explanation": "Teaches logic and sequencing",
+              "hashtags": [],
+              "estimatedTime": "15 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Animal Path Game",
+                "materials": [
+                  "• Animal figurines",
+                  "• Path mat"
+                ],
+                "steps": [
+                  "1. Show path.",
+                  "2. Ask child to move animals along.",
+                  "3. Praise correct navigation.",
+                  "4. Change paths.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Planning\n• Problem-solving\n• Spatial awareness"
+                ]
+              }
+            },
+            {
+              "topicNumber": 55,
+              "topic": "Turn-Taking Dice Game",
+              "objective": "Teach turn-taking, counting, and patience",
+              "explanation": "Combines numeracy with social interaction",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Turn-Taking Dice Game",
+                "materials": [
+                  "• Dice",
+                  "• Board or mat"
+                ],
+                "steps": [
+                  "1. Explain rules.",
+                  "2. Take turns rolling dice.",
+                  "3. Move pieces accordingly.",
+                  "4. Praise fair play.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Turn-taking\n• Counting\n• Social skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 56,
+              "topic": "Story Prediction Game",
+              "objective": "Develop prediction and reasoning",
+              "explanation": "Encourages critical thinking and narrative understanding",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Story Prediction Game",
+                "materials": [
+                  "• Story cards"
+                ],
+                "steps": [
+                  "1. Read beginning of story.",
+                  "2. Ask child what happens next.",
+                  "3. Discuss ideas.",
+                  "4. Praise attempts.",
+                  "5. Reveal ending."
+                ],
+                "skills": [
+                  "• Prediction\n• Reasoning\n• Language skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 57,
+              "topic": "Ending Guess Cards",
+              "objective": "Enhance prediction and memory",
+              "explanation": "Stimulates imagination and logical thinking",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Ending Guess Cards",
+                "materials": [
+                  "• Picture or story cards"
+                ],
+                "steps": [
+                  "1. Show story scenario.",
+                  "2. Ask child to guess ending.",
+                  "3. Praise creative answers.",
+                  "4. Reveal actual ending.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Prediction\n• Memory\n• Creativity"
+                ]
+              }
+            },
+            {
+              "topicNumber": 58,
+              "topic": "Picture Sequence Game",
+              "objective": "Teach sequencing and logical thinking",
+              "explanation": "Strengthens understanding of order and cause-effect",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Picture Sequence Game",
+                "materials": [
+                  "• Picture cards"
+                ],
+                "steps": [
+                  "1. Lay out cards in random order.",
+                  "2. Ask child to arrange logically.",
+                  "3. Praise correct order.",
+                  "4. Guide if needed.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Sequencing\n• Logical thinking\n• Memory"
+                ]
+              }
+            },
+            {
+              "topicNumber": 59,
+              "topic": "Puppet Story Continuation",
+              "objective": "Enhance imagination and sequencing",
+              "explanation": "Combines storytelling with cognitive sequencing",
+              "hashtags": [],
+              "estimatedTime": "15 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Puppet Story Continuation",
+                "materials": [
+                  "• Puppets",
+                  "• Story props"
+                ],
+                "steps": [
+                  "1. Start a story with puppets.",
+                  "2. Ask child to continue story.",
+                  "3. Praise creative ideas.",
+                  "4. Guide narrative.",
+                  "5. Repeat."
+                ],
+                "skills": [
+                  "• Imagination\n• Sequencing\n• Language skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 60,
+              "topic": "Story Dice Play",
+              "objective": "Teach cause-effect, sequencing, and creativity",
+              "explanation": "Promotes imaginative thinking and narrative skills",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Story Dice Play",
+                "materials": [
+                  "• Story dice",
+                  "• Surface to roll dice"
+                ],
+                "steps": [
+                  "1. Roll dice.",
+                  "2. Ask child to make story from icons.",
+                  "3. Praise creativity.",
+                  "4. Repeat with new rolls.",
+                  "5. Encourage connecting ideas."
+                ],
+                "skills": [
+                  "• Creativity\n• Sequencing\n• Problem-solving"
+                ]
+              }
+            },
+            {
+              "topicNumber": 61,
+              "topic": "Math Puzzle Cards",
+              "objective": "Strengthen mental math and problem-solving",
+              "explanation": "Combines math practice with engaging puzzle solving",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Math Puzzle Cards",
+                "materials": [
+                  "• Puzzle cards with numbers"
+                ],
+                "steps": [
+                  "1. Show a card to child.",
+                  "2. Ask them to solve puzzle.",
+                  "3. Guide if stuck.",
+                  "4. Praise correct answers."
+                ],
+                "skills": [
+                  "• Mental calculation\n• Problem-solving\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 62,
+              "topic": "Number Maze",
+              "objective": "Improve number recognition and sequencing",
+              "explanation": "Teaches order of numbers while navigating",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Number Maze",
+                "materials": [
+                  "• Maze board with numbers",
+                  "• Small token"
+                ],
+                "steps": [
+                  "1. Show start and end points.",
+                  "2. Guide token through numbers in order.",
+                  "3. Encourage child to attempt alone.",
+                  "4. Praise success."
+                ],
+                "skills": [
+                  "• Number recognition\n• Sequencing\n• Fine motor skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 63,
+              "topic": "Quick Addition Game",
+              "objective": "Practice addition and speed",
+              "explanation": "Builds fast mental math skills",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Quick Addition Game",
+                "materials": [
+                  "• Number cards",
+                  "• Small board"
+                ],
+                "steps": [
+                  "1. Show two numbers.",
+                  "2. Ask child to add quickly.",
+                  "3. Check answer.",
+                  "4. Praise speed and accuracy."
+                ],
+                "skills": [
+                  "• Addition skills\n• Mental calculation\n• Focus"
+                ]
+              }
+            },
+            {
+              "topicNumber": 64,
+              "topic": "Math Bingo",
+              "objective": "Reinforce arithmetic operations",
+              "explanation": "Combines fun with learning arithmetic",
+              "hashtags": [],
+              "estimatedTime": "15 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Math Bingo",
+                "materials": [
+                  "• Bingo cards",
+                  "• Markers"
+                ],
+                "steps": [
+                  "1. Call out sums.",
+                  "2. Child finds answer on card.",
+                  "3. Mark correct answers.",
+                  "4. Praise achievement."
+                ],
+                "skills": [
+                  "• Addition/subtraction\n• Number recognition\n• Concentration"
+                ]
+              }
+            },
+            {
+              "topicNumber": 65,
+              "topic": "Countdown Numbers",
+              "objective": "Practice subtraction and sequencing",
+              "explanation": "Improves reverse counting and attention",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Countdown Numbers",
+                "materials": [
+                  "• Number cards 1–20"
+                ],
+                "steps": [
+                  "1. Lay out cards.",
+                  "2. Ask child to count backward.",
+                  "3. Correct and guide.",
+                  "4. Repeat with different starting numbers."
+                ],
+                "skills": [
+                  "• Subtraction\n• Sequencing\n• Memory"
+                ]
+              }
+            },
+            {
+              "topicNumber": 66,
+              "topic": "Logic Puzzle Boards",
+              "objective": "Develop critical thinking",
+              "explanation": "Enhances analytical skills through hands-on puzzles",
+              "hashtags": [],
+              "estimatedTime": "15 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Logic Puzzle Boards",
+                "materials": [
+                  "• Puzzle board with patterns"
+                ],
+                "steps": [
+                  "1. Show puzzle.",
+                  "2. Encourage identifying logic.",
+                  "3. Guide if stuck.",
+                  "4. Praise correct solutions."
+                ],
+                "skills": [
+                  "• Logical reasoning\n• Problem-solving\n• Pattern recognition"
+                ]
+              }
+            },
+            {
+              "topicNumber": 67,
+              "topic": "Brain Teaser Cards",
+              "objective": "Stimulate critical thinking and problem solving",
+              "explanation": "Teaches children to think outside the box",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Brain Teaser Cards",
+                "materials": [
+                  "• Brain teaser cards"
+                ],
+                "steps": [
+                  "1. Present card with question.",
+                  "2. Ask child to solve.",
+                  "3. Encourage reasoning.",
+                  "4. Provide hints if needed."
+                ],
+                "skills": [
+                  "• Critical thinking\n• Reasoning\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 68,
+              "topic": "Find the Odd One Out",
+              "objective": "Enhance observation and logic",
+              "explanation": "Helps distinguish similarities and differences",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Find the Odd One Out",
+                "materials": [
+                  "• Picture cards with items"
+                ],
+                "steps": [
+                  "1. Show group of items.",
+                  "2. Ask child to find odd one.",
+                  "3. Praise correct selection.",
+                  "4. Rotate items."
+                ],
+                "skills": [
+                  "• Observation\n• Logical thinking\n• Categorization"
+                ]
+              }
+            },
+            {
+              "topicNumber": 69,
+              "topic": "Mystery Clue Game",
+              "objective": "Encourage deduction and problem-solving",
+              "explanation": "Builds critical thinking and reasoning skills",
+              "hashtags": [],
+              "estimatedTime": "15 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Mystery Clue Game",
+                "materials": [
+                  "• Clue cards",
+                  "• Small props"
+                ],
+                "steps": [
+                  "1. Present scenario.",
+                  "2. Give clues one by one.",
+                  "3. Child deduces solution.",
+                  "4. Praise reasoning."
+                ],
+                "skills": [
+                  "• Deduction\n• Problem-solving\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 70,
+              "topic": "Pattern Logic Challenge",
+              "objective": "Develop pattern recognition and reasoning",
+              "explanation": "Reinforces observation and sequencing skills",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Pattern Logic Challenge",
+                "materials": [
+                  "• Pattern cards",
+                  "• Tokens"
+                ],
+                "steps": [
+                  "1. Show pattern.",
+                  "2. Ask child to predict next.",
+                  "3. Correct and praise.",
+                  "4. Introduce more complex patterns."
+                ],
+                "skills": [
+                  "• Pattern recognition\n• Logical thinking\n• Prediction"
+                ]
+              }
+            },
+            {
+              "topicNumber": 71,
+              "topic": "Block Maze Challenge",
+              "objective": "Improve spatial reasoning",
+              "explanation": "Enhances understanding of space and directions",
+              "hashtags": [],
+              "estimatedTime": "15 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Block Maze Challenge",
+                "materials": [
+                  "• Building blocks",
+                  "• Maze board"
+                ],
+                "steps": [
+                  "1. Construct maze.",
+                  "2. Child navigates token through maze.",
+                  "3. Guide if needed.",
+                  "4. Praise completion."
+                ],
+                "skills": [
+                  "• Spatial awareness\n• Problem-solving\n• Fine motor skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 72,
+              "topic": "Tangram Puzzles",
+              "objective": "Enhance visual-spatial reasoning",
+              "explanation": "Develops shape recognition and planning",
+              "hashtags": [],
+              "estimatedTime": "15 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Tangram Puzzles",
+                "materials": [
+                  "• Tangram set"
+                ],
+                "steps": [
+                  "1. Show shape to create.",
+                  "2. Encourage child to arrange pieces.",
+                  "3. Guide if necessary.",
+                  "4. Praise completion."
+                ],
+                "skills": [
+                  "• Visual-spatial reasoning\n• Problem-solving\n• Fine motor skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 73,
+              "topic": "Puzzle Path Game",
+              "objective": "Promote spatial planning and logic",
+              "explanation": "Encourages strategic thinking",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Puzzle Path Game",
+                "materials": [
+                  "• Puzzle board",
+                  "• Tokens"
+                ],
+                "steps": [
+                  "1. Lay out path pieces.",
+                  "2. Ask child to complete path.",
+                  "3. Guide if stuck.",
+                  "4. Praise solution."
+                ],
+                "skills": [
+                  "• Spatial reasoning\n• Planning\n• Problem-solving"
+                ]
+              }
+            },
+            {
+              "topicNumber": 74,
+              "topic": "3D Shape Challenge",
+              "objective": "Teach 3D shape recognition",
+              "explanation": "Introduces 3D shapes and manipulation",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "3D Shape Challenge",
+                "materials": [
+                  "• 3D blocks"
+                ],
+                "steps": [
+                  "1. Show 3D shape.",
+                  "2. Ask child to replicate.",
+                  "3. Guide if needed.",
+                  "4. Praise attempt."
+                ],
+                "skills": [
+                  "• Shape recognition\n• Spatial awareness\n• Fine motor skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 75,
+              "topic": "Lego Spatial Build",
+              "objective": "Improve planning and spatial skills",
+              "explanation": "Develops creativity with logical thinking",
+              "hashtags": [],
+              "estimatedTime": "15 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Lego Spatial Build",
+                "materials": [
+                  "• Lego blocks"
+                ],
+                "steps": [
+                  "1. Give challenge (build tower, bridge, etc.).",
+                  "2. Encourage child to plan structure.",
+                  "3. Guide if needed.",
+                  "4. Praise success."
+                ],
+                "skills": [
+                  "• Planning\n• Spatial reasoning\n• Fine motor skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 76,
+              "topic": "Logic Grid Puzzles",
+              "objective": "Strengthen deduction and reasoning",
+              "explanation": "Builds critical thinking and logical mapping",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Logic Grid Puzzles",
+                "materials": [
+                  "• Logic grid sheets",
+                  "• Pencil"
+                ],
+                "steps": [
+                  "1. Show puzzle.",
+                  "2. Child fills in grid.",
+                  "3. Guide if stuck.",
+                  "4. Praise completion."
+                ],
+                "skills": [
+                  "• Deductive reasoning\n• Problem-solving\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 77,
+              "topic": "Sudoku Beginner",
+              "objective": "Introduce logical number placement",
+              "explanation": "Builds early number logic and attention",
+              "hashtags": [],
+              "estimatedTime": "15 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Sudoku Beginner",
+                "materials": [
+                  "• Beginner Sudoku sheets",
+                  "• Pencil"
+                ],
+                "steps": [
+                  "1. Explain rules.",
+                  "2. Encourage filling numbers.",
+                  "3. Guide if needed.",
+                  "4. Praise accuracy."
+                ],
+                "skills": [
+                  "• Logical reasoning\n• Number recognition\n• Concentration"
+                ]
+              }
+            },
+            {
+              "topicNumber": 78,
+              "topic": "Color Grid Game",
+              "objective": "Enhance visual logic and pattern recognition",
+              "explanation": "Encourages visual discrimination and planning",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Color Grid Game",
+                "materials": [
+                  "• Color grid sheets",
+                  "• Tokens"
+                ],
+                "steps": [
+                  "1. Show grid.",
+                  "2. Ask child to complete patterns.",
+                  "3. Guide if stuck.",
+                  "4. Praise correct solutions."
+                ],
+                "skills": [
+                  "• Pattern recognition\n• Attention\n• Logical thinking"
+                ]
+              }
+            },
+            {
+              "topicNumber": 79,
+              "topic": "Deduction Cards",
+              "objective": "Promote reasoning and inference",
+              "explanation": "Trains logical thinking and inference",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Deduction Cards",
+                "materials": [
+                  "• Card deck with clues"
+                ],
+                "steps": [
+                  "1. Present clue cards.",
+                  "2. Child deduces solution.",
+                  "3. Praise logical inference.",
+                  "4. Repeat with new cards."
+                ],
+                "skills": [
+                  "• Deductive reasoning\n• Observation\n• Problem-solving"
+                ]
+              }
+            },
+            {
+              "topicNumber": 80,
+              "topic": "Who’s Who Puzzle",
+              "objective": "Develop memory and logical association",
+              "explanation": "Enhances memory and recognition skills",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Who’s Who Puzzle",
+                "materials": [
+                  "• Character cards"
+                ],
+                "steps": [
+                  "1. Lay out cards.",
+                  "2. Ask child to match or identify.",
+                  "3. Guide if needed.",
+                  "4. Praise success."
+                ],
+                "skills": [
+                  "• Memory\n• Logical association\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 81,
+              "topic": "Chess Challenge",
+              "objective": "Develop strategic thinking and planning",
+              "explanation": "Builds logical reasoning, foresight, and decision-making",
+              "hashtags": [],
+              "estimatedTime": "20–30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Chess Challenge",
+                "materials": [
+                  "• Chess board and pieces"
+                ],
+                "steps": [
+                  "1. Explain basic rules.",
+                  "2. Demonstrate opening moves.",
+                  "3. Encourage child to plan strategy.",
+                  "4. Guide during play if needed.",
+                  "5. Reflect on moves after game."
+                ],
+                "skills": [
+                  "• Strategic thinking\n• Planning\n• Problem-solving"
+                ]
+              }
+            },
+            {
+              "topicNumber": 82,
+              "topic": "Checkers Tournament",
+              "objective": "Enhance planning and tactical skills",
+              "explanation": "Teaches foresight and anticipating opponent moves",
+              "hashtags": [],
+              "estimatedTime": "15–25 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Checkers Tournament",
+                "materials": [
+                  "• Checkers board"
+                ],
+                "steps": [
+                  "1. Explain rules.",
+                  "2. Play practice round.",
+                  "3. Encourage strategic thinking.",
+                  "4. Discuss moves and outcomes.",
+                  "5. Rotate opponents."
+                ],
+                "skills": [
+                  "• Planning\n• Strategic thinking\n• Concentration"
+                ]
+              }
+            },
+            {
+              "topicNumber": 83,
+              "topic": "Strategy Card Game",
+              "objective": "Improve logical reasoning and decision-making",
+              "explanation": "Combines fun with strategic problem-solving",
+              "hashtags": [],
+              "estimatedTime": "15 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Strategy Card Game",
+                "materials": [
+                  "• Strategy card deck"
+                ],
+                "steps": [
+                  "1. Explain game rules.",
+                  "2. Play demo round.",
+                  "3. Encourage planning moves.",
+                  "4. Reflect on choices.",
+                  "5. Repeat with new strategy."
+                ],
+                "skills": [
+                  "• Decision-making\n• Logical thinking\n• Planning"
+                ]
+              }
+            },
+            {
+              "topicNumber": 84,
+              "topic": "Maze Strategy Game",
+              "objective": "Promote spatial reasoning and strategy",
+              "explanation": "Enhances ability to foresee paths and make decisions",
+              "hashtags": [],
+              "estimatedTime": "20 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Maze Strategy Game",
+                "materials": [
+                  "• Maze board or printed maze",
+                  "• Token"
+                ],
+                "steps": [
+                  "1. Show maze layout.",
+                  "2. Discuss possible paths.",
+                  "3. Encourage child to plan route.",
+                  "4. Test path.",
+                  "5. Reflect on alternatives."
+                ],
+                "skills": [
+                  "• Spatial reasoning\n• Planning\n• Problem-solving"
+                ]
+              }
+            },
+            {
+              "topicNumber": 85,
+              "topic": "Tactical Grid Play",
+              "objective": "Develop logic and tactical planning",
+              "explanation": "Improves reasoning and foresight",
+              "hashtags": [],
+              "estimatedTime": "15–20 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Tactical Grid Play",
+                "materials": [
+                  "• Grid board",
+                  "• Tokens"
+                ],
+                "steps": [
+                  "1. Explain rules.",
+                  "2. Demonstrate moves.",
+                  "3. Encourage child to plan ahead.",
+                  "4. Discuss successful strategies.",
+                  "5. Repeat rounds."
+                ],
+                "skills": [
+                  "• Tactical planning\n• Logic\n• Decision-making"
+                ]
+              }
+            },
+            {
+              "topicNumber": 86,
+              "topic": "Simple Circuit Challenge",
+              "objective": "Introduce cause and effect in electronics",
+              "explanation": "Explains electrical circuits and observation",
+              "hashtags": [],
+              "estimatedTime": "20 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Simple Circuit Challenge",
+                "materials": [
+                  "• Battery",
+                  "• Bulb",
+                  "• Wires"
+                ],
+                "steps": [
+                  "1. Show simple circuit setup.",
+                  "2. Demonstrate connections.",
+                  "3. Encourage child to build.",
+                  "4. Test functionality.",
+                  "5. Modify for experiments."
+                ],
+                "skills": [
+                  "• Cause & effect\n• Fine motor skills\n• Problem-solving"
+                ]
+              }
+            },
+            {
+              "topicNumber": 87,
+              "topic": "Water Flow Experiment",
+              "objective": "Explore principles of water movement",
+              "explanation": "Teaches fluid dynamics and experimentation",
+              "hashtags": [],
+              "estimatedTime": "20–25 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Water Flow Experiment",
+                "materials": [
+                  "• Water container",
+                  "• Tubing",
+                  "• Cups"
+                ],
+                "steps": [
+                  "1. Set up tubing.",
+                  "2. Demonstrate water flow.",
+                  "3. Let child test configurations.",
+                  "4. Observe changes.",
+                  "5. Discuss findings."
+                ],
+                "skills": [
+                  "• Cause & effect\n• Observation\n• Experimentation"
+                ]
+              }
+            },
+            {
+              "topicNumber": 88,
+              "topic": "Domino Chain Reaction",
+              "objective": "Teach sequential cause and effect",
+              "explanation": "Demonstrates chain reactions and planning",
+              "hashtags": [],
+              "estimatedTime": "15–20 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Domino Chain Reaction",
+                "materials": [
+                  "• Dominoes"
+                ],
+                "steps": [
+                  "1. Set up domino chain.",
+                  "2. Predict outcome.",
+                  "3. Let child push first domino.",
+                  "4. Observe reaction.",
+                  "5. Try new layouts."
+                ],
+                "skills": [
+                  "• Sequencing\n• Cause & effect\n• Planning"
+                ]
+              }
+            },
+            {
+              "topicNumber": 89,
+              "topic": "Balloon Car Experiment",
+              "objective": "Introduce physics principles",
+              "explanation": "Combines physics with hands-on play",
+              "hashtags": [],
+              "estimatedTime": "20 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Balloon Car Experiment",
+                "materials": [
+                  "• Balloon",
+                  "• Straw",
+                  "• Wheels",
+                  "• Tape"
+                ],
+                "steps": [
+                  "1. Build balloon car.",
+                  "2. Inflate balloon.",
+                  "3. Observe movement.",
+                  "4. Modify design for distance.",
+                  "5. Record results."
+                ],
+                "skills": [
+                  "• Cause & effect\n• Problem-solving\n• Creativity"
+                ]
+              }
+            },
+            {
+              "topicNumber": 90,
+              "topic": "Magnetic Attraction Game",
+              "objective": "Teach magnetic properties and effects",
+              "explanation": "Helps understand magnetism in a fun way",
+              "hashtags": [],
+              "estimatedTime": "15–20 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Magnetic Attraction Game",
+                "materials": [
+                  "• Magnets",
+                  "• Metal and non-metal objects"
+                ],
+                "steps": [
+                  "1. Introduce magnets.",
+                  "2. Test attraction and repulsion.",
+                  "3. Encourage predictions.",
+                  "4. Observe results.",
+                  "5. Experiment with variations."
+                ],
+                "skills": [
+                  "• Cause & effect\n• Observation\n• Hypothesis testing"
+                ]
+              }
+            },
+            {
+              "topicNumber": 91,
+              "topic": "What-If Scenario Game",
+              "objective": "Foster abstract thinking and decision-making",
+              "explanation": "Promotes creative thinking and reasoning",
+              "hashtags": [],
+              "estimatedTime": "15–20 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "What-If Scenario Game",
+                "materials": [
+                  "• Scenario cards"
+                ],
+                "steps": [
+                  "1. Present scenario.",
+                  "2. Ask child to predict outcome.",
+                  "3. Discuss possible choices.",
+                  "4. Encourage reasoning.",
+                  "5. Reflect on decisions."
+                ],
+                "skills": [
+                  "• Abstract thinking\n• Decision-making\n• Prediction"
+                ]
+              }
+            },
+            {
+              "topicNumber": 92,
+              "topic": "Riddle Challenges",
+              "objective": "Improve logical reasoning and problem-solving",
+              "explanation": "Builds critical thinking and reasoning",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Riddle Challenges",
+                "materials": [
+                  "• Riddle cards"
+                ],
+                "steps": [
+                  "1. Present riddle.",
+                  "2. Encourage thinking.",
+                  "3. Provide hints if stuck.",
+                  "4. Praise correct answers.",
+                  "5. Try new riddles."
+                ],
+                "skills": [
+                  "• Logical reasoning\n• Problem-solving\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 93,
+              "topic": "Concept Sorting Cards",
+              "objective": "Teach categorization and abstract reasoning",
+              "explanation": "Develops reasoning and classification skills",
+              "hashtags": [],
+              "estimatedTime": "15 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Concept Sorting Cards",
+                "materials": [
+                  "• Concept cards"
+                ],
+                "steps": [
+                  "1. Present set of cards.",
+                  "2. Ask child to sort by categories.",
+                  "3. Discuss choices.",
+                  "4. Encourage alternative groupings.",
+                  "5. Reflect on reasoning."
+                ],
+                "skills": [
+                  "• Categorization\n• Abstract thinking\n• Problem-solving"
+                ]
+              }
+            },
+            {
+              "topicNumber": 94,
+              "topic": "Pattern Inference Game",
+              "objective": "Enhance abstract thinking and observation",
+              "explanation": "Encourages analytical thinking",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Pattern Inference Game",
+                "materials": [
+                  "• Pattern cards"
+                ],
+                "steps": [
+                  "1. Show pattern.",
+                  "2. Ask child to infer next item.",
+                  "3. Discuss logic.",
+                  "4. Repeat with new patterns.",
+                  "5. Praise reasoning."
+                ],
+                "skills": [
+                  "• Observation\n• Pattern recognition\n• Logical inference"
+                ]
+              }
+            },
+            {
+              "topicNumber": 95,
+              "topic": "Story Logic Puzzle",
+              "objective": "Develop reasoning and narrative understanding",
+              "explanation": "Combines storytelling with reasoning",
+              "hashtags": [],
+              "estimatedTime": "15–20 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Story Logic Puzzle",
+                "materials": [
+                  "• Story cards",
+                  "• Visual cues"
+                ],
+                "steps": [
+                  "1. Present story.",
+                  "2. Ask child to sequence events.",
+                  "3. Discuss logic.",
+                  "4. Correct as needed.",
+                  "5. Try alternative endings."
+                ],
+                "skills": [
+                  "• Logical thinking\n• Sequencing\n• Narrative understanding"
+                ]
+              }
+            },
+            {
+              "topicNumber": 96,
+              "topic": "Labyrinth Adventure",
+              "objective": "Improve visual-spatial reasoning",
+              "explanation": "Teaches pathfinding and strategic movement",
+              "hashtags": [],
+              "estimatedTime": "15–20 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Labyrinth Adventure",
+                "materials": [
+                  "• Labyrinth board"
+                ],
+                "steps": [
+                  "1. Show start and end.",
+                  "2. Encourage child to navigate.",
+                  "3. Guide if stuck.",
+                  "4. Praise completion.",
+                  "5. Introduce obstacles."
+                ],
+                "skills": [
+                  "• Visual-spatial reasoning\n• Planning\n• Problem-solving"
+                ]
+              }
+            },
+            {
+              "topicNumber": 97,
+              "topic": "Picture Maze Game",
+              "objective": "Enhance observation and navigation skills",
+              "explanation": "Improves attention to detail and planning",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Picture Maze Game",
+                "materials": [
+                  "• Maze sheets"
+                ],
+                "steps": [
+                  "1. Present maze.",
+                  "2. Ask child to find path.",
+                  "3. Guide if needed.",
+                  "4. Praise success.",
+                  "5. Try new mazes."
+                ],
+                "skills": [
+                  "• Observation\n• Spatial reasoning\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 98,
+              "topic": "Hidden Path Puzzle",
+              "objective": "Promote critical thinking and problem-solving",
+              "explanation": "Builds analytical and observational skills",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Hidden Path Puzzle",
+                "materials": [
+                  "• Hidden path sheets"
+                ],
+                "steps": [
+                  "1. Present puzzle.",
+                  "2. Ask child to find hidden path.",
+                  "3. Encourage planning.",
+                  "4. Guide if stuck.",
+                  "5. Reflect on solution."
+                ],
+                "skills": [
+                  "• Critical thinking\n• Problem-solving\n• Planning"
+                ]
+              }
+            },
+            {
+              "topicNumber": 99,
+              "topic": "Dot-to-Dot Maze",
+              "objective": "Strengthen sequencing and attention",
+              "explanation": "Reinforces order recognition and precision",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Dot-to-Dot Maze",
+                "materials": [
+                  "• Dot-to-dot sheets",
+                  "• Pencil"
+                ],
+                "steps": [
+                  "1. Show starting dot.",
+                  "2. Encourage connecting dots in order.",
+                  "3. Observe accuracy.",
+                  "4. Praise completion.",
+                  "5. Repeat with new sheets."
+                ],
+                "skills": [
+                  "• Sequencing\n• Fine motor skills\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 100,
+              "topic": "Spot the Difference Maze",
+              "objective": "Enhance observation and attention",
+              "explanation": "Combines fun with cognitive skill building",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Spot the Difference Maze",
+                "materials": [
+                  "• Spot-the-difference worksheets"
+                ],
+                "steps": [
+                  "1. Present two images.",
+                  "2. Ask child to find differences.",
+                  "3. Check accuracy.",
+                  "4. Praise attention to detail.",
+                  "5. Repeat with new images."
+                ],
+                "skills": [
+                  "• Observation\n• Attention to detail\n• Visual discrimination"
+                ]
+              }
+            },
+            {
+              "topicNumber": 101,
+              "topic": "Ethical Dilemma Game",
+              "objective": "Develop decision-making and ethical reasoning",
+              "explanation": "Teaches weighing consequences and making informed choices",
+              "hashtags": [],
+              "estimatedTime": "20–30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Ethical Dilemma Game",
+                "materials": [
+                  "• Scenario cards"
+                ],
+                "steps": [
+                  "1. Present dilemma.",
+                  "2. Ask teen to decide best action.",
+                  "3. Discuss consequences.",
+                  "4. Encourage reasoning.",
+                  "5. Reflect on choices."
+                ],
+                "skills": [
+                  "• Decision-making\n• Ethical reasoning\n• Critical thinking"
+                ]
+              }
+            },
+            {
+              "topicNumber": 102,
+              "topic": "Leadership Choice Challenge",
+              "objective": "Foster leadership and strategic thinking",
+              "explanation": "Strengthens planning and leadership abilities",
+              "hashtags": [],
+              "estimatedTime": "20 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Leadership Choice Challenge",
+                "materials": [
+                  "• Scenario cards",
+                  "• Writing materials"
+                ],
+                "steps": [
+                  "1. Present leadership scenario.",
+                  "2. Ask teen to plan strategy.",
+                  "3. Discuss decisions.",
+                  "4. Encourage alternative solutions.",
+                  "5. Reflect on outcomes."
+                ],
+                "skills": [
+                  "• Leadership skills\n• Strategic thinking\n• Problem-solving"
+                ]
+              }
+            },
+            {
+              "topicNumber": 103,
+              "topic": "Budget Decision Simulation",
+              "objective": "Teach financial planning and prioritization",
+              "explanation": "Encourages practical money management and planning",
+              "hashtags": [],
+              "estimatedTime": "15–20 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Budget Decision Simulation",
+                "materials": [
+                  "• Budget sheets",
+                  "• Scenario cards"
+                ],
+                "steps": [
+                  "1. Present budget scenario.",
+                  "2. Ask teen to allocate funds.",
+                  "3. Discuss decisions.",
+                  "4. Encourage reflection.",
+                  "5. Repeat with new scenarios."
+                ],
+                "skills": [
+                  "• Financial literacy\n• Decision-making\n• Prioritization"
+                ]
+              }
+            },
+            {
+              "topicNumber": 104,
+              "topic": "Team Strategy Scenario",
+              "objective": "Promote collaboration and strategic thinking",
+              "explanation": "Teaches collaborative decision-making",
+              "hashtags": [],
+              "estimatedTime": "20–25 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Team Strategy Scenario",
+                "materials": [
+                  "• Scenario cards",
+                  "• Whiteboard"
+                ],
+                "steps": [
+                  "1. Present team scenario.",
+                  "2. Encourage discussion.",
+                  "3. Plan team actions.",
+                  "4. Execute strategy.",
+                  "5. Reflect on results."
+                ],
+                "skills": [
+                  "• Teamwork\n• Strategy\n• Communication"
+                ]
+              }
+            },
+            {
+              "topicNumber": 105,
+              "topic": "Crisis Management Exercise",
+              "objective": "Develop problem-solving under pressure",
+              "explanation": "Prepares teens for handling real-life pressure situations",
+              "hashtags": [],
+              "estimatedTime": "25–30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Crisis Management Exercise",
+                "materials": [
+                  "• Scenario cards",
+                  "• Timer"
+                ],
+                "steps": [
+                  "1. Present crisis scenario.",
+                  "2. Ask teen to prioritize actions.",
+                  "3. Implement plan.",
+                  "4. Review results.",
+                  "5. Reflect on improvements."
+                ],
+                "skills": [
+                  "• Problem-solving\n• Critical thinking\n• Stress management"
+                ]
+              }
+            },
+            {
+              "topicNumber": 106,
+              "topic": "Memory App Challenge",
+              "objective": "Enhance working memory and attention",
+              "explanation": "Engages tech-savvy teens in cognitive skill practice",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Memory App Challenge",
+                "materials": [
+                  "• Memory app or tablet"
+                ],
+                "steps": [
+                  "1. Open app.",
+                  "2. Complete challenges.",
+                  "3. Track progress.",
+                  "4. Repeat levels.",
+                  "5. Reflect on performance."
+                ],
+                "skills": [
+                  "• Memory\n• Attention\n• Focus"
+                ]
+              }
+            },
+            {
+              "topicNumber": 107,
+              "topic": "Logic Puzzle App",
+              "objective": "Improve reasoning and problem-solving",
+              "explanation": "Strengthens analytical thinking",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Logic Puzzle App",
+                "materials": [
+                  "• Logic puzzle app"
+                ],
+                "steps": [
+                  "1. Open puzzle.",
+                  "2. Solve level.",
+                  "3. Review solution.",
+                  "4. Attempt higher difficulty.",
+                  "5. Track progress."
+                ],
+                "skills": [
+                  "• Logical reasoning\n• Problem-solving\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 108,
+              "topic": "Speed Recall Game",
+              "objective": "Enhance rapid memory retrieval",
+              "explanation": "Trains rapid recall under time pressure",
+              "hashtags": [],
+              "estimatedTime": "10 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Speed Recall Game",
+                "materials": [
+                  "• Mobile/PC game or flashcards"
+                ],
+                "steps": [
+                  "1. Present sequence.",
+                  "2. Ask teen to recall quickly.",
+                  "3. Track time.",
+                  "4. Repeat with longer sequences.",
+                  "5. Reflect on improvement."
+                ],
+                "skills": [
+                  "• Memory\n• Attention\n• Quick thinking"
+                ]
+              }
+            },
+            {
+              "topicNumber": 109,
+              "topic": "Pattern Recognition App",
+              "objective": "Develop observation and analytical skills",
+              "explanation": "Strengthens analytical and visual thinking",
+              "hashtags": [],
+              "estimatedTime": "10–15 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Pattern Recognition App",
+                "materials": [
+                  "• Tablet or phone app"
+                ],
+                "steps": [
+                  "1. Present pattern challenge.",
+                  "2. Ask teen to identify next item.",
+                  "3. Validate solution.",
+                  "4. Repeat with harder patterns.",
+                  "5. Track accuracy."
+                ],
+                "skills": [
+                  "• Pattern recognition\n• Observation\n• Logical reasoning"
+                ]
+              }
+            },
+            {
+              "topicNumber": 110,
+              "topic": "Attention Focus Challenge",
+              "objective": "Improve sustained attention and concentration",
+              "explanation": "Trains sustained mental effort",
+              "hashtags": [],
+              "estimatedTime": "15 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Attention Focus Challenge",
+                "materials": [
+                  "• Brain-training app"
+                ],
+                "steps": [
+                  "1. Open challenge.",
+                  "2. Complete focus tasks.",
+                  "3. Monitor accuracy.",
+                  "4. Track progress.",
+                  "5. Reflect on improvement."
+                ],
+                "skills": [
+                  "• Attention\n• Focus\n• Memory"
+                ]
+              }
+            },
+            {
+              "topicNumber": 111,
+              "topic": "Structured Debate",
+              "objective": "Develop argumentation and reasoning",
+              "explanation": "Teaches structured reasoning and verbal communication",
+              "hashtags": [],
+              "estimatedTime": "20–30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Structured Debate",
+                "materials": [
+                  "• Debate topics",
+                  "• Timer"
+                ],
+                "steps": [
+                  "1. Assign topic.",
+                  "2. Prepare arguments.",
+                  "3. Conduct debate.",
+                  "4. Evaluate points.",
+                  "5. Reflect on strengths and weaknesses."
+                ],
+                "skills": [
+                  "• Public speaking\n• Critical thinking\n• Persuasion"
+                ]
+              }
+            },
+            {
+              "topicNumber": 112,
+              "topic": "Mock Court Challenge",
+              "objective": "Promote logical reasoning and public speaking",
+              "explanation": "Simulates real-world reasoning and teamwork",
+              "hashtags": [],
+              "estimatedTime": "25–30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Mock Court Challenge",
+                "materials": [
+                  "• Scenario cards",
+                  "• Court roles"
+                ],
+                "steps": [
+                  "1. Assign roles.",
+                  "2. Present case.",
+                  "3. Prepare arguments.",
+                  "4. Conduct mock trial.",
+                  "5. Discuss outcomes."
+                ],
+                "skills": [
+                  "• Critical thinking\n• Argumentation\n• Communication"
+                ]
+              }
+            },
+            {
+              "topicNumber": 113,
+              "topic": "Persuasive Argument Game",
+              "objective": "Strengthen reasoning and persuasion skills",
+              "explanation": "Builds ability to reason and convince others",
+              "hashtags": [],
+              "estimatedTime": "15–20 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Persuasive Argument Game",
+                "materials": [
+                  "• Topic cards"
+                ],
+                "steps": [
+                  "1. Present topic.",
+                  "2. Ask teen to argue point.",
+                  "3. Counter-arguments.",
+                  "4. Evaluate effectiveness.",
+                  "5. Repeat with new topic."
+                ],
+                "skills": [
+                  "• Persuasion\n• Logical reasoning\n• Communication"
+                ]
+              }
+            },
+            {
+              "topicNumber": 114,
+              "topic": "Scenario Discussion",
+              "objective": "Enhance decision-making and critical thinking",
+              "explanation": "Develops thoughtful discussion and evaluation",
+              "hashtags": [],
+              "estimatedTime": "20 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Scenario Discussion",
+                "materials": [
+                  "• Scenario cards"
+                ],
+                "steps": [
+                  "1. Present scenario.",
+                  "2. Encourage group discussion.",
+                  "3. Analyze options.",
+                  "4. Choose solution.",
+                  "5. Reflect on decisions."
+                ],
+                "skills": [
+                  "• Critical thinking\n• Decision-making\n• Collaboration"
+                ]
+              }
+            },
+            {
+              "topicNumber": 115,
+              "topic": "Pro-Con Analysis",
+              "objective": "Teach structured reasoning and evaluation",
+              "explanation": "Helps weigh options logically",
+              "hashtags": [],
+              "estimatedTime": "15–20 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Pro-Con Analysis",
+                "materials": [
+                  "• Topic cards"
+                ],
+                "steps": [
+                  "1. Present topic.",
+                  "2. List pros and cons.",
+                  "3. Discuss with teen.",
+                  "4. Reflect on best choice.",
+                  "5. Compare with peers."
+                ],
+                "skills": [
+                  "• Analytical thinking\n• Evaluation\n• Decision-making"
+                ]
+              }
+            },
+            {
+              "topicNumber": 116,
+              "topic": "Sudoku Advanced",
+              "objective": "Improve logic and pattern recognition",
+              "explanation": "Strengthens logical thinking and problem-solving",
+              "hashtags": [],
+              "estimatedTime": "15–20 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Sudoku Advanced",
+                "materials": [
+                  "• Sudoku book or app"
+                ],
+                "steps": [
+                  "1. Present grid.",
+                  "2. Solve puzzle.",
+                  "3. Check solution.",
+                  "4. Attempt harder grids.",
+                  "5. Reflect on strategies."
+                ],
+                "skills": [
+                  "• Logical reasoning\n• Pattern recognition\n• Attention"
+                ]
+              }
+            },
+            {
+              "topicNumber": 117,
+              "topic": "Escape Room Challenge",
+              "objective": "Develop multi-step problem-solving",
+              "explanation": "Teaches collaboration and sequential reasoning",
+              "hashtags": [],
+              "estimatedTime": "30–40 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Escape Room Challenge",
+                "materials": [
+                  "• Escape room kit or digital game"
+                ],
+                "steps": [
+                  "1. Present challenge.",
+                  "2. Encourage teamwork.",
+                  "3. Solve puzzles sequentially.",
+                  "4. Track progress.",
+                  "5. Debrief strategies."
+                ],
+                "skills": [
+                  "• Problem-solving\n• Teamwork\n• Critical thinking"
+                ]
+              }
+            },
+            {
+              "topicNumber": 118,
+              "topic": "Logic Tower Puzzle",
+              "objective": "Enhance strategic thinking and planning",
+              "explanation": "Combines strategy and logical thinking",
+              "hashtags": [],
+              "estimatedTime": "20–25 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Logic Tower Puzzle",
+                "materials": [
+                  "• Tower puzzle"
+                ],
+                "steps": [
+                  "1. Present tower puzzle.",
+                  "2. Discuss rules.",
+                  "3. Encourage strategy.",
+                  "4. Solve puzzle.",
+                  "5. Reflect on method."
+                ],
+                "skills": [
+                  "• Strategic thinking\n• Problem-solving\n• Planning"
+                ]
+              }
+            },
+            {
+              "topicNumber": 119,
+              "topic": "Strategic Maze",
+              "objective": "Strengthen planning and reasoning",
+              "explanation": "Enhances foresight and problem-solving",
+              "hashtags": [],
+              "estimatedTime": "20 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Strategic Maze",
+                "materials": [
+                  "• Maze sheets or board"
+                ],
+                "steps": [
+                  "1. Present maze.",
+                  "2. Encourage planning route.",
+                  "3. Test solutions.",
+                  "4. Discuss strategy.",
+                  "5. Repeat with new maze."
+                ],
+                "skills": [
+                  "• Planning\n• Logical reasoning\n• Spatial skills"
+                ]
+              }
+            },
+            {
+              "topicNumber": 120,
+              "topic": "Multi-Step Mystery Game",
+              "objective": "Promote complex reasoning and critical thinking",
+              "explanation": "Builds analytical thinking and sequential problem-solving",
+              "hashtags": [],
+              "estimatedTime": "25–30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Multi-Step Mystery Game",
+                "materials": [
+                  "• Mystery cards or kit"
+                ],
+                "steps": [
+                  "1. Present multi-step problem.",
+                  "2. Encourage teen to solve.",
+                  "3. Guide if stuck.",
+                  "4. Discuss logic.",
+                  "5. Reflect on strategies."
+                ],
+                "skills": [
+                  "• Critical thinking\n• Problem-solving\n• Sequencing"
                 ]
               }
             }
@@ -910,343 +3056,6 @@
       ]
     }
   ],
-  "activityTypesMetadata": {
-    "Creative": {
-      "description": "Activities involving artistic expression, imagination, storytelling, music, and creative problem-solving",
-      "keywords": [
-        "draw",
-        "paint",
-        "story",
-        "imagine",
-        "create",
-        "design",
-        "art",
-        "craft",
-        "music",
-        "dance",
-        "theater",
-        "role-play",
-        "pretend",
-        "build",
-        "invent"
-      ],
-      "skills_developed": [
-        "Creativity",
-        "Imagination",
-        "Artistic expression",
-        "Problem-solving",
-        "Innovation"
-      ],
-      "age_appropriateness": {
-        "Infant (0-1)": "Basic sensory exploration and cause-effect play",
-        "Toddler (1-3)": "Simple pretend play, scribbling, and basic building",
-        "Preschooler (3-5)": "Imaginative play, storytelling, and creative crafts",
-        "Child (6-8)": "Complex storytelling, art projects, and creative games",
-        "Pre-Teen (9-12)": "Advanced art techniques, music composition, and design thinking",
-        "Teen (13-18)": "Digital art, performance art, and innovative design projects"
-      }
-    },
-    "Cognitive": {
-      "description": "Activities that develop thinking skills, memory, attention, logical reasoning, and mental processing abilities",
-      "keywords": [
-        "think",
-        "remember",
-        "focus",
-        "concentrate",
-        "solve",
-        "analyze",
-        "reason",
-        "plan",
-        "organize",
-        "sort",
-        "match",
-        "sequence",
-        "pattern",
-        "logic"
-      ],
-      "skills_developed": [
-        "Critical thinking",
-        "Memory",
-        "Attention",
-        "Problem-solving",
-        "Logical reasoning"
-      ],
-      "age_appropriateness": {
-        "Infant (0-1)": "Basic cause-effect understanding and object permanence",
-        "Toddler (1-3)": "Simple sorting, matching, and problem-solving",
-        "Preschooler (3-5)": "Pattern recognition, sequencing, and memory games",
-        "Child (6-8)": "Complex problem-solving, strategy games, and logical thinking",
-        "Pre-Teen (9-12)": "Advanced reasoning, critical thinking, and analytical skills",
-        "Teen (13-18)": "Abstract thinking, complex problem-solving, and strategic planning"
-      }
-    },
-    "Sensory": {
-      "description": "Activities that stimulate and develop the five senses and sensory processing abilities",
-      "keywords": [
-        "touch",
-        "feel",
-        "texture",
-        "sound",
-        "listen",
-        "smell",
-        "taste",
-        "see",
-        "look",
-        "sensory",
-        "tactile",
-        "auditory",
-        "visual",
-        "olfactory",
-        "gustatory"
-      ],
-      "skills_developed": [
-        "Sensory processing",
-        "Sensory integration",
-        "Sensory discrimination",
-        "Sensory awareness"
-      ],
-      "age_appropriateness": {
-        "Infant (0-1)": "Basic sensory exploration and stimulation",
-        "Toddler (1-3)": "Sensory play with different materials and textures",
-        "Preschooler (3-5)": "Multi-sensory experiences and sensory integration",
-        "Child (6-8)": "Complex sensory activities and sensory discrimination",
-        "Pre-Teen (9-12)": "Advanced sensory processing and sensory art",
-        "Teen (13-18)": "Sophisticated sensory experiences and sensory design"
-      }
-    },
-    "Physical": {
-      "description": "Activities that develop gross and fine motor skills, coordination, balance, and physical abilities",
-      "keywords": [
-        "move",
-        "run",
-        "jump",
-        "climb",
-        "throw",
-        "catch",
-        "balance",
-        "coordination",
-        "strength",
-        "endurance",
-        "motor",
-        "gross",
-        "fine",
-        "physical",
-        "exercise"
-      ],
-      "skills_developed": [
-        "Gross motor skills",
-        "Fine motor skills",
-        "Coordination",
-        "Balance",
-        "Physical fitness"
-      ],
-      "age_appropriateness": {
-        "Infant (0-1)": "Basic motor development and tummy time",
-        "Toddler (1-3)": "Walking, running, climbing, and basic coordination",
-        "Preschooler (3-5)": "Complex motor skills, balance, and coordination",
-        "Child (6-8)": "Advanced motor skills, sports, and physical games",
-        "Pre-Teen (9-12)": "Complex physical activities and team sports",
-        "Teen (13-18)": "Advanced physical skills, fitness, and athletic performance"
-      }
-    },
-    "Social": {
-      "description": "Activities that develop social skills, communication, teamwork, and interpersonal relationships",
-      "keywords": [
-        "share",
-        "cooperate",
-        "communicate",
-        "interact",
-        "social",
-        "emotional",
-        "bonding",
-        "relationship",
-        "empathy",
-        "friendship",
-        "teamwork",
-        "collaboration"
-      ],
-      "skills_developed": [
-        "Social skills",
-        "Emotional intelligence",
-        "Communication",
-        "Empathy",
-        "Cooperation"
-      ],
-      "age_appropriateness": {
-        "Infant (0-1)": "Basic social bonding and emotional connection",
-        "Toddler (1-3)": "Parallel play and basic social interaction",
-        "Preschooler (3-5)": "Cooperative play and social skills development",
-        "Child (6-8)": "Complex social interactions and friendship building",
-        "Pre-Teen (9-12)": "Advanced social skills and emotional intelligence",
-        "Teen (13-18)": "Complex social relationships and leadership skills"
-      }
-    },
-    "Emotional": {
-      "description": "Activities that develop emotional intelligence, self-regulation, empathy, and emotional awareness",
-      "keywords": [
-        "emotion",
-        "feel",
-        "calm",
-        "relax",
-        "empathy",
-        "self-regulation",
-        "emotional",
-        "feelings",
-        "mood",
-        "comfort",
-        "security",
-        "attachment"
-      ],
-      "skills_developed": [
-        "Emotional intelligence",
-        "Self-regulation",
-        "Empathy",
-        "Emotional awareness",
-        "Stress management"
-      ],
-      "age_appropriateness": {
-        "Infant (0-1)": "Basic emotional bonding and security",
-        "Toddler (1-3)": "Emotional expression and basic self-regulation",
-        "Preschooler (3-5)": "Emotional vocabulary and empathy development",
-        "Child (6-8)": "Complex emotional understanding and regulation",
-        "Pre-Teen (9-12)": "Advanced emotional intelligence and peer relationships",
-        "Teen (13-18)": "Sophisticated emotional processing and identity development"
-      }
-    },
-    "Language": {
-      "description": "Activities that develop speaking, reading, vocabulary, communication, and language skills",
-      "keywords": [
-        "speak",
-        "talk",
-        "read",
-        "write",
-        "vocabulary",
-        "language",
-        "communication",
-        "words",
-        "letters",
-        "reading",
-        "writing",
-        "speaking",
-        "listening",
-        "conversation"
-      ],
-      "skills_developed": [
-        "Language development",
-        "Communication",
-        "Vocabulary",
-        "Reading",
-        "Writing",
-        "Speaking"
-      ],
-      "age_appropriateness": {
-        "Infant (0-1)": "Basic sound recognition and vocalization",
-        "Toddler (1-3)": "First words, simple sentences, and basic communication",
-        "Preschooler (3-5)": "Vocabulary expansion, storytelling, and pre-reading skills",
-        "Child (6-8)": "Reading, writing, and complex communication",
-        "Pre-Teen (9-12)": "Advanced language skills, creative writing, and presentation",
-        "Teen (13-18)": "Sophisticated language use, critical reading, and advanced communication"
-      }
-    },
-    "STEM": {
-      "description": "Activities that develop science, technology, engineering, and math concepts and skills",
-      "keywords": [
-        "science",
-        "technology",
-        "engineering",
-        "math",
-        "numbers",
-        "counting",
-        "experiment",
-        "discover",
-        "explore",
-        "investigate",
-        "measure",
-        "calculate",
-        "build",
-        "construct",
-        "invent"
-      ],
-      "skills_developed": [
-        "Scientific thinking",
-        "Mathematical reasoning",
-        "Engineering design",
-        "Technology literacy",
-        "Problem-solving"
-      ],
-      "age_appropriateness": {
-        "Infant (0-1)": "Basic cause-effect exploration",
-        "Toddler (1-3)": "Simple counting and basic exploration",
-        "Preschooler (3-5)": "Number recognition, simple experiments, and building",
-        "Child (6-8)": "Basic math operations, simple science experiments, and engineering challenges",
-        "Pre-Teen (9-12)": "Advanced math concepts, technology use, and complex experiments",
-        "Teen (13-18)": "Advanced STEM concepts, programming, and innovative design"
-      }
-    },
-    "Practical": {
-      "description": "Activities that develop life skills, independence, daily tasks, and practical abilities",
-      "keywords": [
-        "practical",
-        "life skills",
-        "independence",
-        "daily",
-        "routine",
-        "self-care",
-        "responsibility",
-        "organization",
-        "planning",
-        "time management",
-        "practical skills"
-      ],
-      "skills_developed": [
-        "Life skills",
-        "Independence",
-        "Responsibility",
-        "Organization",
-        "Time management"
-      ],
-      "age_appropriateness": {
-        "Infant (0-1)": "Basic self-care routines",
-        "Toddler (1-3)": "Simple daily tasks and basic independence",
-        "Preschooler (3-5)": "More complex daily routines and responsibility",
-        "Child (6-8)": "Advanced life skills and organization",
-        "Pre-Teen (9-12)": "Complex practical skills and time management",
-        "Teen (13-18)": "Advanced life skills, career preparation, and adult independence"
-      }
-    },
-    "Adventure": {
-      "description": "Activities that involve exploration, discovery, outdoor experiences, and adventurous learning",
-      "keywords": [
-        "adventure",
-        "explore",
-        "discover",
-        "outdoor",
-        "nature",
-        "hunt",
-        "search",
-        "find",
-        "treasure",
-        "expedition",
-        "journey",
-        "adventure",
-        "exploration",
-        "discovery"
-      ],
-      "skills_developed": [
-        "Exploration",
-        "Discovery",
-        "Adventure skills",
-        "Nature appreciation",
-        "Risk assessment"
-      ],
-      "age_appropriateness": {
-        "Infant (0-1)": "Safe exploration in controlled environments",
-        "Toddler (1-3)": "Supervised outdoor exploration and discovery",
-        "Preschooler (3-5)": "Guided nature walks and simple treasure hunts",
-        "Child (6-8)": "Independent exploration and adventure games",
-        "Pre-Teen (9-12)": "Complex outdoor activities and adventure challenges",
-        "Teen (13-18)": "Advanced adventure skills, leadership, and outdoor leadership"
-      }
-    }
-  }
+  "totalActivities": 120,
+  "lastUpdated": "2025-10-12T01:20:25.322245"
 }

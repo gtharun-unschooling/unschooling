@@ -1,0 +1,135 @@
+{
+  "total_rows": 20,
+  "total_columns": 10,
+  "headers": [
+    "Activity Name",
+    "Objective",
+    "Estimated Time",
+    "Difficulty Level",
+    "Supervision Level",
+    "Materials",
+    "Steps",
+    "Skills",
+    "Explanation",
+    "Additional Information"
+  ],
+  "distributions": {
+    "Difficulty Levels": {
+      "Easy": 20
+    }
+  },
+  "completeness": {
+    "Activity Name": {
+      "filled": 20,
+      "total": 20,
+      "percentage": 100.0
+    },
+    "Objective": {
+      "filled": 20,
+      "total": 20,
+      "percentage": 100.0
+    },
+    "Estimated Time": {
+      "filled": 20,
+      "total": 20,
+      "percentage": 100.0
+    },
+    "Difficulty Level": {
+      "filled": 20,
+      "total": 20,
+      "percentage": 100.0
+    },
+    "Supervision Level": {
+      "filled": 20,
+      "total": 20,
+      "percentage": 100.0
+    },
+    "Materials": {
+      "filled": 20,
+      "total": 20,
+      "percentage": 100.0
+    },
+    "Steps": {
+      "filled": 20,
+      "total": 20,
+      "percentage": 100.0
+    },
+    "Skills": {
+      "filled": 20,
+      "total": 20,
+      "percentage": 100.0
+    },
+    "Explanation": {
+      "filled": 20,
+      "total": 20,
+      "percentage": 100.0
+    },
+    "Additional Information": {
+      "filled": 20,
+      "total": 20,
+      "percentage": 100.0
+    }
+  },
+  "sample_data": [
+    {
+      "Activity Name": "Baby\u2019s First Texture Discovery",
+      "Objective": "Help your baby develop sensory awareness and tactile exploration",
+      "Estimated Time": "10\u201315 min",
+      "Difficulty Level": "Easy",
+      "Supervision Level": "Close Supervision",
+      "Materials": "\u2022 Soft cloths\u2022 Wooden rings\u2022 Soft balls\u2022 Baby blanket",
+      "Steps": "1. Place soft cloths and objects in front of baby2. Encourage gentle touching and grasping3. Observe reactions4. Swap objects for variety5. Clean up",
+      "Skills": "\u2022 Sensory awareness\u2022 Tactile exploration\u2022 Fine motor development",
+      "Explanation": "Create a safe space with varied textures for baby to touch and explore",
+      "Additional Information": "\u2022 Great for bonding\u2022 Can repeat multiple times a day"
+    },
+    {
+      "Activity Name": "Color & Texture Mat",
+      "Objective": "Introduce color and texture recognition through hands-on play",
+      "Estimated Time": "10\u201315 min",
+      "Difficulty Level": "Easy",
+      "Supervision Level": "Close Supervision",
+      "Materials": "\u2022 Soft mats\u2022 Fabric pieces of different colors\u2022 Small soft toys",
+      "Steps": "1. Spread fabric pieces on mat2. Place baby on mat3. Let baby touch and grasp different fabrics4. Encourage reaching for toys5. Praise attempts",
+      "Skills": "\u2022 Color recognition\u2022 Fine motor skills\u2022 Hand-eye coordination",
+      "Explanation": "Use colorful fabrics to stimulate visual and tactile senses",
+      "Additional Information": "\u2022 Indoor-friendly\u2022 Helps develop reaching and grasping skills"
+    },
+    {
+      "Activity Name": "Gentle Sound & Touch",
+      "Objective": "Encourage auditory and tactile exploration simultaneously",
+      "Estimated Time": "10 min",
+      "Difficulty Level": "Easy",
+      "Supervision Level": "Constant Supervision",
+      "Materials": "\u2022 Soft rattles\u2022 Plush toys\u2022 Cloth strips",
+      "Steps": "1. Shake rattles near baby2. Let baby touch different textured cloths3. Encourage grasping toys4. Repeat with different sounds5. Clean up",
+      "Skills": "\u2022 Auditory discrimination\u2022 Tactile exploration\u2022 Attention span",
+      "Explanation": "Combine gentle sounds with touch to stimulate multiple senses",
+      "Additional Information": "\u2022 Perfect for tummy time\u2022 Use soft, safe toys only"
+    },
+    {
+      "Activity Name": "Sensory Bag Exploration",
+      "Objective": "Stimulate tactile curiosity through safe, touchable bags",
+      "Estimated Time": "10\u201315 min",
+      "Difficulty Level": "Easy",
+      "Supervision Level": "Close Supervision",
+      "Materials": "\u2022 Ziplock bags\u2022 Water beads\u2022 Soft fabrics\u2022 Small rattles",
+      "Steps": "1. Fill ziplock bags with water beads and fabric pieces2. Seal tightly3. Place in front of baby4. Encourage squeezing and poking5. Observe reactions",
+      "Skills": "\u2022 Tactile exploration\u2022 Hand strength\u2022 Curiosity",
+      "Explanation": "Safe sensory bags allow squishing and exploring textures without mess",
+      "Additional Information": "\u2022 Supervised play only\u2022 Great for sensory stimulation"
+    },
+    {
+      "Activity Name": "Soft Object Treasure Hunt",
+      "Objective": "Develop hand-eye coordination and tactile exploration",
+      "Estimated Time": "15 min",
+      "Difficulty Level": "Easy",
+      "Supervision Level": "Close Supervision",
+      "Materials": "\u2022 Soft balls\u2022 Plush toys\u2022 Small textured objects\u2022 Blanket",
+      "Steps": "1. Hide objects under blanket2. Encourage baby to reach and uncover3. Praise discovery4. Repeat with different objects5. Clean up",
+      "Skills": "\u2022 Tactile exploration\u2022 Hand-eye coordination\u2022 Problem solving",
+      "Explanation": "Hide-and-seek style play with soft objects enhances curiosity and motor skills",
+      "Additional Information": "\u2022 Can repeat multiple rounds\u2022 Encourages exploration and interaction"
+    }
+  ]
+}

@@ -8,28 +8,28 @@ const TermsOfService = () => {
       <Navbar />
       <Container maxWidth="md" sx={{ py: 4 }}>
         <Paper elevation={3} sx={{ p: 4 }}>
-          <Typography variant="h3" component="h1" gutterBottom align="center" color="primary">
+          <Typography  component="h1" gutterBottom align="center" color="primary">
             Terms of Service
           </Typography>
           
-          <Typography variant="body2" color="text.secondary" align="center" sx={{ mb: 4 }}>
+          <Typography  color="text.secondary" align="center" sx={{ mb: 4 }}>
             Last updated: {new Date().toLocaleDateString()}
           </Typography>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               1. Acceptance of Terms
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               By accessing and using Unschooling React ("the Service"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
             </Typography>
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               2. Description of Service
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               Unschooling React is a personalized learning platform that provides AI-generated learning plans, content recommendations, and educational resources for children and families. Our service includes:
             </Typography>
             <ul>
@@ -42,10 +42,10 @@ const TermsOfService = () => {
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               3. User Accounts and Registration
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               To access certain features of the Service, you must register for an account. You agree to:
             </Typography>
             <ul>
@@ -58,10 +58,10 @@ const TermsOfService = () => {
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               4. Subscription and Payment
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               Our Service offers various subscription plans:
             </Typography>
             <ul>
@@ -69,34 +69,34 @@ const TermsOfService = () => {
               <li><strong>Grow Plan:</strong> ₹799/month for ages 3-6 (Light Autonomy)</li>
               <li><strong>Thrive Plan:</strong> ₹999/month for ages 6-10+ (Independent)</li>
             </ul>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               All payments are processed securely through our payment partners. Subscriptions auto-renew unless cancelled. You may cancel your subscription at any time through your account settings.
             </Typography>
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               5. Privacy and Data Protection
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               We are committed to protecting your privacy and personal information. Our collection, use, and disclosure of personal information is governed by our Privacy Policy, which is incorporated into these Terms by reference.
             </Typography>
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               6. Intellectual Property Rights
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               The Service and its original content, features, and functionality are and will remain the exclusive property of Unschooling React and its licensors. The Service is protected by copyright, trademark, and other laws.
             </Typography>
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               7. Prohibited Uses
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               You may not use our Service:
             </Typography>
             <ul>
@@ -110,40 +110,40 @@ const TermsOfService = () => {
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               8. Termination
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               We may terminate or suspend your account and bar access to the Service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of the Terms.
             </Typography>
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               9. Disclaimer
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               The information on this Service is provided on an "as is" basis. To the fullest extent permitted by law, this Company excludes all representations, warranties, conditions and terms relating to our Service and the use of this Service.
             </Typography>
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               10. Governing Law
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               These Terms shall be interpreted and governed by the laws of India. Any dispute arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts in India.
             </Typography>
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               11. Contact Information
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               If you have any questions about these Terms of Service, please contact us at:
             </Typography>
-            <Typography variant="body1">
+            <Typography >
               Email: legal@unschooling.in<br />
               Address: Unschooling React, India<br />
               Phone: +91-XXXX-XXXX

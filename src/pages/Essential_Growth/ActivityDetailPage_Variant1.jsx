@@ -8,7 +8,7 @@ import {
   AccessTime, School, Psychology, FitnessCenter, MusicNote, Palette,
   ArrowBack, PlayArrow, Star, Bookmark, Share
 } from '@mui/icons-material';
-import UniversalBackButton from '../../components/ui/UniversalBackButton';
+import MinimalBackButton from '../../components/ui/UniversalBackButton';
 
 const ActivityDetailPage_Variant1 = () => {
   const { ageGroup, category, activitySlug } = useParams();
@@ -61,7 +61,7 @@ const ActivityDetailPage_Variant1 = () => {
   if (loading) {
     return (
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="400px">
-        <Typography variant="h6">Loading activity...</Typography>
+        <Typography >Loading activity...</Typography>
       </Box>
     );
   }
@@ -69,7 +69,7 @@ const ActivityDetailPage_Variant1 = () => {
   if (!activity) {
     return (
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="400px">
-        <Typography variant="h6" color="error">Activity not found</Typography>
+        <Typography  color="error">Activity not found</Typography>
       </Box>
     );
   }
@@ -82,11 +82,11 @@ const ActivityDetailPage_Variant1 = () => {
     }}>
       <Container maxWidth="lg">
         <Box mb={4}>
-          <UniversalBackButton 
+          <MinimalBackButton 
             text={window.location.pathname.includes('/cognitive-skills/') 
               ? "← Back to Cognitive Skills" 
               : "← Back to Play & Creativity"} 
-            variant="luxury" 
+             
             onClick={handleBackClick}
           />
         </Box>
@@ -100,14 +100,14 @@ const ActivityDetailPage_Variant1 = () => {
           <CardContent sx={{ p: 4 }}>
             {/* Header */}
             <Box textAlign="center" mb={4}>
-              <Typography variant="h2" sx={{ 
+              <Typography  sx={{ 
                 fontWeight: 'bold',
                 color: '#2d3748',
                 mb: 2
               }}>
                 {activity.topic}
               </Typography>
-              <Typography variant="h5" sx={{ 
+              <Typography  sx={{ 
                 color: '#718096',
                 mb: 3
               }}>
@@ -143,7 +143,7 @@ const ActivityDetailPage_Variant1 = () => {
               {/* Top Row: Materials & Steps */}
               <Grid item xs={12} md={6}>
                 <Paper sx={{ p: 3, borderRadius: '16px', background: 'rgba(34, 197, 94, 0.05)', height: '100%' }}>
-                  <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
+                  <Typography  sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
                     Materials Needed
                   </Typography>
                   <List>
@@ -164,7 +164,7 @@ const ActivityDetailPage_Variant1 = () => {
 
               <Grid item xs={12} md={6}>
                 <Paper sx={{ p: 3, borderRadius: '16px', background: 'rgba(168, 85, 247, 0.05)', height: '100%' }}>
-                  <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
+                  <Typography  sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
                     Steps to Follow
                   </Typography>
                   <List>
@@ -218,7 +218,7 @@ const ActivityDetailPage_Variant1 = () => {
               {/* Bottom Row: Skills & Tags */}
               <Grid item xs={12} md={6}>
                 <Paper sx={{ p: 3, borderRadius: '16px', background: 'rgba(255, 193, 7, 0.05)', height: '100%' }}>
-                  <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
+                  <Typography  sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
                     Skills Your Child Will Develop
                   </Typography>
                   <Box display="flex" gap={1.5} flexWrap="wrap">
@@ -257,7 +257,7 @@ const ActivityDetailPage_Variant1 = () => {
 
               <Grid item xs={12} md={6}>
                 <Paper sx={{ p: 3, borderRadius: '16px', background: 'rgba(168, 85, 247, 0.05)', height: '100%' }}>
-                  <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
+                  <Typography  sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
                     Tags
                   </Typography>
                   <Box display="flex" gap={1.5} flexWrap="wrap">
@@ -298,7 +298,7 @@ const ActivityDetailPage_Variant1 = () => {
             {/* Action Buttons */}
             <Box textAlign="center" mt={4}>
               <Button
-                variant="contained"
+                
                 size="large"
                 startIcon={<PlayArrow />}
                 sx={{

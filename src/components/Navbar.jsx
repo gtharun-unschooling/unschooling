@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import './Navbar.css';
+import './Navbar-new-button.css';
 
 const Navbar = () => {
   const { currentUser, signOut } = useAuth();
@@ -161,21 +162,16 @@ const Navbar = () => {
             </Link>
             
             {currentUser ? (
-              <div className="profile-dropdown-container" ref={profileDropdownRef}>
+              <div className="profile-dropdown-container-new" ref={profileDropdownRef} style={{position: 'relative'}}>
                 <button 
-                  className="profile-btn"
+                  className="profile-btn-new"
                   onClick={toggleProfileDropdown}
-                  aria-label="Open profile menu"
+                  aria-label="Profile menu"
+                  title={currentUser.displayName || currentUser.email?.split('@')[0] || 'User'}
                 >
-                  {/* Desktop: Show full name */}
-                  <span className="profile-name-short desktop-profile">
-                    {currentUser.displayName || currentUser.email?.split('@')[0] || 'User'}
-                  </span>
-                  {/* Mobile: Show initials only */}
-                  <span className="profile-initials mobile-profile">
+                  <span className="profile-text-new">
                     {getUserInitials(currentUser)}
                   </span>
-                  <span className="dropdown-arrow">▼</span>
                 </button>
                 
                 {isProfileDropdownOpen && (

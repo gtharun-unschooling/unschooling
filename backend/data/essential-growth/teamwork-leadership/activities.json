@@ -1,3 +1,3257 @@
 {
-  "ageGroups": []
+  "ageGroups": [
+    {
+      "ageGroup": "All Ages",
+      "categories": [
+        {
+          "category": "Teamwork & Leadership",
+          "description": "Activities for Teamwork & Leadership",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "Shared Toy Reach",
+              "objective": "Engage in Shared Toy Reach activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Shared Toy Reach within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Shared Toy Reach",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Joint Toy Exploration"
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "Partnered Toy Grab",
+              "objective": "Engage in Partnered Toy Grab activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Partnered Toy Grab within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Partnered Toy Grab",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Joint Toy Exploration"
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "Coordinated Rolling Game",
+              "objective": "Engage in Coordinated Rolling Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Coordinated Rolling Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Coordinated Rolling Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Joint Toy Exploration"
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "Soft Toy Pass",
+              "objective": "Engage in Soft Toy Pass activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Soft Toy Pass within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Toy Pass",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Joint Toy Exploration"
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "Twin Reach Challenge",
+              "objective": "Engage in Twin Reach Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Twin Reach Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Twin Reach Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Joint Toy Exploration"
+              }
+            },
+            {
+              "topicNumber": 6,
+              "topic": "Smile & Copy",
+              "objective": "Engage in Smile & Copy activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Smile & Copy within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Smile & Copy",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Social Smiling Games"
+              }
+            },
+            {
+              "topicNumber": 7,
+              "topic": "Mirror Smile",
+              "objective": "Engage in Mirror Smile activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Mirror Smile within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Mirror Smile",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Social Smiling Games"
+              }
+            },
+            {
+              "topicNumber": 8,
+              "topic": "Peekaboo Smile Game",
+              "objective": "Engage in Peekaboo Smile Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Peekaboo Smile Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Peekaboo Smile Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Social Smiling Games"
+              }
+            },
+            {
+              "topicNumber": 9,
+              "topic": "Giggle Exchange",
+              "objective": "Engage in Giggle Exchange activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Giggle Exchange within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Giggle Exchange",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Social Smiling Games"
+              }
+            },
+            {
+              "topicNumber": 10,
+              "topic": "Happy Face Interaction",
+              "objective": "Engage in Happy Face Interaction activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Happy Face Interaction within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Happy Face Interaction",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Social Smiling Games"
+              }
+            },
+            {
+              "topicNumber": 11,
+              "topic": "Guided Hand Movements",
+              "objective": "Engage in Guided Hand Movements activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Guided Hand Movements within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Guided Hand Movements",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Caregiver-Led Coordination"
+              }
+            },
+            {
+              "topicNumber": 12,
+              "topic": "Tummy Time Together",
+              "objective": "Engage in Tummy Time Together activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Tummy Time Together within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Tummy Time Together",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Caregiver-Led Coordination"
+              }
+            },
+            {
+              "topicNumber": 13,
+              "topic": "Soft Object Reach With Help",
+              "objective": "Engage in Soft Object Reach With Help activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Soft Object Reach With Help within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Object Reach With Help",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Caregiver-Led Coordination"
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "Baby Hand Games",
+              "objective": "Engage in Baby Hand Games activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Baby Hand Games within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Baby Hand Games",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Caregiver-Led Coordination"
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "Coordinated Rattle Shake",
+              "objective": "Engage in Coordinated Rattle Shake activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Coordinated Rattle Shake within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Coordinated Rattle Shake",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Caregiver-Led Coordination"
+              }
+            },
+            {
+              "topicNumber": 16,
+              "topic": "Sibling Playtime Observation",
+              "objective": "Engage in Sibling Playtime Observation activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Sibling Playtime Observation within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Sibling Playtime Observation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Watching Group Play"
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "Peek & Observe Others",
+              "objective": "Engage in Peek & Observe Others activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Peek & Observe Others within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Peek & Observe Others",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Watching Group Play"
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "Group Crawl Watch",
+              "objective": "Engage in Group Crawl Watch activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Group Crawl Watch within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Group Crawl Watch",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Watching Group Play"
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "Soft Toy Play Observation",
+              "objective": "Engage in Soft Toy Play Observation activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Soft Toy Play Observation within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Toy Play Observation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Watching Group Play"
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "Baby Mirror Group Play",
+              "objective": "Engage in Baby Mirror Group Play activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Baby Mirror Group Play within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Baby Mirror Group Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Watching Group Play"
+              }
+            },
+            {
+              "topicNumber": 21,
+              "topic": "Block Pass Game",
+              "objective": "Engage in Block Pass Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Block Pass Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Block Pass Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Turn-Taking Games"
+              }
+            },
+            {
+              "topicNumber": 22,
+              "topic": "Shared Puzzle Challenge",
+              "objective": "Engage in Shared Puzzle Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Shared Puzzle Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Shared Puzzle Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Turn-Taking Games"
+              }
+            },
+            {
+              "topicNumber": 23,
+              "topic": "Toy Swap Game",
+              "objective": "Engage in Toy Swap Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Toy Swap Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Toy Swap Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Turn-Taking Games"
+              }
+            },
+            {
+              "topicNumber": 24,
+              "topic": "Musical Toy Exchange",
+              "objective": "Engage in Musical Toy Exchange activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Musical Toy Exchange within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Musical Toy Exchange",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Turn-Taking Games"
+              }
+            },
+            {
+              "topicNumber": 25,
+              "topic": "Color Turn Sorting",
+              "objective": "Engage in Color Turn Sorting activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Color Turn Sorting within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Color Turn Sorting",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Turn-Taking Games"
+              }
+            },
+            {
+              "topicNumber": 26,
+              "topic": "Table Cleanup Challenge",
+              "objective": "Engage in Table Cleanup Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Table Cleanup Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Table Cleanup Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Helping with Group Tasks"
+              }
+            },
+            {
+              "topicNumber": 27,
+              "topic": "Snack Prep Together",
+              "objective": "Engage in Snack Prep Together activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Snack Prep Together within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Snack Prep Together",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Helping with Group Tasks"
+              }
+            },
+            {
+              "topicNumber": 28,
+              "topic": "Plant Watering Duo",
+              "objective": "Engage in Plant Watering Duo activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Plant Watering Duo within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Plant Watering Duo",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Helping with Group Tasks"
+              }
+            },
+            {
+              "topicNumber": 29,
+              "topic": "Toy Organizer Activity",
+              "objective": "Engage in Toy Organizer Activity activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Toy Organizer Activity within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Toy Organizer Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Helping with Group Tasks"
+              }
+            },
+            {
+              "topicNumber": 30,
+              "topic": "Stack & Arrange Game",
+              "objective": "Engage in Stack & Arrange Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Stack & Arrange Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Stack & Arrange Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Helping with Group Tasks"
+              }
+            },
+            {
+              "topicNumber": 31,
+              "topic": "Shared Toy Pick-Up",
+              "objective": "Engage in Shared Toy Pick-Up activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Shared Toy Pick-Up within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Shared Toy Pick-Up",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Clean-Up Together Routines"
+              }
+            },
+            {
+              "topicNumber": 32,
+              "topic": "Group Block Sorting",
+              "objective": "Engage in Group Block Sorting activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Group Block Sorting within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Group Block Sorting",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Clean-Up Together Routines"
+              }
+            },
+            {
+              "topicNumber": 33,
+              "topic": "Storybook Return Game",
+              "objective": "Engage in Storybook Return Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Storybook Return Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Storybook Return Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Clean-Up Together Routines"
+              }
+            },
+            {
+              "topicNumber": 34,
+              "topic": "Snack Plate Organization",
+              "objective": "Engage in Snack Plate Organization activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Snack Plate Organization within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Snack Plate Organization",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Clean-Up Together Routines"
+              }
+            },
+            {
+              "topicNumber": 35,
+              "topic": "Puzzle Return Challenge",
+              "objective": "Engage in Puzzle Return Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Puzzle Return Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Puzzle Return Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Clean-Up Together Routines"
+              }
+            },
+            {
+              "topicNumber": 36,
+              "topic": "Copy My Move",
+              "objective": "Engage in Copy My Move activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Copy My Move within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Copy My Move",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Imitating Group Movements"
+              }
+            },
+            {
+              "topicNumber": 37,
+              "topic": "Follow the Leader Dance",
+              "objective": "Engage in Follow the Leader Dance activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Follow the Leader Dance within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Follow the Leader Dance",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Imitating Group Movements"
+              }
+            },
+            {
+              "topicNumber": 38,
+              "topic": "Group Jump Challenge",
+              "objective": "Engage in Group Jump Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Group Jump Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Group Jump Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Imitating Group Movements"
+              }
+            },
+            {
+              "topicNumber": 39,
+              "topic": "Group Rhythm Challenge",
+              "objective": "Engage in Group Rhythm Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Group Rhythm Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Group Rhythm Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Imitating Group Movements"
+              }
+            },
+            {
+              "topicNumber": 40,
+              "topic": "March Together Path",
+              "objective": "Engage in March Together Path activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on March Together Path within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "March Together Path",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Imitating Group Movements"
+              }
+            },
+            {
+              "topicNumber": 41,
+              "topic": "Tower Building Together",
+              "objective": "Engage in Tower Building Together activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Tower Building Together within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Tower Building Together",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Partner Building Tasks"
+              }
+            },
+            {
+              "topicNumber": 42,
+              "topic": "Puzzle Partner Challenge",
+              "objective": "Engage in Puzzle Partner Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Puzzle Partner Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Puzzle Partner Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Partner Building Tasks"
+              }
+            },
+            {
+              "topicNumber": 43,
+              "topic": "Shared Craft Project",
+              "objective": "Engage in Shared Craft Project activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Shared Craft Project within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Shared Craft Project",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Partner Building Tasks"
+              }
+            },
+            {
+              "topicNumber": 44,
+              "topic": "Block Team Challenge",
+              "objective": "Engage in Block Team Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Block Team Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Block Team Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Partner Building Tasks"
+              }
+            },
+            {
+              "topicNumber": 45,
+              "topic": "Build-a-House Game",
+              "objective": "Engage in Build-a-House Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Build-a-House Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Build-a-House Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Partner Building Tasks"
+              }
+            },
+            {
+              "topicNumber": 46,
+              "topic": "Mini Team Play",
+              "objective": "Engage in Mini Team Play activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Mini Team Play within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Mini Team Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Group Role Assignments"
+              }
+            },
+            {
+              "topicNumber": 47,
+              "topic": "Story Role Rotation",
+              "objective": "Engage in Story Role Rotation activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Story Role Rotation within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Story Role Rotation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Group Role Assignments"
+              }
+            },
+            {
+              "topicNumber": 48,
+              "topic": "Puppet Role Sharing",
+              "objective": "Engage in Puppet Role Sharing activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Puppet Role Sharing within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Puppet Role Sharing",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Group Role Assignments"
+              }
+            },
+            {
+              "topicNumber": 49,
+              "topic": "Costume Role Play",
+              "objective": "Engage in Costume Role Play activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Costume Role Play within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Costume Role Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Group Role Assignments"
+              }
+            },
+            {
+              "topicNumber": 50,
+              "topic": "Mini Job Rotation",
+              "objective": "Engage in Mini Job Rotation activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Mini Job Rotation within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Mini Job Rotation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Group Role Assignments"
+              }
+            },
+            {
+              "topicNumber": 51,
+              "topic": "Collaborative Mural",
+              "objective": "Engage in Collaborative Mural activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Collaborative Mural within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Collaborative Mural",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Shared Art Projects"
+              }
+            },
+            {
+              "topicNumber": 52,
+              "topic": "Group Finger Painting",
+              "objective": "Engage in Group Finger Painting activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Group Finger Painting within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Group Finger Painting",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Shared Art Projects"
+              }
+            },
+            {
+              "topicNumber": 53,
+              "topic": "Paper Chain Creation",
+              "objective": "Engage in Paper Chain Creation activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Paper Chain Creation within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Paper Chain Creation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Shared Art Projects"
+              }
+            },
+            {
+              "topicNumber": 54,
+              "topic": "Color Mixing Together",
+              "objective": "Engage in Color Mixing Together activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Color Mixing Together within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Color Mixing Together",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Shared Art Projects"
+              }
+            },
+            {
+              "topicNumber": 55,
+              "topic": "Shape Collage Team",
+              "objective": "Engage in Shape Collage Team activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Shape Collage Team within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Shape Collage Team",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Shared Art Projects"
+              }
+            },
+            {
+              "topicNumber": 56,
+              "topic": "Captain Adventure Game",
+              "objective": "Engage in Captain Adventure Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Captain Adventure Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Captain Adventure Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Leadership in Pretend Play"
+              }
+            },
+            {
+              "topicNumber": 57,
+              "topic": "Story Leader Challenge",
+              "objective": "Engage in Story Leader Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Story Leader Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Story Leader Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Leadership in Pretend Play"
+              }
+            },
+            {
+              "topicNumber": 58,
+              "topic": "Role Director Game",
+              "objective": "Engage in Role Director Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Role Director Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Role Director Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Leadership in Pretend Play"
+              }
+            },
+            {
+              "topicNumber": 59,
+              "topic": "Puppet Show Coordinator",
+              "objective": "Engage in Puppet Show Coordinator activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Puppet Show Coordinator within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Puppet Show Coordinator",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Leadership in Pretend Play"
+              }
+            },
+            {
+              "topicNumber": 60,
+              "topic": "Adventure Guide Game",
+              "objective": "Engage in Adventure Guide Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Adventure Guide Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Adventure Guide Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Leadership in Pretend Play"
+              }
+            },
+            {
+              "topicNumber": 61,
+              "topic": "Relay Race Fun",
+              "objective": "Engage in Relay Race Fun activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Relay Race Fun within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Relay Race Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Team Game Challenges"
+              }
+            },
+            {
+              "topicNumber": 62,
+              "topic": "Obstacle Course Challenge",
+              "objective": "Engage in Obstacle Course Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Obstacle Course Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Obstacle Course Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Team Game Challenges"
+              }
+            },
+            {
+              "topicNumber": 63,
+              "topic": "Treasure Hunt Team",
+              "objective": "Engage in Treasure Hunt Team activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Treasure Hunt Team within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Treasure Hunt Team",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Team Game Challenges"
+              }
+            },
+            {
+              "topicNumber": 64,
+              "topic": "Capture the Flag Mini",
+              "objective": "Engage in Capture the Flag Mini activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Capture the Flag Mini within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Capture the Flag Mini",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Team Game Challenges"
+              }
+            },
+            {
+              "topicNumber": 65,
+              "topic": "Cooperative Ball Game",
+              "objective": "Engage in Cooperative Ball Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Cooperative Ball Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Cooperative Ball Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Team Game Challenges"
+              }
+            },
+            {
+              "topicNumber": 66,
+              "topic": "Instruction Obstacle Race",
+              "objective": "Engage in Instruction Obstacle Race activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Instruction Obstacle Race within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Instruction Obstacle Race",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Following Team Instructions"
+              }
+            },
+            {
+              "topicNumber": 67,
+              "topic": "Simon Says Challenge",
+              "objective": "Engage in Simon Says Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Simon Says Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Simon Says Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Following Team Instructions"
+              }
+            },
+            {
+              "topicNumber": 68,
+              "topic": "Pattern Walk Game",
+              "objective": "Engage in Pattern Walk Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Pattern Walk Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Pattern Walk Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Following Team Instructions"
+              }
+            },
+            {
+              "topicNumber": 69,
+              "topic": "Build Following Guide",
+              "objective": "Engage in Build Following Guide activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Build Following Guide within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Build Following Guide",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Following Team Instructions"
+              }
+            },
+            {
+              "topicNumber": 70,
+              "topic": "Group Movement Maze",
+              "objective": "Engage in Group Movement Maze activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Group Movement Maze within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Group Movement Maze",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Following Team Instructions"
+              }
+            },
+            {
+              "topicNumber": 71,
+              "topic": "Team Captain Turn",
+              "objective": "Engage in Team Captain Turn activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Team Captain Turn within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Team Captain Turn",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Leadership Rotation in Games"
+              }
+            },
+            {
+              "topicNumber": 72,
+              "topic": "Rotate Leader Game",
+              "objective": "Engage in Rotate Leader Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Rotate Leader Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Rotate Leader Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Leadership Rotation in Games"
+              }
+            },
+            {
+              "topicNumber": 73,
+              "topic": "Mini Leader Activity",
+              "objective": "Engage in Mini Leader Activity activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Mini Leader Activity within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Mini Leader Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Leadership Rotation in Games"
+              }
+            },
+            {
+              "topicNumber": 74,
+              "topic": "Rotate Challenge Game",
+              "objective": "Engage in Rotate Challenge Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Rotate Challenge Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Rotate Challenge Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Leadership Rotation in Games"
+              }
+            },
+            {
+              "topicNumber": 75,
+              "topic": "Role Change Relay",
+              "objective": "Engage in Role Change Relay activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Role Change Relay within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Role Change Relay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Leadership Rotation in Games"
+              }
+            },
+            {
+              "topicNumber": 76,
+              "topic": "Victory Dance Together",
+              "objective": "Engage in Victory Dance Together activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Victory Dance Together within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Victory Dance Together",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Celebrating Team Success"
+              }
+            },
+            {
+              "topicNumber": 77,
+              "topic": "Team High-Five Circle",
+              "objective": "Engage in Team High-Five Circle activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Team High-Five Circle within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Team High-Five Circle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Celebrating Team Success"
+              }
+            },
+            {
+              "topicNumber": 78,
+              "topic": "Team Cheer Activity",
+              "objective": "Engage in Team Cheer Activity activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Team Cheer Activity within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Team Cheer Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Celebrating Team Success"
+              }
+            },
+            {
+              "topicNumber": 79,
+              "topic": "Completion Applause Game",
+              "objective": "Engage in Completion Applause Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Completion Applause Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Completion Applause Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Celebrating Team Success"
+              }
+            },
+            {
+              "topicNumber": 80,
+              "topic": "Group Achievement Badge",
+              "objective": "Engage in Group Achievement Badge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Group Achievement Badge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Group Achievement Badge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Celebrating Team Success"
+              }
+            },
+            {
+              "topicNumber": 81,
+              "topic": "Task Map Challenge",
+              "objective": "Engage in Task Map Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Task Map Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Task Map Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Planning Group Tasks"
+              }
+            },
+            {
+              "topicNumber": 82,
+              "topic": "Project Coordination Game",
+              "objective": "Engage in Project Coordination Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Project Coordination Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Project Coordination Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Planning Group Tasks"
+              }
+            },
+            {
+              "topicNumber": 83,
+              "topic": "Team Goal Planner",
+              "objective": "Engage in Team Goal Planner activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Team Goal Planner within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Team Goal Planner",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Planning Group Tasks"
+              }
+            },
+            {
+              "topicNumber": 84,
+              "topic": "Mini Project Mapping",
+              "objective": "Engage in Mini Project Mapping activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Mini Project Mapping within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mini Project Mapping",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Planning Group Tasks"
+              }
+            },
+            {
+              "topicNumber": 85,
+              "topic": "Schedule Challenge",
+              "objective": "Engage in Schedule Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Schedule Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Schedule Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Planning Group Tasks"
+              }
+            },
+            {
+              "topicNumber": 86,
+              "topic": "Conflict Roleplay",
+              "objective": "Engage in Conflict Roleplay activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Conflict Roleplay within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Conflict Roleplay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Resolving Team Disagreements"
+              }
+            },
+            {
+              "topicNumber": 87,
+              "topic": "Compromise Game",
+              "objective": "Engage in Compromise Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Compromise Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Compromise Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Resolving Team Disagreements"
+              }
+            },
+            {
+              "topicNumber": 88,
+              "topic": "Negotiation Challenge",
+              "objective": "Engage in Negotiation Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Negotiation Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Negotiation Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Resolving Team Disagreements"
+              }
+            },
+            {
+              "topicNumber": 89,
+              "topic": "Mediation Mini-Game",
+              "objective": "Engage in Mediation Mini-Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Mediation Mini-Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mediation Mini-Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Resolving Team Disagreements"
+              }
+            },
+            {
+              "topicNumber": 90,
+              "topic": "Team Harmony Challenge",
+              "objective": "Engage in Team Harmony Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Team Harmony Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Team Harmony Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Resolving Team Disagreements"
+              }
+            },
+            {
+              "topicNumber": 91,
+              "topic": "Team Leader Simulation",
+              "objective": "Engage in Team Leader Simulation activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Team Leader Simulation within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Team Leader Simulation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Peer Leadership Workshops"
+              }
+            },
+            {
+              "topicNumber": 92,
+              "topic": "Leadership Roleplay",
+              "objective": "Engage in Leadership Roleplay activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Leadership Roleplay within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Leadership Roleplay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Peer Leadership Workshops"
+              }
+            },
+            {
+              "topicNumber": 93,
+              "topic": "Group Leadership Game",
+              "objective": "Engage in Group Leadership Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Group Leadership Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Group Leadership Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Peer Leadership Workshops"
+              }
+            },
+            {
+              "topicNumber": 94,
+              "topic": "Leadership Strategy Challenge",
+              "objective": "Engage in Leadership Strategy Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Leadership Strategy Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Leadership Strategy Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Peer Leadership Workshops"
+              }
+            },
+            {
+              "topicNumber": 95,
+              "topic": "Mini Leadership Camp",
+              "objective": "Engage in Mini Leadership Camp activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Mini Leadership Camp within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mini Leadership Camp",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Peer Leadership Workshops"
+              }
+            },
+            {
+              "topicNumber": 96,
+              "topic": "Project Assignment Game",
+              "objective": "Engage in Project Assignment Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Project Assignment Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Project Assignment Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Leading a Mini Project"
+              }
+            },
+            {
+              "topicNumber": 97,
+              "topic": "Task Delegation Challenge",
+              "objective": "Engage in Task Delegation Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Task Delegation Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Task Delegation Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Leading a Mini Project"
+              }
+            },
+            {
+              "topicNumber": 98,
+              "topic": "Team Project Planner",
+              "objective": "Engage in Team Project Planner activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Team Project Planner within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Team Project Planner",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Leading a Mini Project"
+              }
+            },
+            {
+              "topicNumber": 99,
+              "topic": "Mini Initiative Game",
+              "objective": "Engage in Mini Initiative Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Mini Initiative Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mini Initiative Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Leading a Mini Project"
+              }
+            },
+            {
+              "topicNumber": 100,
+              "topic": "Group Plan Execution",
+              "objective": "Engage in Group Plan Execution activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Group Plan Execution within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Group Plan Execution",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Leading a Mini Project"
+              }
+            },
+            {
+              "topicNumber": 101,
+              "topic": "Facilitation Simulation",
+              "objective": "Engage in Facilitation Simulation activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Facilitation Simulation within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Facilitation Simulation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Peer Facilitation Sessions"
+              }
+            },
+            {
+              "topicNumber": 102,
+              "topic": "Mini Leadership Session",
+              "objective": "Engage in Mini Leadership Session activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Mini Leadership Session within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Mini Leadership Session",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Peer Facilitation Sessions"
+              }
+            },
+            {
+              "topicNumber": 103,
+              "topic": "Team Guide Activity",
+              "objective": "Engage in Team Guide Activity activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Team Guide Activity within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Team Guide Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Peer Facilitation Sessions"
+              }
+            },
+            {
+              "topicNumber": 104,
+              "topic": "Peer Mediation Practice",
+              "objective": "Engage in Peer Mediation Practice activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Peer Mediation Practice within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Peer Mediation Practice",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Peer Facilitation Sessions"
+              }
+            },
+            {
+              "topicNumber": 105,
+              "topic": "Leadership Feedback Game",
+              "objective": "Engage in Leadership Feedback Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Leadership Feedback Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Leadership Feedback Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Peer Facilitation Sessions"
+              }
+            },
+            {
+              "topicNumber": 106,
+              "topic": "School Event Challenge",
+              "objective": "Engage in School Event Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on School Event Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "School Event Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Event Planning Simulations"
+              }
+            },
+            {
+              "topicNumber": 107,
+              "topic": "Festival Planning Game",
+              "objective": "Engage in Festival Planning Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Festival Planning Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Festival Planning Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Event Planning Simulations"
+              }
+            },
+            {
+              "topicNumber": 108,
+              "topic": "Mini Conference Organization",
+              "objective": "Engage in Mini Conference Organization activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Mini Conference Organization within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Mini Conference Organization",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Event Planning Simulations"
+              }
+            },
+            {
+              "topicNumber": 109,
+              "topic": "Project Celebration Planning",
+              "objective": "Engage in Project Celebration Planning activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Project Celebration Planning within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Project Celebration Planning",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Event Planning Simulations"
+              }
+            },
+            {
+              "topicNumber": 110,
+              "topic": "Party Planning Challenge",
+              "objective": "Engage in Party Planning Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Party Planning Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Party Planning Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Event Planning Simulations"
+              }
+            },
+            {
+              "topicNumber": 111,
+              "topic": "Task Delegation Game",
+              "objective": "Engage in Task Delegation Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Task Delegation Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Task Delegation Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Delegation & Time Management"
+              }
+            },
+            {
+              "topicNumber": 112,
+              "topic": "Time Management Relay",
+              "objective": "Engage in Time Management Relay activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Time Management Relay within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Time Management Relay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Delegation & Time Management"
+              }
+            },
+            {
+              "topicNumber": 113,
+              "topic": "Scheduling Challenge",
+              "objective": "Engage in Scheduling Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Scheduling Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Scheduling Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Delegation & Time Management"
+              }
+            },
+            {
+              "topicNumber": 114,
+              "topic": "Mini Deadline Game",
+              "objective": "Engage in Mini Deadline Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Mini Deadline Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Mini Deadline Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Delegation & Time Management"
+              }
+            },
+            {
+              "topicNumber": 115,
+              "topic": "Leadership Time Trial",
+              "objective": "Engage in Leadership Time Trial activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Leadership Time Trial within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Leadership Time Trial",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Delegation & Time Management"
+              }
+            },
+            {
+              "topicNumber": 116,
+              "topic": "Neighborhood Cleanup Project",
+              "objective": "Engage in Neighborhood Cleanup Project activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Neighborhood Cleanup Project within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Neighborhood Cleanup Project",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Community Team Service Project"
+              }
+            },
+            {
+              "topicNumber": 117,
+              "topic": "Charity Drive Challenge",
+              "objective": "Engage in Charity Drive Challenge activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Charity Drive Challenge within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Charity Drive Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Community Team Service Project"
+              }
+            },
+            {
+              "topicNumber": 118,
+              "topic": "Team Volunteering Game",
+              "objective": "Engage in Team Volunteering Game activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Team Volunteering Game within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Team Volunteering Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Community Team Service Project"
+              }
+            },
+            {
+              "topicNumber": 119,
+              "topic": "Community Garden Project",
+              "objective": "Engage in Community Garden Project activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on Community Garden Project within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Community Garden Project",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Community Team Service Project"
+              }
+            },
+            {
+              "topicNumber": 120,
+              "topic": "School Service Project",
+              "objective": "Engage in School Service Project activities to develop teamwork & leadership skills",
+              "explanation": "This activity focuses on School Service Project within the Teamwork & Leadership pillar.",
+              "hashtags": [
+                "#Teamwork&Leadership",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "School Service Project",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Teamwork & Leadership"
+                ],
+                "category": "Community Team Service Project"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totalActivities": 120,
+  "lastUpdated": "2025-10-12T01:20:25.360236"
 }

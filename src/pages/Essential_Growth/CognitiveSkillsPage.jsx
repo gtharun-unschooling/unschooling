@@ -8,7 +8,7 @@ import {
   AccessTime, Group, Psychology, Lightbulb,
   School, Nature, EmojiEvents, Star, Favorite, Share, Bookmark, PlayArrow
 } from '@mui/icons-material';
-import SimpleBackButton from '../../components/ui/SimpleBackButton';
+import MinimalBackButton from '../../components/ui/SimpleBackButton';
 
 const CognitiveSkillsPage = () => {
   const navigate = useNavigate();
@@ -86,7 +86,7 @@ const CognitiveSkillsPage = () => {
   if (loading) {
     return (
       <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-        <Typography variant="h6">Loading Cognitive Skills activities...</Typography>
+        <Typography >Loading Cognitive Skills activities...</Typography>
       </Box>
     );
   }
@@ -94,7 +94,7 @@ const CognitiveSkillsPage = () => {
   if (!activitiesData) {
     return (
       <Box sx={{ p: 4 }}>
-        <Typography variant="h6" color="error">Unable to load Cognitive Skills activities</Typography>
+        <Typography  color="error">Unable to load Cognitive Skills activities</Typography>
       </Box>
     );
   }
@@ -107,7 +107,7 @@ const CognitiveSkillsPage = () => {
     }}>
       <Container maxWidth="lg">
         <Box sx={{ mb: 4 }}>
-          <SimpleBackButton
+          <MinimalBackButton
             onClick={() => navigate('/essential-growth')}
             size="medium"
           />
@@ -115,7 +115,7 @@ const CognitiveSkillsPage = () => {
         
         <Fade in timeout={1000}>
           <Paper elevation={8} sx={{ p: 4, borderRadius: '20px', backgroundColor: 'rgba(255,255,255,0.95)' }}>
-            <Typography variant="h3" component="h1" gutterBottom sx={{ 
+            <Typography  component="h1" gutterBottom sx={{ 
               fontWeight: 'bold', 
               color: '#667eea', 
               textAlign: 'center',
@@ -124,7 +124,7 @@ const CognitiveSkillsPage = () => {
               🧠 Cognitive Skills
             </Typography>
             
-            <Typography variant="h6" sx={{ 
+            <Typography  sx={{ 
               textAlign: 'center', 
               color: '#666', 
               mb: 4,
@@ -137,7 +137,7 @@ const CognitiveSkillsPage = () => {
 
             {/* Age Group Selection */}
             <Box sx={{ mb: 4 }}>
-              <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', color: '#764ba2', mb: 3 }}>
+              <Typography  gutterBottom sx={{ fontWeight: 'bold', color: '#764ba2', mb: 3 }}>
                 Choose Age Group:
               </Typography>
               <Grid container spacing={2}>
@@ -166,10 +166,10 @@ const CognitiveSkillsPage = () => {
                           }}>
                             {getAgeGroupIcon(ageGroup.ageGroup)}
                           </Avatar>
-                          <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 1 }}>
+                          <Typography  sx={{ fontWeight: 'bold', mb: 1 }}>
                             {ageGroup.ageGroup}
                           </Typography>
-                          <Typography variant="body2" color="text.secondary">
+                          <Typography  color="text.secondary">
                             {ageGroup.categories.length} categories • {ageGroup.categories.reduce((total, cat) => total + cat.activities.length, 0)} activities
                           </Typography>
                         </CardContent>
@@ -184,7 +184,7 @@ const CognitiveSkillsPage = () => {
             {selectedAgeGroup && (
               <Fade in timeout={800}>
                 <Box>
-                  <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', color: '#764ba2', mb: 3 }}>
+                  <Typography  gutterBottom sx={{ fontWeight: 'bold', color: '#764ba2', mb: 3 }}>
                     Categories for {selectedAgeGroup}:
                   </Typography>
                   
@@ -192,7 +192,7 @@ const CognitiveSkillsPage = () => {
                     .find(ag => ag.ageGroup === selectedAgeGroup)
                     ?.categories.map((category, catIndex) => (
                       <Box key={catIndex} sx={{ mb: 4 }}>
-                        <Typography variant="h6" sx={{ 
+                        <Typography  sx={{ 
                           fontWeight: 'bold', 
                           color: '#667eea', 
                           mb: 2,
@@ -204,7 +204,7 @@ const CognitiveSkillsPage = () => {
                           {category.category}
                         </Typography>
                         
-                        <Typography variant="body2" sx={{ color: '#666', mb: 2, fontStyle: 'italic' }}>
+                        <Typography  sx={{ color: '#666', mb: 2, fontStyle: 'italic' }}>
                           {category.description}
                         </Typography>
 
@@ -222,7 +222,7 @@ const CognitiveSkillsPage = () => {
                                 }}>
                                   <CardContent>
                                     <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', mb: 2 }}>
-                                      <Typography variant="h6" sx={{ 
+                                      <Typography  sx={{ 
                                         fontWeight: 'bold', 
                                         color: '#333',
                                         fontSize: '1.1rem'
@@ -233,11 +233,11 @@ const CognitiveSkillsPage = () => {
                                         label={`#${activity.topicNumber}`} 
                                         size="small" 
                                         color="primary" 
-                                        variant="outlined"
+                                        
                                       />
                                     </Box>
                                     
-                                    <Typography variant="body2" sx={{ color: '#666', mb: 2, minHeight: '40px' }}>
+                                    <Typography  sx={{ color: '#666', mb: 2, minHeight: '40px' }}>
                                       {activity.objective}
                                     </Typography>
 
@@ -247,13 +247,13 @@ const CognitiveSkillsPage = () => {
                                         label={activity.estimatedTime} 
                                         size="small" 
                                         color="primary" 
-                                        variant="outlined"
+                                        
                                       />
                                       <Chip 
                                         label={activity.age} 
                                         size="small" 
                                         color="secondary" 
-                                        variant="outlined"
+                                        
                                       />
                                     </Box>
 

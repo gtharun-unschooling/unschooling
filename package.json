@@ -34,11 +34,11 @@
     "test:links:comprehensive": "node comprehensive_link_testing.js",
     "test:links:accurate": "node accurate_link_test.js",
     "test:links:all": "npm run test:links:quick && npm run test:links:comprehensive",
-    "dev:local": "./dev-local.sh",
-    "dev:staging": "./dev-staging.sh",
-    "dev:production": "./dev-production.sh",
-    "deploy:staging": "./deploy-staging.sh",
-    "deploy:production": "./deploy-cloud-run.sh"
+    "dev:local": "./scripts/development/dev-local.sh",
+    "dev:staging": "./scripts/development/dev-staging.sh",
+    "dev:production": "./scripts/development/dev-production.sh",
+    "deploy:staging": "./scripts/deployment/deploy-to-staging.sh",
+    "deploy:production": "./scripts/deployment/deploy-to-production.sh"
   },
   "devDependencies": {
     "@playwright/test": "^1.55.1",

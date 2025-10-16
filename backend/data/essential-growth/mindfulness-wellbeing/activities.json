@@ -1,3 +1,3257 @@
 {
-  "ageGroups": []
+  "ageGroups": [
+    {
+      "ageGroup": "All Ages",
+      "categories": [
+        {
+          "category": "Mindfulness & Well-being",
+          "description": "Activities for Mindfulness & Well-being",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "Cuddle & Sway",
+              "objective": "Engage in Cuddle & Sway activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Cuddle & Sway within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Cuddle & Sway",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Gentle Soothing Routines"
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "Soft Rock Moments",
+              "objective": "Engage in Soft Rock Moments activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Soft Rock Moments within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Rock Moments",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Gentle Soothing Routines"
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "Lullaby Hug",
+              "objective": "Engage in Lullaby Hug activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Lullaby Hug within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Lullaby Hug",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Gentle Soothing Routines"
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "Cozy Calm Time",
+              "objective": "Engage in Cozy Calm Time activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Cozy Calm Time within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Cozy Calm Time",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Gentle Soothing Routines"
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "Gentle Touch Routine",
+              "objective": "Engage in Gentle Touch Routine activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Gentle Touch Routine within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Gentle Touch Routine",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Gentle Soothing Routines"
+              }
+            },
+            {
+              "topicNumber": 6,
+              "topic": "Humming Together",
+              "objective": "Engage in Humming Together activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Humming Together within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Humming Together",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Calm Music & Humming"
+              }
+            },
+            {
+              "topicNumber": 7,
+              "topic": "Soft Melody Time",
+              "objective": "Engage in Soft Melody Time activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Soft Melody Time within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Melody Time",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Calm Music & Humming"
+              }
+            },
+            {
+              "topicNumber": 8,
+              "topic": "Gentle Sound Waves",
+              "objective": "Engage in Gentle Sound Waves activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Gentle Sound Waves within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Gentle Sound Waves",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Calm Music & Humming"
+              }
+            },
+            {
+              "topicNumber": 9,
+              "topic": "Musical Cuddles",
+              "objective": "Engage in Musical Cuddles activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Musical Cuddles within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Musical Cuddles",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Calm Music & Humming"
+              }
+            },
+            {
+              "topicNumber": 10,
+              "topic": "Relaxing Tunes Play",
+              "objective": "Engage in Relaxing Tunes Play activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Relaxing Tunes Play within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Relaxing Tunes Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Calm Music & Humming"
+              }
+            },
+            {
+              "topicNumber": 11,
+              "topic": "Rock & Snuggle",
+              "objective": "Engage in Rock & Snuggle activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Rock & Snuggle within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Rock & Snuggle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Cuddle & Rock Time"
+              }
+            },
+            {
+              "topicNumber": 12,
+              "topic": "Baby Rock Moments",
+              "objective": "Engage in Baby Rock Moments activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Baby Rock Moments within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Baby Rock Moments",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Cuddle & Rock Time"
+              }
+            },
+            {
+              "topicNumber": 13,
+              "topic": "Cozy Rock Routine",
+              "objective": "Engage in Cozy Rock Routine activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Cozy Rock Routine within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Cozy Rock Routine",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Cuddle & Rock Time"
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "Gentle Swing Play",
+              "objective": "Engage in Gentle Swing Play activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Gentle Swing Play within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Gentle Swing Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Cuddle & Rock Time"
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "Snuggle Rock Session",
+              "objective": "Engage in Snuggle Rock Session activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Snuggle Rock Session within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Snuggle Rock Session",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Cuddle & Rock Time"
+              }
+            },
+            {
+              "topicNumber": 16,
+              "topic": "Twilight Corner Time",
+              "objective": "Engage in Twilight Corner Time activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Twilight Corner Time within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Twilight Corner Time",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Soft Lighting & Calm Spaces"
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "Glow & Relax",
+              "objective": "Engage in Glow & Relax activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Glow & Relax within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Glow & Relax",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Soft Lighting & Calm Spaces"
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "Cozy Light Nook",
+              "objective": "Engage in Cozy Light Nook activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Cozy Light Nook within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Cozy Light Nook",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Soft Lighting & Calm Spaces"
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "Calm Lamp Moments",
+              "objective": "Engage in Calm Lamp Moments activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Calm Lamp Moments within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Calm Lamp Moments",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Soft Lighting & Calm Spaces"
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "Gentle Glow Cuddle",
+              "objective": "Engage in Gentle Glow Cuddle activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Gentle Glow Cuddle within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Gentle Glow Cuddle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Soft Lighting & Calm Spaces"
+              }
+            },
+            {
+              "topicNumber": 21,
+              "topic": "Teddy Breath Practice",
+              "objective": "Engage in Teddy Breath Practice activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Teddy Breath Practice within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Teddy Breath Practice",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Breathing with Stuffed Toys"
+              }
+            },
+            {
+              "topicNumber": 22,
+              "topic": "Stuffed Friend Breaths",
+              "objective": "Engage in Stuffed Friend Breaths activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Stuffed Friend Breaths within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Stuffed Friend Breaths",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Breathing with Stuffed Toys"
+              }
+            },
+            {
+              "topicNumber": 23,
+              "topic": "Calm Toy Breathing",
+              "objective": "Engage in Calm Toy Breathing activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Calm Toy Breathing within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Calm Toy Breathing",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Breathing with Stuffed Toys"
+              }
+            },
+            {
+              "topicNumber": 24,
+              "topic": "Slow Teddy Breaths",
+              "objective": "Engage in Slow Teddy Breaths activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Slow Teddy Breaths within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Slow Teddy Breaths",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Breathing with Stuffed Toys"
+              }
+            },
+            {
+              "topicNumber": 25,
+              "topic": "Balloon Belly Breathing",
+              "objective": "Engage in Balloon Belly Breathing activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Balloon Belly Breathing within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Balloon Belly Breathing",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Breathing with Stuffed Toys"
+              }
+            },
+            {
+              "topicNumber": 26,
+              "topic": "Sleepy Adventure Tales",
+              "objective": "Engage in Sleepy Adventure Tales activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Sleepy Adventure Tales within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Sleepy Adventure Tales",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Guided Relaxation Stories"
+              }
+            },
+            {
+              "topicNumber": 27,
+              "topic": "Calm Jungle Story",
+              "objective": "Engage in Calm Jungle Story activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Calm Jungle Story within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Calm Jungle Story",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Guided Relaxation Stories"
+              }
+            },
+            {
+              "topicNumber": 28,
+              "topic": "Cozy Forest Storytime",
+              "objective": "Engage in Cozy Forest Storytime activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Cozy Forest Storytime within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Cozy Forest Storytime",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Guided Relaxation Stories"
+              }
+            },
+            {
+              "topicNumber": 29,
+              "topic": "Magical Relaxation Tale",
+              "objective": "Engage in Magical Relaxation Tale activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Magical Relaxation Tale within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Magical Relaxation Tale",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Guided Relaxation Stories"
+              }
+            },
+            {
+              "topicNumber": 30,
+              "topic": "Gentle Sea Story",
+              "objective": "Engage in Gentle Sea Story activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Gentle Sea Story within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Gentle Sea Story",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Guided Relaxation Stories"
+              }
+            },
+            {
+              "topicNumber": 31,
+              "topic": "Glitter Calm Jar Fun",
+              "objective": "Engage in Glitter Calm Jar Fun activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Glitter Calm Jar Fun within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Glitter Calm Jar Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Sensory Calm Jars"
+              }
+            },
+            {
+              "topicNumber": 32,
+              "topic": "Color Swirl Jar",
+              "objective": "Engage in Color Swirl Jar activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Color Swirl Jar within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Color Swirl Jar",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Sensory Calm Jars"
+              }
+            },
+            {
+              "topicNumber": 33,
+              "topic": "Peaceful Potion Jar",
+              "objective": "Engage in Peaceful Potion Jar activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Peaceful Potion Jar within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Peaceful Potion Jar",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Sensory Calm Jars"
+              }
+            },
+            {
+              "topicNumber": 34,
+              "topic": "Tranquil Shaker Jar",
+              "objective": "Engage in Tranquil Shaker Jar activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Tranquil Shaker Jar within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Tranquil Shaker Jar",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Sensory Calm Jars"
+              }
+            },
+            {
+              "topicNumber": 35,
+              "topic": "Sparkle Focus Jar",
+              "objective": "Engage in Sparkle Focus Jar activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Sparkle Focus Jar within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Sparkle Focus Jar",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Sensory Calm Jars"
+              }
+            },
+            {
+              "topicNumber": 36,
+              "topic": "Cozy Reading Nook",
+              "objective": "Engage in Cozy Reading Nook activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Cozy Reading Nook within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Cozy Reading Nook",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Quiet Corner Time"
+              }
+            },
+            {
+              "topicNumber": 37,
+              "topic": "Calm Corner Retreat",
+              "objective": "Engage in Calm Corner Retreat activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Calm Corner Retreat within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Calm Corner Retreat",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Quiet Corner Time"
+              }
+            },
+            {
+              "topicNumber": 38,
+              "topic": "Little Zen Spot",
+              "objective": "Engage in Little Zen Spot activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Little Zen Spot within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Little Zen Spot",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Quiet Corner Time"
+              }
+            },
+            {
+              "topicNumber": 39,
+              "topic": "Snuggle & Read Corner",
+              "objective": "Engage in Snuggle & Read Corner activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Snuggle & Read Corner within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Snuggle & Read Corner",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Quiet Corner Time"
+              }
+            },
+            {
+              "topicNumber": 40,
+              "topic": "Peaceful Toy Corner",
+              "objective": "Engage in Peaceful Toy Corner activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Peaceful Toy Corner within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Peaceful Toy Corner",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Quiet Corner Time"
+              }
+            },
+            {
+              "topicNumber": 41,
+              "topic": "Balloon Belly Breaths",
+              "objective": "Engage in Balloon Belly Breaths activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Balloon Belly Breaths within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Balloon Belly Breaths",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Mindful Breathing Games"
+              }
+            },
+            {
+              "topicNumber": 42,
+              "topic": "Rainbow Breathing",
+              "objective": "Engage in Rainbow Breathing activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Rainbow Breathing within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Rainbow Breathing",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Mindful Breathing Games"
+              }
+            },
+            {
+              "topicNumber": 43,
+              "topic": "Animal Breath Adventure",
+              "objective": "Engage in Animal Breath Adventure activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Animal Breath Adventure within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Animal Breath Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Mindful Breathing Games"
+              }
+            },
+            {
+              "topicNumber": 44,
+              "topic": "Flower & Candle Breath",
+              "objective": "Engage in Flower & Candle Breath activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Flower & Candle Breath within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Flower & Candle Breath",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Mindful Breathing Games"
+              }
+            },
+            {
+              "topicNumber": 45,
+              "topic": "Cloud Watching Breaths",
+              "objective": "Engage in Cloud Watching Breaths activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Cloud Watching Breaths within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Cloud Watching Breaths",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Mindful Breathing Games"
+              }
+            },
+            {
+              "topicNumber": 46,
+              "topic": "Thankful Circle Game",
+              "objective": "Engage in Thankful Circle Game activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Thankful Circle Game within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Thankful Circle Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Gratitude Circles"
+              }
+            },
+            {
+              "topicNumber": 47,
+              "topic": "Gratitude Ball Toss",
+              "objective": "Engage in Gratitude Ball Toss activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Gratitude Ball Toss within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Gratitude Ball Toss",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Gratitude Circles"
+              }
+            },
+            {
+              "topicNumber": 48,
+              "topic": "Sharing Thankful Thoughts",
+              "objective": "Engage in Sharing Thankful Thoughts activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Sharing Thankful Thoughts within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Sharing Thankful Thoughts",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Gratitude Circles"
+              }
+            },
+            {
+              "topicNumber": 49,
+              "topic": "Appreciation Circle",
+              "objective": "Engage in Appreciation Circle activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Appreciation Circle within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Appreciation Circle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Gratitude Circles"
+              }
+            },
+            {
+              "topicNumber": 50,
+              "topic": "Joy Jar Sharing",
+              "objective": "Engage in Joy Jar Sharing activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Joy Jar Sharing within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Joy Jar Sharing",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Gratitude Circles"
+              }
+            },
+            {
+              "topicNumber": 51,
+              "topic": "Feeling Flash Cards",
+              "objective": "Engage in Feeling Flash Cards activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Feeling Flash Cards within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Feeling Flash Cards",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Emotion Naming with Cards"
+              }
+            },
+            {
+              "topicNumber": 52,
+              "topic": "Happy-Sad Card Game",
+              "objective": "Engage in Happy-Sad Card Game activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Happy-Sad Card Game within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Happy-Sad Card Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Emotion Naming with Cards"
+              }
+            },
+            {
+              "topicNumber": 53,
+              "topic": "Emotion Sorting Cards",
+              "objective": "Engage in Emotion Sorting Cards activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Emotion Sorting Cards within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Emotion Sorting Cards",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Emotion Naming with Cards"
+              }
+            },
+            {
+              "topicNumber": 54,
+              "topic": "Faces & Feelings Cards",
+              "objective": "Engage in Faces & Feelings Cards activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Faces & Feelings Cards within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Faces & Feelings Cards",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Emotion Naming with Cards"
+              }
+            },
+            {
+              "topicNumber": 55,
+              "topic": "Mood Card Match",
+              "objective": "Engage in Mood Card Match activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Mood Card Match within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Mood Card Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Emotion Naming with Cards"
+              }
+            },
+            {
+              "topicNumber": 56,
+              "topic": "Animal Pose Adventure",
+              "objective": "Engage in Animal Pose Adventure activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Animal Pose Adventure within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Animal Pose Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Yoga Poses for Kids"
+              }
+            },
+            {
+              "topicNumber": 57,
+              "topic": "Tree Pose Balance Game",
+              "objective": "Engage in Tree Pose Balance Game activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Tree Pose Balance Game within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Tree Pose Balance Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Yoga Poses for Kids"
+              }
+            },
+            {
+              "topicNumber": 58,
+              "topic": "Cat & Cow Stretch",
+              "objective": "Engage in Cat & Cow Stretch activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Cat & Cow Stretch within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Cat & Cow Stretch",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Yoga Poses for Kids"
+              }
+            },
+            {
+              "topicNumber": 59,
+              "topic": "Butterfly Pose Fun",
+              "objective": "Engage in Butterfly Pose Fun activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Butterfly Pose Fun within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Butterfly Pose Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Yoga Poses for Kids"
+              }
+            },
+            {
+              "topicNumber": 60,
+              "topic": "Sun Salutation Mini",
+              "objective": "Engage in Sun Salutation Mini activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Sun Salutation Mini within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Sun Salutation Mini",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Yoga Poses for Kids"
+              }
+            },
+            {
+              "topicNumber": 61,
+              "topic": "Calm Melody Meditation",
+              "objective": "Engage in Calm Melody Meditation activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Calm Melody Meditation within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Calm Melody Meditation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Meditation with Music"
+              }
+            },
+            {
+              "topicNumber": 62,
+              "topic": "Instrument Relaxation",
+              "objective": "Engage in Instrument Relaxation activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Instrument Relaxation within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Instrument Relaxation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Meditation with Music"
+              }
+            },
+            {
+              "topicNumber": 63,
+              "topic": "Music Mindfulness",
+              "objective": "Engage in Music Mindfulness activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Music Mindfulness within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Music Mindfulness",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Meditation with Music"
+              }
+            },
+            {
+              "topicNumber": 64,
+              "topic": "Harmonic Breathing",
+              "objective": "Engage in Harmonic Breathing activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Harmonic Breathing within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Harmonic Breathing",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Meditation with Music"
+              }
+            },
+            {
+              "topicNumber": 65,
+              "topic": "Song Rhythm Repeat",
+              "objective": "Engage in Song Rhythm Repeat activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Song Rhythm Repeat within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Song Rhythm Repeat",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Meditation with Music"
+              }
+            },
+            {
+              "topicNumber": 66,
+              "topic": "Emotion Diary",
+              "objective": "Engage in Emotion Diary activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Emotion Diary within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Emotion Diary",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Daily Journaling Prompts"
+              }
+            },
+            {
+              "topicNumber": 67,
+              "topic": "Mindful Reflection Log",
+              "objective": "Engage in Mindful Reflection Log activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Mindful Reflection Log within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Mindful Reflection Log",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Daily Journaling Prompts"
+              }
+            },
+            {
+              "topicNumber": 68,
+              "topic": "Gratitude Journal",
+              "objective": "Engage in Gratitude Journal activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Gratitude Journal within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Gratitude Journal",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Daily Journaling Prompts"
+              }
+            },
+            {
+              "topicNumber": 69,
+              "topic": "Calm Thoughts Tracker",
+              "objective": "Engage in Calm Thoughts Tracker activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Calm Thoughts Tracker within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Calm Thoughts Tracker",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Daily Journaling Prompts"
+              }
+            },
+            {
+              "topicNumber": 70,
+              "topic": "Mood Check Journal",
+              "objective": "Engage in Mood Check Journal activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Mood Check Journal within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Mood Check Journal",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Daily Journaling Prompts"
+              }
+            },
+            {
+              "topicNumber": 71,
+              "topic": "Emotion Charades",
+              "objective": "Engage in Emotion Charades activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Emotion Charades within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Emotion Charades",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Emotion Regulation Activities"
+              }
+            },
+            {
+              "topicNumber": 72,
+              "topic": "Feeling Thermometer",
+              "objective": "Engage in Feeling Thermometer activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Feeling Thermometer within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Feeling Thermometer",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Emotion Regulation Activities"
+              }
+            },
+            {
+              "topicNumber": 73,
+              "topic": "Calm-Down Techniques",
+              "objective": "Engage in Calm-Down Techniques activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Calm-Down Techniques within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Calm-Down Techniques",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Emotion Regulation Activities"
+              }
+            },
+            {
+              "topicNumber": 74,
+              "topic": "Happy/Sad Sorting",
+              "objective": "Engage in Happy/Sad Sorting activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Happy/Sad Sorting within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Happy/Sad Sorting",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Emotion Regulation Activities"
+              }
+            },
+            {
+              "topicNumber": 75,
+              "topic": "Emotion Stoplight Game",
+              "objective": "Engage in Emotion Stoplight Game activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Emotion Stoplight Game within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Emotion Stoplight Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Emotion Regulation Activities"
+              }
+            },
+            {
+              "topicNumber": 76,
+              "topic": "Gentle Stretch Break",
+              "objective": "Engage in Gentle Stretch Break activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Gentle Stretch Break within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Gentle Stretch Break",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Stretch & Calm Down Sessions"
+              }
+            },
+            {
+              "topicNumber": 77,
+              "topic": "Relax & Reach",
+              "objective": "Engage in Relax & Reach activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Relax & Reach within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Relax & Reach",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Stretch & Calm Down Sessions"
+              }
+            },
+            {
+              "topicNumber": 78,
+              "topic": "Yoga Break",
+              "objective": "Engage in Yoga Break activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Yoga Break within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Yoga Break",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Stretch & Calm Down Sessions"
+              }
+            },
+            {
+              "topicNumber": 79,
+              "topic": "Calm Body Session",
+              "objective": "Engage in Calm Body Session activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Calm Body Session within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Calm Body Session",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Stretch & Calm Down Sessions"
+              }
+            },
+            {
+              "topicNumber": 80,
+              "topic": "Mini Mindful Movements",
+              "objective": "Engage in Mini Mindful Movements activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Mini Mindful Movements within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Mini Mindful Movements",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Stretch & Calm Down Sessions"
+              }
+            },
+            {
+              "topicNumber": 81,
+              "topic": "Attention Ball Game",
+              "objective": "Engage in Attention Ball Game activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Attention Ball Game within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Attention Ball Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Focus Exercises with Objects"
+              }
+            },
+            {
+              "topicNumber": 82,
+              "topic": "Concentration Tower",
+              "objective": "Engage in Concentration Tower activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Concentration Tower within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Concentration Tower",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Focus Exercises with Objects"
+              }
+            },
+            {
+              "topicNumber": 83,
+              "topic": "Mindful Object Tracking",
+              "objective": "Engage in Mindful Object Tracking activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Mindful Object Tracking within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mindful Object Tracking",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Focus Exercises with Objects"
+              }
+            },
+            {
+              "topicNumber": 84,
+              "topic": "Focus Pebble Game",
+              "objective": "Engage in Focus Pebble Game activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Focus Pebble Game within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Focus Pebble Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Focus Exercises with Objects"
+              }
+            },
+            {
+              "topicNumber": 85,
+              "topic": "Balance Bean Challenge",
+              "objective": "Engage in Balance Bean Challenge activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Balance Bean Challenge within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Balance Bean Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Focus Exercises with Objects"
+              }
+            },
+            {
+              "topicNumber": 86,
+              "topic": "Dream Scene Visualization",
+              "objective": "Engage in Dream Scene Visualization activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Dream Scene Visualization within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Dream Scene Visualization",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Visualization Practices"
+              }
+            },
+            {
+              "topicNumber": 87,
+              "topic": "Future Self Imagination",
+              "objective": "Engage in Future Self Imagination activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Future Self Imagination within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Future Self Imagination",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Visualization Practices"
+              }
+            },
+            {
+              "topicNumber": 88,
+              "topic": "Calm Place Visualization",
+              "objective": "Engage in Calm Place Visualization activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Calm Place Visualization within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Calm Place Visualization",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Visualization Practices"
+              }
+            },
+            {
+              "topicNumber": 89,
+              "topic": "Mind Movie Exercise",
+              "objective": "Engage in Mind Movie Exercise activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Mind Movie Exercise within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mind Movie Exercise",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Visualization Practices"
+              }
+            },
+            {
+              "topicNumber": 90,
+              "topic": "Adventure Mind Journey",
+              "objective": "Engage in Adventure Mind Journey activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Adventure Mind Journey within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Adventure Mind Journey",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Visualization Practices"
+              }
+            },
+            {
+              "topicNumber": 91,
+              "topic": "Nature Audio Mindfulness",
+              "objective": "Engage in Nature Audio Mindfulness activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Nature Audio Mindfulness within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Nature Audio Mindfulness",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Guided Audio Meditations"
+              }
+            },
+            {
+              "topicNumber": 92,
+              "topic": "Calm Story Audio",
+              "objective": "Engage in Calm Story Audio activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Calm Story Audio within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Calm Story Audio",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Guided Audio Meditations"
+              }
+            },
+            {
+              "topicNumber": 93,
+              "topic": "Breathing Meditation",
+              "objective": "Engage in Breathing Meditation activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Breathing Meditation within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Breathing Meditation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Guided Audio Meditations"
+              }
+            },
+            {
+              "topicNumber": 94,
+              "topic": "Peaceful Mind Audio",
+              "objective": "Engage in Peaceful Mind Audio activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Peaceful Mind Audio within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Peaceful Mind Audio",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Guided Audio Meditations"
+              }
+            },
+            {
+              "topicNumber": 95,
+              "topic": "Relaxation Journey",
+              "objective": "Engage in Relaxation Journey activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Relaxation Journey within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Relaxation Journey",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Guided Audio Meditations"
+              }
+            },
+            {
+              "topicNumber": 96,
+              "topic": "Mood Reflection Quiz",
+              "objective": "Engage in Mood Reflection Quiz activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Mood Reflection Quiz within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mood Reflection Quiz",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Self-Awareness Quizzes"
+              }
+            },
+            {
+              "topicNumber": 97,
+              "topic": "Strengths Discovery",
+              "objective": "Engage in Strengths Discovery activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Strengths Discovery within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Strengths Discovery",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Self-Awareness Quizzes"
+              }
+            },
+            {
+              "topicNumber": 98,
+              "topic": "Emotion Check Quiz",
+              "objective": "Engage in Emotion Check Quiz activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Emotion Check Quiz within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Emotion Check Quiz",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Self-Awareness Quizzes"
+              }
+            },
+            {
+              "topicNumber": 99,
+              "topic": "Mindfulness Self-Test",
+              "objective": "Engage in Mindfulness Self-Test activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Mindfulness Self-Test within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mindfulness Self-Test",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Self-Awareness Quizzes"
+              }
+            },
+            {
+              "topicNumber": 100,
+              "topic": "Focus Assessment",
+              "objective": "Engage in Focus Assessment activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Focus Assessment within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Focus Assessment",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Self-Awareness Quizzes"
+              }
+            },
+            {
+              "topicNumber": 101,
+              "topic": "Guided Mindfulness Meditation",
+              "objective": "Engage in Guided Mindfulness Meditation activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Guided Mindfulness Meditation within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Guided Mindfulness Meditation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Deep Meditation Practices"
+              }
+            },
+            {
+              "topicNumber": 102,
+              "topic": "Breath Awareness Session",
+              "objective": "Engage in Breath Awareness Session activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Breath Awareness Session within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Breath Awareness Session",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Deep Meditation Practices"
+              }
+            },
+            {
+              "topicNumber": 103,
+              "topic": "Body Scan Practice",
+              "objective": "Engage in Body Scan Practice activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Body Scan Practice within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Body Scan Practice",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Deep Meditation Practices"
+              }
+            },
+            {
+              "topicNumber": 104,
+              "topic": "Silent Focus Retreat",
+              "objective": "Engage in Silent Focus Retreat activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Silent Focus Retreat within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Silent Focus Retreat",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Deep Meditation Practices"
+              }
+            },
+            {
+              "topicNumber": 105,
+              "topic": "Evening Reflection Meditation",
+              "objective": "Engage in Evening Reflection Meditation activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Evening Reflection Meditation within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Evening Reflection Meditation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Deep Meditation Practices"
+              }
+            },
+            {
+              "topicNumber": 106,
+              "topic": "Daily Positive Affirmations",
+              "objective": "Engage in Daily Positive Affirmations activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Daily Positive Affirmations within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Daily Positive Affirmations",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Affirmation Writing"
+              }
+            },
+            {
+              "topicNumber": 107,
+              "topic": "Self-Confidence Notes",
+              "objective": "Engage in Self-Confidence Notes activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Self-Confidence Notes within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Self-Confidence Notes",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Affirmation Writing"
+              }
+            },
+            {
+              "topicNumber": 108,
+              "topic": "Gratitude Affirmation Journal",
+              "objective": "Engage in Gratitude Affirmation Journal activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Gratitude Affirmation Journal within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Gratitude Affirmation Journal",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Affirmation Writing"
+              }
+            },
+            {
+              "topicNumber": 109,
+              "topic": "Empowerment Statements",
+              "objective": "Engage in Empowerment Statements activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Empowerment Statements within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Empowerment Statements",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Affirmation Writing"
+              }
+            },
+            {
+              "topicNumber": 110,
+              "topic": "Morning Motivation Phrases",
+              "objective": "Engage in Morning Motivation Phrases activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Morning Motivation Phrases within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Morning Motivation Phrases",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Affirmation Writing"
+              }
+            },
+            {
+              "topicNumber": 111,
+              "topic": "Daily Stress Log",
+              "objective": "Engage in Daily Stress Log activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Daily Stress Log within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Daily Stress Log",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Stress Journaling Techniques"
+              }
+            },
+            {
+              "topicNumber": 112,
+              "topic": "Emotion Tracker Journal",
+              "objective": "Engage in Emotion Tracker Journal activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Emotion Tracker Journal within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Emotion Tracker Journal",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Stress Journaling Techniques"
+              }
+            },
+            {
+              "topicNumber": 113,
+              "topic": "Mind Dump Notes",
+              "objective": "Engage in Mind Dump Notes activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Mind Dump Notes within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Mind Dump Notes",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Stress Journaling Techniques"
+              }
+            },
+            {
+              "topicNumber": 114,
+              "topic": "Coping Skills Journal",
+              "objective": "Engage in Coping Skills Journal activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Coping Skills Journal within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Coping Skills Journal",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Stress Journaling Techniques"
+              }
+            },
+            {
+              "topicNumber": 115,
+              "topic": "Reflection & Release Pages",
+              "objective": "Engage in Reflection & Release Pages activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Reflection & Release Pages within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Reflection & Release Pages",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Stress Journaling Techniques"
+              }
+            },
+            {
+              "topicNumber": 116,
+              "topic": "Screen-Free Hour",
+              "objective": "Engage in Screen-Free Hour activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Screen-Free Hour within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Screen-Free Hour",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Digital Detox Challenges"
+              }
+            },
+            {
+              "topicNumber": 117,
+              "topic": "Tech-Free Nature Walk",
+              "objective": "Engage in Tech-Free Nature Walk activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Tech-Free Nature Walk within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Tech-Free Nature Walk",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Digital Detox Challenges"
+              }
+            },
+            {
+              "topicNumber": 118,
+              "topic": "Social Media Pause",
+              "objective": "Engage in Social Media Pause activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Social Media Pause within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Social Media Pause",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Digital Detox Challenges"
+              }
+            },
+            {
+              "topicNumber": 119,
+              "topic": "Mindful Tech Break",
+              "objective": "Engage in Mindful Tech Break activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Mindful Tech Break within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Mindful Tech Break",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Digital Detox Challenges"
+              }
+            },
+            {
+              "topicNumber": 120,
+              "topic": "Evening Disconnect Challenge",
+              "objective": "Engage in Evening Disconnect Challenge activities to develop mindfulness & well-being skills",
+              "explanation": "This activity focuses on Evening Disconnect Challenge within the Mindfulness & Well-being pillar.",
+              "hashtags": [
+                "#Mindfulness&Well-being",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Evening Disconnect Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Mindfulness & Well-being"
+                ],
+                "category": "Digital Detox Challenges"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totalActivities": 120,
+  "lastUpdated": "2025-10-12T01:20:25.341405"
 }

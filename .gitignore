@@ -64,3 +64,6 @@ ENV/
 .DS_Store
 Thumbs.db google-credentials.json
 sheets-credentials.json
+backups/*.tar.gz
+backups/*.gz
+google-sheets-service-account.json

@@ -41,7 +41,7 @@ const LayoutComparison = () => {
   if (loading) {
     return (
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="400px">
-        <Typography variant="h6">Loading activity...</Typography>
+        <Typography >Loading activity...</Typography>
       </Box>
     );
   }
@@ -49,17 +49,17 @@ const LayoutComparison = () => {
   if (!activity) {
     return (
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="400px">
-        <Typography variant="h6" color="error">Activity not found</Typography>
+        <Typography  color="error">Activity not found</Typography>
       </Box>
     );
   }
 
   const renderVariant1 = () => (
     <Box>
-      <Typography variant="h4" sx={{ mb: 3, textAlign: 'center', color: '#2d3748' }}>
+      <Typography  sx={{ mb: 3, textAlign: 'center', color: '#2d3748' }}>
         Variant 1: 2x2 Grid Layout
       </Typography>
-      <Typography variant="body1" sx={{ mb: 3, textAlign: 'center', color: '#666' }}>
+      <Typography  sx={{ mb: 3, textAlign: 'center', color: '#666' }}>
         Materials | Steps (Top Row) • Skills | Tags (Bottom Row)
       </Typography>
       
@@ -67,7 +67,7 @@ const LayoutComparison = () => {
         {/* Top Row: Materials & Steps */}
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 3, borderRadius: '16px', background: 'rgba(34, 197, 94, 0.05)', height: '100%' }}>
-            <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
+            <Typography  sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
               Materials Needed
             </Typography>
             <List>
@@ -88,7 +88,7 @@ const LayoutComparison = () => {
 
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 3, borderRadius: '16px', background: 'rgba(168, 85, 247, 0.05)', height: '100%' }}>
-            <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
+            <Typography  sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
               Steps to Follow
             </Typography>
             <List>
@@ -138,7 +138,7 @@ const LayoutComparison = () => {
         {/* Bottom Row: Skills & Tags */}
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 3, borderRadius: '16px', background: 'rgba(255, 193, 7, 0.05)', height: '100%' }}>
-            <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
+            <Typography  sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
               Skills Your Child Will Develop
             </Typography>
             <Box display="flex" gap={1.5} flexWrap="wrap">
@@ -175,7 +175,7 @@ const LayoutComparison = () => {
 
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 3, borderRadius: '16px', background: 'rgba(168, 85, 247, 0.05)', height: '100%' }}>
-            <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
+            <Typography  sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
               Tags
             </Typography>
             <Box display="flex" gap={1.5} flexWrap="wrap">
@@ -215,17 +215,17 @@ const LayoutComparison = () => {
 
   const renderVariant2 = () => (
     <Box>
-      <Typography variant="h4" sx={{ mb: 3, textAlign: 'center', color: '#2d3748' }}>
+      <Typography  sx={{ mb: 3, textAlign: 'center', color: '#2d3748' }}>
         Variant 2: Single Column Layout
       </Typography>
-      <Typography variant="body1" sx={{ mb: 3, textAlign: 'center', color: '#666' }}>
+      <Typography  sx={{ mb: 3, textAlign: 'center', color: '#666' }}>
         Materials → Steps → Skills + Tags (Sequential)
       </Typography>
       
       <Box>
         {/* Materials */}
         <Paper sx={{ p: 3, borderRadius: '16px', background: 'rgba(34, 197, 94, 0.05)', mb: 3 }}>
-          <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
+          <Typography  sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
             Materials Needed
           </Typography>
           <List>
@@ -245,7 +245,7 @@ const LayoutComparison = () => {
 
         {/* Steps */}
         <Paper sx={{ p: 3, borderRadius: '16px', background: 'rgba(168, 85, 247, 0.05)', mb: 3 }}>
-          <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
+          <Typography  sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
             Steps to Follow
           </Typography>
           <List>
@@ -293,7 +293,7 @@ const LayoutComparison = () => {
 
         {/* Skills and Tags Combined */}
         <Paper sx={{ p: 3, borderRadius: '16px', background: 'rgba(255, 193, 7, 0.05)', mb: 3 }}>
-          <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
+          <Typography  sx={{ fontWeight: 'bold', mb: 2, color: '#2d3748' }}>
             Skills Your Child Will Develop
           </Typography>
           <Box display="flex" gap={1.5} flexWrap="wrap" mb={3}>
@@ -327,7 +327,7 @@ const LayoutComparison = () => {
           </Box>
           
           {/* Tags within Skills section */}
-          <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 1.5, color: '#2d3748' }}>
+          <Typography  sx={{ fontWeight: 'bold', mb: 1.5, color: '#2d3748' }}>
             Tags
           </Typography>
           <Box display="flex" gap={1.5} flexWrap="wrap">
@@ -372,14 +372,14 @@ const LayoutComparison = () => {
     }}>
       <Container maxWidth="xl">
         <Box textAlign="center" mb={4}>
-          <Typography variant="h2" sx={{ 
+          <Typography  sx={{ 
             fontWeight: 'bold',
             color: 'white',
             mb: 2
           }}>
             Layout Comparison
           </Typography>
-          <Typography variant="h5" sx={{ 
+          <Typography  sx={{ 
             color: 'rgba(255,255,255,0.8)',
             mb: 3
           }}>
@@ -427,7 +427,7 @@ const LayoutComparison = () => {
 
             <Box textAlign="center" mt={4}>
               <Button
-                variant="contained"
+                
                 size="large"
                 startIcon={<PlayArrow />}
                 sx={{

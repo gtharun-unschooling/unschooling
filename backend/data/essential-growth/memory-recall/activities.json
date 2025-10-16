@@ -1,3 +1,3257 @@
 {
-  "ageGroups": []
+  "ageGroups": [
+    {
+      "ageGroup": "All Ages",
+      "categories": [
+        {
+          "category": "Memory & Recall",
+          "description": "Activities for Memory & Recall",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "Peek-a-Boo Treasure",
+              "objective": "Engage in Peek-a-Boo Treasure activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Peek-a-Boo Treasure within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Peek-a-Boo Treasure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Hide & Reveal Object Play"
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "Surprise Peek Game",
+              "objective": "Engage in Surprise Peek Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Surprise Peek Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Surprise Peek Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Hide & Reveal Object Play"
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "Covered Toy Adventure",
+              "objective": "Engage in Covered Toy Adventure activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Covered Toy Adventure within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Covered Toy Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Hide & Reveal Object Play"
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "Hide & Find Crawl",
+              "objective": "Engage in Hide & Find Crawl activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Hide & Find Crawl within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Hide & Find Crawl",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Hide & Reveal Object Play"
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "Object Discovery Peek",
+              "objective": "Engage in Object Discovery Peek activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Object Discovery Peek within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Object Discovery Peek",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Hide & Reveal Object Play"
+              }
+            },
+            {
+              "topicNumber": 6,
+              "topic": "Sing & Repeat Fun",
+              "objective": "Engage in Sing & Repeat Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Sing & Repeat Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Sing & Repeat Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Song Repetition Activities"
+              }
+            },
+            {
+              "topicNumber": 7,
+              "topic": "Lullaby Echo Game",
+              "objective": "Engage in Lullaby Echo Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Lullaby Echo Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Lullaby Echo Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Song Repetition Activities"
+              }
+            },
+            {
+              "topicNumber": 8,
+              "topic": "Baby Rhythm Repeat",
+              "objective": "Engage in Baby Rhythm Repeat activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Baby Rhythm Repeat within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Baby Rhythm Repeat",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Song Repetition Activities"
+              }
+            },
+            {
+              "topicNumber": 9,
+              "topic": "Musical Memory Fun",
+              "objective": "Engage in Musical Memory Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Musical Memory Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Musical Memory Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Song Repetition Activities"
+              }
+            },
+            {
+              "topicNumber": 10,
+              "topic": "Nursery Tune Challenge",
+              "objective": "Engage in Nursery Tune Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Nursery Tune Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Nursery Tune Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Song Repetition Activities"
+              }
+            },
+            {
+              "topicNumber": 11,
+              "topic": "Baby Face Match",
+              "objective": "Engage in Baby Face Match activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Baby Face Match within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Baby Face Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Familiar Face Flashcards"
+              }
+            },
+            {
+              "topicNumber": 12,
+              "topic": "Family Face Fun",
+              "objective": "Engage in Family Face Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Family Face Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Family Face Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Familiar Face Flashcards"
+              }
+            },
+            {
+              "topicNumber": 13,
+              "topic": "Peek & Match Faces",
+              "objective": "Engage in Peek & Match Faces activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Peek & Match Faces within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Peek & Match Faces",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Familiar Face Flashcards"
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "Who’s This Game",
+              "objective": "Engage in Who’s This Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Who’s This Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Who’s This Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Familiar Face Flashcards"
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "Baby Face Explorer",
+              "objective": "Engage in Baby Face Explorer activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Baby Face Explorer within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Baby Face Explorer",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Familiar Face Flashcards"
+              }
+            },
+            {
+              "topicNumber": 16,
+              "topic": "Animal Echo Fun",
+              "objective": "Engage in Animal Echo Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Animal Echo Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Animal Echo Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Repeating Animal Sounds"
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "Roar & Repeat Game",
+              "objective": "Engage in Roar & Repeat Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Roar & Repeat Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Roar & Repeat Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Repeating Animal Sounds"
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "Sound Matching Play",
+              "objective": "Engage in Sound Matching Play activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Sound Matching Play within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Sound Matching Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Repeating Animal Sounds"
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "Tiny Animal Choir",
+              "objective": "Engage in Tiny Animal Choir activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Tiny Animal Choir within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Tiny Animal Choir",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Repeating Animal Sounds"
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "Animal Sound Adventure",
+              "objective": "Engage in Animal Sound Adventure activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Animal Sound Adventure within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Animal Sound Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Repeating Animal Sounds"
+              }
+            },
+            {
+              "topicNumber": 21,
+              "topic": "Picture Match Fun",
+              "objective": "Engage in Picture Match Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Picture Match Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Picture Match Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Matching Picture Pairs"
+              }
+            },
+            {
+              "topicNumber": 22,
+              "topic": "Color Pair Challenge",
+              "objective": "Engage in Color Pair Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Color Pair Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Color Pair Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Matching Picture Pairs"
+              }
+            },
+            {
+              "topicNumber": 23,
+              "topic": "Shape Match Game",
+              "objective": "Engage in Shape Match Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Shape Match Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Shape Match Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Matching Picture Pairs"
+              }
+            },
+            {
+              "topicNumber": 24,
+              "topic": "Animal Match Play",
+              "objective": "Engage in Animal Match Play activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Animal Match Play within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Animal Match Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Matching Picture Pairs"
+              }
+            },
+            {
+              "topicNumber": 25,
+              "topic": "Object Match Adventure",
+              "objective": "Engage in Object Match Adventure activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Object Match Adventure within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Object Match Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Matching Picture Pairs"
+              }
+            },
+            {
+              "topicNumber": 26,
+              "topic": "Morning Routine Game",
+              "objective": "Engage in Morning Routine Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Morning Routine Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Morning Routine Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Daily Routine Recollection"
+              }
+            },
+            {
+              "topicNumber": 27,
+              "topic": "Snack Time Memory",
+              "objective": "Engage in Snack Time Memory activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Snack Time Memory within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Snack Time Memory",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Daily Routine Recollection"
+              }
+            },
+            {
+              "topicNumber": 28,
+              "topic": "Dress-Up Memory Game",
+              "objective": "Engage in Dress-Up Memory Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Dress-Up Memory Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Dress-Up Memory Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Daily Routine Recollection"
+              }
+            },
+            {
+              "topicNumber": 29,
+              "topic": "Daily Task Challenge",
+              "objective": "Engage in Daily Task Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Daily Task Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Daily Task Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Daily Routine Recollection"
+              }
+            },
+            {
+              "topicNumber": 30,
+              "topic": "Routine Explorer",
+              "objective": "Engage in Routine Explorer activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Routine Explorer within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Routine Explorer",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Daily Routine Recollection"
+              }
+            },
+            {
+              "topicNumber": 31,
+              "topic": "Toy Story Replay",
+              "objective": "Engage in Toy Story Replay activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Toy Story Replay within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Toy Story Replay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Story Retelling with Toys"
+              }
+            },
+            {
+              "topicNumber": 32,
+              "topic": "Mini Tale Reenactment",
+              "objective": "Engage in Mini Tale Reenactment activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Mini Tale Reenactment within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Mini Tale Reenactment",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Story Retelling with Toys"
+              }
+            },
+            {
+              "topicNumber": 33,
+              "topic": "Story Recall Fun",
+              "objective": "Engage in Story Recall Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Story Recall Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Story Recall Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Story Retelling with Toys"
+              }
+            },
+            {
+              "topicNumber": 34,
+              "topic": "Playtime Story Repeat",
+              "objective": "Engage in Playtime Story Repeat activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Playtime Story Repeat within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Playtime Story Repeat",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Story Retelling with Toys"
+              }
+            },
+            {
+              "topicNumber": 35,
+              "topic": "Adventure Story Replay",
+              "objective": "Engage in Adventure Story Replay activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Adventure Story Replay within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Adventure Story Replay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Story Retelling with Toys"
+              }
+            },
+            {
+              "topicNumber": 36,
+              "topic": "Basket Treasure Recall",
+              "objective": "Engage in Basket Treasure Recall activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Basket Treasure Recall within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Basket Treasure Recall",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Memory Basket Exploration"
+              }
+            },
+            {
+              "topicNumber": 37,
+              "topic": "Hidden Toy Memory",
+              "objective": "Engage in Hidden Toy Memory activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Hidden Toy Memory within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Hidden Toy Memory",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Memory Basket Exploration"
+              }
+            },
+            {
+              "topicNumber": 38,
+              "topic": "Object Hunt Challenge",
+              "objective": "Engage in Object Hunt Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Object Hunt Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Object Hunt Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Memory Basket Exploration"
+              }
+            },
+            {
+              "topicNumber": 39,
+              "topic": "Sensory Basket Fun",
+              "objective": "Engage in Sensory Basket Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Sensory Basket Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Sensory Basket Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Memory Basket Exploration"
+              }
+            },
+            {
+              "topicNumber": 40,
+              "topic": "Color & Shape Recall",
+              "objective": "Engage in Color & Shape Recall activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Color & Shape Recall within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Color & Shape Recall",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Memory Basket Exploration"
+              }
+            },
+            {
+              "topicNumber": 41,
+              "topic": "Picture Pair Memory",
+              "objective": "Engage in Picture Pair Memory activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Picture Pair Memory within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Picture Pair Memory",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Visual Memory Card Games"
+              }
+            },
+            {
+              "topicNumber": 42,
+              "topic": "Shape Memory Challenge",
+              "objective": "Engage in Shape Memory Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Shape Memory Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Shape Memory Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Visual Memory Card Games"
+              }
+            },
+            {
+              "topicNumber": 43,
+              "topic": "Rainbow Recall Challenge",
+              "objective": "Engage in Rainbow Recall Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Rainbow Recall Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Rainbow Recall Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Visual Memory Card Games"
+              }
+            },
+            {
+              "topicNumber": 44,
+              "topic": "Animal Memory Game",
+              "objective": "Engage in Animal Memory Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Animal Memory Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Animal Memory Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Visual Memory Card Games"
+              }
+            },
+            {
+              "topicNumber": 45,
+              "topic": "Tiny Memory Explorer",
+              "objective": "Engage in Tiny Memory Explorer activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Tiny Memory Explorer within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Tiny Memory Explorer",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Visual Memory Card Games"
+              }
+            },
+            {
+              "topicNumber": 46,
+              "topic": "Story Recall Challenge",
+              "objective": "Engage in Story Recall Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Story Recall Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Story Recall Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Repeating Story Details"
+              }
+            },
+            {
+              "topicNumber": 47,
+              "topic": "Tale Memory Fun",
+              "objective": "Engage in Tale Memory Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Tale Memory Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Tale Memory Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Repeating Story Details"
+              }
+            },
+            {
+              "topicNumber": 48,
+              "topic": "Story Reenact Game",
+              "objective": "Engage in Story Reenact Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Story Reenact Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Story Reenact Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Repeating Story Details"
+              }
+            },
+            {
+              "topicNumber": 49,
+              "topic": "Narrative Replay",
+              "objective": "Engage in Narrative Replay activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Narrative Replay within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Narrative Replay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Repeating Story Details"
+              }
+            },
+            {
+              "topicNumber": 50,
+              "topic": "Mini Story Echo",
+              "objective": "Engage in Mini Story Echo activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Mini Story Echo within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Mini Story Echo",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Repeating Story Details"
+              }
+            },
+            {
+              "topicNumber": 51,
+              "topic": "Sound Match Adventure",
+              "objective": "Engage in Sound Match Adventure activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Sound Match Adventure within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Sound Match Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Listening & Recalling Sounds"
+              }
+            },
+            {
+              "topicNumber": 52,
+              "topic": "Echo Game Fun",
+              "objective": "Engage in Echo Game Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Echo Game Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Echo Game Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Listening & Recalling Sounds"
+              }
+            },
+            {
+              "topicNumber": 53,
+              "topic": "Animal Sound Recall",
+              "objective": "Engage in Animal Sound Recall activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Animal Sound Recall within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Animal Sound Recall",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Listening & Recalling Sounds"
+              }
+            },
+            {
+              "topicNumber": 54,
+              "topic": "Musical Memory Trail",
+              "objective": "Engage in Musical Memory Trail activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Musical Memory Trail within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Musical Memory Trail",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Listening & Recalling Sounds"
+              }
+            },
+            {
+              "topicNumber": 55,
+              "topic": "Sound Pattern Challenge",
+              "objective": "Engage in Sound Pattern Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Sound Pattern Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Sound Pattern Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Listening & Recalling Sounds"
+              }
+            },
+            {
+              "topicNumber": 56,
+              "topic": "Missing Object Hunt",
+              "objective": "Engage in Missing Object Hunt activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Missing Object Hunt within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Missing Object Hunt",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "“What Was Missing?” Game"
+              }
+            },
+            {
+              "topicNumber": 57,
+              "topic": "Memory Detective Play",
+              "objective": "Engage in Memory Detective Play activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Memory Detective Play within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Memory Detective Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "“What Was Missing?” Game"
+              }
+            },
+            {
+              "topicNumber": 58,
+              "topic": "Spot the Difference Challenge",
+              "objective": "Engage in Spot the Difference Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Spot the Difference Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Spot the Difference Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "“What Was Missing?” Game"
+              }
+            },
+            {
+              "topicNumber": 59,
+              "topic": "Hide & Recall Fun",
+              "objective": "Engage in Hide & Recall Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Hide & Recall Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Hide & Recall Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "“What Was Missing?” Game"
+              }
+            },
+            {
+              "topicNumber": 60,
+              "topic": "Object Memory Game",
+              "objective": "Engage in Object Memory Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Object Memory Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Object Memory Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "“What Was Missing?” Game"
+              }
+            },
+            {
+              "topicNumber": 61,
+              "topic": "Step Sequence Fun",
+              "objective": "Engage in Step Sequence Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Step Sequence Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Step Sequence Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Sequence Recall Challenges"
+              }
+            },
+            {
+              "topicNumber": 62,
+              "topic": "Pattern Recall Challenge",
+              "objective": "Engage in Pattern Recall Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Pattern Recall Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Pattern Recall Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Sequence Recall Challenges"
+              }
+            },
+            {
+              "topicNumber": 63,
+              "topic": "Number Order Game",
+              "objective": "Engage in Number Order Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Number Order Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Number Order Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Sequence Recall Challenges"
+              }
+            },
+            {
+              "topicNumber": 64,
+              "topic": "Letter Sequence Challenge",
+              "objective": "Engage in Letter Sequence Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Letter Sequence Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Letter Sequence Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Sequence Recall Challenges"
+              }
+            },
+            {
+              "topicNumber": 65,
+              "topic": "Step Memory Adventure",
+              "objective": "Engage in Step Memory Adventure activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Step Memory Adventure within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Step Memory Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Sequence Recall Challenges"
+              }
+            },
+            {
+              "topicNumber": 66,
+              "topic": "Word & Image Match",
+              "objective": "Engage in Word & Image Match activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Word & Image Match within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Word & Image Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Picture-to-Word Matching"
+              }
+            },
+            {
+              "topicNumber": 67,
+              "topic": "Visual Vocabulary Fun",
+              "objective": "Engage in Visual Vocabulary Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Visual Vocabulary Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Visual Vocabulary Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Picture-to-Word Matching"
+              }
+            },
+            {
+              "topicNumber": 68,
+              "topic": "Picture Word Challenge",
+              "objective": "Engage in Picture Word Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Picture Word Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Picture Word Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Picture-to-Word Matching"
+              }
+            },
+            {
+              "topicNumber": 69,
+              "topic": "Object Name Memory",
+              "objective": "Engage in Object Name Memory activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Object Name Memory within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Object Name Memory",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Picture-to-Word Matching"
+              }
+            },
+            {
+              "topicNumber": 70,
+              "topic": "Color Word Match",
+              "objective": "Engage in Color Word Match activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Color Word Match within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Color Word Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Picture-to-Word Matching"
+              }
+            },
+            {
+              "topicNumber": 71,
+              "topic": "Treasure Map Recall",
+              "objective": "Engage in Treasure Map Recall activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Treasure Map Recall within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Treasure Map Recall",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Map Memory Games"
+              }
+            },
+            {
+              "topicNumber": 72,
+              "topic": "Pathway Memory Challenge",
+              "objective": "Engage in Pathway Memory Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Pathway Memory Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Pathway Memory Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Map Memory Games"
+              }
+            },
+            {
+              "topicNumber": 73,
+              "topic": "Map Memory Quest",
+              "objective": "Engage in Map Memory Quest activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Map Memory Quest within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Map Memory Quest",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Map Memory Games"
+              }
+            },
+            {
+              "topicNumber": 74,
+              "topic": "Landmark Memory Fun",
+              "objective": "Engage in Landmark Memory Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Landmark Memory Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Landmark Memory Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Map Memory Games"
+              }
+            },
+            {
+              "topicNumber": 75,
+              "topic": "Direction Recall Game",
+              "objective": "Engage in Direction Recall Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Direction Recall Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Direction Recall Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Map Memory Games"
+              }
+            },
+            {
+              "topicNumber": 76,
+              "topic": "Task Recall Challenge",
+              "objective": "Engage in Task Recall Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Task Recall Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Task Recall Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Remembering Instructions"
+              }
+            },
+            {
+              "topicNumber": 77,
+              "topic": "Step-by-Step Memory",
+              "objective": "Engage in Step-by-Step Memory activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Step-by-Step Memory within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Step-by-Step Memory",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Remembering Instructions"
+              }
+            },
+            {
+              "topicNumber": 78,
+              "topic": "Instruction Replay",
+              "objective": "Engage in Instruction Replay activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Instruction Replay within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Instruction Replay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Remembering Instructions"
+              }
+            },
+            {
+              "topicNumber": 79,
+              "topic": "Follow the Steps Game",
+              "objective": "Engage in Follow the Steps Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Follow the Steps Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Follow the Steps Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Remembering Instructions"
+              }
+            },
+            {
+              "topicNumber": 80,
+              "topic": "Sequence Task Adventure",
+              "objective": "Engage in Sequence Task Adventure activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Sequence Task Adventure within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Sequence Task Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Remembering Instructions"
+              }
+            },
+            {
+              "topicNumber": 81,
+              "topic": "Grid Match Challenge",
+              "objective": "Engage in Grid Match Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Grid Match Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Grid Match Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Memory Grid Challenges"
+              }
+            },
+            {
+              "topicNumber": 82,
+              "topic": "Visual Grid Recall",
+              "objective": "Engage in Visual Grid Recall activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Visual Grid Recall within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Visual Grid Recall",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Memory Grid Challenges"
+              }
+            },
+            {
+              "topicNumber": 83,
+              "topic": "Number Grid Memory",
+              "objective": "Engage in Number Grid Memory activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Number Grid Memory within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Number Grid Memory",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Memory Grid Challenges"
+              }
+            },
+            {
+              "topicNumber": 84,
+              "topic": "Letter Grid Fun",
+              "objective": "Engage in Letter Grid Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Letter Grid Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Letter Grid Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Memory Grid Challenges"
+              }
+            },
+            {
+              "topicNumber": 85,
+              "topic": "Pattern Grid Adventure",
+              "objective": "Engage in Pattern Grid Adventure activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Pattern Grid Adventure within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Pattern Grid Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Memory Grid Challenges"
+              }
+            },
+            {
+              "topicNumber": 86,
+              "topic": "Rapid Recall Challenge",
+              "objective": "Engage in Rapid Recall Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Rapid Recall Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Rapid Recall Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Speed Repetition Tests"
+              }
+            },
+            {
+              "topicNumber": 87,
+              "topic": "Quick Memory Game",
+              "objective": "Engage in Quick Memory Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Quick Memory Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Quick Memory Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Speed Repetition Tests"
+              }
+            },
+            {
+              "topicNumber": 88,
+              "topic": "Fast Facts Recall",
+              "objective": "Engage in Fast Facts Recall activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Fast Facts Recall within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Fast Facts Recall",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Speed Repetition Tests"
+              }
+            },
+            {
+              "topicNumber": 89,
+              "topic": "Timed Memory Challenge",
+              "objective": "Engage in Timed Memory Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Timed Memory Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Timed Memory Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Speed Repetition Tests"
+              }
+            },
+            {
+              "topicNumber": 90,
+              "topic": "Rapid Sequence Recall",
+              "objective": "Engage in Rapid Sequence Recall activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Rapid Sequence Recall within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Rapid Sequence Recall",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Speed Repetition Tests"
+              }
+            },
+            {
+              "topicNumber": 91,
+              "topic": "Math Memory Challenge",
+              "objective": "Engage in Math Memory Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Math Memory Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Math Memory Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Number Recall Puzzles"
+              }
+            },
+            {
+              "topicNumber": 92,
+              "topic": "Number Sequence Fun",
+              "objective": "Engage in Number Sequence Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Number Sequence Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Number Sequence Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Number Recall Puzzles"
+              }
+            },
+            {
+              "topicNumber": 93,
+              "topic": "Digit Memory Game",
+              "objective": "Engage in Digit Memory Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Digit Memory Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Digit Memory Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Number Recall Puzzles"
+              }
+            },
+            {
+              "topicNumber": 94,
+              "topic": "Number Pattern Challenge",
+              "objective": "Engage in Number Pattern Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Number Pattern Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Number Pattern Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Number Recall Puzzles"
+              }
+            },
+            {
+              "topicNumber": 95,
+              "topic": "Calculation Recall Fun",
+              "objective": "Engage in Calculation Recall Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Calculation Recall Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Calculation Recall Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Number Recall Puzzles"
+              }
+            },
+            {
+              "topicNumber": 96,
+              "topic": "Story Build Challenge",
+              "objective": "Engage in Story Build Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Story Build Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Story Build Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Storyline Continuation Games"
+              }
+            },
+            {
+              "topicNumber": 97,
+              "topic": "Continue the Tale",
+              "objective": "Engage in Continue the Tale activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Continue the Tale within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Continue the Tale",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Storyline Continuation Games"
+              }
+            },
+            {
+              "topicNumber": 98,
+              "topic": "Plot Twist Memory Game",
+              "objective": "Engage in Plot Twist Memory Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Plot Twist Memory Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Plot Twist Memory Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Storyline Continuation Games"
+              }
+            },
+            {
+              "topicNumber": 99,
+              "topic": "Story Recall Adventure",
+              "objective": "Engage in Story Recall Adventure activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Story Recall Adventure within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Story Recall Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Storyline Continuation Games"
+              }
+            },
+            {
+              "topicNumber": 100,
+              "topic": "Narrative Continuation Fun",
+              "objective": "Engage in Narrative Continuation Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Narrative Continuation Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Narrative Continuation Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Storyline Continuation Games"
+              }
+            },
+            {
+              "topicNumber": 101,
+              "topic": "Flash Recall Challenge",
+              "objective": "Engage in Flash Recall Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Flash Recall Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Flash Recall Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Flash Memorization Techniques"
+              }
+            },
+            {
+              "topicNumber": 102,
+              "topic": "Rapid Flash Memory",
+              "objective": "Engage in Rapid Flash Memory activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Rapid Flash Memory within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Rapid Flash Memory",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Flash Memorization Techniques"
+              }
+            },
+            {
+              "topicNumber": 103,
+              "topic": "Visual Flash Game",
+              "objective": "Engage in Visual Flash Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Visual Flash Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Visual Flash Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Flash Memorization Techniques"
+              }
+            },
+            {
+              "topicNumber": 104,
+              "topic": "Quick Image Recall",
+              "objective": "Engage in Quick Image Recall activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Quick Image Recall within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Quick Image Recall",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Flash Memorization Techniques"
+              }
+            },
+            {
+              "topicNumber": 105,
+              "topic": "Memory Blitz Challenge",
+              "objective": "Engage in Memory Blitz Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Memory Blitz Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Memory Blitz Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Flash Memorization Techniques"
+              }
+            },
+            {
+              "topicNumber": 106,
+              "topic": "Note-to-Memory Game",
+              "objective": "Engage in Note-to-Memory Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Note-to-Memory Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Note-to-Memory Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Study Recall Methods"
+              }
+            },
+            {
+              "topicNumber": 107,
+              "topic": "Revision Recall Fun",
+              "objective": "Engage in Revision Recall Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Revision Recall Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Revision Recall Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Study Recall Methods"
+              }
+            },
+            {
+              "topicNumber": 108,
+              "topic": "Learning Memory Drill",
+              "objective": "Engage in Learning Memory Drill activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Learning Memory Drill within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Learning Memory Drill",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Study Recall Methods"
+              }
+            },
+            {
+              "topicNumber": 109,
+              "topic": "Study Challenge Recall",
+              "objective": "Engage in Study Challenge Recall activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Study Challenge Recall within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Study Challenge Recall",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Study Recall Methods"
+              }
+            },
+            {
+              "topicNumber": 110,
+              "topic": "Academic Memory Fun",
+              "objective": "Engage in Academic Memory Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Academic Memory Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Academic Memory Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Study Recall Methods"
+              }
+            },
+            {
+              "topicNumber": 111,
+              "topic": "Plan & Recall Challenge",
+              "objective": "Engage in Plan & Recall Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Plan & Recall Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Plan & Recall Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Long-Term Retention Planning"
+              }
+            },
+            {
+              "topicNumber": 112,
+              "topic": "Memory Map Adventure",
+              "objective": "Engage in Memory Map Adventure activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Memory Map Adventure within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Memory Map Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Long-Term Retention Planning"
+              }
+            },
+            {
+              "topicNumber": 113,
+              "topic": "Study Planner Recall",
+              "objective": "Engage in Study Planner Recall activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Study Planner Recall within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Study Planner Recall",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Long-Term Retention Planning"
+              }
+            },
+            {
+              "topicNumber": 114,
+              "topic": "Retention Game Fun",
+              "objective": "Engage in Retention Game Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Retention Game Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Retention Game Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Long-Term Retention Planning"
+              }
+            },
+            {
+              "topicNumber": 115,
+              "topic": "Knowledge Recall Challenge",
+              "objective": "Engage in Knowledge Recall Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Knowledge Recall Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Knowledge Recall Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Long-Term Retention Planning"
+              }
+            },
+            {
+              "topicNumber": 116,
+              "topic": "Trivia Recall Challenge",
+              "objective": "Engage in Trivia Recall Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Trivia Recall Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Trivia Recall Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Facts & Figures Recall Games"
+              }
+            },
+            {
+              "topicNumber": 117,
+              "topic": "Data Memory Fun",
+              "objective": "Engage in Data Memory Fun activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Data Memory Fun within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Data Memory Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Facts & Figures Recall Games"
+              }
+            },
+            {
+              "topicNumber": 118,
+              "topic": "Figure Recall Adventure",
+              "objective": "Engage in Figure Recall Adventure activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Figure Recall Adventure within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Figure Recall Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Facts & Figures Recall Games"
+              }
+            },
+            {
+              "topicNumber": 119,
+              "topic": "Fact Finder Challenge",
+              "objective": "Engage in Fact Finder Challenge activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Fact Finder Challenge within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Fact Finder Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Facts & Figures Recall Games"
+              }
+            },
+            {
+              "topicNumber": 120,
+              "topic": "Information Memory Game",
+              "objective": "Engage in Information Memory Game activities to develop memory & recall skills",
+              "explanation": "This activity focuses on Information Memory Game within the Memory & Recall pillar.",
+              "hashtags": [
+                "#Memory&Recall",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Information Memory Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Memory & Recall"
+                ],
+                "category": "Facts & Figures Recall Games"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totalActivities": 120,
+  "lastUpdated": "2025-10-12T01:20:25.373233"
 }

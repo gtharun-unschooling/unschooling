@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { colors, spacing, typography } from '../../styles/designTokens';
+import MinimalBackButton from '../../components/ui/MinimalBackButton';
 
 const WhatWeDoPage = () => {
   const containerStyle = {
     minHeight: '100vh',
     background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
     fontFamily: typography.fontFamily.primary,
+    position: 'relative'
   };
 
   // Responsive wheel styles - good for both desktop and mobile
@@ -159,6 +161,13 @@ const WhatWeDoPage = () => {
 
   return (
     <div style={containerStyle}>
+      <MinimalBackButton 
+        heroColors={{
+          backgroundColor: '#f8fafc',
+          primaryColor: '#667eea',
+          nicheColor: '#764ba2'
+        }}
+      />
       <style>
         {`
           @keyframes float {

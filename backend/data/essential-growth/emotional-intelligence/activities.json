@@ -1,3 +1,3257 @@
 {
-  "ageGroups": []
+  "ageGroups": [
+    {
+      "ageGroup": "All Ages",
+      "categories": [
+        {
+          "category": "Emotional Intelligence",
+          "description": "Activities for Emotional Intelligence",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "Smile & Mirror Game",
+              "objective": "Engage in Smile & Mirror Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Smile & Mirror Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Smile & Mirror Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Responding to Facial Expressions"
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "Peek-a-Smile",
+              "objective": "Engage in Peek-a-Smile activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Peek-a-Smile within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Peek-a-Smile",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Responding to Facial Expressions"
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "Expression Match",
+              "objective": "Engage in Expression Match activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Expression Match within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Expression Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Responding to Facial Expressions"
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "Face-to-Face Reactions",
+              "objective": "Engage in Face-to-Face Reactions activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Face-to-Face Reactions within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Face-to-Face Reactions",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Responding to Facial Expressions"
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "Happy/Sad Peekaboo",
+              "objective": "Engage in Happy/Sad Peekaboo activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Happy/Sad Peekaboo within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Happy/Sad Peekaboo",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Responding to Facial Expressions"
+              }
+            },
+            {
+              "topicNumber": 6,
+              "topic": "Gentle Humming Time",
+              "objective": "Engage in Gentle Humming Time activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Gentle Humming Time within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Gentle Humming Time",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Calming Voice Reactions"
+              }
+            },
+            {
+              "topicNumber": 7,
+              "topic": "Whisper & Smile",
+              "objective": "Engage in Whisper & Smile activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Whisper & Smile within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Whisper & Smile",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Calming Voice Reactions"
+              }
+            },
+            {
+              "topicNumber": 8,
+              "topic": "Soft Song Moments",
+              "objective": "Engage in Soft Song Moments activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Soft Song Moments within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Song Moments",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Calming Voice Reactions"
+              }
+            },
+            {
+              "topicNumber": 9,
+              "topic": "Lullaby Listening Game",
+              "objective": "Engage in Lullaby Listening Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Lullaby Listening Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Lullaby Listening Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Calming Voice Reactions"
+              }
+            },
+            {
+              "topicNumber": 10,
+              "topic": "Shhh & Listen",
+              "objective": "Engage in Shhh & Listen activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Shhh & Listen within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Shhh & Listen",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Calming Voice Reactions"
+              }
+            },
+            {
+              "topicNumber": 11,
+              "topic": "Emotion Tone Game",
+              "objective": "Engage in Emotion Tone Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Emotion Tone Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Emotion Tone Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Understanding Happy/Sad Tones"
+              }
+            },
+            {
+              "topicNumber": 12,
+              "topic": "Voice Mood Match",
+              "objective": "Engage in Voice Mood Match activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Voice Mood Match within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Voice Mood Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Understanding Happy/Sad Tones"
+              }
+            },
+            {
+              "topicNumber": 13,
+              "topic": "Tone Recognition Fun",
+              "objective": "Engage in Tone Recognition Fun activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Tone Recognition Fun within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Tone Recognition Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Understanding Happy/Sad Tones"
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "Laugh & Cry Game",
+              "objective": "Engage in Laugh & Cry Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Laugh & Cry Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Laugh & Cry Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Understanding Happy/Sad Tones"
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "Cheerful vs Calm Sounds",
+              "objective": "Engage in Cheerful vs Calm Sounds activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Cheerful vs Calm Sounds within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Cheerful vs Calm Sounds",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Understanding Happy/Sad Tones"
+              }
+            },
+            {
+              "topicNumber": 16,
+              "topic": "Gentle Pat & Clap",
+              "objective": "Engage in Gentle Pat & Clap activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Gentle Pat & Clap within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Gentle Pat & Clap",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Expressive Touch Interaction"
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "Hand Squeeze Fun",
+              "objective": "Engage in Hand Squeeze Fun activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Hand Squeeze Fun within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Hand Squeeze Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Expressive Touch Interaction"
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "Hug & Tap Game",
+              "objective": "Engage in Hug & Tap Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Hug & Tap Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Hug & Tap Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Expressive Touch Interaction"
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "Cuddle & Wiggle",
+              "objective": "Engage in Cuddle & Wiggle activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Cuddle & Wiggle within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Cuddle & Wiggle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Expressive Touch Interaction"
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "Soft Touch Exploration",
+              "objective": "Engage in Soft Touch Exploration activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Soft Touch Exploration within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Touch Exploration",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Expressive Touch Interaction"
+              }
+            },
+            {
+              "topicNumber": 21,
+              "topic": "Happy Face Match",
+              "objective": "Engage in Happy Face Match activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Happy Face Match within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Happy Face Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Emotion Flash Cards"
+              }
+            },
+            {
+              "topicNumber": 22,
+              "topic": "Sad Face Sorting",
+              "objective": "Engage in Sad Face Sorting activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Sad Face Sorting within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Sad Face Sorting",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Emotion Flash Cards"
+              }
+            },
+            {
+              "topicNumber": 23,
+              "topic": "Surprise & Joy Game",
+              "objective": "Engage in Surprise & Joy Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Surprise & Joy Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Surprise & Joy Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Emotion Flash Cards"
+              }
+            },
+            {
+              "topicNumber": 24,
+              "topic": "Angry or Calm Sorting",
+              "objective": "Engage in Angry or Calm Sorting activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Angry or Calm Sorting within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Angry or Calm Sorting",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Emotion Flash Cards"
+              }
+            },
+            {
+              "topicNumber": 25,
+              "topic": "Daily Emotion Check",
+              "objective": "Engage in Daily Emotion Check activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Daily Emotion Check within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Daily Emotion Check",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Emotion Flash Cards"
+              }
+            },
+            {
+              "topicNumber": 26,
+              "topic": "Mimic Mommy Game",
+              "objective": "Engage in Mimic Mommy Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Mimic Mommy Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Mimic Mommy Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Mirror Face Mimicking"
+              }
+            },
+            {
+              "topicNumber": 27,
+              "topic": "Copy That Face",
+              "objective": "Engage in Copy That Face activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Copy That Face within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Copy That Face",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Mirror Face Mimicking"
+              }
+            },
+            {
+              "topicNumber": 28,
+              "topic": "Funny Face Mirror",
+              "objective": "Engage in Funny Face Mirror activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Funny Face Mirror within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Funny Face Mirror",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Mirror Face Mimicking"
+              }
+            },
+            {
+              "topicNumber": 29,
+              "topic": "Expression Practice",
+              "objective": "Engage in Expression Practice activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Expression Practice within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Expression Practice",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Mirror Face Mimicking"
+              }
+            },
+            {
+              "topicNumber": 30,
+              "topic": "Peek & Mimic",
+              "objective": "Engage in Peek & Mimic activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Peek & Mimic within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Peek & Mimic",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Mirror Face Mimicking"
+              }
+            },
+            {
+              "topicNumber": 31,
+              "topic": "Toy Mood Match",
+              "objective": "Engage in Toy Mood Match activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Toy Mood Match within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Toy Mood Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Labeling Feelings with Toys"
+              }
+            },
+            {
+              "topicNumber": 32,
+              "topic": "Doll Emotion Sorting",
+              "objective": "Engage in Doll Emotion Sorting activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Doll Emotion Sorting within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Doll Emotion Sorting",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Labeling Feelings with Toys"
+              }
+            },
+            {
+              "topicNumber": 33,
+              "topic": "Stuffed Animal Feelings",
+              "objective": "Engage in Stuffed Animal Feelings activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Stuffed Animal Feelings within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Stuffed Animal Feelings",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Labeling Feelings with Toys"
+              }
+            },
+            {
+              "topicNumber": 34,
+              "topic": "Toy Expression Play",
+              "objective": "Engage in Toy Expression Play activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Toy Expression Play within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Toy Expression Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Labeling Feelings with Toys"
+              }
+            },
+            {
+              "topicNumber": 35,
+              "topic": "Happy/Sad Toy Game",
+              "objective": "Engage in Happy/Sad Toy Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Happy/Sad Toy Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Happy/Sad Toy Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Labeling Feelings with Toys"
+              }
+            },
+            {
+              "topicNumber": 36,
+              "topic": "Doll Hug Game",
+              "objective": "Engage in Doll Hug Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Doll Hug Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Doll Hug Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Comforting Others Practice"
+              }
+            },
+            {
+              "topicNumber": 37,
+              "topic": "Soft Toy Care",
+              "objective": "Engage in Soft Toy Care activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Soft Toy Care within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Soft Toy Care",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Comforting Others Practice"
+              }
+            },
+            {
+              "topicNumber": 38,
+              "topic": "Pretend Friend Help",
+              "objective": "Engage in Pretend Friend Help activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Pretend Friend Help within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Pretend Friend Help",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Comforting Others Practice"
+              }
+            },
+            {
+              "topicNumber": 39,
+              "topic": "Gentle Pat Game",
+              "objective": "Engage in Gentle Pat Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Gentle Pat Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Gentle Pat Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Comforting Others Practice"
+              }
+            },
+            {
+              "topicNumber": 40,
+              "topic": "Sharing Care Activity",
+              "objective": "Engage in Sharing Care Activity activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Sharing Care Activity within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Sharing Care Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Comforting Others Practice"
+              }
+            },
+            {
+              "topicNumber": 41,
+              "topic": "Feelings Story Circle",
+              "objective": "Engage in Feelings Story Circle activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Feelings Story Circle within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Feelings Story Circle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Storytelling About Emotions"
+              }
+            },
+            {
+              "topicNumber": 42,
+              "topic": "Emotion Puppet Tales",
+              "objective": "Engage in Emotion Puppet Tales activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Emotion Puppet Tales within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Emotion Puppet Tales",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Storytelling About Emotions"
+              }
+            },
+            {
+              "topicNumber": 43,
+              "topic": "Happy/Sad Storytime",
+              "objective": "Engage in Happy/Sad Storytime activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Happy/Sad Storytime within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Happy/Sad Storytime",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Storytelling About Emotions"
+              }
+            },
+            {
+              "topicNumber": 44,
+              "topic": "Character Mood Story",
+              "objective": "Engage in Character Mood Story activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Character Mood Story within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Character Mood Story",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Storytelling About Emotions"
+              }
+            },
+            {
+              "topicNumber": 45,
+              "topic": "Adventure of Emotions",
+              "objective": "Engage in Adventure of Emotions activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Adventure of Emotions within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Adventure of Emotions",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Storytelling About Emotions"
+              }
+            },
+            {
+              "topicNumber": 46,
+              "topic": "Acting Happy Game",
+              "objective": "Engage in Acting Happy Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Acting Happy Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Acting Happy Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Role-Playing Feelings"
+              }
+            },
+            {
+              "topicNumber": 47,
+              "topic": "Pretend Angry Scenario",
+              "objective": "Engage in Pretend Angry Scenario activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Pretend Angry Scenario within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Pretend Angry Scenario",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Role-Playing Feelings"
+              }
+            },
+            {
+              "topicNumber": 48,
+              "topic": "Calm Role-Play",
+              "objective": "Engage in Calm Role-Play activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Calm Role-Play within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Calm Role-Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Role-Playing Feelings"
+              }
+            },
+            {
+              "topicNumber": 49,
+              "topic": "Excited & Surprised",
+              "objective": "Engage in Excited & Surprised activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Excited & Surprised within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Excited & Surprised",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Role-Playing Feelings"
+              }
+            },
+            {
+              "topicNumber": 50,
+              "topic": "Emotion Puppet Show",
+              "objective": "Engage in Emotion Puppet Show activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Emotion Puppet Show within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Emotion Puppet Show",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Role-Playing Feelings"
+              }
+            },
+            {
+              "topicNumber": 51,
+              "topic": "Color Your Mood",
+              "objective": "Engage in Color Your Mood activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Color Your Mood within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Color Your Mood",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Drawing How You Feel"
+              }
+            },
+            {
+              "topicNumber": 52,
+              "topic": "Happy Face Art",
+              "objective": "Engage in Happy Face Art activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Happy Face Art within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Happy Face Art",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Drawing How You Feel"
+              }
+            },
+            {
+              "topicNumber": 53,
+              "topic": "Sad Cloud Drawing",
+              "objective": "Engage in Sad Cloud Drawing activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Sad Cloud Drawing within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Sad Cloud Drawing",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Drawing How You Feel"
+              }
+            },
+            {
+              "topicNumber": 54,
+              "topic": "Emotion Rainbow Art",
+              "objective": "Engage in Emotion Rainbow Art activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Emotion Rainbow Art within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Emotion Rainbow Art",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Drawing How You Feel"
+              }
+            },
+            {
+              "topicNumber": 55,
+              "topic": "Feeling Faces Sketch",
+              "objective": "Engage in Feeling Faces Sketch activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Feeling Faces Sketch within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Feeling Faces Sketch",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Drawing How You Feel"
+              }
+            },
+            {
+              "topicNumber": 56,
+              "topic": "Spin & Feel Game",
+              "objective": "Engage in Spin & Feel Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Spin & Feel Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Spin & Feel Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Building an Emotion Wheel"
+              }
+            },
+            {
+              "topicNumber": 57,
+              "topic": "Wheel of Moods",
+              "objective": "Engage in Wheel of Moods activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Wheel of Moods within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Wheel of Moods",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Building an Emotion Wheel"
+              }
+            },
+            {
+              "topicNumber": 58,
+              "topic": "Emotion Circle Play",
+              "objective": "Engage in Emotion Circle Play activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Emotion Circle Play within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Emotion Circle Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Building an Emotion Wheel"
+              }
+            },
+            {
+              "topicNumber": 59,
+              "topic": "Happy/Sad Spinner",
+              "objective": "Engage in Happy/Sad Spinner activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Happy/Sad Spinner within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Happy/Sad Spinner",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Building an Emotion Wheel"
+              }
+            },
+            {
+              "topicNumber": 60,
+              "topic": "Mood Wheel Challenge",
+              "objective": "Engage in Mood Wheel Challenge activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Mood Wheel Challenge within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Mood Wheel Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Building an Emotion Wheel"
+              }
+            },
+            {
+              "topicNumber": 61,
+              "topic": "Empathy Story Cards",
+              "objective": "Engage in Empathy Story Cards activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Empathy Story Cards within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Empathy Story Cards",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Empathy Challenge Cards"
+              }
+            },
+            {
+              "topicNumber": 62,
+              "topic": "Feelings Match Game",
+              "objective": "Engage in Feelings Match Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Feelings Match Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Feelings Match Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Empathy Challenge Cards"
+              }
+            },
+            {
+              "topicNumber": 63,
+              "topic": "Card of Kindness",
+              "objective": "Engage in Card of Kindness activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Card of Kindness within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Card of Kindness",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Empathy Challenge Cards"
+              }
+            },
+            {
+              "topicNumber": 64,
+              "topic": "Understanding Others",
+              "objective": "Engage in Understanding Others activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Understanding Others within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Understanding Others",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Empathy Challenge Cards"
+              }
+            },
+            {
+              "topicNumber": 65,
+              "topic": "Perspective Cards",
+              "objective": "Engage in Perspective Cards activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Perspective Cards within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Perspective Cards",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Empathy Challenge Cards"
+              }
+            },
+            {
+              "topicNumber": 66,
+              "topic": "Daily Mood Journal",
+              "objective": "Engage in Daily Mood Journal activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Daily Mood Journal within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Daily Mood Journal",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Feeling Journal Prompts"
+              }
+            },
+            {
+              "topicNumber": 67,
+              "topic": "My Emotion Diary",
+              "objective": "Engage in My Emotion Diary activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on My Emotion Diary within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "My Emotion Diary",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Feeling Journal Prompts"
+              }
+            },
+            {
+              "topicNumber": 68,
+              "topic": "How I Feel Today",
+              "objective": "Engage in How I Feel Today activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on How I Feel Today within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "How I Feel Today",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Feeling Journal Prompts"
+              }
+            },
+            {
+              "topicNumber": 69,
+              "topic": "Reflection Notes",
+              "objective": "Engage in Reflection Notes activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Reflection Notes within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Reflection Notes",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Feeling Journal Prompts"
+              }
+            },
+            {
+              "topicNumber": 70,
+              "topic": "Emotion Record",
+              "objective": "Engage in Emotion Record activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Emotion Record within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Emotion Record",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Feeling Journal Prompts"
+              }
+            },
+            {
+              "topicNumber": 71,
+              "topic": "Sharing Challenge",
+              "objective": "Engage in Sharing Challenge activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Sharing Challenge within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Sharing Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Friendship & Conflict Scenarios"
+              }
+            },
+            {
+              "topicNumber": 72,
+              "topic": "Resolving Disagreements",
+              "objective": "Engage in Resolving Disagreements activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Resolving Disagreements within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Resolving Disagreements",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Friendship & Conflict Scenarios"
+              }
+            },
+            {
+              "topicNumber": 73,
+              "topic": "Kindness Role-Play",
+              "objective": "Engage in Kindness Role-Play activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Kindness Role-Play within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Kindness Role-Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Friendship & Conflict Scenarios"
+              }
+            },
+            {
+              "topicNumber": 74,
+              "topic": "Team Problem Solving",
+              "objective": "Engage in Team Problem Solving activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Team Problem Solving within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Team Problem Solving",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Friendship & Conflict Scenarios"
+              }
+            },
+            {
+              "topicNumber": 75,
+              "topic": "Helping Hands Game",
+              "objective": "Engage in Helping Hands Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Helping Hands Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Helping Hands Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Friendship & Conflict Scenarios"
+              }
+            },
+            {
+              "topicNumber": 76,
+              "topic": "Pause & Respond",
+              "objective": "Engage in Pause & Respond activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Pause & Respond within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Pause & Respond",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Mindful Reaction Games"
+              }
+            },
+            {
+              "topicNumber": 77,
+              "topic": "Emotion Freeze Game",
+              "objective": "Engage in Emotion Freeze Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Emotion Freeze Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Emotion Freeze Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Mindful Reaction Games"
+              }
+            },
+            {
+              "topicNumber": 78,
+              "topic": "Calm Response Challenge",
+              "objective": "Engage in Calm Response Challenge activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Calm Response Challenge within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Calm Response Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Mindful Reaction Games"
+              }
+            },
+            {
+              "topicNumber": 79,
+              "topic": "Stop & Think Activity",
+              "objective": "Engage in Stop & Think Activity activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Stop & Think Activity within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Stop & Think Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Mindful Reaction Games"
+              }
+            },
+            {
+              "topicNumber": 80,
+              "topic": "Breath & Feel Exercise",
+              "objective": "Engage in Breath & Feel Exercise activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Breath & Feel Exercise within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Breath & Feel Exercise",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Mindful Reaction Games"
+              }
+            },
+            {
+              "topicNumber": 81,
+              "topic": "Guess the Mood",
+              "objective": "Engage in Guess the Mood activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Guess the Mood within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Guess the Mood",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Emotion Charades"
+              }
+            },
+            {
+              "topicNumber": 82,
+              "topic": "Act it Out Game",
+              "objective": "Engage in Act it Out Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Act it Out Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Act it Out Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Emotion Charades"
+              }
+            },
+            {
+              "topicNumber": 83,
+              "topic": "Mood Mimic Challenge",
+              "objective": "Engage in Mood Mimic Challenge activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Mood Mimic Challenge within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mood Mimic Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Emotion Charades"
+              }
+            },
+            {
+              "topicNumber": 84,
+              "topic": "Facial Expression Game",
+              "objective": "Engage in Facial Expression Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Facial Expression Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Facial Expression Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Emotion Charades"
+              }
+            },
+            {
+              "topicNumber": 85,
+              "topic": "Body Language Play",
+              "objective": "Engage in Body Language Play activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Body Language Play within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Body Language Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Emotion Charades"
+              }
+            },
+            {
+              "topicNumber": 86,
+              "topic": "Stress Talk Circle",
+              "objective": "Engage in Stress Talk Circle activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Stress Talk Circle within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Stress Talk Circle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Coping Strategies Discussion"
+              }
+            },
+            {
+              "topicNumber": 87,
+              "topic": "Calm Down Plan",
+              "objective": "Engage in Calm Down Plan activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Calm Down Plan within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Calm Down Plan",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Coping Strategies Discussion"
+              }
+            },
+            {
+              "topicNumber": 88,
+              "topic": "Problem-Solving Chat",
+              "objective": "Engage in Problem-Solving Chat activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Problem-Solving Chat within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Problem-Solving Chat",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Coping Strategies Discussion"
+              }
+            },
+            {
+              "topicNumber": 89,
+              "topic": "Mindful Reflection",
+              "objective": "Engage in Mindful Reflection activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Mindful Reflection within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mindful Reflection",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Coping Strategies Discussion"
+              }
+            },
+            {
+              "topicNumber": 90,
+              "topic": "Emotion Sharing",
+              "objective": "Engage in Emotion Sharing activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Emotion Sharing within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Emotion Sharing",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Coping Strategies Discussion"
+              }
+            },
+            {
+              "topicNumber": 91,
+              "topic": "Gesture Detective",
+              "objective": "Engage in Gesture Detective activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Gesture Detective within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Gesture Detective",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Understanding Body Language"
+              }
+            },
+            {
+              "topicNumber": 92,
+              "topic": "Posture & Mood Game",
+              "objective": "Engage in Posture & Mood Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Posture & Mood Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Posture & Mood Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Understanding Body Language"
+              }
+            },
+            {
+              "topicNumber": 93,
+              "topic": "Expression Interpretation",
+              "objective": "Engage in Expression Interpretation activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Expression Interpretation within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Expression Interpretation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Understanding Body Language"
+              }
+            },
+            {
+              "topicNumber": 94,
+              "topic": "Social Signals Game",
+              "objective": "Engage in Social Signals Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Social Signals Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Social Signals Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Understanding Body Language"
+              }
+            },
+            {
+              "topicNumber": 95,
+              "topic": "Body Talk Challenge",
+              "objective": "Engage in Body Talk Challenge activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Body Talk Challenge within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Body Talk Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Understanding Body Language"
+              }
+            },
+            {
+              "topicNumber": 96,
+              "topic": "Role-Play Solutions",
+              "objective": "Engage in Role-Play Solutions activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Role-Play Solutions within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Role-Play Solutions",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Peer Problem Talk Sessions"
+              }
+            },
+            {
+              "topicNumber": 97,
+              "topic": "Group Discussion Game",
+              "objective": "Engage in Group Discussion Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Group Discussion Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Group Discussion Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Peer Problem Talk Sessions"
+              }
+            },
+            {
+              "topicNumber": 98,
+              "topic": "Helping Peer Activity",
+              "objective": "Engage in Helping Peer Activity activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Helping Peer Activity within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Helping Peer Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Peer Problem Talk Sessions"
+              }
+            },
+            {
+              "topicNumber": 99,
+              "topic": "Conflict Role-Play",
+              "objective": "Engage in Conflict Role-Play activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Conflict Role-Play within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Conflict Role-Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Peer Problem Talk Sessions"
+              }
+            },
+            {
+              "topicNumber": 100,
+              "topic": "Problem Solving Circle",
+              "objective": "Engage in Problem Solving Circle activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Problem Solving Circle within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Problem Solving Circle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Peer Problem Talk Sessions"
+              }
+            },
+            {
+              "topicNumber": 101,
+              "topic": "Peer Mediation Activity",
+              "objective": "Engage in Peer Mediation Activity activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Peer Mediation Activity within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Peer Mediation Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Conflict Resolution Practice"
+              }
+            },
+            {
+              "topicNumber": 102,
+              "topic": "Role-Play Conflict",
+              "objective": "Engage in Role-Play Conflict activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Role-Play Conflict within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Role-Play Conflict",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Conflict Resolution Practice"
+              }
+            },
+            {
+              "topicNumber": 103,
+              "topic": "Team Solution Challenge",
+              "objective": "Engage in Team Solution Challenge activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Team Solution Challenge within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Team Solution Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Conflict Resolution Practice"
+              }
+            },
+            {
+              "topicNumber": 104,
+              "topic": "Problem Discussion Game",
+              "objective": "Engage in Problem Discussion Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Problem Discussion Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Problem Discussion Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Conflict Resolution Practice"
+              }
+            },
+            {
+              "topicNumber": 105,
+              "topic": "Peace Builder Challenge",
+              "objective": "Engage in Peace Builder Challenge activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Peace Builder Challenge within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Peace Builder Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Conflict Resolution Practice"
+              }
+            },
+            {
+              "topicNumber": 106,
+              "topic": "Reading Nonverbal Cues",
+              "objective": "Engage in Reading Nonverbal Cues activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Reading Nonverbal Cues within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Reading Nonverbal Cues",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Social Cue Interpretation"
+              }
+            },
+            {
+              "topicNumber": 107,
+              "topic": "Expression Detective",
+              "objective": "Engage in Expression Detective activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Expression Detective within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Expression Detective",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Social Cue Interpretation"
+              }
+            },
+            {
+              "topicNumber": 108,
+              "topic": "Gesture Recognition Game",
+              "objective": "Engage in Gesture Recognition Game activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Gesture Recognition Game within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Gesture Recognition Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Social Cue Interpretation"
+              }
+            },
+            {
+              "topicNumber": 109,
+              "topic": "Body Language Decoder",
+              "objective": "Engage in Body Language Decoder activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Body Language Decoder within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Body Language Decoder",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Social Cue Interpretation"
+              }
+            },
+            {
+              "topicNumber": 110,
+              "topic": "Mood Signal Challenge",
+              "objective": "Engage in Mood Signal Challenge activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Mood Signal Challenge within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Mood Signal Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Social Cue Interpretation"
+              }
+            },
+            {
+              "topicNumber": 111,
+              "topic": "Daily Reflection Notes",
+              "objective": "Engage in Daily Reflection Notes activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Daily Reflection Notes within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Daily Reflection Notes",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Self-Reflection Journaling"
+              }
+            },
+            {
+              "topicNumber": 112,
+              "topic": "Personal Insight Journal",
+              "objective": "Engage in Personal Insight Journal activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Personal Insight Journal within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Personal Insight Journal",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Self-Reflection Journaling"
+              }
+            },
+            {
+              "topicNumber": 113,
+              "topic": "Emotion Mapping Exercise",
+              "objective": "Engage in Emotion Mapping Exercise activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Emotion Mapping Exercise within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Emotion Mapping Exercise",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Self-Reflection Journaling"
+              }
+            },
+            {
+              "topicNumber": 114,
+              "topic": "Mood Diary Tracking",
+              "objective": "Engage in Mood Diary Tracking activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Mood Diary Tracking within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Mood Diary Tracking",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Self-Reflection Journaling"
+              }
+            },
+            {
+              "topicNumber": 115,
+              "topic": "Growth Reflection Journal",
+              "objective": "Engage in Growth Reflection Journal activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Growth Reflection Journal within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Growth Reflection Journal",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Self-Reflection Journaling"
+              }
+            },
+            {
+              "topicNumber": 116,
+              "topic": "Trigger Tracker Activity",
+              "objective": "Engage in Trigger Tracker Activity activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Trigger Tracker Activity within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Trigger Tracker Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Emotional Triggers Mapping"
+              }
+            },
+            {
+              "topicNumber": 117,
+              "topic": "Identify & Record Triggers",
+              "objective": "Engage in Identify & Record Triggers activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Identify & Record Triggers within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Identify & Record Triggers",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Emotional Triggers Mapping"
+              }
+            },
+            {
+              "topicNumber": 118,
+              "topic": "Mood Pattern Mapping",
+              "objective": "Engage in Mood Pattern Mapping activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Mood Pattern Mapping within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Mood Pattern Mapping",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Emotional Triggers Mapping"
+              }
+            },
+            {
+              "topicNumber": 119,
+              "topic": "Emotional Hotspots Map",
+              "objective": "Engage in Emotional Hotspots Map activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Emotional Hotspots Map within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Emotional Hotspots Map",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Emotional Triggers Mapping"
+              }
+            },
+            {
+              "topicNumber": 120,
+              "topic": "Reaction Awareness Exercise",
+              "objective": "Engage in Reaction Awareness Exercise activities to develop emotional intelligence skills",
+              "explanation": "This activity focuses on Reaction Awareness Exercise within the Emotional Intelligence pillar.",
+              "hashtags": [
+                "#EmotionalIntelligence",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Reaction Awareness Exercise",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Emotional Intelligence"
+                ],
+                "category": "Emotional Triggers Mapping"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totalActivities": 120,
+  "lastUpdated": "2025-10-12T01:20:25.352569"
 }

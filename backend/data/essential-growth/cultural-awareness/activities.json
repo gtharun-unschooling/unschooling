@@ -1,3 +1,3257 @@
 {
-  "ageGroups": []
+  "ageGroups": [
+    {
+      "ageGroup": "All Ages",
+      "categories": [
+        {
+          "category": "Cultural Awareness",
+          "description": "Activities for Cultural Awareness",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "Global Lullaby Time",
+              "objective": "Engage in Global Lullaby Time activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Global Lullaby Time within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Global Lullaby Time",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Listening to Diverse Music"
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "Musical Hello from Around the World",
+              "objective": "Engage in Musical Hello from Around the World activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Musical Hello from Around the World within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Musical Hello from Around the World",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Listening to Diverse Music"
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "Rhythm of Cultures",
+              "objective": "Engage in Rhythm of Cultures activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Rhythm of Cultures within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Rhythm of Cultures",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Listening to Diverse Music"
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "Soft World Music Play",
+              "objective": "Engage in Soft World Music Play activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Soft World Music Play within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft World Music Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Listening to Diverse Music"
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "Gentle Cultural Songs",
+              "objective": "Engage in Gentle Cultural Songs activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Gentle Cultural Songs within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Gentle Cultural Songs",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Listening to Diverse Music"
+              }
+            },
+            {
+              "topicNumber": 6,
+              "topic": "Tiny Outfit Peek",
+              "objective": "Engage in Tiny Outfit Peek activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Tiny Outfit Peek within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Tiny Outfit Peek",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Visuals of Cultural Clothing"
+              }
+            },
+            {
+              "topicNumber": 7,
+              "topic": "Dress-Up Glimpses",
+              "objective": "Engage in Dress-Up Glimpses activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Dress-Up Glimpses within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Dress-Up Glimpses",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Visuals of Cultural Clothing"
+              }
+            },
+            {
+              "topicNumber": 8,
+              "topic": "Colorful Fabric Exploration",
+              "objective": "Engage in Colorful Fabric Exploration activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Colorful Fabric Exploration within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Colorful Fabric Exploration",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Visuals of Cultural Clothing"
+              }
+            },
+            {
+              "topicNumber": 9,
+              "topic": "Mini Costume Fun",
+              "objective": "Engage in Mini Costume Fun activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Costume Fun within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Mini Costume Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Visuals of Cultural Clothing"
+              }
+            },
+            {
+              "topicNumber": 10,
+              "topic": "Pattern Peek Mat",
+              "objective": "Engage in Pattern Peek Mat activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Pattern Peek Mat within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Pattern Peek Mat",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Visuals of Cultural Clothing"
+              }
+            },
+            {
+              "topicNumber": 11,
+              "topic": "Doll Dress-Up Fun",
+              "objective": "Engage in Doll Dress-Up Fun activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Doll Dress-Up Fun within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Doll Dress-Up Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Playing with Cultural Dolls"
+              }
+            },
+            {
+              "topicNumber": 12,
+              "topic": "Soft Doll Parade",
+              "objective": "Engage in Soft Doll Parade activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Soft Doll Parade within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Doll Parade",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Playing with Cultural Dolls"
+              }
+            },
+            {
+              "topicNumber": 13,
+              "topic": "Puppet Friend Play",
+              "objective": "Engage in Puppet Friend Play activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Puppet Friend Play within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Puppet Friend Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Playing with Cultural Dolls"
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "International Doll Peek",
+              "objective": "Engage in International Doll Peek activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on International Doll Peek within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "International Doll Peek",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Playing with Cultural Dolls"
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "Cultural Toy Hug",
+              "objective": "Engage in Cultural Toy Hug activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Cultural Toy Hug within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Cultural Toy Hug",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Playing with Cultural Dolls"
+              }
+            },
+            {
+              "topicNumber": 16,
+              "topic": "Bedtime Around the Globe",
+              "objective": "Engage in Bedtime Around the Globe activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Bedtime Around the Globe within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Bedtime Around the Globe",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Storytime from Around the World"
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "Tiny Tales From Cultures",
+              "objective": "Engage in Tiny Tales From Cultures activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Tiny Tales From Cultures within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Tiny Tales From Cultures",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Storytime from Around the World"
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "Mini Story Adventure",
+              "objective": "Engage in Mini Story Adventure activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Story Adventure within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Mini Story Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Storytime from Around the World"
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "Gentle Global Stories",
+              "objective": "Engage in Gentle Global Stories activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Gentle Global Stories within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Gentle Global Stories",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Storytime from Around the World"
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "World Lullaby Stories",
+              "objective": "Engage in World Lullaby Stories activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on World Lullaby Stories within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "World Lullaby Stories",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Storytime from Around the World"
+              }
+            },
+            {
+              "topicNumber": 21,
+              "topic": "Flag Match Game",
+              "objective": "Engage in Flag Match Game activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Flag Match Game within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Flag Match Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Exploring World Flags"
+              }
+            },
+            {
+              "topicNumber": 22,
+              "topic": "Mini Flag Parade",
+              "objective": "Engage in Mini Flag Parade activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Flag Parade within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Mini Flag Parade",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Exploring World Flags"
+              }
+            },
+            {
+              "topicNumber": 23,
+              "topic": "Colorful Flag Sorting",
+              "objective": "Engage in Colorful Flag Sorting activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Colorful Flag Sorting within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Colorful Flag Sorting",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Exploring World Flags"
+              }
+            },
+            {
+              "topicNumber": 24,
+              "topic": "Flag Peek Activity",
+              "objective": "Engage in Flag Peek Activity activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Flag Peek Activity within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Flag Peek Activity",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Exploring World Flags"
+              }
+            },
+            {
+              "topicNumber": 25,
+              "topic": "Matching National Symbols",
+              "objective": "Engage in Matching National Symbols activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Matching National Symbols within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Matching National Symbols",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Exploring World Flags"
+              }
+            },
+            {
+              "topicNumber": 26,
+              "topic": "Tiny Taste Adventure",
+              "objective": "Engage in Tiny Taste Adventure activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Tiny Taste Adventure within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Tiny Taste Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Tasting Global Flavors (mild)"
+              }
+            },
+            {
+              "topicNumber": 27,
+              "topic": "Sweet & Savory Fun",
+              "objective": "Engage in Sweet & Savory Fun activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Sweet & Savory Fun within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Sweet & Savory Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Tasting Global Flavors (mild)"
+              }
+            },
+            {
+              "topicNumber": 28,
+              "topic": "Cultural Snack Play",
+              "objective": "Engage in Cultural Snack Play activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Cultural Snack Play within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Cultural Snack Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Tasting Global Flavors (mild)"
+              }
+            },
+            {
+              "topicNumber": 29,
+              "topic": "Flavor Exploration Mats",
+              "objective": "Engage in Flavor Exploration Mats activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Flavor Exploration Mats within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Flavor Exploration Mats",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Tasting Global Flavors (mild)"
+              }
+            },
+            {
+              "topicNumber": 30,
+              "topic": "Mini Food Discovery",
+              "objective": "Engage in Mini Food Discovery activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Food Discovery within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Mini Food Discovery",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Tasting Global Flavors (mild)"
+              }
+            },
+            {
+              "topicNumber": 31,
+              "topic": "Tiny Dance Parade",
+              "objective": "Engage in Tiny Dance Parade activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Tiny Dance Parade within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Tiny Dance Parade",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Folk Music and Dance Movements"
+              }
+            },
+            {
+              "topicNumber": 32,
+              "topic": "Step & Clap Game",
+              "objective": "Engage in Step & Clap Game activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Step & Clap Game within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Step & Clap Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Folk Music and Dance Movements"
+              }
+            },
+            {
+              "topicNumber": 33,
+              "topic": "Mini Drumming Fun",
+              "objective": "Engage in Mini Drumming Fun activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Drumming Fun within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Mini Drumming Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Folk Music and Dance Movements"
+              }
+            },
+            {
+              "topicNumber": 34,
+              "topic": "Dance & Rhythm Peek",
+              "objective": "Engage in Dance & Rhythm Peek activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Dance & Rhythm Peek within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Dance & Rhythm Peek",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Folk Music and Dance Movements"
+              }
+            },
+            {
+              "topicNumber": 35,
+              "topic": "Music Step Parade",
+              "objective": "Engage in Music Step Parade activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Music Step Parade within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Music Step Parade",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Folk Music and Dance Movements"
+              }
+            },
+            {
+              "topicNumber": 36,
+              "topic": "Animal Match Game",
+              "objective": "Engage in Animal Match Game activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Animal Match Game within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Animal Match Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "National Animal & Symbol Play"
+              }
+            },
+            {
+              "topicNumber": 37,
+              "topic": "Symbol Peek Fun",
+              "objective": "Engage in Symbol Peek Fun activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Symbol Peek Fun within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Symbol Peek Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "National Animal & Symbol Play"
+              }
+            },
+            {
+              "topicNumber": 38,
+              "topic": "Mini Wildlife Exploration",
+              "objective": "Engage in Mini Wildlife Exploration activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Wildlife Exploration within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Mini Wildlife Exploration",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "National Animal & Symbol Play"
+              }
+            },
+            {
+              "topicNumber": 39,
+              "topic": "Animal Parade Mats",
+              "objective": "Engage in Animal Parade Mats activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Animal Parade Mats within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Animal Parade Mats",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "National Animal & Symbol Play"
+              }
+            },
+            {
+              "topicNumber": 40,
+              "topic": "Cultural Creature Game",
+              "objective": "Engage in Cultural Creature Game activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Cultural Creature Game within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Cultural Creature Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "National Animal & Symbol Play"
+              }
+            },
+            {
+              "topicNumber": 41,
+              "topic": "Dress-Up Adventure",
+              "objective": "Engage in Dress-Up Adventure activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Dress-Up Adventure within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Dress-Up Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Dress-Up Games"
+              }
+            },
+            {
+              "topicNumber": 42,
+              "topic": "Mini Costume Party",
+              "objective": "Engage in Mini Costume Party activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Costume Party within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Mini Costume Party",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Dress-Up Games"
+              }
+            },
+            {
+              "topicNumber": 43,
+              "topic": "Pretend Festival Play",
+              "objective": "Engage in Pretend Festival Play activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Pretend Festival Play within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Pretend Festival Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Dress-Up Games"
+              }
+            },
+            {
+              "topicNumber": 44,
+              "topic": "Cultural Outfit Parade",
+              "objective": "Engage in Cultural Outfit Parade activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Cultural Outfit Parade within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Cultural Outfit Parade",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Dress-Up Games"
+              }
+            },
+            {
+              "topicNumber": 45,
+              "topic": "Role-Play Attire Fun",
+              "objective": "Engage in Role-Play Attire Fun activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Role-Play Attire Fun within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Role-Play Attire Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Dress-Up Games"
+              }
+            },
+            {
+              "topicNumber": 46,
+              "topic": "Global Art Collage",
+              "objective": "Engage in Global Art Collage activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Global Art Collage within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Global Art Collage",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Art Inspired by Other Cultures"
+              }
+            },
+            {
+              "topicNumber": 47,
+              "topic": "Mini Mosaic Creations",
+              "objective": "Engage in Mini Mosaic Creations activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Mosaic Creations within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Mini Mosaic Creations",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Art Inspired by Other Cultures"
+              }
+            },
+            {
+              "topicNumber": 48,
+              "topic": "Cultural Painting Fun",
+              "objective": "Engage in Cultural Painting Fun activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Cultural Painting Fun within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Cultural Painting Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Art Inspired by Other Cultures"
+              }
+            },
+            {
+              "topicNumber": 49,
+              "topic": "Pattern Play from Cultures",
+              "objective": "Engage in Pattern Play from Cultures activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Pattern Play from Cultures within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Pattern Play from Cultures",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Art Inspired by Other Cultures"
+              }
+            },
+            {
+              "topicNumber": 50,
+              "topic": "International Craft Time",
+              "objective": "Engage in International Craft Time activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on International Craft Time within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "International Craft Time",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Art Inspired by Other Cultures"
+              }
+            },
+            {
+              "topicNumber": 51,
+              "topic": "Tiny Festival Play",
+              "objective": "Engage in Tiny Festival Play activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Tiny Festival Play within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Tiny Festival Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Celebrating Mini Festivals"
+              }
+            },
+            {
+              "topicNumber": 52,
+              "topic": "Festival Parade Mats",
+              "objective": "Engage in Festival Parade Mats activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Festival Parade Mats within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Festival Parade Mats",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Celebrating Mini Festivals"
+              }
+            },
+            {
+              "topicNumber": 53,
+              "topic": "Pretend Celebration",
+              "objective": "Engage in Pretend Celebration activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Pretend Celebration within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Pretend Celebration",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Celebrating Mini Festivals"
+              }
+            },
+            {
+              "topicNumber": 54,
+              "topic": "Mini Holiday Fun",
+              "objective": "Engage in Mini Holiday Fun activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Holiday Fun within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Mini Holiday Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Celebrating Mini Festivals"
+              }
+            },
+            {
+              "topicNumber": 55,
+              "topic": "Cultural Festival Game",
+              "objective": "Engage in Cultural Festival Game activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Cultural Festival Game within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Cultural Festival Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Celebrating Mini Festivals"
+              }
+            },
+            {
+              "topicNumber": 56,
+              "topic": "Greeting Match Game",
+              "objective": "Engage in Greeting Match Game activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Greeting Match Game within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Greeting Match Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Learning Hello in Many Languages"
+              }
+            },
+            {
+              "topicNumber": 57,
+              "topic": "Multi-Language Peek",
+              "objective": "Engage in Multi-Language Peek activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Multi-Language Peek within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Multi-Language Peek",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Learning Hello in Many Languages"
+              }
+            },
+            {
+              "topicNumber": 58,
+              "topic": "Say Hello Globally",
+              "objective": "Engage in Say Hello Globally activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Say Hello Globally within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Say Hello Globally",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Learning Hello in Many Languages"
+              }
+            },
+            {
+              "topicNumber": 59,
+              "topic": "Language Wave Fun",
+              "objective": "Engage in Language Wave Fun activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Language Wave Fun within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Language Wave Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Learning Hello in Many Languages"
+              }
+            },
+            {
+              "topicNumber": 60,
+              "topic": "Friendly Word Play",
+              "objective": "Engage in Friendly Word Play activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Friendly Word Play within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Friendly Word Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Learning Hello in Many Languages"
+              }
+            },
+            {
+              "topicNumber": 61,
+              "topic": "Mini Map Adventure",
+              "objective": "Engage in Mini Map Adventure activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Map Adventure within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Mini Map Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "World Map Exploration"
+              }
+            },
+            {
+              "topicNumber": 62,
+              "topic": "Country Hunt Game",
+              "objective": "Engage in Country Hunt Game activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Country Hunt Game within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Country Hunt Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "World Map Exploration"
+              }
+            },
+            {
+              "topicNumber": 63,
+              "topic": "Flag Spotting Challenge",
+              "objective": "Engage in Flag Spotting Challenge activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Flag Spotting Challenge within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Flag Spotting Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "World Map Exploration"
+              }
+            },
+            {
+              "topicNumber": 64,
+              "topic": "Explore Continents Mats",
+              "objective": "Engage in Explore Continents Mats activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Explore Continents Mats within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Explore Continents Mats",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "World Map Exploration"
+              }
+            },
+            {
+              "topicNumber": 65,
+              "topic": "Map Puzzle Journey",
+              "objective": "Engage in Map Puzzle Journey activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Map Puzzle Journey within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Map Puzzle Journey",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "World Map Exploration"
+              }
+            },
+            {
+              "topicNumber": 66,
+              "topic": "Mini Passport Adventure",
+              "objective": "Engage in Mini Passport Adventure activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Passport Adventure within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Mini Passport Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Passport Pretend Play"
+              }
+            },
+            {
+              "topicNumber": 67,
+              "topic": "Boarding Pass Fun",
+              "objective": "Engage in Boarding Pass Fun activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Boarding Pass Fun within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Boarding Pass Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Passport Pretend Play"
+              }
+            },
+            {
+              "topicNumber": 68,
+              "topic": "Travel Role-Play Game",
+              "objective": "Engage in Travel Role-Play Game activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Travel Role-Play Game within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Travel Role-Play Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Passport Pretend Play"
+              }
+            },
+            {
+              "topicNumber": 69,
+              "topic": "Pretend Customs Check",
+              "objective": "Engage in Pretend Customs Check activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Pretend Customs Check within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Pretend Customs Check",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Passport Pretend Play"
+              }
+            },
+            {
+              "topicNumber": 70,
+              "topic": "International Travel Mat",
+              "objective": "Engage in International Travel Mat activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on International Travel Mat within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "International Travel Mat",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Passport Pretend Play"
+              }
+            },
+            {
+              "topicNumber": 71,
+              "topic": "Mini Chef: World Edition",
+              "objective": "Engage in Mini Chef: World Edition activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Chef: World Edition within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Mini Chef: World Edition",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cooking Simple International Dishes"
+              }
+            },
+            {
+              "topicNumber": 72,
+              "topic": "Taste Around the Globe",
+              "objective": "Engage in Taste Around the Globe activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Taste Around the Globe within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Taste Around the Globe",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cooking Simple International Dishes"
+              }
+            },
+            {
+              "topicNumber": 73,
+              "topic": "International Snack Prep",
+              "objective": "Engage in International Snack Prep activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on International Snack Prep within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "International Snack Prep",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cooking Simple International Dishes"
+              }
+            },
+            {
+              "topicNumber": 74,
+              "topic": "Cultural Recipe Play",
+              "objective": "Engage in Cultural Recipe Play activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Cultural Recipe Play within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Cultural Recipe Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cooking Simple International Dishes"
+              }
+            },
+            {
+              "topicNumber": 75,
+              "topic": "Tiny Cooking Adventure",
+              "objective": "Engage in Tiny Cooking Adventure activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Tiny Cooking Adventure within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Tiny Cooking Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cooking Simple International Dishes"
+              }
+            },
+            {
+              "topicNumber": 76,
+              "topic": "Custom Spotting Game",
+              "objective": "Engage in Custom Spotting Game activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Custom Spotting Game within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Custom Spotting Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Understanding Local Customs"
+              }
+            },
+            {
+              "topicNumber": 77,
+              "topic": "Cultural Etiquette Challenge",
+              "objective": "Engage in Cultural Etiquette Challenge activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Cultural Etiquette Challenge within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Cultural Etiquette Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Understanding Local Customs"
+              }
+            },
+            {
+              "topicNumber": 78,
+              "topic": "Festival Tradition Match",
+              "objective": "Engage in Festival Tradition Match activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Festival Tradition Match within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Festival Tradition Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Understanding Local Customs"
+              }
+            },
+            {
+              "topicNumber": 79,
+              "topic": "Role-Play Local Norms",
+              "objective": "Engage in Role-Play Local Norms activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Role-Play Local Norms within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Role-Play Local Norms",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Understanding Local Customs"
+              }
+            },
+            {
+              "topicNumber": 80,
+              "topic": "Mini Etiquette Adventure",
+              "objective": "Engage in Mini Etiquette Adventure activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Etiquette Adventure within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Mini Etiquette Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Understanding Local Customs"
+              }
+            },
+            {
+              "topicNumber": 81,
+              "topic": "Story Swap Challenge",
+              "objective": "Engage in Story Swap Challenge activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Story Swap Challenge within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Story Swap Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Story Exchanges"
+              }
+            },
+            {
+              "topicNumber": 82,
+              "topic": "Folktale Sharing Game",
+              "objective": "Engage in Folktale Sharing Game activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Folktale Sharing Game within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Folktale Sharing Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Story Exchanges"
+              }
+            },
+            {
+              "topicNumber": 83,
+              "topic": "Mini Storytelling Circle",
+              "objective": "Engage in Mini Storytelling Circle activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Storytelling Circle within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mini Storytelling Circle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Story Exchanges"
+              }
+            },
+            {
+              "topicNumber": 84,
+              "topic": "Global Tales Adventure",
+              "objective": "Engage in Global Tales Adventure activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Global Tales Adventure within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Global Tales Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Story Exchanges"
+              }
+            },
+            {
+              "topicNumber": 85,
+              "topic": "Creative Story Swap",
+              "objective": "Engage in Creative Story Swap activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Creative Story Swap within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Creative Story Swap",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Story Exchanges"
+              }
+            },
+            {
+              "topicNumber": 86,
+              "topic": "Etiquette Roleplay Challenge",
+              "objective": "Engage in Etiquette Roleplay Challenge activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Etiquette Roleplay Challenge within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Etiquette Roleplay Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Global Etiquette Practices"
+              }
+            },
+            {
+              "topicNumber": 87,
+              "topic": "International Manners Game",
+              "objective": "Engage in International Manners Game activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on International Manners Game within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "International Manners Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Global Etiquette Practices"
+              }
+            },
+            {
+              "topicNumber": 88,
+              "topic": "Cultural Politeness Challenge",
+              "objective": "Engage in Cultural Politeness Challenge activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Cultural Politeness Challenge within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Cultural Politeness Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Global Etiquette Practices"
+              }
+            },
+            {
+              "topicNumber": 89,
+              "topic": "Respectful Action Game",
+              "objective": "Engage in Respectful Action Game activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Respectful Action Game within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Respectful Action Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Global Etiquette Practices"
+              }
+            },
+            {
+              "topicNumber": 90,
+              "topic": "Mini Protocol Adventure",
+              "objective": "Engage in Mini Protocol Adventure activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Protocol Adventure within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mini Protocol Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Global Etiquette Practices"
+              }
+            },
+            {
+              "topicNumber": 91,
+              "topic": "Festival Comparison Game",
+              "objective": "Engage in Festival Comparison Game activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Festival Comparison Game within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Festival Comparison Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Comparing Traditions and Beliefs"
+              }
+            },
+            {
+              "topicNumber": 92,
+              "topic": "Tradition Trivia Challenge",
+              "objective": "Engage in Tradition Trivia Challenge activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Tradition Trivia Challenge within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Tradition Trivia Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Comparing Traditions and Beliefs"
+              }
+            },
+            {
+              "topicNumber": 93,
+              "topic": "Custom Match Adventure",
+              "objective": "Engage in Custom Match Adventure activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Custom Match Adventure within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Custom Match Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Comparing Traditions and Beliefs"
+              }
+            },
+            {
+              "topicNumber": 94,
+              "topic": "Belief & Culture Exploration",
+              "objective": "Engage in Belief & Culture Exploration activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Belief & Culture Exploration within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Belief & Culture Exploration",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Comparing Traditions and Beliefs"
+              }
+            },
+            {
+              "topicNumber": 95,
+              "topic": "Mini Global Study",
+              "objective": "Engage in Mini Global Study activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Global Study within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mini Global Study",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Comparing Traditions and Beliefs"
+              }
+            },
+            {
+              "topicNumber": 96,
+              "topic": "Mini Parade Planning",
+              "objective": "Engage in Mini Parade Planning activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Mini Parade Planning within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mini Parade Planning",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Discovering Global Celebrations"
+              }
+            },
+            {
+              "topicNumber": 97,
+              "topic": "Festival Creation Challenge",
+              "objective": "Engage in Festival Creation Challenge activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Festival Creation Challenge within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Festival Creation Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Discovering Global Celebrations"
+              }
+            },
+            {
+              "topicNumber": 98,
+              "topic": "Cultural Celebration Roleplay",
+              "objective": "Engage in Cultural Celebration Roleplay activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Cultural Celebration Roleplay within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Cultural Celebration Roleplay",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Discovering Global Celebrations"
+              }
+            },
+            {
+              "topicNumber": 99,
+              "topic": "Celebration Mapping Game",
+              "objective": "Engage in Celebration Mapping Game activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Celebration Mapping Game within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Celebration Mapping Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Discovering Global Celebrations"
+              }
+            },
+            {
+              "topicNumber": 100,
+              "topic": "International Holiday Fun",
+              "objective": "Engage in International Holiday Fun activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on International Holiday Fun within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "International Holiday Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Discovering Global Celebrations"
+              }
+            },
+            {
+              "topicNumber": 101,
+              "topic": "Country Case Study",
+              "objective": "Engage in Country Case Study activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Country Case Study within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Country Case Study",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Research Projects"
+              }
+            },
+            {
+              "topicNumber": 102,
+              "topic": "Traditions Research Challenge",
+              "objective": "Engage in Traditions Research Challenge activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Traditions Research Challenge within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Traditions Research Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Research Projects"
+              }
+            },
+            {
+              "topicNumber": 103,
+              "topic": "Cross-Cultural Report",
+              "objective": "Engage in Cross-Cultural Report activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Cross-Cultural Report within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Cross-Cultural Report",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Research Projects"
+              }
+            },
+            {
+              "topicNumber": 104,
+              "topic": "Ethnography Mini Project",
+              "objective": "Engage in Ethnography Mini Project activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Ethnography Mini Project within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Ethnography Mini Project",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Research Projects"
+              }
+            },
+            {
+              "topicNumber": 105,
+              "topic": "Culture Discovery Journal",
+              "objective": "Engage in Culture Discovery Journal activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Culture Discovery Journal within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Culture Discovery Journal",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Research Projects"
+              }
+            },
+            {
+              "topicNumber": 106,
+              "topic": "Global Team Project",
+              "objective": "Engage in Global Team Project activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Global Team Project within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Global Team Project",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cross-Cultural Collaboration"
+              }
+            },
+            {
+              "topicNumber": 107,
+              "topic": "International Pen-Pals Exchange",
+              "objective": "Engage in International Pen-Pals Exchange activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on International Pen-Pals Exchange within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "International Pen-Pals Exchange",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cross-Cultural Collaboration"
+              }
+            },
+            {
+              "topicNumber": 108,
+              "topic": "Cultural Debate Sessions",
+              "objective": "Engage in Cultural Debate Sessions activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Cultural Debate Sessions within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Cultural Debate Sessions",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cross-Cultural Collaboration"
+              }
+            },
+            {
+              "topicNumber": 109,
+              "topic": "Multi-Nation Challenge",
+              "objective": "Engage in Multi-Nation Challenge activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Multi-Nation Challenge within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Multi-Nation Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cross-Cultural Collaboration"
+              }
+            },
+            {
+              "topicNumber": 110,
+              "topic": "Virtual Cultural Workshop",
+              "objective": "Engage in Virtual Cultural Workshop activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Virtual Cultural Workshop within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Virtual Cultural Workshop",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cross-Cultural Collaboration"
+              }
+            },
+            {
+              "topicNumber": 111,
+              "topic": "Online Country Tour",
+              "objective": "Engage in Online Country Tour activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Online Country Tour within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Online Country Tour",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Virtual Country Exchanges"
+              }
+            },
+            {
+              "topicNumber": 112,
+              "topic": "Virtual Festival Participation",
+              "objective": "Engage in Virtual Festival Participation activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Virtual Festival Participation within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Virtual Festival Participation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Virtual Country Exchanges"
+              }
+            },
+            {
+              "topicNumber": 113,
+              "topic": "Country Story Exchange",
+              "objective": "Engage in Country Story Exchange activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Country Story Exchange within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Country Story Exchange",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Virtual Country Exchanges"
+              }
+            },
+            {
+              "topicNumber": 114,
+              "topic": "International Challenge Game",
+              "objective": "Engage in International Challenge Game activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on International Challenge Game within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "International Challenge Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Virtual Country Exchanges"
+              }
+            },
+            {
+              "topicNumber": 115,
+              "topic": "Global Exploration Session",
+              "objective": "Engage in Global Exploration Session activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Global Exploration Session within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Global Exploration Session",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Virtual Country Exchanges"
+              }
+            },
+            {
+              "topicNumber": 116,
+              "topic": "Debate on Traditions",
+              "objective": "Engage in Debate on Traditions activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Debate on Traditions within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Debate on Traditions",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Impact Debates"
+              }
+            },
+            {
+              "topicNumber": 117,
+              "topic": "Social Practice Discussion",
+              "objective": "Engage in Social Practice Discussion activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Social Practice Discussion within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Social Practice Discussion",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Impact Debates"
+              }
+            },
+            {
+              "topicNumber": 118,
+              "topic": "Cultural Policy Debate",
+              "objective": "Engage in Cultural Policy Debate activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Cultural Policy Debate within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Cultural Policy Debate",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Impact Debates"
+              }
+            },
+            {
+              "topicNumber": 119,
+              "topic": "Global Ethics Discussion",
+              "objective": "Engage in Global Ethics Discussion activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Global Ethics Discussion within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Global Ethics Discussion",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Impact Debates"
+              }
+            },
+            {
+              "topicNumber": 120,
+              "topic": "Media & Culture Debate",
+              "objective": "Engage in Media & Culture Debate activities to develop cultural awareness skills",
+              "explanation": "This activity focuses on Media & Culture Debate within the Cultural Awareness pillar.",
+              "hashtags": [
+                "#CulturalAwareness",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Media & Culture Debate",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Cultural Awareness"
+                ],
+                "category": "Cultural Impact Debates"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totalActivities": 120,
+  "lastUpdated": "2025-10-12T01:20:25.357261"
 }

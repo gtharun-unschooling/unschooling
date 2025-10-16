@@ -48,3 +48,4 @@ jobs:
         echo "🎉 Backend deployment completed!"
         echo "🖥️ Backend URL: https://unschooling-backend-xxxxxxxxx-uc.a.run.app"
         echo "📅 Deployed at: $(date)"
+

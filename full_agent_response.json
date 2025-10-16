@@ -1,0 +1,929 @@
+{
+    "success": true,
+    "data": {
+        "weekly_plan": {
+            "discovery_week": {
+                "monday": {
+                    "activity": "Hello Machine\nMaterials Needed: Phone or toy with voice assistant.\nSteps to Follow:\n\u2022 Say \u201cHello\u201d and wait for reply.\n\u2022 Try other simple phrases.\nWhat Should Be Achieved:\nExperience talking to AI.\nWhat is Gained:\n\u2022 Communication\n\u2022 Curiosity",
+                    "duration": "22 mins",
+                    "topic": "Talking Machines",
+                    "niche": "AI",
+                    "objective": "To explore how AI can talk or reply to people.",
+                    "materials_needed": [
+                        "Phone or toy with voice assistant."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 4
+                },
+                "tuesday": {
+                    "activity": "Find the AI Friend\nMaterials Needed: Watch a cartoon episode.\nSteps to Follow:\n\u2022 Watch and pause when robot or AI comes.\n\u2022 Talk about what it does.\nWhat Should Be Achieved:\nNotice AI roles in media.\nWhat is Gained:\n\u2022 Observation\n\u2022 Media literacy",
+                    "duration": "24 mins",
+                    "topic": "AI in Cartoons",
+                    "niche": "AI",
+                    "objective": "To recognize AI characters in shows.",
+                    "materials_needed": [
+                        "Watch a cartoon episode."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 4
+                },
+                "wednesday": {
+                    "activity": "Spot the Smart Tool\nMaterials Needed: Home tour or pictures.\nSteps to Follow:\n\u2022 Walk around and find smart things (e.g. Alexa, robot vacuum).\n\u2022 Ask what it does.\nWhat Should Be Achieved:\nAwareness of AI in home.\nWhat is Gained:\n\u2022 Real-world connection\n\u2022 Tech vocabulary",
+                    "duration": "25 mins",
+                    "topic": "Smart Helpers at Home",
+                    "niche": "AI",
+                    "objective": "To identify AI helpers used at home.",
+                    "materials_needed": [
+                        "Home tour or pictures."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 4
+                },
+                "thursday": {
+                    "activity": "What\u2019s in the Picture?\nMaterials Needed: Photos or printed images.\nSteps to Follow:\n\u2022 Show pictures and ask child to say what they see.\n\u2022 Talk about how AI does this too.\nWhat Should Be Achieved:\nMatching visual input with names.\nWhat is Gained:\n\u2022 Vocabulary\n\u2022 Awareness of image tech",
+                    "duration": "23 mins",
+                    "topic": "Picture Detectives",
+                    "niche": "AI",
+                    "objective": "To understand how AI sees pictures and spots things.",
+                    "materials_needed": [
+                        "Photos or printed images."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 4
+                },
+                "friday": {
+                    "activity": "Play with a Smart Game\nMaterials Needed: Simple digital game or toy with AI.\nSteps to Follow:\n\u2022 Play together and see how it responds.\n\u2022 Ask child what they notice.\nWhat Should Be Achieved:\nInteraction with AI-based fun.\nWhat is Gained:\n\u2022 Attention\n\u2022 Game strategy",
+                    "duration": "26 mins",
+                    "topic": "AI in Games",
+                    "niche": "AI",
+                    "objective": "To show how AI makes games smarter and fun.",
+                    "materials_needed": [
+                        "Simple digital game or toy with AI."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 4
+                },
+                "saturday": {
+                    "activity": "AI Music Time\nMaterials Needed: Music app or toy.\nSteps to Follow:\n\u2022 Let child explore songs recommended by app.\n\u2022 Ask what they liked.\nWhat Should Be Achieved:\nSee music suggestions by AI.\nWhat is Gained:\n\u2022 Listening skills\n\u2022 Fun learning",
+                    "duration": "22 mins",
+                    "topic": "AI in Music",
+                    "niche": "AI",
+                    "objective": "To explore how AI can create or play music.",
+                    "materials_needed": [
+                        "Music app or toy."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 4
+                },
+                "sunday": {
+                    "activity": "Emotion Face Match\nMaterials Needed: Emotion cards or faces.\nSteps to Follow:\n\u2022 Show a face, ask child to name the feeling.\n\u2022 Pretend AI is learning it.\nWhat Should Be Achieved:\nMatch feelings to expressions.\nWhat is Gained:\n\u2022 Empathy\n\u2022 Emotion vocabulary",
+                    "duration": "23 mins",
+                    "topic": "Emotions and Robots",
+                    "niche": "AI",
+                    "objective": "To help kids see how AI might respond to emotions.",
+                    "materials_needed": [
+                        "Emotion cards or faces."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 4
+                }
+            },
+            "skills_week": {
+                "monday": {
+                    "activity": "I Spy and Hear\nMaterials Needed: Everyday objects and sounds.\nSteps to Follow:\n\u2022 Play \u201cI spy\u201d and then \u201cI hear\u201d games.\n\u2022 Relate to AI using both.\nWhat Should Be Achieved:\nUse of two senses.\nWhat is Gained:\n\u2022 Attention\n\u2022 Sensory linking",
+                    "duration": "25 mins",
+                    "topic": "AI Eyes and Ears",
+                    "niche": "AI",
+                    "objective": "To understand how AI uses both seeing and hearing.",
+                    "materials_needed": [
+                        "Everyday objects and sounds."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 4
+                },
+                "tuesday": {
+                    "activity": "Spot the Safety Helper\nMaterials Needed: Photos or home examples.\nSteps to Follow:\n\u2022 Look for smart alarms or cameras.\n\u2022 Ask what they do.\nWhat Should Be Achieved:\nIdentify AI safety tools.\nWhat is Gained:\n\u2022 Safety awareness\n\u2022 AI application",
+                    "duration": "24 mins",
+                    "topic": "AI and Safety",
+                    "niche": "AI",
+                    "objective": "To show how AI helps us stay safe.",
+                    "materials_needed": [
+                        "Photos or home examples."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 4
+                },
+                "wednesday": {
+                    "activity": "Build an AI Town\nMaterials Needed: Blocks, toys, or drawing tools.\nSteps to Follow:\n\u2022 Create a town with AI buses, helpers, etc.\n\u2022 Ask what each one does.\nWhat Should Be Achieved:\nExplore ideas of future AI.\nWhat is Gained:\n\u2022 Imaginative thinking\n\u2022 Tech roleplay",
+                    "duration": "26 mins",
+                    "topic": "Pretend AI World",
+                    "niche": "AI",
+                    "objective": "To let kids imagine a world filled with AI.",
+                    "materials_needed": [
+                        "Blocks",
+                        "toys",
+                        "or drawing tools."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 4
+                },
+                "thursday": {
+                    "activity": "Track the Tiger\nMaterials Needed: Map printout or drawing.\nSteps to Follow:\n\u2022 Pretend you\u2019re tracking a tiger using AI.\n\u2022 Mark areas on a paper map.\nWhat Should Be Achieved:\nUse of pretend AI to protect animals.\nWhat is Gained:\n\u2022 Imagination\n\u2022 Map skills",
+                    "duration": "26 mins",
+                    "topic": "AI in Animals",
+                    "niche": "AI",
+                    "objective": "To see how AI helps animals and wildlife.",
+                    "materials_needed": [
+                        "Map printout or drawing."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 5
+                },
+                "friday": {
+                    "activity": "Robot Mop Game\nMaterials Needed: Toy robot or a cloth and toy.\nSteps to Follow:\n\u2022 Let child pretend to be a robot cleaning.\n\u2022 Avoid obstacles like chairs or boxes.\nWhat Should Be Achieved:\nUnderstand path planning.\nWhat is Gained:\n\u2022 Movement skills\n\u2022 Logic play",
+                    "duration": "24 mins",
+                    "topic": "Cleaning Robots",
+                    "niche": "AI",
+                    "objective": "To explore how robots clean using AI.",
+                    "materials_needed": [
+                        "Toy robot or a cloth and toy."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 5
+                },
+                "saturday": {
+                    "activity": "Create Like AI\nMaterials Needed: Art supplies.\nSteps to Follow:\n\u2022 Ask child to copy a simple style (e.g. dots, lines).\n\u2022 Then mix styles to create their own.\nWhat Should Be Achieved:\nLearn about style imitation.\nWhat is Gained:\n\u2022 Art skills\n\u2022 AI understanding",
+                    "duration": "27 mins",
+                    "topic": "AI Artists",
+                    "niche": "AI",
+                    "objective": "To understand that AI can create art too.",
+                    "materials_needed": [
+                        "Art supplies."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 5
+                },
+                "sunday": {
+                    "activity": "Predict the Weather\nMaterials Needed: Chart or weather app.\nSteps to Follow:\n\u2022 Look at weather for a week.\n\u2022 Guess tomorrow\u2019s forecast.\nWhat Should Be Achieved:\nUnderstanding prediction.\nWhat is Gained:\n\u2022 Pattern skills\n\u2022 Weather interest",
+                    "duration": "25 mins",
+                    "topic": "AI and Weather",
+                    "niche": "AI",
+                    "objective": "To see how AI helps predict weather.",
+                    "materials_needed": [
+                        "Chart or weather app."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 5
+                }
+            },
+            "creation_week": {
+                "monday": {
+                    "activity": "Traffic Light Game\nMaterials Needed: Red-yellow-green cards.\nSteps to Follow:\n\u2022 Play a walking game where AI gives light commands.\n\u2022 Stop, slow, go!\nWhat Should Be Achieved:\nUnderstand rule-based decisions.\nWhat is Gained:\n\u2022 Obedience\n\u2022 Logic",
+                    "duration": "26 mins",
+                    "topic": "AI and Traffic",
+                    "niche": "AI",
+                    "objective": "To explore how AI controls traffic and lights.",
+                    "materials_needed": [
+                        "Red-yellow-green cards."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 5
+                },
+                "tuesday": {
+                    "activity": "Speak and See\nMaterials Needed: Phone or voice typing tool.\nSteps to Follow:\n\u2022 Speak and watch the words appear.\n\u2022 Try new phrases.\nWhat Should Be Achieved:\nLink voice to text.\nWhat is Gained:\n\u2022 Speech clarity\n\u2022 Curiosity",
+                    "duration": "24 mins",
+                    "topic": "Voice to Text",
+                    "niche": "AI",
+                    "objective": "To learn how AI turns voice into words.",
+                    "materials_needed": [
+                        "Phone or voice typing tool."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 5
+                },
+                "wednesday": {
+                    "activity": "Try a Word App\nMaterials Needed: Language learning app.\nSteps to Follow:\n\u2022 Use app for basic words.\n\u2022 Repeat and score.\nWhat Should Be Achieved:\nExperience learning with AI.\nWhat is Gained:\n\u2022 Vocabulary\n\u2022 Pronunciation",
+                    "duration": "23 mins",
+                    "topic": "Language Learners",
+                    "niche": "AI",
+                    "objective": "To show how AI helps learn new languages.",
+                    "materials_needed": [
+                        "Language learning app."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 5
+                },
+                "thursday": {
+                    "activity": "Plant Watcher\nMaterials Needed: Toy plants or garden.\nSteps to Follow:\n\u2022 Pretend to be an AI robot checking plants.\n\u2022 Report dry, tall, or sick ones.\nWhat Should Be Achieved:\nApply AI idea to farming.\nWhat is Gained:\n\u2022 Nature care\n\u2022 Tech imagination",
+                    "duration": "26 mins",
+                    "topic": "Farming Robots",
+                    "niche": "AI",
+                    "objective": "To explore how AI helps farmers.",
+                    "materials_needed": [
+                        "Toy plants or garden."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 5
+                },
+                "friday": {
+                    "activity": "Rover Explorer\nMaterials Needed: Box or toy rover.\nSteps to Follow:\n\u2022 Pretend to explore another planet.\n\u2022 Avoid rocks and find samples.\nWhat Should Be Achieved:\nAI-guided exploration.\nWhat is Gained:\n\u2022 Space awareness\n\u2022 Motor skills",
+                    "duration": "27 mins",
+                    "topic": "AI Eyes in Space",
+                    "niche": "AI",
+                    "objective": "To show how AI helps in space.",
+                    "materials_needed": [
+                        "Box or toy rover."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 5
+                },
+                "saturday": {
+                    "activity": "Coach AI\nMaterials Needed: Ball or toy.\nSteps to Follow:\n\u2022 Play and give feedback like an AI coach.\n\u2022 \u201cTry faster,\u201d \u201cTurn left,\u201d etc.\nWhat Should Be Achieved:\nUnderstand feedback idea.\nWhat is Gained:\n\u2022 Listening\n\u2022 Body control",
+                    "duration": "25 mins",
+                    "topic": "AI and Sports",
+                    "niche": "AI",
+                    "objective": "To explore how AI helps in games and fitness.",
+                    "materials_needed": [
+                        "Ball or toy."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 5
+                },
+                "sunday": {
+                    "activity": "Maze Navigator\nMaterials Needed: Printed maze sheet, pencil.\nSteps to Follow:\n\u2022 Give a simple maze to the child.\n\u2022 Let them find the path.\n\u2022 Discuss how AI tries many paths.\nWhat Should Be Achieved:\nConnect AI to solving problems.\nWhat is Gained:\n\u2022 Problem-solving\n\u2022 Spatial thinking",
+                    "duration": "25 mins",
+                    "topic": "AI Maze Masters",
+                    "niche": "AI",
+                    "objective": "To understand how AI solves puzzles and paths.",
+                    "materials_needed": [
+                        "Printed maze sheet",
+                        "pencil."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 6
+                }
+            },
+            "project_week": {
+                "monday": {
+                    "activity": "Chatbot Role Play\nMaterials Needed: None.\nSteps to Follow:\n\u2022 Pretend to be a chatbot.\n\u2022 Answer simple questions.\n\u2022 Use polite words.\nWhat Should Be Achieved:\nExperience chatbot talking.\nWhat is Gained:\n\u2022 Communication\n\u2022 Imagination",
+                    "duration": "20 mins",
+                    "topic": "Friendly Chatbots",
+                    "niche": "AI",
+                    "objective": "To introduce how AI talks and helps people.",
+                    "materials_needed": [
+                        "None."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 6
+                },
+                "tuesday": {
+                    "activity": "Drawing Robot\nMaterials Needed: Paper, crayons.\nSteps to Follow:\n\u2022 Draw simple shapes.\n\u2022 Pretend the robot chooses colors.\nWhat Should Be Achieved:\nLink AI to creativity.\nWhat is Gained:\n\u2022 Creativity\n\u2022 Color recognition",
+                    "duration": "30 mins",
+                    "topic": "Robot Artists",
+                    "niche": "AI",
+                    "objective": "To explore how AI can create art.",
+                    "materials_needed": [
+                        "Paper",
+                        "crayons."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 6
+                },
+                "wednesday": {
+                    "activity": "Story Building\nMaterials Needed: Picture cards.\nSteps to Follow:\n\u2022 Pick cards to make a story.\n\u2022 Tell story like AI would.\nWhat Should Be Achieved:\nPractice story creation.\nWhat is Gained:\n\u2022 Imagination\n\u2022 Language skills",
+                    "duration": "25 mins",
+                    "topic": "Smart Storytellers",
+                    "niche": "AI",
+                    "objective": "To learn how AI helps in telling stories.",
+                    "materials_needed": [
+                        "Picture cards."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 6
+                },
+                "thursday": {
+                    "activity": "Clue Hunt\nMaterials Needed: Objects to hide.\nSteps to Follow:\n\u2022 Hide objects and find clues.\n\u2022 Pretend to be AI detectives.\nWhat Should Be Achieved:\nLearn about clues and patterns.\nWhat is Gained:\n\u2022 Observation\n\u2022 Logical thinking",
+                    "duration": "30 mins",
+                    "topic": "AI Detectives",
+                    "niche": "AI",
+                    "objective": "To show how AI finds clues and solves mysteries.",
+                    "materials_needed": [
+                        "Objects to hide."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 6
+                },
+                "friday": {
+                    "activity": "Weather Watch\nMaterials Needed: Weather chart.\nSteps to Follow:\n\u2022 Observe weather daily.\n\u2022 Predict tomorrow\u2019s weather.\n\u2022 Compare with actual.\nWhat Should Be Achieved:\nPractice prediction.\nWhat is Gained:\n\u2022 Observation\n\u2022 Reasoning",
+                    "duration": "25 mins",
+                    "topic": "AI Weather Wizards",
+                    "niche": "AI",
+                    "objective": "To understand how AI predicts weather.",
+                    "materials_needed": [
+                        "Weather chart."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 6
+                },
+                "saturday": {
+                    "activity": "Animal Tracker\nMaterials Needed: Pictures of animals.\nSteps to Follow:\n\u2022 Identify animals in pictures.\n\u2022 Talk about AI helping track.\nWhat Should Be Achieved:\nConnect AI and animals.\nWhat is Gained:\n\u2022 Animal knowledge\n\u2022 Care for nature",
+                    "duration": "30 mins",
+                    "topic": "AI Animal Friends",
+                    "niche": "AI",
+                    "objective": "To explore how AI helps animals and nature.",
+                    "materials_needed": [
+                        "Pictures of animals."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 6
+                },
+                "sunday": {
+                    "activity": "History Puzzle\nMaterials Needed: Old photos or drawings.\nSteps to Follow:\n\u2022 Look at old pictures.\n\u2022 Talk about what they show.\n\u2022 Pretend AI helps explain.\nWhat Should Be Achieved:\nConnect AI to history.\nWhat is Gained:\n\u2022 Curiosity\n\u2022 Critical thinking",
+                    "duration": "25 mins",
+                    "topic": "AI Time Travelers",
+                    "niche": "AI",
+                    "objective": "To imagine how AI can help learn about the past.",
+                    "materials_needed": [
+                        "Old photos or drawings."
+                    ],
+                    "difficulty": "Beginner",
+                    "age_appropriate": 6
+                }
+            }
+        },
+        "matched_topics": [
+            {
+                "Niche": "AI",
+                "#": 11,
+                "Topic": "Talking Machines",
+                "Objective": "To explore how AI can talk or reply to people.",
+                "Explanation": "\u2022 Some machines can reply when we talk. \n \u2022 They use AI to understand and answer. \n \u2022 Like voice assistants and chatbots.",
+                "Hashtags": "#TalkingAI #Chatbots #VoiceTech",
+                "Estimated Time": "22 mins",
+                "Age": 4,
+                "Activity 1": "Hello Machine\nMaterials Needed: Phone or toy with voice assistant.\nSteps to Follow:\n\u2022 Say \u201cHello\u201d and wait for reply.\n\u2022 Try other simple phrases.\nWhat Should Be Achieved:\nExperience talking to AI.\nWhat is Gained:\n\u2022 Communication\n\u2022 Curiosity",
+                "Activity 2": "Echo Game\nMaterials Needed: None.\nSteps to Follow:\n\u2022 You say something, child repeats like a robot.\n\u2022 Swap roles.\nWhat Should Be Achieved:\nUnderstand how AI listens and talks.\nWhat is Gained:\n\u2022 Fun learning\n\u2022 Speech awareness"
+            },
+            {
+                "Niche": "AI",
+                "#": 12,
+                "Topic": "AI in Cartoons",
+                "Objective": "To recognize AI characters in shows.",
+                "Explanation": "\u2022 Some cartoons have robots or smart characters. \n \u2022 They show how AI helps or thinks. \n \u2022 Kids can connect real AI with stories.",
+                "Hashtags": "#AIinCartoons #RobotCharacters #SmartShows",
+                "Estimated Time": "24 mins",
+                "Age": 4,
+                "Activity 1": "Find the AI Friend\nMaterials Needed: Watch a cartoon episode.\nSteps to Follow:\n\u2022 Watch and pause when robot or AI comes.\n\u2022 Talk about what it does.\nWhat Should Be Achieved:\nNotice AI roles in media.\nWhat is Gained:\n\u2022 Observation\n\u2022 Media literacy",
+                "Activity 2": "Draw the AI Character\nMaterials Needed: Paper, crayons.\nSteps to Follow:\n\u2022 Ask child to draw their favorite smart cartoon character.\n\u2022 Talk about what makes it smart.\nWhat Should Be Achieved:\nExpression through art.\nWhat is Gained:\n\u2022 Creativity\n\u2022 Connection to AI"
+            },
+            {
+                "Niche": "AI",
+                "#": 13,
+                "Topic": "Smart Helpers at Home",
+                "Objective": "To identify AI helpers used at home.",
+                "Explanation": "\u2022 AI can be used in vacuums, lights, speakers. \n \u2022 It helps make things easier. \n \u2022 Kids learn how homes can be smart.",
+                "Hashtags": "#SmartHome #AIHelpers #TechInDailyLife",
+                "Estimated Time": "25 mins",
+                "Age": 4,
+                "Activity 1": "Spot the Smart Tool\nMaterials Needed: Home tour or pictures.\nSteps to Follow:\n\u2022 Walk around and find smart things (e.g. Alexa, robot vacuum).\n\u2022 Ask what it does.\nWhat Should Be Achieved:\nAwareness of AI in home.\nWhat is Gained:\n\u2022 Real-world connection\n\u2022 Tech vocabulary",
+                "Activity 2": "Make a Smart Room\nMaterials Needed: Toys, blocks, or paper.\nSteps to Follow:\n\u2022 Let child build or draw a room with AI helpers.\n\u2022 Ask what each tool does.\nWhat Should Be Achieved:\nImagine AI uses.\nWhat is Gained:\n\u2022 Creativity\n\u2022 Understanding convenience"
+            },
+            {
+                "Niche": "AI",
+                "#": 14,
+                "Topic": "Picture Detectives",
+                "Objective": "To understand how AI sees pictures and spots things.",
+                "Explanation": "\u2022 AI can look at photos and say what\u2019s in them. \n \u2022 It detects people, animals, or objects. \n \u2022 This is used in cameras and apps.",
+                "Hashtags": "#AIDetection #PictureRecognition #TechFun",
+                "Estimated Time": "23 mins",
+                "Age": 4,
+                "Activity 1": "What\u2019s in the Picture?\nMaterials Needed: Photos or printed images.\nSteps to Follow:\n\u2022 Show pictures and ask child to say what they see.\n\u2022 Talk about how AI does this too.\nWhat Should Be Achieved:\nMatching visual input with names.\nWhat is Gained:\n\u2022 Vocabulary\n\u2022 Awareness of image tech",
+                "Activity 2": "Camera Scan Game\nMaterials Needed: Toy camera or phone.\nSteps to Follow:\n\u2022 Ask child to scan a toy, pretend it tells what it is.\n\u2022 Take turns.\nWhat Should Be Achieved:\nPretend AI vision.\nWhat is Gained:\n\u2022 Imagination\n\u2022 Object recognition"
+            },
+            {
+                "Niche": "AI",
+                "#": 15,
+                "Topic": "AI in Games",
+                "Objective": "To show how AI makes games smarter and fun.",
+                "Explanation": "\u2022 Many games use AI to challenge or help. \n \u2022 AI can learn how we play. \n \u2022 It makes games more exciting.",
+                "Hashtags": "#AIGames #SmartPlay #GameTech",
+                "Estimated Time": "26 mins",
+                "Age": 4,
+                "Activity 1": "Play with a Smart Game\nMaterials Needed: Simple digital game or toy with AI.\nSteps to Follow:\n\u2022 Play together and see how it responds.\n\u2022 Ask child what they notice.\nWhat Should Be Achieved:\nInteraction with AI-based fun.\nWhat is Gained:\n\u2022 Attention\n\u2022 Game strategy",
+                "Activity 2": "Make Your Own Game\nMaterials Needed: Paper, dice, tokens.\nSteps to Follow:\n\u2022 Create a simple pretend AI game.\n\u2022 Use rules that respond to child\u2019s action.\nWhat Should Be Achieved:\nDesign thinking.\nWhat is Gained:\n\u2022 Rule making\n\u2022 Understanding response systems"
+            },
+            {
+                "Niche": "AI",
+                "#": 16,
+                "Topic": "AI in Music",
+                "Objective": "To explore how AI can create or play music.",
+                "Explanation": "\u2022 Some machines can make music. \n \u2022 AI can suggest songs or play instruments. \n \u2022 Kids can see AI as creative.",
+                "Hashtags": "#MusicAI #CreativeTech #AIFun",
+                "Estimated Time": "22 mins",
+                "Age": 4,
+                "Activity 1": "AI Music Time\nMaterials Needed: Music app or toy.\nSteps to Follow:\n\u2022 Let child explore songs recommended by app.\n\u2022 Ask what they liked.\nWhat Should Be Achieved:\nSee music suggestions by AI.\nWhat is Gained:\n\u2022 Listening skills\n\u2022 Fun learning",
+                "Activity 2": "Make AI Sounds\nMaterials Needed: Toy keyboard or musical toys.\nSteps to Follow:\n\u2022 Pretend to be an AI composer.\n\u2022 Child creates a beat or tune.\nWhat Should Be Achieved:\nMusic creation.\nWhat is Gained:\n\u2022 Rhythm awareness\n\u2022 Sound play"
+            },
+            {
+                "Niche": "AI",
+                "#": 17,
+                "Topic": "Emotions and Robots",
+                "Objective": "To help kids see how AI might respond to emotions.",
+                "Explanation": "\u2022 AI can sometimes understand if we\u2019re happy or sad. \n \u2022 It helps robots or apps react. \n \u2022 Not all AI can do this yet.",
+                "Hashtags": "#AIMotions #RobotFeelings #UnderstandingAI",
+                "Estimated Time": "23 mins",
+                "Age": 4,
+                "Activity 1": "Emotion Face Match\nMaterials Needed: Emotion cards or faces.\nSteps to Follow:\n\u2022 Show a face, ask child to name the feeling.\n\u2022 Pretend AI is learning it.\nWhat Should Be Achieved:\nMatch feelings to expressions.\nWhat is Gained:\n\u2022 Empathy\n\u2022 Emotion vocabulary",
+                "Activity 2": "How Should AI Feel?\nMaterials Needed: Toy robot or puppet.\nSteps to Follow:\n\u2022 Describe a scene (happy birthday), ask child how AI might react.\n\u2022 Try different emotions.\nWhat Should Be Achieved:\nEmotional connection.\nWhat is Gained:\n\u2022 Expression\n\u2022 Social thinking"
+            },
+            {
+                "Niche": "AI",
+                "#": 18,
+                "Topic": "AI Eyes and Ears",
+                "Objective": "To understand how AI uses both seeing and hearing.",
+                "Explanation": "\u2022 AI can use cameras and microphones. \n \u2022 It sees and hears to learn better. \n \u2022 Kids relate this to their own senses.",
+                "Hashtags": "#AIEyesEars #SensoryTech #MultiSenseAI",
+                "Estimated Time": "25 mins",
+                "Age": 4,
+                "Activity 1": "I Spy and Hear\nMaterials Needed: Everyday objects and sounds.\nSteps to Follow:\n\u2022 Play \u201cI spy\u201d and then \u201cI hear\u201d games.\n\u2022 Relate to AI using both.\nWhat Should Be Achieved:\nUse of two senses.\nWhat is Gained:\n\u2022 Attention\n\u2022 Sensory linking",
+                "Activity 2": "What Did You See and Hear?\nMaterials Needed: Short video clip.\nSteps to Follow:\n\u2022 Watch and ask child what they saw and heard.\n\u2022 Talk about how AI would learn from it.\nWhat Should Be Achieved:\nDual observation.\nWhat is Gained:\n\u2022 Comprehension\n\u2022 Observation skills"
+            },
+            {
+                "Niche": "AI",
+                "#": 19,
+                "Topic": "AI and Safety",
+                "Objective": "To show how AI helps us stay safe.",
+                "Explanation": "\u2022 AI is used in alarms, cameras, and alerts. \n \u2022 It helps protect people. \n \u2022 Children learn safety uses.",
+                "Hashtags": "#SafeAI #TechSafety #AIProtect",
+                "Estimated Time": "24 mins",
+                "Age": 4,
+                "Activity 1": "Spot the Safety Helper\nMaterials Needed: Photos or home examples.\nSteps to Follow:\n\u2022 Look for smart alarms or cameras.\n\u2022 Ask what they do.\nWhat Should Be Achieved:\nIdentify AI safety tools.\nWhat is Gained:\n\u2022 Safety awareness\n\u2022 AI application",
+                "Activity 2": "Make a Safety Poster\nMaterials Needed: Paper, crayons.\nSteps to Follow:\n\u2022 Draw how AI keeps us safe.\n\u2022 Label tools like \u201csmart alarm\u201d or \u201ccamera.\u201d\nWhat Should Be Achieved:\nLink AI to protection.\nWhat is Gained:\n\u2022 Creativity\n\u2022 Safety concepts"
+            },
+            {
+                "Niche": "AI",
+                "#": 20,
+                "Topic": "Pretend AI World",
+                "Objective": "To let kids imagine a world filled with AI.",
+                "Explanation": "\u2022 Kids build stories or places where AI helps. \n \u2022 It builds imagination with tech. \n \u2022 Helps them see possibilities.",
+                "Hashtags": "#PretendAI #FutureThinking #AICreativity",
+                "Estimated Time": "26 mins",
+                "Age": 4,
+                "Activity 1": "Build an AI Town\nMaterials Needed: Blocks, toys, or drawing tools.\nSteps to Follow:\n\u2022 Create a town with AI buses, helpers, etc.\n\u2022 Ask what each one does.\nWhat Should Be Achieved:\nExplore ideas of future AI.\nWhat is Gained:\n\u2022 Imaginative thinking\n\u2022 Tech roleplay",
+                "Activity 2": "My Day with AI\nMaterials Needed: None or drawings.\nSteps to Follow:\n\u2022 Ask child to describe a day with AI friends.\n\u2022 Act or draw it out.\nWhat Should Be Achieved:\nPicture AI in life.\nWhat is Gained:\n\u2022 Storytelling\n\u2022 Creativity"
+            },
+            {
+                "Niche": "AI",
+                "#": 21,
+                "Topic": "AI in Animals",
+                "Objective": "To see how AI helps animals and wildlife.",
+                "Explanation": "\u2022 AI is used to track animals and protect them. \n \u2022 It helps in zoos, farms, and forests. \n \u2022 Kids connect AI with nature.",
+                "Hashtags": "#AIAnimals #WildlifeTech #SmartNature",
+                "Estimated Time": "26 mins",
+                "Age": 5,
+                "Activity 1": "Track the Tiger\nMaterials Needed: Map printout or drawing.\nSteps to Follow:\n\u2022 Pretend you\u2019re tracking a tiger using AI.\n\u2022 Mark areas on a paper map.\nWhat Should Be Achieved:\nUse of pretend AI to protect animals.\nWhat is Gained:\n\u2022 Imagination\n\u2022 Map skills",
+                "Activity 2": "Zoo Watch\nMaterials Needed: Zoo video.\nSteps to Follow:\n\u2022 Watch animals and talk about how AI could help feed, track, or clean.\nWhat Should Be Achieved:\nReal-life AI applications.\nWhat is Gained:\n\u2022 Observation\n\u2022 Environmental connection"
+            },
+            {
+                "Niche": "AI",
+                "#": 22,
+                "Topic": "Cleaning Robots",
+                "Objective": "To explore how robots clean using AI.",
+                "Explanation": "\u2022 Cleaning robots use AI to move and avoid things. \n \u2022 They help at home or big buildings. \n \u2022 Kids see robots working.",
+                "Hashtags": "#CleaningRobots #SmartVacuum #TechHelpers",
+                "Estimated Time": "24 mins",
+                "Age": 5,
+                "Activity 1": "Robot Mop Game\nMaterials Needed: Toy robot or a cloth and toy.\nSteps to Follow:\n\u2022 Let child pretend to be a robot cleaning.\n\u2022 Avoid obstacles like chairs or boxes.\nWhat Should Be Achieved:\nUnderstand path planning.\nWhat is Gained:\n\u2022 Movement skills\n\u2022 Logic play",
+                "Activity 2": "Watch It Clean\nMaterials Needed: Real cleaning robot or video.\nSteps to Follow:\n\u2022 Observe how it moves and avoids things.\n\u2022 Discuss how it \u201cthinks.\u201d\nWhat Should Be Achieved:\nObservation of smart cleaning.\nWhat is Gained:\n\u2022 Tech awareness\n\u2022 Curiosity"
+            },
+            {
+                "Niche": "AI",
+                "#": 23,
+                "Topic": "AI Artists",
+                "Objective": "To understand that AI can create art too.",
+                "Explanation": "\u2022 AI can draw, paint, and design. \n \u2022 It learns from styles and makes new ones. \n \u2022 AI can be creative too.",
+                "Hashtags": "#AIArt #SmartDrawing #CreativeMachines",
+                "Estimated Time": "27 mins",
+                "Age": 5,
+                "Activity 1": "Create Like AI\nMaterials Needed: Art supplies.\nSteps to Follow:\n\u2022 Ask child to copy a simple style (e.g. dots, lines).\n\u2022 Then mix styles to create their own.\nWhat Should Be Achieved:\nLearn about style imitation.\nWhat is Gained:\n\u2022 Art skills\n\u2022 AI understanding",
+                "Activity 2": "AI vs Me\nMaterials Needed: Online AI art tool and paper.\nSteps to Follow:\n\u2022 Generate an image using a tool.\n\u2022 Child makes a similar one. Compare!\nWhat Should Be Achieved:\nComparison of human and AI creativity.\nWhat is Gained:\n\u2022 Critical thinking\n\u2022 Appreciation for both"
+            },
+            {
+                "Niche": "AI",
+                "#": 24,
+                "Topic": "AI and Weather",
+                "Objective": "To see how AI helps predict weather.",
+                "Explanation": "\u2022 AI looks at past weather and predicts future. \n \u2022 It helps plan for rain or sun. \n \u2022 Weather apps use AI.",
+                "Hashtags": "#AIWeather #SmartForecast #WeatherTech",
+                "Estimated Time": "25 mins",
+                "Age": 5,
+                "Activity 1": "Predict the Weather\nMaterials Needed: Chart or weather app.\nSteps to Follow:\n\u2022 Look at weather for a week.\n\u2022 Guess tomorrow\u2019s forecast.\nWhat Should Be Achieved:\nUnderstanding prediction.\nWhat is Gained:\n\u2022 Pattern skills\n\u2022 Weather interest",
+                "Activity 2": "Dress for the Day\nMaterials Needed: Clothes/toy outfits.\nSteps to Follow:\n\u2022 Based on the forecast, dress up a doll or toy.\n\u2022 Talk about the AI prediction.\nWhat Should Be Achieved:\nUse forecast in daily life.\nWhat is Gained:\n\u2022 Decision-making\n\u2022 Weather logic"
+            },
+            {
+                "Niche": "AI",
+                "#": 25,
+                "Topic": "AI and Traffic",
+                "Objective": "To explore how AI controls traffic and lights.",
+                "Explanation": "\u2022 AI helps in traffic lights, cameras, and planning roads. \n \u2022 It reduces jams and keeps people safe. \n \u2022 Kids see how movement is managed.",
+                "Hashtags": "#SmartTraffic #AITrafficLights #CityAI",
+                "Estimated Time": "26 mins",
+                "Age": 5,
+                "Activity 1": "Traffic Light Game\nMaterials Needed: Red-yellow-green cards.\nSteps to Follow:\n\u2022 Play a walking game where AI gives light commands.\n\u2022 Stop, slow, go!\nWhat Should Be Achieved:\nUnderstand rule-based decisions.\nWhat is Gained:\n\u2022 Obedience\n\u2022 Logic",
+                "Activity 2": "City Planner\nMaterials Needed: Blocks, toy cars.\nSteps to Follow:\n\u2022 Build a city road setup.\n\u2022 Plan where smart lights should go.\nWhat Should Be Achieved:\nVisualizing AI control.\nWhat is Gained:\n\u2022 Spatial thinking\n\u2022 Planning skills"
+            },
+            {
+                "Niche": "AI",
+                "#": 26,
+                "Topic": "Voice to Text",
+                "Objective": "To learn how AI turns voice into words.",
+                "Explanation": "\u2022 AI listens and writes what we say. \n \u2022 Used in phones and computers. \n \u2022 It helps typing and messages.",
+                "Hashtags": "#VoiceToText #SmartTyping #SpeechAI",
+                "Estimated Time": "24 mins",
+                "Age": 5,
+                "Activity 1": "Speak and See\nMaterials Needed: Phone or voice typing tool.\nSteps to Follow:\n\u2022 Speak and watch the words appear.\n\u2022 Try new phrases.\nWhat Should Be Achieved:\nLink voice to text.\nWhat is Gained:\n\u2022 Speech clarity\n\u2022 Curiosity",
+                "Activity 2": "Dictation Partner\nMaterials Needed: Paper and pen.\nSteps to Follow:\n\u2022 One speaks, the other writes. Swap roles.\n\u2022 Discuss how AI does it too.\nWhat Should Be Achieved:\nUnderstanding listening and writing.\nWhat is Gained:\n\u2022 Teamwork\n\u2022 Listening skills"
+            },
+            {
+                "Niche": "AI",
+                "#": 27,
+                "Topic": "Language Learners",
+                "Objective": "To show how AI helps learn new languages.",
+                "Explanation": "\u2022 AI apps can teach new words and sounds. \n \u2022 They listen and correct. \n \u2022 It helps kids speak better.",
+                "Hashtags": "#AILanguage #LearningApps #SmartSpeaking",
+                "Estimated Time": "23 mins",
+                "Age": 5,
+                "Activity 1": "Try a Word App\nMaterials Needed: Language learning app.\nSteps to Follow:\n\u2022 Use app for basic words.\n\u2022 Repeat and score.\nWhat Should Be Achieved:\nExperience learning with AI.\nWhat is Gained:\n\u2022 Vocabulary\n\u2022 Pronunciation",
+                "Activity 2": "Say It in Another Way\nMaterials Needed: Picture flashcards.\nSteps to Follow:\n\u2022 Show picture and say word in English.\n\u2022 AI or adult says it in another language.\nWhat Should Be Achieved:\nLearn multi-language use.\nWhat is Gained:\n\u2022 Word association\n\u2022 Language exposure"
+            },
+            {
+                "Niche": "AI",
+                "#": 28,
+                "Topic": "Farming Robots",
+                "Objective": "To explore how AI helps farmers.",
+                "Explanation": "\u2022 AI machines water, harvest, and check plants. \n \u2022 Used in big farms to grow more food. \n \u2022 Kids relate tech to nature.",
+                "Hashtags": "#FarmingAI #AgriTech #SmartFarms",
+                "Estimated Time": "26 mins",
+                "Age": 5,
+                "Activity 1": "Plant Watcher\nMaterials Needed: Toy plants or garden.\nSteps to Follow:\n\u2022 Pretend to be an AI robot checking plants.\n\u2022 Report dry, tall, or sick ones.\nWhat Should Be Achieved:\nApply AI idea to farming.\nWhat is Gained:\n\u2022 Nature care\n\u2022 Tech imagination",
+                "Activity 2": "Robot Farmer\nMaterials Needed: Toy tractors or tools.\nSteps to Follow:\n\u2022 Act like a robot doing farm tasks.\n\u2022 Water, pluck, measure.\nWhat Should Be Achieved:\nFarm roleplay with AI.\nWhat is Gained:\n\u2022 Coordination\n\u2022 Real-life connect"
+            },
+            {
+                "Niche": "AI",
+                "#": 29,
+                "Topic": "AI Eyes in Space",
+                "Objective": "To show how AI helps in space.",
+                "Explanation": "\u2022 Satellites and rovers use AI to work far away. \n \u2022 They send info and avoid danger. \n \u2022 Helps scientists explore.",
+                "Hashtags": "#SpaceAI #SmartRovers #AIAstronomy",
+                "Estimated Time": "27 mins",
+                "Age": 5,
+                "Activity 1": "Rover Explorer\nMaterials Needed: Box or toy rover.\nSteps to Follow:\n\u2022 Pretend to explore another planet.\n\u2022 Avoid rocks and find samples.\nWhat Should Be Achieved:\nAI-guided exploration.\nWhat is Gained:\n\u2022 Space awareness\n\u2022 Motor skills",
+                "Activity 2": "What AI Sees\nMaterials Needed: Satellite images (printed or on screen).\nSteps to Follow:\n\u2022 Look at images and guess what AI sees.\n\u2022 Talk about Earth shapes.\nWhat Should Be Achieved:\nObservation like AI.\nWhat is Gained:\n\u2022 Visual thinking\n\u2022 Space interest"
+            },
+            {
+                "Niche": "AI",
+                "#": 30,
+                "Topic": "AI and Sports",
+                "Objective": "To explore how AI helps in games and fitness.",
+                "Explanation": "\u2022 AI tracks movement and suggests improvements. \n \u2022 Used in sports training. \n \u2022 It makes play smarter.",
+                "Hashtags": "#AISports #SmartFitness #AIPlayers",
+                "Estimated Time": "25 mins",
+                "Age": 5,
+                "Activity 1": "Coach AI\nMaterials Needed: Ball or toy.\nSteps to Follow:\n\u2022 Play and give feedback like an AI coach.\n\u2022 \u201cTry faster,\u201d \u201cTurn left,\u201d etc.\nWhat Should Be Achieved:\nUnderstand feedback idea.\nWhat is Gained:\n\u2022 Listening\n\u2022 Body control",
+                "Activity 2": "Track Me!\nMaterials Needed: Paper for recording.\nSteps to Follow:\n\u2022 Record how fast child runs 3 times.\n\u2022 Pretend AI tracks and gives score.\nWhat Should Be Achieved:\nPerformance tracking.\nWhat is Gained:\n\u2022 Math link\n\u2022 Awareness of improvement"
+            },
+            {
+                "Niche": "AI",
+                "#": 31,
+                "Topic": "AI Maze Masters",
+                "Objective": "To understand how AI solves puzzles and paths.",
+                "Explanation": "\u2022 AI finds the best way through a maze. \n\u2022 It tries different paths. \n\u2022 It remembers what works.",
+                "Hashtags": "#AIMaze #PathFinding #LogicAI",
+                "Estimated Time": "25 mins",
+                "Age": 6,
+                "Activity 1": "Maze Navigator\nMaterials Needed: Printed maze sheet, pencil.\nSteps to Follow:\n\u2022 Give a simple maze to the child.\n\u2022 Let them find the path.\n\u2022 Discuss how AI tries many paths.\nWhat Should Be Achieved:\nConnect AI to solving problems.\nWhat is Gained:\n\u2022 Problem-solving\n\u2022 Spatial thinking",
+                "Activity 2": "Smart Path Game\nMaterials Needed: Floor tape or chalk, toy.\nSteps to Follow:\n\u2022 Set up a path with dead ends.\n\u2022 Ask child to guide toy to finish.\n\u2022 Help with hints like AI.\nWhat Should Be Achieved:\nUnderstand AI\u2019s smart decisions.\nWhat is Gained:\n\u2022 Direction sense\n\u2022 Logical thinking"
+            },
+            {
+                "Niche": "AI",
+                "#": 32,
+                "Topic": "Friendly Chatbots",
+                "Objective": "To introduce how AI talks and helps people.",
+                "Explanation": "\u2022 AI chatbots answer questions. \n\u2022 They use words to understand us. \n\u2022 Help in stores and websites.",
+                "Hashtags": "#Chatbots #AIHelpers #TalkingAI",
+                "Estimated Time": "20 mins",
+                "Age": 6,
+                "Activity 1": "Chatbot Role Play\nMaterials Needed: None.\nSteps to Follow:\n\u2022 Pretend to be a chatbot.\n\u2022 Answer simple questions.\n\u2022 Use polite words.\nWhat Should Be Achieved:\nExperience chatbot talking.\nWhat is Gained:\n\u2022 Communication\n\u2022 Imagination",
+                "Activity 2": "Ask Me Anything\nMaterials Needed: List of questions.\nSteps to Follow:\n\u2022 Ask child easy questions.\n\u2022 Child answers like a chatbot.\nWhat Should Be Achieved:\nPractice answering clearly.\nWhat is Gained:\n\u2022 Speaking skills\n\u2022 Confidence"
+            },
+            {
+                "Niche": "AI",
+                "#": 33,
+                "Topic": "Robot Artists",
+                "Objective": "To explore how AI can create art.",
+                "Explanation": "\u2022 AI makes drawings and music. \n\u2022 It learns from patterns. \n\u2022 Helps in creative work.",
+                "Hashtags": "#RobotArtists #CreativeAI #AIMusic",
+                "Estimated Time": "30 mins",
+                "Age": 6,
+                "Activity 1": "Drawing Robot\nMaterials Needed: Paper, crayons.\nSteps to Follow:\n\u2022 Draw simple shapes.\n\u2022 Pretend the robot chooses colors.\nWhat Should Be Achieved:\nLink AI to creativity.\nWhat is Gained:\n\u2022 Creativity\n\u2022 Color recognition",
+                "Activity 2": "Music Maker\nMaterials Needed: Small instruments or clapping.\nSteps to Follow:\n\u2022 Make beats together.\n\u2022 Pretend AI mixes sounds.\nWhat Should Be Achieved:\nUnderstand AI\u2019s role in music.\nWhat is Gained:\n\u2022 Rhythm sense\n\u2022 Teamwork"
+            },
+            {
+                "Niche": "AI",
+                "#": 34,
+                "Topic": "Smart Storytellers",
+                "Objective": "To learn how AI helps in telling stories.",
+                "Explanation": "\u2022 AI can create stories with ideas. \n\u2022 It mixes words and pictures. \n\u2022 Helps people write books.",
+                "Hashtags": "#SmartStories #AIWriters #CreativeTech",
+                "Estimated Time": "25 mins",
+                "Age": 6,
+                "Activity 1": "Story Building\nMaterials Needed: Picture cards.\nSteps to Follow:\n\u2022 Pick cards to make a story.\n\u2022 Tell story like AI would.\nWhat Should Be Achieved:\nPractice story creation.\nWhat is Gained:\n\u2022 Imagination\n\u2022 Language skills",
+                "Activity 2": "Picture Story\nMaterials Needed: Drawing paper.\nSteps to Follow:\n\u2022 Draw parts of a story.\n\u2022 Explain story like AI.\nWhat Should Be Achieved:\nConnect visuals to stories.\nWhat is Gained:\n\u2022 Drawing\n\u2022 Narrative ability"
+            },
+            {
+                "Niche": "AI",
+                "#": 35,
+                "Topic": "AI Detectives",
+                "Objective": "To show how AI finds clues and solves mysteries.",
+                "Explanation": "\u2022 AI uses clues to find answers. \n\u2022 It looks for patterns in data. \n\u2022 Helps solve problems.",
+                "Hashtags": "#AIDetectives #ClueFinder #MysteryAI",
+                "Estimated Time": "30 mins",
+                "Age": 6,
+                "Activity 1": "Clue Hunt\nMaterials Needed: Objects to hide.\nSteps to Follow:\n\u2022 Hide objects and find clues.\n\u2022 Pretend to be AI detectives.\nWhat Should Be Achieved:\nLearn about clues and patterns.\nWhat is Gained:\n\u2022 Observation\n\u2022 Logical thinking",
+                "Activity 2": "Pattern Match\nMaterials Needed: Pattern cards.\nSteps to Follow:\n\u2022 Find matching cards.\n\u2022 Explain how AI finds matches.\nWhat Should Be Achieved:\nUnderstand pattern recognition.\nWhat is Gained:\n\u2022 Memory\n\u2022 Analysis skills"
+            },
+            {
+                "Niche": "AI",
+                "#": 36,
+                "Topic": "AI Weather Wizards",
+                "Objective": "To understand how AI predicts weather.",
+                "Explanation": "\u2022 AI watches clouds and wind. \n\u2022 It guesses if it will rain or shine. \n\u2022 Helps plan days better.",
+                "Hashtags": "#WeatherAI #AIWizards #SmartForecast",
+                "Estimated Time": "25 mins",
+                "Age": 6,
+                "Activity 1": "Weather Watch\nMaterials Needed: Weather chart.\nSteps to Follow:\n\u2022 Observe weather daily.\n\u2022 Predict tomorrow\u2019s weather.\n\u2022 Compare with actual.\nWhat Should Be Achieved:\nPractice prediction.\nWhat is Gained:\n\u2022 Observation\n\u2022 Reasoning",
+                "Activity 2": "Cloud Detectives\nMaterials Needed: Photos of clouds.\nSteps to Follow:\n\u2022 Identify cloud types.\n\u2022 Learn what they mean.\nWhat Should Be Achieved:\nLink clouds to weather.\nWhat is Gained:\n\u2022 Science interest\n\u2022 Critical thinking"
+            },
+            {
+                "Niche": "AI",
+                "#": 37,
+                "Topic": "AI Animal Friends",
+                "Objective": "To explore how AI helps animals and nature.",
+                "Explanation": "\u2022 AI tracks animals to keep them safe. \n\u2022 It studies how animals live. \n\u2022 Helps protect wildlife.",
+                "Hashtags": "#AnimalAI #WildlifeProtection #NatureAI",
+                "Estimated Time": "30 mins",
+                "Age": 6,
+                "Activity 1": "Animal Tracker\nMaterials Needed: Pictures of animals.\nSteps to Follow:\n\u2022 Identify animals in pictures.\n\u2022 Talk about AI helping track.\nWhat Should Be Achieved:\nConnect AI and animals.\nWhat is Gained:\n\u2022 Animal knowledge\n\u2022 Care for nature",
+                "Activity 2": "Nature Walk\nMaterials Needed: Notebook, pencil.\nSteps to Follow:\n\u2022 Walk outside to observe animals.\n\u2022 Record what is seen.\nWhat Should Be Achieved:\nPractice observation skills.\nWhat is Gained:\n\u2022 Patience\n\u2022 Environmental awareness"
+            },
+            {
+                "Niche": "AI",
+                "#": 38,
+                "Topic": "AI Time Travelers",
+                "Objective": "To imagine how AI can help learn about the past.",
+                "Explanation": "\u2022 AI studies old pictures and data. \n\u2022 It helps understand history. \n\u2022 Makes learning fun.",
+                "Hashtags": "#TimeTravelAI #HistoryAI #LearningFun",
+                "Estimated Time": "25 mins",
+                "Age": 6,
+                "Activity 1": "History Puzzle\nMaterials Needed: Old photos or drawings.\nSteps to Follow:\n\u2022 Look at old pictures.\n\u2022 Talk about what they show.\n\u2022 Pretend AI helps explain.\nWhat Should Be Achieved:\nConnect AI to history.\nWhat is Gained:\n\u2022 Curiosity\n\u2022 Critical thinking",
+                "Activity 2": "Timeline Game\nMaterials Needed: Cards with events.\nSteps to Follow:\n\u2022 Put events in order.\n\u2022 Explain with AI\u2019s help.\nWhat Should Be Achieved:\nUnderstand sequence of events.\nWhat is Gained:\n\u2022 Memory\n\u2022 Logical thinking"
+            }
+        ],
+        "profile_analysis": {
+            "child_name": "Emma",
+            "child_age": 6,
+            "interests": [
+                "AI",
+                "Music"
+            ],
+            "learning_style": "visual",
+            "plan_type": "hybrid",
+            "cognitive_level": "intermediate",
+            "attention_span": "medium",
+            "preferred_activities": [],
+            "llm_insights": {}
+        },
+        "learning_objectives": [
+            "Develop AI skills",
+            "Enhance problem-solving abilities",
+            "Build creativity and innovation",
+            "Improve critical thinking",
+            "Foster curiosity and exploration"
+        ],
+        "recommended_activities": [
+            "Interactive diagrams",
+            "Video tutorials",
+            "Visual storytelling"
+        ],
+        "progress_tracking": {
+            "metrics": [
+                "engagement",
+                "completion",
+                "understanding",
+                "enjoyment"
+            ],
+            "frequency": "daily",
+            "assessment_methods": [
+                "observation",
+                "conversation",
+                "project_review"
+            ]
+        },
+        "systematic_approach": {
+            "agent_flow": [
+                {
+                    "agent": "profile_agent",
+                    "status": "completed"
+                },
+                {
+                    "agent": "match_agent",
+                    "status": "completed"
+                },
+                {
+                    "agent": "schedule_agent",
+                    "status": "completed"
+                }
+            ],
+            "plan_structure": {
+                "total_weeks": 4,
+                "discovery_week": {
+                    "theme": "Technology & Innovation",
+                    "focus": "AI, Coding, Robotics"
+                },
+                "skills_week": {
+                    "theme": "Life Skills & Finance",
+                    "focus": "Money, Entrepreneurship, Communication"
+                },
+                "creation_week": {
+                    "theme": "Creative Expression",
+                    "focus": "Art, Music, Writing, Design"
+                },
+                "project_week": {
+                    "theme": "Problem Solving & Logic",
+                    "focus": "Math, Science, Engineering, Critical Thinking"
+                }
+            }
+        },
+        "llm_integration": {
+            "schedule_agent_llm_used": false,
+            "schedule_agent_prompt": null,
+            "schedule_agent_response": null,
+            "schedule_agent_tokens_used": 0
+        },
+        "agent_timing": {
+            "agent_name": "ReviewerAgent",
+            "execution_time_seconds": 6.866455078125e-05,
+            "llm_used": false,
+            "tokens_used": 0,
+            "llm_prompt": null,
+            "llm_response": null
+        },
+        "review_insights": {
+            "plan_quality": {
+                "overall_score": "good",
+                "structure_completeness": "complete",
+                "activity_variety": "high",
+                "assessment": "Plan structure appears comprehensive"
+            },
+            "age_appropriateness": {
+                "suitability_score": "good",
+                "complexity_level": "appropriate",
+                "attention_span_match": "well_matched",
+                "assessment": "Activities suitable for 6-year-old"
+            },
+            "learning_style_alignment": {
+                "alignment_score": "good",
+                "style_match": "optimal",
+                "activity_types": "varied",
+                "assessment": "Plan aligns with visual learning style"
+            },
+            "engagement_potential": {
+                "engagement_score": "high",
+                "motivation_factors": [
+                    "interest-based activities"
+                ],
+                "interest_alignment": "strong",
+                "assessment": "High engagement potential"
+            },
+            "potential_issues": [
+                "Monitor for overstimulation",
+                "Ensure adequate breaks"
+            ],
+            "improvement_suggestions": [
+                "Add more hands-on activities",
+                "Include regular progress check-ins"
+            ],
+            "parent_recommendations": [
+                "Observe child's engagement",
+                "Celebrate small achievements"
+            ],
+            "performance_tracking": {
+                "tracking_methods": [
+                    "observation",
+                    "conversation"
+                ],
+                "success_indicators": [
+                    "engagement",
+                    "skill development"
+                ],
+                "assessment_frequency": "weekly"
+            },
+            "optimization_suggestions": [
+                "Customize based on energy levels",
+                "Include child's input"
+            ],
+            "risk_assessment": {
+                "overall_risk": "low",
+                "potential_risks": [
+                    "overwhelm",
+                    "boredom"
+                ],
+                "mitigation_strategies": [
+                    "flexible scheduling"
+                ]
+            },
+            "topic_analysis": {
+                "weekly_topic_distribution": {},
+                "interest_alignment_score": "medium",
+                "topic_variety_score": "good",
+                "age_appropriateness_score": "good",
+                "topic_analysis_summary": "Topics appear suitable for 6-year-old with visual learning style"
+            },
+            "overall_performance_assessment": {
+                "engagement_prediction": "high",
+                "learning_effectiveness": "good",
+                "plan_deliverability": "ready",
+                "success_probability": "high",
+                "performance_summary": "Plan appears well-suited for Emma based on interests and age"
+            },
+            "llm_analysis": {},
+            "review_summary": "Comprehensive review completed for Emma (Age: 6) with visual learning style"
+        },
+        "review_analysis": {
+            "child_name": "Emma",
+            "child_age": 6,
+            "learning_style": "visual",
+            "cognitive_level": "intermediate",
+            "attention_span": "medium",
+            "total_topics_reviewed": 28,
+            "total_weeks_planned": 4,
+            "agent_flow": "ProfileAgent \u2192 MatchAgent \u2192 ScheduleAgent \u2192 ReviewerAgent"
+        }
+    },
+    "message": "Plan generated successfully using full agent system",
+    "agent_flow": "Profile \u2192 Match \u2192 Schedule \u2192 Reviewer",
+    "real_agents": true,
+    "agent_timings": {
+        "profile_agent": {
+            "execution_time_seconds": 5.555152893066406e-05,
+            "llm_used": false,
+            "tokens_used": 0,
+            "llm_prompt": null,
+            "llm_response": null
+        },
+        "match_agent": {
+            "agent_name": "MatchAgent",
+            "execution_time_seconds": 0.00042724609375,
+            "llm_used": false,
+            "tokens_used": 0,
+            "llm_prompt": null,
+            "llm_response": null
+        },
+        "schedule_agent": {
+            "agent_name": "ScheduleAgent",
+            "execution_time_seconds": 0.0004227161407470703,
+            "llm_used": false,
+            "tokens_used": 0,
+            "llm_prompt": null,
+            "llm_response": null
+        },
+        "reviewer_agent": {
+            "agent_name": "ReviewerAgent",
+            "execution_time_seconds": 6.866455078125e-05,
+            "llm_used": false,
+            "tokens_used": 0,
+            "llm_prompt": null,
+            "llm_response": null
+        },
+        "total_execution_time": 0.0009741783142089844
+    },
+    "llm_integration": {
+        "vertex_ai_available": true,
+        "profile_agent_llm_used": false,
+        "profile_agent_prompt": null,
+        "profile_agent_response": null,
+        "profile_agent_tokens_used": 0,
+        "match_agent_llm_used": false,
+        "match_agent_prompt": null,
+        "match_agent_response": null,
+        "match_agent_tokens_used": 0,
+        "schedule_agent_llm_used": false,
+        "schedule_agent_prompt": null,
+        "schedule_agent_response": null,
+        "schedule_agent_tokens_used": 0,
+        "reviewer_agent_llm_used": false,
+        "reviewer_agent_prompt": null,
+        "reviewer_agent_response": null,
+        "reviewer_agent_tokens_used": 0
+    }
+}

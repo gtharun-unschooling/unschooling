@@ -42,3 +42,4 @@ jobs:
         echo "🎉 Deployment completed successfully!"
         echo "🌐 Website: https://unschooling-464413.web.app"
         echo "📅 Deployed at: $(date)"
+

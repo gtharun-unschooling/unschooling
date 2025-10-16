@@ -1,3 +1,3257 @@
 {
-  "ageGroups": []
+  "ageGroups": [
+    {
+      "ageGroup": "All Ages",
+      "categories": [
+        {
+          "category": "Science & Innovation",
+          "description": "Activities for Science & Innovation",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "Shadow Hand Exploration",
+              "objective": "Engage in Shadow Hand Exploration activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Shadow Hand Exploration within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Shadow Hand Exploration",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Light & Shadow Play"
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "Peek-a-Boo Shadows",
+              "objective": "Engage in Peek-a-Boo Shadows activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Peek-a-Boo Shadows within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Peek-a-Boo Shadows",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Light & Shadow Play"
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "Flashlight Patterns",
+              "objective": "Engage in Flashlight Patterns activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Flashlight Patterns within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Flashlight Patterns",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Light & Shadow Play"
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "Color Shadow Fun",
+              "objective": "Engage in Color Shadow Fun activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Color Shadow Fun within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Color Shadow Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Light & Shadow Play"
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "Silhouette Playtime",
+              "objective": "Engage in Silhouette Playtime activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Silhouette Playtime within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Silhouette Playtime",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Light & Shadow Play"
+              }
+            },
+            {
+              "topicNumber": 6,
+              "topic": "Splash & Pour Discovery",
+              "objective": "Engage in Splash & Pour Discovery activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Splash & Pour Discovery within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Splash & Pour Discovery",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Water Play Experiments"
+              }
+            },
+            {
+              "topicNumber": 7,
+              "topic": "Floating Toy Observation",
+              "objective": "Engage in Floating Toy Observation activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Floating Toy Observation within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Floating Toy Observation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Water Play Experiments"
+              }
+            },
+            {
+              "topicNumber": 8,
+              "topic": "Tiny Boat Trials",
+              "objective": "Engage in Tiny Boat Trials activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Tiny Boat Trials within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Tiny Boat Trials",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Water Play Experiments"
+              }
+            },
+            {
+              "topicNumber": 9,
+              "topic": "Bubble Making Fun",
+              "objective": "Engage in Bubble Making Fun activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Bubble Making Fun within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Bubble Making Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Water Play Experiments"
+              }
+            },
+            {
+              "topicNumber": 10,
+              "topic": "Water Pour Path",
+              "objective": "Engage in Water Pour Path activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Water Pour Path within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Water Pour Path",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Water Play Experiments"
+              }
+            },
+            {
+              "topicNumber": 11,
+              "topic": "Rattle Drop Study",
+              "objective": "Engage in Rattle Drop Study activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Rattle Drop Study within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Rattle Drop Study",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Object Drop Observation"
+              }
+            },
+            {
+              "topicNumber": 12,
+              "topic": "Soft Toy Drop",
+              "objective": "Engage in Soft Toy Drop activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Soft Toy Drop within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Toy Drop",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Object Drop Observation"
+              }
+            },
+            {
+              "topicNumber": 13,
+              "topic": "Container Stack Drop",
+              "objective": "Engage in Container Stack Drop activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Container Stack Drop within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Container Stack Drop",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Object Drop Observation"
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "Ball Drop Reactions",
+              "objective": "Engage in Ball Drop Reactions activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Ball Drop Reactions within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Ball Drop Reactions",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Object Drop Observation"
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "Cup Tumble Fun",
+              "objective": "Engage in Cup Tumble Fun activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Cup Tumble Fun within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Cup Tumble Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Object Drop Observation"
+              }
+            },
+            {
+              "topicNumber": 16,
+              "topic": "Fabric Touch Play",
+              "objective": "Engage in Fabric Touch Play activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Fabric Touch Play within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Fabric Touch Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Exploring Textures"
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "Soft Brush Exploration",
+              "objective": "Engage in Soft Brush Exploration activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Soft Brush Exploration within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Brush Exploration",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Exploring Textures"
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "Textured Ball Roll",
+              "objective": "Engage in Textured Ball Roll activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Textured Ball Roll within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Textured Ball Roll",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Exploring Textures"
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "Sensory Ribbon Play",
+              "objective": "Engage in Sensory Ribbon Play activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Sensory Ribbon Play within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Sensory Ribbon Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Exploring Textures"
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "Crinkly Paper Fun",
+              "objective": "Engage in Crinkly Paper Fun activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Crinkly Paper Fun within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Crinkly Paper Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Exploring Textures"
+              }
+            },
+            {
+              "topicNumber": 21,
+              "topic": "Bottle Float Test",
+              "objective": "Engage in Bottle Float Test activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Bottle Float Test within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Bottle Float Test",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Sink or Float Experiments"
+              }
+            },
+            {
+              "topicNumber": 22,
+              "topic": "Toy Boat Challenge",
+              "objective": "Engage in Toy Boat Challenge activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Toy Boat Challenge within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Toy Boat Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Sink or Float Experiments"
+              }
+            },
+            {
+              "topicNumber": 23,
+              "topic": "Sponge Sink Test",
+              "objective": "Engage in Sponge Sink Test activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Sponge Sink Test within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Sponge Sink Test",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Sink or Float Experiments"
+              }
+            },
+            {
+              "topicNumber": 24,
+              "topic": "Water Container Trial",
+              "objective": "Engage in Water Container Trial activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Water Container Trial within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Water Container Trial",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Sink or Float Experiments"
+              }
+            },
+            {
+              "topicNumber": 25,
+              "topic": "Fruit Float Exploration",
+              "objective": "Engage in Fruit Float Exploration activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Fruit Float Exploration within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Fruit Float Exploration",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Sink or Float Experiments"
+              }
+            },
+            {
+              "topicNumber": 26,
+              "topic": "Primary Color Pour",
+              "objective": "Engage in Primary Color Pour activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Primary Color Pour within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Primary Color Pour",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Color Mixing with Water"
+              }
+            },
+            {
+              "topicNumber": 27,
+              "topic": "Rainbow Water Play",
+              "objective": "Engage in Rainbow Water Play activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Rainbow Water Play within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Rainbow Water Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Color Mixing with Water"
+              }
+            },
+            {
+              "topicNumber": 28,
+              "topic": "Drop & Blend Colors",
+              "objective": "Engage in Drop & Blend Colors activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Drop & Blend Colors within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Drop & Blend Colors",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Color Mixing with Water"
+              }
+            },
+            {
+              "topicNumber": 29,
+              "topic": "Ice Cube Color Melt",
+              "objective": "Engage in Ice Cube Color Melt activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Ice Cube Color Melt within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Ice Cube Color Melt",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Color Mixing with Water"
+              }
+            },
+            {
+              "topicNumber": 30,
+              "topic": "Cup Water Dye Mix",
+              "objective": "Engage in Cup Water Dye Mix activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Cup Water Dye Mix within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Cup Water Dye Mix",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Color Mixing with Water"
+              }
+            },
+            {
+              "topicNumber": 31,
+              "topic": "Magnetic Toy Hunt",
+              "objective": "Engage in Magnetic Toy Hunt activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Magnetic Toy Hunt within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Magnetic Toy Hunt",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Magnet Exploration"
+              }
+            },
+            {
+              "topicNumber": 32,
+              "topic": "Metal vs Non-Metal",
+              "objective": "Engage in Metal vs Non-Metal activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Metal vs Non-Metal within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Metal vs Non-Metal",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Magnet Exploration"
+              }
+            },
+            {
+              "topicNumber": 33,
+              "topic": "Magnet Stick Play",
+              "objective": "Engage in Magnet Stick Play activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Magnet Stick Play within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Magnet Stick Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Magnet Exploration"
+              }
+            },
+            {
+              "topicNumber": 34,
+              "topic": "Floating Magnet Test",
+              "objective": "Engage in Floating Magnet Test activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Floating Magnet Test within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Floating Magnet Test",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Magnet Exploration"
+              }
+            },
+            {
+              "topicNumber": 35,
+              "topic": "Find the Hidden Magnet",
+              "objective": "Engage in Find the Hidden Magnet activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Find the Hidden Magnet within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Find the Hidden Magnet",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Magnet Exploration"
+              }
+            },
+            {
+              "topicNumber": 36,
+              "topic": "Drum Stick Exploration",
+              "objective": "Engage in Drum Stick Exploration activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Drum Stick Exploration within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Drum Stick Exploration",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Sound and Vibration Play"
+              }
+            },
+            {
+              "topicNumber": 37,
+              "topic": "Jingle Bell Shake",
+              "objective": "Engage in Jingle Bell Shake activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Jingle Bell Shake within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Jingle Bell Shake",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Sound and Vibration Play"
+              }
+            },
+            {
+              "topicNumber": 38,
+              "topic": "Vibration on Table",
+              "objective": "Engage in Vibration on Table activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Vibration on Table within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Vibration on Table",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Sound and Vibration Play"
+              }
+            },
+            {
+              "topicNumber": 39,
+              "topic": "Tap & Listen Fun",
+              "objective": "Engage in Tap & Listen Fun activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Tap & Listen Fun within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Tap & Listen Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Sound and Vibration Play"
+              }
+            },
+            {
+              "topicNumber": 40,
+              "topic": "Cup Sound Game",
+              "objective": "Engage in Cup Sound Game activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Cup Sound Game within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Cup Sound Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Sound and Vibration Play"
+              }
+            },
+            {
+              "topicNumber": 41,
+              "topic": "Sprout Observation",
+              "objective": "Engage in Sprout Observation activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Sprout Observation within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Sprout Observation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Growing a Bean Plant"
+              }
+            },
+            {
+              "topicNumber": 42,
+              "topic": "Daily Watering Routine",
+              "objective": "Engage in Daily Watering Routine activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Daily Watering Routine within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Daily Watering Routine",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Growing a Bean Plant"
+              }
+            },
+            {
+              "topicNumber": 43,
+              "topic": "Plant Height Measurement",
+              "objective": "Engage in Plant Height Measurement activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Plant Height Measurement within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Plant Height Measurement",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Growing a Bean Plant"
+              }
+            },
+            {
+              "topicNumber": 44,
+              "topic": "Leaf Counting Fun",
+              "objective": "Engage in Leaf Counting Fun activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Leaf Counting Fun within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Leaf Counting Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Growing a Bean Plant"
+              }
+            },
+            {
+              "topicNumber": 45,
+              "topic": "Seed Germination Chart",
+              "objective": "Engage in Seed Germination Chart activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Seed Germination Chart within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Seed Germination Chart",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Growing a Bean Plant"
+              }
+            },
+            {
+              "topicNumber": 46,
+              "topic": "Magnet Train",
+              "objective": "Engage in Magnet Train activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Magnet Train within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Magnet Train",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Building with Magnets"
+              }
+            },
+            {
+              "topicNumber": 47,
+              "topic": "Magnet Tower",
+              "objective": "Engage in Magnet Tower activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Magnet Tower within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Magnet Tower",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Building with Magnets"
+              }
+            },
+            {
+              "topicNumber": 48,
+              "topic": "Magnet Shape Match",
+              "objective": "Engage in Magnet Shape Match activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Magnet Shape Match within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Magnet Shape Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Building with Magnets"
+              }
+            },
+            {
+              "topicNumber": 49,
+              "topic": "Magnet Sorting Game",
+              "objective": "Engage in Magnet Sorting Game activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Magnet Sorting Game within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Magnet Sorting Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Building with Magnets"
+              }
+            },
+            {
+              "topicNumber": 50,
+              "topic": "Floating Magnet Play",
+              "objective": "Engage in Floating Magnet Play activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Floating Magnet Play within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Floating Magnet Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Building with Magnets"
+              }
+            },
+            {
+              "topicNumber": 51,
+              "topic": "Ice Cube Color Mix",
+              "objective": "Engage in Ice Cube Color Mix activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Ice Cube Color Mix within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Ice Cube Color Mix",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Exploring Ice Melting"
+              }
+            },
+            {
+              "topicNumber": 52,
+              "topic": "Salt & Ice Fun",
+              "objective": "Engage in Salt & Ice Fun activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Salt & Ice Fun within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Salt & Ice Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Exploring Ice Melting"
+              }
+            },
+            {
+              "topicNumber": 53,
+              "topic": "Ice Tray Melt",
+              "objective": "Engage in Ice Tray Melt activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Ice Tray Melt within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Ice Tray Melt",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Exploring Ice Melting"
+              }
+            },
+            {
+              "topicNumber": 54,
+              "topic": "Ice on Spoon Challenge",
+              "objective": "Engage in Ice on Spoon Challenge activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Ice on Spoon Challenge within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Ice on Spoon Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Exploring Ice Melting"
+              }
+            },
+            {
+              "topicNumber": 55,
+              "topic": "Warm Water Melt Game",
+              "objective": "Engage in Warm Water Melt Game activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Warm Water Melt Game within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Warm Water Melt Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Exploring Ice Melting"
+              }
+            },
+            {
+              "topicNumber": 56,
+              "topic": "Leaf Detail Observation",
+              "objective": "Engage in Leaf Detail Observation activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Leaf Detail Observation within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Leaf Detail Observation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Using a Simple Magnifying Glass"
+              }
+            },
+            {
+              "topicNumber": 57,
+              "topic": "Bug Study",
+              "objective": "Engage in Bug Study activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Bug Study within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Bug Study",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Using a Simple Magnifying Glass"
+              }
+            },
+            {
+              "topicNumber": 58,
+              "topic": "Texture Zoom",
+              "objective": "Engage in Texture Zoom activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Texture Zoom within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Texture Zoom",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Using a Simple Magnifying Glass"
+              }
+            },
+            {
+              "topicNumber": 59,
+              "topic": "Rock Pattern Observation",
+              "objective": "Engage in Rock Pattern Observation activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Rock Pattern Observation within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Rock Pattern Observation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Using a Simple Magnifying Glass"
+              }
+            },
+            {
+              "topicNumber": 60,
+              "topic": "Everyday Object Zoom",
+              "objective": "Engage in Everyday Object Zoom activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Everyday Object Zoom within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Everyday Object Zoom",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Using a Simple Magnifying Glass"
+              }
+            },
+            {
+              "topicNumber": 61,
+              "topic": "Build a Simple Circuit",
+              "objective": "Engage in Build a Simple Circuit activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Build a Simple Circuit within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Build a Simple Circuit",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Beginner Science Kits"
+              }
+            },
+            {
+              "topicNumber": 62,
+              "topic": "STEM Volcano Challenge",
+              "objective": "Engage in STEM Volcano Challenge activities to develop science & innovation skills",
+              "explanation": "This activity focuses on STEM Volcano Challenge within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "STEM Volcano Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Beginner Science Kits"
+              }
+            },
+            {
+              "topicNumber": 63,
+              "topic": "Crystal Growing Fun",
+              "objective": "Engage in Crystal Growing Fun activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Crystal Growing Fun within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Crystal Growing Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Beginner Science Kits"
+              }
+            },
+            {
+              "topicNumber": 64,
+              "topic": "Magnetic Kit Exploration",
+              "objective": "Engage in Magnetic Kit Exploration activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Magnetic Kit Exploration within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Magnetic Kit Exploration",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Beginner Science Kits"
+              }
+            },
+            {
+              "topicNumber": 65,
+              "topic": "Seed Kit Science",
+              "objective": "Engage in Seed Kit Science activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Seed Kit Science within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Seed Kit Science",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Beginner Science Kits"
+              }
+            },
+            {
+              "topicNumber": 66,
+              "topic": "LED Circuit Challenge",
+              "objective": "Engage in LED Circuit Challenge activities to develop science & innovation skills",
+              "explanation": "This activity focuses on LED Circuit Challenge within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "LED Circuit Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Making Simple Circuits"
+              }
+            },
+            {
+              "topicNumber": 67,
+              "topic": "Buzzer Circuit Play",
+              "objective": "Engage in Buzzer Circuit Play activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Buzzer Circuit Play within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Buzzer Circuit Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Making Simple Circuits"
+              }
+            },
+            {
+              "topicNumber": 68,
+              "topic": "Switch On-Off Game",
+              "objective": "Engage in Switch On-Off Game activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Switch On-Off Game within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Switch On-Off Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Making Simple Circuits"
+              }
+            },
+            {
+              "topicNumber": 69,
+              "topic": "Paper Clip Circuit",
+              "objective": "Engage in Paper Clip Circuit activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Paper Clip Circuit within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Paper Clip Circuit",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Making Simple Circuits"
+              }
+            },
+            {
+              "topicNumber": 70,
+              "topic": "Mini Motor Circuit",
+              "objective": "Engage in Mini Motor Circuit activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Mini Motor Circuit within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Mini Motor Circuit",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Making Simple Circuits"
+              }
+            },
+            {
+              "topicNumber": 71,
+              "topic": "Ramp & Ball Experiment",
+              "objective": "Engage in Ramp & Ball Experiment activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Ramp & Ball Experiment within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Ramp & Ball Experiment",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Exploring Forces with Toys"
+              }
+            },
+            {
+              "topicNumber": 72,
+              "topic": "Pull & Push Game",
+              "objective": "Engage in Pull & Push Game activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Pull & Push Game within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Pull & Push Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Exploring Forces with Toys"
+              }
+            },
+            {
+              "topicNumber": 73,
+              "topic": "Toy Car Tracks",
+              "objective": "Engage in Toy Car Tracks activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Toy Car Tracks within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Toy Car Tracks",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Exploring Forces with Toys"
+              }
+            },
+            {
+              "topicNumber": 74,
+              "topic": "Gravity Drop Fun",
+              "objective": "Engage in Gravity Drop Fun activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Gravity Drop Fun within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Gravity Drop Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Exploring Forces with Toys"
+              }
+            },
+            {
+              "topicNumber": 75,
+              "topic": "Spring Toy Tests",
+              "objective": "Engage in Spring Toy Tests activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Spring Toy Tests within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Spring Toy Tests",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Exploring Forces with Toys"
+              }
+            },
+            {
+              "topicNumber": 76,
+              "topic": "Nature Observation Chart",
+              "objective": "Engage in Nature Observation Chart activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Nature Observation Chart within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Nature Observation Chart",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Observation Logbooks"
+              }
+            },
+            {
+              "topicNumber": 77,
+              "topic": "Daily Science Journal",
+              "objective": "Engage in Daily Science Journal activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Daily Science Journal within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Daily Science Journal",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Observation Logbooks"
+              }
+            },
+            {
+              "topicNumber": 78,
+              "topic": "Weather Tracking Book",
+              "objective": "Engage in Weather Tracking Book activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Weather Tracking Book within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Weather Tracking Book",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Observation Logbooks"
+              }
+            },
+            {
+              "topicNumber": 79,
+              "topic": "Plant Growth Log",
+              "objective": "Engage in Plant Growth Log activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Plant Growth Log within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Plant Growth Log",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Observation Logbooks"
+              }
+            },
+            {
+              "topicNumber": 80,
+              "topic": "Insect Observation Notes",
+              "objective": "Engage in Insect Observation Notes activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Insect Observation Notes within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Insect Observation Notes",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Observation Logbooks"
+              }
+            },
+            {
+              "topicNumber": 81,
+              "topic": "Build a Solar Oven",
+              "objective": "Engage in Build a Solar Oven activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Build a Solar Oven within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Build a Solar Oven",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Real-World STEM Challenges"
+              }
+            },
+            {
+              "topicNumber": 82,
+              "topic": "Water Filtration Trial",
+              "objective": "Engage in Water Filtration Trial activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Water Filtration Trial within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Water Filtration Trial",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Real-World STEM Challenges"
+              }
+            },
+            {
+              "topicNumber": 83,
+              "topic": "Mini Wind Turbine",
+              "objective": "Engage in Mini Wind Turbine activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Mini Wind Turbine within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mini Wind Turbine",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Real-World STEM Challenges"
+              }
+            },
+            {
+              "topicNumber": 84,
+              "topic": "Bridge Strength Test",
+              "objective": "Engage in Bridge Strength Test activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Bridge Strength Test within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Bridge Strength Test",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Real-World STEM Challenges"
+              }
+            },
+            {
+              "topicNumber": 85,
+              "topic": "Balloon Rocket Challenge",
+              "objective": "Engage in Balloon Rocket Challenge activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Balloon Rocket Challenge within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Balloon Rocket Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Real-World STEM Challenges"
+              }
+            },
+            {
+              "topicNumber": 86,
+              "topic": "DIY Invention Challenge",
+              "objective": "Engage in DIY Invention Challenge activities to develop science & innovation skills",
+              "explanation": "This activity focuses on DIY Invention Challenge within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "DIY Invention Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Creative Invention Design"
+              }
+            },
+            {
+              "topicNumber": 87,
+              "topic": "Recycled Material Robot",
+              "objective": "Engage in Recycled Material Robot activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Recycled Material Robot within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Recycled Material Robot",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Creative Invention Design"
+              }
+            },
+            {
+              "topicNumber": 88,
+              "topic": "Mini Catapult Build",
+              "objective": "Engage in Mini Catapult Build activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Mini Catapult Build within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mini Catapult Build",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Creative Invention Design"
+              }
+            },
+            {
+              "topicNumber": 89,
+              "topic": "Paper Circuit Device",
+              "objective": "Engage in Paper Circuit Device activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Paper Circuit Device within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Paper Circuit Device",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Creative Invention Design"
+              }
+            },
+            {
+              "topicNumber": 90,
+              "topic": "Rubber Band Car",
+              "objective": "Engage in Rubber Band Car activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Rubber Band Car within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Rubber Band Car",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Creative Invention Design"
+              }
+            },
+            {
+              "topicNumber": 91,
+              "topic": "Volcano Model",
+              "objective": "Engage in Volcano Model activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Volcano Model within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Volcano Model",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Earth Science Simulations"
+              }
+            },
+            {
+              "topicNumber": 92,
+              "topic": "Erosion Experiment",
+              "objective": "Engage in Erosion Experiment activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Erosion Experiment within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Erosion Experiment",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Earth Science Simulations"
+              }
+            },
+            {
+              "topicNumber": 93,
+              "topic": "Water Cycle Model",
+              "objective": "Engage in Water Cycle Model activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Water Cycle Model within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Water Cycle Model",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Earth Science Simulations"
+              }
+            },
+            {
+              "topicNumber": 94,
+              "topic": "Rock Layer Observation",
+              "objective": "Engage in Rock Layer Observation activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Rock Layer Observation within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Rock Layer Observation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Earth Science Simulations"
+              }
+            },
+            {
+              "topicNumber": 95,
+              "topic": "Mini Earthquake Shake",
+              "objective": "Engage in Mini Earthquake Shake activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Mini Earthquake Shake within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mini Earthquake Shake",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Earth Science Simulations"
+              }
+            },
+            {
+              "topicNumber": 96,
+              "topic": "Lava Lamp Fun",
+              "objective": "Engage in Lava Lamp Fun activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Lava Lamp Fun within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Lava Lamp Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "DIY Science Projects"
+              }
+            },
+            {
+              "topicNumber": 97,
+              "topic": "Balloon Hovercraft",
+              "objective": "Engage in Balloon Hovercraft activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Balloon Hovercraft within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Balloon Hovercraft",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "DIY Science Projects"
+              }
+            },
+            {
+              "topicNumber": 98,
+              "topic": "Slime Chemistry",
+              "objective": "Engage in Slime Chemistry activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Slime Chemistry within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Slime Chemistry",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "DIY Science Projects"
+              }
+            },
+            {
+              "topicNumber": 99,
+              "topic": "Mini Waterwheel",
+              "objective": "Engage in Mini Waterwheel activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Mini Waterwheel within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Mini Waterwheel",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "DIY Science Projects"
+              }
+            },
+            {
+              "topicNumber": 100,
+              "topic": "Plastic Bottle Experiment",
+              "objective": "Engage in Plastic Bottle Experiment activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Plastic Bottle Experiment within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Plastic Bottle Experiment",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "DIY Science Projects"
+              }
+            },
+            {
+              "topicNumber": 101,
+              "topic": "Recycled Robot Build",
+              "objective": "Engage in Recycled Robot Build activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Recycled Robot Build within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Recycled Robot Build",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Engineering with Recyclables"
+              }
+            },
+            {
+              "topicNumber": 102,
+              "topic": "Cardboard Bridge Challenge",
+              "objective": "Engage in Cardboard Bridge Challenge activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Cardboard Bridge Challenge within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Cardboard Bridge Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Engineering with Recyclables"
+              }
+            },
+            {
+              "topicNumber": 103,
+              "topic": "Bottle Rocket Engineering",
+              "objective": "Engage in Bottle Rocket Engineering activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Bottle Rocket Engineering within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Bottle Rocket Engineering",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Engineering with Recyclables"
+              }
+            },
+            {
+              "topicNumber": 104,
+              "topic": "DIY Catapult",
+              "objective": "Engage in DIY Catapult activities to develop science & innovation skills",
+              "explanation": "This activity focuses on DIY Catapult within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "DIY Catapult",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Engineering with Recyclables"
+              }
+            },
+            {
+              "topicNumber": 105,
+              "topic": "Recycled Vehicle Design",
+              "objective": "Engage in Recycled Vehicle Design activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Recycled Vehicle Design within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Recycled Vehicle Design",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Engineering with Recyclables"
+              }
+            },
+            {
+              "topicNumber": 106,
+              "topic": "Baking Soda Volcano",
+              "objective": "Engage in Baking Soda Volcano activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Baking Soda Volcano within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Baking Soda Volcano",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Chemistry at Home Experiments"
+              }
+            },
+            {
+              "topicNumber": 107,
+              "topic": "Safe pH Test",
+              "objective": "Engage in Safe pH Test activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Safe pH Test within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Safe pH Test",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Chemistry at Home Experiments"
+              }
+            },
+            {
+              "topicNumber": 108,
+              "topic": "Color Change Chemistry",
+              "objective": "Engage in Color Change Chemistry activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Color Change Chemistry within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Color Change Chemistry",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Chemistry at Home Experiments"
+              }
+            },
+            {
+              "topicNumber": 109,
+              "topic": "Salt & Water Reactions",
+              "objective": "Engage in Salt & Water Reactions activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Salt & Water Reactions within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Salt & Water Reactions",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Chemistry at Home Experiments"
+              }
+            },
+            {
+              "topicNumber": 110,
+              "topic": "Crystal Formation",
+              "objective": "Engage in Crystal Formation activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Crystal Formation within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Crystal Formation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Chemistry at Home Experiments"
+              }
+            },
+            {
+              "topicNumber": 111,
+              "topic": "Build a Maze Game",
+              "objective": "Engage in Build a Maze Game activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Build a Maze Game within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Build a Maze Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Coding Logic Projects"
+              }
+            },
+            {
+              "topicNumber": 112,
+              "topic": "Simple Animation Program",
+              "objective": "Engage in Simple Animation Program activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Simple Animation Program within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Simple Animation Program",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Coding Logic Projects"
+              }
+            },
+            {
+              "topicNumber": 113,
+              "topic": "Algorithm Puzzle Challenge",
+              "objective": "Engage in Algorithm Puzzle Challenge activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Algorithm Puzzle Challenge within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Algorithm Puzzle Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Coding Logic Projects"
+              }
+            },
+            {
+              "topicNumber": 114,
+              "topic": "Interactive Story Coding",
+              "objective": "Engage in Interactive Story Coding activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Interactive Story Coding within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Interactive Story Coding",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Coding Logic Projects"
+              }
+            },
+            {
+              "topicNumber": 115,
+              "topic": "Code & Draw",
+              "objective": "Engage in Code & Draw activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Code & Draw within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Code & Draw",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Coding Logic Projects"
+              }
+            },
+            {
+              "topicNumber": 116,
+              "topic": "Mini Science Exhibit",
+              "objective": "Engage in Mini Science Exhibit activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Mini Science Exhibit within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Mini Science Exhibit",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Science Fair Project Building"
+              }
+            },
+            {
+              "topicNumber": 117,
+              "topic": "Physics Project Demo",
+              "objective": "Engage in Physics Project Demo activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Physics Project Demo within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Physics Project Demo",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Science Fair Project Building"
+              }
+            },
+            {
+              "topicNumber": 118,
+              "topic": "Biology Experiment",
+              "objective": "Engage in Biology Experiment activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Biology Experiment within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Biology Experiment",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Science Fair Project Building"
+              }
+            },
+            {
+              "topicNumber": 119,
+              "topic": "Chemistry Showcase",
+              "objective": "Engage in Chemistry Showcase activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Chemistry Showcase within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Chemistry Showcase",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Science Fair Project Building"
+              }
+            },
+            {
+              "topicNumber": 120,
+              "topic": "Robotics Display",
+              "objective": "Engage in Robotics Display activities to develop science & innovation skills",
+              "explanation": "This activity focuses on Robotics Display within the Science & Innovation pillar.",
+              "hashtags": [
+                "#Science&Innovation",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Robotics Display",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Science & Innovation"
+                ],
+                "category": "Science Fair Project Building"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totalActivities": 120,
+  "lastUpdated": "2025-10-12T01:20:25.349822"
 }

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Agent Execution Viewer - Yashna</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:linear-gradient(135deg,#667eea,#764ba2);padding:20px}
+.container{max-width:1400px;margin:0 auto;background:#fff;border-radius:20px;padding:40px}
+h1{color:#667eea;margin-bottom:30px}
+.status-box{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:30px;border-radius:15px;margin-bottom:30px}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:20px}
+.metric{background:rgba(255,255,255,0.15);padding:20px;border-radius:10px;text-align:center}
+.metric-label{font-size:0.9em;opacity:0.9;margin-bottom:10px}
+.metric-value{font-size:2em;font-weight:700}
+.plan-card{background:#f8f9fa;border:2px solid #e0e0e0;border-radius:10px;padding:20px;margin:20px 0}
+.plan-header{font-size:1.3em;color:#667eea;font-weight:700;margin-bottom:15px}
+.info-row{display:grid;grid-template-columns:150px 1fr;gap:10px;padding:8px 0;border-bottom:1px solid #eee}
+.info-label{font-weight:600;color:#666}
+.info-value{color:#333}
+.agent-list{margin-top:20px}
+.agent-item{background:#fff;border-left:4px solid #667eea;padding:15px;margin:10px 0;border-radius:5px}
+.agent-name{font-weight:600;color:#667eea;font-size:1.1em}
+.agent-time{color:#999;font-size:0.9em}
+.success{color:#4caf50}
+.failed{color:#f44336}
+.btn{background:#667eea;color:#fff;border:none;padding:12px 24px;border-radius:8px;cursor:pointer;margin:10px 5px;font-size:15px;font-weight:600}
+.btn:hover{background:#5568d3}
+.warning{background:#fff3cd;border:1px solid #ffc107;color:#856404;padding:15px;border-radius:8px;margin:20px 0}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🤖 Agent Execution Viewer - Yashna's Learning Plans</h1>
+
+<button class="btn" onclick="location.reload()">🔄 Refresh Data</button>
+<button class="btn" onclick="window.open('file:///Users/tharunguduguntla/Documents/unschooling/live_latest_customer.html')">📊 View Latest Plan</button>
+<button class="btn" onclick="window.open('https://unschooling.in/customised-weekly-plan')">🌐 Go to Live Page</button>
+
+<div class="status-box">
+<h2>📊 Current Status</h2>
+<div class="metrics">
+<div class="metric">
+<div class="metric-label">User</div>
+<div class="metric-value" style="font-size:1.2em">gtharun@unschooling.in</div>
+</div>
+<div class="metric">
+<div class="metric-label">Child</div>
+<div class="metric-value" style="font-size:1.5em">yashna</div>
+</div>
+<div class="metric">
+<div class="metric-label">Plans Stored</div>
+<div class="metric-value" id="plansCount">-</div>
+</div>
+<div class="metric">
+<div class="metric-label">Storage Status</div>
+<div class="metric-value" style="font-size:1.2em" id="storageStatus">-</div>
+</div>
+</div>
+</div>
+
+<div class="plan-card">
+<div class="plan-header">📋 Plan Storage Details</div>
+<div class="info-row">
+<div class="info-label">User ID:</div>
+<div class="info-value">mEPnrI9mE3N2OaK9WFs5LOXTrV82</div>
+</div>
+<div class="info-row">
+<div class="info-label">Child ID:</div>
+<div class="info-value">yashna</div>
+</div>
+<div class="info-row">
+<div class="info-label">Storage Location:</div>
+<div class="info-value">users/{userId}/children/yashna/plans/{planId}</div>
+</div>
+<div class="info-row">
+<div class="info-label">Child Doc Size:</div>
+<div class="info-value" id="childSize">0.3 KB ✅</div>
+</div>
+<div class="info-row">
+<div class="info-label">Duplicate Storage:</div>
+<div class="info-value" id="duplicateStatus">✅ NO</div>
+</div>
+</div>
+
+<div class="warning" id="warningBox" style="display:none">
+⚠️ <strong>Important:</strong> If you just generated a new plan but don't see it here, please refresh the page. Make sure your frontend code is updated and you've cleared your browser cache.
+</div>
+
+<div class="plan-card">
+<div class="plan-header">📚 All Plans</div>
+<div id="plansList">Loading plans...</div>
+</div>
+
+<div class="plan-card">
+<div class="plan-header">🤖 Recent Agent Executions</div>
+<div id="agentsList">Loading agent execution history...</div>
+</div>
+
+</div>
+
+<script type="module">
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+import { getFirestore, collection, getDocs, doc, getDoc, query, orderBy, limit } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBX2bZmOUosU-2PXZFQVN_WLLuee_zkFzI",
+  authDomain: "unschooling-464413.firebaseapp.com",
+  projectId: "unschooling-464413",
+  storageBucket: "unschooling-464413.appspot.com",
+  messagingSenderId: "790275794964",
+  appId: "1:790275794964:web:f981a7f0693cc186631f01"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+const userId = 'mEPnrI9mE3N2OaK9WFs5LOXTrV82';
+const childId = 'yashna';
+
+async function loadData() {
+  try {
+    // Check child document
+    const childRef = doc(db, `users/${userId}/children/${childId}`);
+    const childSnap = await getDoc(childRef);
+    
+    if (childSnap.exists()) {
+      const childData = childSnap.data();
+      const hasNested = childData.plans && typeof childData.plans === 'object';
+      
+      document.getElementById('duplicateStatus').innerHTML = hasNested ? '❌ YES (Problem!)' : '✅ NO';
+      document.getElementById('duplicateStatus').style.color = hasNested ? '#f44336' : '#4caf50';
+      
+      if (hasNested) {
+        document.getElementById('warningBox').style.display = 'block';
+      }
+    }
+    
+    // Load plans from subcollection
+    const plansRef = collection(db, `users/${userId}/children/${childId}/plans`);
+    const plansQuery = query(plansRef, orderBy('created_at', 'desc'));
+    const plansSnapshot = await getDocs(plansQuery);
+    
+    document.getElementById('plansCount').textContent = plansSnapshot.size;
+    document.getElementById('storageStatus').textContent = plansSnapshot.size > 0 ? '✅ Clean' : '⚠️ Empty';
+    
+    let plansHTML = '';
+    if (plansSnapshot.empty) {
+      plansHTML = '<div style="padding:20px;text-align:center;color:#999">No plans found. Generate a plan to see it here.</div>';
+    } else {
+      plansSnapshot.forEach((planDoc, idx) => {
+        const planData = planDoc.data();
+        const month = planData.month || 'N/A';
+        const created = planData.created_at ? planData.created_at.toDate().toLocaleString('en-IN', {timeZone: 'Asia/Kolkata'}) : 'N/A';
+        const status = planData.status || 'N/A';
+        
+        const schedule = planData.schedule || planData.final_schedule || {};
+        const weeks = schedule.weeks || [];
+        const topics = weeks.reduce((sum, week) => sum + (week.topics?.length || 0), 0);
+        
+        plansHTML += `
+          <div class="agent-item">
+            <div class="agent-name">${idx + 1}. ${month}</div>
+            <div class="agent-time">Created: ${created}</div>
+            <div style="margin-top:10px">
+              <span style="background:#e3f2fd;color:#1976d2;padding:5px 10px;border-radius:15px;margin:5px;display:inline-block">Status: ${status}</span>
+              <span style="background:#e8f5e9;color:#2e7d32;padding:5px 10px;border-radius:15px;margin:5px;display:inline-block">Weeks: ${weeks.length}</span>
+              <span style="background:#fff3e0;color:#e65100;padding:5px 10px;border-radius:15px;margin:5px;display:inline-block">Topics: ${topics}</span>
+            </div>
+            <div style="margin-top:10px;font-size:0.9em;color:#666">Plan ID: ${planDoc.id}</div>
+          </div>
+        `;
+      });
+    }
+    
+    document.getElementById('plansList').innerHTML = plansHTML;
+    
+    // Load agent executions (without index requirement)
+    const execRef = collection(db, 'agent_executions');
+    const execSnapshot = await getDocs(query(execRef, orderBy('timestamp', 'desc'), limit(50)));
+    
+    // Filter for yashna
+    const yashnaExecs = [];
+    execSnapshot.forEach(doc => {
+      const data = doc.data();
+      if (data.childName === 'yashna' || data.childId === childId) {
+        yashnaExecs.push({id: doc.id, ...data});
+      }
+    });
+    
+    let agentsHTML = '';
+    if (yashnaExecs.length === 0) {
+      agentsHTML = '<div style="padding:20px;text-align:center;color:#999">No agent executions found for yashna.</div>';
+    } else {
+      agentsHTML = `<div style="margin-bottom:15px;font-weight:600">Found ${yashnaExecs.length} agent executions</div>`;
+      
+      yashnaExecs.slice(0, 20).forEach((exec, idx) => {
+        const agent = exec.agentName || 'Unknown';
+        const success = exec.success ? '✅' : '❌';
+        const timestamp = exec.timestamp ? exec.timestamp.toDate().toLocaleString('en-IN', {timeZone: 'Asia/Kolkata'}) : 'N/A';
+        const execTime = exec.executionTime || 0;
+        
+        agentsHTML += `
+          <div class="agent-item">
+            <div class="agent-name">${success} ${agent}</div>
+            <div class="agent-time">Time: ${timestamp} | Execution: ${(execTime*1000).toFixed(2)}ms</div>
+          </div>
+        `;
+      });
+    }
+    
+    document.getElementById('agentsList').innerHTML = agentsHTML;
+    
+  } catch (error) {
+    console.error('Error loading data:', error);
+    document.getElementById('plansList').innerHTML = `<div style="color:#f44336;padding:20px">Error: ${error.message}</div>`;
+  }
+}
+
+loadData();
+</script>
+</body>
+</html>

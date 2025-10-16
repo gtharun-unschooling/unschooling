@@ -1,3 +1,3257 @@
 {
-  "ageGroups": []
+  "ageGroups": [
+    {
+      "ageGroup": "All Ages",
+      "categories": [
+        {
+          "category": "Music & Rhythm",
+          "description": "Activities for Music & Rhythm",
+          "activities": [
+            {
+              "topicNumber": 1,
+              "topic": "Gentle Lullaby Moments",
+              "objective": "Engage in Gentle Lullaby Moments activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Gentle Lullaby Moments within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Gentle Lullaby Moments",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Soothing Lullabies"
+              }
+            },
+            {
+              "topicNumber": 2,
+              "topic": "Soft Song Snuggles",
+              "objective": "Engage in Soft Song Snuggles activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Soft Song Snuggles within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Song Snuggles",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Soothing Lullabies"
+              }
+            },
+            {
+              "topicNumber": 3,
+              "topic": "Cozy Lullaby Cuddle",
+              "objective": "Engage in Cozy Lullaby Cuddle activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Cozy Lullaby Cuddle within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Cozy Lullaby Cuddle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Soothing Lullabies"
+              }
+            },
+            {
+              "topicNumber": 4,
+              "topic": "Evening Melody Time",
+              "objective": "Engage in Evening Melody Time activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Evening Melody Time within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Evening Melody Time",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Soothing Lullabies"
+              }
+            },
+            {
+              "topicNumber": 5,
+              "topic": "Humming Lullaby Fun",
+              "objective": "Engage in Humming Lullaby Fun activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Humming Lullaby Fun within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Humming Lullaby Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Soothing Lullabies"
+              }
+            },
+            {
+              "topicNumber": 6,
+              "topic": "Jingle Rattle Play",
+              "objective": "Engage in Jingle Rattle Play activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Jingle Rattle Play within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Jingle Rattle Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Rattle & Sound Exploration"
+              }
+            },
+            {
+              "topicNumber": 7,
+              "topic": "Sound Discovery Rattles",
+              "objective": "Engage in Sound Discovery Rattles activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Sound Discovery Rattles within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Sound Discovery Rattles",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Rattle & Sound Exploration"
+              }
+            },
+            {
+              "topicNumber": 8,
+              "topic": "Shake & Listen",
+              "objective": "Engage in Shake & Listen activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Shake & Listen within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Shake & Listen",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Rattle & Sound Exploration"
+              }
+            },
+            {
+              "topicNumber": 9,
+              "topic": "Baby Percussion Fun",
+              "objective": "Engage in Baby Percussion Fun activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Baby Percussion Fun within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Baby Percussion Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Rattle & Sound Exploration"
+              }
+            },
+            {
+              "topicNumber": 10,
+              "topic": "Tiny Sound Band",
+              "objective": "Engage in Tiny Sound Band activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Tiny Sound Band within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Tiny Sound Band",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Rattle & Sound Exploration"
+              }
+            },
+            {
+              "topicNumber": 11,
+              "topic": "Hum-Along Moments",
+              "objective": "Engage in Hum-Along Moments activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Hum-Along Moments within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Hum-Along Moments",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Humming with Caregiver"
+              }
+            },
+            {
+              "topicNumber": 12,
+              "topic": "Melody Hugs",
+              "objective": "Engage in Melody Hugs activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Melody Hugs within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Melody Hugs",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Humming with Caregiver"
+              }
+            },
+            {
+              "topicNumber": 13,
+              "topic": "Gentle Hum Time",
+              "objective": "Engage in Gentle Hum Time activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Gentle Hum Time within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Gentle Hum Time",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Humming with Caregiver"
+              }
+            },
+            {
+              "topicNumber": 14,
+              "topic": "Soft Tune Cuddles",
+              "objective": "Engage in Soft Tune Cuddles activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Soft Tune Cuddles within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Tune Cuddles",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Humming with Caregiver"
+              }
+            },
+            {
+              "topicNumber": 15,
+              "topic": "Musical Sway",
+              "objective": "Engage in Musical Sway activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Musical Sway within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Musical Sway",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Humming with Caregiver"
+              }
+            },
+            {
+              "topicNumber": 16,
+              "topic": "Pat & Clap Time",
+              "objective": "Engage in Pat & Clap Time activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Pat & Clap Time within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Pat & Clap Time",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Rhythm with Gentle Movements"
+              }
+            },
+            {
+              "topicNumber": 17,
+              "topic": "Gentle Bounce Beats",
+              "objective": "Engage in Gentle Bounce Beats activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Gentle Bounce Beats within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Gentle Bounce Beats",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Rhythm with Gentle Movements"
+              }
+            },
+            {
+              "topicNumber": 18,
+              "topic": "Baby Wave Rhythm",
+              "objective": "Engage in Baby Wave Rhythm activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Baby Wave Rhythm within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Baby Wave Rhythm",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Rhythm with Gentle Movements"
+              }
+            },
+            {
+              "topicNumber": 19,
+              "topic": "Soft Hand Motions",
+              "objective": "Engage in Soft Hand Motions activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Soft Hand Motions within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Soft Hand Motions",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Rhythm with Gentle Movements"
+              }
+            },
+            {
+              "topicNumber": 20,
+              "topic": "Cozy Beat Sway",
+              "objective": "Engage in Cozy Beat Sway activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Cozy Beat Sway within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👶 Infant (0–1)",
+              "activity": {
+                "name": "Cozy Beat Sway",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Rhythm with Gentle Movements"
+              }
+            },
+            {
+              "topicNumber": 21,
+              "topic": "Tiny Drum Beats",
+              "objective": "Engage in Tiny Drum Beats activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Tiny Drum Beats within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Tiny Drum Beats",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Drumming with Hands"
+              }
+            },
+            {
+              "topicNumber": 22,
+              "topic": "Hand Drum Fun",
+              "objective": "Engage in Hand Drum Fun activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Hand Drum Fun within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Hand Drum Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Drumming with Hands"
+              }
+            },
+            {
+              "topicNumber": 23,
+              "topic": "Rhythm Hand Game",
+              "objective": "Engage in Rhythm Hand Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Rhythm Hand Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Rhythm Hand Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Drumming with Hands"
+              }
+            },
+            {
+              "topicNumber": 24,
+              "topic": "Percussion Playtime",
+              "objective": "Engage in Percussion Playtime activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Percussion Playtime within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Percussion Playtime",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Drumming with Hands"
+              }
+            },
+            {
+              "topicNumber": 25,
+              "topic": "Beat Tap Adventure",
+              "objective": "Engage in Beat Tap Adventure activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Beat Tap Adventure within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Beat Tap Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Drumming with Hands"
+              }
+            },
+            {
+              "topicNumber": 26,
+              "topic": "Rhyme Dance Parade",
+              "objective": "Engage in Rhyme Dance Parade activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Rhyme Dance Parade within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Rhyme Dance Parade",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Dancing to Rhymes"
+              }
+            },
+            {
+              "topicNumber": 27,
+              "topic": "Hop & Clap Rhyme",
+              "objective": "Engage in Hop & Clap Rhyme activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Hop & Clap Rhyme within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Hop & Clap Rhyme",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Dancing to Rhymes"
+              }
+            },
+            {
+              "topicNumber": 28,
+              "topic": "Musical Movement Fun",
+              "objective": "Engage in Musical Movement Fun activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Musical Movement Fun within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Musical Movement Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Dancing to Rhymes"
+              }
+            },
+            {
+              "topicNumber": 29,
+              "topic": "Wiggle & Rhyme",
+              "objective": "Engage in Wiggle & Rhyme activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Wiggle & Rhyme within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Wiggle & Rhyme",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Dancing to Rhymes"
+              }
+            },
+            {
+              "topicNumber": 30,
+              "topic": "Rhythm Step Dance",
+              "objective": "Engage in Rhythm Step Dance activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Rhythm Step Dance within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Rhythm Step Dance",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Dancing to Rhymes"
+              }
+            },
+            {
+              "topicNumber": 31,
+              "topic": "Maraca Shake Fun",
+              "objective": "Engage in Maraca Shake Fun activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Maraca Shake Fun within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Maraca Shake Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Playing Simple Percussion"
+              }
+            },
+            {
+              "topicNumber": 32,
+              "topic": "Tambourine Tap",
+              "objective": "Engage in Tambourine Tap activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Tambourine Tap within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Tambourine Tap",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Playing Simple Percussion"
+              }
+            },
+            {
+              "topicNumber": 33,
+              "topic": "Mini Percussion Band",
+              "objective": "Engage in Mini Percussion Band activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Mini Percussion Band within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Mini Percussion Band",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Playing Simple Percussion"
+              }
+            },
+            {
+              "topicNumber": 34,
+              "topic": "Hand Bell Fun",
+              "objective": "Engage in Hand Bell Fun activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Hand Bell Fun within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Hand Bell Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Playing Simple Percussion"
+              }
+            },
+            {
+              "topicNumber": 35,
+              "topic": "Drum Circle Adventure",
+              "objective": "Engage in Drum Circle Adventure activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Drum Circle Adventure within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Drum Circle Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Playing Simple Percussion"
+              }
+            },
+            {
+              "topicNumber": 36,
+              "topic": "Clap Along Fun",
+              "objective": "Engage in Clap Along Fun activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Clap Along Fun within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Clap Along Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Clapping & Beat Games"
+              }
+            },
+            {
+              "topicNumber": 37,
+              "topic": "Echo Clap Game",
+              "objective": "Engage in Echo Clap Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Echo Clap Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Echo Clap Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Clapping & Beat Games"
+              }
+            },
+            {
+              "topicNumber": 38,
+              "topic": "Rhythm Repeat Play",
+              "objective": "Engage in Rhythm Repeat Play activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Rhythm Repeat Play within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Rhythm Repeat Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Clapping & Beat Games"
+              }
+            },
+            {
+              "topicNumber": 39,
+              "topic": "Beat Mimic Game",
+              "objective": "Engage in Beat Mimic Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Beat Mimic Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Beat Mimic Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Clapping & Beat Games"
+              }
+            },
+            {
+              "topicNumber": 40,
+              "topic": "Step & Clap Adventure",
+              "objective": "Engage in Step & Clap Adventure activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Step & Clap Adventure within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🚼 Toddler (1–3)",
+              "activity": {
+                "name": "Step & Clap Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Clapping & Beat Games"
+              }
+            },
+            {
+              "topicNumber": 41,
+              "topic": "Puppet Song Fun",
+              "objective": "Engage in Puppet Song Fun activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Puppet Song Fun within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Puppet Song Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Singing with Props"
+              }
+            },
+            {
+              "topicNumber": 42,
+              "topic": "Hat Song Parade",
+              "objective": "Engage in Hat Song Parade activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Hat Song Parade within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Hat Song Parade",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Singing with Props"
+              }
+            },
+            {
+              "topicNumber": 43,
+              "topic": "Balloon Sing-Along",
+              "objective": "Engage in Balloon Sing-Along activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Balloon Sing-Along within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Balloon Sing-Along",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Singing with Props"
+              }
+            },
+            {
+              "topicNumber": 44,
+              "topic": "Instrument Sing Game",
+              "objective": "Engage in Instrument Sing Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Instrument Sing Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Instrument Sing Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Singing with Props"
+              }
+            },
+            {
+              "topicNumber": 45,
+              "topic": "Musical Prop Adventure",
+              "objective": "Engage in Musical Prop Adventure activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Musical Prop Adventure within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Musical Prop Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Singing with Props"
+              }
+            },
+            {
+              "topicNumber": 46,
+              "topic": "Bell Tones Practice",
+              "objective": "Engage in Bell Tones Practice activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Bell Tones Practice within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Bell Tones Practice",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Xylophone & Bells"
+              }
+            },
+            {
+              "topicNumber": 47,
+              "topic": "Xylo Song Time",
+              "objective": "Engage in Xylo Song Time activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Xylo Song Time within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Xylo Song Time",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Xylophone & Bells"
+              }
+            },
+            {
+              "topicNumber": 48,
+              "topic": "Music Bar Fun",
+              "objective": "Engage in Music Bar Fun activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Music Bar Fun within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Music Bar Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Xylophone & Bells"
+              }
+            },
+            {
+              "topicNumber": 49,
+              "topic": "Bell Tap Game",
+              "objective": "Engage in Bell Tap Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Bell Tap Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Bell Tap Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Xylophone & Bells"
+              }
+            },
+            {
+              "topicNumber": 50,
+              "topic": "Tone Matching Adventure",
+              "objective": "Engage in Tone Matching Adventure activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Tone Matching Adventure within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Tone Matching Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Xylophone & Bells"
+              }
+            },
+            {
+              "topicNumber": 51,
+              "topic": "Musical Freeze Fun",
+              "objective": "Engage in Musical Freeze Fun activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Musical Freeze Fun within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Musical Freeze Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Freeze Dance Games"
+              }
+            },
+            {
+              "topicNumber": 52,
+              "topic": "Stop & Move Dance",
+              "objective": "Engage in Stop & Move Dance activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Stop & Move Dance within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Stop & Move Dance",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Freeze Dance Games"
+              }
+            },
+            {
+              "topicNumber": 53,
+              "topic": "Rhythm Freeze Game",
+              "objective": "Engage in Rhythm Freeze Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Rhythm Freeze Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Rhythm Freeze Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Freeze Dance Games"
+              }
+            },
+            {
+              "topicNumber": 54,
+              "topic": "Freeze Step Adventure",
+              "objective": "Engage in Freeze Step Adventure activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Freeze Step Adventure within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Freeze Step Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Freeze Dance Games"
+              }
+            },
+            {
+              "topicNumber": 55,
+              "topic": "Dance Pause Challenge",
+              "objective": "Engage in Dance Pause Challenge activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Dance Pause Challenge within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Dance Pause Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Freeze Dance Games"
+              }
+            },
+            {
+              "topicNumber": 56,
+              "topic": "Beat Matching Game",
+              "objective": "Engage in Beat Matching Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Beat Matching Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Beat Matching Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Rhythm Matching"
+              }
+            },
+            {
+              "topicNumber": 57,
+              "topic": "Echo the Rhythm",
+              "objective": "Engage in Echo the Rhythm activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Echo the Rhythm within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Echo the Rhythm",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Rhythm Matching"
+              }
+            },
+            {
+              "topicNumber": 58,
+              "topic": "Match the Clap",
+              "objective": "Engage in Match the Clap activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Match the Clap within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Match the Clap",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Rhythm Matching"
+              }
+            },
+            {
+              "topicNumber": 59,
+              "topic": "Musical Pattern Match",
+              "objective": "Engage in Musical Pattern Match activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Musical Pattern Match within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Musical Pattern Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Rhythm Matching"
+              }
+            },
+            {
+              "topicNumber": 60,
+              "topic": "Step Beat Match",
+              "objective": "Engage in Step Beat Match activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Step Beat Match within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧒 Preschooler (3–5)",
+              "activity": {
+                "name": "Step Beat Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Rhythm Matching"
+              }
+            },
+            {
+              "topicNumber": 61,
+              "topic": "Recorder Playtime",
+              "objective": "Engage in Recorder Playtime activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Recorder Playtime within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Recorder Playtime",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Introduction to Instruments"
+              }
+            },
+            {
+              "topicNumber": 62,
+              "topic": "Keyboard Fun",
+              "objective": "Engage in Keyboard Fun activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Keyboard Fun within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Keyboard Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Introduction to Instruments"
+              }
+            },
+            {
+              "topicNumber": 63,
+              "topic": "Mini Guitar Practice",
+              "objective": "Engage in Mini Guitar Practice activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Mini Guitar Practice within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Mini Guitar Practice",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Introduction to Instruments"
+              }
+            },
+            {
+              "topicNumber": 64,
+              "topic": "Percussion Basics",
+              "objective": "Engage in Percussion Basics activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Percussion Basics within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Percussion Basics",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Introduction to Instruments"
+              }
+            },
+            {
+              "topicNumber": 65,
+              "topic": "Harmonica Play",
+              "objective": "Engage in Harmonica Play activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Harmonica Play within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Harmonica Play",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Introduction to Instruments"
+              }
+            },
+            {
+              "topicNumber": 66,
+              "topic": "Rhyme Song Creation",
+              "objective": "Engage in Rhyme Song Creation activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Rhyme Song Creation within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Rhyme Song Creation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Songwriting with Rhymes"
+              }
+            },
+            {
+              "topicNumber": 67,
+              "topic": "Lyrics Fun Game",
+              "objective": "Engage in Lyrics Fun Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Lyrics Fun Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Lyrics Fun Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Songwriting with Rhymes"
+              }
+            },
+            {
+              "topicNumber": 68,
+              "topic": "Verse Match Challenge",
+              "objective": "Engage in Verse Match Challenge activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Verse Match Challenge within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Verse Match Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Songwriting with Rhymes"
+              }
+            },
+            {
+              "topicNumber": 69,
+              "topic": "Mini Song Composer",
+              "objective": "Engage in Mini Song Composer activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Mini Song Composer within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Mini Song Composer",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Songwriting with Rhymes"
+              }
+            },
+            {
+              "topicNumber": 70,
+              "topic": "Rhyme & Rhythm Game",
+              "objective": "Engage in Rhyme & Rhythm Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Rhyme & Rhythm Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Rhyme & Rhythm Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Songwriting with Rhymes"
+              }
+            },
+            {
+              "topicNumber": 71,
+              "topic": "Note Matching Game",
+              "objective": "Engage in Note Matching Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Note Matching Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Note Matching Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Playing Recorder or Keyboard"
+              }
+            },
+            {
+              "topicNumber": 72,
+              "topic": "Mini Keyboard Jam",
+              "objective": "Engage in Mini Keyboard Jam activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Mini Keyboard Jam within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Mini Keyboard Jam",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Playing Recorder or Keyboard"
+              }
+            },
+            {
+              "topicNumber": 73,
+              "topic": "Recorder Tune Fun",
+              "objective": "Engage in Recorder Tune Fun activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Recorder Tune Fun within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Recorder Tune Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Playing Recorder or Keyboard"
+              }
+            },
+            {
+              "topicNumber": 74,
+              "topic": "Keyboard Beat Challenge",
+              "objective": "Engage in Keyboard Beat Challenge activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Keyboard Beat Challenge within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Keyboard Beat Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Playing Recorder or Keyboard"
+              }
+            },
+            {
+              "topicNumber": 75,
+              "topic": "Musical Keys Adventure",
+              "objective": "Engage in Musical Keys Adventure activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Musical Keys Adventure within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Musical Keys Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Playing Recorder or Keyboard"
+              }
+            },
+            {
+              "topicNumber": 76,
+              "topic": "Note Recognition Game",
+              "objective": "Engage in Note Recognition Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Note Recognition Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Note Recognition Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Basic Music Notation"
+              }
+            },
+            {
+              "topicNumber": 77,
+              "topic": "Symbol Match Challenge",
+              "objective": "Engage in Symbol Match Challenge activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Symbol Match Challenge within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Symbol Match Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Basic Music Notation"
+              }
+            },
+            {
+              "topicNumber": 78,
+              "topic": "Mini Notation Fun",
+              "objective": "Engage in Mini Notation Fun activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Mini Notation Fun within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Mini Notation Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Basic Music Notation"
+              }
+            },
+            {
+              "topicNumber": 79,
+              "topic": "Beat & Note Game",
+              "objective": "Engage in Beat & Note Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Beat & Note Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Beat & Note Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Basic Music Notation"
+              }
+            },
+            {
+              "topicNumber": 80,
+              "topic": "Music Symbol Match",
+              "objective": "Engage in Music Symbol Match activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Music Symbol Match within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "👦 Child (6–8)",
+              "activity": {
+                "name": "Music Symbol Match",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Basic Music Notation"
+              }
+            },
+            {
+              "topicNumber": 81,
+              "topic": "Band Collaboration Challenge",
+              "objective": "Engage in Band Collaboration Challenge activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Band Collaboration Challenge within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Band Collaboration Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Group Music Projects"
+              }
+            },
+            {
+              "topicNumber": 82,
+              "topic": "Rhythm Ensemble Game",
+              "objective": "Engage in Rhythm Ensemble Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Rhythm Ensemble Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Rhythm Ensemble Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Group Music Projects"
+              }
+            },
+            {
+              "topicNumber": 83,
+              "topic": "Music Circle Jam",
+              "objective": "Engage in Music Circle Jam activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Music Circle Jam within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Music Circle Jam",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Group Music Projects"
+              }
+            },
+            {
+              "topicNumber": 84,
+              "topic": "Team Song Creation",
+              "objective": "Engage in Team Song Creation activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Team Song Creation within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Team Song Creation",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Group Music Projects"
+              }
+            },
+            {
+              "topicNumber": 85,
+              "topic": "Collaborative Melody Build",
+              "objective": "Engage in Collaborative Melody Build activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Collaborative Melody Build within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Collaborative Melody Build",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Group Music Projects"
+              }
+            },
+            {
+              "topicNumber": 86,
+              "topic": "Note Reading Adventure",
+              "objective": "Engage in Note Reading Adventure activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Note Reading Adventure within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Note Reading Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Reading Sheet Music"
+              }
+            },
+            {
+              "topicNumber": 87,
+              "topic": "Sheet Music Puzzle",
+              "objective": "Engage in Sheet Music Puzzle activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Sheet Music Puzzle within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Sheet Music Puzzle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Reading Sheet Music"
+              }
+            },
+            {
+              "topicNumber": 88,
+              "topic": "Rhythm Reading Challenge",
+              "objective": "Engage in Rhythm Reading Challenge activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Rhythm Reading Challenge within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Rhythm Reading Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Reading Sheet Music"
+              }
+            },
+            {
+              "topicNumber": 89,
+              "topic": "Musical Notation Fun",
+              "objective": "Engage in Musical Notation Fun activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Musical Notation Fun within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Musical Notation Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Reading Sheet Music"
+              }
+            },
+            {
+              "topicNumber": 90,
+              "topic": "Score Explorer Game",
+              "objective": "Engage in Score Explorer Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Score Explorer Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Score Explorer Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Reading Sheet Music"
+              }
+            },
+            {
+              "topicNumber": 91,
+              "topic": "Beat Matching Challenge",
+              "objective": "Engage in Beat Matching Challenge activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Beat Matching Challenge within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Beat Matching Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Learning Tempo & Pitch"
+              }
+            },
+            {
+              "topicNumber": 92,
+              "topic": "Pitch Recognition Game",
+              "objective": "Engage in Pitch Recognition Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Pitch Recognition Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Pitch Recognition Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Learning Tempo & Pitch"
+              }
+            },
+            {
+              "topicNumber": 93,
+              "topic": "Tempo Control Fun",
+              "objective": "Engage in Tempo Control Fun activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Tempo Control Fun within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Tempo Control Fun",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Learning Tempo & Pitch"
+              }
+            },
+            {
+              "topicNumber": 94,
+              "topic": "Rhythm Speed Game",
+              "objective": "Engage in Rhythm Speed Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Rhythm Speed Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Rhythm Speed Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Learning Tempo & Pitch"
+              }
+            },
+            {
+              "topicNumber": 95,
+              "topic": "Musical Timing Adventure",
+              "objective": "Engage in Musical Timing Adventure activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Musical Timing Adventure within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Musical Timing Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Learning Tempo & Pitch"
+              }
+            },
+            {
+              "topicNumber": 96,
+              "topic": "Patterned Rhythm Game",
+              "objective": "Engage in Patterned Rhythm Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Patterned Rhythm Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Patterned Rhythm Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Creating Musical Patterns"
+              }
+            },
+            {
+              "topicNumber": 97,
+              "topic": "Melody Sequence Challenge",
+              "objective": "Engage in Melody Sequence Challenge activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Melody Sequence Challenge within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Melody Sequence Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Creating Musical Patterns"
+              }
+            },
+            {
+              "topicNumber": 98,
+              "topic": "Beat Pattern Builder",
+              "objective": "Engage in Beat Pattern Builder activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Beat Pattern Builder within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Beat Pattern Builder",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Creating Musical Patterns"
+              }
+            },
+            {
+              "topicNumber": 99,
+              "topic": "Musical Puzzle Game",
+              "objective": "Engage in Musical Puzzle Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Musical Puzzle Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Musical Puzzle Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Creating Musical Patterns"
+              }
+            },
+            {
+              "topicNumber": 100,
+              "topic": "Compose Your Rhythm",
+              "objective": "Engage in Compose Your Rhythm activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Compose Your Rhythm within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑 Pre-Teen (9–12)",
+              "activity": {
+                "name": "Compose Your Rhythm",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Creating Musical Patterns"
+              }
+            },
+            {
+              "topicNumber": 101,
+              "topic": "Beat Maker Lab",
+              "objective": "Engage in Beat Maker Lab activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Beat Maker Lab within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Beat Maker Lab",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Digital Music Creation"
+              }
+            },
+            {
+              "topicNumber": 102,
+              "topic": "Remix Challenge",
+              "objective": "Engage in Remix Challenge activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Remix Challenge within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Remix Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Digital Music Creation"
+              }
+            },
+            {
+              "topicNumber": 103,
+              "topic": "Song Production Game",
+              "objective": "Engage in Song Production Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Song Production Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Song Production Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Digital Music Creation"
+              }
+            },
+            {
+              "topicNumber": 104,
+              "topic": "Digital DJ Jam",
+              "objective": "Engage in Digital DJ Jam activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Digital DJ Jam within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Digital DJ Jam",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Digital Music Creation"
+              }
+            },
+            {
+              "topicNumber": 105,
+              "topic": "Music Mixing Adventure",
+              "objective": "Engage in Music Mixing Adventure activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Music Mixing Adventure within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Music Mixing Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Digital Music Creation"
+              }
+            },
+            {
+              "topicNumber": 106,
+              "topic": "Chord Recognition Challenge",
+              "objective": "Engage in Chord Recognition Challenge activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Chord Recognition Challenge within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Chord Recognition Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Music Theory Practice"
+              }
+            },
+            {
+              "topicNumber": 107,
+              "topic": "Scale Identification Game",
+              "objective": "Engage in Scale Identification Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Scale Identification Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Scale Identification Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Music Theory Practice"
+              }
+            },
+            {
+              "topicNumber": 108,
+              "topic": "Key Signature Puzzle",
+              "objective": "Engage in Key Signature Puzzle activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Key Signature Puzzle within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Key Signature Puzzle",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Music Theory Practice"
+              }
+            },
+            {
+              "topicNumber": 109,
+              "topic": "Rhythm & Note Analysis",
+              "objective": "Engage in Rhythm & Note Analysis activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Rhythm & Note Analysis within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Rhythm & Note Analysis",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Music Theory Practice"
+              }
+            },
+            {
+              "topicNumber": 110,
+              "topic": "Harmony Matching Game",
+              "objective": "Engage in Harmony Matching Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Harmony Matching Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Harmony Matching Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Music Theory Practice"
+              }
+            },
+            {
+              "topicNumber": 111,
+              "topic": "Daily Practice Tracker",
+              "objective": "Engage in Daily Practice Tracker activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Daily Practice Tracker within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Daily Practice Tracker",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Instrument Practice Routines"
+              }
+            },
+            {
+              "topicNumber": 112,
+              "topic": "Technique Improvement Challenge",
+              "objective": "Engage in Technique Improvement Challenge activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Technique Improvement Challenge within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Technique Improvement Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Instrument Practice Routines"
+              }
+            },
+            {
+              "topicNumber": 113,
+              "topic": "Finger Exercise Game",
+              "objective": "Engage in Finger Exercise Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Finger Exercise Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Finger Exercise Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Instrument Practice Routines"
+              }
+            },
+            {
+              "topicNumber": 114,
+              "topic": "Melody Mastery Game",
+              "objective": "Engage in Melody Mastery Game activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Melody Mastery Game within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Melody Mastery Game",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Instrument Practice Routines"
+              }
+            },
+            {
+              "topicNumber": 115,
+              "topic": "Song Replication Challenge",
+              "objective": "Engage in Song Replication Challenge activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Song Replication Challenge within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Song Replication Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Instrument Practice Routines"
+              }
+            },
+            {
+              "topicNumber": 116,
+              "topic": "Home Recording Session",
+              "objective": "Engage in Home Recording Session activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Home Recording Session within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Home Recording Session",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Performing & Recording Songs"
+              }
+            },
+            {
+              "topicNumber": 117,
+              "topic": "Live Performance Challenge",
+              "objective": "Engage in Live Performance Challenge activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Live Performance Challenge within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Live Performance Challenge",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Performing & Recording Songs"
+              }
+            },
+            {
+              "topicNumber": 118,
+              "topic": "Cover Song Recording",
+              "objective": "Engage in Cover Song Recording activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Cover Song Recording within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Cover Song Recording",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Performing & Recording Songs"
+              }
+            },
+            {
+              "topicNumber": 119,
+              "topic": "Original Song Performance",
+              "objective": "Engage in Original Song Performance activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Original Song Performance within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Original Song Performance",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Performing & Recording Songs"
+              }
+            },
+            {
+              "topicNumber": 120,
+              "topic": "Band Recording Adventure",
+              "objective": "Engage in Band Recording Adventure activities to develop music & rhythm skills",
+              "explanation": "This activity focuses on Band Recording Adventure within the Music & Rhythm pillar.",
+              "hashtags": [
+                "#Music&Rhythm",
+                "#EssentialGrowth"
+              ],
+              "estimatedTime": "20-30 min",
+              "age": "🧑‍🎤 Teen (13–18)",
+              "activity": {
+                "name": "Band Recording Adventure",
+                "materials": [
+                  "Basic materials needed"
+                ],
+                "steps": [
+                  "Follow activity guidelines",
+                  "Engage with materials",
+                  "Complete activity"
+                ],
+                "skills": [
+                  "Music & Rhythm"
+                ],
+                "category": "Performing & Recording Songs"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totalActivities": 120,
+  "lastUpdated": "2025-10-12T01:20:25.344373"
 }

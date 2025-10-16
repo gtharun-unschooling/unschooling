@@ -42,3 +42,4 @@ jobs:
         echo "🌟 Production URL: https://unschooling-464413.web.app"
         echo "📅 Deployed at: $(date)"
         echo "🏷️ Version: ${{ github.ref_name }}"
+

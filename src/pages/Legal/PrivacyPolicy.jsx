@@ -8,23 +8,23 @@ const PrivacyPolicy = () => {
       <Navbar />
       <Container maxWidth="md" sx={{ py: 4 }}>
         <Paper elevation={3} sx={{ p: 4 }}>
-          <Typography variant="h3" component="h1" gutterBottom align="center" color="primary">
+          <Typography  component="h1" gutterBottom align="center" color="primary">
             Privacy Policy
           </Typography>
           
-          <Typography variant="body2" color="text.secondary" align="center" sx={{ mb: 4 }}>
+          <Typography  color="text.secondary" align="center" sx={{ mb: 4 }}>
             Last updated: {new Date().toLocaleDateString()}
           </Typography>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               1. Information We Collect
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               We collect information you provide directly to us, such as when you create an account, subscribe to our service, or contact us for support.
             </Typography>
             
-            <Typography variant="h6" gutterBottom>
+            <Typography  gutterBottom>
               Personal Information:
             </Typography>
             <ul>
@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
               <li>Account credentials and preferences</li>
             </ul>
 
-            <Typography variant="h6" gutterBottom>
+            <Typography  gutterBottom>
               Usage Information:
             </Typography>
             <ul>
@@ -46,10 +46,10 @@ const PrivacyPolicy = () => {
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               2. How We Use Your Information
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               We use the information we collect to:
             </Typography>
             <ul>
@@ -64,10 +64,10 @@ const PrivacyPolicy = () => {
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               3. Information Sharing and Disclosure
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               We do not sell, trade, or otherwise transfer your personal information to third parties except in the following circumstances:
             </Typography>
             <ul>
@@ -79,10 +79,10 @@ const PrivacyPolicy = () => {
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               4. Data Security
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These measures include:
             </Typography>
             <ul>
@@ -94,10 +94,10 @@ const PrivacyPolicy = () => {
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               5. Your Rights (GDPR Compliance)
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               Under the General Data Protection Regulation (GDPR), you have the following rights:
             </Typography>
             <ul>
@@ -108,16 +108,16 @@ const PrivacyPolicy = () => {
               <li><strong>Right to Data Portability:</strong> Receive your data in a structured format</li>
               <li><strong>Right to Object:</strong> Object to processing of your personal data</li>
             </ul>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               To exercise these rights, please contact us at privacy@unschooling.in
             </Typography>
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               6. Children's Privacy
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               Our service is designed for families and children. We take special care to protect children's privacy:
             </Typography>
             <ul>
@@ -129,10 +129,10 @@ const PrivacyPolicy = () => {
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               7. Cookies and Tracking Technologies
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               We use cookies and similar tracking technologies to enhance your experience:
             </Typography>
             <ul>
@@ -141,16 +141,16 @@ const PrivacyPolicy = () => {
               <li><strong>Preference Cookies:</strong> Remember your settings and preferences</li>
               <li><strong>Marketing Cookies:</strong> Used for targeted advertising (with consent)</li>
             </ul>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               You can control cookie settings through your browser preferences or our cookie consent banner.
             </Typography>
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               8. Data Retention
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               We retain your personal information for as long as necessary to provide our services and fulfill the purposes outlined in this privacy policy. Specifically:
             </Typography>
             <ul>
@@ -162,10 +162,10 @@ const PrivacyPolicy = () => {
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               9. International Data Transfers
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place to protect your data during international transfers, including:
             </Typography>
             <ul>
@@ -176,22 +176,22 @@ const PrivacyPolicy = () => {
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               10. Changes to This Privacy Policy
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page and updating the "Last updated" date. We encourage you to review this privacy policy periodically.
             </Typography>
           </Box>
 
           <Box sx={{ mb: 4 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography  gutterBottom>
               11. Contact Us
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography  paragraph>
               If you have any questions about this privacy policy or our data practices, please contact us:
             </Typography>
-            <Typography variant="body1">
+            <Typography >
               Email: privacy@unschooling.in<br />
               Data Protection Officer: dpo@unschooling.in<br />
               Address: Unschooling React, India<br />

@@ -7,7 +7,7 @@ import Slider from "react-slick";
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import SwiperCore, { Navigation } from 'swiper';
 import { Navigation } from 'swiper/modules';  // <--- Notice '/modules' here
-import SimpleBackButton from '../../components/ui/SimpleBackButton';
+import MinimalBackButton from '../../components/ui/SimpleBackButton';
 import PlayCreativityActivities from '../../components/PlayCreativityActivities';
 
 import 'swiper/css';
@@ -66,7 +66,7 @@ const HeroSection = () => {
     <section style={sectionStyle}>
       <div style={containerStyle}>
         <div style={{ alignSelf: 'flex-start', marginBottom: '2rem' }}>
-          <SimpleBackButton size="medium" />
+          <MinimalBackButton size="medium" />
         </div>
         <div>
           <h1 style={headingStyle}>Essential Growth</h1>

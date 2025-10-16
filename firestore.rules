@@ -2,9 +2,76 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Allow all access for debugging (REMOVE IN PRODUCTION!)
+    
+    // Helper function to check if user is authenticated
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    // Helper function to check if user is owner
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+    
+    // Helper function to check if user is admin
+    function isAdmin() {
+      return isAuthenticated() && 
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+    
+    // Users can only access their own data
+    match /users/{userId} {
+      allow read: if isOwner(userId) || isAdmin();
+      allow create: if isAuthenticated() && request.auth.uid == userId;
+      allow update: if isOwner(userId);
+      allow delete: if isOwner(userId) || isAdmin();
+      
+      // Children subcollection
+      match /children/{childId} {
+        allow read, write: if isOwner(userId) || isAdmin();
+        
+        // Plans subcollection within children
+        match /plans/{planId} {
+          allow read, write: if isOwner(userId) || isAdmin();
+        }
+        
+        // Activities subcollection
+        match /activities/{activityId} {
+          allow read, write: if isOwner(userId) || isAdmin();
+        }
+      }
+      
+      // User's own plans
+      match /plans/{planId} {
+        allow read, write: if isOwner(userId) || isAdmin();
+      }
+    }
+    
+    // Admin collection (only admins can access)
+    match /admin/{document=**} {
+      allow read, write: if isAdmin();
+    }
+    
+    // Analytics collection (admins only)
+    match /analytics/{document=**} {
+      allow read, write: if isAdmin();
+    }
+    
+    // System logs (admins only)
+    match /logs/{document=**} {
+      allow read: if isAdmin();
+      allow write: if false; // Only backend can write logs
+    }
+    
+    // Public content (read-only for all, write for admin)
+    match /public/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+    
+    // Deny all other access
     match /{document=**} {
-      allow read, write: if true;
+      allow read, write: if false;
     }
   }
-} 
+}

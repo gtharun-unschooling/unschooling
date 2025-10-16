@@ -5,7 +5,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import { colors, spacing, typography } from "../../styles/designTokens";
 import "./ProfileForm.css";
-import MinimalBackButton from "../ui/MinimalBackButton";
+import MinimalBackButton from "../ui/UniversalBackButton";
 import apiService from "../../services/api";
 import { useDebug } from "../../contexts/DebugContext";
 
@@ -632,7 +632,15 @@ export default function ProfileForm({ onSubmit }) {
           // Send to backend
           addDebugInfo("📡 CALLING API SERVICE...");
           console.log('📡 CALLING API SERVICE...');
-          const res = await apiService.generatePlan(originalProfile); // Pass originalProfile
+          const res = await apiService.generatePlan({
+            child_name: childName,
+            child_age: parseInt(childAge),
+            interests: interests,
+            dislikes: dislikes,
+            preferred_learning_style: learningStyle,
+            goals: selectedGoals,
+            plan_type: planType
+          });
           addDebugInfo(`📥 API RESPONSE RECEIVED: ${res.success ? 'SUCCESS' : 'FAILED'}`);
           console.log('📥 API RESPONSE RECEIVED:', res);
           
@@ -1109,7 +1117,7 @@ export default function ProfileForm({ onSubmit }) {
     padding: `${spacing.xl} 0`,
     paddingTop: '5rem', // Add top padding to account for back button
     fontFamily: typography.fontFamily.primary,
-    position: 'relative', // Needed for MinimalBackButton positioning
+    position: 'relative', // Needed for UniversalBackButton positioning
   };
 
   const cardStyle = {

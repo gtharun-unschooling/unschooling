@@ -1,0 +1,216 @@
+{
+  "learning_plan_types": [
+    {
+      "id": "hybrid_monthly",
+      "name": "Hybrid Monthly Plan",
+      "tagline": "Deep focus and mastery on a specific theme each week",
+      "focus_type": "depth",
+      "description": "Each week focuses on one main theme, culminating in a project related to the monthly theme",
+      "methodology": {
+        "weekly_focus": "Single theme per week",
+        "weeks_1_3": "Learning progresses from foundation → exploration → application within the weekly theme",
+        "week_4": "Project week where child applies everything learned in Weeks 1-3 into a detailed, theme-specific project",
+        "personalization": "Learning adapts weekly based on child's profile, engagement, and past performance. Topics and difficulty can be adjusted automatically"
+      },
+      "weekly_flow": [
+        {
+          "week": 1,
+          "theme_example": "Planet Protectors 🌍",
+          "focus": "Environmental Awareness",
+          "example_topics": ["Recycling", "Rainforest", "Endangered Animals"]
+        },
+        {
+          "week": 2,
+          "theme_example": "Story Builders ✍️",
+          "focus": "Creativity & Expression",
+          "example_topics": ["Storytelling", "Comic Making", "Script Writing"]
+        },
+        {
+          "week": 3,
+          "theme_example": "Logic Legends 🧠",
+          "focus": "Thinking & Problem-Solving",
+          "example_topics": ["Puzzles", "Brain Teasers", "Coding Basics"]
+        },
+        {
+          "week": 4,
+          "theme_example": "Kindness Mission 💬",
+          "focus": "Social-Emotional Skills Project",
+          "example_topics": ["Empathy", "Teamwork", "Community Engagement"]
+        }
+      ],
+      "strengths": [
+        "Strong mastery and coherence within each theme",
+        "Clear goals for weekly learning and project outcomes",
+        "Parents can see measurable progress in a defined area"
+      ],
+      "best_for": [
+        "Children who benefit from structured depth learning",
+        "Topics that require cumulative understanding (STEM, complex projects)"
+      ]
+    },
+    {
+      "id": "holistic_fusion",
+      "name": "Holistic Fusion Plan",
+      "tagline": "Balanced exposure to multiple domains every week",
+      "focus_type": "breadth",
+      "description": "Balanced exposure to multiple domains every week to ensure all-round growth",
+      "methodology": {
+        "weekly_focus": "Multiple skill domains each week",
+        "weeks_1_3": "Randomized or dynamic topics across domains. Week 2 can have slightly more concentration in a specific area, but not exclusively",
+        "week_4": "Project week where child synthesizes learning from previous weeks, combining key skills and knowledge, optionally adding small new concepts",
+        "personalization": "Adapts dynamically based on child's interests, engagement, and performance while maintaining a balanced weekly routine"
+      },
+      "daily_flow_example": {
+        "week": 1,
+        "days": [
+          {
+            "day": 1,
+            "domain": "Cognitive",
+            "example_topics": ["Logic Puzzles", "Pattern Recognition"]
+          },
+          {
+            "day": 2,
+            "domain": "Creativity",
+            "example_topics": ["Painting", "Storytelling", "Music"]
+          },
+          {
+            "day": 3,
+            "domain": "Science",
+            "example_topics": ["Nature Walk", "Simple Experiments"]
+          },
+          {
+            "day": 4,
+            "domain": "Social-Emotional",
+            "example_topics": ["Sharing", "Team Games", "Empathy Activities"]
+          },
+          {
+            "day": 5,
+            "domain": "Real-World Skills",
+            "example_topics": ["Money Basics", "Gardening", "Cooking"]
+          },
+          {
+            "day": 6,
+            "domain": "Mini Project / Reflection",
+            "example_topics": ["Build a Mini Garden", "DIY Craft"]
+          },
+          {
+            "day": 7,
+            "domain": "Free Choice / Wellness",
+            "example_topics": ["Child-chosen activity", "Mindfulness", "Exercise"]
+          }
+        ]
+      },
+      "strengths": [
+        "Broad exposure ensures all-round skill development",
+        "Dynamic and flexible learning keeps children engaged",
+        "Encourages multi-domain growth and synthesis in project week"
+      ],
+      "best_for": [
+        "Children who benefit from variety and balanced skill growth",
+        "Parents who prefer routine and consistent learning across multiple domains"
+      ]
+    }
+  ],
+  "weekly_structure": {
+    "description": "4-week pedagogical framework used by both plan types",
+    "framework": "Based on Bloom's Taxonomy and 5E Model",
+    "weeks": [
+      {
+        "week_number": 1,
+        "week_key": "week_1",
+        "theme": "Foundation & Introduction",
+        "type": "MOTIVATION WEEK",
+        "motivation_focus": "Discovery and Wonder",
+        "goal": "Build excitement and establish foundational knowledge",
+        "description": "Introduce concepts in an exciting way that sparks curiosity and builds confidence",
+        "activity_types": {
+          "main": "🎯 Discovery Mission - Explore through fun, hands-on activities",
+          "secondary": "🌟 Wonder Wall - Create visual board of questions",
+          "motivation": "🚀 You're starting an amazing journey!"
+        },
+        "success_metric": "Child shows curiosity and asks questions"
+      },
+      {
+        "week_number": 2,
+        "week_key": "week_2",
+        "theme": "Deep Dive & Exploration",
+        "type": "EXPLORATION WEEK",
+        "motivation_focus": "Exploration and Mastery",
+        "goal": "Explore topics in depth with hands-on activities",
+        "description": "Dive deeper into each topic with more complex activities and real-world applications",
+        "activity_types": {
+          "main": "🔬 Deep Dive - Investigate through experiments and research",
+          "secondary": "📚 Research Challenge - Find 3 interesting facts",
+          "motivation": "🎯 You're becoming an expert!"
+        },
+        "success_metric": "Child demonstrates deeper understanding"
+      },
+      {
+        "week_number": 3,
+        "week_key": "week_3",
+        "theme": "Application & Practice",
+        "type": "MOTIVATION WEEK",
+        "motivation_focus": "Achievement and Progress",
+        "goal": "Apply learned concepts to real-world scenarios",
+        "description": "Practice and apply what you've learned through challenging but achievable activities",
+        "activity_types": {
+          "main": "💡 Real-World Application - Use to solve everyday problems",
+          "secondary": "🎯 Practice Challenge - Create 3 different scenarios",
+          "motivation": "🏆 You're mastering skills!"
+        },
+        "success_metric": "Child can explain concepts to others"
+      },
+      {
+        "week_number": 4,
+        "week_key": "week_4",
+        "theme": "Project & Mastery",
+        "type": "PROJECT WEEK",
+        "motivation_focus": "Creation and Pride",
+        "goal": "Create a comprehensive project showcasing all learned skills",
+        "description": "Create something amazing that combines everything you've learned",
+        "activity_types": {
+          "main": "🎨 Project Creation - Build components for masterpiece",
+          "secondary": "📝 Project Documentation - Record your work",
+          "motivation": "🌟 You're creating something amazing!"
+        },
+        "success_metric": "Child contributes to final project",
+        "project_metadata": {
+          "project_name": "{Child's Name}'s Masterpiece",
+          "project_goal": "Demonstrate mastery of all topics",
+          "project_outcome": "A tangible creation that showcases learning",
+          "project_materials": "Various materials based on topics covered",
+          "project_duration": "Full week with daily milestones",
+          "project_presentation": "Family showcase at the end of the week"
+        }
+      }
+    ]
+  },
+  "comparison": {
+    "hybrid_monthly": {
+      "weekly_focus": "Single theme/domain per week",
+      "project_week": "Fully focused on monthly theme",
+      "learning_style": "Depth, mastery",
+      "personalization": "Adaptive weekly based on profile & engagement",
+      "parent_role": "Monitor theme-specific mastery",
+      "best_for": "Focused mastery, measurable outcomes"
+    },
+    "holistic_fusion": {
+      "weekly_focus": "Multiple domains per week",
+      "project_week": "Combines previous weeks + minor new concepts",
+      "learning_style": "Breadth, variety",
+      "personalization": "Adaptive weekly based on profile & engagement",
+      "parent_role": "Monitor balanced growth",
+      "best_for": "All-round development, dynamic exposure"
+    }
+  },
+  "key_points": [
+    "Both plans are personalized, tracked, and progressive - core selling point",
+    "Hybrid = depth and clarity; Holistic = breadth and variety",
+    "Week 4 project in both plans ensures application and synthesis",
+    "Parents choose based on child's learning style: 'Depth-focused' vs 'Variety-focused'"
+  ]
+}
+
+
+
+

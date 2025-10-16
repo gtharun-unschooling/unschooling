@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
-import SimpleBackButton from '../../components/ui/SimpleBackButton';
+import MinimalBackButton from '../../components/ui/SimpleBackButton';
 import PaymentModal from '../../components/payment/PaymentModal';
 
 
@@ -49,7 +49,7 @@ const HeroSection = () => {
       <section style={sectionStyle}>
         <div style={{ ...containerStyle, ...animatedStyle }}>
           <div style={{ textAlign: 'left', marginBottom: '2rem' }}>
-            <SimpleBackButton size="medium" />
+            <MinimalBackButton size="medium" />
           </div>
           <h1 style={headlineStyle}>
             Smart learning plans for every age — made simple, playful, and powerful.
