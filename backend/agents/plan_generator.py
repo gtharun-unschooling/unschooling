@@ -58,11 +58,18 @@ class RealPlanGenerator:
                 else:
                     # Use additional topics or create meaningful activities
                     if len(matched_topics) > 7:
-                        additional_topic = matched_topics[(week_idx * 7) + day_idx] if (week_idx * 7) + day_idx < len(matched_topics) else matched_topics[day_idx % len(matched_topics)]
+                        topic_idx = (week_idx * 7) + day_idx
+                        if topic_idx < len(matched_topics):
+                            additional_topic = matched_topics[topic_idx]
+                        else:
+                            additional_topic = matched_topics[day_idx % max(1, len(matched_topics))]
                         weekly_plan[week_key][day_name] = self._create_day_activity(additional_topic, profile)
                     else:
                         # Use a topic from the current week for practice
-                        practice_topic = week_topics[day_idx % len(week_topics)] if week_topics else matched_topics[0]
+                        if week_topics:
+                            practice_topic = week_topics[day_idx % len(week_topics)]
+                        else:
+                            practice_topic = matched_topics[0]
                         weekly_plan[week_key][day_name] = self._create_practice_activity(practice_topic, profile)
         
         return weekly_plan
