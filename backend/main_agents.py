@@ -1908,13 +1908,16 @@ async def generate_plan(request: Request):
         return JSONResponse(content=final_result)
         
     except Exception as e:
+        import traceback
         logger.error(f"❌ Error in generate_plan: {e}")
+        logger.error(f"❌ Full traceback:\n{traceback.format_exc()}")
         return JSONResponse(
             status_code=500,
             content={
                 "success": False,
                 "error": str(e),
-                "message": "Failed to generate plan"
+                "message": "Failed to generate plan",
+                "traceback": traceback.format_exc() if app.debug else None
             }
         )
 
