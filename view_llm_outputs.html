@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LLM Outputs Viewer</title>
+<style>
+* {box-sizing: border-box; margin: 0; padding: 0}
+body {font-family: -apple-system, sans-serif; background: linear-gradient(135deg, #667eea, #764ba2); padding: 20px}
+.container {max-width: 1400px; margin: 0 auto; background: #fff; border-radius: 20px; padding: 40px}
+h1 {color: #667eea; margin-bottom: 20px; font-size: 2.5em}
+.section {background: #f8f9fa; border-radius: 10px; padding: 25px; margin: 20px 0}
+h2 {color: #667eea; margin-bottom: 15px; border-bottom: 3px solid #667eea; padding-bottom: 10px}
+h3 {color: #764ba2; margin: 20px 0 10px}
+.highlight {background: #fff3cd; padding: 15px; border-left: 4px solid #ffc107; margin: 10px 0; border-radius: 5px}
+.success {background: #d4edda; padding: 15px; border-left: 4px solid #28a745; margin: 10px 0; border-radius: 5px}
+pre {background: #2d2d2d; color: #f8f8f2; padding: 20px; border-radius: 8px; overflow: auto; max-height: 400px; font-size: 13px; line-height: 1.6}
+.metric {display: inline-block; background: #e3f2fd; color: #1976d2; padding: 8px 16px; border-radius: 20px; margin: 5px; font-weight: 600}
+.ai-badge {background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 5px 12px; border-radius: 15px; font-size: 0.85em; font-weight: 600; margin-left: 10px}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🤖 LLM Outputs - Latest Plan</h1>
+
+<div class="success">
+<h3>✅ Plan Generated Successfully with AI Intelligence</h3>
+<p id="theme"></p>
+</div>
+
+<div class="section">
+<h2>📝 1. Analysis Agent - AI Theme Selection <span class="ai-badge">AI POWERED</span></h2>
+<h3>AI-Selected Theme:</h3>
+<div class="highlight" id="selectedTheme"></div>
+<h3>AI Reasoning (thought_process):</h3>
+<div class="highlight" id="thoughtProcess"></div>
+<h3>AI Learning Narrative:</h3>
+<div class="highlight" id="learningNarrative"></div>
+</div>
+
+<div class="section">
+<h2>🎯 2. Match Agent - AI Topic Selection <span class="ai-badge">AI POWERED</span></h2>
+<h3>Selection Criteria (AI-Generated):</h3>
+<div class="highlight" id="topicCriteria"></div>
+<h3>Match Analysis:</h3>
+<pre id="matchAnalysis"></pre>
+</div>
+
+<div class="section">
+<h2>📅 3. Schedule Agent - AI Week Organization <span class="ai-badge">AI POWERED</span></h2>
+<h3>Weekly Progression (AI-Written):</h3>
+<div id="weeklyProgression"></div>
+</div>
+
+<div class="section">
+<h2>✅ 4. Reviewer Agent - AI Quality Assessment <span class="ai-badge">AI POWERED</span></h2>
+<div id="reviewerOutput"></div>
+</div>
+
+<div class="section">
+<h2>📊 Complete Plan JSON</h2>
+<pre id="fullJson"></pre>
+</div>
+
+</div>
+
+<script>
+// Load the latest plan JSON
+fetch('file:///Users/tharunguduguntla/Documents/unschooling/latest_llm_plan.json')
+  .then(r => r.json())
+  .then(data => {
+    const plan = data.data;
+    const structure = plan.monthly_plan_structure || {};
+    const agenda = structure.monthly_agenda || {};
+    const theme = structure.selected_themes?.[0] || {};
+    const matchAnalysis = plan.match_analysis || {};
+    const weeklyProg = structure.weekly_progression || {};
+    const review = plan.review || {};
+    
+    // Theme
+    document.getElementById('theme').innerHTML = `
+      <strong>Theme:</strong> ${theme.themeName || 'N/A'}<br>
+      <strong>Description:</strong> ${theme.shortDescription || 'N/A'}<br>
+      <strong>Focus Area:</strong> ${theme.coreFocusArea || 'N/A'}
+    `;
+    
+    // Selected Theme
+    document.getElementById('selectedTheme').textContent = theme.themeName || 'N/A';
+    
+    // Thought Process
+    document.getElementById('thoughtProcess').textContent = agenda.thought_process || 'No AI reasoning found';
+    
+    // Learning Narrative
+    document.getElementById('learningNarrative').textContent = agenda.learning_narrative || 'No AI narrative found';
+    
+    // Topic Criteria
+    const criteria = structure.guidance_for_match_agent?.topic_criteria || 'N/A';
+    document.getElementById('topicCriteria').textContent = criteria;
+    
+    // Match Analysis
+    document.getElementById('matchAnalysis').textContent = JSON.stringify(matchAnalysis, null, 2);
+    
+    // Weekly Progression
+    let weekHtml = '';
+    for (let [week, desc] of Object.entries(weeklyProg)) {
+      weekHtml += `
+        <div class="highlight" style="margin: 15px 0">
+          <strong>${week.replace('_', ' ').toUpperCase()}:</strong><br>
+          ${desc}
+        </div>
+      `;
+    }
+    document.getElementById('weeklyProgression').innerHTML = weekHtml || 'No weekly progression data';
+    
+    // Reviewer Output
+    const reviewHtml = review.review_summary 
+      ? `<div class="highlight">${review.review_summary}</div>
+         <h3>Quality Scores:</h3>
+         <pre>${JSON.stringify(review, null, 2)}</pre>`
+      : 'No reviewer data';
+    document.getElementById('reviewerOutput').innerHTML = reviewHtml;
+    
+    // Full JSON
+    document.getElementById('fullJson').textContent = JSON.stringify(plan, null, 2);
+    
+  })
+  .catch(err => {
+    document.body.innerHTML = `
+      <div class="container">
+        <h1>❌ Error Loading Plan</h1>
+        <p style="margin-top: 20px; color: #f44336">${err.message}</p>
+        <p style="margin-top: 20px">Make sure latest_llm_plan.json exists in the project root.</p>
+      </div>
+    `;
+  });
+</script>
+</body>
+</html>
+
