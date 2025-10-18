@@ -1,0 +1,272 @@
+═══════════════════════════════════════════════════════════════════
+RAW LLM INPUTS & OUTPUTS - ALL AGENTS - UNMODIFIED
+═══════════════════════════════════════════════════════════════════
+
+
+
+
+================================================================================
+ PROFILE AGENT
+================================================================================
+
+LLM Used: False
+Tokens Used: 0
+
+--------------------------------------------------------------------------------
+📥 RAW INPUT (Exact Prompt Sent to LLM):
+--------------------------------------------------------------------------------
+(No LLM prompt - agent does not use LLM or prompt not stored)
+
+--------------------------------------------------------------------------------
+📤 RAW OUTPUT (Exact Response from LLM):
+--------------------------------------------------------------------------------
+(No LLM response - agent does not use LLM or response not stored)
+
+
+
+================================================================================
+ ANALYSIS AGENT
+================================================================================
+
+LLM Used: True
+Tokens Used: 1016
+
+--------------------------------------------------------------------------------
+📥 RAW INPUT (Exact Prompt Sent to LLM):
+--------------------------------------------------------------------------------
+You are an educational strategist. Create a monthly learning plan.
+
+CHILD PROFILE:
+- Name: Child
+- Age: 7 years old
+- Interests: General
+- Dislikes: None
+- Learning Style: visual
+- Goals: Holistic development
+- Plan Type: hybrid
+- Month Type: introduction
+- Profile Insights: Child is a 7-year-old with focused interests, preferring observation-based learning approaches.
+
+AVAILABLE THEMES (20):
+[
+  {
+    "id": 1,
+    "name": "Healthy Habits",
+    "description": "Deep dive into nutrition, exercise, and personal hygiene",
+    "focus": "Wellness & Life Skills"
+  },
+  {
+    "id": 2,
+    "name": "Animal Kingdom",
+    "description": "Focused study of animals, habitats, and behavior",
+    "focus": "Environmental & Cognitive"
+  },
+  {
+    "id": 3,
+    "name": "Math Wizards",
+    "description": "Concentrated activities for arithmetic, patterns, and logic",
+    "focus": "Cognitive & STEM"
+  },
+  {
+    "id": 4,
+    "name": "Story Builders",
+    "description": "Writing, illustrating, and creating stories",
+    "focus": "Language & Creativity"
+  },
+  {
+    "id": 5,
+    "name": "Tiny Scientists",
+    "description": "Hands-on experiments exploring basic science",
+    "focus": "STEM & Cognitive"
+  },
+  {
+    "id": 6,
+    "name": "Music & Movement",
+    "description": "Focused rhythm, singing, and dance activities",
+    "focus": "Creative & Physical"
+  },
+  {
+    "id": 7,
+    "name": "Young Gardeners",
+    "description": "Plants, soil, and observation experiments",
+    "focus": "Environmental & Responsibility"
+  },
+  {
+    "id": 8,
+    "name": "Tiny Engineers",
+    "description": "Building, problem-solving, and STEM challenges",
+    "focus": "STEM & Creativity"
+  },
+  {
+    "id": 9,
+    "name": "My Emotions",
+    "description": "Explore, recognize, and express feelings",
+    "focus": "Emotional & Social"
+  },
+  {
+    "id": 10,
+    "name": "Creative Artists",
+    "description": "Drawing, painting, and craft projects",
+    "focus": "Creativity & Fine Motor"
+  },
+  {
+    "id": 11,
+    "name": "Adventure Walks",
+    "description": "Focused exploration, observation, and physical activity",
+    "focus": "Physical & Environmental"
+  },
+  {
+    "id": 12,
+    "name": "Little Coders",
+    "description": "Logic, sequencing, and early coding concepts",
+    "focus": "STEM & Cognitive"
+  },
+  {
+    "id": 13,
+    "name": "Social Stars",
+    "description": "Cooperation, teamwork, and empathy challenges",
+    "focus": "Social & Emotional"
+  },
+  {
+    "id": 14,
+    "name": "Music Makers",
+    "description": "Explore instruments, melody, and rhythm",
+    "focus": "Creativity & Sensory"
+  },
+  {
+    "id": 15,
+    "name": "Mini Mathematicians",
+    "description": "Fun number games, patterns, and puzzles",
+    "focus": "Cognitive & STEM"
+  },
+  {
+    "id": 16,
+    "name": "Tiny Detectives",
+    "description": "Observation, exploration, and problem-solving",
+    "focus": "Cognitive & Curiosity"
+  },
+  {
+    "id": 17,
+    "name": "Life Skills Lab",
+    "description": "Personal hygiene, time management, and self-care",
+    "focus": "Life Skills & Wellness"
+  },
+  {
+    "id": 18,
+    "name": "Animal Care",
+    "description": "Learn to care for pets, farm, and wild animals",
+    "focus": "Environmental & Emotional"
+  },
+  {
+    "id": 19,
+    "name": "Story Explorers",
+    "description": "Focused listening, comprehension, and narrative creation",
+    "focus": "Language & Cognitive"
+  },
+  {
+    "id": 20,
+    "name": "Tiny Builders",
+    "description": "Construction, design, and STEM projects",
+    "focus": "STEM & Creativity"
+  }
+]
+
+TASK: Select 1 theme(s) and create monthly strategy.
+
+For HYBRID plan: Select 1 theme for deep mastery
+For HOLISTIC plan: Select 2-3 themes for balanced development
+
+Return JSON:
+{
+  "selected_theme_ids": [1 or 2-3 IDs],
+  "monthly_agenda": {
+    "primary_goal": "main goal for this month",
+    "thought_process": "why these themes for this child",
+    "learning_narrative": "story of this month's journey"
+  },
+  "weekly_progression": {
+    "week_1": "Foundation & Discovery - ...",
+    "week_2": "Exploration & Research - ...",
+    "week_3": "Application & Practice - ...",
+    "week_4": "Project & Mastery - ..."
+  },
+  "guidance_for_match_agent": {
+    "topic_criteria": "what topics to look for",
+    "skill_focus": ["skill1", "skill2", "skill3"],
+    "avoid_topics": ["based on dislikes"]
+  },
+  "guidance_for_schedule_agent": {
+    "structure_type": "hybrid_deep_dive or holistic_varied",
+    "daily_balance": "how to balance activities"
+  }
+}
+
+Return ONLY valid JSON, no markdown.
+
+--------------------------------------------------------------------------------
+📤 RAW OUTPUT (Exact Response from LLM):
+--------------------------------------------------------------------------------
+{'selected_theme_ids': [2], 'monthly_agenda': {'primary_goal': 'To ignite curiosity and foster foundational knowledge about the diverse animal kingdom through observation and visual exploration, while developing key cognitive and environmental awareness skills.', 'thought_process': "The 'Animal Kingdom' theme (ID 2) was chosen for its excellent alignment with a visual learning style, offering rich opportunities for observation, imagery, and hands-on engagement. It's a broad, universally appealing topic suitable for a 7-year-old with general interests and an introductory month. The theme naturally supports holistic development by integrating cognitive learning, environmental awareness, language skills, and creative expression. As a 'hybrid' plan, this theme allows for a deep dive into a captivating subject, ensuring thorough engagement and mastery.", 'learning_narrative': 'This month, Child will embark on an exciting safari right from home and beyond, exploring the incredible world of animals! From the smallest insects to the largest mammals, Child will become a junior zoologist, discovering where animals live, what they eat, and how they behave. Through captivating visuals, engaging stories, and hands-on activities, Child will develop a deeper appreciation for nature and the amazing creatures that share our planet, all while sharpening observation skills and sparking endless curiosity.'}, 'weekly_progression': {'week_1': 'Foundation & Discovery - Welcome to the Wild! Introduction to the animal kingdom; focus on basic classification (mammals, birds, fish, reptiles, amphibians, insects). Visual aids: animal flashcards, picture books, documentaries. Activities: animal sound matching, drawing favorite animals, creating a simple animal habitat diorama.', 'week_2': "Exploration & Research - Habitats & Adaptations! Dive into different biomes (forest, ocean, desert, jungle) and the animals that live there. Explore how animals adapt to their environments. Visual aids: habitat posters, virtual tours of zoos/aquariums, nature documentaries. Activities: matching animals to habitats, discussing animal camouflage, creating a 'food chain' visual.", 'week_3': 'Application & Practice - Animal Behavior & Life Cycles! Focus on animal behaviors (migration, hibernation, hunting) and simple life cycles (e.g., butterfly, frog). Visual aids: time-lapse videos of life cycles, illustrations of animal behaviors. Activities: observing local insects/birds, sequencing life cycle cards, role-playing animal movements.', 'week_4': "Project & Mastery - My Animal World! Culminating project: create an 'Animal Encyclopedia' (visual book with drawings/facts), design a dream zoo/sanctuary, or present a favorite animal report. Visual aids: art supplies, project templates. Activities: final sharing session, reviewing learned facts, creating a 'conservation pledge.'"}, 'guidance_for_match_agent': {'topic_criteria': 'Educational content focused on animal species, habitats, ecosystems, animal behavior, adaptations, and basic conservation. Look for resources with strong visual components (illustrations, photos, videos, interactive diagrams).', 'skill_focus': ['Observation', 'Classification', 'Environmental Awareness', 'Critical Thinking', 'Creative Expression', 'Vocabulary Development'], 'avoid_topics': []}, 'guidance_for_schedule_agent': {'structure_type': 'hybrid_deep_dive', 'daily_balance': 'Integrate a mix of screen-based visual learning (documentaries, educational apps) with hands-on activities (art, building habitats, nature walks) and reading/storytelling. Ensure breaks and opportunities for physical movement. Aim for focused learning blocks (e.g., 30-45 minutes) interspersed with creative play.'}, 'tokens_used': 1016, 'llm_prompt': 'You are an educational strategist. Create a monthly learning plan.\n\nCHILD PROFILE:\n- Name: Child\n- Age: 7 years old\n- Interests: General\n- Dislikes: None\n- Learning Style: visual\n- Goals: Holistic development\n- Plan Type: hybrid\n- Month Type: introduction\n- Profile Insights: Child is a 7-year-old with focused interests, preferring observation-based learning approaches.\n\nAVAILABLE THEMES (20):\n[\n  {\n    "id": 1,\n    "name": "Healthy Habits",\n    "description": "Deep dive into nutrition, exercise, and personal hygiene",\n    "focus": "Wellness & Life Skills"\n  },\n  {\n    "id": 2,\n    "name": "Animal Kingdom",\n    "description": "Focused study of animals, habitats, and behavior",\n    "focus": "Environmental & Cognitive"\n  },\n  {\n    "id": 3,\n    "name": "Math Wizards",\n    "description": "Concentrated activities for arithmetic, patterns, and logic",\n    "focus": "Cognitive & STEM"\n  },\n  {\n    "id": 4,\n    "name": "Story Builders",\n    "description": "Writing, illustrating, and creating stories",\n    "focus": "Language & Creativity"\n  },\n  {\n    "id": 5,\n    "name": "Tiny Scientists",\n    "description": "Hands-on experiments exploring basic science",\n    "focus": "STEM & Cognitive"\n  },\n  {\n    "id": 6,\n    "name": "Music & Movement",\n    "description": "Focused rhythm, singing, and dance activities",\n    "focus": "Creative & Physical"\n  },\n  {\n    "id": 7,\n    "name": "Young Gardeners",\n    "description": "Plants, soil, and observation experiments",\n    "focus": "Environmental & Responsibility"\n  },\n  {\n    "id": 8,\n    "name": "Tiny Engineers",\n    "description": "Building, problem-solving, and STEM challenges",\n    "focus": "STEM & Creativity"\n  },\n  {\n    "id": 9,\n    "name": "My Emotions",\n    "description": "Explore, recognize, and express feelings",\n    "focus": "Emotional & Social"\n  },\n  {\n    "id": 10,\n    "name": "Creative Artists",\n    "description": "Drawing, painting, and craft projects",\n    "focus": "Creativity & Fine Motor"\n  },\n  {\n    "id": 11,\n    "name": "Adventure Walks",\n    "description": "Focused exploration, observation, and physical activity",\n    "focus": "Physical & Environmental"\n  },\n  {\n    "id": 12,\n    "name": "Little Coders",\n    "description": "Logic, sequencing, and early coding concepts",\n    "focus": "STEM & Cognitive"\n  },\n  {\n    "id": 13,\n    "name": "Social Stars",\n    "description": "Cooperation, teamwork, and empathy challenges",\n    "focus": "Social & Emotional"\n  },\n  {\n    "id": 14,\n    "name": "Music Makers",\n    "description": "Explore instruments, melody, and rhythm",\n    "focus": "Creativity & Sensory"\n  },\n  {\n    "id": 15,\n    "name": "Mini Mathematicians",\n    "description": "Fun number games, patterns, and puzzles",\n    "focus": "Cognitive & STEM"\n  },\n  {\n    "id": 16,\n    "name": "Tiny Detectives",\n    "description": "Observation, exploration, and problem-solving",\n    "focus": "Cognitive & Curiosity"\n  },\n  {\n    "id": 17,\n    "name": "Life Skills Lab",\n    "description": "Personal hygiene, time management, and self-care",\n    "focus": "Life Skills & Wellness"\n  },\n  {\n    "id": 18,\n    "name": "Animal Care",\n    "description": "Learn to care for pets, farm, and wild animals",\n    "focus": "Environmental & Emotional"\n  },\n  {\n    "id": 19,\n    "name": "Story Explorers",\n    "description": "Focused listening, comprehension, and narrative creation",\n    "focus": "Language & Cognitive"\n  },\n  {\n    "id": 20,\n    "name": "Tiny Builders",\n    "description": "Construction, design, and STEM projects",\n    "focus": "STEM & Creativity"\n  }\n]\n\nTASK: Select 1 theme(s) and create monthly strategy.\n\nFor HYBRID plan: Select 1 theme for deep mastery\nFor HOLISTIC plan: Select 2-3 themes for balanced development\n\nReturn JSON:\n{\n  "selected_theme_ids": [1 or 2-3 IDs],\n  "monthly_agenda": {\n    "primary_goal": "main goal for this month",\n    "thought_process": "why these themes for this child",\n    "learning_narrative": "story of this month\'s journey"\n  },\n  "weekly_progression": {\n    "week_1": "Foundation & Discovery - ...",\n    "week_2": "Exploration & Research - ...",\n    "week_3": "Application & Practice - ...",\n    "week_4": "Project & Mastery - ..."\n  },\n  "guidance_for_match_agent": {\n    "topic_criteria": "what topics to look for",\n    "skill_focus": ["skill1", "skill2", "skill3"],\n    "avoid_topics": ["based on dislikes"]\n  },\n  "guidance_for_schedule_agent": {\n    "structure_type": "hybrid_deep_dive or holistic_varied",\n    "daily_balance": "how to balance activities"\n  }\n}\n\nReturn ONLY valid JSON, no markdown.'}
+
+
+
+================================================================================
+ MATCH AGENT
+================================================================================
+
+LLM Used: False
+Tokens Used: 0
+
+--------------------------------------------------------------------------------
+📥 RAW INPUT (Exact Prompt Sent to LLM):
+--------------------------------------------------------------------------------
+(No LLM prompt - agent does not use LLM or prompt not stored)
+
+--------------------------------------------------------------------------------
+📤 RAW OUTPUT (Exact Response from LLM):
+--------------------------------------------------------------------------------
+(No LLM response - agent does not use LLM or response not stored)
+
+
+
+================================================================================
+ SCHEDULE AGENT
+================================================================================
+
+LLM Used: True
+Tokens Used: calculated per LLM call
+
+--------------------------------------------------------------------------------
+📥 RAW INPUT (Exact Prompt Sent to LLM):
+--------------------------------------------------------------------------------
+multiple prompts for different aspects
+
+--------------------------------------------------------------------------------
+📤 RAW OUTPUT (Exact Response from LLM):
+--------------------------------------------------------------------------------
+multiple responses stored in each component
+
+
+
+================================================================================
+ REVIEWER AGENT
+================================================================================
+
+LLM Used: True
+Tokens Used: calculated in LLM call
+
+--------------------------------------------------------------------------------
+📥 RAW INPUT (Exact Prompt Sent to LLM):
+--------------------------------------------------------------------------------
+comprehensive review prompt
+
+--------------------------------------------------------------------------------
+📤 RAW OUTPUT (Exact Response from LLM):
+--------------------------------------------------------------------------------
+stored in review_insights
+
+
+
+================================================================================
+ END OF RAW DATA
+================================================================================

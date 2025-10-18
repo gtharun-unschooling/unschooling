@@ -645,6 +645,9 @@ class MatchAgent:
         start_time = time.time()
         logger.info("🎯 Match Agent: Selecting 50 candidate topics (intelligent mix)")
         
+        # Initialize LLM tracking
+        self.llm_calls = []  # Store all LLM calls made by this agent
+        
         profile = analysis_result.get("profile", {})
         standardized_profile = analysis_result.get("standardized_profile", {})
         monthly_plan_structure = analysis_result.get("monthly_plan_structure", {})
@@ -683,7 +686,7 @@ class MatchAgent:
         logger.info(f"📊 Age-appropriate essential growth activities: {len(age_appropriate_eg_activities)}")
         
         # Step 3: Use LLM to select 40 CANDIDATE niche topics (50%)
-        niche_topics = self._llm_select_niche_topics(
+        niche_result = self._llm_select_niche_topics(
             age_appropriate_niche_topics, 
             child_name, 
             child_age, 
@@ -691,17 +694,19 @@ class MatchAgent:
             learning_style,
             count=30  # Target ~30 from niches for 50 total
         )
+        niche_topics = niche_result['topics'] if isinstance(niche_result, dict) else niche_result
         
         logger.info(f"🎯 LLM selected {len(niche_topics)} CANDIDATE niche topics")
         
         # Step 4: Use LLM to select ~20 CANDIDATE essential growth  
-        eg_topics = self._llm_select_essential_growth_topics(
+        eg_result = self._llm_select_essential_growth_topics(
             age_appropriate_eg_activities,
             child_name,
             child_age,
             learning_style,
             count=20  # Target ~20 from EG
         )
+        eg_topics = eg_result['topics'] if isinstance(eg_result, dict) else eg_result
         
         logger.info(f"🎯 LLM selected {len(eg_topics)} CANDIDATE essential growth activities")
         
@@ -729,6 +734,18 @@ class MatchAgent:
             "agent_flow": "ProfileAgent → AnalysisAgent → MatchAgent"
         }
         
+        # Collect all LLM calls made by this agent
+        all_prompts = []
+        all_responses = []
+        total_tokens = 0
+        
+        for llm_call in getattr(self, 'llm_calls', []):
+            if llm_call.get('prompt'):
+                all_prompts.append(llm_call['prompt'])
+            if llm_call.get('response'):
+                all_responses.append(llm_call['response'])
+            total_tokens += llm_call.get('tokens', 0)
+        
         result = {
             "profile": profile,
             "standardized_profile": standardized_profile,
@@ -738,10 +755,12 @@ class MatchAgent:
             "agent_timing": {
                 "agent_name": "MatchAgent",
                 "execution_time_seconds": time.time() - start_time,
-                "llm_used": False,
-                "tokens_used": 0,
-                "llm_prompt": None,
-                "llm_response": None
+                "llm_used": len(self.llm_calls) > 0,
+                "tokens_used": total_tokens,
+                "llm_prompt": "\n\n=== CALL 1: NICHE TOPIC SELECTION ===\n".join(all_prompts) if all_prompts else None,
+                "llm_response": "\n\n=== RESPONSE 1 ===\n".join(all_responses) if all_responses else None,
+                "llm_calls_count": len(self.llm_calls),
+                "llm_calls_detail": self.llm_calls
             }
         }
         
@@ -817,6 +836,15 @@ IMPORTANT: Select {count} topics that match the child's INTERESTS!"""
                 response_text = response.text.strip()
                 
                 logger.info(f"📝 LLM response length: {len(response_text)} chars")
+                
+                # Store this LLM call
+                if hasattr(self, 'llm_calls'):
+                    self.llm_calls.append({
+                        'call_name': 'niche_topic_selection',
+                        'prompt': prompt,
+                        'response': response_text,
+                        'tokens': len(prompt.split()) + len(response_text.split())
+                    })
                 
                 if not response_text:
                     logger.error(f"❌ LLM returned empty response!")
@@ -897,6 +925,15 @@ CRITICAL: Select activities from MULTIPLE DIFFERENT pillars! NO MORE than 3 from
                 model = get_gemini_model()
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
+                
+                # Store this LLM call
+                if hasattr(self, 'llm_calls'):
+                    self.llm_calls.append({
+                        'call_name': 'essential_growth_activity_selection',
+                        'prompt': prompt,
+                        'response': response_text,
+                        'tokens': len(prompt.split()) + len(response_text.split())
+                    })
                 
                 if response_text.startswith('```'):
                     response_text = response_text.strip('`').replace('json\n', '').replace('json', '').strip()
@@ -1034,6 +1071,9 @@ class ScheduleAgent:
         start_time = time.time()
         logger.info("📅 Schedule Agent: Selecting final 28 topics from 50 candidates")
         
+        # Initialize LLM tracking
+        self.llm_calls = []  # Store all LLM calls made by this agent
+        
         # Extract data from previous agents
         profile = match_result.get("profile", {})
         standardized_profile = match_result.get("standardized_profile", {})
@@ -1121,10 +1161,12 @@ class ScheduleAgent:
             "agent_timing": {
                 "agent_name": "ScheduleAgent",
                 "execution_time_seconds": time.time() - start_time,
-                "llm_used": True,
-                "tokens_used": "calculated per LLM call",
-                "llm_prompt": "multiple prompts for different aspects",
-                "llm_response": "multiple responses stored in each component"
+                "llm_used": len(getattr(self, 'llm_calls', [])) > 0,
+                "tokens_used": sum(call.get('tokens', 0) for call in getattr(self, 'llm_calls', [])),
+                "llm_prompt": "\n\n".join(f"=== {call['call_name']} ===\n{call['prompt']}" for call in getattr(self, 'llm_calls', [])) if getattr(self, 'llm_calls', []) else None,
+                "llm_response": "\n\n".join(f"=== {call['call_name']} ===\n{call['response']}" for call in getattr(self, 'llm_calls', [])) if getattr(self, 'llm_calls', []) else None,
+                "llm_calls_count": len(getattr(self, 'llm_calls', [])),
+                "llm_calls_detail": getattr(self, 'llm_calls', [])
             }
         }
         
@@ -1809,6 +1851,26 @@ def get_gemini_model():
         'models/gemini-2.5-flash',
         generation_config=generation_config
     )
+
+def call_llm_with_tracking(agent_instance, call_name, prompt):
+    """Call LLM and automatically track the input/output."""
+    if not gemini_api_available:
+        return None
+    
+    model = get_gemini_model()
+    response = model.generate_content(prompt)
+    response_text = response.text.strip()
+    
+    # Store in agent's llm_calls list
+    if hasattr(agent_instance, 'llm_calls'):
+        agent_instance.llm_calls.append({
+            'call_name': call_name,
+            'prompt': prompt,
+            'response': response_text,
+            'tokens': len(prompt.split()) + len(response_text.split())
+        })
+    
+    return response_text
 
 @app.get("/")
 async def root():
