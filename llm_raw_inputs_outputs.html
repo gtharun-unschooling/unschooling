@@ -179,7 +179,20 @@ ${agenda.primary_goal || 'Not available - fallback used'}</div>
   `;
   
   // ====== AGENT 2: MATCH AGENT ======
-  const matchAnalysis = data.match_analysis || {};
+  const matchedTopics = data.matched_topics || [];
+  const candidateTopics = data.candidate_topics || [];
+  
+  // Calculate from actual topics if match_analysis is missing
+  const totalTopics = matchedTopics.length || candidateTopics.length;
+  const nichesCovered = matchedTopics.length > 0 
+    ? [...new Set(matchedTopics.map(t => t.Niche || 'Unknown'))]
+    : [];
+  
+  const matchAnalysis = data.match_analysis || {
+    total_topics_selected: totalTopics,
+    niches_covered: nichesCovered,
+    selection_criteria: data.standardized_profile || {}
+  };
   const guidance = structure.guidance_for_match_agent || {};
   
   html += `
@@ -200,9 +213,19 @@ Task: Select 30 niche topics + 20 essential growth activities that match the the
       
       <div class="io-block">
         <div class="io-label">📤 LLM OUTPUT (Selected Topics):</div>
-        <div class="io-content"><strong>Total Topics Selected:</strong> ${matchAnalysis.total_topics_selected || 'N/A'}
+        <div class="io-content"><strong>Total Topics Selected:</strong> ${totalTopics}
 
-<strong>Niches Covered:</strong> ${(matchAnalysis.niches_covered || []).join(', ')}
+<strong>Niches Covered:</strong> ${nichesCovered.join(', ')}
+
+<strong>Topic Distribution by Niche:</strong>
+${(() => {
+  const distribution = matchedTopics.reduce((acc, topic) => {
+    const niche = topic.Niche || 'Unknown';
+    acc[niche] = (acc[niche] || 0) + 1;
+    return acc;
+  }, {});
+  return Object.entries(distribution).map(([n, c]) => `  • ${n}: ${c} topics`).join('\n');
+})()}
 
 <strong>Topic Criteria (AI-Generated):</strong>
 ${guidance.topic_criteria || 'Not available - fallback used'}

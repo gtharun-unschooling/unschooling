@@ -1090,7 +1090,13 @@ class ScheduleAgent:
         # Use LLM to analyze plan structure (NO hardcoded)
         systematic_approach = self._llm_analyze_plan_structure(weekly_plan, child_name, interests)
         
-        # Create final result
+        # Create final result (preserve match_analysis from Match Agent!)
+        match_analysis = match_result.get("match_analysis", {
+            "total_topics_selected": len(final_matched_topics),
+            "niches_covered": list(set(t.get("Niche", "General") for t in final_matched_topics)),
+            "selection_criteria": {}
+        })
+        
         result = {
             "profile": profile,
             "standardized_profile": standardized_profile,
@@ -1098,6 +1104,7 @@ class ScheduleAgent:
             "weekly_plan": weekly_plan,
             "matched_topics": final_matched_topics,  # 28 final topics (not 50 candidates)
             "candidate_topics": candidate_topics,  # 50 candidates for reference
+            "match_analysis": match_analysis,  # PRESERVE from Match Agent!
             "learning_objectives": learning_objectives,
             "recommended_activities": recommended_activities,
             "progress_tracking": progress_tracking,
