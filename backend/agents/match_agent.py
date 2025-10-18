@@ -5,19 +5,20 @@ import re
 import os
 import json
 from dotenv import load_dotenv
-# MIGRATED TO VERTEX AI (FREE with GenAI credits)
-import vertexai
-from vertexai.generative_models import GenerativeModel
+# MIGRATED TO GOOGLE AI STUDIO (Gemini API with instant access)
+import google.generativeai as genai
 from config.settings import settings
 
 # Load environment variables
 load_dotenv()
 
-# Initialize Vertex AI (FREE with GenAI credits)
-vertexai.init(project="unschooling-464413", location="us-central1")
+# Configure Google AI Studio with API key
+gemini_api_key = os.getenv('GEMINI_API_KEY')
+if gemini_api_key:
+    genai.configure(api_key=gemini_api_key)
 
-# Use Vertex AI Gemini model (FREE)
-model = GenerativeModel("gemini-1.5-flash")
+# Use Google AI Studio Gemini model (Gemini 2.5 Flash)
+model = genai.GenerativeModel('models/gemini-2.5-flash')
 
 def parse_age_string(age_str):
     # Handle both string and numeric ages
