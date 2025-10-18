@@ -158,14 +158,17 @@ const CustomisedWeeklyPlan = () => {
       
       console.log('🚀 Generating plan with profile:', profileData);
       
-      const response = await fetch('http://localhost:8000/api/generate-plan', {
+      const apiUrl = `${config.API_BASE_URL}${config.ENDPOINTS.GENERATE_PLAN}`;
+      console.log('🌐 API URL:', apiUrl);
+      
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'X-API-Key': 'unschooling-api-key-2024',
           'Accept': 'application/json',
         },
-        body: JSON.stringify({ profile: profileData }),
+        body: JSON.stringify({ childProfile: profileData, planType: profileData.plan_type }),
       });
       
       if (response.ok) {
