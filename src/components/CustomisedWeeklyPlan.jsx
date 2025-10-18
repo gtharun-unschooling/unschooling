@@ -121,7 +121,7 @@ const CustomisedWeeklyPlan = () => {
         const childRef = doc(db, `users/${user.uid}/children`, childId);
         const childSnap = await getDoc(childRef);
         if (childSnap.exists()) {
-          generateNewPlan(childSnap.data());
+          generateNewPlan(childSnap.data(), childId); // Pass childId explicitly
         }
       } else {
         console.log('✅ Loaded plans:', Object.keys(existingPlans));
@@ -141,14 +141,23 @@ const CustomisedWeeklyPlan = () => {
   };
 
   // Generate new plan (UPDATED: saves to subcollection)
-  const generateNewPlan = async (childData) => {
+  const generateNewPlan = async (childData, childId = null) => {
     try {
       setGeneratingPlan(true);
       setError('');
       
+      // Use provided childId or fall back to selectedChild or childData.id
+      const actualChildId = childId || selectedChild || childData.id || childData.childId;
+      
+      if (!actualChildId) {
+        throw new Error('Child ID is required to generate a plan');
+      }
+      
+      console.log('🆔 Using child ID:', actualChildId);
+      
       const profileData = {
         userId: user.uid,
-        childId: selectedChild,
+        childId: actualChildId,
         child_name: childData.name || childData.child_name || 'Child',
         child_age: childData.age || childData.child_age || 5,
         interests: childData.interests || [],
@@ -180,7 +189,7 @@ const CustomisedWeeklyPlan = () => {
           console.log('✅ Plan generated successfully');
           
           // Save to subcollection (NOT nested in child document)
-          const planRef = doc(collection(db, `users/${user.uid}/children/${selectedChild}/plans`));
+          const planRef = doc(collection(db, `users/${user.uid}/children/${actualChildId}/plans`));
           const planDocument = {
             ...result.data,
             month: currentMonth,
