@@ -504,7 +504,7 @@ Return ONLY valid JSON, no markdown."""
             logger.info(f"🧠 Sending {len(theme_list)} themes to LLM for selection...")
             
             if vertex_ai_available:
-                model = GenerativeModel("gemini-pro")
+                model = GenerativeModel("gemini-1.5-flash")
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
@@ -812,7 +812,7 @@ IMPORTANT: Select {count} topics that match the child's INTERESTS!"""
         
         try:
             if vertex_ai_available:
-                model = GenerativeModel("gemini-pro")
+                model = GenerativeModel("gemini-1.5-flash")
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
@@ -891,7 +891,7 @@ CRITICAL: Select activities from MULTIPLE DIFFERENT pillars! NO MORE than 3 from
         
         try:
             if vertex_ai_available:
-                model = GenerativeModel("gemini-pro")
+                model = GenerativeModel("gemini-1.5-flash")
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
@@ -1184,7 +1184,7 @@ Return ONLY valid JSON, no markdown."""
         
         try:
             if vertex_ai_available:
-                model = GenerativeModel("gemini-pro")
+                model = GenerativeModel("gemini-1.5-flash")
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
@@ -1321,7 +1321,7 @@ Select 3 activities that FIT this theme. Return: {{"selected_activity_ids": [1, 
             
             try:
                 if vertex_ai_available:
-                    model = GenerativeModel("gemini-pro")
+                    model = GenerativeModel("gemini-1.5-flash")
                     
                     # Select niche topics
                     response1 = model.generate_content(niche_prompt)
@@ -1405,7 +1405,7 @@ Return ONLY a JSON array of 5 learning objectives:
 
         try:
             if vertex_ai_available:
-                model = GenerativeModel("gemini-pro")
+                model = GenerativeModel("gemini-1.5-flash")
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 if response_text.startswith('```'):
@@ -1435,7 +1435,7 @@ Return ONLY a JSON array of 5 activity recommendations:
 
         try:
             if vertex_ai_available:
-                model = GenerativeModel("gemini-pro")
+                model = GenerativeModel("gemini-1.5-flash")
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 if response_text.startswith('```'):
@@ -1464,7 +1464,7 @@ Return ONLY a JSON object:
 
         try:
             if vertex_ai_available:
-                model = GenerativeModel("gemini-pro")
+                model = GenerativeModel("gemini-1.5-flash")
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 if response_text.startswith('```'):
@@ -1505,7 +1505,7 @@ Return ONLY a JSON object describing the plan flow:
 
         try:
             if vertex_ai_available:
-                model = GenerativeModel("gemini-pro")
+                model = GenerativeModel("gemini-1.5-flash")
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 if response_text.startswith('```'):
@@ -1690,7 +1690,7 @@ Return ONLY valid JSON, no markdown.
         
         try:
             if vertex_ai_available:
-                model = GenerativeModel("gemini-pro")
+                model = GenerativeModel("gemini-1.5-flash")
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
