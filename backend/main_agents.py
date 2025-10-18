@@ -504,7 +504,7 @@ Return ONLY valid JSON, no markdown."""
             logger.info(f"🧠 Sending {len(theme_list)} themes to LLM for selection...")
             
             if gemini_api_available:
-                model = genai.GenerativeModel('models/gemini-2.5-flash')
+                model = get_gemini_model()
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
@@ -812,14 +812,11 @@ IMPORTANT: Select {count} topics that match the child's INTERESTS!"""
         
         try:
             if gemini_api_available:
-                model = genai.GenerativeModel('models/gemini-2.5-flash')
+                model = get_gemini_model()
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
-                logger.info(f"📝 LLM raw response: {response_text[:200]}...")
-                
-                if response_text.startswith('```'):
-                    response_text = response_text.strip('`').replace('json\n', '').replace('json', '').strip()
+                logger.info(f"📝 LLM response length: {len(response_text)} chars")
                 
                 if not response_text:
                     logger.error(f"❌ LLM returned empty response!")
@@ -897,7 +894,7 @@ CRITICAL: Select activities from MULTIPLE DIFFERENT pillars! NO MORE than 3 from
         
         try:
             if gemini_api_available:
-                model = genai.GenerativeModel('models/gemini-2.5-flash')
+                model = get_gemini_model()
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
@@ -1190,7 +1187,7 @@ Return ONLY valid JSON, no markdown."""
         
         try:
             if gemini_api_available:
-                model = genai.GenerativeModel('models/gemini-2.5-flash')
+                model = get_gemini_model()
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
@@ -1327,20 +1324,16 @@ Select 3 activities that FIT this theme. Return: {{"selected_activity_ids": [1, 
             
             try:
                 if gemini_api_available:
-                    model = genai.GenerativeModel('models/gemini-2.5-flash')
+                    model = get_gemini_model()
                     
                     # Select niche topics
                     response1 = model.generate_content(niche_prompt)
                     text1 = response1.text.strip()
-                    if text1.startswith('```'):
-                        text1 = text1.strip('`').replace('json\n', '').replace('json', '').strip()
                     niche_ids = json.loads(text1).get('selected_topic_ids', [])
                     
                     # Select EG topics
                     response2 = model.generate_content(eg_prompt)
                     text2 = response2.text.strip()
-                    if text2.startswith('```'):
-                        text2 = text2.strip('`').replace('json\n', '').replace('json', '').strip()
                     eg_ids = json.loads(text2).get('selected_activity_ids', [])
                     
                     # Combine: 4 niche + 3 EG = 7 total
@@ -1411,7 +1404,7 @@ Return ONLY a JSON array of 5 learning objectives:
 
         try:
             if gemini_api_available:
-                model = genai.GenerativeModel('models/gemini-2.5-flash')
+                model = get_gemini_model()
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 if response_text.startswith('```'):
@@ -1441,7 +1434,7 @@ Return ONLY a JSON array of 5 activity recommendations:
 
         try:
             if gemini_api_available:
-                model = genai.GenerativeModel('models/gemini-2.5-flash')
+                model = get_gemini_model()
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 if response_text.startswith('```'):
@@ -1470,7 +1463,7 @@ Return ONLY a JSON object:
 
         try:
             if gemini_api_available:
-                model = genai.GenerativeModel('models/gemini-2.5-flash')
+                model = get_gemini_model()
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 if response_text.startswith('```'):
@@ -1511,7 +1504,7 @@ Return ONLY a JSON object describing the plan flow:
 
         try:
             if gemini_api_available:
-                model = genai.GenerativeModel('models/gemini-2.5-flash')
+                model = get_gemini_model()
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 if response_text.startswith('```'):
@@ -1696,7 +1689,7 @@ Return ONLY valid JSON, no markdown.
         
         try:
             if gemini_api_available:
-                model = genai.GenerativeModel('models/gemini-2.5-flash')
+                model = get_gemini_model()
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
@@ -1798,6 +1791,17 @@ def setup_gemini_api():
         return False
 
 gemini_api_available = setup_gemini_api()
+
+def get_gemini_model():
+    """Get configured Gemini model with JSON output mode."""
+    generation_config = {
+        "temperature": 0.7,
+        "response_mime_type": "application/json"
+    }
+    return genai.GenerativeModel(
+        'models/gemini-2.5-flash',
+        generation_config=generation_config
+    )
 
 @app.get("/")
 async def root():
