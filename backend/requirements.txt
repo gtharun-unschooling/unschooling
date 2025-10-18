@@ -1,7 +1,7 @@
 fastapi==0.104.1
 uvicorn==0.24.0
-# MIGRATED TO VERTEX AI (FREE with GenAI credits)
-google-cloud-aiplatform>=1.35.0
+# MIGRATED TO GOOGLE AI STUDIO (Gemini API - Instant Access)
+google-generativeai>=0.8.0
 packaging>=21.0
 # PostgreSQL database (Version 2)
 asyncpg>=0.29.0

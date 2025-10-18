@@ -1,6 +1,6 @@
 """
-Full Agent System Backend with LangGraph and Gemini API - Clean Version
-No Fallback Data - Uses Only Original Data Sources
+Full Agent System Backend with Google AI Studio Gemini API
+Uses Gemini 2.5 Flash for fast, cost-effective plan generation
 """
 
 from fastapi import FastAPI, Request, HTTPException
@@ -11,9 +11,9 @@ import os
 import json
 import time
 from typing import Dict, Any, List
-# MIGRATED TO VERTEX AI (FREE with GenAI credits)
-import vertexai
-from vertexai.generative_models import GenerativeModel
+# MIGRATED TO GOOGLE AI STUDIO (Gemini API with instant access)
+import google.generativeai as genai
+import os
 from real_usage_tracker import real_usage_tracker
 from child_activity_tracker import child_activity_tracker
 
@@ -503,8 +503,8 @@ Return ONLY valid JSON, no markdown."""
             
             logger.info(f"🧠 Sending {len(theme_list)} themes to LLM for selection...")
             
-            if vertex_ai_available:
-                model = GenerativeModel("gemini-1.5-flash")
+            if gemini_api_available:
+                model = genai.GenerativeModel('models/gemini-2.5-flash')
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
@@ -560,7 +560,7 @@ Return ONLY valid JSON, no markdown."""
             logger.error(f"❌ LLM theme selection failed: {e}")
             logger.error(f"   Matching themes available: {len(matching_themes)}")
             logger.error(f"   Total themes loaded: {len(self.themes)}")
-            logger.error(f"   Vertex AI available: {vertex_ai_available}")
+            logger.error(f"   Vertex AI available: {gemini_api_available}")
             import traceback
             logger.error(f"   Stack trace: {traceback.format_exc()}")
             
@@ -811,8 +811,8 @@ Return ONLY a JSON array of topic IDs (numbers 1-{len(topic_summaries)}):
 IMPORTANT: Select {count} topics that match the child's INTERESTS!"""
         
         try:
-            if vertex_ai_available:
-                model = GenerativeModel("gemini-1.5-flash")
+            if gemini_api_available:
+                model = genai.GenerativeModel('models/gemini-2.5-flash')
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
@@ -890,8 +890,8 @@ Return ONLY a JSON array of activity IDs (numbers 1-{len(activity_summaries)}):
 CRITICAL: Select activities from MULTIPLE DIFFERENT pillars! NO MORE than 3 from same pillar!"""
         
         try:
-            if vertex_ai_available:
-                model = GenerativeModel("gemini-1.5-flash")
+            if gemini_api_available:
+                model = genai.GenerativeModel('models/gemini-2.5-flash')
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
@@ -1183,8 +1183,8 @@ Return ONLY valid JSON, no markdown."""
         final_topics_by_week = {}
         
         try:
-            if vertex_ai_available:
-                model = GenerativeModel("gemini-1.5-flash")
+            if gemini_api_available:
+                model = genai.GenerativeModel('models/gemini-2.5-flash')
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
@@ -1320,8 +1320,8 @@ ESSENTIAL GROWTH ACTIVITIES ({len(eg_summaries)}):
 Select 3 activities that FIT this theme. Return: {{"selected_activity_ids": [1, 5, ...]}}"""
             
             try:
-                if vertex_ai_available:
-                    model = GenerativeModel("gemini-1.5-flash")
+                if gemini_api_available:
+                    model = genai.GenerativeModel('models/gemini-2.5-flash')
                     
                     # Select niche topics
                     response1 = model.generate_content(niche_prompt)
@@ -1404,8 +1404,8 @@ Return ONLY a JSON array of 5 learning objectives:
 {{"objectives": ["objective 1", "objective 2", ...]}}"""
 
         try:
-            if vertex_ai_available:
-                model = GenerativeModel("gemini-1.5-flash")
+            if gemini_api_available:
+                model = genai.GenerativeModel('models/gemini-2.5-flash')
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 if response_text.startswith('```'):
@@ -1434,8 +1434,8 @@ Return ONLY a JSON array of 5 activity recommendations:
 {{"activities": ["activity 1", "activity 2", ...]}}"""
 
         try:
-            if vertex_ai_available:
-                model = GenerativeModel("gemini-1.5-flash")
+            if gemini_api_available:
+                model = genai.GenerativeModel('models/gemini-2.5-flash')
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 if response_text.startswith('```'):
@@ -1463,8 +1463,8 @@ Return ONLY a JSON object:
 }}"""
 
         try:
-            if vertex_ai_available:
-                model = GenerativeModel("gemini-1.5-flash")
+            if gemini_api_available:
+                model = genai.GenerativeModel('models/gemini-2.5-flash')
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 if response_text.startswith('```'):
@@ -1504,8 +1504,8 @@ Return ONLY a JSON object describing the plan flow:
 }}"""
 
         try:
-            if vertex_ai_available:
-                model = GenerativeModel("gemini-1.5-flash")
+            if gemini_api_available:
+                model = genai.GenerativeModel('models/gemini-2.5-flash')
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 if response_text.startswith('```'):
@@ -1689,8 +1689,8 @@ Return ONLY valid JSON, no markdown.
 """
         
         try:
-            if vertex_ai_available:
-                model = GenerativeModel("gemini-1.5-flash")
+            if gemini_api_available:
+                model = genai.GenerativeModel('models/gemini-2.5-flash')
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
@@ -1773,19 +1773,25 @@ match_agent = MatchAgent()
 schedule_agent = ScheduleAgent()
 reviewer_agent = ReviewerAgent()
 
-# Setup Vertex AI (FREE with GenAI credits)
-def setup_vertex_ai():
-    """Setup Vertex AI (FREE with GenAI credits)."""
+# Setup Google AI Studio Gemini API
+def setup_gemini_api():
+    """Setup Google AI Studio Gemini API with API key."""
     try:
-        # Initialize Vertex AI (uses service account automatically)
-        vertexai.init(project="unschooling-464413", location="us-central1")
-        logger.info("✅ Vertex AI configured successfully (FREE with GenAI credits)")
+        api_key = os.getenv('GEMINI_API_KEY')
+        if not api_key:
+            logger.error("❌ GEMINI_API_KEY environment variable not set")
+            return False
+        
+        # Configure Google AI with API key
+        genai.configure(api_key=api_key)
+        logger.info("✅ Google AI Studio Gemini API configured successfully")
+        logger.info("🎯 Using Gemini 2.5 Flash (fastest & cheapest)")
         return True
     except Exception as e:
-        logger.error(f"❌ Error setting up Vertex AI: {e}")
+        logger.error(f"❌ Error setting up Gemini API: {e}")
         return False
 
-vertex_ai_available = setup_vertex_ai()
+gemini_api_available = setup_gemini_api()
 
 @app.get("/")
 async def root():
@@ -1884,7 +1890,7 @@ async def generate_plan(request: Request):
                 ])
             },
             "llm_integration": {
-                "vertex_ai_available": vertex_ai_available,
+                "gemini_api_available": gemini_api_available,
                 "profile_agent_llm_used": profile_timing.get("llm_used", False),
                 "profile_agent_prompt": profile_timing.get("llm_prompt"),
                 "profile_agent_response": profile_timing.get("llm_response"),
