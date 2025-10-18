@@ -1415,7 +1415,11 @@ Return ONLY a JSON array of 5 learning objectives:
         except Exception as e:
             logger.error(f"❌ LLM objectives generation failed: {e}")
         
-        return [f"Develop {interests[0]} skills", "Enhance problem-solving abilities"]
+        # Fallback objectives - handle empty interests
+        if interests and len(interests) > 0:
+            return [f"Develop {interests[0]} skills", "Enhance problem-solving abilities", "Foster curiosity and creativity"]
+        else:
+            return ["Develop foundational skills", "Enhance problem-solving abilities", "Foster curiosity and creativity"]
     
     def _llm_generate_recommended_activities(self, child_name: str, child_age: int, interests: List[str], learning_style: str, plan_type: str) -> List[str]:
         """Use LLM to generate personalized recommended activities."""
