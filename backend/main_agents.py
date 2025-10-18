@@ -816,8 +816,14 @@ IMPORTANT: Select {count} topics that match the child's INTERESTS!"""
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
+                logger.info(f"📝 LLM raw response: {response_text[:200]}...")
+                
                 if response_text.startswith('```'):
                     response_text = response_text.strip('`').replace('json\n', '').replace('json', '').strip()
+                
+                if not response_text:
+                    logger.error(f"❌ LLM returned empty response!")
+                    raise ValueError("Empty LLM response")
                 
                 llm_result = json.loads(response_text)
                 selected_ids = llm_result.get('selected_topic_ids', [])
