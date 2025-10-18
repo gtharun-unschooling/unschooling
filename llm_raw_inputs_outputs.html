@@ -227,6 +227,20 @@ ${(() => {
   return Object.entries(distribution).map(([n, c]) => `  • ${n}: ${c} topics`).join('\n');
 })()}
 
+<strong>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ACTUAL TOPICS SELECTED (${totalTopics} topics):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</strong>
+${matchedTopics.map((topic, idx) => {
+  const topicName = topic.Topic || topic.topic_title || 'Untitled';
+  const niche = topic.Niche || 'Unknown';
+  const age = topic.Age || 'N/A';
+  const objective = (topic.Objective || topic.objective || '').substring(0, 80);
+  return `${idx + 1}. [${niche}] ${topicName} (Age ${age})
+   → ${objective}${objective.length >= 80 ? '...' : ''}`;
+}).join('\n\n')}
+
+<strong>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</strong>
+
 <strong>Topic Criteria (AI-Generated):</strong>
 ${guidance.topic_criteria || 'Not available - fallback used'}
 
