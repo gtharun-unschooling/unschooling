@@ -1240,6 +1240,15 @@ Return ONLY valid JSON, no markdown."""
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
+                # Store this LLM call
+                if hasattr(self, 'llm_calls'):
+                    self.llm_calls.append({
+                        'call_name': 'final_28_topic_selection_and_week_organization',
+                        'prompt': prompt,
+                        'response': response_text,
+                        'tokens': len(prompt.split()) + len(response_text.split())
+                    })
+                
                 if response_text.startswith('```'):
                     response_text = response_text.strip('`').replace('json\n', '').replace('json', '').strip()
                 
@@ -1604,6 +1613,9 @@ class ReviewerAgent:
         start_time = time.time()
         logger.info("🔍 Reviewer Agent: Quality validation of final plan")
         
+        # Initialize LLM tracking
+        self.llm_calls = []  # Store all LLM calls made by this agent
+        
         # Extract plan data
         weekly_plan = schedule_result.get("weekly_plan", {})
         matched_topics = schedule_result.get("matched_topics", [])
@@ -1640,10 +1652,12 @@ class ReviewerAgent:
             "agent_timing": {
                 "agent_name": "ReviewerAgent",
                 "execution_time_seconds": time.time() - start_time,
-                "llm_used": True,
-                "tokens_used": "calculated in LLM call",
-                "llm_prompt": "comprehensive review prompt",
-                "llm_response": "stored in review_insights"
+                "llm_used": len(getattr(self, 'llm_calls', [])) > 0,
+                "tokens_used": sum(call.get('tokens', 0) for call in getattr(self, 'llm_calls', [])),
+                "llm_prompt": "\n\n".join(f"=== {call['call_name']} ===\n{call['prompt']}" for call in getattr(self, 'llm_calls', [])) if getattr(self, 'llm_calls', []) else None,
+                "llm_response": "\n\n".join(f"=== {call['call_name']} ===\n{call['response']}" for call in getattr(self, 'llm_calls', [])) if getattr(self, 'llm_calls', []) else None,
+                "llm_calls_count": len(getattr(self, 'llm_calls', [])),
+                "llm_calls_detail": getattr(self, 'llm_calls', [])
             }
         }
         
@@ -1741,6 +1755,15 @@ Return ONLY valid JSON, no markdown.
                 model = get_gemini_model()
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
+                
+                # Store this LLM call
+                if hasattr(self, 'llm_calls'):
+                    self.llm_calls.append({
+                        'call_name': 'comprehensive_quality_review',
+                        'prompt': prompt,
+                        'response': response_text,
+                        'tokens': len(prompt.split()) + len(response_text.split())
+                    })
                 
                 # Remove markdown if present
                 if response_text.startswith('```'):
