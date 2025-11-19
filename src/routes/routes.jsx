@@ -4,7 +4,7 @@ import MainPage from '../pages/Main/MainPage';
 import NichesPage from '../pages/Niches/NichesMainPage';
 import TopicDetailPage from '../pages/Topics/TopicDetailPage';
 import EssentialGrowthMainPage from '../pages/Essential_Growth/EssentialGrowthMainPage';
-import EssentialGrowthActivities from '../components/EssentialGrowthActivities';
+import EssentialGrowthActivities from '../components/EssentialGrowthActivities.jsx';
 import ActivityDetailPage from '../pages/Essential_Growth/ActivityDetailPage';
 import LayoutComparison from '../pages/LayoutComparison';
 import PlansMainPage from '../pages/Plans/Plans.jsx';
@@ -72,7 +72,7 @@ import PostLaunchOptimizationDashboard from '../pages/Admin/PostLaunchOptimizati
 import GlobalExpansionDashboard from '../pages/Admin/GlobalExpansionDashboard';
 import EnterpriseDashboard from '../pages/Admin/EnterpriseDashboard';
 import AdvancedSecurityDashboard from '../pages/Admin/AdvancedSecurityDashboard';
-import AdminFlowViewer from '../pages/AdminFlowViewer';
+import AdminFlowViewer from '../pages/AdminFlowViewer.jsx';
 
 // Legal pages
 import TermsOfService from '../pages/Legal/TermsOfService';
