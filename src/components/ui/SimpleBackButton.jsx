@@ -27,14 +27,16 @@ const SimpleBackButton = ({
     <IconButton
       onClick={handleClick}
       sx={{
-        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+        backgroundColor: 'rgba(255, 255, 255, 0.2)',
+        backdropFilter: 'blur(10px)',
+        WebkitBackdropFilter: 'blur(10px)',
         color: '#2d3748',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-        border: '1px solid rgba(0,0,0,0.05)',
+        boxShadow: '0 4px 16px rgba(0,0,0,0.1)',
+        border: '1px solid rgba(255,255,255,0.3)',
         '&:hover': {
-          backgroundColor: 'rgba(255, 255, 255, 1)',
-          transform: 'scale(1.05)',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+          backgroundColor: 'rgba(255, 255, 255, 0.3)',
+          transform: 'translateY(-2px)',
+          boxShadow: '0 6px 20px rgba(0,0,0,0.15)',
           color: '#1a202c',
         },
         transition: 'all 0.2s ease',

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { colors, spacing, typography } from '../../styles/designTokens';
-import MinimalBackButton from '../../components/ui/MinimalBackButton';
+import SimpleBackButton from '../../components/ui/SimpleBackButton';
 
 const WhatWeDoPage = () => {
   const containerStyle = {
@@ -161,7 +161,7 @@ const WhatWeDoPage = () => {
 
   return (
     <div style={containerStyle}>
-      <MinimalBackButton 
+      <SimpleBackButton 
         heroColors={{
           backgroundColor: '#f8fafc',
           primaryColor: '#667eea',

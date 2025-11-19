@@ -1,20 +1,25 @@
 """
-Enhanced Profile Agent for Module 3
-Analyzes child profiles comprehensively and provides standardized output
+LLM-Powered Profile Agent for Module 3
+Uses Gemini AI to analyze child profiles and enrich minimal information
 """
 
 import time
 import logging
+import json
 from typing import Dict, Any, List
 
 logger = logging.getLogger(__name__)
 
-def run_profile_agent(state: Dict[str, Any]) -> Dict[str, Any]:
+def run_profile_agent(state: Dict[str, Any], llm_model=None) -> Dict[str, Any]:
     """
-    Enhanced Profile Agent that analyzes child profiles comprehensively.
+    LLM-Powered Profile Agent that enriches child profiles using AI.
+    Takes minimal customer input and generates comprehensive child profile.
     """
     start_time = time.time()
-    logger.info("🔍 Profile Agent: Starting comprehensive profile analysis")
+    logger.info("🔍 Profile Agent: Starting AI-powered profile enrichment")
+    
+    # Initialize LLM tracking
+    llm_calls = []
     
     try:
         # Extract profile data
@@ -22,55 +27,282 @@ def run_profile_agent(state: Dict[str, Any]) -> Dict[str, Any]:
         if not profile:
             raise ValueError("No profile data provided")
         
-        # Validate required fields
-        required_fields = ["child_name", "age", "interests"]
-        missing_fields = [field for field in required_fields if field not in profile]
-        if missing_fields:
-            raise ValueError(f"Missing required profile fields: {missing_fields}")
-        
+        # Extract profile fields (support both age and child_age)
         child_name = profile.get("child_name", "Child")
-        child_age = int(profile.get("age", 7))
-        interests = profile.get("interests", ["AI"])
+        child_age = int(profile.get("child_age") or profile.get("age", 7))
+        interests = profile.get("interests", [])
         learning_style = profile.get("preferred_learning_style", "visual")
         plan_type = profile.get("plan_type", "hybrid")
         
-        logger.info(f"👤 Analyzing profile for {child_name} (Age: {child_age})")
+        # Validate that we have meaningful data
+        if not child_name or child_age < 2 or child_age > 18:
+            raise ValueError(f"Invalid profile data: name={child_name}, age={child_age}")
         
-        # Perform comprehensive profile analysis
-        profile_analysis = _analyze_child_profile(profile)
+        logger.info(f"👤 AI-enriching profile for {child_name} (Age: {child_age})")
         
-        # Generate learning recommendations
-        learning_recommendations = _generate_learning_recommendations(profile, profile_analysis)
-        
-        # Create parent guidance
-        parent_guidance = _generate_parent_guidance(profile, profile_analysis)
+        # Use LLM to enrich the profile
+        enriched_profile = _llm_enrich_profile(
+            profile, llm_model, llm_calls
+        )
         
         execution_time = time.time() - start_time
-        logger.info(f"✅ Profile Agent: Analysis completed in {execution_time:.3f}s")
+        logger.info(f"✅ Profile Agent: AI enrichment completed in {execution_time:.3f}s")
+        
+        # Aggregate LLM call details
+        total_tokens = sum(call.get('tokens', 0) for call in llm_calls)
+        llm_prompts = "\n\n---\n\n".join(call.get('prompt', '') for call in llm_calls)
+        llm_responses = "\n\n---\n\n".join(call.get('response', '') for call in llm_calls)
         
         return {
             "profile": profile,
-            "profile_analysis": profile_analysis,
-            "learning_recommendations": learning_recommendations,
-            "parent_guidance": parent_guidance,
+            "enriched_profile": enriched_profile,
             "agent_timing": {
                 "execution_time_seconds": execution_time,
-                "llm_used": False,
-                "tokens_used": 0
+                "llm_used": True,
+                "tokens_used": total_tokens,
+                "llm_calls_count": len(llm_calls),
+                "llm_prompt": llm_prompts,
+                "llm_response": llm_responses,
+                "llm_calls_detail": llm_calls
             }
         }
         
     except Exception as e:
         execution_time = time.time() - start_time
         logger.error(f"❌ Profile Agent failed: {str(e)}")
+        
+        # Still track LLM calls even on error
+        total_tokens = sum(call.get('tokens', 0) for call in llm_calls)
+        llm_prompts = "\n\n---\n\n".join(call.get('prompt', '') for call in llm_calls)
+        llm_responses = "\n\n---\n\n".join(call.get('response', '') for call in llm_calls)
+        
         return {
             "profile": state.get("profile", {}),
             "error": str(e),
             "agent_timing": {
                 "execution_time_seconds": execution_time,
-                "llm_used": False,
-                "tokens_used": 0
+                "llm_used": len(llm_calls) > 0,
+                "tokens_used": total_tokens,
+                "llm_calls_count": len(llm_calls),
+                "llm_prompt": llm_prompts,
+                "llm_response": llm_responses,
+                "llm_calls_detail": llm_calls
             }
+        }
+
+def _llm_enrich_profile(profile: Dict[str, Any], llm_model, llm_calls: List) -> Dict[str, Any]:
+    """
+    Use LLM to enrich minimal customer input into comprehensive child profile.
+    """
+    child_name = profile.get("child_name", "Child")
+    child_age = int(profile.get("child_age") or profile.get("age", 7))
+    interests = profile.get("interests", [])
+    learning_style = profile.get("preferred_learning_style", "visual")
+    plan_type = profile.get("plan_type", "hybrid")
+    
+    # Build LLM prompt
+    prompt = f"""You are a child development expert and educational psychologist. Based on minimal parent input, create a comprehensive child learning profile.
+
+PARENT INPUT:
+- Child Name: {child_name}
+- Age: {child_age} years old
+- Interests: {', '.join(interests)}
+- Learning Style: {learning_style}
+- Plan Type: {plan_type}
+
+TASK: Analyze this minimal information and generate a comprehensive enriched profile that will help personalize the child's learning plan.
+
+Your analysis should include:
+1. **Developmental Stage**: Cognitive, social, emotional, physical characteristics for age {child_age}
+2. **Learning Characteristics**: Based on {learning_style} learning style, what are this child's strengths, preferences, and optimal learning methods?
+3. **Interest Analysis**: Deep dive into interests ({', '.join(interests)}) - what do these interests reveal about the child? What related areas might they enjoy?
+4. **Attention Span**: Realistic attention span for age {child_age} with {learning_style} learning style
+5. **Learning Objectives**: 5-7 personalized learning objectives based on age, interests, and learning style
+6. **Activity Recommendations**: Types of activities that would work best
+7. **Parent Guidance**: How parents can best support this child's learning
+8. **Engagement Strategies**: Specific strategies to keep this child engaged
+9. **Success Indicators**: What success looks like for this child
+
+Return ONLY valid JSON with this structure:
+{{
+  "developmental_stage": {{
+    "cognitive_level": "string (e.g., concrete_operational, formal_operational)",
+    "social_characteristics": ["list of social traits"],
+    "emotional_characteristics": ["list of emotional traits"],
+    "physical_capabilities": ["list of physical capabilities"]
+  }},
+  "learning_characteristics": {{
+    "learning_style": "{learning_style}",
+    "strengths": ["list of learning strengths"],
+    "preferred_activities": ["list of preferred activity types"],
+    "optimal_learning_methods": ["list of methods"]
+  }},
+  "interest_analysis": {{
+    "primary_interests": {json.dumps(interests)},
+    "interest_themes": ["broader themes these interests represent"],
+    "related_areas": ["areas child might also enjoy"],
+    "motivation_drivers": ["what motivates this child"]
+  }},
+  "attention_span": {{
+    "typical_minutes": number,
+    "optimal_session_length": number,
+    "break_frequency_minutes": number,
+    "focus_strategies": ["strategies to maintain focus"]
+  }},
+  "learning_objectives": [
+    "Objective 1 based on interests and age",
+    "Objective 2...",
+    "... 5-7 total objectives"
+  ],
+  "activity_recommendations": {{
+    "highly_suitable": ["list of activity types"],
+    "moderately_suitable": ["list of activity types"],
+    "avoid": ["activity types to avoid"]
+  }},
+  "parent_guidance": {{
+    "parent_role": "string describing optimal parent role",
+    "support_strategies": ["specific support strategies"],
+    "communication_tips": ["how to communicate with this child"],
+    "monitoring_approach": "string describing how to monitor progress"
+  }},
+  "engagement_strategies": [
+    "Strategy 1 for this specific child",
+    "Strategy 2...",
+    "... 5-7 strategies"
+  ],
+  "success_indicators": [
+    "Indicator 1 of successful learning",
+    "Indicator 2...",
+    "... 5-7 indicators"
+  ],
+  "enrichment_summary": "2-3 sentence summary of this child's unique learning profile"
+}}
+
+IMPORTANT: Return ONLY the JSON object, no other text."""
+    
+    try:
+        logger.info("🤖 Calling Gemini AI to enrich child profile...")
+        
+        # Check if llm_model is None
+        if llm_model is None:
+            logger.error("❌ LLM model is None! Cannot call Gemini API.")
+            raise ValueError("LLM model is None")
+        
+        # Call LLM
+        response = llm_model.generate_content(prompt)
+        response_text = response.text.strip()
+        
+        logger.info(f"✅ Got response from Gemini ({len(response_text)} chars)")
+        
+        # Parse JSON response
+        enriched_data = json.loads(response_text)
+        
+        # Store this LLM call
+        llm_calls.append({
+            'call_name': 'profile_enrichment',
+            'prompt': prompt,
+            'response': response_text,
+            'tokens': len(prompt.split()) + len(response_text.split())
+        })
+        
+        logger.info("✅ Profile successfully enriched by AI")
+        return enriched_data
+        
+    except json.JSONDecodeError as e:
+        logger.error(f"❌ LLM returned invalid JSON: {e}")
+        logger.error(f"Response was: {response_text[:500]}")
+        
+        # Store failed call
+        llm_calls.append({
+            'call_name': 'profile_enrichment_failed',
+            'prompt': prompt,
+            'response': response_text if 'response_text' in locals() else "No response",
+            'tokens': len(prompt.split()),
+            'error': str(e)
+        })
+        
+        # Return basic enrichment on error
+        return _get_basic_enrichment(profile)
+    
+    except Exception as e:
+        logger.error(f"❌ LLM call failed: {e}")
+        
+        # Store failed call
+        llm_calls.append({
+            'call_name': 'profile_enrichment_error',
+            'prompt': prompt,
+            'response': f"Error: {str(e)}",
+            'tokens': len(prompt.split()),
+            'error': str(e)
+        })
+        
+        # Return basic enrichment on error
+        return _get_basic_enrichment(profile)
+
+def _get_basic_enrichment(profile: Dict[str, Any]) -> Dict[str, Any]:
+    """Fallback basic enrichment if LLM fails."""
+    age = int(profile.get("child_age") or profile.get("age", 7))
+    learning_style = profile.get("preferred_learning_style", "visual")
+    interests = profile.get("interests", [])
+    
+    return {
+        "developmental_stage": {
+            "cognitive_level": "concrete_operational" if age <= 11 else "formal_operational",
+            "social_characteristics": ["peer interaction", "cooperative learning"],
+            "emotional_characteristics": ["growing independence", "self-awareness"],
+            "physical_capabilities": ["fine motor skills", "coordination"]
+        },
+        "learning_characteristics": {
+            "learning_style": learning_style,
+            "strengths": [f"{learning_style} learning", "curiosity", "exploration"],
+            "preferred_activities": ["interactive", "engaging", "age-appropriate"],
+            "optimal_learning_methods": [f"{learning_style} aids", "hands-on", "practice"]
+        },
+        "interest_analysis": {
+            "primary_interests": interests,
+            "interest_themes": interests,
+            "related_areas": interests,
+            "motivation_drivers": ["curiosity", "achievement", "fun"]
+        },
+        "attention_span": {
+            "typical_minutes": min(age * 2, 45),
+            "optimal_session_length": min(age * 2, 30),
+            "break_frequency_minutes": 15,
+            "focus_strategies": ["variety", "breaks", "engaging content"]
+        },
+        "learning_objectives": [
+            f"Explore {interests[0] if interests else 'various topics'}",
+            "Develop critical thinking skills",
+            "Build creativity and expression",
+            "Enhance problem-solving abilities",
+            "Foster curiosity and learning joy"
+        ],
+        "activity_recommendations": {
+            "highly_suitable": [f"{learning_style} activities", "interactive games", "projects"],
+            "moderately_suitable": ["reading", "discussion", "exploration"],
+            "avoid": ["overly abstract", "too long", "passive watching"]
+        },
+        "parent_guidance": {
+            "parent_role": "supportive guide and facilitator",
+            "support_strategies": ["encouragement", "guidance", "observation"],
+            "communication_tips": ["open questions", "active listening", "positive feedback"],
+            "monitoring_approach": "observe engagement and enjoyment"
+        },
+        "engagement_strategies": [
+            "Keep sessions short and varied",
+            "Use lots of encouragement",
+            "Make learning fun and interactive",
+            "Connect to child's interests",
+            "Celebrate small wins"
+        ],
+        "success_indicators": [
+            "Child shows enthusiasm for activities",
+            "Asks questions and shows curiosity",
+            "Completes activities willingly",
+            "Demonstrates understanding",
+            "Looks forward to learning time"
+        ],
+        "enrichment_summary": f"A {age}-year-old {learning_style} learner interested in {', '.join(interests)}. Best suited for interactive, engaging activities with frequent variety and encouragement."
         }
 
 def _analyze_child_profile(profile: Dict[str, Any]) -> Dict[str, Any]:

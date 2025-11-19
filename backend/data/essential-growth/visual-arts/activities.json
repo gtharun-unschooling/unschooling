@@ -8,16 +8,18 @@
           "description": "Activities for Visual Arts",
           "activities": [
             {
-              "topicNumber": 1,
+              "topicNumber": "1",
               "topic": "Black & White Discovery Cards",
               "objective": "Engage in Black & White Discovery Cards activities to develop visual arts skills",
               "explanation": "This activity focuses on Black & White Discovery Cards within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "High-Contrast Visual Toys",
+              "hashtags": [],
               "activity": {
                 "name": "Black & White Discovery Cards",
                 "materials": [
@@ -30,21 +32,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "High-Contrast Visual Toys"
+                ]
               }
             },
             {
-              "topicNumber": 2,
+              "topicNumber": "2",
               "topic": "Pattern Peek Blocks",
               "objective": "Engage in Pattern Peek Blocks activities to develop visual arts skills",
               "explanation": "This activity focuses on Pattern Peek Blocks within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "High-Contrast Visual Toys",
+              "hashtags": [],
               "activity": {
                 "name": "Pattern Peek Blocks",
                 "materials": [
@@ -57,21 +60,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "High-Contrast Visual Toys"
+                ]
               }
             },
             {
-              "topicNumber": 3,
+              "topicNumber": "3",
               "topic": "Contrast Flash Play",
               "objective": "Engage in Contrast Flash Play activities to develop visual arts skills",
               "explanation": "This activity focuses on Contrast Flash Play within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "High-Contrast Visual Toys",
+              "hashtags": [],
               "activity": {
                 "name": "Contrast Flash Play",
                 "materials": [
@@ -84,21 +88,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "High-Contrast Visual Toys"
+                ]
               }
             },
             {
-              "topicNumber": 4,
+              "topicNumber": "4",
               "topic": "Bold Shape Cards",
               "objective": "Engage in Bold Shape Cards activities to develop visual arts skills",
               "explanation": "This activity focuses on Bold Shape Cards within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "High-Contrast Visual Toys",
+              "hashtags": [],
               "activity": {
                 "name": "Bold Shape Cards",
                 "materials": [
@@ -111,21 +116,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "High-Contrast Visual Toys"
+                ]
               }
             },
             {
-              "topicNumber": 5,
+              "topicNumber": "5",
               "topic": "Visual Focus Puzzle",
               "objective": "Engage in Visual Focus Puzzle activities to develop visual arts skills",
               "explanation": "This activity focuses on Visual Focus Puzzle within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "High-Contrast Visual Toys",
+              "hashtags": [],
               "activity": {
                 "name": "Visual Focus Puzzle",
                 "materials": [
@@ -138,21 +144,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "High-Contrast Visual Toys"
+                ]
               }
             },
             {
-              "topicNumber": 6,
+              "topicNumber": "6",
               "topic": "Soft Finger Paint Fun",
               "objective": "Engage in Soft Finger Paint Fun activities to develop visual arts skills",
               "explanation": "This activity focuses on Soft Finger Paint Fun within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Finger Painting Exploration",
+              "hashtags": [],
               "activity": {
                 "name": "Soft Finger Paint Fun",
                 "materials": [
@@ -165,21 +172,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Finger Painting Exploration"
+                ]
               }
             },
             {
-              "topicNumber": 7,
+              "topicNumber": "7",
               "topic": "Color Dab Adventure",
               "objective": "Engage in Color Dab Adventure activities to develop visual arts skills",
               "explanation": "This activity focuses on Color Dab Adventure within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Finger Painting Exploration",
+              "hashtags": [],
               "activity": {
                 "name": "Color Dab Adventure",
                 "materials": [
@@ -192,21 +200,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Finger Painting Exploration"
+                ]
               }
             },
             {
-              "topicNumber": 8,
+              "topicNumber": "8",
               "topic": "Tiny Finger Masterpieces",
               "objective": "Engage in Tiny Finger Masterpieces activities to develop visual arts skills",
               "explanation": "This activity focuses on Tiny Finger Masterpieces within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Finger Painting Exploration",
+              "hashtags": [],
               "activity": {
                 "name": "Tiny Finger Masterpieces",
                 "materials": [
@@ -219,21 +228,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Finger Painting Exploration"
+                ]
               }
             },
             {
-              "topicNumber": 9,
+              "topicNumber": "9",
               "topic": "Gentle Paint Swipe",
               "objective": "Engage in Gentle Paint Swipe activities to develop visual arts skills",
               "explanation": "This activity focuses on Gentle Paint Swipe within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Finger Painting Exploration",
+              "hashtags": [],
               "activity": {
                 "name": "Gentle Paint Swipe",
                 "materials": [
@@ -246,21 +256,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Finger Painting Exploration"
+                ]
               }
             },
             {
-              "topicNumber": 10,
+              "topicNumber": "10",
               "topic": "Sensory Paint Mats",
               "objective": "Engage in Sensory Paint Mats activities to develop visual arts skills",
               "explanation": "This activity focuses on Sensory Paint Mats within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Finger Painting Exploration",
+              "hashtags": [],
               "activity": {
                 "name": "Sensory Paint Mats",
                 "materials": [
@@ -273,21 +284,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Finger Painting Exploration"
+                ]
               }
             },
             {
-              "topicNumber": 11,
+              "topicNumber": "11",
               "topic": "Color Match Crawl",
               "objective": "Engage in Color Match Crawl activities to develop visual arts skills",
               "explanation": "This activity focuses on Color Match Crawl within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Color Recognition Play",
+              "hashtags": [],
               "activity": {
                 "name": "Color Match Crawl",
                 "materials": [
@@ -300,21 +312,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Color Recognition Play"
+                ]
               }
             },
             {
-              "topicNumber": 12,
+              "topicNumber": "12",
               "topic": "Peek-a-Color Game",
               "objective": "Engage in Peek-a-Color Game activities to develop visual arts skills",
               "explanation": "This activity focuses on Peek-a-Color Game within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Color Recognition Play",
+              "hashtags": [],
               "activity": {
                 "name": "Peek-a-Color Game",
                 "materials": [
@@ -327,21 +340,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Color Recognition Play"
+                ]
               }
             },
             {
-              "topicNumber": 13,
+              "topicNumber": "13",
               "topic": "Soft Color Blocks",
               "objective": "Engage in Soft Color Blocks activities to develop visual arts skills",
               "explanation": "This activity focuses on Soft Color Blocks within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Color Recognition Play",
+              "hashtags": [],
               "activity": {
                 "name": "Soft Color Blocks",
                 "materials": [
@@ -354,21 +368,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Color Recognition Play"
+                ]
               }
             },
             {
-              "topicNumber": 14,
+              "topicNumber": "14",
               "topic": "Color Swipe Mats",
               "objective": "Engage in Color Swipe Mats activities to develop visual arts skills",
               "explanation": "This activity focuses on Color Swipe Mats within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Color Recognition Play",
+              "hashtags": [],
               "activity": {
                 "name": "Color Swipe Mats",
                 "materials": [
@@ -381,21 +396,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Color Recognition Play"
+                ]
               }
             },
             {
-              "topicNumber": 15,
+              "topicNumber": "15",
               "topic": "Rolling Color Ball",
               "objective": "Engage in Rolling Color Ball activities to develop visual arts skills",
               "explanation": "This activity focuses on Rolling Color Ball within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Color Recognition Play",
+              "hashtags": [],
               "activity": {
                 "name": "Rolling Color Ball",
                 "materials": [
@@ -408,21 +424,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Color Recognition Play"
+                ]
               }
             },
             {
-              "topicNumber": 16,
+              "topicNumber": "16",
               "topic": "Dance of Shapes",
               "objective": "Engage in Dance of Shapes activities to develop visual arts skills",
               "explanation": "This activity focuses on Dance of Shapes within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Watching Artful Movement",
+              "hashtags": [],
               "activity": {
                 "name": "Dance of Shapes",
                 "materials": [
@@ -435,21 +452,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Watching Artful Movement"
+                ]
               }
             },
             {
-              "topicNumber": 17,
+              "topicNumber": "17",
               "topic": "Moving Colors Mat",
               "objective": "Engage in Moving Colors Mat activities to develop visual arts skills",
               "explanation": "This activity focuses on Moving Colors Mat within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Watching Artful Movement",
+              "hashtags": [],
               "activity": {
                 "name": "Moving Colors Mat",
                 "materials": [
@@ -462,21 +480,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Watching Artful Movement"
+                ]
               }
             },
             {
-              "topicNumber": 18,
+              "topicNumber": "18",
               "topic": "Mobile Motion Fun",
               "objective": "Engage in Mobile Motion Fun activities to develop visual arts skills",
               "explanation": "This activity focuses on Mobile Motion Fun within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Watching Artful Movement",
+              "hashtags": [],
               "activity": {
                 "name": "Mobile Motion Fun",
                 "materials": [
@@ -489,21 +508,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Watching Artful Movement"
+                ]
               }
             },
             {
-              "topicNumber": 19,
+              "topicNumber": "19",
               "topic": "Spinning Shapes Game",
               "objective": "Engage in Spinning Shapes Game activities to develop visual arts skills",
               "explanation": "This activity focuses on Spinning Shapes Game within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Watching Artful Movement",
+              "hashtags": [],
               "activity": {
                 "name": "Spinning Shapes Game",
                 "materials": [
@@ -516,21 +536,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Watching Artful Movement"
+                ]
               }
             },
             {
-              "topicNumber": 20,
+              "topicNumber": "20",
               "topic": "Gentle Flow Animation",
               "objective": "Engage in Gentle Flow Animation activities to develop visual arts skills",
               "explanation": "This activity focuses on Gentle Flow Animation within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Watching Artful Movement",
+              "hashtags": [],
               "activity": {
                 "name": "Gentle Flow Animation",
                 "materials": [
@@ -543,21 +564,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Watching Artful Movement"
+                ]
               }
             },
             {
-              "topicNumber": 21,
+              "topicNumber": "21",
               "topic": "Crayon Scribble Adventure",
               "objective": "Engage in Crayon Scribble Adventure activities to develop visual arts skills",
               "explanation": "This activity focuses on Crayon Scribble Adventure within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Coloring with Crayons",
+              "hashtags": [],
               "activity": {
                 "name": "Crayon Scribble Adventure",
                 "materials": [
@@ -570,21 +592,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Coloring with Crayons"
+                ]
               }
             },
             {
-              "topicNumber": 22,
+              "topicNumber": "22",
               "topic": "Rainbow Crayon Maze",
               "objective": "Engage in Rainbow Crayon Maze activities to develop visual arts skills",
               "explanation": "This activity focuses on Rainbow Crayon Maze within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Coloring with Crayons",
+              "hashtags": [],
               "activity": {
                 "name": "Rainbow Crayon Maze",
                 "materials": [
@@ -597,21 +620,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Coloring with Crayons"
+                ]
               }
             },
             {
-              "topicNumber": 23,
+              "topicNumber": "23",
               "topic": "Scribble & Match",
               "objective": "Engage in Scribble & Match activities to develop visual arts skills",
               "explanation": "This activity focuses on Scribble & Match within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Coloring with Crayons",
+              "hashtags": [],
               "activity": {
                 "name": "Scribble & Match",
                 "materials": [
@@ -624,21 +648,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Coloring with Crayons"
+                ]
               }
             },
             {
-              "topicNumber": 24,
+              "topicNumber": "24",
               "topic": "Color Path Drawing",
               "objective": "Engage in Color Path Drawing activities to develop visual arts skills",
               "explanation": "This activity focuses on Color Path Drawing within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Coloring with Crayons",
+              "hashtags": [],
               "activity": {
                 "name": "Color Path Drawing",
                 "materials": [
@@ -651,21 +676,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Coloring with Crayons"
+                ]
               }
             },
             {
-              "topicNumber": 25,
+              "topicNumber": "25",
               "topic": "Tiny Artist Fun",
               "objective": "Engage in Tiny Artist Fun activities to develop visual arts skills",
               "explanation": "This activity focuses on Tiny Artist Fun within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Coloring with Crayons",
+              "hashtags": [],
               "activity": {
                 "name": "Tiny Artist Fun",
                 "materials": [
@@ -678,21 +704,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Coloring with Crayons"
+                ]
               }
             },
             {
-              "topicNumber": 26,
+              "topicNumber": "26",
               "topic": "Shape Sticker Collage",
               "objective": "Engage in Shape Sticker Collage activities to develop visual arts skills",
               "explanation": "This activity focuses on Shape Sticker Collage within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Sticker and Shape Play",
+              "hashtags": [],
               "activity": {
                 "name": "Shape Sticker Collage",
                 "materials": [
@@ -705,21 +732,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Sticker and Shape Play"
+                ]
               }
             },
             {
-              "topicNumber": 27,
+              "topicNumber": "27",
               "topic": "Animal Sticker Fun",
               "objective": "Engage in Animal Sticker Fun activities to develop visual arts skills",
               "explanation": "This activity focuses on Animal Sticker Fun within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Sticker and Shape Play",
+              "hashtags": [],
               "activity": {
                 "name": "Animal Sticker Fun",
                 "materials": [
@@ -732,21 +760,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Sticker and Shape Play"
+                ]
               }
             },
             {
-              "topicNumber": 28,
+              "topicNumber": "28",
               "topic": "Sticker Sorting Game",
               "objective": "Engage in Sticker Sorting Game activities to develop visual arts skills",
               "explanation": "This activity focuses on Sticker Sorting Game within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Sticker and Shape Play",
+              "hashtags": [],
               "activity": {
                 "name": "Sticker Sorting Game",
                 "materials": [
@@ -759,21 +788,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Sticker and Shape Play"
+                ]
               }
             },
             {
-              "topicNumber": 29,
+              "topicNumber": "29",
               "topic": "Sticker Pattern Board",
               "objective": "Engage in Sticker Pattern Board activities to develop visual arts skills",
               "explanation": "This activity focuses on Sticker Pattern Board within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Sticker and Shape Play",
+              "hashtags": [],
               "activity": {
                 "name": "Sticker Pattern Board",
                 "materials": [
@@ -786,21 +816,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Sticker and Shape Play"
+                ]
               }
             },
             {
-              "topicNumber": 30,
+              "topicNumber": "30",
               "topic": "Shape Match Sticker",
               "objective": "Engage in Shape Match Sticker activities to develop visual arts skills",
               "explanation": "This activity focuses on Shape Match Sticker within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Sticker and Shape Play",
+              "hashtags": [],
               "activity": {
                 "name": "Shape Match Sticker",
                 "materials": [
@@ -813,21 +844,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Sticker and Shape Play"
+                ]
               }
             },
             {
-              "topicNumber": 31,
+              "topicNumber": "31",
               "topic": "Thumbprint Animals",
               "objective": "Engage in Thumbprint Animals activities to develop visual arts skills",
               "explanation": "This activity focuses on Thumbprint Animals within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Fingerprint Art",
+              "hashtags": [],
               "activity": {
                 "name": "Thumbprint Animals",
                 "materials": [
@@ -840,21 +872,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Fingerprint Art"
+                ]
               }
             },
             {
-              "topicNumber": 32,
+              "topicNumber": "32",
               "topic": "Fingerprint Garden",
               "objective": "Engage in Fingerprint Garden activities to develop visual arts skills",
               "explanation": "This activity focuses on Fingerprint Garden within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Fingerprint Art",
+              "hashtags": [],
               "activity": {
                 "name": "Fingerprint Garden",
                 "materials": [
@@ -867,21 +900,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Fingerprint Art"
+                ]
               }
             },
             {
-              "topicNumber": 33,
+              "topicNumber": "33",
               "topic": "Dot & Print Art",
               "objective": "Engage in Dot & Print Art activities to develop visual arts skills",
               "explanation": "This activity focuses on Dot & Print Art within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Fingerprint Art",
+              "hashtags": [],
               "activity": {
                 "name": "Dot & Print Art",
                 "materials": [
@@ -894,21 +928,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Fingerprint Art"
+                ]
               }
             },
             {
-              "topicNumber": 34,
+              "topicNumber": "34",
               "topic": "Rainbow Fingerprints",
               "objective": "Engage in Rainbow Fingerprints activities to develop visual arts skills",
               "explanation": "This activity focuses on Rainbow Fingerprints within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Fingerprint Art",
+              "hashtags": [],
               "activity": {
                 "name": "Rainbow Fingerprints",
                 "materials": [
@@ -921,21 +956,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Fingerprint Art"
+                ]
               }
             },
             {
-              "topicNumber": 35,
+              "topicNumber": "35",
               "topic": "Print & Mix Creations",
               "objective": "Engage in Print & Mix Creations activities to develop visual arts skills",
               "explanation": "This activity focuses on Print & Mix Creations within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Fingerprint Art",
+              "hashtags": [],
               "activity": {
                 "name": "Print & Mix Creations",
                 "materials": [
@@ -948,21 +984,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Fingerprint Art"
+                ]
               }
             },
             {
-              "topicNumber": 36,
+              "topicNumber": "36",
               "topic": "Sponge Color Fun",
               "objective": "Engage in Sponge Color Fun activities to develop visual arts skills",
               "explanation": "This activity focuses on Sponge Color Fun within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Painting with Sponges",
+              "hashtags": [],
               "activity": {
                 "name": "Sponge Color Fun",
                 "materials": [
@@ -975,21 +1012,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Painting with Sponges"
+                ]
               }
             },
             {
-              "topicNumber": 37,
+              "topicNumber": "37",
               "topic": "Soft Sponge Stamping",
               "objective": "Engage in Soft Sponge Stamping activities to develop visual arts skills",
               "explanation": "This activity focuses on Soft Sponge Stamping within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Painting with Sponges",
+              "hashtags": [],
               "activity": {
                 "name": "Soft Sponge Stamping",
                 "materials": [
@@ -1002,21 +1040,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Painting with Sponges"
+                ]
               }
             },
             {
-              "topicNumber": 38,
+              "topicNumber": "38",
               "topic": "Sponge Shape Play",
               "objective": "Engage in Sponge Shape Play activities to develop visual arts skills",
               "explanation": "This activity focuses on Sponge Shape Play within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Painting with Sponges",
+              "hashtags": [],
               "activity": {
                 "name": "Sponge Shape Play",
                 "materials": [
@@ -1029,21 +1068,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Painting with Sponges"
+                ]
               }
             },
             {
-              "topicNumber": 39,
+              "topicNumber": "39",
               "topic": "Dab & Stamp Game",
               "objective": "Engage in Dab & Stamp Game activities to develop visual arts skills",
               "explanation": "This activity focuses on Dab & Stamp Game within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Painting with Sponges",
+              "hashtags": [],
               "activity": {
                 "name": "Dab & Stamp Game",
                 "materials": [
@@ -1056,21 +1096,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Painting with Sponges"
+                ]
               }
             },
             {
-              "topicNumber": 40,
+              "topicNumber": "40",
               "topic": "Sponge Texture Art",
               "objective": "Engage in Sponge Texture Art activities to develop visual arts skills",
               "explanation": "This activity focuses on Sponge Texture Art within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Painting with Sponges",
+              "hashtags": [],
               "activity": {
                 "name": "Sponge Texture Art",
                 "materials": [
@@ -1083,21 +1124,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Painting with Sponges"
+                ]
               }
             },
             {
-              "topicNumber": 41,
+              "topicNumber": "41",
               "topic": "Watercolor Swirl Art",
               "objective": "Engage in Watercolor Swirl Art activities to develop visual arts skills",
               "explanation": "This activity focuses on Watercolor Swirl Art within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Watercolor Experiments",
+              "hashtags": [],
               "activity": {
                 "name": "Watercolor Swirl Art",
                 "materials": [
@@ -1110,21 +1152,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Watercolor Experiments"
+                ]
               }
             },
             {
-              "topicNumber": 42,
+              "topicNumber": "42",
               "topic": "Rainbow Water Mixing",
               "objective": "Engage in Rainbow Water Mixing activities to develop visual arts skills",
               "explanation": "This activity focuses on Rainbow Water Mixing within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Watercolor Experiments",
+              "hashtags": [],
               "activity": {
                 "name": "Rainbow Water Mixing",
                 "materials": [
@@ -1137,21 +1180,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Watercolor Experiments"
+                ]
               }
             },
             {
-              "topicNumber": 43,
+              "topicNumber": "43",
               "topic": "Soft Brush Adventure",
               "objective": "Engage in Soft Brush Adventure activities to develop visual arts skills",
               "explanation": "This activity focuses on Soft Brush Adventure within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Watercolor Experiments",
+              "hashtags": [],
               "activity": {
                 "name": "Soft Brush Adventure",
                 "materials": [
@@ -1164,21 +1208,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Watercolor Experiments"
+                ]
               }
             },
             {
-              "topicNumber": 44,
+              "topicNumber": "44",
               "topic": "Watercolor Splash Game",
               "objective": "Engage in Watercolor Splash Game activities to develop visual arts skills",
               "explanation": "This activity focuses on Watercolor Splash Game within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Watercolor Experiments",
+              "hashtags": [],
               "activity": {
                 "name": "Watercolor Splash Game",
                 "materials": [
@@ -1191,21 +1236,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Watercolor Experiments"
+                ]
               }
             },
             {
-              "topicNumber": 45,
+              "topicNumber": "45",
               "topic": "Flowing Color Mats",
               "objective": "Engage in Flowing Color Mats activities to develop visual arts skills",
               "explanation": "This activity focuses on Flowing Color Mats within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Watercolor Experiments",
+              "hashtags": [],
               "activity": {
                 "name": "Flowing Color Mats",
                 "materials": [
@@ -1218,21 +1264,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Watercolor Experiments"
+                ]
               }
             },
             {
-              "topicNumber": 46,
+              "topicNumber": "46",
               "topic": "Leaf Collage Creation",
               "objective": "Engage in Leaf Collage Creation activities to develop visual arts skills",
               "explanation": "This activity focuses on Leaf Collage Creation within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Craft with Nature Items",
+              "hashtags": [],
               "activity": {
                 "name": "Leaf Collage Creation",
                 "materials": [
@@ -1245,21 +1292,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Craft with Nature Items"
+                ]
               }
             },
             {
-              "topicNumber": 47,
+              "topicNumber": "47",
               "topic": "Nature Art Prints",
               "objective": "Engage in Nature Art Prints activities to develop visual arts skills",
               "explanation": "This activity focuses on Nature Art Prints within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Craft with Nature Items",
+              "hashtags": [],
               "activity": {
                 "name": "Nature Art Prints",
                 "materials": [
@@ -1272,21 +1320,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Craft with Nature Items"
+                ]
               }
             },
             {
-              "topicNumber": 48,
+              "topicNumber": "48",
               "topic": "Stick & Leaf Fun",
               "objective": "Engage in Stick & Leaf Fun activities to develop visual arts skills",
               "explanation": "This activity focuses on Stick & Leaf Fun within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Craft with Nature Items",
+              "hashtags": [],
               "activity": {
                 "name": "Stick & Leaf Fun",
                 "materials": [
@@ -1299,21 +1348,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Craft with Nature Items"
+                ]
               }
             },
             {
-              "topicNumber": 49,
+              "topicNumber": "49",
               "topic": "Rock Painting Adventure",
               "objective": "Engage in Rock Painting Adventure activities to develop visual arts skills",
               "explanation": "This activity focuses on Rock Painting Adventure within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Craft with Nature Items",
+              "hashtags": [],
               "activity": {
                 "name": "Rock Painting Adventure",
                 "materials": [
@@ -1326,21 +1376,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Craft with Nature Items"
+                ]
               }
             },
             {
-              "topicNumber": 50,
+              "topicNumber": "50",
               "topic": "Flower Press Art",
               "objective": "Engage in Flower Press Art activities to develop visual arts skills",
               "explanation": "This activity focuses on Flower Press Art within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Craft with Nature Items",
+              "hashtags": [],
               "activity": {
                 "name": "Flower Press Art",
                 "materials": [
@@ -1353,21 +1404,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Craft with Nature Items"
+                ]
               }
             },
             {
-              "topicNumber": 51,
+              "topicNumber": "51",
               "topic": "Texture Collage Play",
               "objective": "Engage in Texture Collage Play activities to develop visual arts skills",
               "explanation": "This activity focuses on Texture Collage Play within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Mixed Media Art",
+              "hashtags": [],
               "activity": {
                 "name": "Texture Collage Play",
                 "materials": [
@@ -1380,21 +1432,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Mixed Media Art"
+                ]
               }
             },
             {
-              "topicNumber": 52,
+              "topicNumber": "52",
               "topic": "Paper & Fabric Fun",
               "objective": "Engage in Paper & Fabric Fun activities to develop visual arts skills",
               "explanation": "This activity focuses on Paper & Fabric Fun within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Mixed Media Art",
+              "hashtags": [],
               "activity": {
                 "name": "Paper & Fabric Fun",
                 "materials": [
@@ -1407,21 +1460,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Mixed Media Art"
+                ]
               }
             },
             {
-              "topicNumber": 53,
+              "topicNumber": "53",
               "topic": "Layered Art Creations",
               "objective": "Engage in Layered Art Creations activities to develop visual arts skills",
               "explanation": "This activity focuses on Layered Art Creations within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Mixed Media Art",
+              "hashtags": [],
               "activity": {
                 "name": "Layered Art Creations",
                 "materials": [
@@ -1434,21 +1488,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Mixed Media Art"
+                ]
               }
             },
             {
-              "topicNumber": 54,
+              "topicNumber": "54",
               "topic": "Creative Material Mix",
               "objective": "Engage in Creative Material Mix activities to develop visual arts skills",
               "explanation": "This activity focuses on Creative Material Mix within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Mixed Media Art",
+              "hashtags": [],
               "activity": {
                 "name": "Creative Material Mix",
                 "materials": [
@@ -1461,21 +1516,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Mixed Media Art"
+                ]
               }
             },
             {
-              "topicNumber": 55,
+              "topicNumber": "55",
               "topic": "Pattern & Color Art",
               "objective": "Engage in Pattern & Color Art activities to develop visual arts skills",
               "explanation": "This activity focuses on Pattern & Color Art within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Mixed Media Art",
+              "hashtags": [],
               "activity": {
                 "name": "Pattern & Color Art",
                 "materials": [
@@ -1488,21 +1544,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Mixed Media Art"
+                ]
               }
             },
             {
-              "topicNumber": 56,
+              "topicNumber": "56",
               "topic": "Color Mixing Lab",
               "objective": "Engage in Color Mixing Lab activities to develop visual arts skills",
               "explanation": "This activity focuses on Color Mixing Lab within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Learning Primary & Secondary Colors",
+              "hashtags": [],
               "activity": {
                 "name": "Color Mixing Lab",
                 "materials": [
@@ -1515,21 +1572,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Learning Primary & Secondary Colors"
+                ]
               }
             },
             {
-              "topicNumber": 57,
+              "topicNumber": "57",
               "topic": "Rainbow Color Hunt",
               "objective": "Engage in Rainbow Color Hunt activities to develop visual arts skills",
               "explanation": "This activity focuses on Rainbow Color Hunt within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Learning Primary & Secondary Colors",
+              "hashtags": [],
               "activity": {
                 "name": "Rainbow Color Hunt",
                 "materials": [
@@ -1542,21 +1600,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Learning Primary & Secondary Colors"
+                ]
               }
             },
             {
-              "topicNumber": 58,
+              "topicNumber": "58",
               "topic": "Color Wheel Exploration",
               "objective": "Engage in Color Wheel Exploration activities to develop visual arts skills",
               "explanation": "This activity focuses on Color Wheel Exploration within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Learning Primary & Secondary Colors",
+              "hashtags": [],
               "activity": {
                 "name": "Color Wheel Exploration",
                 "materials": [
@@ -1569,21 +1628,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Learning Primary & Secondary Colors"
+                ]
               }
             },
             {
-              "topicNumber": 59,
+              "topicNumber": "59",
               "topic": "Mix & Match Colors",
               "objective": "Engage in Mix & Match Colors activities to develop visual arts skills",
               "explanation": "This activity focuses on Mix & Match Colors within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Learning Primary & Secondary Colors",
+              "hashtags": [],
               "activity": {
                 "name": "Mix & Match Colors",
                 "materials": [
@@ -1596,21 +1656,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Learning Primary & Secondary Colors"
+                ]
               }
             },
             {
-              "topicNumber": 60,
+              "topicNumber": "60",
               "topic": "Color Recognition Adventure",
               "objective": "Engage in Color Recognition Adventure activities to develop visual arts skills",
               "explanation": "This activity focuses on Color Recognition Adventure within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Learning Primary & Secondary Colors",
+              "hashtags": [],
               "activity": {
                 "name": "Color Recognition Adventure",
                 "materials": [
@@ -1623,21 +1684,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Learning Primary & Secondary Colors"
+                ]
               }
             },
             {
-              "topicNumber": 61,
+              "topicNumber": "61",
               "topic": "Imaginative Sketch Time",
               "objective": "Engage in Imaginative Sketch Time activities to develop visual arts skills",
               "explanation": "This activity focuses on Imaginative Sketch Time within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Sketching from Imagination",
+              "hashtags": [],
               "activity": {
                 "name": "Imaginative Sketch Time",
                 "materials": [
@@ -1650,21 +1712,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Sketching from Imagination"
+                ]
               }
             },
             {
-              "topicNumber": 62,
+              "topicNumber": "62",
               "topic": "Story Sketch Challenge",
               "objective": "Engage in Story Sketch Challenge activities to develop visual arts skills",
               "explanation": "This activity focuses on Story Sketch Challenge within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Sketching from Imagination",
+              "hashtags": [],
               "activity": {
                 "name": "Story Sketch Challenge",
                 "materials": [
@@ -1677,21 +1740,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Sketching from Imagination"
+                ]
               }
             },
             {
-              "topicNumber": 63,
+              "topicNumber": "63",
               "topic": "Character Drawing Adventure",
               "objective": "Engage in Character Drawing Adventure activities to develop visual arts skills",
               "explanation": "This activity focuses on Character Drawing Adventure within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Sketching from Imagination",
+              "hashtags": [],
               "activity": {
                 "name": "Character Drawing Adventure",
                 "materials": [
@@ -1704,21 +1768,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Sketching from Imagination"
+                ]
               }
             },
             {
-              "topicNumber": 64,
+              "topicNumber": "64",
               "topic": "Mini Comic Sketch",
               "objective": "Engage in Mini Comic Sketch activities to develop visual arts skills",
               "explanation": "This activity focuses on Mini Comic Sketch within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Sketching from Imagination",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Comic Sketch",
                 "materials": [
@@ -1731,21 +1796,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Sketching from Imagination"
+                ]
               }
             },
             {
-              "topicNumber": 65,
+              "topicNumber": "65",
               "topic": "Scene Illustration Fun",
               "objective": "Engage in Scene Illustration Fun activities to develop visual arts skills",
               "explanation": "This activity focuses on Scene Illustration Fun within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Sketching from Imagination",
+              "hashtags": [],
               "activity": {
                 "name": "Scene Illustration Fun",
                 "materials": [
@@ -1758,21 +1824,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Sketching from Imagination"
+                ]
               }
             },
             {
-              "topicNumber": 66,
+              "topicNumber": "66",
               "topic": "Paper Mosaic Art",
               "objective": "Engage in Paper Mosaic Art activities to develop visual arts skills",
               "explanation": "This activity focuses on Paper Mosaic Art within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Paper Collage Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Paper Mosaic Art",
                 "materials": [
@@ -1785,21 +1852,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Paper Collage Projects"
+                ]
               }
             },
             {
-              "topicNumber": 67,
+              "topicNumber": "67",
               "topic": "Recycled Paper Scenes",
               "objective": "Engage in Recycled Paper Scenes activities to develop visual arts skills",
               "explanation": "This activity focuses on Recycled Paper Scenes within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Paper Collage Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Recycled Paper Scenes",
                 "materials": [
@@ -1812,21 +1880,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Paper Collage Projects"
+                ]
               }
             },
             {
-              "topicNumber": 68,
+              "topicNumber": "68",
               "topic": "Layered Paper Landscapes",
               "objective": "Engage in Layered Paper Landscapes activities to develop visual arts skills",
               "explanation": "This activity focuses on Layered Paper Landscapes within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Paper Collage Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Layered Paper Landscapes",
                 "materials": [
@@ -1839,21 +1908,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Paper Collage Projects"
+                ]
               }
             },
             {
-              "topicNumber": 69,
+              "topicNumber": "69",
               "topic": "Collage Animals",
               "objective": "Engage in Collage Animals activities to develop visual arts skills",
               "explanation": "This activity focuses on Collage Animals within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Paper Collage Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Collage Animals",
                 "materials": [
@@ -1866,21 +1936,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Paper Collage Projects"
+                ]
               }
             },
             {
-              "topicNumber": 70,
+              "topicNumber": "70",
               "topic": "Creative Shape Collage",
               "objective": "Engage in Creative Shape Collage activities to develop visual arts skills",
               "explanation": "This activity focuses on Creative Shape Collage within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Paper Collage Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Creative Shape Collage",
                 "materials": [
@@ -1893,21 +1964,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Paper Collage Projects"
+                ]
               }
             },
             {
-              "topicNumber": 71,
+              "topicNumber": "71",
               "topic": "Mini Art Journal",
               "objective": "Engage in Mini Art Journal activities to develop visual arts skills",
               "explanation": "This activity focuses on Mini Art Journal within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Art Journaling",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Art Journal",
                 "materials": [
@@ -1920,21 +1992,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Art Journaling"
+                ]
               }
             },
             {
-              "topicNumber": 72,
+              "topicNumber": "72",
               "topic": "Daily Drawing Journal",
               "objective": "Engage in Daily Drawing Journal activities to develop visual arts skills",
               "explanation": "This activity focuses on Daily Drawing Journal within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Art Journaling",
+              "hashtags": [],
               "activity": {
                 "name": "Daily Drawing Journal",
                 "materials": [
@@ -1947,21 +2020,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Art Journaling"
+                ]
               }
             },
             {
-              "topicNumber": 73,
+              "topicNumber": "73",
               "topic": "Emotion Art Diary",
               "objective": "Engage in Emotion Art Diary activities to develop visual arts skills",
               "explanation": "This activity focuses on Emotion Art Diary within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Art Journaling",
+              "hashtags": [],
               "activity": {
                 "name": "Emotion Art Diary",
                 "materials": [
@@ -1974,21 +2048,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Art Journaling"
+                ]
               }
             },
             {
-              "topicNumber": 74,
+              "topicNumber": "74",
               "topic": "Nature Sketch Journal",
               "objective": "Engage in Nature Sketch Journal activities to develop visual arts skills",
               "explanation": "This activity focuses on Nature Sketch Journal within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Art Journaling",
+              "hashtags": [],
               "activity": {
                 "name": "Nature Sketch Journal",
                 "materials": [
@@ -2001,21 +2076,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Art Journaling"
+                ]
               }
             },
             {
-              "topicNumber": 75,
+              "topicNumber": "75",
               "topic": "Story Sketch Journal",
               "objective": "Engage in Story Sketch Journal activities to develop visual arts skills",
               "explanation": "This activity focuses on Story Sketch Journal within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Art Journaling",
+              "hashtags": [],
               "activity": {
                 "name": "Story Sketch Journal",
                 "materials": [
@@ -2028,21 +2104,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Art Journaling"
+                ]
               }
             },
             {
-              "topicNumber": 76,
+              "topicNumber": "76",
               "topic": "Soft Clay Figures",
               "objective": "Engage in Soft Clay Figures activities to develop visual arts skills",
               "explanation": "This activity focuses on Soft Clay Figures within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Clay Modeling",
+              "hashtags": [],
               "activity": {
                 "name": "Soft Clay Figures",
                 "materials": [
@@ -2055,21 +2132,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Clay Modeling"
+                ]
               }
             },
             {
-              "topicNumber": 77,
+              "topicNumber": "77",
               "topic": "Mini Clay Animals",
               "objective": "Engage in Mini Clay Animals activities to develop visual arts skills",
               "explanation": "This activity focuses on Mini Clay Animals within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Clay Modeling",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Clay Animals",
                 "materials": [
@@ -2082,21 +2160,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Clay Modeling"
+                ]
               }
             },
             {
-              "topicNumber": 78,
+              "topicNumber": "78",
               "topic": "Clay Fun Shapes",
               "objective": "Engage in Clay Fun Shapes activities to develop visual arts skills",
               "explanation": "This activity focuses on Clay Fun Shapes within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Clay Modeling",
+              "hashtags": [],
               "activity": {
                 "name": "Clay Fun Shapes",
                 "materials": [
@@ -2109,21 +2188,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Clay Modeling"
+                ]
               }
             },
             {
-              "topicNumber": 79,
+              "topicNumber": "79",
               "topic": "Clay Story Characters",
               "objective": "Engage in Clay Story Characters activities to develop visual arts skills",
               "explanation": "This activity focuses on Clay Story Characters within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Clay Modeling",
+              "hashtags": [],
               "activity": {
                 "name": "Clay Story Characters",
                 "materials": [
@@ -2136,21 +2216,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Clay Modeling"
+                ]
               }
             },
             {
-              "topicNumber": 80,
+              "topicNumber": "80",
               "topic": "Modeling Adventure",
               "objective": "Engage in Modeling Adventure activities to develop visual arts skills",
               "explanation": "This activity focuses on Modeling Adventure within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Clay Modeling",
+              "hashtags": [],
               "activity": {
                 "name": "Modeling Adventure",
                 "materials": [
@@ -2163,21 +2244,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Clay Modeling"
+                ]
               }
             },
             {
-              "topicNumber": 81,
+              "topicNumber": "81",
               "topic": "Vanishing Point Challenge",
               "objective": "Engage in Vanishing Point Challenge activities to develop visual arts skills",
               "explanation": "This activity focuses on Vanishing Point Challenge within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Perspective Drawing",
+              "hashtags": [],
               "activity": {
                 "name": "Vanishing Point Challenge",
                 "materials": [
@@ -2190,21 +2272,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Perspective Drawing"
+                ]
               }
             },
             {
-              "topicNumber": 82,
+              "topicNumber": "82",
               "topic": "3D Room Sketch",
               "objective": "Engage in 3D Room Sketch activities to develop visual arts skills",
               "explanation": "This activity focuses on 3D Room Sketch within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Perspective Drawing",
+              "hashtags": [],
               "activity": {
                 "name": "3D Room Sketch",
                 "materials": [
@@ -2217,21 +2300,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Perspective Drawing"
+                ]
               }
             },
             {
-              "topicNumber": 83,
+              "topicNumber": "83",
               "topic": "Depth & Angle Exploration",
               "objective": "Engage in Depth & Angle Exploration activities to develop visual arts skills",
               "explanation": "This activity focuses on Depth & Angle Exploration within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Perspective Drawing",
+              "hashtags": [],
               "activity": {
                 "name": "Depth & Angle Exploration",
                 "materials": [
@@ -2244,21 +2328,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Perspective Drawing"
+                ]
               }
             },
             {
-              "topicNumber": 84,
+              "topicNumber": "84",
               "topic": "Horizon Line Art",
               "objective": "Engage in Horizon Line Art activities to develop visual arts skills",
               "explanation": "This activity focuses on Horizon Line Art within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Perspective Drawing",
+              "hashtags": [],
               "activity": {
                 "name": "Horizon Line Art",
                 "materials": [
@@ -2271,21 +2356,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Perspective Drawing"
+                ]
               }
             },
             {
-              "topicNumber": 85,
+              "topicNumber": "85",
               "topic": "Cityscape Sketch",
               "objective": "Engage in Cityscape Sketch activities to develop visual arts skills",
               "explanation": "This activity focuses on Cityscape Sketch within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Perspective Drawing",
+              "hashtags": [],
               "activity": {
                 "name": "Cityscape Sketch",
                 "materials": [
@@ -2298,21 +2384,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Perspective Drawing"
+                ]
               }
             },
             {
-              "topicNumber": 86,
+              "topicNumber": "86",
               "topic": "Storyboard Challenge",
               "objective": "Engage in Storyboard Challenge activities to develop visual arts skills",
               "explanation": "This activity focuses on Storyboard Challenge within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Comic Strip Creation",
+              "hashtags": [],
               "activity": {
                 "name": "Storyboard Challenge",
                 "materials": [
@@ -2325,21 +2412,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Comic Strip Creation"
+                ]
               }
             },
             {
-              "topicNumber": 87,
+              "topicNumber": "87",
               "topic": "Mini Comic Adventure",
               "objective": "Engage in Mini Comic Adventure activities to develop visual arts skills",
               "explanation": "This activity focuses on Mini Comic Adventure within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Comic Strip Creation",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Comic Adventure",
                 "materials": [
@@ -2352,21 +2440,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Comic Strip Creation"
+                ]
               }
             },
             {
-              "topicNumber": 88,
+              "topicNumber": "88",
               "topic": "Character Dialogue Sketch",
               "objective": "Engage in Character Dialogue Sketch activities to develop visual arts skills",
               "explanation": "This activity focuses on Character Dialogue Sketch within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Comic Strip Creation",
+              "hashtags": [],
               "activity": {
                 "name": "Character Dialogue Sketch",
                 "materials": [
@@ -2379,21 +2468,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Comic Strip Creation"
+                ]
               }
             },
             {
-              "topicNumber": 89,
+              "topicNumber": "89",
               "topic": "Sequential Story Drawing",
               "objective": "Engage in Sequential Story Drawing activities to develop visual arts skills",
               "explanation": "This activity focuses on Sequential Story Drawing within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Comic Strip Creation",
+              "hashtags": [],
               "activity": {
                 "name": "Sequential Story Drawing",
                 "materials": [
@@ -2406,21 +2496,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Comic Strip Creation"
+                ]
               }
             },
             {
-              "topicNumber": 90,
+              "topicNumber": "90",
               "topic": "Action Panel Fun",
               "objective": "Engage in Action Panel Fun activities to develop visual arts skills",
               "explanation": "This activity focuses on Action Panel Fun within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Comic Strip Creation",
+              "hashtags": [],
               "activity": {
                 "name": "Action Panel Fun",
                 "materials": [
@@ -2433,21 +2524,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Comic Strip Creation"
+                ]
               }
             },
             {
-              "topicNumber": 91,
+              "topicNumber": "91",
               "topic": "Impressionist Painting",
               "objective": "Engage in Impressionist Painting activities to develop visual arts skills",
               "explanation": "This activity focuses on Impressionist Painting within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Exploring Famous Art Styles",
+              "hashtags": [],
               "activity": {
                 "name": "Impressionist Painting",
                 "materials": [
@@ -2460,21 +2552,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Exploring Famous Art Styles"
+                ]
               }
             },
             {
-              "topicNumber": 92,
+              "topicNumber": "92",
               "topic": "Cubism Collage",
               "objective": "Engage in Cubism Collage activities to develop visual arts skills",
               "explanation": "This activity focuses on Cubism Collage within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Exploring Famous Art Styles",
+              "hashtags": [],
               "activity": {
                 "name": "Cubism Collage",
                 "materials": [
@@ -2487,21 +2580,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Exploring Famous Art Styles"
+                ]
               }
             },
             {
-              "topicNumber": 93,
+              "topicNumber": "93",
               "topic": "Pop Art Poster",
               "objective": "Engage in Pop Art Poster activities to develop visual arts skills",
               "explanation": "This activity focuses on Pop Art Poster within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Exploring Famous Art Styles",
+              "hashtags": [],
               "activity": {
                 "name": "Pop Art Poster",
                 "materials": [
@@ -2514,21 +2608,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Exploring Famous Art Styles"
+                ]
               }
             },
             {
-              "topicNumber": 94,
+              "topicNumber": "94",
               "topic": "Surrealist Sketch",
               "objective": "Engage in Surrealist Sketch activities to develop visual arts skills",
               "explanation": "This activity focuses on Surrealist Sketch within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Exploring Famous Art Styles",
+              "hashtags": [],
               "activity": {
                 "name": "Surrealist Sketch",
                 "materials": [
@@ -2541,21 +2636,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Exploring Famous Art Styles"
+                ]
               }
             },
             {
-              "topicNumber": 95,
+              "topicNumber": "95",
               "topic": "Modern Art Mashup",
               "objective": "Engage in Modern Art Mashup activities to develop visual arts skills",
               "explanation": "This activity focuses on Modern Art Mashup within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Exploring Famous Art Styles",
+              "hashtags": [],
               "activity": {
                 "name": "Modern Art Mashup",
                 "materials": [
@@ -2568,21 +2664,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Exploring Famous Art Styles"
+                ]
               }
             },
             {
-              "topicNumber": 96,
+              "topicNumber": "96",
               "topic": "Environmental Poster",
               "objective": "Engage in Environmental Poster activities to develop visual arts skills",
               "explanation": "This activity focuses on Environmental Poster within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Thematic Poster Making",
+              "hashtags": [],
               "activity": {
                 "name": "Environmental Poster",
                 "materials": [
@@ -2595,21 +2692,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Thematic Poster Making"
+                ]
               }
             },
             {
-              "topicNumber": 97,
+              "topicNumber": "97",
               "topic": "School Event Poster",
               "objective": "Engage in School Event Poster activities to develop visual arts skills",
               "explanation": "This activity focuses on School Event Poster within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Thematic Poster Making",
+              "hashtags": [],
               "activity": {
                 "name": "School Event Poster",
                 "materials": [
@@ -2622,21 +2720,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Thematic Poster Making"
+                ]
               }
             },
             {
-              "topicNumber": 98,
+              "topicNumber": "98",
               "topic": "Historical Figure Poster",
               "objective": "Engage in Historical Figure Poster activities to develop visual arts skills",
               "explanation": "This activity focuses on Historical Figure Poster within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Thematic Poster Making",
+              "hashtags": [],
               "activity": {
                 "name": "Historical Figure Poster",
                 "materials": [
@@ -2649,21 +2748,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Thematic Poster Making"
+                ]
               }
             },
             {
-              "topicNumber": 99,
+              "topicNumber": "99",
               "topic": "Science Topic Poster",
               "objective": "Engage in Science Topic Poster activities to develop visual arts skills",
               "explanation": "This activity focuses on Science Topic Poster within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Thematic Poster Making",
+              "hashtags": [],
               "activity": {
                 "name": "Science Topic Poster",
                 "materials": [
@@ -2676,21 +2776,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Thematic Poster Making"
+                ]
               }
             },
             {
-              "topicNumber": 100,
+              "topicNumber": "100",
               "topic": "Community Awareness Poster",
               "objective": "Engage in Community Awareness Poster activities to develop visual arts skills",
               "explanation": "This activity focuses on Community Awareness Poster within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Thematic Poster Making",
+              "hashtags": [],
               "activity": {
                 "name": "Community Awareness Poster",
                 "materials": [
@@ -2703,21 +2804,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Thematic Poster Making"
+                ]
               }
             },
             {
-              "topicNumber": 101,
+              "topicNumber": "101",
               "topic": "Digital Character Design",
               "objective": "Engage in Digital Character Design activities to develop visual arts skills",
               "explanation": "This activity focuses on Digital Character Design within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Digital Illustration",
+              "hashtags": [],
               "activity": {
                 "name": "Digital Character Design",
                 "materials": [
@@ -2730,21 +2832,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Digital Illustration"
+                ]
               }
             },
             {
-              "topicNumber": 102,
+              "topicNumber": "102",
               "topic": "Fantasy Digital Art",
               "objective": "Engage in Fantasy Digital Art activities to develop visual arts skills",
               "explanation": "This activity focuses on Fantasy Digital Art within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Digital Illustration",
+              "hashtags": [],
               "activity": {
                 "name": "Fantasy Digital Art",
                 "materials": [
@@ -2757,21 +2860,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Digital Illustration"
+                ]
               }
             },
             {
-              "topicNumber": 103,
+              "topicNumber": "103",
               "topic": "Digital Storyboard",
               "objective": "Engage in Digital Storyboard activities to develop visual arts skills",
               "explanation": "This activity focuses on Digital Storyboard within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Digital Illustration",
+              "hashtags": [],
               "activity": {
                 "name": "Digital Storyboard",
                 "materials": [
@@ -2784,21 +2888,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Digital Illustration"
+                ]
               }
             },
             {
-              "topicNumber": 104,
+              "topicNumber": "104",
               "topic": "Digital Environment Sketch",
               "objective": "Engage in Digital Environment Sketch activities to develop visual arts skills",
               "explanation": "This activity focuses on Digital Environment Sketch within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Digital Illustration",
+              "hashtags": [],
               "activity": {
                 "name": "Digital Environment Sketch",
                 "materials": [
@@ -2811,21 +2916,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Digital Illustration"
+                ]
               }
             },
             {
-              "topicNumber": 105,
+              "topicNumber": "105",
               "topic": "Concept Art Challenge",
               "objective": "Engage in Concept Art Challenge activities to develop visual arts skills",
               "explanation": "This activity focuses on Concept Art Challenge within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Digital Illustration",
+              "hashtags": [],
               "activity": {
                 "name": "Concept Art Challenge",
                 "materials": [
@@ -2838,21 +2944,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Digital Illustration"
+                ]
               }
             },
             {
-              "topicNumber": 106,
+              "topicNumber": "106",
               "topic": "Personal Art Portfolio",
               "objective": "Engage in Personal Art Portfolio activities to develop visual arts skills",
               "explanation": "This activity focuses on Personal Art Portfolio within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Portfolio Building",
+              "hashtags": [],
               "activity": {
                 "name": "Personal Art Portfolio",
                 "materials": [
@@ -2865,21 +2972,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Portfolio Building"
+                ]
               }
             },
             {
-              "topicNumber": 107,
+              "topicNumber": "107",
               "topic": "Mixed Media Portfolio",
               "objective": "Engage in Mixed Media Portfolio activities to develop visual arts skills",
               "explanation": "This activity focuses on Mixed Media Portfolio within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Portfolio Building",
+              "hashtags": [],
               "activity": {
                 "name": "Mixed Media Portfolio",
                 "materials": [
@@ -2892,21 +3000,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Portfolio Building"
+                ]
               }
             },
             {
-              "topicNumber": 108,
+              "topicNumber": "108",
               "topic": "School Exhibition Prep",
               "objective": "Engage in School Exhibition Prep activities to develop visual arts skills",
               "explanation": "This activity focuses on School Exhibition Prep within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Portfolio Building",
+              "hashtags": [],
               "activity": {
                 "name": "School Exhibition Prep",
                 "materials": [
@@ -2919,21 +3028,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Portfolio Building"
+                ]
               }
             },
             {
-              "topicNumber": 109,
+              "topicNumber": "109",
               "topic": "Digital Portfolio Showcase",
               "objective": "Engage in Digital Portfolio Showcase activities to develop visual arts skills",
               "explanation": "This activity focuses on Digital Portfolio Showcase within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Portfolio Building",
+              "hashtags": [],
               "activity": {
                 "name": "Digital Portfolio Showcase",
                 "materials": [
@@ -2946,21 +3056,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Portfolio Building"
+                ]
               }
             },
             {
-              "topicNumber": 110,
+              "topicNumber": "110",
               "topic": "Artwork Compilation Project",
               "objective": "Engage in Artwork Compilation Project activities to develop visual arts skills",
               "explanation": "This activity focuses on Artwork Compilation Project within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Portfolio Building",
+              "hashtags": [],
               "activity": {
                 "name": "Artwork Compilation Project",
                 "materials": [
@@ -2973,21 +3084,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Portfolio Building"
+                ]
               }
             },
             {
-              "topicNumber": 111,
+              "topicNumber": "111",
               "topic": "Landscape Oil Painting",
               "objective": "Engage in Landscape Oil Painting activities to develop visual arts skills",
               "explanation": "This activity focuses on Landscape Oil Painting within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Acrylic & Oil Painting",
+              "hashtags": [],
               "activity": {
                 "name": "Landscape Oil Painting",
                 "materials": [
@@ -3000,21 +3112,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Acrylic & Oil Painting"
+                ]
               }
             },
             {
-              "topicNumber": 112,
+              "topicNumber": "112",
               "topic": "Acrylic Abstract Art",
               "objective": "Engage in Acrylic Abstract Art activities to develop visual arts skills",
               "explanation": "This activity focuses on Acrylic Abstract Art within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Acrylic & Oil Painting",
+              "hashtags": [],
               "activity": {
                 "name": "Acrylic Abstract Art",
                 "materials": [
@@ -3027,21 +3140,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Acrylic & Oil Painting"
+                ]
               }
             },
             {
-              "topicNumber": 113,
+              "topicNumber": "113",
               "topic": "Portrait Painting Challenge",
               "objective": "Engage in Portrait Painting Challenge activities to develop visual arts skills",
               "explanation": "This activity focuses on Portrait Painting Challenge within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Acrylic & Oil Painting",
+              "hashtags": [],
               "activity": {
                 "name": "Portrait Painting Challenge",
                 "materials": [
@@ -3054,21 +3168,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Acrylic & Oil Painting"
+                ]
               }
             },
             {
-              "topicNumber": 114,
+              "topicNumber": "114",
               "topic": "Still Life Oil Painting",
               "objective": "Engage in Still Life Oil Painting activities to develop visual arts skills",
               "explanation": "This activity focuses on Still Life Oil Painting within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Acrylic & Oil Painting",
+              "hashtags": [],
               "activity": {
                 "name": "Still Life Oil Painting",
                 "materials": [
@@ -3081,21 +3196,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Acrylic & Oil Painting"
+                ]
               }
             },
             {
-              "topicNumber": 115,
+              "topicNumber": "115",
               "topic": "Mixed Technique Canvas",
               "objective": "Engage in Mixed Technique Canvas activities to develop visual arts skills",
               "explanation": "This activity focuses on Mixed Technique Canvas within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Acrylic & Oil Painting",
+              "hashtags": [],
               "activity": {
                 "name": "Mixed Technique Canvas",
                 "materials": [
@@ -3108,21 +3224,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Acrylic & Oil Painting"
+                ]
               }
             },
             {
-              "topicNumber": 116,
+              "topicNumber": "116",
               "topic": "Mood Board Creation",
               "objective": "Engage in Mood Board Creation activities to develop visual arts skills",
               "explanation": "This activity focuses on Mood Board Creation within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Conceptual Art & Mood Boards",
+              "hashtags": [],
               "activity": {
                 "name": "Mood Board Creation",
                 "materials": [
@@ -3135,21 +3252,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Conceptual Art & Mood Boards"
+                ]
               }
             },
             {
-              "topicNumber": 117,
+              "topicNumber": "117",
               "topic": "Theme Concept Sketches",
               "objective": "Engage in Theme Concept Sketches activities to develop visual arts skills",
               "explanation": "This activity focuses on Theme Concept Sketches within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Conceptual Art & Mood Boards",
+              "hashtags": [],
               "activity": {
                 "name": "Theme Concept Sketches",
                 "materials": [
@@ -3162,21 +3280,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Conceptual Art & Mood Boards"
+                ]
               }
             },
             {
-              "topicNumber": 118,
+              "topicNumber": "118",
               "topic": "Visual Idea Mapping",
               "objective": "Engage in Visual Idea Mapping activities to develop visual arts skills",
               "explanation": "This activity focuses on Visual Idea Mapping within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Conceptual Art & Mood Boards",
+              "hashtags": [],
               "activity": {
                 "name": "Visual Idea Mapping",
                 "materials": [
@@ -3189,21 +3308,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Conceptual Art & Mood Boards"
+                ]
               }
             },
             {
-              "topicNumber": 119,
+              "topicNumber": "119",
               "topic": "Storyboard Mood Series",
               "objective": "Engage in Storyboard Mood Series activities to develop visual arts skills",
               "explanation": "This activity focuses on Storyboard Mood Series within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Conceptual Art & Mood Boards",
+              "hashtags": [],
               "activity": {
                 "name": "Storyboard Mood Series",
                 "materials": [
@@ -3216,21 +3336,22 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Conceptual Art & Mood Boards"
+                ]
               }
             },
             {
-              "topicNumber": 120,
+              "topicNumber": "120",
               "topic": "Creative Inspiration Board",
               "objective": "Engage in Creative Inspiration Board activities to develop visual arts skills",
               "explanation": "This activity focuses on Creative Inspiration Board within the Visual Arts pillar.",
-              "hashtags": [
-                "#VisualArts",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Visual Arts",
+              "category": "Conceptual Art & Mood Boards",
+              "hashtags": [],
               "activity": {
                 "name": "Creative Inspiration Board",
                 "materials": [
@@ -3243,8 +3364,7 @@
                 ],
                 "skills": [
                   "Visual Arts"
-                ],
-                "category": "Conceptual Art & Mood Boards"
+                ]
               }
             }
           ]
@@ -3253,5 +3373,5 @@
     }
   ],
   "totalActivities": 120,
-  "lastUpdated": "2025-10-12T01:20:25.347125"
+  "lastUpdated": "2025-10-26T12:37:54.390626"
 }

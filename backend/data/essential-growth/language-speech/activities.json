@@ -8,16 +8,18 @@
           "description": "Activities for Language & Speech",
           "activities": [
             {
-              "topicNumber": 1,
+              "topicNumber": "1",
               "topic": "Babble & Giggle Time",
               "objective": "Engage in Babble & Giggle Time activities to develop language & speech skills",
               "explanation": "This activity focuses on Babble & Giggle Time within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Baby Talk & Sounds",
+              "hashtags": [],
               "activity": {
                 "name": "Babble & Giggle Time",
                 "materials": [
@@ -30,21 +32,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Baby Talk & Sounds"
+                ]
               }
             },
             {
-              "topicNumber": 2,
+              "topicNumber": "2",
               "topic": "Sound Exploration Fun",
               "objective": "Engage in Sound Exploration Fun activities to develop language & speech skills",
               "explanation": "This activity focuses on Sound Exploration Fun within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Baby Talk & Sounds",
+              "hashtags": [],
               "activity": {
                 "name": "Sound Exploration Fun",
                 "materials": [
@@ -57,21 +60,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Baby Talk & Sounds"
+                ]
               }
             },
             {
-              "topicNumber": 3,
+              "topicNumber": "3",
               "topic": "Voice Imitation Game",
               "objective": "Engage in Voice Imitation Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Voice Imitation Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Baby Talk & Sounds",
+              "hashtags": [],
               "activity": {
                 "name": "Voice Imitation Game",
                 "materials": [
@@ -84,21 +88,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Baby Talk & Sounds"
+                ]
               }
             },
             {
-              "topicNumber": 4,
+              "topicNumber": "4",
               "topic": "Gentle Babble Play",
               "objective": "Engage in Gentle Babble Play activities to develop language & speech skills",
               "explanation": "This activity focuses on Gentle Babble Play within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Baby Talk & Sounds",
+              "hashtags": [],
               "activity": {
                 "name": "Gentle Babble Play",
                 "materials": [
@@ -111,21 +116,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Baby Talk & Sounds"
+                ]
               }
             },
             {
-              "topicNumber": 5,
+              "topicNumber": "5",
               "topic": "Echo Babble Activity",
               "objective": "Engage in Echo Babble Activity activities to develop language & speech skills",
               "explanation": "This activity focuses on Echo Babble Activity within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Baby Talk & Sounds",
+              "hashtags": [],
               "activity": {
                 "name": "Echo Babble Activity",
                 "materials": [
@@ -138,21 +144,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Baby Talk & Sounds"
+                ]
               }
             },
             {
-              "topicNumber": 6,
+              "topicNumber": "6",
               "topic": "Lullaby Time Snuggle",
               "objective": "Engage in Lullaby Time Snuggle activities to develop language & speech skills",
               "explanation": "This activity focuses on Lullaby Time Snuggle within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Listening to Lullabies",
+              "hashtags": [],
               "activity": {
                 "name": "Lullaby Time Snuggle",
                 "materials": [
@@ -165,21 +172,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Listening to Lullabies"
+                ]
               }
             },
             {
-              "topicNumber": 7,
+              "topicNumber": "7",
               "topic": "Soft Song Listening",
               "objective": "Engage in Soft Song Listening activities to develop language & speech skills",
               "explanation": "This activity focuses on Soft Song Listening within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Listening to Lullabies",
+              "hashtags": [],
               "activity": {
                 "name": "Soft Song Listening",
                 "materials": [
@@ -192,21 +200,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Listening to Lullabies"
+                ]
               }
             },
             {
-              "topicNumber": 8,
+              "topicNumber": "8",
               "topic": "Musical Rock & Listen",
               "objective": "Engage in Musical Rock & Listen activities to develop language & speech skills",
               "explanation": "This activity focuses on Musical Rock & Listen within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Listening to Lullabies",
+              "hashtags": [],
               "activity": {
                 "name": "Musical Rock & Listen",
                 "materials": [
@@ -219,21 +228,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Listening to Lullabies"
+                ]
               }
             },
             {
-              "topicNumber": 9,
+              "topicNumber": "9",
               "topic": "Humming Together Activity",
               "objective": "Engage in Humming Together Activity activities to develop language & speech skills",
               "explanation": "This activity focuses on Humming Together Activity within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Listening to Lullabies",
+              "hashtags": [],
               "activity": {
                 "name": "Humming Together Activity",
                 "materials": [
@@ -246,21 +256,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Listening to Lullabies"
+                ]
               }
             },
             {
-              "topicNumber": 10,
+              "topicNumber": "10",
               "topic": "Calm Tune Exploration",
               "objective": "Engage in Calm Tune Exploration activities to develop language & speech skills",
               "explanation": "This activity focuses on Calm Tune Exploration within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Listening to Lullabies",
+              "hashtags": [],
               "activity": {
                 "name": "Calm Tune Exploration",
                 "materials": [
@@ -273,21 +284,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Listening to Lullabies"
+                ]
               }
             },
             {
-              "topicNumber": 11,
+              "topicNumber": "11",
               "topic": "Object Name Game",
               "objective": "Engage in Object Name Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Object Name Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Naming Everyday Objects",
+              "hashtags": [],
               "activity": {
                 "name": "Object Name Game",
                 "materials": [
@@ -300,21 +312,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Naming Everyday Objects"
+                ]
               }
             },
             {
-              "topicNumber": 12,
+              "topicNumber": "12",
               "topic": "Touch & Tell Activity",
               "objective": "Engage in Touch & Tell Activity activities to develop language & speech skills",
               "explanation": "This activity focuses on Touch & Tell Activity within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Naming Everyday Objects",
+              "hashtags": [],
               "activity": {
                 "name": "Touch & Tell Activity",
                 "materials": [
@@ -327,21 +340,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Naming Everyday Objects"
+                ]
               }
             },
             {
-              "topicNumber": 13,
+              "topicNumber": "13",
               "topic": "Peek & Name Fun",
               "objective": "Engage in Peek & Name Fun activities to develop language & speech skills",
               "explanation": "This activity focuses on Peek & Name Fun within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Naming Everyday Objects",
+              "hashtags": [],
               "activity": {
                 "name": "Peek & Name Fun",
                 "materials": [
@@ -354,21 +368,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Naming Everyday Objects"
+                ]
               }
             },
             {
-              "topicNumber": 14,
+              "topicNumber": "14",
               "topic": "Baby Item Naming",
               "objective": "Engage in Baby Item Naming activities to develop language & speech skills",
               "explanation": "This activity focuses on Baby Item Naming within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Naming Everyday Objects",
+              "hashtags": [],
               "activity": {
                 "name": "Baby Item Naming",
                 "materials": [
@@ -381,21 +396,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Naming Everyday Objects"
+                ]
               }
             },
             {
-              "topicNumber": 15,
+              "topicNumber": "15",
               "topic": "Sound & Object Match",
               "objective": "Engage in Sound & Object Match activities to develop language & speech skills",
               "explanation": "This activity focuses on Sound & Object Match within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Naming Everyday Objects",
+              "hashtags": [],
               "activity": {
                 "name": "Sound & Object Match",
                 "materials": [
@@ -408,21 +424,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Naming Everyday Objects"
+                ]
               }
             },
             {
-              "topicNumber": 16,
+              "topicNumber": "16",
               "topic": "Word Echo Game",
               "objective": "Engage in Word Echo Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Word Echo Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Repeating Simple Words",
+              "hashtags": [],
               "activity": {
                 "name": "Word Echo Game",
                 "materials": [
@@ -435,21 +452,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Repeating Simple Words"
+                ]
               }
             },
             {
-              "topicNumber": 17,
+              "topicNumber": "17",
               "topic": "Copy Me Words",
               "objective": "Engage in Copy Me Words activities to develop language & speech skills",
               "explanation": "This activity focuses on Copy Me Words within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Repeating Simple Words",
+              "hashtags": [],
               "activity": {
                 "name": "Copy Me Words",
                 "materials": [
@@ -462,21 +480,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Repeating Simple Words"
+                ]
               }
             },
             {
-              "topicNumber": 18,
+              "topicNumber": "18",
               "topic": "Repeat & Smile",
               "objective": "Engage in Repeat & Smile activities to develop language & speech skills",
               "explanation": "This activity focuses on Repeat & Smile within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Repeating Simple Words",
+              "hashtags": [],
               "activity": {
                 "name": "Repeat & Smile",
                 "materials": [
@@ -489,21 +508,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Repeating Simple Words"
+                ]
               }
             },
             {
-              "topicNumber": 19,
+              "topicNumber": "19",
               "topic": "Baby Talk Mirror",
               "objective": "Engage in Baby Talk Mirror activities to develop language & speech skills",
               "explanation": "This activity focuses on Baby Talk Mirror within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Repeating Simple Words",
+              "hashtags": [],
               "activity": {
                 "name": "Baby Talk Mirror",
                 "materials": [
@@ -516,21 +536,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Repeating Simple Words"
+                ]
               }
             },
             {
-              "topicNumber": 20,
+              "topicNumber": "20",
               "topic": "Say It Again",
               "objective": "Engage in Say It Again activities to develop language & speech skills",
               "explanation": "This activity focuses on Say It Again within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Repeating Simple Words",
+              "hashtags": [],
               "activity": {
                 "name": "Say It Again",
                 "materials": [
@@ -543,21 +564,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Repeating Simple Words"
+                ]
               }
             },
             {
-              "topicNumber": 21,
+              "topicNumber": "21",
               "topic": "Short Story Time",
               "objective": "Engage in Short Story Time activities to develop language & speech skills",
               "explanation": "This activity focuses on Short Story Time within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Story Listening",
+              "hashtags": [],
               "activity": {
                 "name": "Short Story Time",
                 "materials": [
@@ -570,21 +592,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Story Listening"
+                ]
               }
             },
             {
-              "topicNumber": 22,
+              "topicNumber": "22",
               "topic": "Picture Story Listening",
               "objective": "Engage in Picture Story Listening activities to develop language & speech skills",
               "explanation": "This activity focuses on Picture Story Listening within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Story Listening",
+              "hashtags": [],
               "activity": {
                 "name": "Picture Story Listening",
                 "materials": [
@@ -597,21 +620,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Story Listening"
+                ]
               }
             },
             {
-              "topicNumber": 23,
+              "topicNumber": "23",
               "topic": "Listening Adventure Tales",
               "objective": "Engage in Listening Adventure Tales activities to develop language & speech skills",
               "explanation": "This activity focuses on Listening Adventure Tales within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Story Listening",
+              "hashtags": [],
               "activity": {
                 "name": "Listening Adventure Tales",
                 "materials": [
@@ -624,21 +648,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Story Listening"
+                ]
               }
             },
             {
-              "topicNumber": 24,
+              "topicNumber": "24",
               "topic": "Mini Story Circle",
               "objective": "Engage in Mini Story Circle activities to develop language & speech skills",
               "explanation": "This activity focuses on Mini Story Circle within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Story Listening",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Story Circle",
                 "materials": [
@@ -651,21 +676,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Story Listening"
+                ]
               }
             },
             {
-              "topicNumber": 25,
+              "topicNumber": "25",
               "topic": "Puppet Story Time",
               "objective": "Engage in Puppet Story Time activities to develop language & speech skills",
               "explanation": "This activity focuses on Puppet Story Time within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Story Listening",
+              "hashtags": [],
               "activity": {
                 "name": "Puppet Story Time",
                 "materials": [
@@ -678,21 +704,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Story Listening"
+                ]
               }
             },
             {
-              "topicNumber": 26,
+              "topicNumber": "26",
               "topic": "Word Hunt Game",
               "objective": "Engage in Word Hunt Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Word Hunt Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "First Words Practice",
+              "hashtags": [],
               "activity": {
                 "name": "Word Hunt Game",
                 "materials": [
@@ -705,21 +732,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "First Words Practice"
+                ]
               }
             },
             {
-              "topicNumber": 27,
+              "topicNumber": "27",
               "topic": "Naming Objects Fun",
               "objective": "Engage in Naming Objects Fun activities to develop language & speech skills",
               "explanation": "This activity focuses on Naming Objects Fun within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "First Words Practice",
+              "hashtags": [],
               "activity": {
                 "name": "Naming Objects Fun",
                 "materials": [
@@ -732,21 +760,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "First Words Practice"
+                ]
               }
             },
             {
-              "topicNumber": 28,
+              "topicNumber": "28",
               "topic": "Say & Point Activity",
               "objective": "Engage in Say & Point Activity activities to develop language & speech skills",
               "explanation": "This activity focuses on Say & Point Activity within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "First Words Practice",
+              "hashtags": [],
               "activity": {
                 "name": "Say & Point Activity",
                 "materials": [
@@ -759,21 +788,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "First Words Practice"
+                ]
               }
             },
             {
-              "topicNumber": 29,
+              "topicNumber": "29",
               "topic": "Word Discovery Play",
               "objective": "Engage in Word Discovery Play activities to develop language & speech skills",
               "explanation": "This activity focuses on Word Discovery Play within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "First Words Practice",
+              "hashtags": [],
               "activity": {
                 "name": "Word Discovery Play",
                 "materials": [
@@ -786,21 +816,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "First Words Practice"
+                ]
               }
             },
             {
-              "topicNumber": 30,
+              "topicNumber": "30",
               "topic": "Talking Toy Game",
               "objective": "Engage in Talking Toy Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Talking Toy Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "First Words Practice",
+              "hashtags": [],
               "activity": {
                 "name": "Talking Toy Game",
                 "materials": [
@@ -813,21 +844,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "First Words Practice"
+                ]
               }
             },
             {
-              "topicNumber": 31,
+              "topicNumber": "31",
               "topic": "Rhyme & Clap Game",
               "objective": "Engage in Rhyme & Clap Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Rhyme & Clap Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Rhyming Songs & Poems",
+              "hashtags": [],
               "activity": {
                 "name": "Rhyme & Clap Game",
                 "materials": [
@@ -840,21 +872,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Rhyming Songs & Poems"
+                ]
               }
             },
             {
-              "topicNumber": 32,
+              "topicNumber": "32",
               "topic": "Sing-Along Rhymes",
               "objective": "Engage in Sing-Along Rhymes activities to develop language & speech skills",
               "explanation": "This activity focuses on Sing-Along Rhymes within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Rhyming Songs & Poems",
+              "hashtags": [],
               "activity": {
                 "name": "Sing-Along Rhymes",
                 "materials": [
@@ -867,21 +900,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Rhyming Songs & Poems"
+                ]
               }
             },
             {
-              "topicNumber": 33,
+              "topicNumber": "33",
               "topic": "Nursery Rhyme Hop",
               "objective": "Engage in Nursery Rhyme Hop activities to develop language & speech skills",
               "explanation": "This activity focuses on Nursery Rhyme Hop within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Rhyming Songs & Poems",
+              "hashtags": [],
               "activity": {
                 "name": "Nursery Rhyme Hop",
                 "materials": [
@@ -894,21 +928,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Rhyming Songs & Poems"
+                ]
               }
             },
             {
-              "topicNumber": 34,
+              "topicNumber": "34",
               "topic": "Musical Word Match",
               "objective": "Engage in Musical Word Match activities to develop language & speech skills",
               "explanation": "This activity focuses on Musical Word Match within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Rhyming Songs & Poems",
+              "hashtags": [],
               "activity": {
                 "name": "Musical Word Match",
                 "materials": [
@@ -921,21 +956,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Rhyming Songs & Poems"
+                ]
               }
             },
             {
-              "topicNumber": 35,
+              "topicNumber": "35",
               "topic": "Rhythm & Words Play",
               "objective": "Engage in Rhythm & Words Play activities to develop language & speech skills",
               "explanation": "This activity focuses on Rhythm & Words Play within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Rhyming Songs & Poems",
+              "hashtags": [],
               "activity": {
                 "name": "Rhythm & Words Play",
                 "materials": [
@@ -948,21 +984,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Rhyming Songs & Poems"
+                ]
               }
             },
             {
-              "topicNumber": 36,
+              "topicNumber": "36",
               "topic": "Emotion Card Game",
               "objective": "Engage in Emotion Card Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Emotion Card Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Naming Emotions",
+              "hashtags": [],
               "activity": {
                 "name": "Emotion Card Game",
                 "materials": [
@@ -975,21 +1012,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Naming Emotions"
+                ]
               }
             },
             {
-              "topicNumber": 37,
+              "topicNumber": "37",
               "topic": "Feelings Mirror Play",
               "objective": "Engage in Feelings Mirror Play activities to develop language & speech skills",
               "explanation": "This activity focuses on Feelings Mirror Play within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Naming Emotions",
+              "hashtags": [],
               "activity": {
                 "name": "Feelings Mirror Play",
                 "materials": [
@@ -1002,21 +1040,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Naming Emotions"
+                ]
               }
             },
             {
-              "topicNumber": 38,
+              "topicNumber": "38",
               "topic": "Happy/Sad Recognition",
               "objective": "Engage in Happy/Sad Recognition activities to develop language & speech skills",
               "explanation": "This activity focuses on Happy/Sad Recognition within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Naming Emotions",
+              "hashtags": [],
               "activity": {
                 "name": "Happy/Sad Recognition",
                 "materials": [
@@ -1029,21 +1068,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Naming Emotions"
+                ]
               }
             },
             {
-              "topicNumber": 39,
+              "topicNumber": "39",
               "topic": "Gesture & Name Fun",
               "objective": "Engage in Gesture & Name Fun activities to develop language & speech skills",
               "explanation": "This activity focuses on Gesture & Name Fun within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Naming Emotions",
+              "hashtags": [],
               "activity": {
                 "name": "Gesture & Name Fun",
                 "materials": [
@@ -1056,21 +1096,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Naming Emotions"
+                ]
               }
             },
             {
-              "topicNumber": 40,
+              "topicNumber": "40",
               "topic": "Emotion Hunt Activity",
               "objective": "Engage in Emotion Hunt Activity activities to develop language & speech skills",
               "explanation": "This activity focuses on Emotion Hunt Activity within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Naming Emotions",
+              "hashtags": [],
               "activity": {
                 "name": "Emotion Hunt Activity",
                 "materials": [
@@ -1083,21 +1124,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Naming Emotions"
+                ]
               }
             },
             {
-              "topicNumber": 41,
+              "topicNumber": "41",
               "topic": "Word Treasure Hunt",
               "objective": "Engage in Word Treasure Hunt activities to develop language & speech skills",
               "explanation": "This activity focuses on Word Treasure Hunt within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Vocabulary Building Games",
+              "hashtags": [],
               "activity": {
                 "name": "Word Treasure Hunt",
                 "materials": [
@@ -1110,21 +1152,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Vocabulary Building Games"
+                ]
               }
             },
             {
-              "topicNumber": 42,
+              "topicNumber": "42",
               "topic": "Picture-Word Match",
               "objective": "Engage in Picture-Word Match activities to develop language & speech skills",
               "explanation": "This activity focuses on Picture-Word Match within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Vocabulary Building Games",
+              "hashtags": [],
               "activity": {
                 "name": "Picture-Word Match",
                 "materials": [
@@ -1137,21 +1180,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Vocabulary Building Games"
+                ]
               }
             },
             {
-              "topicNumber": 43,
+              "topicNumber": "43",
               "topic": "Animal Name Game",
               "objective": "Engage in Animal Name Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Animal Name Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Vocabulary Building Games",
+              "hashtags": [],
               "activity": {
                 "name": "Animal Name Game",
                 "materials": [
@@ -1164,21 +1208,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Vocabulary Building Games"
+                ]
               }
             },
             {
-              "topicNumber": 44,
+              "topicNumber": "44",
               "topic": "Action Word Adventure",
               "objective": "Engage in Action Word Adventure activities to develop language & speech skills",
               "explanation": "This activity focuses on Action Word Adventure within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Vocabulary Building Games",
+              "hashtags": [],
               "activity": {
                 "name": "Action Word Adventure",
                 "materials": [
@@ -1191,21 +1236,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Vocabulary Building Games"
+                ]
               }
             },
             {
-              "topicNumber": 45,
+              "topicNumber": "45",
               "topic": "Mystery Word Bag",
               "objective": "Engage in Mystery Word Bag activities to develop language & speech skills",
               "explanation": "This activity focuses on Mystery Word Bag within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Vocabulary Building Games",
+              "hashtags": [],
               "activity": {
                 "name": "Mystery Word Bag",
                 "materials": [
@@ -1218,21 +1264,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Vocabulary Building Games"
+                ]
               }
             },
             {
-              "topicNumber": 46,
+              "topicNumber": "46",
               "topic": "Build-a-Sentence Game",
               "objective": "Engage in Build-a-Sentence Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Build-a-Sentence Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Sentence Formation Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Build-a-Sentence Game",
                 "materials": [
@@ -1245,21 +1292,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Sentence Formation Activities"
+                ]
               }
             },
             {
-              "topicNumber": 47,
+              "topicNumber": "47",
               "topic": "Story Chain Activity",
               "objective": "Engage in Story Chain Activity activities to develop language & speech skills",
               "explanation": "This activity focuses on Story Chain Activity within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Sentence Formation Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Story Chain Activity",
                 "materials": [
@@ -1272,21 +1320,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Sentence Formation Activities"
+                ]
               }
             },
             {
-              "topicNumber": 48,
+              "topicNumber": "48",
               "topic": "Sentence Puzzle Play",
               "objective": "Engage in Sentence Puzzle Play activities to develop language & speech skills",
               "explanation": "This activity focuses on Sentence Puzzle Play within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Sentence Formation Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Sentence Puzzle Play",
                 "materials": [
@@ -1299,21 +1348,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Sentence Formation Activities"
+                ]
               }
             },
             {
-              "topicNumber": 49,
+              "topicNumber": "49",
               "topic": "Talking Block Game",
               "objective": "Engage in Talking Block Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Talking Block Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Sentence Formation Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Talking Block Game",
                 "materials": [
@@ -1326,21 +1376,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Sentence Formation Activities"
+                ]
               }
             },
             {
-              "topicNumber": 50,
+              "topicNumber": "50",
               "topic": "Sentence Scramble Fun",
               "objective": "Engage in Sentence Scramble Fun activities to develop language & speech skills",
               "explanation": "This activity focuses on Sentence Scramble Fun within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Sentence Formation Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Sentence Scramble Fun",
                 "materials": [
@@ -1353,21 +1404,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Sentence Formation Activities"
+                ]
               }
             },
             {
-              "topicNumber": 51,
+              "topicNumber": "51",
               "topic": "Picture Prompt Story",
               "objective": "Engage in Picture Prompt Story activities to develop language & speech skills",
               "explanation": "This activity focuses on Picture Prompt Story within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Picture-Based Storytelling",
+              "hashtags": [],
               "activity": {
                 "name": "Picture Prompt Story",
                 "materials": [
@@ -1380,21 +1432,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Picture-Based Storytelling"
+                ]
               }
             },
             {
-              "topicNumber": 52,
+              "topicNumber": "52",
               "topic": "Story Dice Adventure",
               "objective": "Engage in Story Dice Adventure activities to develop language & speech skills",
               "explanation": "This activity focuses on Story Dice Adventure within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Picture-Based Storytelling",
+              "hashtags": [],
               "activity": {
                 "name": "Story Dice Adventure",
                 "materials": [
@@ -1407,21 +1460,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Picture-Based Storytelling"
+                ]
               }
             },
             {
-              "topicNumber": 53,
+              "topicNumber": "53",
               "topic": "Comic Storytelling Game",
               "objective": "Engage in Comic Storytelling Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Comic Storytelling Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Picture-Based Storytelling",
+              "hashtags": [],
               "activity": {
                 "name": "Comic Storytelling Game",
                 "materials": [
@@ -1434,21 +1488,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Picture-Based Storytelling"
+                ]
               }
             },
             {
-              "topicNumber": 54,
+              "topicNumber": "54",
               "topic": "Puppet Story Sequence",
               "objective": "Engage in Puppet Story Sequence activities to develop language & speech skills",
               "explanation": "This activity focuses on Puppet Story Sequence within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Picture-Based Storytelling",
+              "hashtags": [],
               "activity": {
                 "name": "Puppet Story Sequence",
                 "materials": [
@@ -1461,21 +1516,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Picture-Based Storytelling"
+                ]
               }
             },
             {
-              "topicNumber": 55,
+              "topicNumber": "55",
               "topic": "Mini Picture Tales",
               "objective": "Engage in Mini Picture Tales activities to develop language & speech skills",
               "explanation": "This activity focuses on Mini Picture Tales within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Picture-Based Storytelling",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Picture Tales",
                 "materials": [
@@ -1488,21 +1544,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Picture-Based Storytelling"
+                ]
               }
             },
             {
-              "topicNumber": 56,
+              "topicNumber": "56",
               "topic": "Shopkeeper Role Play",
               "objective": "Engage in Shopkeeper Role Play activities to develop language & speech skills",
               "explanation": "This activity focuses on Shopkeeper Role Play within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Role-Play Dialogues",
+              "hashtags": [],
               "activity": {
                 "name": "Shopkeeper Role Play",
                 "materials": [
@@ -1515,21 +1572,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Role-Play Dialogues"
+                ]
               }
             },
             {
-              "topicNumber": 57,
+              "topicNumber": "57",
               "topic": "Doctor Visit Dialogue",
               "objective": "Engage in Doctor Visit Dialogue activities to develop language & speech skills",
               "explanation": "This activity focuses on Doctor Visit Dialogue within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Role-Play Dialogues",
+              "hashtags": [],
               "activity": {
                 "name": "Doctor Visit Dialogue",
                 "materials": [
@@ -1542,21 +1600,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Role-Play Dialogues"
+                ]
               }
             },
             {
-              "topicNumber": 58,
+              "topicNumber": "58",
               "topic": "Family Pretend Talk",
               "objective": "Engage in Family Pretend Talk activities to develop language & speech skills",
               "explanation": "This activity focuses on Family Pretend Talk within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Role-Play Dialogues",
+              "hashtags": [],
               "activity": {
                 "name": "Family Pretend Talk",
                 "materials": [
@@ -1569,21 +1628,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Role-Play Dialogues"
+                ]
               }
             },
             {
-              "topicNumber": 59,
+              "topicNumber": "59",
               "topic": "Story Character Talk",
               "objective": "Engage in Story Character Talk activities to develop language & speech skills",
               "explanation": "This activity focuses on Story Character Talk within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Role-Play Dialogues",
+              "hashtags": [],
               "activity": {
                 "name": "Story Character Talk",
                 "materials": [
@@ -1596,21 +1656,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Role-Play Dialogues"
+                ]
               }
             },
             {
-              "topicNumber": 60,
+              "topicNumber": "60",
               "topic": "Restaurant Conversation Game",
               "objective": "Engage in Restaurant Conversation Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Restaurant Conversation Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Role-Play Dialogues",
+              "hashtags": [],
               "activity": {
                 "name": "Restaurant Conversation Game",
                 "materials": [
@@ -1623,21 +1684,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Role-Play Dialogues"
+                ]
               }
             },
             {
-              "topicNumber": 61,
+              "topicNumber": "61",
               "topic": "Story Time Express",
               "objective": "Engage in Story Time Express activities to develop language & speech skills",
               "explanation": "This activity focuses on Story Time Express within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Reading Aloud",
+              "hashtags": [],
               "activity": {
                 "name": "Story Time Express",
                 "materials": [
@@ -1650,21 +1712,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Reading Aloud"
+                ]
               }
             },
             {
-              "topicNumber": 62,
+              "topicNumber": "62",
               "topic": "Character Voice Play",
               "objective": "Engage in Character Voice Play activities to develop language & speech skills",
               "explanation": "This activity focuses on Character Voice Play within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Reading Aloud",
+              "hashtags": [],
               "activity": {
                 "name": "Character Voice Play",
                 "materials": [
@@ -1677,21 +1740,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Reading Aloud"
+                ]
               }
             },
             {
-              "topicNumber": 63,
+              "topicNumber": "63",
               "topic": "Page Turn Adventure",
               "objective": "Engage in Page Turn Adventure activities to develop language & speech skills",
               "explanation": "This activity focuses on Page Turn Adventure within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Reading Aloud",
+              "hashtags": [],
               "activity": {
                 "name": "Page Turn Adventure",
                 "materials": [
@@ -1704,21 +1768,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Reading Aloud"
+                ]
               }
             },
             {
-              "topicNumber": 64,
+              "topicNumber": "64",
               "topic": "Read & React Game",
               "objective": "Engage in Read & React Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Read & React Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Reading Aloud",
+              "hashtags": [],
               "activity": {
                 "name": "Read & React Game",
                 "materials": [
@@ -1731,21 +1796,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Reading Aloud"
+                ]
               }
             },
             {
-              "topicNumber": 65,
+              "topicNumber": "65",
               "topic": "Echo Reading Fun",
               "objective": "Engage in Echo Reading Fun activities to develop language & speech skills",
               "explanation": "This activity focuses on Echo Reading Fun within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Reading Aloud",
+              "hashtags": [],
               "activity": {
                 "name": "Echo Reading Fun",
                 "materials": [
@@ -1758,21 +1824,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Reading Aloud"
+                ]
               }
             },
             {
-              "topicNumber": 66,
+              "topicNumber": "66",
               "topic": "Mini Story Workshop",
               "objective": "Engage in Mini Story Workshop activities to develop language & speech skills",
               "explanation": "This activity focuses on Mini Story Workshop within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Writing Simple Stories",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Story Workshop",
                 "materials": [
@@ -1785,21 +1852,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Writing Simple Stories"
+                ]
               }
             },
             {
-              "topicNumber": 67,
+              "topicNumber": "67",
               "topic": "Story Mapping Activity",
               "objective": "Engage in Story Mapping Activity activities to develop language & speech skills",
               "explanation": "This activity focuses on Story Mapping Activity within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Writing Simple Stories",
+              "hashtags": [],
               "activity": {
                 "name": "Story Mapping Activity",
                 "materials": [
@@ -1812,21 +1880,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Writing Simple Stories"
+                ]
               }
             },
             {
-              "topicNumber": 68,
+              "topicNumber": "68",
               "topic": "Creative Story Journals",
               "objective": "Engage in Creative Story Journals activities to develop language & speech skills",
               "explanation": "This activity focuses on Creative Story Journals within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Writing Simple Stories",
+              "hashtags": [],
               "activity": {
                 "name": "Creative Story Journals",
                 "materials": [
@@ -1839,21 +1908,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Writing Simple Stories"
+                ]
               }
             },
             {
-              "topicNumber": 69,
+              "topicNumber": "69",
               "topic": "Short Tale Creation",
               "objective": "Engage in Short Tale Creation activities to develop language & speech skills",
               "explanation": "This activity focuses on Short Tale Creation within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Writing Simple Stories",
+              "hashtags": [],
               "activity": {
                 "name": "Short Tale Creation",
                 "materials": [
@@ -1866,21 +1936,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Writing Simple Stories"
+                ]
               }
             },
             {
-              "topicNumber": 70,
+              "topicNumber": "70",
               "topic": "My Story Adventure",
               "objective": "Engage in My Story Adventure activities to develop language & speech skills",
               "explanation": "This activity focuses on My Story Adventure within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Writing Simple Stories",
+              "hashtags": [],
               "activity": {
                 "name": "My Story Adventure",
                 "materials": [
@@ -1893,21 +1964,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Writing Simple Stories"
+                ]
               }
             },
             {
-              "topicNumber": 71,
+              "topicNumber": "71",
               "topic": "Word Link Game",
               "objective": "Engage in Word Link Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Word Link Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Word Association Challenges",
+              "hashtags": [],
               "activity": {
                 "name": "Word Link Game",
                 "materials": [
@@ -1920,21 +1992,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Word Association Challenges"
+                ]
               }
             },
             {
-              "topicNumber": 72,
+              "topicNumber": "72",
               "topic": "Synonym Hunt Activity",
               "objective": "Engage in Synonym Hunt Activity activities to develop language & speech skills",
               "explanation": "This activity focuses on Synonym Hunt Activity within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Word Association Challenges",
+              "hashtags": [],
               "activity": {
                 "name": "Synonym Hunt Activity",
                 "materials": [
@@ -1947,21 +2020,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Word Association Challenges"
+                ]
               }
             },
             {
-              "topicNumber": 73,
+              "topicNumber": "73",
               "topic": "Opposite Word Game",
               "objective": "Engage in Opposite Word Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Opposite Word Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Word Association Challenges",
+              "hashtags": [],
               "activity": {
                 "name": "Opposite Word Game",
                 "materials": [
@@ -1974,21 +2048,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Word Association Challenges"
+                ]
               }
             },
             {
-              "topicNumber": 74,
+              "topicNumber": "74",
               "topic": "Riddle & Word Match",
               "objective": "Engage in Riddle & Word Match activities to develop language & speech skills",
               "explanation": "This activity focuses on Riddle & Word Match within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Word Association Challenges",
+              "hashtags": [],
               "activity": {
                 "name": "Riddle & Word Match",
                 "materials": [
@@ -2001,21 +2076,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Word Association Challenges"
+                ]
               }
             },
             {
-              "topicNumber": 75,
+              "topicNumber": "75",
               "topic": "Category Word Challenge",
               "objective": "Engage in Category Word Challenge activities to develop language & speech skills",
               "explanation": "This activity focuses on Category Word Challenge within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Word Association Challenges",
+              "hashtags": [],
               "activity": {
                 "name": "Category Word Challenge",
                 "materials": [
@@ -2028,21 +2104,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Word Association Challenges"
+                ]
               }
             },
             {
-              "topicNumber": 76,
+              "topicNumber": "76",
               "topic": "Storytelling Circle",
               "objective": "Engage in Storytelling Circle activities to develop language & speech skills",
               "explanation": "This activity focuses on Storytelling Circle within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Expressive Speaking Tasks",
+              "hashtags": [],
               "activity": {
                 "name": "Storytelling Circle",
                 "materials": [
@@ -2055,21 +2132,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Expressive Speaking Tasks"
+                ]
               }
             },
             {
-              "topicNumber": 77,
+              "topicNumber": "77",
               "topic": "Puppet Speech Fun",
               "objective": "Engage in Puppet Speech Fun activities to develop language & speech skills",
               "explanation": "This activity focuses on Puppet Speech Fun within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Expressive Speaking Tasks",
+              "hashtags": [],
               "activity": {
                 "name": "Puppet Speech Fun",
                 "materials": [
@@ -2082,21 +2160,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Expressive Speaking Tasks"
+                ]
               }
             },
             {
-              "topicNumber": 78,
+              "topicNumber": "78",
               "topic": "Show & Tell Challenge",
               "objective": "Engage in Show & Tell Challenge activities to develop language & speech skills",
               "explanation": "This activity focuses on Show & Tell Challenge within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Expressive Speaking Tasks",
+              "hashtags": [],
               "activity": {
                 "name": "Show & Tell Challenge",
                 "materials": [
@@ -2109,21 +2188,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Expressive Speaking Tasks"
+                ]
               }
             },
             {
-              "topicNumber": 79,
+              "topicNumber": "79",
               "topic": "Role-Play Speech",
               "objective": "Engage in Role-Play Speech activities to develop language & speech skills",
               "explanation": "This activity focuses on Role-Play Speech within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Expressive Speaking Tasks",
+              "hashtags": [],
               "activity": {
                 "name": "Role-Play Speech",
                 "materials": [
@@ -2136,21 +2216,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Expressive Speaking Tasks"
+                ]
               }
             },
             {
-              "topicNumber": 80,
+              "topicNumber": "80",
               "topic": "Character Dialogue Game",
               "objective": "Engage in Character Dialogue Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Character Dialogue Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Expressive Speaking Tasks",
+              "hashtags": [],
               "activity": {
                 "name": "Character Dialogue Game",
                 "materials": [
@@ -2163,21 +2244,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Expressive Speaking Tasks"
+                ]
               }
             },
             {
-              "topicNumber": 81,
+              "topicNumber": "81",
               "topic": "Story Starter Challenge",
               "objective": "Engage in Story Starter Challenge activities to develop language & speech skills",
               "explanation": "This activity focuses on Story Starter Challenge within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Creative Writing Prompts",
+              "hashtags": [],
               "activity": {
                 "name": "Story Starter Challenge",
                 "materials": [
@@ -2190,21 +2272,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Creative Writing Prompts"
+                ]
               }
             },
             {
-              "topicNumber": 82,
+              "topicNumber": "82",
               "topic": "Imaginary World Journal",
               "objective": "Engage in Imaginary World Journal activities to develop language & speech skills",
               "explanation": "This activity focuses on Imaginary World Journal within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Creative Writing Prompts",
+              "hashtags": [],
               "activity": {
                 "name": "Imaginary World Journal",
                 "materials": [
@@ -2217,21 +2300,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Creative Writing Prompts"
+                ]
               }
             },
             {
-              "topicNumber": 83,
+              "topicNumber": "83",
               "topic": "Adventure Tale Writing",
               "objective": "Engage in Adventure Tale Writing activities to develop language & speech skills",
               "explanation": "This activity focuses on Adventure Tale Writing within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Creative Writing Prompts",
+              "hashtags": [],
               "activity": {
                 "name": "Adventure Tale Writing",
                 "materials": [
@@ -2244,21 +2328,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Creative Writing Prompts"
+                ]
               }
             },
             {
-              "topicNumber": 84,
+              "topicNumber": "84",
               "topic": "Mystery Story Craft",
               "objective": "Engage in Mystery Story Craft activities to develop language & speech skills",
               "explanation": "This activity focuses on Mystery Story Craft within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Creative Writing Prompts",
+              "hashtags": [],
               "activity": {
                 "name": "Mystery Story Craft",
                 "materials": [
@@ -2271,21 +2356,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Creative Writing Prompts"
+                ]
               }
             },
             {
-              "topicNumber": 85,
+              "topicNumber": "85",
               "topic": "Fiction Fun Activity",
               "objective": "Engage in Fiction Fun Activity activities to develop language & speech skills",
               "explanation": "This activity focuses on Fiction Fun Activity within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Creative Writing Prompts",
+              "hashtags": [],
               "activity": {
                 "name": "Fiction Fun Activity",
                 "materials": [
@@ -2298,21 +2384,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Creative Writing Prompts"
+                ]
               }
             },
             {
-              "topicNumber": 86,
+              "topicNumber": "86",
               "topic": "Mini Speech Workshop",
               "objective": "Engage in Mini Speech Workshop activities to develop language & speech skills",
               "explanation": "This activity focuses on Mini Speech Workshop within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Public Speaking Basics",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Speech Workshop",
                 "materials": [
@@ -2325,21 +2412,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Public Speaking Basics"
+                ]
               }
             },
             {
-              "topicNumber": 87,
+              "topicNumber": "87",
               "topic": "Presentation Game",
               "objective": "Engage in Presentation Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Presentation Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Public Speaking Basics",
+              "hashtags": [],
               "activity": {
                 "name": "Presentation Game",
                 "materials": [
@@ -2352,21 +2440,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Public Speaking Basics"
+                ]
               }
             },
             {
-              "topicNumber": 88,
+              "topicNumber": "88",
               "topic": "Show & Speak Activity",
               "objective": "Engage in Show & Speak Activity activities to develop language & speech skills",
               "explanation": "This activity focuses on Show & Speak Activity within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Public Speaking Basics",
+              "hashtags": [],
               "activity": {
                 "name": "Show & Speak Activity",
                 "materials": [
@@ -2379,21 +2468,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Public Speaking Basics"
+                ]
               }
             },
             {
-              "topicNumber": 89,
+              "topicNumber": "89",
               "topic": "Talk & Listen Challenge",
               "objective": "Engage in Talk & Listen Challenge activities to develop language & speech skills",
               "explanation": "This activity focuses on Talk & Listen Challenge within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Public Speaking Basics",
+              "hashtags": [],
               "activity": {
                 "name": "Talk & Listen Challenge",
                 "materials": [
@@ -2406,21 +2496,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Public Speaking Basics"
+                ]
               }
             },
             {
-              "topicNumber": 90,
+              "topicNumber": "90",
               "topic": "Impromptu Speech Game",
               "objective": "Engage in Impromptu Speech Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Impromptu Speech Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Public Speaking Basics",
+              "hashtags": [],
               "activity": {
                 "name": "Impromptu Speech Game",
                 "materials": [
@@ -2433,21 +2524,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Public Speaking Basics"
+                ]
               }
             },
             {
-              "topicNumber": 91,
+              "topicNumber": "91",
               "topic": "Word Ladder Challenge",
               "objective": "Engage in Word Ladder Challenge activities to develop language & speech skills",
               "explanation": "This activity focuses on Word Ladder Challenge within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Vocabulary Enrichment Games",
+              "hashtags": [],
               "activity": {
                 "name": "Word Ladder Challenge",
                 "materials": [
@@ -2460,21 +2552,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Vocabulary Enrichment Games"
+                ]
               }
             },
             {
-              "topicNumber": 92,
+              "topicNumber": "92",
               "topic": "Synonym & Antonym Play",
               "objective": "Engage in Synonym & Antonym Play activities to develop language & speech skills",
               "explanation": "This activity focuses on Synonym & Antonym Play within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Vocabulary Enrichment Games",
+              "hashtags": [],
               "activity": {
                 "name": "Synonym & Antonym Play",
                 "materials": [
@@ -2487,21 +2580,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Vocabulary Enrichment Games"
+                ]
               }
             },
             {
-              "topicNumber": 93,
+              "topicNumber": "93",
               "topic": "Definition Match Game",
               "objective": "Engage in Definition Match Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Definition Match Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Vocabulary Enrichment Games",
+              "hashtags": [],
               "activity": {
                 "name": "Definition Match Game",
                 "materials": [
@@ -2514,21 +2608,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Vocabulary Enrichment Games"
+                ]
               }
             },
             {
-              "topicNumber": 94,
+              "topicNumber": "94",
               "topic": "Vocabulary Quiz Race",
               "objective": "Engage in Vocabulary Quiz Race activities to develop language & speech skills",
               "explanation": "This activity focuses on Vocabulary Quiz Race within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Vocabulary Enrichment Games",
+              "hashtags": [],
               "activity": {
                 "name": "Vocabulary Quiz Race",
                 "materials": [
@@ -2541,21 +2636,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Vocabulary Enrichment Games"
+                ]
               }
             },
             {
-              "topicNumber": 95,
+              "topicNumber": "95",
               "topic": "Vocabulary Quest Challenge",
               "objective": "Engage in Vocabulary Quest Challenge activities to develop language & speech skills",
               "explanation": "This activity focuses on Vocabulary Quest Challenge within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Vocabulary Enrichment Games",
+              "hashtags": [],
               "activity": {
                 "name": "Vocabulary Quest Challenge",
                 "materials": [
@@ -2568,21 +2664,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Vocabulary Enrichment Games"
+                ]
               }
             },
             {
-              "topicNumber": 96,
+              "topicNumber": "96",
               "topic": "Scene Description Game",
               "objective": "Engage in Scene Description Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Scene Description Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Descriptive Paragraph Writing",
+              "hashtags": [],
               "activity": {
                 "name": "Scene Description Game",
                 "materials": [
@@ -2595,21 +2692,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Descriptive Paragraph Writing"
+                ]
               }
             },
             {
-              "topicNumber": 97,
+              "topicNumber": "97",
               "topic": "Picture Description Activity",
               "objective": "Engage in Picture Description Activity activities to develop language & speech skills",
               "explanation": "This activity focuses on Picture Description Activity within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Descriptive Paragraph Writing",
+              "hashtags": [],
               "activity": {
                 "name": "Picture Description Activity",
                 "materials": [
@@ -2622,21 +2720,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Descriptive Paragraph Writing"
+                ]
               }
             },
             {
-              "topicNumber": 98,
+              "topicNumber": "98",
               "topic": "Sensory Description Challenge",
               "objective": "Engage in Sensory Description Challenge activities to develop language & speech skills",
               "explanation": "This activity focuses on Sensory Description Challenge within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Descriptive Paragraph Writing",
+              "hashtags": [],
               "activity": {
                 "name": "Sensory Description Challenge",
                 "materials": [
@@ -2649,21 +2748,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Descriptive Paragraph Writing"
+                ]
               }
             },
             {
-              "topicNumber": 99,
+              "topicNumber": "99",
               "topic": "Paragraph Builder Fun",
               "objective": "Engage in Paragraph Builder Fun activities to develop language & speech skills",
               "explanation": "This activity focuses on Paragraph Builder Fun within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Descriptive Paragraph Writing",
+              "hashtags": [],
               "activity": {
                 "name": "Paragraph Builder Fun",
                 "materials": [
@@ -2676,21 +2776,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Descriptive Paragraph Writing"
+                ]
               }
             },
             {
-              "topicNumber": 100,
+              "topicNumber": "100",
               "topic": "Observation Paragraph Activity",
               "objective": "Engage in Observation Paragraph Activity activities to develop language & speech skills",
               "explanation": "This activity focuses on Observation Paragraph Activity within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Descriptive Paragraph Writing",
+              "hashtags": [],
               "activity": {
                 "name": "Observation Paragraph Activity",
                 "materials": [
@@ -2703,21 +2804,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Descriptive Paragraph Writing"
+                ]
               }
             },
             {
-              "topicNumber": 101,
+              "topicNumber": "101",
               "topic": "Debate Challenge",
               "objective": "Engage in Debate Challenge activities to develop language & speech skills",
               "explanation": "This activity focuses on Debate Challenge within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Persuasive Writing & Debate",
+              "hashtags": [],
               "activity": {
                 "name": "Debate Challenge",
                 "materials": [
@@ -2730,21 +2832,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Persuasive Writing & Debate"
+                ]
               }
             },
             {
-              "topicNumber": 102,
+              "topicNumber": "102",
               "topic": "Argument Builder Activity",
               "objective": "Engage in Argument Builder Activity activities to develop language & speech skills",
               "explanation": "This activity focuses on Argument Builder Activity within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Persuasive Writing & Debate",
+              "hashtags": [],
               "activity": {
                 "name": "Argument Builder Activity",
                 "materials": [
@@ -2757,21 +2860,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Persuasive Writing & Debate"
+                ]
               }
             },
             {
-              "topicNumber": 103,
+              "topicNumber": "103",
               "topic": "Opinion Express Game",
               "objective": "Engage in Opinion Express Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Opinion Express Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Persuasive Writing & Debate",
+              "hashtags": [],
               "activity": {
                 "name": "Opinion Express Game",
                 "materials": [
@@ -2784,21 +2888,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Persuasive Writing & Debate"
+                ]
               }
             },
             {
-              "topicNumber": 104,
+              "topicNumber": "104",
               "topic": "Persuasion Challenge",
               "objective": "Engage in Persuasion Challenge activities to develop language & speech skills",
               "explanation": "This activity focuses on Persuasion Challenge within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Persuasive Writing & Debate",
+              "hashtags": [],
               "activity": {
                 "name": "Persuasion Challenge",
                 "materials": [
@@ -2811,21 +2916,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Persuasive Writing & Debate"
+                ]
               }
             },
             {
-              "topicNumber": 105,
+              "topicNumber": "105",
               "topic": "Debate Circle Fun",
               "objective": "Engage in Debate Circle Fun activities to develop language & speech skills",
               "explanation": "This activity focuses on Debate Circle Fun within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Persuasive Writing & Debate",
+              "hashtags": [],
               "activity": {
                 "name": "Debate Circle Fun",
                 "materials": [
@@ -2838,21 +2944,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Persuasive Writing & Debate"
+                ]
               }
             },
             {
-              "topicNumber": 106,
+              "topicNumber": "106",
               "topic": "Public Speaking Drill",
               "objective": "Engage in Public Speaking Drill activities to develop language & speech skills",
               "explanation": "This activity focuses on Public Speaking Drill within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Speech & Presentation Practice",
+              "hashtags": [],
               "activity": {
                 "name": "Public Speaking Drill",
                 "materials": [
@@ -2865,21 +2972,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Speech & Presentation Practice"
+                ]
               }
             },
             {
-              "topicNumber": 107,
+              "topicNumber": "107",
               "topic": "Presentation Skills Game",
               "objective": "Engage in Presentation Skills Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Presentation Skills Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Speech & Presentation Practice",
+              "hashtags": [],
               "activity": {
                 "name": "Presentation Skills Game",
                 "materials": [
@@ -2892,21 +3000,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Speech & Presentation Practice"
+                ]
               }
             },
             {
-              "topicNumber": 108,
+              "topicNumber": "108",
               "topic": "Storytelling Presentation",
               "objective": "Engage in Storytelling Presentation activities to develop language & speech skills",
               "explanation": "This activity focuses on Storytelling Presentation within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Speech & Presentation Practice",
+              "hashtags": [],
               "activity": {
                 "name": "Storytelling Presentation",
                 "materials": [
@@ -2919,21 +3028,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Speech & Presentation Practice"
+                ]
               }
             },
             {
-              "topicNumber": 109,
+              "topicNumber": "109",
               "topic": "Presentation Debate Fun",
               "objective": "Engage in Presentation Debate Fun activities to develop language & speech skills",
               "explanation": "This activity focuses on Presentation Debate Fun within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Speech & Presentation Practice",
+              "hashtags": [],
               "activity": {
                 "name": "Presentation Debate Fun",
                 "materials": [
@@ -2946,21 +3056,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Speech & Presentation Practice"
+                ]
               }
             },
             {
-              "topicNumber": 110,
+              "topicNumber": "110",
               "topic": "Impromptu Talk Challenge",
               "objective": "Engage in Impromptu Talk Challenge activities to develop language & speech skills",
               "explanation": "This activity focuses on Impromptu Talk Challenge within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Speech & Presentation Practice",
+              "hashtags": [],
               "activity": {
                 "name": "Impromptu Talk Challenge",
                 "materials": [
@@ -2973,21 +3084,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Speech & Presentation Practice"
+                ]
               }
             },
             {
-              "topicNumber": 111,
+              "topicNumber": "111",
               "topic": "Book Review Activity",
               "objective": "Engage in Book Review Activity activities to develop language & speech skills",
               "explanation": "This activity focuses on Book Review Activity within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Literature Analysis",
+              "hashtags": [],
               "activity": {
                 "name": "Book Review Activity",
                 "materials": [
@@ -3000,21 +3112,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Literature Analysis"
+                ]
               }
             },
             {
-              "topicNumber": 112,
+              "topicNumber": "112",
               "topic": "Character Study Challenge",
               "objective": "Engage in Character Study Challenge activities to develop language & speech skills",
               "explanation": "This activity focuses on Character Study Challenge within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Literature Analysis",
+              "hashtags": [],
               "activity": {
                 "name": "Character Study Challenge",
                 "materials": [
@@ -3027,21 +3140,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Literature Analysis"
+                ]
               }
             },
             {
-              "topicNumber": 113,
+              "topicNumber": "113",
               "topic": "Plot Mapping Game",
               "objective": "Engage in Plot Mapping Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Plot Mapping Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Literature Analysis",
+              "hashtags": [],
               "activity": {
                 "name": "Plot Mapping Game",
                 "materials": [
@@ -3054,21 +3168,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Literature Analysis"
+                ]
               }
             },
             {
-              "topicNumber": 114,
+              "topicNumber": "114",
               "topic": "Theme Identification Activity",
               "objective": "Engage in Theme Identification Activity activities to develop language & speech skills",
               "explanation": "This activity focuses on Theme Identification Activity within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Literature Analysis",
+              "hashtags": [],
               "activity": {
                 "name": "Theme Identification Activity",
                 "materials": [
@@ -3081,21 +3196,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Literature Analysis"
+                ]
               }
             },
             {
-              "topicNumber": 115,
+              "topicNumber": "115",
               "topic": "Story Element Challenge",
               "objective": "Engage in Story Element Challenge activities to develop language & speech skills",
               "explanation": "This activity focuses on Story Element Challenge within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Literature Analysis",
+              "hashtags": [],
               "activity": {
                 "name": "Story Element Challenge",
                 "materials": [
@@ -3108,21 +3224,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Literature Analysis"
+                ]
               }
             },
             {
-              "topicNumber": 116,
+              "topicNumber": "116",
               "topic": "Create a Poem Challenge",
               "objective": "Engage in Create a Poem Challenge activities to develop language & speech skills",
               "explanation": "This activity focuses on Create a Poem Challenge within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Poetry Composition & Performance",
+              "hashtags": [],
               "activity": {
                 "name": "Create a Poem Challenge",
                 "materials": [
@@ -3135,21 +3252,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Poetry Composition & Performance"
+                ]
               }
             },
             {
-              "topicNumber": 117,
+              "topicNumber": "117",
               "topic": "Spoken Word Performance",
               "objective": "Engage in Spoken Word Performance activities to develop language & speech skills",
               "explanation": "This activity focuses on Spoken Word Performance within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Poetry Composition & Performance",
+              "hashtags": [],
               "activity": {
                 "name": "Spoken Word Performance",
                 "materials": [
@@ -3162,21 +3280,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Poetry Composition & Performance"
+                ]
               }
             },
             {
-              "topicNumber": 118,
+              "topicNumber": "118",
               "topic": "Poetry Slam Game",
               "objective": "Engage in Poetry Slam Game activities to develop language & speech skills",
               "explanation": "This activity focuses on Poetry Slam Game within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Poetry Composition & Performance",
+              "hashtags": [],
               "activity": {
                 "name": "Poetry Slam Game",
                 "materials": [
@@ -3189,21 +3308,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Poetry Composition & Performance"
+                ]
               }
             },
             {
-              "topicNumber": 119,
+              "topicNumber": "119",
               "topic": "Rhyming Poetry Activity",
               "objective": "Engage in Rhyming Poetry Activity activities to develop language & speech skills",
               "explanation": "This activity focuses on Rhyming Poetry Activity within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Poetry Composition & Performance",
+              "hashtags": [],
               "activity": {
                 "name": "Rhyming Poetry Activity",
                 "materials": [
@@ -3216,21 +3336,22 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Poetry Composition & Performance"
+                ]
               }
             },
             {
-              "topicNumber": 120,
+              "topicNumber": "120",
               "topic": "Poetry Reading Circle",
               "objective": "Engage in Poetry Reading Circle activities to develop language & speech skills",
               "explanation": "This activity focuses on Poetry Reading Circle within the Language & Speech pillar.",
-              "hashtags": [
-                "#Language&Speech",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Language & Speech",
+              "category": "Poetry Composition & Performance",
+              "hashtags": [],
               "activity": {
                 "name": "Poetry Reading Circle",
                 "materials": [
@@ -3243,8 +3364,7 @@
                 ],
                 "skills": [
                   "Language & Speech"
-                ],
-                "category": "Poetry Composition & Performance"
+                ]
               }
             }
           ]
@@ -3253,5 +3373,5 @@
     }
   ],
   "totalActivities": 120,
-  "lastUpdated": "2025-10-12T01:20:25.330769"
+  "lastUpdated": "2025-10-26T12:37:54.370419"
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MinimalBackButton from '../components/ui/MinimalBackButton';
+import SimpleBackButton from '../components/ui/SimpleBackButton';
 
 const FAQ = () => {
   const [openItems, setOpenItems] = useState({});
@@ -134,7 +134,7 @@ const FAQ = () => {
 
   return (
     <div style={containerStyle}>
-      <MinimalBackButton 
+      <SimpleBackButton 
         heroColors={{
           backgroundColor: '#f8fafc',
           primaryColor: '#667eea',

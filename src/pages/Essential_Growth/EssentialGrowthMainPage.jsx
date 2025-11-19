@@ -7,7 +7,7 @@ import Slider from "react-slick";
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import SwiperCore, { Navigation } from 'swiper';
 import { Navigation } from 'swiper/modules';  // <--- Notice '/modules' here
-import MinimalBackButton from '../../components/ui/SimpleBackButton';
+import SimpleBackButton from '../../components/ui/SimpleBackButton';
 import PlayCreativityActivities from '../../components/PlayCreativityActivities';
 
 import 'swiper/css';
@@ -66,7 +66,7 @@ const HeroSection = () => {
     <section style={sectionStyle}>
       <div style={containerStyle}>
         <div style={{ alignSelf: 'flex-start', marginBottom: '2rem' }}>
-          <MinimalBackButton size="medium" />
+          <SimpleBackButton size="medium" />
         </div>
         <div>
           <h1 style={headingStyle}>Essential Growth</h1>
@@ -86,6 +86,65 @@ const HeroSection = () => {
 
 // 🌟 Growth Pillars Section
 const GrowthPillarsSection = ({ onPlayCreativityClick, onCognitiveSkillsClick }) => {
+    const navigate = useNavigate();
+    
+    // Map pillar titles to slugs and check if pages exist
+    const getPillarSlug = (title) => {
+      const slugMap = {
+        'Play & Creativity': 'play-creativity',
+        'Cognitive Skills': 'cognitive-skills',
+        'Physical & Social Play': 'physical-social-play',
+        'Language & Speech': 'language-speech',
+        'Learning Tools': 'learning-tools',
+        'Nature & Exploration': 'nature-exploration',
+        'Mindfulness & Well-being': 'mindfulness-wellbeing',
+        'Music & Rhythm': 'music-rhythm',
+        'Visual Arts': 'visual-arts',
+        'Science & Innovation': 'science-innovation',
+        'Emotional Intelligence': 'emotional-intelligence',
+        'Cultural Awareness': 'cultural-awareness',
+        'Teamwork & Leadership': 'teamwork-leadership',
+        'Problem Solving & Logic': 'problem-solving-logic',
+        'Health & Fitness': 'health-fitness',
+        'Social Skills': 'social-skills',
+        'Fine Motor Skills': 'fine-motor-skills',
+        'Memory & Recall': 'memory-recall'
+      };
+      return slugMap[title] || title.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '');
+    };
+    
+    // All 18 pillar pages now exist (using generic template)
+    const pagesExist = [
+      'play-creativity', 
+      'cognitive-skills',
+      'physical-social-play',
+      'language-speech',
+      'learning-tools',
+      'nature-exploration',
+      'mindfulness-wellbeing',
+      'music-rhythm',
+      'visual-arts',
+      'science-innovation',
+      'emotional-intelligence',
+      'cultural-awareness',
+      'teamwork-leadership',
+      'problem-solving-logic',
+      'health-fitness',
+      'social-skills',
+      'fine-motor-skills',
+      'memory-recall'
+    ];
+    
+    const handlePillarClick = (pillar) => {
+      const slug = getPillarSlug(pillar.title);
+      
+      if (pagesExist.includes(slug)) {
+        navigate(`/essential-growth/${slug}`);
+      } else {
+        alert(`${pillar.title} page coming soon! We're building amazing content for you. 🚀`);
+      }
+    };
+    
     const sectionStyle = {
       padding: '5vh 5vw',
       backgroundColor: '#f9fafb',
@@ -156,24 +215,27 @@ const GrowthPillarsSection = ({ onPlayCreativityClick, onCognitiveSkillsClick })
       <section style={sectionStyle}>
         <h2 style={headingStyle}>Our Growth Pillars</h2>
         <div style={gridStyle}>
-          {pillars.map((pillar, index) => (
+          {pillars.map((pillar, index) => {
+            const slug = getPillarSlug(pillar.title);
+            const hasPage = pagesExist.includes(slug);
+            
+            return (
             <div 
               key={index} 
               style={{
                 ...tileStyle(pillar.color),
-                cursor: (pillar.title === 'Play & Creativity' || pillar.title === 'Cognitive Skills') ? 'pointer' : 'default',
-                transition: (pillar.title === 'Play & Creativity' || pillar.title === 'Cognitive Skills') ? 'all 0.3s ease' : 'none'
+                cursor: 'pointer',  // All tiles are now clickable
+                transition: 'all 0.3s ease'
               }}
-              onClick={pillar.title === 'Play & Creativity' ? onPlayCreativityClick : 
-                      pillar.title === 'Cognitive Skills' ? onCognitiveSkillsClick : undefined}
-              onMouseEnter={(pillar.title === 'Play & Creativity' || pillar.title === 'Cognitive Skills') ? (e) => {
+              onClick={() => handlePillarClick(pillar)}
+              onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-5px)';
                 e.currentTarget.style.boxShadow = '0 10px 25px rgba(0,0,0,0.2)';
-              } : undefined}
-              onMouseLeave={(pillar.title === 'Play & Creativity' || pillar.title === 'Cognitive Skills') ? (e) => {
+              }}
+              onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)';
                 e.currentTarget.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
-              } : undefined}
+              }}
             >
               <img
                 src={`https://img.icons8.com/color/96/${pillar.icon}.png`}
@@ -182,21 +244,20 @@ const GrowthPillarsSection = ({ onPlayCreativityClick, onCognitiveSkillsClick })
               />
               <h3 style={titleStyle}>{pillar.title}</h3>
               <p style={descStyle}>{pillar.desc}</p>
-              {(pillar.title === 'Play & Creativity' || pillar.title === 'Cognitive Skills') && (
-                <div style={{
-                  marginTop: '1rem',
-                  padding: '0.5rem 1rem',
-                  backgroundColor: 'rgba(255,255,255,0.8)',
-                  borderRadius: '20px',
-                  fontSize: '0.875rem',
-                  fontWeight: '600',
-                  color: '#3b82f6'
-                }}>
-                  Click to explore activities →
-                </div>
-              )}
+              <div style={{
+                marginTop: '1rem',
+                padding: '0.5rem 1rem',
+                backgroundColor: hasPage ? 'rgba(59, 130, 246, 0.15)' : 'rgba(156, 163, 175, 0.15)',
+                borderRadius: '20px',
+                fontSize: '0.875rem',
+                fontWeight: '600',
+                color: hasPage ? '#3b82f6' : '#6b7280'
+              }}>
+                {hasPage ? 'Click to explore activities →' : 'Coming Soon 🚀'}
+              </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </section>
     );

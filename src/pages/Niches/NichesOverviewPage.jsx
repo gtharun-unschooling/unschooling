@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import config from '../../config/config';
-import MinimalBackButton from '../../components/ui/MinimalBackButton';
+import SimpleBackButton from '../../components/ui/SimpleBackButton';
 import NicheIcon from '../../components/ui/NicheIcon';
 
 const NichesOverviewPage = () => {
@@ -383,7 +383,7 @@ const NichesOverviewPage = () => {
   return (
     <div style={pageStyle}>
       <div style={headerStyle}>
-        <MinimalBackButton 
+        <SimpleBackButton 
           heroColors={{
             backgroundColor: '#f9fafb',
             primaryColor: '#667eea',

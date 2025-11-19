@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import MinimalBackButton from '../../components/ui/SimpleBackButton';
+import SimpleBackButton from '../../components/ui/SimpleBackButton';
 import PlayCreativityActivities from '../../components/PlayCreativityActivities';
 
 const PlayCreativityPage = () => {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams, useLocation } from 'react-router-dom';
 import config from '../../config/config';
-import MinimalBackButton from '../../components/ui/MinimalBackButton';
+import SimpleBackButton from '../../components/ui/SimpleBackButton';
 import NicheIcon from '../../components/ui/NicheIcon';
 import '../../styles/universalMobileTypography.css';
 
@@ -282,7 +282,7 @@ const DynamicNichePage = () => {
   
     return (
       <section className="niche-hero-section" style={sectionStyle}>
-        <MinimalBackButton 
+        <SimpleBackButton 
           heroColors={{
             backgroundColor: backgroundColor,
             primaryColor: primaryColor,

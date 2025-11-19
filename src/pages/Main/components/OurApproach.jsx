@@ -173,6 +173,37 @@ const OurApproach = () => {
   const [visibleNiches, setVisibleNiches] = useState(9);
   const [niches, setNiches] = useState([]);
   const navigate = useNavigate();
+  
+  // Handle Essential Growth tile clicks
+  const handleEssentialGrowthClick = (growth) => {
+    const slugMap = {
+      'Play & Creativity': 'play-creativity',
+      'Cognitive Skills': 'cognitive-skills',
+      'Physical & Social Play': 'physical-social-play',
+      'Language & Speech': 'language-speech',
+      'Learning Tools': 'learning-tools',
+      'Nature & Exploration': 'nature-exploration',
+      'Mindfulness & Well-being': 'mindfulness-wellbeing',
+      'Music & Rhythm': 'music-rhythm',
+      'Visual Arts': 'visual-arts',
+      'Science & Innovation': 'science-innovation',
+      'Emotional Intelligence': 'emotional-intelligence',
+      'Cultural Awareness': 'cultural-awareness',
+      'Teamwork & Leadership': 'teamwork-leadership',
+      'Problem Solving & Logic': 'problem-solving-logic',
+      'Health & Fitness': 'health-fitness',
+      'Social Skills': 'social-skills',
+      'Fine Motor Skills': 'fine-motor-skills',
+      'Memory & Recall': 'memory-recall'
+    };
+    const slug = slugMap[growth.title];
+    
+    if (slug) {
+      navigate(`/essential-growth/${slug}`);
+    } else {
+      navigate('/essential-growth');
+    }
+  };
 
   // Responsive breakpoint detection
   useEffect(() => {
@@ -765,7 +796,7 @@ const OurApproach = () => {
                 {essentialGrowth.map((growth, index) => (
                   <Card 
                     key={index} 
-                    
+                    onClick={() => handleEssentialGrowthClick(growth)}
                     style={{
                       ...cardStyle,
                       // Fixed consistent size for all essential growth boxes - increased mobile size

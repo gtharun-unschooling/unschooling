@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../contexts/AuthContext';
 import { db } from '../../firebase';
 import { collection, getDocs, query, orderBy, where } from 'firebase/firestore';
-import MinimalBackButton from '../../components/ui/MinimalBackButton';
+import SimpleBackButton from '../../components/ui/SimpleBackButton';
 import { colors, spacing, typography } from '../../styles/designTokens';
 
 const ActivityLogs = () => {
@@ -217,7 +217,7 @@ const ActivityLogs = () => {
   if (loading) {
     return (
       <div style={containerStyle}>
-        <MinimalBackButton 
+        <SimpleBackButton 
           heroColors={{
             backgroundColor: '#f8fafc',
             primaryColor: '#3b82f6',
@@ -233,7 +233,7 @@ const ActivityLogs = () => {
 
   return (
     <div style={containerStyle}>
-      <MinimalBackButton 
+      <SimpleBackButton 
         heroColors={{
           backgroundColor: '#f8fafc',
           primaryColor: '#3b82f6',

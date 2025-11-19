@@ -316,7 +316,7 @@ class ApiService {
         debugLog('🔗 Using Google Cloud backend');
         debugLog('📡 STEP 2: SENDING REQUEST TO GOOGLE CLOUD BACKEND');
         
-        const res = await fetch('https://unschooling-backend-790275794964.us-central1.run.app/api/generate-plan', {
+        const res = await fetch(`${config.API_BASE_URL}/api/generate-plan`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -324,7 +324,7 @@ class ApiService {
             'Accept': 'application/json',
           },
           body: JSON.stringify({ 
-            profile: {
+            childProfile: {
               child_name: profile.child_name,
               child_age: profile.child_age,
               interests: profile.interests,
@@ -336,7 +336,11 @@ class ApiService {
               account_email: profile.account_email || 'unknown',
               session_id: profile.session_id || `session_${Date.now()}`,
               timestamp: new Date().toISOString()
-            }
+            },
+            planType: profile.plan_type || 'hybrid',
+            userId: profile.userId || profile.account_id || 'unknown',
+            childId: profile.childId || profile.child_name || 'unknown',
+            monthKey: new Date().toLocaleString('default', { month: 'long', year: 'numeric' })
           }),
         });
         

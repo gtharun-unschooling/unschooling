@@ -2,8 +2,56 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
-import MinimalBackButton from '../../components/ui/SimpleBackButton';
+import SimpleBackButton from '../../components/ui/SimpleBackButton';
 import PaymentModal from '../../components/payment/PaymentModal';
+
+// Simple SVG icon for plans – consistent, large icon without background
+const PlanSvgIcon = ({ background, icon, gradientId }) => {
+  return (
+    <svg
+      width={96}
+      height={96}
+      viewBox="0 0 96 96"
+      aria-hidden="true"
+    >
+      <text
+        x="50%"
+        y="52%"
+        textAnchor="middle"
+        dominantBaseline="middle"
+        fontSize="42"
+        fill="#111827"
+        fontFamily="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+      >
+        {icon}
+      </text>
+    </svg>
+  );
+};
+
+// Simple SVG icon for kit-flow steps – large emoji without background
+const StepSvgIcon = ({ icon }) => {
+  return (
+    <svg
+      width={84}
+      height={84}
+      viewBox="0 0 84 84"
+      aria-hidden="true"
+    >
+      <text
+        x="50%"
+        y="52%"
+        textAnchor="middle"
+        dominantBaseline="middle"
+        fontSize="40"
+        fill="#7c2d12"
+        fontFamily="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+      >
+        {icon}
+      </text>
+    </svg>
+  );
+};
 
 
 const HeroSection = () => {
@@ -49,7 +97,7 @@ const HeroSection = () => {
       <section style={sectionStyle}>
         <div style={{ ...containerStyle, ...animatedStyle }}>
           <div style={{ textAlign: 'left', marginBottom: '2rem' }}>
-            <MinimalBackButton size="medium" />
+            <SimpleBackButton size="medium" />
           </div>
           <h1 style={headlineStyle}>
             Smart learning plans for every age — made simple, playful, and powerful.
@@ -66,10 +114,11 @@ const PlanSection = () => {
     const { currentUser } = useAuth();
     const navigate = useNavigate();
     const [selectedPlan, setSelectedPlan] = useState(null);
-    const [billingCycle, setBillingCycle] = useState('monthly');
+    // For now, all plans are simple duration-based subscriptions with a single upfront price.
+    const [billingCycle] = useState('duration');
     const [showPaymentModal, setShowPaymentModal] = useState(false);
     const sectionStyle = {
-      padding: '6vh 5vw',
+      padding: '5vh 5vw',
       backgroundColor: '#f9fafb',
       textAlign: 'center',
     };
@@ -111,28 +160,37 @@ const PlanSection = () => {
       transition: 'all 0.3s ease',
     });
   
-    const emojiStyle = {
-      fontSize: '2.75rem',
-      marginBottom: '1rem',
+    const iconWrapperStyle = {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: '100%',
+      marginBottom: '1.25rem',
     };
   
     const planTitleStyle = {
-      fontSize: '1.5rem',
+      fontSize: '1.6rem',
       fontWeight: '600',
       color: '#1f2937',
-      marginBottom: '0.5rem',
+      marginBottom: '0.6rem',
     };
-  
+
     const priceStyle = {
-      fontSize: '1.2rem',
+      fontSize: '1.3rem',
       fontWeight: '700',
       color: '#10b981',
-      marginBottom: '0.3rem',
+      marginBottom: '0.35rem',
     };
-  
-    const ageStyle = {
+
+    const durationStyle = {
       fontSize: '0.95rem',
       color: '#6b7280',
+      marginBottom: '0.75rem',
+    };
+
+    const positioningStyle = {
+      fontSize: '0.95rem',
+      color: '#4b5563',
       marginBottom: '1.5rem',
     };
   
@@ -174,116 +232,53 @@ const PlanSection = () => {
       boxShadow: '0 2px 8px rgba(16, 185, 129, 0.3)',
     };
 
-    const originalPriceStyle = {
-      fontSize: '0.9rem',
-      color: '#9ca3af',
-      textDecoration: 'line-through',
-      marginRight: '0.5rem',
-    };
-
-    const discountStyle = {
-      fontSize: '0.8rem',
-      color: '#ef4444',
-      fontWeight: '600',
-      backgroundColor: '#fef2f2',
-      padding: '0.2rem 0.5rem',
-      borderRadius: '12px',
-      marginLeft: '0.5rem',
-    };
-  
     const plans = [
       {
-        icon: '🍼',
-        title: 'Nurture',
-        price: '₹499/mo',
-        originalPrice: '₹699/mo',
-        age: 'Ages 0–3 (Parent-Guided)',
+        icon: '⭐',
+        gradientId: 'plan-icon-step-starter',
+        colors: ['#6366f1', '#8b5cf6'],
+        title: 'Step Starter',
+        price: '₹999',
+        duration: '1 month',
+        positioning: 'Perfect if you want to try your child’s first curiosity kit.',
         popular: false,
         features: [
-          'Weekly learning kits (4 per month)',
-          'Simple daily activities (15-20 min)',
-          'Expert-curated experiences',
-          'Full parental guidance & support',
-          'Infant-safe materials & tools',
-          'Progress tracking dashboard',
-          'Parent community access',
-          'Email support',
-        ],
-        benefits: [
-          'Develops early motor skills',
-          'Builds parent-child bonding',
-          'Introduces basic concepts',
-          'Safe exploration environment',
-        ],
-        kitContents: [
-          'Age-appropriate toys',
-          'Sensory materials',
-          'Activity cards',
-          'Parent guide',
+          '1 personalized curiosity kit based on your child’s interests',
+          '5–7 hands-on activities with all core materials included',
+          'Designed for independent, screen-free exploration',
+          'Guides written so children can follow without teaching',
         ],
       },
       {
-        icon: '🌿',
-        title: 'Grow',
-        price: '₹799/mo',
-        originalPrice: '₹999/mo',
-        age: 'Ages 3–6 (Light Autonomy)',
+        icon: '🌱',
+        gradientId: 'plan-icon-path-explorer',
+        colors: ['#22c55e', '#16a34a'],
+        title: 'Path Explorer',
+        price: '₹2,699',
+        duration: '3 months',
+        positioning: 'Best for building a steady monthly exploration habit.',
         popular: true,
         features: [
-          'Creative kits + interactive stories',
-          'Track progress online',
-          'Flexible scheduling',
-          'Fun hands-on learning',
-          'Early curiosity builder',
-          'Monthly live sessions (2 per month)',
-          'Parent-child activities',
-          'Priority support',
-          'Mobile app access',
-        ],
-        benefits: [
-          'Enhances creativity & imagination',
-          'Develops problem-solving skills',
-          'Builds confidence & independence',
-          'Prepares for school readiness',
-        ],
-        kitContents: [
-          'Art & craft supplies',
-          'Educational games',
-          'Story books',
-          'Activity worksheets',
-          'Progress stickers',
+          '3 months of curated curiosity kits (one box every month)',
+          'Activities that gradually build skills and confidence',
+          'Better value than trying one month at a time',
+          'Ideal for parents who want to “test the lifestyle” properly',
         ],
       },
       {
         icon: '🚀',
-        title: 'Thrive',
-        price: '₹999/mo',
-        originalPrice: '₹1299/mo',
-        age: 'Ages 6–10+ (Independent)',
+        gradientId: 'plan-icon-life-learner',
+        colors: ['#f97316', '#ea580c'],
+        title: 'Life Learner',
+        price: '₹4,999',
+        duration: '6 months',
+        positioning: 'For families committed to long-term, self-driven learning.',
         popular: false,
         features: [
-          'Project-based learning',
-          'Live sessions included (4 per month)',
-          'All kits & materials',
-          'Self-paced challenges',
-          'Builds real-world skills',
-          'Mentor support',
-          'Advanced progress tracking',
-          'Community challenges',
-          'Certificate programs',
-        ],
-        benefits: [
-          'Develops critical thinking',
-          'Builds real-world skills',
-          'Encourages independence',
-          'Prepares for future learning',
-        ],
-        kitContents: [
-          'STEM project materials',
-          'Coding tools',
-          'Science experiments',
-          'Advanced games',
-          'Achievement badges',
+          '6 months of ongoing curiosity kits for continuous growth',
+          'Mix of creativity, logic, cultural and physical skill activities',
+          'Best overall value per month',
+          'Builds a deep habit of independent exploration at home',
         ],
       },
     ];
@@ -297,59 +292,13 @@ const PlanSection = () => {
       setShowPaymentModal(true);
     };
 
-    const billingToggleStyle = {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      marginBottom: '2rem',
-      gap: '1rem',
-    };
-
-    const toggleButtonStyle = (isActive) => ({
-      padding: '0.75rem 1.5rem',
-      border: 'none',
-      borderRadius: '25px',
-      backgroundColor: isActive ? '#10b981' : '#e5e7eb',
-      color: isActive ? 'white' : '#6b7280',
-      fontSize: '1rem',
-      fontWeight: '600',
-      cursor: 'pointer',
-      transition: 'all 0.3s ease',
-    });
-
     return (
       <section style={sectionStyle}>
-        <h2 style={headingStyle}>Choose the Right Plan</h2>
+        <h2 style={headingStyle}>Choose how long you want your child’s curiosity journey</h2>
         <p style={paragraphStyle}>
-          Each plan is tailored for your child's unique age and learning stage. Our kits grow with your child,
-          blending creativity, independence, and hands-on fun!
+          One simple learning model. Three duration options. Every plan sends a personalized curiosity kit
+          each month, designed so your child can explore and learn independently — no online classes, no teaching sessions.
         </p>
-        
-        {/* Billing Cycle Toggle */}
-        <div style={billingToggleStyle}>
-          <button
-            style={toggleButtonStyle(billingCycle === 'monthly')}
-            onClick={() => setBillingCycle('monthly')}
-          >
-            Monthly
-          </button>
-          <button
-            style={toggleButtonStyle(billingCycle === 'yearly')}
-            onClick={() => setBillingCycle('yearly')}
-          >
-            Yearly
-            <span style={{ 
-              fontSize: '0.75rem', 
-              marginLeft: '0.5rem',
-              backgroundColor: '#059669',
-              color: 'white',
-              padding: '0.2rem 0.5rem',
-              borderRadius: '10px',
-            }}>
-              Save 17%
-            </span>
-          </button>
-        </div>
 
         <div style={gridStyle}>
           {plans.map((plan, index) => (
@@ -357,31 +306,56 @@ const PlanSection = () => {
               {plan.popular && (
                 <div style={popularBadgeStyle}>Most Popular</div>
               )}
-              <span style={emojiStyle}>{plan.icon}</span>
-              <div style={planTitleStyle}>{plan.title}</div>
-              
-              {/* Dynamic Pricing */}
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.5rem' }}>
-                <span style={originalPriceStyle}>{plan.originalPrice}</span>
-                <span style={priceStyle}>
-                  {billingCycle === 'yearly' 
-                    ? `₹${Math.floor(parseInt(plan.price.replace('₹', '').replace('/mo', '')) * 10)}/yr`
-                    : plan.price
-                  }
-                </span>
-                <span style={discountStyle}>
-                  {billingCycle === 'yearly' ? 'Save 17%' : 'Limited Time'}
-                </span>
+              <div style={iconWrapperStyle}>
+                <PlanSvgIcon
+                  background={plan.colors}
+                  icon={plan.icon}
+                  gradientId={plan.gradientId}
+                />
               </div>
-              
-              <div style={ageStyle}>{plan.age}</div>
-              
-              {/* Key Features */}
+              <div style={planTitleStyle}>{plan.title}</div>
+              <div style={priceStyle}>{plan.price}</div>
+              <div style={durationStyle}>{plan.duration}</div>
+              <div style={positioningStyle}>{plan.positioning}</div>
+
+              {/* Key features */}
               <ul style={featureListStyle}>
-                {plan.features.slice(0, 6).map((feat, idx) => (
-                  <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
-                    <span style={{ color: '#10b981', marginRight: '0.5rem', marginTop: '0.1rem' }}>✓</span>
-                    <span style={{ fontSize: '0.9rem' }}>{feat}</span>
+                {plan.features.map((feat, idx) => (
+                  <li
+                    key={idx}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'flex-start',
+                      marginBottom: '0.85rem',
+                    }}
+                  >
+                    <span
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        width: '22px',
+                        height: '22px',
+                        minWidth: '22px',
+                        borderRadius: '999px',
+                        backgroundColor: '#dcfce7',
+                        color: '#16a34a',
+                        fontSize: '0.95rem',
+                        fontWeight: 700,
+                        marginRight: '1.4rem', // extra space between tick and text
+                        marginTop: '0.1rem',
+                      }}
+                    >
+                      ✓
+                    </span>
+                    <span
+                      style={{
+                        fontSize: '0.95rem',
+                        lineHeight: 1.7,
+                      }}
+                    >
+                      {feat}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -390,7 +364,7 @@ const PlanSection = () => {
                 style={buttonStyle(plan.popular)}
                 onClick={() => handlePlanSelect(plan)}
               >
-                {currentUser ? `Choose ${plan.title}` : 'Login to Subscribe'}
+                {currentUser ? `Choose ${plan.title}` : 'Login to subscribe'}
               </button>
             </div>
           ))}
@@ -415,7 +389,7 @@ const PlanSection = () => {
 // 🎯 Kit Usage & Return Flow Section
 const KitFlowSection = () => {
     const sectionStyle = {
-      padding: '6vh 5vw',
+      padding: '5vh 5vw',
       backgroundColor: '#fff7ed',
       textAlign: 'center',
     };
@@ -455,8 +429,7 @@ const KitFlowSection = () => {
     };
   
     const iconStyle = {
-      fontSize: '2.25rem',
-      marginBottom: '0.75rem',
+      marginBottom: '1.75rem',
     };
   
     const titleStyle = {
@@ -481,7 +454,9 @@ const KitFlowSection = () => {
         <div style={itemGridStyle}>
           {steps.map((step, index) => (
             <div key={index} style={cardStyle}>
-              <div style={iconStyle}>{step.icon}</div>
+              <div style={iconStyle}>
+                <StepSvgIcon icon={step.icon} />
+              </div>
               <div style={titleStyle}>{step.title}</div>
             </div>
           ))}

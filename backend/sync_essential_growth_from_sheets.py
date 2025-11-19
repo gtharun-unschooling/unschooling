@@ -164,13 +164,18 @@ def convert_to_json_format(activities, age_group="All Ages"):
     
     for i, activity in enumerate(activities, 1):
         formatted_activity = {
-            "topicNumber": i,
-            "topic": activity.get('Topic', activity.get('Activity Name', f'Activity {i}')),
+            "topicNumber": str(activity.get('SNo', i)),
+            "topic": activity.get('Activity Name', activity.get('Topic', f'Activity {i}')),
             "objective": activity.get('Objective', ''),
             "explanation": activity.get('Explanation', ''),
-            "hashtags": activity.get('Hashtags', '').split(',') if activity.get('Hashtags') else [],
             "estimatedTime": activity.get('Estimated Time', '20-30 min'),
             "age": activity.get('Age', age_group),
+            "difficultyLevel": activity.get('Difficulty Level', ''),
+            "supervisionLevel": activity.get('Supervision Level', ''),
+            "additionalInfo": activity.get('Additional Information', ''),
+            "pillar": activity.get('Pillar', ''),
+            "category": activity.get('Category', ''),
+            "hashtags": activity.get('Hashtags', '').split(',') if activity.get('Hashtags') else [],
             "activity": {
                 "name": activity.get('Activity Name', activity.get('Topic', f'Activity {i}')),
                 "materials": activity.get('Materials', '').split('\n') if activity.get('Materials') else [],
@@ -198,19 +203,23 @@ def create_basic_activities_from_names(names, pillar_info):
             category = pillar_info['name']
         
         formatted_activity = {
-            "topicNumber": i,
+            "topicNumber": str(i),
             "topic": name,
             "objective": f"Engage in {name} activities to develop {pillar_info['name'].lower()} skills",
             "explanation": f"This activity focuses on {name} within the {pillar_info['name']} pillar.",
-            "hashtags": [f"#{pillar_info['name'].replace(' ', '')}", "#EssentialGrowth"],
             "estimatedTime": "20-30 min",
             "age": age_group,
+            "difficultyLevel": "Medium",
+            "supervisionLevel": "Moderate Supervision",
+            "additionalInfo": "",
+            "pillar": pillar_info['name'],
+            "category": category,
+            "hashtags": [],
             "activity": {
                 "name": name,
                 "materials": ["Basic materials needed"],
                 "steps": ["Follow activity guidelines", "Engage with materials", "Complete activity"],
-                "skills": [pillar_info['name']],
-                "category": category
+                "skills": [pillar_info['name']]
             }
         }
         formatted_activities.append(formatted_activity)

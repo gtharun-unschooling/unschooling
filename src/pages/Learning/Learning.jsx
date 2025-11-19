@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import MinimalBackButton from '../../components/ui/MinimalBackButton';
+import SimpleBackButton from '../../components/ui/SimpleBackButton';
 import './Learning.css';
 
 const Learning = () => {
@@ -42,7 +42,7 @@ const Learning = () => {
 
   return (
     <div className="learning-page">
-      <MinimalBackButton 
+      <SimpleBackButton 
         heroColors={{
           backgroundColor: '#f8fafc',
           primaryColor: '#3b82f6',

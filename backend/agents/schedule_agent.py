@@ -201,6 +201,8 @@ def create_day_activity(topic, profile, week_num, day_name, day_num):
     base_activity = {
         "topic": topic_name,
         "niche": niche,
+        "pillar": topic.get("pillar", topic.get("Pillar", "")),  # For Essential Growth routing
+        "pillar_slug": topic.get("pillar_slug", topic.get("Pillar_Slug", "")),  # For Essential Growth routing
         "week_theme": f"Week {week_num}",
         "day_name": day_name.capitalize(),
         "duration": "30-45 minutes",

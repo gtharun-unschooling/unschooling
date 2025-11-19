@@ -4,7 +4,7 @@ import { db } from '../firebase';
 import { collection, getDocs, doc, getDoc } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
 import { colors, spacing, typography } from '../styles/designTokens';
-import MinimalBackButton from './ui/MinimalBackButton';
+import SimpleBackButton from './ui/SimpleBackButton';
 
 const Home = () => {
   const { currentUser, userProfile } = useAuth();
@@ -191,7 +191,7 @@ const Home = () => {
       : 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)', // Parent: Cool gray theme
     fontFamily: typography.fontFamily.primary,
     transition: 'background 0.3s ease',
-    position: 'relative' // Needed for MinimalBackButton positioning
+    position: 'relative' // Needed for SimpleBackButton positioning
   };
 
   const headerStyle = {
@@ -300,7 +300,7 @@ const Home = () => {
 
   return (
     <div style={containerStyle}>
-      <MinimalBackButton 
+      <SimpleBackButton 
         heroColors={{
           backgroundColor: '#f8fafc',
           primaryColor: '#3b82f6',

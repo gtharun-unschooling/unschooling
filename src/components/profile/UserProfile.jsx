@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../contexts/AuthContext';
 import { colors, spacing, typography } from '../../styles/designTokens';
-import MinimalBackButton from '../ui/MinimalBackButton';
+import SimpleBackButton from '../ui/SimpleBackButton';
 import './UserProfile.css';
 
 const UserProfile = () => {
@@ -116,7 +116,7 @@ const UserProfile = () => {
 
   return (
     <div style={containerStyle}>
-      <MinimalBackButton 
+      <SimpleBackButton 
         heroColors={{
           backgroundColor: '#f8fafc',
           primaryColor: '#3b82f6',

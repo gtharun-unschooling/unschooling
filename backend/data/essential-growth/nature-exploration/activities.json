@@ -8,16 +8,18 @@
           "description": "Activities for Nature & Exploration",
           "activities": [
             {
-              "topicNumber": 1,
+              "topicNumber": "1",
               "topic": "Stroller Safari",
               "objective": "Engage in Stroller Safari activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Stroller Safari within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Walks in Stroller",
+              "hashtags": [],
               "activity": {
                 "name": "Stroller Safari",
                 "materials": [
@@ -30,21 +32,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Walks in Stroller"
+                ]
               }
             },
             {
-              "topicNumber": 2,
+              "topicNumber": "2",
               "topic": "Garden Peek Stroll",
               "objective": "Engage in Garden Peek Stroll activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Garden Peek Stroll within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Walks in Stroller",
+              "hashtags": [],
               "activity": {
                 "name": "Garden Peek Stroll",
                 "materials": [
@@ -57,21 +60,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Walks in Stroller"
+                ]
               }
             },
             {
-              "topicNumber": 3,
+              "topicNumber": "3",
               "topic": "Leafy Lane Adventure",
               "objective": "Engage in Leafy Lane Adventure activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Leafy Lane Adventure within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Walks in Stroller",
+              "hashtags": [],
               "activity": {
                 "name": "Leafy Lane Adventure",
                 "materials": [
@@ -84,21 +88,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Walks in Stroller"
+                ]
               }
             },
             {
-              "topicNumber": 4,
+              "topicNumber": "4",
               "topic": "Tiny Path Explorer",
               "objective": "Engage in Tiny Path Explorer activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Tiny Path Explorer within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Walks in Stroller",
+              "hashtags": [],
               "activity": {
                 "name": "Tiny Path Explorer",
                 "materials": [
@@ -111,21 +116,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Walks in Stroller"
+                ]
               }
             },
             {
-              "topicNumber": 5,
+              "topicNumber": "5",
               "topic": "Blossom Stroll",
               "objective": "Engage in Blossom Stroll activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Blossom Stroll within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Walks in Stroller",
+              "hashtags": [],
               "activity": {
                 "name": "Blossom Stroll",
                 "materials": [
@@ -138,21 +144,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Walks in Stroller"
+                ]
               }
             },
             {
-              "topicNumber": 6,
+              "topicNumber": "6",
               "topic": "Crunch & Touch Leaves",
               "objective": "Engage in Crunch & Touch Leaves activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Crunch & Touch Leaves within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Sensory Play with Leaves",
+              "hashtags": [],
               "activity": {
                 "name": "Crunch & Touch Leaves",
                 "materials": [
@@ -165,21 +172,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Sensory Play with Leaves"
+                ]
               }
             },
             {
-              "topicNumber": 7,
+              "topicNumber": "7",
               "topic": "Leaf Texture Trail",
               "objective": "Engage in Leaf Texture Trail activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Leaf Texture Trail within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Sensory Play with Leaves",
+              "hashtags": [],
               "activity": {
                 "name": "Leaf Texture Trail",
                 "materials": [
@@ -192,21 +200,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Sensory Play with Leaves"
+                ]
               }
             },
             {
-              "topicNumber": 8,
+              "topicNumber": "8",
               "topic": "Nature Patch Touch",
               "objective": "Engage in Nature Patch Touch activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Nature Patch Touch within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Sensory Play with Leaves",
+              "hashtags": [],
               "activity": {
                 "name": "Nature Patch Touch",
                 "materials": [
@@ -219,21 +228,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Sensory Play with Leaves"
+                ]
               }
             },
             {
-              "topicNumber": 9,
+              "topicNumber": "9",
               "topic": "Colorful Leaf Hunt",
               "objective": "Engage in Colorful Leaf Hunt activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Colorful Leaf Hunt within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Sensory Play with Leaves",
+              "hashtags": [],
               "activity": {
                 "name": "Colorful Leaf Hunt",
                 "materials": [
@@ -246,21 +256,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Sensory Play with Leaves"
+                ]
               }
             },
             {
-              "topicNumber": 10,
+              "topicNumber": "10",
               "topic": "Leaf Pile Fun",
               "objective": "Engage in Leaf Pile Fun activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Leaf Pile Fun within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Sensory Play with Leaves",
+              "hashtags": [],
               "activity": {
                 "name": "Leaf Pile Fun",
                 "materials": [
@@ -273,21 +284,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Sensory Play with Leaves"
+                ]
               }
             },
             {
-              "topicNumber": 11,
+              "topicNumber": "11",
               "topic": "Sky Watch Moments",
               "objective": "Engage in Sky Watch Moments activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Sky Watch Moments within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Watching Birds or Clouds",
+              "hashtags": [],
               "activity": {
                 "name": "Sky Watch Moments",
                 "materials": [
@@ -300,21 +312,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Watching Birds or Clouds"
+                ]
               }
             },
             {
-              "topicNumber": 12,
+              "topicNumber": "12",
               "topic": "Cloud Shape Spotting",
               "objective": "Engage in Cloud Shape Spotting activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Cloud Shape Spotting within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Watching Birds or Clouds",
+              "hashtags": [],
               "activity": {
                 "name": "Cloud Shape Spotting",
                 "materials": [
@@ -327,21 +340,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Watching Birds or Clouds"
+                ]
               }
             },
             {
-              "topicNumber": 13,
+              "topicNumber": "13",
               "topic": "Tiny Bird Observer",
               "objective": "Engage in Tiny Bird Observer activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Tiny Bird Observer within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Watching Birds or Clouds",
+              "hashtags": [],
               "activity": {
                 "name": "Tiny Bird Observer",
                 "materials": [
@@ -354,21 +368,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Watching Birds or Clouds"
+                ]
               }
             },
             {
-              "topicNumber": 14,
+              "topicNumber": "14",
               "topic": "Feathered Friends Peek",
               "objective": "Engage in Feathered Friends Peek activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Feathered Friends Peek within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Watching Birds or Clouds",
+              "hashtags": [],
               "activity": {
                 "name": "Feathered Friends Peek",
                 "materials": [
@@ -381,21 +396,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Watching Birds or Clouds"
+                ]
               }
             },
             {
-              "topicNumber": 15,
+              "topicNumber": "15",
               "topic": "Little Sky Explorer",
               "objective": "Engage in Little Sky Explorer activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Little Sky Explorer within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Watching Birds or Clouds",
+              "hashtags": [],
               "activity": {
                 "name": "Little Sky Explorer",
                 "materials": [
@@ -408,21 +424,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Watching Birds or Clouds"
+                ]
               }
             },
             {
-              "topicNumber": 16,
+              "topicNumber": "16",
               "topic": "Smooth Rock Feeling",
               "objective": "Engage in Smooth Rock Feeling activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Smooth Rock Feeling within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Touching Natural Materials",
+              "hashtags": [],
               "activity": {
                 "name": "Smooth Rock Feeling",
                 "materials": [
@@ -435,21 +452,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Touching Natural Materials"
+                ]
               }
             },
             {
-              "topicNumber": 17,
+              "topicNumber": "17",
               "topic": "Tiny Pinecone Play",
               "objective": "Engage in Tiny Pinecone Play activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Tiny Pinecone Play within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Touching Natural Materials",
+              "hashtags": [],
               "activity": {
                 "name": "Tiny Pinecone Play",
                 "materials": [
@@ -462,21 +480,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Touching Natural Materials"
+                ]
               }
             },
             {
-              "topicNumber": 18,
+              "topicNumber": "18",
               "topic": "Bark Texture Touch",
               "objective": "Engage in Bark Texture Touch activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Bark Texture Touch within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Touching Natural Materials",
+              "hashtags": [],
               "activity": {
                 "name": "Bark Texture Touch",
                 "materials": [
@@ -489,21 +508,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Touching Natural Materials"
+                ]
               }
             },
             {
-              "topicNumber": 19,
+              "topicNumber": "19",
               "topic": "Nature Object Reach",
               "objective": "Engage in Nature Object Reach activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Nature Object Reach within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Touching Natural Materials",
+              "hashtags": [],
               "activity": {
                 "name": "Nature Object Reach",
                 "materials": [
@@ -516,21 +536,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Touching Natural Materials"
+                ]
               }
             },
             {
-              "topicNumber": 20,
+              "topicNumber": "20",
               "topic": "Pebble Touch Fun",
               "objective": "Engage in Pebble Touch Fun activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Pebble Touch Fun within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Touching Natural Materials",
+              "hashtags": [],
               "activity": {
                 "name": "Pebble Touch Fun",
                 "materials": [
@@ -543,21 +564,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Touching Natural Materials"
+                ]
               }
             },
             {
-              "topicNumber": 21,
+              "topicNumber": "21",
               "topic": "Splash & Pour Fun",
               "objective": "Engage in Splash & Pour Fun activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Splash & Pour Fun within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Outdoor Water Play",
+              "hashtags": [],
               "activity": {
                 "name": "Splash & Pour Fun",
                 "materials": [
@@ -570,21 +592,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Outdoor Water Play"
+                ]
               }
             },
             {
-              "topicNumber": 22,
+              "topicNumber": "22",
               "topic": "Mini Rain Collector",
               "objective": "Engage in Mini Rain Collector activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Mini Rain Collector within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Outdoor Water Play",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Rain Collector",
                 "materials": [
@@ -597,21 +620,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Outdoor Water Play"
+                ]
               }
             },
             {
-              "topicNumber": 23,
+              "topicNumber": "23",
               "topic": "Water Pour Challenge",
               "objective": "Engage in Water Pour Challenge activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Water Pour Challenge within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Outdoor Water Play",
+              "hashtags": [],
               "activity": {
                 "name": "Water Pour Challenge",
                 "materials": [
@@ -624,21 +648,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Outdoor Water Play"
+                ]
               }
             },
             {
-              "topicNumber": 24,
+              "topicNumber": "24",
               "topic": "Tiny Boat Float",
               "objective": "Engage in Tiny Boat Float activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Tiny Boat Float within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Outdoor Water Play",
+              "hashtags": [],
               "activity": {
                 "name": "Tiny Boat Float",
                 "materials": [
@@ -651,21 +676,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Outdoor Water Play"
+                ]
               }
             },
             {
-              "topicNumber": 25,
+              "topicNumber": "25",
               "topic": "Spray & Laugh",
               "objective": "Engage in Spray & Laugh activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Spray & Laugh within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Outdoor Water Play",
+              "hashtags": [],
               "activity": {
                 "name": "Spray & Laugh",
                 "materials": [
@@ -678,21 +704,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Outdoor Water Play"
+                ]
               }
             },
             {
-              "topicNumber": 26,
+              "topicNumber": "26",
               "topic": "Leaf & Rock Hunt",
               "objective": "Engage in Leaf & Rock Hunt activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Leaf & Rock Hunt within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Collecting Natural Objects",
+              "hashtags": [],
               "activity": {
                 "name": "Leaf & Rock Hunt",
                 "materials": [
@@ -705,21 +732,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Collecting Natural Objects"
+                ]
               }
             },
             {
-              "topicNumber": 27,
+              "topicNumber": "27",
               "topic": "Nature Basket Gathering",
               "objective": "Engage in Nature Basket Gathering activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Nature Basket Gathering within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Collecting Natural Objects",
+              "hashtags": [],
               "activity": {
                 "name": "Nature Basket Gathering",
                 "materials": [
@@ -732,21 +760,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Collecting Natural Objects"
+                ]
               }
             },
             {
-              "topicNumber": 28,
+              "topicNumber": "28",
               "topic": "Tiny Twig Collection",
               "objective": "Engage in Tiny Twig Collection activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Tiny Twig Collection within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Collecting Natural Objects",
+              "hashtags": [],
               "activity": {
                 "name": "Tiny Twig Collection",
                 "materials": [
@@ -759,21 +788,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Collecting Natural Objects"
+                ]
               }
             },
             {
-              "topicNumber": 29,
+              "topicNumber": "29",
               "topic": "Petal Picker Adventure",
               "objective": "Engage in Petal Picker Adventure activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Petal Picker Adventure within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Collecting Natural Objects",
+              "hashtags": [],
               "activity": {
                 "name": "Petal Picker Adventure",
                 "materials": [
@@ -786,21 +816,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Collecting Natural Objects"
+                ]
               }
             },
             {
-              "topicNumber": 30,
+              "topicNumber": "30",
               "topic": "Stone Sorting Fun",
               "objective": "Engage in Stone Sorting Fun activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Stone Sorting Fun within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Collecting Natural Objects",
+              "hashtags": [],
               "activity": {
                 "name": "Stone Sorting Fun",
                 "materials": [
@@ -813,21 +844,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Collecting Natural Objects"
+                ]
               }
             },
             {
-              "topicNumber": 31,
+              "topicNumber": "31",
               "topic": "Nature Dig & Discover",
               "objective": "Engage in Nature Dig & Discover activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Nature Dig & Discover within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Digging in Soil & Sand",
+              "hashtags": [],
               "activity": {
                 "name": "Nature Dig & Discover",
                 "materials": [
@@ -840,21 +872,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Digging in Soil & Sand"
+                ]
               }
             },
             {
-              "topicNumber": 32,
+              "topicNumber": "32",
               "topic": "Mini Mudcastle Builder",
               "objective": "Engage in Mini Mudcastle Builder activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Mini Mudcastle Builder within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Digging in Soil & Sand",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Mudcastle Builder",
                 "materials": [
@@ -867,21 +900,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Digging in Soil & Sand"
+                ]
               }
             },
             {
-              "topicNumber": 33,
+              "topicNumber": "33",
               "topic": "Dig & Discover Game",
               "objective": "Engage in Dig & Discover Game activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Dig & Discover Game within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Digging in Soil & Sand",
+              "hashtags": [],
               "activity": {
                 "name": "Dig & Discover Game",
                 "materials": [
@@ -894,21 +928,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Digging in Soil & Sand"
+                ]
               }
             },
             {
-              "topicNumber": 34,
+              "topicNumber": "34",
               "topic": "Soil Scoop Fun",
               "objective": "Engage in Soil Scoop Fun activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Soil Scoop Fun within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Digging in Soil & Sand",
+              "hashtags": [],
               "activity": {
                 "name": "Soil Scoop Fun",
                 "materials": [
@@ -921,21 +956,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Digging in Soil & Sand"
+                ]
               }
             },
             {
-              "topicNumber": 35,
+              "topicNumber": "35",
               "topic": "Little Garden Excavator",
               "objective": "Engage in Little Garden Excavator activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Little Garden Excavator within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Digging in Soil & Sand",
+              "hashtags": [],
               "activity": {
                 "name": "Little Garden Excavator",
                 "materials": [
@@ -948,21 +984,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Digging in Soil & Sand"
+                ]
               }
             },
             {
-              "topicNumber": 36,
+              "topicNumber": "36",
               "topic": "Bug Spotting Walk",
               "objective": "Engage in Bug Spotting Walk activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Bug Spotting Walk within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Exploring Bugs & Insects",
+              "hashtags": [],
               "activity": {
                 "name": "Bug Spotting Walk",
                 "materials": [
@@ -975,21 +1012,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Exploring Bugs & Insects"
+                ]
               }
             },
             {
-              "topicNumber": 37,
+              "topicNumber": "37",
               "topic": "Ladybug Chase",
               "objective": "Engage in Ladybug Chase activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Ladybug Chase within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Exploring Bugs & Insects",
+              "hashtags": [],
               "activity": {
                 "name": "Ladybug Chase",
                 "materials": [
@@ -1002,21 +1040,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Exploring Bugs & Insects"
+                ]
               }
             },
             {
-              "topicNumber": 38,
+              "topicNumber": "38",
               "topic": "Ant Trail Adventure",
               "objective": "Engage in Ant Trail Adventure activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Ant Trail Adventure within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Exploring Bugs & Insects",
+              "hashtags": [],
               "activity": {
                 "name": "Ant Trail Adventure",
                 "materials": [
@@ -1029,21 +1068,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Exploring Bugs & Insects"
+                ]
               }
             },
             {
-              "topicNumber": 39,
+              "topicNumber": "39",
               "topic": "Mini Butterfly Hunt",
               "objective": "Engage in Mini Butterfly Hunt activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Mini Butterfly Hunt within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Exploring Bugs & Insects",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Butterfly Hunt",
                 "materials": [
@@ -1056,21 +1096,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Exploring Bugs & Insects"
+                ]
               }
             },
             {
-              "topicNumber": 40,
+              "topicNumber": "40",
               "topic": "Creepy Crawl Discoveries",
               "objective": "Engage in Creepy Crawl Discoveries activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Creepy Crawl Discoveries within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Exploring Bugs & Insects",
+              "hashtags": [],
               "activity": {
                 "name": "Creepy Crawl Discoveries",
                 "materials": [
@@ -1083,21 +1124,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Exploring Bugs & Insects"
+                ]
               }
             },
             {
-              "topicNumber": 41,
+              "topicNumber": "41",
               "topic": "Flower Hunt Challenge",
               "objective": "Engage in Flower Hunt Challenge activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Flower Hunt Challenge within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Garden Exploration Games",
+              "hashtags": [],
               "activity": {
                 "name": "Flower Hunt Challenge",
                 "materials": [
@@ -1110,21 +1152,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Garden Exploration Games"
+                ]
               }
             },
             {
-              "topicNumber": 42,
+              "topicNumber": "42",
               "topic": "Leaf Trail Adventure",
               "objective": "Engage in Leaf Trail Adventure activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Leaf Trail Adventure within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Garden Exploration Games",
+              "hashtags": [],
               "activity": {
                 "name": "Leaf Trail Adventure",
                 "materials": [
@@ -1137,21 +1180,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Garden Exploration Games"
+                ]
               }
             },
             {
-              "topicNumber": 43,
+              "topicNumber": "43",
               "topic": "Garden Obstacle Play",
               "objective": "Engage in Garden Obstacle Play activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Garden Obstacle Play within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Garden Exploration Games",
+              "hashtags": [],
               "activity": {
                 "name": "Garden Obstacle Play",
                 "materials": [
@@ -1164,21 +1208,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Garden Exploration Games"
+                ]
               }
             },
             {
-              "topicNumber": 44,
+              "topicNumber": "44",
               "topic": "Mini Pollinator Spotting",
               "objective": "Engage in Mini Pollinator Spotting activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Mini Pollinator Spotting within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Garden Exploration Games",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Pollinator Spotting",
                 "materials": [
@@ -1191,21 +1236,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Garden Exploration Games"
+                ]
               }
             },
             {
-              "topicNumber": 45,
+              "topicNumber": "45",
               "topic": "Nature Puzzle Hunt",
               "objective": "Engage in Nature Puzzle Hunt activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Nature Puzzle Hunt within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Garden Exploration Games",
+              "hashtags": [],
               "activity": {
                 "name": "Nature Puzzle Hunt",
                 "materials": [
@@ -1218,21 +1264,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Garden Exploration Games"
+                ]
               }
             },
             {
-              "topicNumber": 46,
+              "topicNumber": "46",
               "topic": "Leaf Stamping Fun",
               "objective": "Engage in Leaf Stamping Fun activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Leaf Stamping Fun within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Art with Leaves",
+              "hashtags": [],
               "activity": {
                 "name": "Leaf Stamping Fun",
                 "materials": [
@@ -1245,21 +1292,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Art with Leaves"
+                ]
               }
             },
             {
-              "topicNumber": 47,
+              "topicNumber": "47",
               "topic": "Pressed Leaf Collage",
               "objective": "Engage in Pressed Leaf Collage activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Pressed Leaf Collage within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Art with Leaves",
+              "hashtags": [],
               "activity": {
                 "name": "Pressed Leaf Collage",
                 "materials": [
@@ -1272,21 +1320,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Art with Leaves"
+                ]
               }
             },
             {
-              "topicNumber": 48,
+              "topicNumber": "48",
               "topic": "Colorful Leaf Mandala",
               "objective": "Engage in Colorful Leaf Mandala activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Colorful Leaf Mandala within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Art with Leaves",
+              "hashtags": [],
               "activity": {
                 "name": "Colorful Leaf Mandala",
                 "materials": [
@@ -1299,21 +1348,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Art with Leaves"
+                ]
               }
             },
             {
-              "topicNumber": 49,
+              "topicNumber": "49",
               "topic": "Twig & Leaf Sculpture",
               "objective": "Engage in Twig & Leaf Sculpture activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Twig & Leaf Sculpture within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Art with Leaves",
+              "hashtags": [],
               "activity": {
                 "name": "Twig & Leaf Sculpture",
                 "materials": [
@@ -1326,21 +1376,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Art with Leaves"
+                ]
               }
             },
             {
-              "topicNumber": 50,
+              "topicNumber": "50",
               "topic": "Leaf Rubbing Adventure",
               "objective": "Engage in Leaf Rubbing Adventure activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Leaf Rubbing Adventure within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Art with Leaves",
+              "hashtags": [],
               "activity": {
                 "name": "Leaf Rubbing Adventure",
                 "materials": [
@@ -1353,21 +1404,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Art with Leaves"
+                ]
               }
             },
             {
-              "topicNumber": 51,
+              "topicNumber": "51",
               "topic": "Rainy Day Fun",
               "objective": "Engage in Rainy Day Fun activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Rainy Day Fun within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Learning About Weather",
+              "hashtags": [],
               "activity": {
                 "name": "Rainy Day Fun",
                 "materials": [
@@ -1380,21 +1432,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Learning About Weather"
+                ]
               }
             },
             {
-              "topicNumber": 52,
+              "topicNumber": "52",
               "topic": "Wind Chime Play",
               "objective": "Engage in Wind Chime Play activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Wind Chime Play within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Learning About Weather",
+              "hashtags": [],
               "activity": {
                 "name": "Wind Chime Play",
                 "materials": [
@@ -1407,21 +1460,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Learning About Weather"
+                ]
               }
             },
             {
-              "topicNumber": 53,
+              "topicNumber": "53",
               "topic": "Sunshine Tracker",
               "objective": "Engage in Sunshine Tracker activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Sunshine Tracker within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Learning About Weather",
+              "hashtags": [],
               "activity": {
                 "name": "Sunshine Tracker",
                 "materials": [
@@ -1434,21 +1488,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Learning About Weather"
+                ]
               }
             },
             {
-              "topicNumber": 54,
+              "topicNumber": "54",
               "topic": "Tiny Weather Journal",
               "objective": "Engage in Tiny Weather Journal activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Tiny Weather Journal within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Learning About Weather",
+              "hashtags": [],
               "activity": {
                 "name": "Tiny Weather Journal",
                 "materials": [
@@ -1461,21 +1516,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Learning About Weather"
+                ]
               }
             },
             {
-              "topicNumber": 55,
+              "topicNumber": "55",
               "topic": "Cloud Type Hunt",
               "objective": "Engage in Cloud Type Hunt activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Cloud Type Hunt within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Learning About Weather",
+              "hashtags": [],
               "activity": {
                 "name": "Cloud Type Hunt",
                 "materials": [
@@ -1488,21 +1544,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Learning About Weather"
+                ]
               }
             },
             {
-              "topicNumber": 56,
+              "topicNumber": "56",
               "topic": "Footprint Detective",
               "objective": "Engage in Footprint Detective activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Footprint Detective within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Animal Tracking Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Footprint Detective",
                 "materials": [
@@ -1515,21 +1572,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Animal Tracking Activities"
+                ]
               }
             },
             {
-              "topicNumber": 57,
+              "topicNumber": "57",
               "topic": "Tiny Trackers",
               "objective": "Engage in Tiny Trackers activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Tiny Trackers within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Animal Tracking Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Tiny Trackers",
                 "materials": [
@@ -1542,21 +1600,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Animal Tracking Activities"
+                ]
               }
             },
             {
-              "topicNumber": 58,
+              "topicNumber": "58",
               "topic": "Feather Finder Game",
               "objective": "Engage in Feather Finder Game activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Feather Finder Game within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Animal Tracking Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Feather Finder Game",
                 "materials": [
@@ -1569,21 +1628,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Animal Tracking Activities"
+                ]
               }
             },
             {
-              "topicNumber": 59,
+              "topicNumber": "59",
               "topic": "Backyard Safari",
               "objective": "Engage in Backyard Safari activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Backyard Safari within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Animal Tracking Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Backyard Safari",
                 "materials": [
@@ -1596,21 +1656,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Animal Tracking Activities"
+                ]
               }
             },
             {
-              "topicNumber": 60,
+              "topicNumber": "60",
               "topic": "Mini Wildlife Explorer",
               "objective": "Engage in Mini Wildlife Explorer activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Mini Wildlife Explorer within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Animal Tracking Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Wildlife Explorer",
                 "materials": [
@@ -1623,21 +1684,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Animal Tracking Activities"
+                ]
               }
             },
             {
-              "topicNumber": 61,
+              "topicNumber": "61",
               "topic": "Mini Volcano Experiment",
               "objective": "Engage in Mini Volcano Experiment activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Mini Volcano Experiment within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Backyard Science",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Volcano Experiment",
                 "materials": [
@@ -1650,21 +1712,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Backyard Science"
+                ]
               }
             },
             {
-              "topicNumber": 62,
+              "topicNumber": "62",
               "topic": "Water Cycle Play",
               "objective": "Engage in Water Cycle Play activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Water Cycle Play within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Backyard Science",
+              "hashtags": [],
               "activity": {
                 "name": "Water Cycle Play",
                 "materials": [
@@ -1677,21 +1740,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Backyard Science"
+                ]
               }
             },
             {
-              "topicNumber": 63,
+              "topicNumber": "63",
               "topic": "Soil Composition Adventure",
               "objective": "Engage in Soil Composition Adventure activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Soil Composition Adventure within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Backyard Science",
+              "hashtags": [],
               "activity": {
                 "name": "Soil Composition Adventure",
                 "materials": [
@@ -1704,21 +1768,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Backyard Science"
+                ]
               }
             },
             {
-              "topicNumber": 64,
+              "topicNumber": "64",
               "topic": "Tiny Ecosystem Hunt",
               "objective": "Engage in Tiny Ecosystem Hunt activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Tiny Ecosystem Hunt within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Backyard Science",
+              "hashtags": [],
               "activity": {
                 "name": "Tiny Ecosystem Hunt",
                 "materials": [
@@ -1731,21 +1796,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Backyard Science"
+                ]
               }
             },
             {
-              "topicNumber": 65,
+              "topicNumber": "65",
               "topic": "Sun & Shadow Exploration",
               "objective": "Engage in Sun & Shadow Exploration activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Sun & Shadow Exploration within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Backyard Science",
+              "hashtags": [],
               "activity": {
                 "name": "Sun & Shadow Exploration",
                 "materials": [
@@ -1758,21 +1824,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Backyard Science"
+                ]
               }
             },
             {
-              "topicNumber": 66,
+              "topicNumber": "66",
               "topic": "Leaf & Stone Search",
               "objective": "Engage in Leaf & Stone Search activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Leaf & Stone Search within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Scavenger Hunts",
+              "hashtags": [],
               "activity": {
                 "name": "Leaf & Stone Search",
                 "materials": [
@@ -1785,21 +1852,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Scavenger Hunts"
+                ]
               }
             },
             {
-              "topicNumber": 67,
+              "topicNumber": "67",
               "topic": "Mini Treasure Map",
               "objective": "Engage in Mini Treasure Map activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Mini Treasure Map within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Scavenger Hunts",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Treasure Map",
                 "materials": [
@@ -1812,21 +1880,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Scavenger Hunts"
+                ]
               }
             },
             {
-              "topicNumber": 68,
+              "topicNumber": "68",
               "topic": "Bug Hunt Adventure",
               "objective": "Engage in Bug Hunt Adventure activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Bug Hunt Adventure within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Scavenger Hunts",
+              "hashtags": [],
               "activity": {
                 "name": "Bug Hunt Adventure",
                 "materials": [
@@ -1839,21 +1908,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Scavenger Hunts"
+                ]
               }
             },
             {
-              "topicNumber": 69,
+              "topicNumber": "69",
               "topic": "Backyard Safari Challenge",
               "objective": "Engage in Backyard Safari Challenge activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Backyard Safari Challenge within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Scavenger Hunts",
+              "hashtags": [],
               "activity": {
                 "name": "Backyard Safari Challenge",
                 "materials": [
@@ -1866,21 +1936,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Scavenger Hunts"
+                ]
               }
             },
             {
-              "topicNumber": 70,
+              "topicNumber": "70",
               "topic": "Nature Bingo Game",
               "objective": "Engage in Nature Bingo Game activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Nature Bingo Game within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Scavenger Hunts",
+              "hashtags": [],
               "activity": {
                 "name": "Nature Bingo Game",
                 "materials": [
@@ -1893,21 +1964,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Scavenger Hunts"
+                ]
               }
             },
             {
-              "topicNumber": 71,
+              "topicNumber": "71",
               "topic": "Bark Texture Prints",
               "objective": "Engage in Bark Texture Prints activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Bark Texture Prints within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Leaf & Bark Rubbing Art",
+              "hashtags": [],
               "activity": {
                 "name": "Bark Texture Prints",
                 "materials": [
@@ -1920,21 +1992,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Leaf & Bark Rubbing Art"
+                ]
               }
             },
             {
-              "topicNumber": 72,
+              "topicNumber": "72",
               "topic": "Tree Bark Collage",
               "objective": "Engage in Tree Bark Collage activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Tree Bark Collage within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Leaf & Bark Rubbing Art",
+              "hashtags": [],
               "activity": {
                 "name": "Tree Bark Collage",
                 "materials": [
@@ -1947,21 +2020,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Leaf & Bark Rubbing Art"
+                ]
               }
             },
             {
-              "topicNumber": 73,
+              "topicNumber": "73",
               "topic": "Nature Pattern Rubbing",
               "objective": "Engage in Nature Pattern Rubbing activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Nature Pattern Rubbing within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Leaf & Bark Rubbing Art",
+              "hashtags": [],
               "activity": {
                 "name": "Nature Pattern Rubbing",
                 "materials": [
@@ -1974,21 +2048,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Leaf & Bark Rubbing Art"
+                ]
               }
             },
             {
-              "topicNumber": 74,
+              "topicNumber": "74",
               "topic": "Leaf Texture Print",
               "objective": "Engage in Leaf Texture Print activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Leaf Texture Print within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Leaf & Bark Rubbing Art",
+              "hashtags": [],
               "activity": {
                 "name": "Leaf Texture Print",
                 "materials": [
@@ -2001,21 +2076,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Leaf & Bark Rubbing Art"
+                ]
               }
             },
             {
-              "topicNumber": 75,
+              "topicNumber": "75",
               "topic": "Bark Art Discovery",
               "objective": "Engage in Bark Art Discovery activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Bark Art Discovery within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Leaf & Bark Rubbing Art",
+              "hashtags": [],
               "activity": {
                 "name": "Bark Art Discovery",
                 "materials": [
@@ -2028,21 +2104,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Leaf & Bark Rubbing Art"
+                ]
               }
             },
             {
-              "topicNumber": 76,
+              "topicNumber": "76",
               "topic": "Pond Life Observation",
               "objective": "Engage in Pond Life Observation activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Pond Life Observation within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Exploring Ecosystems",
+              "hashtags": [],
               "activity": {
                 "name": "Pond Life Observation",
                 "materials": [
@@ -2055,21 +2132,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Exploring Ecosystems"
+                ]
               }
             },
             {
-              "topicNumber": 77,
+              "topicNumber": "77",
               "topic": "Backyard Microhabitats",
               "objective": "Engage in Backyard Microhabitats activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Backyard Microhabitats within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Exploring Ecosystems",
+              "hashtags": [],
               "activity": {
                 "name": "Backyard Microhabitats",
                 "materials": [
@@ -2082,21 +2160,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Exploring Ecosystems"
+                ]
               }
             },
             {
-              "topicNumber": 78,
+              "topicNumber": "78",
               "topic": "Mini Food Chain Hunt",
               "objective": "Engage in Mini Food Chain Hunt activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Mini Food Chain Hunt within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Exploring Ecosystems",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Food Chain Hunt",
                 "materials": [
@@ -2109,21 +2188,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Exploring Ecosystems"
+                ]
               }
             },
             {
-              "topicNumber": 79,
+              "topicNumber": "79",
               "topic": "Garden Biodiversity Challenge",
               "objective": "Engage in Garden Biodiversity Challenge activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Garden Biodiversity Challenge within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Exploring Ecosystems",
+              "hashtags": [],
               "activity": {
                 "name": "Garden Biodiversity Challenge",
                 "materials": [
@@ -2136,21 +2216,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Exploring Ecosystems"
+                ]
               }
             },
             {
-              "topicNumber": 80,
+              "topicNumber": "80",
               "topic": "Soil & Water Life",
               "objective": "Engage in Soil & Water Life activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Soil & Water Life within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Exploring Ecosystems",
+              "hashtags": [],
               "activity": {
                 "name": "Soil & Water Life",
                 "materials": [
@@ -2163,21 +2244,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Exploring Ecosystems"
+                ]
               }
             },
             {
-              "topicNumber": 81,
+              "topicNumber": "81",
               "topic": "Planter Adventure",
               "objective": "Engage in Planter Adventure activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Planter Adventure within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Building a Mini-Garden",
+              "hashtags": [],
               "activity": {
                 "name": "Planter Adventure",
                 "materials": [
@@ -2190,21 +2272,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Building a Mini-Garden"
+                ]
               }
             },
             {
-              "topicNumber": 82,
+              "topicNumber": "82",
               "topic": "Seedling Setup",
               "objective": "Engage in Seedling Setup activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Seedling Setup within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Building a Mini-Garden",
+              "hashtags": [],
               "activity": {
                 "name": "Seedling Setup",
                 "materials": [
@@ -2217,21 +2300,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Building a Mini-Garden"
+                ]
               }
             },
             {
-              "topicNumber": 83,
+              "topicNumber": "83",
               "topic": "Herb Garden Project",
               "objective": "Engage in Herb Garden Project activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Herb Garden Project within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Building a Mini-Garden",
+              "hashtags": [],
               "activity": {
                 "name": "Herb Garden Project",
                 "materials": [
@@ -2244,21 +2328,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Building a Mini-Garden"
+                ]
               }
             },
             {
-              "topicNumber": 84,
+              "topicNumber": "84",
               "topic": "Garden Patch Challenge",
               "objective": "Engage in Garden Patch Challenge activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Garden Patch Challenge within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Building a Mini-Garden",
+              "hashtags": [],
               "activity": {
                 "name": "Garden Patch Challenge",
                 "materials": [
@@ -2271,21 +2356,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Building a Mini-Garden"
+                ]
               }
             },
             {
-              "topicNumber": 85,
+              "topicNumber": "85",
               "topic": "Mini-Garden Lab",
               "objective": "Engage in Mini-Garden Lab activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Mini-Garden Lab within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Building a Mini-Garden",
+              "hashtags": [],
               "activity": {
                 "name": "Mini-Garden Lab",
                 "materials": [
@@ -2298,21 +2384,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Building a Mini-Garden"
+                ]
               }
             },
             {
-              "topicNumber": 86,
+              "topicNumber": "86",
               "topic": "Night Sky Tracker",
               "objective": "Engage in Night Sky Tracker activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Night Sky Tracker within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Star Gazing & Sky Mapping",
+              "hashtags": [],
               "activity": {
                 "name": "Night Sky Tracker",
                 "materials": [
@@ -2325,21 +2412,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Star Gazing & Sky Mapping"
+                ]
               }
             },
             {
-              "topicNumber": 87,
+              "topicNumber": "87",
               "topic": "Constellation Explorer",
               "objective": "Engage in Constellation Explorer activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Constellation Explorer within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Star Gazing & Sky Mapping",
+              "hashtags": [],
               "activity": {
                 "name": "Constellation Explorer",
                 "materials": [
@@ -2352,21 +2440,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Star Gazing & Sky Mapping"
+                ]
               }
             },
             {
-              "topicNumber": 88,
+              "topicNumber": "88",
               "topic": "Moon Phase Detective",
               "objective": "Engage in Moon Phase Detective activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Moon Phase Detective within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Star Gazing & Sky Mapping",
+              "hashtags": [],
               "activity": {
                 "name": "Moon Phase Detective",
                 "materials": [
@@ -2379,21 +2468,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Star Gazing & Sky Mapping"
+                ]
               }
             },
             {
-              "topicNumber": 89,
+              "topicNumber": "89",
               "topic": "Telescope Adventure",
               "objective": "Engage in Telescope Adventure activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Telescope Adventure within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Star Gazing & Sky Mapping",
+              "hashtags": [],
               "activity": {
                 "name": "Telescope Adventure",
                 "materials": [
@@ -2406,21 +2496,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Star Gazing & Sky Mapping"
+                ]
               }
             },
             {
-              "topicNumber": 90,
+              "topicNumber": "90",
               "topic": "Shooting Star Hunt",
               "objective": "Engage in Shooting Star Hunt activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Shooting Star Hunt within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Star Gazing & Sky Mapping",
+              "hashtags": [],
               "activity": {
                 "name": "Shooting Star Hunt",
                 "materials": [
@@ -2433,21 +2524,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Star Gazing & Sky Mapping"
+                ]
               }
             },
             {
-              "topicNumber": 91,
+              "topicNumber": "91",
               "topic": "Trail Explorer Challenge",
               "objective": "Engage in Trail Explorer Challenge activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Trail Explorer Challenge within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Hiking with Observation Tasks",
+              "hashtags": [],
               "activity": {
                 "name": "Trail Explorer Challenge",
                 "materials": [
@@ -2460,21 +2552,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Hiking with Observation Tasks"
+                ]
               }
             },
             {
-              "topicNumber": 92,
+              "topicNumber": "92",
               "topic": "Nature Detective Hike",
               "objective": "Engage in Nature Detective Hike activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Nature Detective Hike within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Hiking with Observation Tasks",
+              "hashtags": [],
               "activity": {
                 "name": "Nature Detective Hike",
                 "materials": [
@@ -2487,21 +2580,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Hiking with Observation Tasks"
+                ]
               }
             },
             {
-              "topicNumber": 93,
+              "topicNumber": "93",
               "topic": "Rock & Soil Discovery",
               "objective": "Engage in Rock & Soil Discovery activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Rock & Soil Discovery within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Hiking with Observation Tasks",
+              "hashtags": [],
               "activity": {
                 "name": "Rock & Soil Discovery",
                 "materials": [
@@ -2514,21 +2608,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Hiking with Observation Tasks"
+                ]
               }
             },
             {
-              "topicNumber": 94,
+              "topicNumber": "94",
               "topic": "Plant ID Trek",
               "objective": "Engage in Plant ID Trek activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Plant ID Trek within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Hiking with Observation Tasks",
+              "hashtags": [],
               "activity": {
                 "name": "Plant ID Trek",
                 "materials": [
@@ -2541,21 +2636,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Hiking with Observation Tasks"
+                ]
               }
             },
             {
-              "topicNumber": 95,
+              "topicNumber": "95",
               "topic": "Wildlife Spotting Walk",
               "objective": "Engage in Wildlife Spotting Walk activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Wildlife Spotting Walk within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Hiking with Observation Tasks",
+              "hashtags": [],
               "activity": {
                 "name": "Wildlife Spotting Walk",
                 "materials": [
@@ -2568,21 +2664,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Hiking with Observation Tasks"
+                ]
               }
             },
             {
-              "topicNumber": 96,
+              "topicNumber": "96",
               "topic": "Nature Sketch Diary",
               "objective": "Engage in Nature Sketch Diary activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Nature Sketch Diary within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Journaling",
+              "hashtags": [],
               "activity": {
                 "name": "Nature Sketch Diary",
                 "materials": [
@@ -2595,21 +2692,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Journaling"
+                ]
               }
             },
             {
-              "topicNumber": 97,
+              "topicNumber": "97",
               "topic": "Field Notes Recording",
               "objective": "Engage in Field Notes Recording activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Field Notes Recording within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Journaling",
+              "hashtags": [],
               "activity": {
                 "name": "Field Notes Recording",
                 "materials": [
@@ -2622,21 +2720,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Journaling"
+                ]
               }
             },
             {
-              "topicNumber": 98,
+              "topicNumber": "98",
               "topic": "Leaf Log",
               "objective": "Engage in Leaf Log activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Leaf Log within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Journaling",
+              "hashtags": [],
               "activity": {
                 "name": "Leaf Log",
                 "materials": [
@@ -2649,21 +2748,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Journaling"
+                ]
               }
             },
             {
-              "topicNumber": 99,
+              "topicNumber": "99",
               "topic": "Wildlife Journal",
               "objective": "Engage in Wildlife Journal activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Wildlife Journal within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Journaling",
+              "hashtags": [],
               "activity": {
                 "name": "Wildlife Journal",
                 "materials": [
@@ -2676,21 +2776,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Journaling"
+                ]
               }
             },
             {
-              "topicNumber": 100,
+              "topicNumber": "100",
               "topic": "Observation Pages",
               "objective": "Engage in Observation Pages activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Observation Pages within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature Journaling",
+              "hashtags": [],
               "activity": {
                 "name": "Observation Pages",
                 "materials": [
@@ -2703,21 +2804,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature Journaling"
+                ]
               }
             },
             {
-              "topicNumber": 101,
+              "topicNumber": "101",
               "topic": "Eco Action Plan",
               "objective": "Engage in Eco Action Plan activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Eco Action Plan within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Environmental Awareness Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Eco Action Plan",
                 "materials": [
@@ -2730,21 +2832,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Environmental Awareness Projects"
+                ]
               }
             },
             {
-              "topicNumber": 102,
+              "topicNumber": "102",
               "topic": "Sustainability Challenge",
               "objective": "Engage in Sustainability Challenge activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Sustainability Challenge within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Environmental Awareness Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Sustainability Challenge",
                 "materials": [
@@ -2757,21 +2860,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Environmental Awareness Projects"
+                ]
               }
             },
             {
-              "topicNumber": 103,
+              "topicNumber": "103",
               "topic": "Eco Hero Project",
               "objective": "Engage in Eco Hero Project activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Eco Hero Project within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Environmental Awareness Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Eco Hero Project",
                 "materials": [
@@ -2784,21 +2888,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Environmental Awareness Projects"
+                ]
               }
             },
             {
-              "topicNumber": 104,
+              "topicNumber": "104",
               "topic": "Green Initiative Lab",
               "objective": "Engage in Green Initiative Lab activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Green Initiative Lab within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Environmental Awareness Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Green Initiative Lab",
                 "materials": [
@@ -2811,21 +2916,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Environmental Awareness Projects"
+                ]
               }
             },
             {
-              "topicNumber": 105,
+              "topicNumber": "105",
               "topic": "Climate Awareness Quest",
               "objective": "Engage in Climate Awareness Quest activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Climate Awareness Quest within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Environmental Awareness Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Climate Awareness Quest",
                 "materials": [
@@ -2838,21 +2944,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Environmental Awareness Projects"
+                ]
               }
             },
             {
-              "topicNumber": 106,
+              "topicNumber": "106",
               "topic": "Nature Photography Assignment",
               "objective": "Engage in Nature Photography Assignment activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Nature Photography Assignment within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Wildlife Photography",
+              "hashtags": [],
               "activity": {
                 "name": "Nature Photography Assignment",
                 "materials": [
@@ -2865,21 +2972,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Wildlife Photography"
+                ]
               }
             },
             {
-              "topicNumber": 107,
+              "topicNumber": "107",
               "topic": "Backyard Safari Photoshoot",
               "objective": "Engage in Backyard Safari Photoshoot activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Backyard Safari Photoshoot within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Wildlife Photography",
+              "hashtags": [],
               "activity": {
                 "name": "Backyard Safari Photoshoot",
                 "materials": [
@@ -2892,21 +3000,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Wildlife Photography"
+                ]
               }
             },
             {
-              "topicNumber": 108,
+              "topicNumber": "108",
               "topic": "Birdwatching Photography",
               "objective": "Engage in Birdwatching Photography activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Birdwatching Photography within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Wildlife Photography",
+              "hashtags": [],
               "activity": {
                 "name": "Birdwatching Photography",
                 "materials": [
@@ -2919,21 +3028,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Wildlife Photography"
+                ]
               }
             },
             {
-              "topicNumber": 109,
+              "topicNumber": "109",
               "topic": "Insect Macro Shots",
               "objective": "Engage in Insect Macro Shots activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Insect Macro Shots within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Wildlife Photography",
+              "hashtags": [],
               "activity": {
                 "name": "Insect Macro Shots",
                 "materials": [
@@ -2946,21 +3056,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Wildlife Photography"
+                ]
               }
             },
             {
-              "topicNumber": 110,
+              "topicNumber": "110",
               "topic": "Landscape Capture Lab",
               "objective": "Engage in Landscape Capture Lab activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Landscape Capture Lab within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Wildlife Photography",
+              "hashtags": [],
               "activity": {
                 "name": "Landscape Capture Lab",
                 "materials": [
@@ -2973,21 +3084,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Wildlife Photography"
+                ]
               }
             },
             {
-              "topicNumber": 111,
+              "topicNumber": "111",
               "topic": "Pond Study Expedition",
               "objective": "Engage in Pond Study Expedition activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Pond Study Expedition within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Ecosystem Study Tours",
+              "hashtags": [],
               "activity": {
                 "name": "Pond Study Expedition",
                 "materials": [
@@ -3000,21 +3112,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Ecosystem Study Tours"
+                ]
               }
             },
             {
-              "topicNumber": 112,
+              "topicNumber": "112",
               "topic": "Forest Habitat Exploration",
               "objective": "Engage in Forest Habitat Exploration activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Forest Habitat Exploration within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Ecosystem Study Tours",
+              "hashtags": [],
               "activity": {
                 "name": "Forest Habitat Exploration",
                 "materials": [
@@ -3027,21 +3140,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Ecosystem Study Tours"
+                ]
               }
             },
             {
-              "topicNumber": 113,
+              "topicNumber": "113",
               "topic": "Wetland Observation",
               "objective": "Engage in Wetland Observation activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Wetland Observation within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Ecosystem Study Tours",
+              "hashtags": [],
               "activity": {
                 "name": "Wetland Observation",
                 "materials": [
@@ -3054,21 +3168,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Ecosystem Study Tours"
+                ]
               }
             },
             {
-              "topicNumber": 114,
+              "topicNumber": "114",
               "topic": "River Ecology Challenge",
               "objective": "Engage in River Ecology Challenge activities to develop nature & exploration skills",
               "explanation": "This activity focuses on River Ecology Challenge within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Ecosystem Study Tours",
+              "hashtags": [],
               "activity": {
                 "name": "River Ecology Challenge",
                 "materials": [
@@ -3081,21 +3196,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Ecosystem Study Tours"
+                ]
               }
             },
             {
-              "topicNumber": 115,
+              "topicNumber": "115",
               "topic": "Coastal Ecosystem Tour",
               "objective": "Engage in Coastal Ecosystem Tour activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Coastal Ecosystem Tour within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Ecosystem Study Tours",
+              "hashtags": [],
               "activity": {
                 "name": "Coastal Ecosystem Tour",
                 "materials": [
@@ -3108,21 +3224,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Ecosystem Study Tours"
+                ]
               }
             },
             {
-              "topicNumber": 116,
+              "topicNumber": "116",
               "topic": "Soil Testing Lab",
               "objective": "Engage in Soil Testing Lab activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Soil Testing Lab within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature-Based Experiments",
+              "hashtags": [],
               "activity": {
                 "name": "Soil Testing Lab",
                 "materials": [
@@ -3135,21 +3252,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature-Based Experiments"
+                ]
               }
             },
             {
-              "topicNumber": 117,
+              "topicNumber": "117",
               "topic": "Water Quality Analysis",
               "objective": "Engage in Water Quality Analysis activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Water Quality Analysis within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature-Based Experiments",
+              "hashtags": [],
               "activity": {
                 "name": "Water Quality Analysis",
                 "materials": [
@@ -3162,21 +3280,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature-Based Experiments"
+                ]
               }
             },
             {
-              "topicNumber": 118,
+              "topicNumber": "118",
               "topic": "Mini Climate Lab",
               "objective": "Engage in Mini Climate Lab activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Mini Climate Lab within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature-Based Experiments",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Climate Lab",
                 "materials": [
@@ -3189,21 +3308,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature-Based Experiments"
+                ]
               }
             },
             {
-              "topicNumber": 119,
+              "topicNumber": "119",
               "topic": "Plant Growth Investigation",
               "objective": "Engage in Plant Growth Investigation activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Plant Growth Investigation within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature-Based Experiments",
+              "hashtags": [],
               "activity": {
                 "name": "Plant Growth Investigation",
                 "materials": [
@@ -3216,21 +3336,22 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature-Based Experiments"
+                ]
               }
             },
             {
-              "topicNumber": 120,
+              "topicNumber": "120",
               "topic": "Eco Science Challenge",
               "objective": "Engage in Eco Science Challenge activities to develop nature & exploration skills",
               "explanation": "This activity focuses on Eco Science Challenge within the Nature & Exploration pillar.",
-              "hashtags": [
-                "#Nature&Exploration",
-                "#EssentialGrowth"
-              ],
               "estimatedTime": "20-30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "",
+              "pillar": "Nature & Exploration",
+              "category": "Nature-Based Experiments",
+              "hashtags": [],
               "activity": {
                 "name": "Eco Science Challenge",
                 "materials": [
@@ -3243,8 +3364,7 @@
                 ],
                 "skills": [
                   "Nature & Exploration"
-                ],
-                "category": "Nature-Based Experiments"
+                ]
               }
             }
           ]
@@ -3253,5 +3373,5 @@
     }
   ],
   "totalActivities": 120,
-  "lastUpdated": "2025-10-12T01:20:25.338262"
+  "lastUpdated": "2025-10-26T12:37:54.380489"
 }

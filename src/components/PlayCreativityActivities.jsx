@@ -2,20 +2,32 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   Box, Typography, Card, CardContent, Grid, Chip, Button,
-  Container, Avatar, Badge, Fade, Zoom, Paper, Divider
+  Container, Avatar, Badge, Fade, Zoom, Paper, Divider, Slider
 } from '@mui/material';
 import {
   AccessTime, Group, Palette, MusicNote,
   Psychology, FitnessCenter, School, Nature, EmojiEvents,
   Star, Favorite, Share, Bookmark, PlayArrow
 } from '@mui/icons-material';
-import MinimalBackButton from './ui/SimpleBackButton';
+import SimpleBackButton from './ui/SimpleBackButton';
 
 const PlayCreativityActivities = ({ onBackClick }) => {
   const navigate = useNavigate();
   const [activitiesData, setActivitiesData] = useState(null);
-  const [selectedAgeGroup, setSelectedAgeGroup] = useState(null);
+  const [selectedAge, setSelectedAge] = useState(6); // Default age 6
   const [loading, setLoading] = useState(true);
+  
+  // Map numeric age to age group
+  const getAgeGroupFromAge = (age) => {
+    if (age <= 1) return 'Infant (0-1)';
+    if (age <= 3) return 'Toddler (1-3)';
+    if (age <= 5) return 'Preschooler (3-5)';
+    if (age <= 8) return 'Child (6-8)';
+    if (age <= 12) return 'Pre-Teen (9-12)';
+    return 'Teen (13-18)';
+  };
+  
+  const selectedAgeGroup = getAgeGroupFromAge(selectedAge);
 
   const handleActivityClick = (activity, category, ageGroup) => {
     // Create a URL-friendly slug for the activity
@@ -113,7 +125,7 @@ const PlayCreativityActivities = ({ onBackClick }) => {
       <Container maxWidth="lg">
         {/* Back Button */}
         <Box mb={4}>
-          <MinimalBackButton 
+          <SimpleBackButton 
             onClick={onBackClick}
             size="medium"
           />
@@ -140,88 +152,97 @@ const PlayCreativityActivities = ({ onBackClick }) => {
           </Box>
         </Fade>
 
-        {/* Age Group Selection */}
+        {/* Age Slider */}
         <Fade in timeout={1000}>
-          <Box mb={6}>
-            <Typography  gutterBottom sx={{ 
+          <Box mb={6} sx={{
+            background: 'rgba(255,255,255,0.95)',
+            borderRadius: '24px',
+            padding: '3rem',
+            boxShadow: '0 20px 40px rgba(0,0,0,0.15)',
+            backdropFilter: 'blur(10px)',
+            maxWidth: '800px',
+            margin: '0 auto 3rem auto'
+          }}>
+            <Typography variant="h5" gutterBottom sx={{ 
               fontWeight: '700', 
-              mb: 4, 
-              color: 'white',
-              textAlign: 'center',
-              textShadow: '1px 1px 2px rgba(0,0,0,0.3)'
+              mb: 2, 
+              color: '#2d3748',
+              textAlign: 'center'
             }}>
-              Choose Your Child's Age Group
+              Select Your Child's Age
             </Typography>
-            <Grid container spacing={3}>
-              {activitiesData.ageGroups.map((ageGroup, index) => (
-                <Grid item xs={12} sm={6} md={4} key={index}>
-                  <Zoom in timeout={1200 + (index * 200)}>
-                    <Card
-                      sx={{
-                        cursor: 'pointer',
-                        transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-                        background: selectedAgeGroup === ageGroup.ageGroup 
-                          ? 'linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%)'
-                          : 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)',
-                        border: selectedAgeGroup === ageGroup.ageGroup 
-                          ? '3px solid #ff4757' 
-                          : '2px solid rgba(255,255,255,0.2)',
-                        borderRadius: '20px',
-                        boxShadow: selectedAgeGroup === ageGroup.ageGroup
-                          ? '0 20px 40px rgba(255, 71, 87, 0.4)'
-                          : '0 10px 30px rgba(0,0,0,0.1)',
-                        transform: selectedAgeGroup === ageGroup.ageGroup 
-                          ? 'scale(1.05)' 
-                          : 'scale(1)',
-                        '&:hover': {
-                          transform: 'translateY(-8px) scale(1.02)',
-                          boxShadow: '0 25px 50px rgba(0,0,0,0.2)'
-                        }
-                      }}
-                      onClick={() => setSelectedAgeGroup(
-                        selectedAgeGroup === ageGroup.ageGroup ? null : ageGroup.ageGroup
-                      )}
-                    >
-                      <CardContent sx={{ textAlign: 'center', py: 2 }}>
-                        <Avatar
-                          sx={{
-                            width: 50,
-                            height: 50,
-                            mx: 'auto',
-                            mb: 1,
-                            background: selectedAgeGroup === ageGroup.ageGroup
-                              ? 'linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%)'
-                              : 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                            fontSize: '1.5rem',
-                            boxShadow: '0 4px 12px rgba(0,0,0,0.2)'
-                          }}
-                        >
-                          {getAgeGroupIcon(ageGroup.ageGroup)}
-                        </Avatar>
-                        <Typography  component="h3" gutterBottom sx={{
-                          fontWeight: 'bold',
-                          color: selectedAgeGroup === ageGroup.ageGroup ? 'white' : '#2d3748'
-                        }}>
-                          {ageGroup.ageGroup}
-                        </Typography>
-                        {selectedAgeGroup === ageGroup.ageGroup && (
-                          <Chip
-                            icon={<PlayArrow />}
-                            label="Selected"
-                            sx={{
-                              mt: 1,
-                              background: 'rgba(255,255,255,0.2)',
-                              color: 'white',
-                              fontWeight: 'bold'
-                            }}
-                          />
-                        )}
-                      </CardContent>
-                    </Card>
-                  </Zoom>
-                </Grid>
-              ))}
-            </Grid>
+            
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 3, mt: 4 }}>
+              <Avatar sx={{
+                width: 70,
+                height: 70,
+                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                fontSize: '2rem',
+                fontWeight: 'bold',
+                boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)'
+              }}>
+                {selectedAge}
+              </Avatar>
+              
+              <Box sx={{ flex: 1 }}>
+                <Typography variant="body1" sx={{ 
+                  color: '#4a5568', 
+                  mb: 2,
+                  fontWeight: '600'
+                }}>
+                  Age Group: <span style={{ 
+                    color: '#667eea', 
+                    fontWeight: '700',
+                    fontSize: '1.1rem'
+                  }}>{selectedAgeGroup}</span>
+                </Typography>
+                
+                <Slider
+                  value={selectedAge}
+                  onChange={(e, newValue) => setSelectedAge(newValue)}
+                  min={0}
+                  max={18}
+                  step={1}
+                  marks={[
+                    { value: 0, label: '0' },
+                    { value: 6, label: '6' },
+                    { value: 12, label: '12' },
+                    { value: 18, label: '18' }
+                  ]}
+                  valueLabelDisplay="auto"
+                  sx={{
+                    color: '#667eea',
+                    '& .MuiSlider-thumb': {
+                      width: 24,
+                      height: 24,
+                      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                      boxShadow: '0 3px 10px rgba(102, 126, 234, 0.4)',
+                      '&:hover': {
+                        boxShadow: '0 0 0 8px rgba(102, 126, 234, 0.16)'
+                      }
+                    },
+                    '& .MuiSlider-track': {
+                      background: 'linear-gradient(90deg, #667eea 0%, #764ba2 100%)',
+                      border: 'none',
+                      height: 8
+                    },
+                    '& .MuiSlider-rail': {
+                      opacity: 0.3,
+                      height: 8
+                    },
+                    '& .MuiSlider-mark': {
+                      backgroundColor: '#667eea',
+                      height: 12,
+                      width: 3
+                    },
+                    '& .MuiSlider-markLabel': {
+                      color: '#718096',
+                      fontWeight: '600'
+                    }
+                  }}
+                />
+              </Box>
+            </Box>
           </Box>
         </Fade>
 
@@ -231,212 +252,232 @@ const PlayCreativityActivities = ({ onBackClick }) => {
             <Box sx={{ 
               background: 'rgba(255,255,255,0.95)',
               borderRadius: '24px',
-              padding: '2rem',
+              padding: '3rem',
               boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
               backdropFilter: 'blur(10px)'
             }}>
-              <Box display="flex" alignItems="center" mb={4}>
-                <Avatar
-                  sx={{
-                    width: 60,
-                    height: 60,
-                    mr: 3,
-                    background: 'linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%)',
-                    fontSize: '1.5rem'
-                  }}
-                >
-                  {getAgeGroupIcon(selectedAgeGroup)}
-                </Avatar>
-                <Box>
-                  <Typography  sx={{ 
-                    fontWeight: 'bold',
-                    color: '#2d3748',
-                    mb: 1
-                  }}>
-                    {selectedAgeGroup} Activities
-                  </Typography>
-                  <Typography  sx={{ 
-                    color: '#718096',
-                    fontWeight: '500'
-                  }}>
-                    {activitiesData.ageGroups
-                      .find(group => group.ageGroup === selectedAgeGroup)
-                      ?.categories.reduce((total, cat) => total + cat.activities.length, 0)} creative activities to explore
-                  </Typography>
-                </Box>
-              </Box>
 
-              <Grid container spacing={3}>
-                {activitiesData.ageGroups
-                  .find(group => group.ageGroup === selectedAgeGroup)
-                  ?.categories.map((category, categoryIndex) => (
-                    <Grid item xs={12} md={6} key={categoryIndex}>
-                      <Zoom in timeout={1400 + (categoryIndex * 200)}>
-                        <Card
-                          sx={{
-                            height: '100%',
-                            background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)',
-                            borderRadius: '20px',
-                            border: '2px solid rgba(102, 126, 234, 0.1)',
-                            boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
-                            transition: 'all 0.3s ease',
-                            '&:hover': {
-                              transform: 'translateY(-5px)',
-                              boxShadow: '0 20px 40px rgba(0,0,0,0.15)',
-                              border: '2px solid rgba(102, 126, 234, 0.3)'
-                            }
-                          }}
-                        >
-                          <CardContent sx={{ p: 3 }}>
-                            <Box display="flex" alignItems="center" mb={2}>
-                              <Avatar
+              <Grid container spacing={4}>
+                {(() => {
+                  // Handle "All Ages" structure - filter and group by actual age
+                  const allAgesGroup = activitiesData.ageGroups.find(g => g.ageGroup === 'All Ages');
+                  
+                  if (allAgesGroup) {
+                    // Get all activities from the single category
+                    const allActivities = allAgesGroup.categories[0]?.activities || [];
+                    
+                    // Extract age group keyword for matching (e.g., "Child" from "Child (6-8)")
+                    const ageKeyword = selectedAgeGroup.split(' ')[0]; // "Child", "Infant", etc.
+                    
+                    // Filter by selected age group (more robust matching)
+                    const filteredActivities = allActivities.filter(act => {
+                      if (!act.age) return false;
+                      // Remove emojis and compare (act.age might be "👦 Child (6–8)")
+                      const cleanAge = act.age.replace(/[\u{1F300}-\u{1F9FF}]/gu, '').trim();
+                      return cleanAge.includes(ageKeyword);
+                    });
+                    
+                    console.log(`🔍 Filtered ${filteredActivities.length} activities for ${selectedAgeGroup}`);
+                    
+                    // Group by category field (from Google Sheet sync)
+                    const grouped = {};
+                    filteredActivities.forEach(act => {
+                      const cat = act.category || 'Play & Creativity';
+                      if (!grouped[cat]) {
+                        grouped[cat] = [];
+                      }
+                      grouped[cat].push(act);
+                    });
+                    
+                    console.log(`📊 Grouped into ${Object.keys(grouped).length} categories:`, Object.keys(grouped));
+                    
+                    return Object.entries(grouped).map(([categoryName, activities], categoryIndex) => (
+                      <Grid item xs={12} key={categoryIndex}>
+                        <Box sx={{
+                          background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
+                          borderRadius: '16px',
+                          padding: '2rem',
+                          border: '2px solid #e5e7eb',
+                          boxShadow: '0 4px 12px rgba(0,0,0,0.06)',
+                          mb: 3
+                        }}>
+                          {/* Category Header */}
+                          <Box sx={{
+                            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                            borderRadius: '12px',
+                            padding: '1.5rem',
+                            mb: 2.5,
+                            boxShadow: '0 4px 12px rgba(102, 126, 234, 0.3)'
+                          }}>
+                            <Typography variant="h4" sx={{ 
+                              fontWeight: '800',
+                              color: 'white',
+                              mb: 0.5,
+                              fontSize: '1.8rem'
+                            }}>
+                              {categoryName}
+                            </Typography>
+                            <Typography variant="body2" sx={{ 
+                              color: 'rgba(255,255,255,0.95)',
+                              lineHeight: 1.5,
+                              fontSize: '0.9rem',
+                              fontWeight: '500'
+                            }}>
+                              {activities.length} engaging activities for {selectedAgeGroup}
+                            </Typography>
+                          </Box>
+
+                          {/* Activities */}
+                          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
+                            {activities.map((activity, activityIndex) => (
+                              <Paper
+                                key={activityIndex}
+                                onClick={() => handleActivityClick(activity, categoryName, selectedAgeGroup)}
                                 sx={{
-                                  width: 50,
-                                  height: 50,
-                                  mr: 2,
-                                  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                                  color: 'white'
-                                }}
-                              >
-                                {getCategoryIcon(category.category)}
-                              </Avatar>
-                              <Box flexGrow={1}>
-                                <Typography  sx={{ 
-                                  fontWeight: 'bold',
-                                  color: '#2d3748',
-                                  mb: 0.5
-                                }}>
-                                  {category.category}
-                                </Typography>
-                                <Typography  sx={{ 
-                                  color: '#718096',
-                                  lineHeight: 1.4
-                                }}>
-                                  {category.description}
-                                </Typography>
-                              </Box>
-                              <Badge
-                                badgeContent={category.activities.length}
-                                color="primary"
-                                sx={{
-                                  '& .MuiBadge-badge': {
-                                    background: 'linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%)',
-                                    fontWeight: 'bold'
+                                  p: 2,
+                                  borderRadius: '10px',
+                                  background: 'white',
+                                  border: '1px solid #e5e7eb',
+                                  cursor: 'pointer',
+                                  transition: 'all 0.2s ease',
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  justifyContent: 'space-between',
+                                  gap: 2,
+                                  '&:hover': {
+                                    boxShadow: '0 4px 12px rgba(102, 126, 234, 0.2)',
+                                    borderColor: '#667eea',
+                                    background: '#f9fafb',
+                                    transform: 'translateX(4px)'
                                   }
                                 }}
                               >
+                                {/* Topic Name */}
+                                <Typography sx={{ 
+                                  fontWeight: '700',
+                                  color: '#1f2937',
+                                  fontSize: '1.05rem',
+                                  flex: 1,
+                                  letterSpacing: '0.01em'
+                                }}>
+                                  {activity.activity?.name || activity.topic || 'Activity'}
+                                </Typography>
+                                
+                                {/* Time - Simple Text */}
+                                <Typography sx={{
+                                  fontSize: '0.85rem',
+                                  color: '#667eea',
+                                  fontWeight: '600',
+                                  whiteSpace: 'nowrap',
+                                  minWidth: '70px',
+                                  textAlign: 'right'
+                                }}>
+                                  {activity.estimatedTime}
+                                </Typography>
+                              </Paper>
+                            ))}
+                          </Box>
+                        </Box>
+                      </Grid>
+                    ));
+                  }
+                  
+                  // Fallback to original structure
+                  return activitiesData.ageGroups
+                    .find(group => group.ageGroup === selectedAgeGroup)
+                    ?.categories.map((category, categoryIndex) => (
+                    <Grid item xs={12} key={categoryIndex}>
+                      <Zoom in timeout={1400 + (categoryIndex * 200)}>
+                        <Box sx={{
+                          background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
+                          borderRadius: '16px',
+                          padding: '2rem',
+                          border: '2px solid #e5e7eb',
+                          boxShadow: '0 4px 12px rgba(0,0,0,0.06)',
+                          mb: 3
+                        }}>
+                          {/* Category Header - Highlighted Block */}
+                          <Box sx={{
+                            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                            borderRadius: '12px',
+                            padding: '1.5rem',
+                            mb: 2.5,
+                            boxShadow: '0 4px 12px rgba(102, 126, 234, 0.3)'
+                          }}>
+                            <Typography variant="h4" sx={{ 
+                              fontWeight: '800',
+                              color: 'white',
+                              mb: 1,
+                              fontSize: '1.8rem'
+                            }}>
+                              {category.category}
+                            </Typography>
+                            <Typography variant="body2" sx={{ 
+                              color: 'rgba(255,255,255,0.95)',
+                              lineHeight: 1.5,
+                              fontSize: '0.9rem',
+                              fontWeight: '500'
+                            }}>
+                              {category.description}
+                            </Typography>
+                          </Box>
+
+                          {/* Activities - Clean Rows */}
+                          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
+                            {category.activities.map((activity, activityIndex) => (
+                              <Paper
+                                key={activityIndex}
+                                onClick={() => handleActivityClick(activity, category.category, selectedAgeGroup)}
+                                sx={{
+                                  p: 2,
+                                  borderRadius: '10px',
+                                  background: 'white',
+                                  border: '1px solid #e5e7eb',
+                                  cursor: 'pointer',
+                                  transition: 'all 0.2s ease',
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  justifyContent: 'space-between',
+                                  gap: 2,
+                                  '&:hover': {
+                                    boxShadow: '0 4px 12px rgba(102, 126, 234, 0.2)',
+                                    borderColor: '#667eea',
+                                    background: '#f9fafb',
+                                    transform: 'translateX(4px)'
+                                  }
+                                }}
+                              >
+                                {/* Topic Name - Bold and Clear */}
+                                <Typography sx={{ 
+                                  fontWeight: '700',
+                                  color: '#1f2937',
+                                  fontSize: '1.1rem',
+                                  flex: 1,
+                                  letterSpacing: '0.01em'
+                                }}>
+                                  {activity.activity?.name || activity.topic || 'Activity'}
+                                </Typography>
+                                
+                                {/* Time - Right Side */}
                                 <Chip
-                                  label="Activities"
+                                  icon={<AccessTime sx={{ fontSize: '0.9rem' }} />}
+                                  label={activity.estimatedTime}
                                   size="small"
                                   sx={{
-                                    background: 'rgba(102, 126, 234, 0.1)',
-                                    color: '#667eea',
-                                    fontWeight: 'bold'
+                                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                                    color: 'white',
+                                    fontWeight: '600',
+                                    fontSize: '0.8rem'
                                   }}
                                 />
-                              </Badge>
-                            </Box>
-
-                            <Divider sx={{ my: 2 }} />
-
-                            <Box>
-                              {category.activities.map((activity, activityIndex) => (
-                                <Paper
-                                  key={activityIndex}
-                                  sx={{
-                                    p: 2,
-                                    mb: 2,
-                                    borderRadius: '12px',
-                                    background: 'rgba(255,255,255,0.7)',
-                                    border: '1px solid rgba(0,0,0,0.05)',
-                                    transition: 'all 0.2s ease',
-                                    '&:hover': {
-                                      background: 'rgba(102, 126, 234, 0.05)',
-                                      border: '1px solid rgba(102, 126, 234, 0.2)'
-                                    }
-                                  }}
-                                >
-                                  <Box display="flex" alignItems="start" justifyContent="space-between">
-                                    <Box flexGrow={1}>
-                                      <Typography  sx={{ 
-                                        fontWeight: '600',
-                                        color: '#2d3748',
-                                        mb: 1
-                                      }}>
-                                        {activity.topic}
-                                      </Typography>
-                                      <Typography  sx={{ 
-                                        color: '#718096',
-                                        mb: 2,
-                                        lineHeight: 1.5
-                                      }}>
-                                        {activity.objective}
-                                      </Typography>
-                                      <Box display="flex" gap={1} flexWrap="wrap">
-                                        <Chip
-                                          icon={<AccessTime />}
-                                          label={activity.estimatedTime}
-                                          size="small"
-                                          sx={{
-                                            background: 'rgba(34, 197, 94, 0.1)',
-                                            color: '#22c55e',
-                                            fontWeight: 'bold'
-                                          }}
-                                        />
-                                        <Chip
-                                          label={`Age: ${activity.age}`}
-                                          size="small"
-                                          sx={{
-                                            background: 'rgba(59, 130, 246, 0.1)',
-                                            color: '#3b82f6',
-                                            fontWeight: 'bold'
-                                          }}
-                                        />
-                                        {activity.hashtags.slice(0, 2).map((tag, tagIndex) => (
-                                          <Chip
-                                            key={tagIndex}
-                                            label={tag}
-                                            size="small"
-                                            sx={{
-                                              background: 'rgba(168, 85, 247, 0.1)',
-                                              color: '#a855f7',
-                                              fontWeight: 'bold'
-                                            }}
-                                          />
-                                        ))}
-                                      </Box>
-                                    </Box>
-                                    <Box display="flex" flexDirection="column" alignItems="center" ml={2}>
-                                      <Button
-                                        size="small"
-                                        startIcon={<PlayArrow />}
-                                        onClick={() => handleActivityClick(activity, category.category, selectedAgeGroup)}
-                                        sx={{
-                                          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                                          color: 'white',
-                                          borderRadius: '20px',
-                                          px: 2,
-                                          py: 1,
-                                          fontWeight: 'bold',
-                                          textTransform: 'none',
-                                          '&:hover': {
-                                            background: 'linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%)',
-                                            transform: 'scale(1.05)'
-                                          }
-                                        }}
-                                      >
-                                        Start
-                                      </Button>
-                                    </Box>
-                                  </Box>
-                                </Paper>
-                              ))}
-                            </Box>
-                          </CardContent>
-                        </Card>
+                              </Paper>
+                            ))}
+                          </Box>
+                        </Box>
                       </Zoom>
                     </Grid>
-                  ))}
+                  ));
+                })()}
               </Grid>
             </Box>
           </Fade>

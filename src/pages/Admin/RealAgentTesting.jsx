@@ -27,7 +27,7 @@ const RealAgentTesting = () => {
       const startTime = Date.now();
       
       // Call the actual backend API
-      const response = await fetch('https://unschooling-backend-790275794964.us-central1.run.app/api/generate-plan', {
+      const response = await fetch('https://llm-agents-790275794964.us-central1.run.app/api/generate-plan', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

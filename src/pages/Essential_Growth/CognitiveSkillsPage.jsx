@@ -8,7 +8,7 @@ import {
   AccessTime, Group, Psychology, Lightbulb,
   School, Nature, EmojiEvents, Star, Favorite, Share, Bookmark, PlayArrow
 } from '@mui/icons-material';
-import MinimalBackButton from '../../components/ui/SimpleBackButton';
+import SimpleBackButton from '../../components/ui/SimpleBackButton';
 
 const CognitiveSkillsPage = () => {
   const navigate = useNavigate();
@@ -107,7 +107,7 @@ const CognitiveSkillsPage = () => {
     }}>
       <Container maxWidth="lg">
         <Box sx={{ mb: 4 }}>
-          <MinimalBackButton
+          <SimpleBackButton
             onClick={() => navigate('/essential-growth')}
             size="medium"
           />

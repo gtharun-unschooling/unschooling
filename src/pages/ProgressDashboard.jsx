@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import MinimalBackButton from '../components/ui/MinimalBackButton';
+import SimpleBackButton from '../components/ui/SimpleBackButton';
 
 const ProgressDashboard = () => {
   const { currentUser, userProfile } = useAuth();
@@ -141,7 +141,7 @@ const ProgressDashboard = () => {
       padding: '20px',
       position: 'relative'
     }}>
-      <MinimalBackButton 
+      <SimpleBackButton 
         heroColors={{
           backgroundColor: '#f8fafc',
           primaryColor: '#3b82f6',

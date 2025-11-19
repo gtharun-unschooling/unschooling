@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MinimalBackButton from '../components/ui/MinimalBackButton';
+import SimpleBackButton from '../components/ui/SimpleBackButton';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -193,7 +193,7 @@ const Contact = () => {
 
   return (
     <div style={containerStyle}>
-      <MinimalBackButton 
+      <SimpleBackButton 
         heroColors={{
           backgroundColor: '#f8fafc',
           primaryColor: '#667eea',

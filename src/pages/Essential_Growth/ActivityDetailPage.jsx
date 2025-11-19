@@ -8,35 +8,48 @@ import {
   AccessTime, School, Psychology, FitnessCenter, MusicNote, Palette,
   ArrowBack, PlayArrow, Star, Bookmark, Share
 } from '@mui/icons-material';
-import MinimalBackButton from '../../components/ui/SimpleBackButton';
+import SimpleBackButton from '../../components/ui/SimpleBackButton';
 
 const ActivityDetailPage = () => {
-  const { ageGroup, category, activitySlug } = useParams();
+  const { pillarSlug, activityId } = useParams();
   const navigate = useNavigate();
   const [activity, setActivity] = useState(null);
+  const [pillarConfig, setPillarConfig] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const loadActivity = async () => {
       try {
-        // Determine which pillar based on the current URL path
-        const currentPath = window.location.pathname;
-        const isCognitiveSkills = currentPath.includes('/cognitive-skills/');
-        const dataPath = isCognitiveSkills 
-          ? '/data/essential-growth/cognitive-skills/activities.json'
-          : '/data/essential-growth/play-creativity/activities.json';
+        // Load pillar config
+        const configResponse = await fetch('/data/essential-growth-config.json');
+        const configData = await configResponse.json();
+        const pillar = configData.pillars.find(p => p.slug === pillarSlug);
         
-        const response = await fetch(dataPath);
-        const data = await response.json();
+        if (pillar) {
+          setPillarConfig(pillar);
+        }
         
-        // Find the activity based on URL parameters
-        const foundActivity = data.ageGroups
-          ?.find(group => group.ageGroup.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-') === ageGroup)
-          ?.categories.find(cat => cat.category.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-') === category)
-          ?.activities.find(act => act.topic.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-') === activitySlug);
+        // Load activities for this pillar
+        const activitiesResponse = await fetch(`/data/essential-growth/${pillarSlug}/activities.json`);
+        const activitiesData = await activitiesResponse.json();
+        
+        // Find activity by slug (same logic as CustomisedWeeklyPlan)
+        const allActivities = activitiesData.ageGroups[0]?.categories[0]?.activities || [];
+        
+        const foundActivity = allActivities.find(act => {
+          // Create slug: spaces to hyphens FIRST, then remove special chars (preserve hyphens)
+          const activitySlug = act.topic
+            .toLowerCase()
+            .replace(/\s+/g, '-')  // Spaces to hyphens first
+            .replace(/[^a-z0-9-]/g, '');  // Remove special chars except hyphens
+          
+          console.log(`  Checking: "${act.topic}" → slug: "${activitySlug}" (${activitySlug === activityId ? '✅' : '❌'})`);
+          return activitySlug === activityId;
+        });
         
         if (foundActivity) {
           setActivity(foundActivity);
+          console.log('✅ Activity loaded:', foundActivity);
         }
         setLoading(false);
       } catch (error) {
@@ -46,16 +59,10 @@ const ActivityDetailPage = () => {
     };
 
     loadActivity();
-  }, [ageGroup, category, activitySlug]);
+  }, [pillarSlug, activityId]);
 
   const handleBackClick = () => {
-    // Determine which pillar based on the current URL path
-    const currentPath = window.location.pathname;
-    const isCognitiveSkills = currentPath.includes('/cognitive-skills/');
-    const backPath = isCognitiveSkills 
-      ? '/essential-growth/cognitive-skills'
-      : '/essential-growth/play-creativity';
-    navigate(backPath);
+    navigate(`/essential-growth/${pillarSlug}`);
   };
 
   if (loading) {
@@ -74,10 +81,14 @@ const ActivityDetailPage = () => {
     );
   }
 
+  const bgGradient = pillarConfig 
+    ? `linear-gradient(135deg, ${pillarConfig.primaryColor} 0%, ${pillarConfig.secondaryColor} 100%)`
+    : 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+
   return (
     <Box sx={{ 
       minHeight: '100vh',
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      background: bgGradient,
       padding: '2rem 0'
     }}>
       <Container maxWidth="lg">
@@ -90,23 +101,34 @@ const ActivityDetailPage = () => {
           <CardContent sx={{ p: 4 }}>
             {/* Back Button */}
             <Box mb={3}>
-              <MinimalBackButton 
+              <SimpleBackButton 
                 onClick={handleBackClick}
                 size="medium"
               />
             </Box>
             {/* Header */}
             <Box textAlign="center" mb={4}>
-              <Typography  sx={{ 
-                fontWeight: 'bold',
+              {pillarConfig && (
+                <Typography variant="overline" sx={{ 
+                  color: pillarConfig.primaryColor,
+                  fontWeight: 'bold',
+                  fontSize: '0.9rem'
+                }}>
+                  {pillarConfig.name}
+                </Typography>
+              )}
+              <Typography variant="h3" sx={{ 
+                fontWeight: '900',
                 color: '#2d3748',
-                mb: 2
+                mb: 2,
+                fontSize: '2.5rem'
               }}>
                 {activity.topic}
               </Typography>
-              <Typography  sx={{ 
+              <Typography variant="h6" sx={{ 
                 color: '#718096',
-                mb: 3
+                mb: 3,
+                fontWeight: '400'
               }}>
                 {activity.objective}
               </Typography>
@@ -116,20 +138,43 @@ const ActivityDetailPage = () => {
                   icon={<AccessTime />}
                   label={activity.estimatedTime}
                   sx={{
-                    background: 'rgba(34, 197, 94, 0.1)',
-                    color: '#22c55e',
-                    fontWeight: 'bold'
+                    background: pillarConfig ? `${pillarConfig.primaryColor}20` : 'rgba(34, 197, 94, 0.1)',
+                    color: pillarConfig?.primaryColor || '#22c55e',
+                    fontWeight: 'bold',
+                    fontSize: '0.9rem'
                   }}
                 />
                 <Chip
-                  icon={<School />}
-                  label={`Age: ${activity.age}`}
+                  label={activity.age}
                   sx={{
-                    background: 'rgba(59, 130, 246, 0.1)',
-                    color: '#3b82f6',
-                    fontWeight: 'bold'
+                    background: pillarConfig ? `${pillarConfig.primaryColor}15` : 'rgba(59, 130, 246, 0.1)',
+                    color: pillarConfig?.primaryColor || '#3b82f6',
+                    fontWeight: 'bold',
+                    fontSize: '0.9rem'
                   }}
                 />
+                {activity.category && (
+                  <Chip
+                    label={activity.category}
+                    sx={{
+                      background: pillarConfig ? `${pillarConfig.primaryColor}15` : 'rgba(168, 85, 247, 0.1)',
+                      color: pillarConfig?.primaryColor || '#a855f7',
+                      fontWeight: 'bold',
+                      fontSize: '0.9rem'
+                    }}
+                  />
+                )}
+                {activity.difficultyLevel && (
+                  <Chip
+                    label={activity.difficultyLevel}
+                    sx={{
+                      background: 'rgba(251, 146, 60, 0.1)',
+                      color: '#fb923c',
+                      fontWeight: 'bold',
+                      fontSize: '0.9rem'
+                    }}
+                  />
+                )}
               </Box>
             </Box>
 
@@ -235,7 +280,9 @@ const ActivityDetailPage = () => {
                             width: 32,
                             height: 32,
                             borderRadius: '50%',
-                            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                            background: pillarConfig 
+                              ? `linear-gradient(135deg, ${pillarConfig.primaryColor} 0%, ${pillarConfig.secondaryColor} 100%)`
+                              : 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',

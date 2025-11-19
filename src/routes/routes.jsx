@@ -4,8 +4,7 @@ import MainPage from '../pages/Main/MainPage';
 import NichesPage from '../pages/Niches/NichesMainPage';
 import TopicDetailPage from '../pages/Topics/TopicDetailPage';
 import EssentialGrowthMainPage from '../pages/Essential_Growth/EssentialGrowthMainPage';
-import PlayCreativityPage from '../pages/Essential_Growth/PlayCreativityPage';
-import CognitiveSkillsPage from '../pages/Essential_Growth/CognitiveSkillsPage';
+import EssentialGrowthActivities from '../components/EssentialGrowthActivities';
 import ActivityDetailPage from '../pages/Essential_Growth/ActivityDetailPage';
 import LayoutComparison from '../pages/LayoutComparison';
 import PlansMainPage from '../pages/Plans/Plans.jsx';
@@ -73,7 +72,7 @@ import PostLaunchOptimizationDashboard from '../pages/Admin/PostLaunchOptimizati
 import GlobalExpansionDashboard from '../pages/Admin/GlobalExpansionDashboard';
 import EnterpriseDashboard from '../pages/Admin/EnterpriseDashboard';
 import AdvancedSecurityDashboard from '../pages/Admin/AdvancedSecurityDashboard';
-import BackButtonTestPage from '../pages/BackButtonTest';
+import AdminFlowViewer from '../pages/AdminFlowViewer';
 
 // Legal pages
 import TermsOfService from '../pages/Legal/TermsOfService';
@@ -168,42 +167,24 @@ const RoutesComponent = () => {
             <EssentialGrowthMainPage />
           </>
         } />
-        <Route path="/essential-growth/play-creativity" element={
-          <>
-            <Navbar />
-            <PlayCreativityPage />
-          </>
-        } />
-        <Route path="/essential-growth/play-creativity/:ageGroup/:category/:activitySlug" element={
+        {/* Activity detail page - MUST come BEFORE pillar page (more specific route) */}
+        <Route path="/essential-growth/:pillarSlug/:activityId" element={
           <>
             <Navbar />
             <ActivityDetailPage />
           </>
         } />
-        <Route path="/essential-growth/cognitive-skills" element={
+        {/* Dynamic route for ALL 18 Essential Growth pillars */}
+        <Route path="/essential-growth/:pillarSlug" element={
           <>
             <Navbar />
-            <CognitiveSkillsPage />
-          </>
-        } />
-        <Route path="/essential-growth/cognitive-skills/:ageGroup/:category/:activitySlug" element={
-          <>
-            <Navbar />
-            <ActivityDetailPage />
+            <EssentialGrowthActivities />
           </>
         } />
         <Route path="/layout-comparison" element={
           <>
             <Navbar />
             <LayoutComparison />
-          </>
-        } />
-        
-        {/* Back Button Test Page */}
-        <Route path="/back-button-test" element={
-          <>
-            <Navbar />
-            <BackButtonTestPage />
           </>
         } />
         <Route path="/plans" element={
@@ -362,6 +343,7 @@ const RoutesComponent = () => {
         <Route path="/admin/global-expansion" element={<GlobalExpansionDashboard />} />
         <Route path="/admin/enterprise" element={<EnterpriseDashboard />} />
         <Route path="/admin/advanced-security" element={<AdvancedSecurityDashboard />} />
+        <Route path="/admin/flow-viewer" element={<AdminFlowViewer />} />
         <Route path="/deliveries" element={<ParentDeliveryPortal />} />
               </Routes>
       </>

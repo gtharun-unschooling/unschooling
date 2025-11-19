@@ -8,13 +8,18 @@
           "description": "Activities for Play & Creativity",
           "activities": [
             {
-              "topicNumber": 1,
+              "topicNumber": "1",
               "topic": "Baby’s First Texture Discovery",
               "objective": "Help your baby develop sensory awareness and tactile exploration",
               "explanation": "Create a safe space with varied textures for baby to touch and explore",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Great for bonding\n• Can repeat multiple times a day",
+              "pillar": "Play & Creativity",
+              "category": "Sensory Exploration",
+              "hashtags": [],
               "activity": {
                 "name": "Baby’s First Texture Discovery",
                 "materials": [
@@ -36,13 +41,18 @@
               }
             },
             {
-              "topicNumber": 2,
+              "topicNumber": "2",
               "topic": "Color & Texture Mat",
               "objective": "Introduce color and texture recognition through hands-on play",
               "explanation": "Use colorful fabrics to stimulate visual and tactile senses",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Indoor-friendly\n• Helps develop reaching and grasping skills",
+              "pillar": "Play & Creativity",
+              "category": "Sensory Exploration",
+              "hashtags": [],
               "activity": {
                 "name": "Color & Texture Mat",
                 "materials": [
@@ -63,13 +73,18 @@
               }
             },
             {
-              "topicNumber": 3,
+              "topicNumber": "3",
               "topic": "Gentle Sound & Touch",
               "objective": "Encourage auditory and tactile exploration simultaneously",
               "explanation": "Combine gentle sounds with touch to stimulate multiple senses",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Constant Supervision",
+              "additionalInfo": "• Perfect for tummy time\n• Use soft, safe toys only",
+              "pillar": "Play & Creativity",
+              "category": "Sensory Exploration",
+              "hashtags": [],
               "activity": {
                 "name": "Gentle Sound & Touch",
                 "materials": [
@@ -90,13 +105,18 @@
               }
             },
             {
-              "topicNumber": 4,
+              "topicNumber": "4",
               "topic": "Sensory Bag Exploration",
               "objective": "Stimulate tactile curiosity through safe, touchable bags",
               "explanation": "Safe sensory bags allow squishing and exploring textures without mess",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Supervised play only\n• Great for sensory stimulation",
+              "pillar": "Play & Creativity",
+              "category": "Sensory Exploration",
+              "hashtags": [],
               "activity": {
                 "name": "Sensory Bag Exploration",
                 "materials": [
@@ -118,13 +138,18 @@
               }
             },
             {
-              "topicNumber": 5,
+              "topicNumber": "5",
               "topic": "Soft Object Treasure Hunt",
               "objective": "Develop hand-eye coordination and tactile exploration",
               "explanation": "Hide-and-seek style play with soft objects enhances curiosity and motor skills",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Can repeat multiple rounds\n• Encourages exploration and interaction",
+              "pillar": "Play & Creativity",
+              "category": "Sensory Exploration",
+              "hashtags": [],
               "activity": {
                 "name": "Soft Object Treasure Hunt",
                 "materials": [
@@ -146,13 +171,18 @@
               }
             },
             {
-              "topicNumber": 6,
+              "topicNumber": "6",
               "topic": "Colorful Tummy Crawl",
               "objective": "Encourage gross motor development and visual tracking during tummy time",
               "explanation": "Use toys to motivate crawling and reaching during tummy time",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Great for strengthening neck and upper body\n• Can repeat several times a day",
+              "pillar": "Play & Creativity",
+              "category": "Tummy Time Play",
+              "hashtags": [],
               "activity": {
                 "name": "Colorful Tummy Crawl",
                 "materials": [
@@ -173,13 +203,18 @@
               }
             },
             {
-              "topicNumber": 7,
+              "topicNumber": "7",
               "topic": "Mirror Tummy Exploration",
               "objective": "Stimulate self-recognition and neck strength",
               "explanation": "Mirrors help babies explore movement and recognize themselves",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Ideal for short tummy sessions\n• Supervised only",
+              "pillar": "Play & Creativity",
+              "category": "Tummy Time Play",
+              "hashtags": [],
               "activity": {
                 "name": "Mirror Tummy Exploration",
                 "materials": [
@@ -200,13 +235,18 @@
               }
             },
             {
-              "topicNumber": 8,
+              "topicNumber": "8",
               "topic": "Texture Crawl Path",
               "objective": "Combine tactile exploration with tummy movement",
               "explanation": "Different textures motivate crawling and sensory exploration",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Can mix fabric types for variety\n• Supervised play only",
+              "pillar": "Play & Creativity",
+              "category": "Tummy Time Play",
+              "hashtags": [],
               "activity": {
                 "name": "Texture Crawl Path",
                 "materials": [
@@ -227,13 +267,18 @@
               }
             },
             {
-              "topicNumber": 9,
+              "topicNumber": "9",
               "topic": "Balloon Roll Tummy Time",
               "objective": "Improve reaching, tracking, and upper body strength",
               "explanation": "Light balloons encourage gentle reaching and coordination",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Ensure balloon safety\n• Do not leave baby unattended",
+              "pillar": "Play & Creativity",
+              "category": "Tummy Time Play",
+              "hashtags": [],
               "activity": {
                 "name": "Balloon Roll Tummy Time",
                 "materials": [
@@ -254,13 +299,18 @@
               }
             },
             {
-              "topicNumber": 10,
+              "topicNumber": "10",
               "topic": "Peek-a-Boo Mat Fun",
               "objective": "Develop core strength and interactive play skills",
               "explanation": "Peek-a-boo style play motivates movement and tummy time engagement",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Repeat in short intervals\n• Encourages parent-child interaction",
+              "pillar": "Play & Creativity",
+              "category": "Tummy Time Play",
+              "hashtags": [],
               "activity": {
                 "name": "Peek-a-Boo Mat Fun",
                 "materials": [
@@ -281,13 +331,18 @@
               }
             },
             {
-              "topicNumber": 11,
+              "topicNumber": "11",
               "topic": "Rattle & Reach",
               "objective": "Encourage auditory and tactile exploration through reaching and grasping",
               "explanation": "Combine gentle sounds with touch to stimulate senses",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Constant Supervision",
+              "additionalInfo": "• Great for bonding\n• Repeat multiple times a day",
+              "pillar": "Play & Creativity",
+              "category": "Interactive Sounds & Textures",
+              "hashtags": [],
               "activity": {
                 "name": "Rattle & Reach",
                 "materials": [
@@ -308,13 +363,18 @@
               }
             },
             {
-              "topicNumber": 12,
+              "topicNumber": "12",
               "topic": "Fabric Sounds Exploration",
               "objective": "Develop tactile awareness and curiosity",
               "explanation": "Textures with sound engage multiple senses",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Can rotate fabrics for variety\n• Indoor-friendly",
+              "pillar": "Play & Creativity",
+              "category": "Interactive Sounds & Textures",
+              "hashtags": [],
               "activity": {
                 "name": "Fabric Sounds Exploration",
                 "materials": [
@@ -335,13 +395,18 @@
               }
             },
             {
-              "topicNumber": 13,
+              "topicNumber": "13",
               "topic": "Soft Music Mat Play",
               "objective": "Combine music and touch for sensory development",
               "explanation": "Music and touch together enhance sensory stimulation",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Encourage gentle interaction\n• Short sessions recommended",
+              "pillar": "Play & Creativity",
+              "category": "Interactive Sounds & Textures",
+              "hashtags": [],
               "activity": {
                 "name": "Soft Music Mat Play",
                 "materials": [
@@ -362,13 +427,18 @@
               }
             },
             {
-              "topicNumber": 14,
+              "topicNumber": "14",
               "topic": "Jingle Bell Crawl",
               "objective": "Promote movement and auditory tracking",
               "explanation": "Sound motivates crawling and reaching",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Supervised only\n• Short rounds for attention span",
+              "pillar": "Play & Creativity",
+              "category": "Interactive Sounds & Textures",
+              "hashtags": [],
               "activity": {
                 "name": "Jingle Bell Crawl",
                 "materials": [
@@ -389,13 +459,18 @@
               }
             },
             {
-              "topicNumber": 15,
+              "topicNumber": "15",
               "topic": "Textured Sound Bags",
               "objective": "Stimulate tactile and auditory senses safely",
               "explanation": "Safe sensory bags combine touch and sound",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Ensure bags are sealed\n• Supervised play only",
+              "pillar": "Play & Creativity",
+              "category": "Interactive Sounds & Textures",
+              "hashtags": [],
               "activity": {
                 "name": "Textured Sound Bags",
                 "materials": [
@@ -416,13 +491,18 @@
               }
             },
             {
-              "topicNumber": 16,
+              "topicNumber": "16",
               "topic": "Gentle Massage Moments",
               "objective": "Promote bonding and sensory comfort through touch",
               "explanation": "Gentle massage strengthens emotional connection",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Constant Supervision",
+              "additionalInfo": "• Ideal before nap or bedtime\n• Short sessions recommended",
+              "pillar": "Play & Creativity",
+              "category": "Parent-Child Bonding Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Gentle Massage Moments",
                 "materials": [
@@ -442,13 +522,18 @@
               }
             },
             {
-              "topicNumber": 17,
+              "topicNumber": "17",
               "topic": "Storytime Snuggle",
               "objective": "Encourage language exposure and closeness",
               "explanation": "Snuggling during storytime enhances emotional and cognitive growth",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Repeat daily\n• Use expressive voice and gestures",
+              "pillar": "Play & Creativity",
+              "category": "Parent-Child Bonding Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Storytime Snuggle",
                 "materials": [
@@ -468,13 +553,18 @@
               }
             },
             {
-              "topicNumber": 18,
+              "topicNumber": "18",
               "topic": "Singing Together",
               "objective": "Develop auditory skills and social connection",
               "explanation": "Singing strengthens bonding and auditory recognition",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Short sessions multiple times a day\n• Use familiar tunes",
+              "pillar": "Play & Creativity",
+              "category": "Parent-Child Bonding Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Singing Together",
                 "materials": [
@@ -493,13 +583,18 @@
               }
             },
             {
-              "topicNumber": 19,
+              "topicNumber": "19",
               "topic": "Peek-a-Boo Cuddles",
               "objective": "Enhance social awareness and emotional bonding",
               "explanation": "Interactive peek-a-boo encourages bonding and awareness",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Short bursts of play\n• Positive reinforcement important",
+              "pillar": "Play & Creativity",
+              "category": "Parent-Child Bonding Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Peek-a-Boo Cuddles",
                 "materials": [
@@ -519,13 +614,18 @@
               }
             },
             {
-              "topicNumber": 20,
+              "topicNumber": "20",
               "topic": "Baby Mirror Moments",
               "objective": "Encourage self-recognition and interactive play",
               "explanation": "Mirrors allow baby to explore self and interact with parent",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "• Ideal for short tummy time\n• Supervised only",
+              "pillar": "Play & Creativity",
+              "category": "Parent-Child Bonding Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Baby Mirror Moments",
                 "materials": [
@@ -545,13 +645,18 @@
               }
             },
             {
-              "topicNumber": 21,
+              "topicNumber": "1",
               "topic": "Tea Party Time",
               "objective": "Encourage imagination and social play through pretend tea serving",
               "explanation": "Pretend play helps toddlers express emotions and practice social roles like sharing and taking turns.",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Great for small playdates or parent-child bonding.",
+              "pillar": "Play & Creativity",
+              "category": "Pretend Play",
+              "hashtags": [],
               "activity": {
                 "name": "Tea Party Time",
                 "materials": [
@@ -570,13 +675,18 @@
               }
             },
             {
-              "topicNumber": 22,
+              "topicNumber": "2",
               "topic": "Doctor Check-Up",
               "objective": "Build empathy and curiosity through pretend doctor scenarios",
               "explanation": "Encourages care-taking and empathy while introducing basic health awareness.",
-              "hashtags": [],
               "estimatedTime": "15–25 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Ideal after visiting a real doctor to reduce fear.",
+              "pillar": "Play & Creativity",
+              "category": "Pretend Play",
+              "hashtags": [],
               "activity": {
                 "name": "Doctor Check-Up",
                 "materials": [
@@ -595,13 +705,18 @@
               }
             },
             {
-              "topicNumber": 23,
+              "topicNumber": "3",
               "topic": "Little Chef",
               "objective": "Foster imagination through pretend cooking",
               "explanation": "Cooking play introduces routines and sequencing while encouraging independence.",
-              "hashtags": [],
               "estimatedTime": "20–30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Use real (safe) utensils for sensory realism.",
+              "pillar": "Play & Creativity",
+              "category": "Pretend Play",
+              "hashtags": [],
               "activity": {
                 "name": "Little Chef",
                 "materials": [
@@ -620,13 +735,18 @@
               }
             },
             {
-              "topicNumber": 24,
+              "topicNumber": "4",
               "topic": "Grocery Store Fun",
               "objective": "Teach counting and sorting through pretend shopping",
               "explanation": "Builds math readiness and decision-making through role play.",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Excellent indoor activity for rainy days.",
+              "pillar": "Play & Creativity",
+              "category": "Pretend Play",
+              "hashtags": [],
               "activity": {
                 "name": "Grocery Store Fun",
                 "materials": [
@@ -645,13 +765,18 @@
               }
             },
             {
-              "topicNumber": 25,
+              "topicNumber": "5",
               "topic": "Superhero Adventure",
               "objective": "Encourage movement and storytelling through pretend hero play",
               "explanation": "Superhero play helps release energy and builds confidence through imaginary challenges.",
-              "hashtags": [],
               "estimatedTime": "20–30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Use a timer to end with a “hero rest break.”",
+              "pillar": "Play & Creativity",
+              "category": "Pretend Play",
+              "hashtags": [],
               "activity": {
                 "name": "Superhero Adventure",
                 "materials": [
@@ -670,13 +795,18 @@
               }
             },
             {
-              "topicNumber": 26,
+              "topicNumber": "6",
               "topic": "Tower Challenge",
               "objective": "Enhance hand-eye coordination through block stacking",
               "explanation": "Teaches perseverance while improving fine motor control.",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Count blocks for math exposure.",
+              "pillar": "Play & Creativity",
+              "category": "Building with Blocks",
+              "hashtags": [],
               "activity": {
                 "name": "Tower Challenge",
                 "materials": [
@@ -694,13 +824,18 @@
               }
             },
             {
-              "topicNumber": 27,
+              "topicNumber": "7",
               "topic": "Color Sorting Towers",
               "objective": "Boost color recognition and organization",
               "explanation": "Simple yet powerful color-based categorization practice.",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Pair with color songs to reinforce learning.",
+              "pillar": "Play & Creativity",
+              "category": "Building with Blocks",
+              "hashtags": [],
               "activity": {
                 "name": "Color Sorting Towers",
                 "materials": [
@@ -717,13 +852,18 @@
               }
             },
             {
-              "topicNumber": 28,
+              "topicNumber": "8",
               "topic": "Bridge Builders",
               "objective": "Foster problem-solving through structure play",
               "explanation": "Stimulates creative thinking and introduces physics concepts.",
-              "hashtags": [],
               "estimatedTime": "15–25 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Encourage repairs if bridges “collapse.”",
+              "pillar": "Play & Creativity",
+              "category": "Building with Blocks",
+              "hashtags": [],
               "activity": {
                 "name": "Bridge Builders",
                 "materials": [
@@ -741,13 +881,18 @@
               }
             },
             {
-              "topicNumber": 29,
+              "topicNumber": "9",
               "topic": "Block City",
               "objective": "Spark imagination by creating a full town",
               "explanation": "Expands play from stacking to storytelling and world-building.",
-              "hashtags": [],
               "estimatedTime": "25–30 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Take a photo to remember their “city.”",
+              "pillar": "Play & Creativity",
+              "category": "Building with Blocks",
+              "hashtags": [],
               "activity": {
                 "name": "Block City",
                 "materials": [
@@ -765,13 +910,18 @@
               }
             },
             {
-              "topicNumber": 30,
+              "topicNumber": "10",
               "topic": "Knock & Rebuild",
               "objective": "Practice emotional regulation and patience",
               "explanation": "Learning that rebuilding is part of play helps toddlers manage frustration.",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Great transition activity after active play.",
+              "pillar": "Play & Creativity",
+              "category": "Building with Blocks",
+              "hashtags": [],
               "activity": {
                 "name": "Knock & Rebuild",
                 "materials": [
@@ -788,13 +938,18 @@
               }
             },
             {
-              "topicNumber": 31,
+              "topicNumber": "11",
               "topic": "Scribble Stories",
               "objective": "Encourage expression through drawing stories",
               "explanation": "Scribbling transitions toddlers from random strokes to meaningful storytelling.",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Save early “art” to show growth.",
+              "pillar": "Play & Creativity",
+              "category": "Drawing & Scribbling",
+              "hashtags": [],
               "activity": {
                 "name": "Scribble Stories",
                 "materials": [
@@ -811,13 +966,18 @@
               }
             },
             {
-              "topicNumber": 32,
+              "topicNumber": "12",
               "topic": "Rainbow Hunt",
               "objective": "Teach color recognition through drawing",
               "explanation": "Reinforces memory of color names and sequence.",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Pair with color songs for fun repetition.",
+              "pillar": "Play & Creativity",
+              "category": "Drawing & Scribbling",
+              "hashtags": [],
               "activity": {
                 "name": "Rainbow Hunt",
                 "materials": [
@@ -835,13 +995,18 @@
               }
             },
             {
-              "topicNumber": 33,
+              "topicNumber": "13",
               "topic": "Circle & Line Art",
               "objective": "Strengthen motor skills and shape awareness",
               "explanation": "Early geometric awareness builds writing readiness.",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Introduce one new shape weekly.",
+              "pillar": "Play & Creativity",
+              "category": "Drawing & Scribbling",
+              "hashtags": [],
               "activity": {
                 "name": "Circle & Line Art",
                 "materials": [
@@ -859,13 +1024,18 @@
               }
             },
             {
-              "topicNumber": 34,
+              "topicNumber": "14",
               "topic": "Family Portrait",
               "objective": "Boost self-awareness and relationships",
               "explanation": "Encourages connection and belonging through art.",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Add names under drawings for word recognition.",
+              "pillar": "Play & Creativity",
+              "category": "Drawing & Scribbling",
+              "hashtags": [],
               "activity": {
                 "name": "Family Portrait",
                 "materials": [
@@ -883,13 +1053,18 @@
               }
             },
             {
-              "topicNumber": 35,
+              "topicNumber": "15",
               "topic": "Texture Painting",
               "objective": "Explore tactile sensations in art",
               "explanation": "Combines sensory play with visual creativity.",
-              "hashtags": [],
               "estimatedTime": "20–25 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Do outdoors or on washable mats.",
+              "pillar": "Play & Creativity",
+              "category": "Drawing & Scribbling",
+              "hashtags": [],
               "activity": {
                 "name": "Texture Painting",
                 "materials": [
@@ -907,13 +1082,18 @@
               }
             },
             {
-              "topicNumber": 36,
+              "topicNumber": "16",
               "topic": "Sound Parade",
               "objective": "Introduce rhythm and sound diversity",
               "explanation": "Fun energy outlet while learning tempo and rhythm control.",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Great pre-nap energy release.",
+              "pillar": "Play & Creativity",
+              "category": "Exploring Musical Instruments",
+              "hashtags": [],
               "activity": {
                 "name": "Sound Parade",
                 "materials": [
@@ -930,13 +1110,18 @@
               }
             },
             {
-              "topicNumber": 37,
+              "topicNumber": "17",
               "topic": "Drum & Echo",
               "objective": "Develop listening and imitation skills",
               "explanation": "Strengthens attention and rhythm recognition.",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Start with simple 2-beat patterns.",
+              "pillar": "Play & Creativity",
+              "category": "Exploring Musical Instruments",
+              "hashtags": [],
               "activity": {
                 "name": "Drum & Echo",
                 "materials": [
@@ -953,13 +1138,18 @@
               }
             },
             {
-              "topicNumber": 38,
+              "topicNumber": "18",
               "topic": "Musical Freeze",
               "objective": "Enhance impulse control and timing",
               "explanation": "Teaches self-control through playful pauses.",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Ideal for group play.",
+              "pillar": "Play & Creativity",
+              "category": "Exploring Musical Instruments",
+              "hashtags": [],
               "activity": {
                 "name": "Musical Freeze",
                 "materials": [
@@ -976,13 +1166,18 @@
               }
             },
             {
-              "topicNumber": 39,
+              "topicNumber": "19",
               "topic": "Shake & Dance",
               "objective": "Encourage movement and body coordination",
               "explanation": "Combines musical and motor learning beautifully.",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Perfect as a morning warm-up.",
+              "pillar": "Play & Creativity",
+              "category": "Exploring Musical Instruments",
+              "hashtags": [],
               "activity": {
                 "name": "Shake & Dance",
                 "materials": [
@@ -1000,13 +1195,18 @@
               }
             },
             {
-              "topicNumber": 40,
+              "topicNumber": "20",
               "topic": "Sound Sorting",
               "objective": "Develop auditory discrimination",
               "explanation": "Builds listening precision and concentration through comparison.",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Use clear jars for visual curiosity.",
+              "pillar": "Play & Creativity",
+              "category": "Exploring Musical Instruments",
+              "hashtags": [],
               "activity": {
                 "name": "Sound Sorting",
                 "materials": [
@@ -1022,13 +1222,18 @@
               }
             },
             {
-              "topicNumber": 41,
+              "topicNumber": "1",
               "topic": "Family Picnic with Dolls",
               "objective": "Encourage social imagination and role-play",
               "explanation": "Builds empathy and understanding of family dynamics.",
-              "hashtags": [],
               "estimatedTime": "20–25 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Great indoor pretend activity for bonding.",
+              "pillar": "Play & Creativity",
+              "category": "Imaginative Play with Dolls",
+              "hashtags": [],
               "activity": {
                 "name": "Family Picnic with Dolls",
                 "materials": [
@@ -1047,13 +1252,18 @@
               }
             },
             {
-              "topicNumber": 42,
+              "topicNumber": "2",
               "topic": "Doll School Time",
               "objective": "Practice teaching and routine play",
               "explanation": "Introduces teaching concept and structured play.",
-              "hashtags": [],
               "estimatedTime": "20–30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Perfect pre-kindergarten prep.",
+              "pillar": "Play & Creativity",
+              "category": "Imaginative Play with Dolls",
+              "hashtags": [],
               "activity": {
                 "name": "Doll School Time",
                 "materials": [
@@ -1072,13 +1282,18 @@
               }
             },
             {
-              "topicNumber": 43,
+              "topicNumber": "3",
               "topic": "Caring for Baby Doll",
               "objective": "Build empathy and responsibility",
               "explanation": "Fosters compassion and care habits through pretend caregiving.",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Excellent before welcoming a new sibling.",
+              "pillar": "Play & Creativity",
+              "category": "Imaginative Play with Dolls",
+              "hashtags": [],
               "activity": {
                 "name": "Caring for Baby Doll",
                 "materials": [
@@ -1097,13 +1312,18 @@
               }
             },
             {
-              "topicNumber": 44,
+              "topicNumber": "4",
               "topic": "Adventure Storytime",
               "objective": "Spark storytelling through doll play",
               "explanation": "Encourages complex narrative building.",
-              "hashtags": [],
               "estimatedTime": "20–30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Rotate characters for variety.",
+              "pillar": "Play & Creativity",
+              "category": "Imaginative Play with Dolls",
+              "hashtags": [],
               "activity": {
                 "name": "Adventure Storytime",
                 "materials": [
@@ -1122,13 +1342,18 @@
               }
             },
             {
-              "topicNumber": 45,
+              "topicNumber": "5",
               "topic": "Dress-Up Fashion Show",
               "objective": "Promote creativity and expression",
               "explanation": "Combines art, storytelling, and self-expression.",
-              "hashtags": [],
               "estimatedTime": "25–30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Record video to share their show.",
+              "pillar": "Play & Creativity",
+              "category": "Imaginative Play with Dolls",
+              "hashtags": [],
               "activity": {
                 "name": "Dress-Up Fashion Show",
                 "materials": [
@@ -1147,13 +1372,18 @@
               }
             },
             {
-              "topicNumber": 46,
+              "topicNumber": "6",
               "topic": "Paper Plate Masks",
               "objective": "Develop creativity through simple craft",
               "explanation": "Crafts promote imagination while improving motor control.",
-              "hashtags": [],
               "estimatedTime": "20–25 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Great addition to storytelling play.",
+              "pillar": "Play & Creativity",
+              "category": "Simple Crafting",
+              "hashtags": [],
               "activity": {
                 "name": "Paper Plate Masks",
                 "materials": [
@@ -1172,13 +1402,18 @@
               }
             },
             {
-              "topicNumber": 47,
+              "topicNumber": "7",
               "topic": "Nature Collage",
               "objective": "Foster observation and appreciation for nature",
               "explanation": "Blends outdoor exploration with creative art.",
-              "hashtags": [],
               "estimatedTime": "25–30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Works best after a park visit.",
+              "pillar": "Play & Creativity",
+              "category": "Simple Crafting",
+              "hashtags": [],
               "activity": {
                 "name": "Nature Collage",
                 "materials": [
@@ -1196,13 +1431,18 @@
               }
             },
             {
-              "topicNumber": 48,
+              "topicNumber": "8",
               "topic": "Handprint Animals",
               "objective": "Encourage creativity with sensory art",
               "explanation": "Sensory-rich art that celebrates individuality.",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Keep apron or old shirt on child.",
+              "pillar": "Play & Creativity",
+              "category": "Simple Crafting",
+              "hashtags": [],
               "activity": {
                 "name": "Handprint Animals",
                 "materials": [
@@ -1221,13 +1461,18 @@
               }
             },
             {
-              "topicNumber": 49,
+              "topicNumber": "9",
               "topic": "Craft Stick Puppets",
               "objective": "Enhance storytelling and fine motor control",
               "explanation": "Great transition into independent pretend play.",
-              "hashtags": [],
               "estimatedTime": "20–25 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Store puppets for reuse in future stories.",
+              "pillar": "Play & Creativity",
+              "category": "Simple Crafting",
+              "hashtags": [],
               "activity": {
                 "name": "Craft Stick Puppets",
                 "materials": [
@@ -1247,13 +1492,18 @@
               }
             },
             {
-              "topicNumber": 50,
+              "topicNumber": "10",
               "topic": "Button Art",
               "objective": "Strengthen hand-eye coordination and design sense",
               "explanation": "Adds tactile experience to simple crafting.",
-              "hashtags": [],
               "estimatedTime": "20–25 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Keep small pieces away from mouth.",
+              "pillar": "Play & Creativity",
+              "category": "Simple Crafting",
+              "hashtags": [],
               "activity": {
                 "name": "Button Art",
                 "materials": [
@@ -1271,13 +1521,18 @@
               }
             },
             {
-              "topicNumber": 51,
+              "topicNumber": "11",
               "topic": "Little Shopkeepers",
               "objective": "Build social and math skills through pretend play",
               "explanation": "Role-play reinforces real-world interaction.",
-              "hashtags": [],
               "estimatedTime": "20–30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Introduce simple addition later.",
+              "pillar": "Play & Creativity",
+              "category": "Role-playing Games",
+              "hashtags": [],
               "activity": {
                 "name": "Little Shopkeepers",
                 "materials": [
@@ -1296,13 +1551,18 @@
               }
             },
             {
-              "topicNumber": 52,
+              "topicNumber": "12",
               "topic": "Firefighter Adventure",
               "objective": "Encourage bravery and teamwork",
               "explanation": "Builds empathy and courage through role play.",
-              "hashtags": [],
               "estimatedTime": "20–25 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Add pretend siren sounds for fun.",
+              "pillar": "Play & Creativity",
+              "category": "Role-playing Games",
+              "hashtags": [],
               "activity": {
                 "name": "Firefighter Adventure",
                 "materials": [
@@ -1321,13 +1581,18 @@
               }
             },
             {
-              "topicNumber": 53,
+              "topicNumber": "13",
               "topic": "Restaurant Role Play",
               "objective": "Teach manners and sequencing",
               "explanation": "Combines imagination with communication practice.",
-              "hashtags": [],
               "estimatedTime": "25–30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Perfect before mealtime.",
+              "pillar": "Play & Creativity",
+              "category": "Role-playing Games",
+              "hashtags": [],
               "activity": {
                 "name": "Restaurant Role Play",
                 "materials": [
@@ -1346,13 +1611,18 @@
               }
             },
             {
-              "topicNumber": 54,
+              "topicNumber": "14",
               "topic": "Post Office Play",
               "objective": "Develop early writing and sorting habits",
               "explanation": "Fun way to explore basic community roles.",
-              "hashtags": [],
               "estimatedTime": "20–25 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Add names on envelopes for personalization.",
+              "pillar": "Play & Creativity",
+              "category": "Role-playing Games",
+              "hashtags": [],
               "activity": {
                 "name": "Post Office Play",
                 "materials": [
@@ -1371,13 +1641,18 @@
               }
             },
             {
-              "topicNumber": 55,
+              "topicNumber": "15",
               "topic": "Little Builders Crew",
               "objective": "Foster teamwork through construction role play",
               "explanation": "Encourages focus and goal-oriented teamwork.",
-              "hashtags": [],
               "estimatedTime": "20–30 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Great outdoors on a mat.",
+              "pillar": "Play & Creativity",
+              "category": "Role-playing Games",
+              "hashtags": [],
               "activity": {
                 "name": "Little Builders Crew",
                 "materials": [
@@ -1396,13 +1671,18 @@
               }
             },
             {
-              "topicNumber": 56,
+              "topicNumber": "16",
               "topic": "Shape Treasure Hunt",
               "objective": "Reinforce shape recognition through movement",
               "explanation": "Turns learning into active exploration.",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Combine with color clues for challenge.",
+              "pillar": "Play & Creativity",
+              "category": "Shape Sorting & Color Matching",
+              "hashtags": [],
               "activity": {
                 "name": "Shape Treasure Hunt",
                 "materials": [
@@ -1420,13 +1700,18 @@
               }
             },
             {
-              "topicNumber": 57,
+              "topicNumber": "17",
               "topic": "Sorting by Color Game",
               "objective": "Build color knowledge through playful matching",
               "explanation": "Strengthens attention and visual sorting ability.",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Play music for fun rhythm.",
+              "pillar": "Play & Creativity",
+              "category": "Shape Sorting & Color Matching",
+              "hashtags": [],
               "activity": {
                 "name": "Sorting by Color Game",
                 "materials": [
@@ -1443,13 +1728,18 @@
               }
             },
             {
-              "topicNumber": 58,
+              "topicNumber": "18",
               "topic": "Pattern Bead Stringing",
               "objective": "Develop sequencing and focus",
               "explanation": "Builds logic through creativity.",
-              "hashtags": [],
               "estimatedTime": "20–25 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Perfect calm activity before bedtime.",
+              "pillar": "Play & Creativity",
+              "category": "Shape Sorting & Color Matching",
+              "hashtags": [],
               "activity": {
                 "name": "Pattern Bead Stringing",
                 "materials": [
@@ -1467,13 +1757,18 @@
               }
             },
             {
-              "topicNumber": 59,
+              "topicNumber": "19",
               "topic": "Shape Match Puzzle",
               "objective": "Encourage critical thinking and problem-solving",
               "explanation": "Develops persistence and satisfaction from success.",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Rotate shapes weekly for novelty.",
+              "pillar": "Play & Creativity",
+              "category": "Shape Sorting & Color Matching",
+              "hashtags": [],
               "activity": {
                 "name": "Shape Match Puzzle",
                 "materials": [
@@ -1491,13 +1786,18 @@
               }
             },
             {
-              "topicNumber": 60,
+              "topicNumber": "20",
               "topic": "Color Sorting Race",
               "objective": "Promote speed and cognitive flexibility",
               "explanation": "Blends fun and focus to strengthen quick recognition.",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Use upbeat music for excitement.",
+              "pillar": "Play & Creativity",
+              "category": "Shape Sorting & Color Matching",
+              "hashtags": [],
               "activity": {
                 "name": "Color Sorting Race",
                 "materials": [
@@ -1516,13 +1816,18 @@
               }
             },
             {
-              "topicNumber": 61,
+              "topicNumber": "1",
               "topic": "Story Dice Adventures",
               "objective": "Encourage imagination and spontaneous storytelling",
               "explanation": "Promotes narrative structure and imagination.",
-              "hashtags": [],
               "estimatedTime": "20–25 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Use new pictures weekly for variety.",
+              "pillar": "Play & Creativity",
+              "category": "Creative Storytelling",
+              "hashtags": [],
               "activity": {
                 "name": "Story Dice Adventures",
                 "materials": [
@@ -1541,13 +1846,18 @@
               }
             },
             {
-              "topicNumber": 62,
+              "topicNumber": "2",
               "topic": "Comic Strip Creation",
               "objective": "Build sequencing and creative writing skills",
               "explanation": "Blends art and storytelling naturally.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Encourage storytelling in favorite genres.",
+              "pillar": "Play & Creativity",
+              "category": "Creative Storytelling",
+              "hashtags": [],
               "activity": {
                 "name": "Comic Strip Creation",
                 "materials": [
@@ -1566,13 +1876,18 @@
               }
             },
             {
-              "topicNumber": 63,
+              "topicNumber": "3",
               "topic": "Story Jars",
               "objective": "Inspire independent storytelling with prompts",
               "explanation": "Great for creative confidence and quick imagination.",
-              "hashtags": [],
               "estimatedTime": "20–30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Add more prompts as child grows.",
+              "pillar": "Play & Creativity",
+              "category": "Creative Storytelling",
+              "hashtags": [],
               "activity": {
                 "name": "Story Jars",
                 "materials": [
@@ -1591,13 +1906,18 @@
               }
             },
             {
-              "topicNumber": 64,
+              "topicNumber": "4",
               "topic": "Character Interviews",
               "objective": "Deepen understanding of story characters",
               "explanation": "Encourages emotional insight and creativity.",
-              "hashtags": [],
               "estimatedTime": "20–25 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Can record voice as podcast version.",
+              "pillar": "Play & Creativity",
+              "category": "Creative Storytelling",
+              "hashtags": [],
               "activity": {
                 "name": "Character Interviews",
                 "materials": [
@@ -1616,13 +1936,18 @@
               }
             },
             {
-              "topicNumber": 65,
+              "topicNumber": "5",
               "topic": "Story Builders Relay",
               "objective": "Enhance group creativity and cooperation",
               "explanation": "Perfect for siblings or group storytelling.",
-              "hashtags": [],
               "estimatedTime": "25–30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Works great in classrooms or playdates.",
+              "pillar": "Play & Creativity",
+              "category": "Creative Storytelling",
+              "hashtags": [],
               "activity": {
                 "name": "Story Builders Relay",
                 "materials": [
@@ -1640,13 +1965,18 @@
               }
             },
             {
-              "topicNumber": 66,
+              "topicNumber": "6",
               "topic": "Landscape Painting Adventure",
               "objective": "Explore composition and natural observation",
               "explanation": "Enhances attention to detail and calm focus.",
-              "hashtags": [],
               "estimatedTime": "30–45 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Paint outdoors for sensory experience.",
+              "pillar": "Play & Creativity",
+              "category": "Advanced Drawing & Painting",
+              "hashtags": [],
               "activity": {
                 "name": "Landscape Painting Adventure",
                 "materials": [
@@ -1665,13 +1995,18 @@
               }
             },
             {
-              "topicNumber": 67,
+              "topicNumber": "7",
               "topic": "Abstract Emotion Art",
               "objective": "Express feelings through abstract painting",
               "explanation": "Connects emotion to color and form.",
-              "hashtags": [],
               "estimatedTime": "25–35 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Use calming or energetic music for mood.",
+              "pillar": "Play & Creativity",
+              "category": "Advanced Drawing & Painting",
+              "hashtags": [],
               "activity": {
                 "name": "Abstract Emotion Art",
                 "materials": [
@@ -1690,13 +2025,18 @@
               }
             },
             {
-              "topicNumber": 68,
+              "topicNumber": "8",
               "topic": "Still Life Drawing",
               "objective": "Strengthen focus and visual accuracy",
               "explanation": "Improves artistic patience and realism.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Adjust difficulty by object complexity.",
+              "pillar": "Play & Creativity",
+              "category": "Advanced Drawing & Painting",
+              "hashtags": [],
               "activity": {
                 "name": "Still Life Drawing",
                 "materials": [
@@ -1715,13 +2055,18 @@
               }
             },
             {
-              "topicNumber": 69,
+              "topicNumber": "9",
               "topic": "Watercolor Blending Magic",
               "objective": "Learn color mixing and painting control",
               "explanation": "Builds technique and confidence with tools.",
-              "hashtags": [],
               "estimatedTime": "25–30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Encourage gentle brush control.",
+              "pillar": "Play & Creativity",
+              "category": "Advanced Drawing & Painting",
+              "hashtags": [],
               "activity": {
                 "name": "Watercolor Blending Magic",
                 "materials": [
@@ -1741,13 +2086,18 @@
               }
             },
             {
-              "topicNumber": 70,
+              "topicNumber": "10",
               "topic": "Fantasy Creature Art",
               "objective": "Combine imagination and drawing skills",
               "explanation": "Turns art into creative world-building.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Display creations in an “art gallery.”",
+              "pillar": "Play & Creativity",
+              "category": "Advanced Drawing & Painting",
+              "hashtags": [],
               "activity": {
                 "name": "Fantasy Creature Art",
                 "materials": [
@@ -1766,13 +2116,18 @@
               }
             },
             {
-              "topicNumber": 71,
+              "topicNumber": "11",
               "topic": "Recycled Robot Craft",
               "objective": "Foster creativity using recycled materials",
               "explanation": "Encourages eco-awareness and design thinking.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Discuss recycling benefits afterward.",
+              "pillar": "Play & Creativity",
+              "category": "DIY Craft Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Recycled Robot Craft",
                 "materials": [
@@ -1792,13 +2147,18 @@
               }
             },
             {
-              "topicNumber": 72,
+              "topicNumber": "12",
               "topic": "Homemade Kaleidoscope",
               "objective": "Explore light, symmetry, and color",
               "explanation": "Merges science and craft for visual wonder.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Hard",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Assist with assembly for safety.",
+              "pillar": "Play & Creativity",
+              "category": "DIY Craft Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Homemade Kaleidoscope",
                 "materials": [
@@ -1818,13 +2178,18 @@
               }
             },
             {
-              "topicNumber": 73,
+              "topicNumber": "13",
               "topic": "DIY Dream Catcher",
               "objective": "Practice weaving and cultural appreciation",
               "explanation": "Teaches cultural craft in age-appropriate way.",
-              "hashtags": [],
               "estimatedTime": "35–45 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Explain origin respectfully.",
+              "pillar": "Play & Creativity",
+              "category": "DIY Craft Projects",
+              "hashtags": [],
               "activity": {
                 "name": "DIY Dream Catcher",
                 "materials": [
@@ -1844,13 +2209,18 @@
               }
             },
             {
-              "topicNumber": 74,
+              "topicNumber": "14",
               "topic": "Cardboard City",
               "objective": "Encourage spatial planning and collaboration",
               "explanation": "Develops architectural and teamwork skills.",
-              "hashtags": [],
               "estimatedTime": "40–50 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Expand city over multiple days.",
+              "pillar": "Play & Creativity",
+              "category": "DIY Craft Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Cardboard City",
                 "materials": [
@@ -1869,13 +2239,18 @@
               }
             },
             {
-              "topicNumber": 75,
+              "topicNumber": "15",
               "topic": "Paper Circuits",
               "objective": "Introduce STEM through creative play",
               "explanation": "Simple and safe introduction to circuits.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Hard",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Ideal supervised weekend project.",
+              "pillar": "Play & Creativity",
+              "category": "DIY Craft Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Paper Circuits",
                 "materials": [
@@ -1895,13 +2270,18 @@
               }
             },
             {
-              "topicNumber": 76,
+              "topicNumber": "16",
               "topic": "Make Your Own Board Game",
               "objective": "Build creativity and rule-based thinking",
               "explanation": "Fosters ownership and logic through design.",
-              "hashtags": [],
               "estimatedTime": "40–50 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Display game proudly after.",
+              "pillar": "Play & Creativity",
+              "category": "Inventing Games",
+              "hashtags": [],
               "activity": {
                 "name": "Make Your Own Board Game",
                 "materials": [
@@ -1921,13 +2301,18 @@
               }
             },
             {
-              "topicNumber": 77,
+              "topicNumber": "17",
               "topic": "Backyard Obstacle Game",
               "objective": "Promote active play and teamwork",
               "explanation": "Combines creativity with physical play.",
-              "hashtags": [],
               "estimatedTime": "25–35 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Can adapt indoors on rainy days.",
+              "pillar": "Play & Creativity",
+              "category": "Inventing Games",
+              "hashtags": [],
               "activity": {
                 "name": "Backyard Obstacle Game",
                 "materials": [
@@ -1946,13 +2331,18 @@
               }
             },
             {
-              "topicNumber": 78,
+              "topicNumber": "18",
               "topic": "Word Creation Challenge",
               "objective": "Encourage vocabulary growth and humor",
               "explanation": "Boosts imagination and word association.",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Great travel or car-time activity.",
+              "pillar": "Play & Creativity",
+              "category": "Inventing Games",
+              "hashtags": [],
               "activity": {
                 "name": "Word Creation Challenge",
                 "materials": [
@@ -1970,13 +2360,18 @@
               }
             },
             {
-              "topicNumber": 79,
+              "topicNumber": "19",
               "topic": "Outdoor Adventure Game",
               "objective": "Promote problem-solving and exploration",
               "explanation": "Combines creativity with mystery-solving.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Ideal for groups or siblings.",
+              "pillar": "Play & Creativity",
+              "category": "Inventing Games",
+              "hashtags": [],
               "activity": {
                 "name": "Outdoor Adventure Game",
                 "materials": [
@@ -1994,13 +2389,18 @@
               }
             },
             {
-              "topicNumber": 80,
+              "topicNumber": "20",
               "topic": "Rule-Maker’s Club",
               "objective": "Foster leadership and group creativity",
               "explanation": "Encourages balanced freedom and reasoning.",
-              "hashtags": [],
               "estimatedTime": "25–30 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Rotate “rule-maker” each week.",
+              "pillar": "Play & Creativity",
+              "category": "Inventing Games",
+              "hashtags": [],
               "activity": {
                 "name": "Rule-Maker’s Club",
                 "materials": [
@@ -2018,13 +2418,18 @@
               }
             },
             {
-              "topicNumber": 81,
+              "topicNumber": "1",
               "topic": "Toy Redesign Challenge",
               "objective": "Develop problem-solving through toy innovation",
               "explanation": "Encourages critical analysis of how things work.",
-              "hashtags": [],
               "estimatedTime": "40–50 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Compare with original for improvement ideas.",
+              "pillar": "Play & Creativity",
+              "category": "Design Thinking for Toys",
+              "hashtags": [],
               "activity": {
                 "name": "Toy Redesign Challenge",
                 "materials": [
@@ -2043,13 +2448,18 @@
               }
             },
             {
-              "topicNumber": 82,
+              "topicNumber": "2",
               "topic": "Recycled Toy Prototyping",
               "objective": "Learn eco-conscious design with hands-on creativity",
               "explanation": "Promotes sustainability in design play.",
-              "hashtags": [],
               "estimatedTime": "45–60 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Showcase finished toy in family “expo.”",
+              "pillar": "Play & Creativity",
+              "category": "Design Thinking for Toys",
+              "hashtags": [],
               "activity": {
                 "name": "Recycled Toy Prototyping",
                 "materials": [
@@ -2068,13 +2478,18 @@
               }
             },
             {
-              "topicNumber": 83,
+              "topicNumber": "3",
               "topic": "User Experience Toy Test",
               "objective": "Understand empathy and feedback in design",
               "explanation": "Introduces UX principles through fun testing.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Discuss importance of feedback in design.",
+              "pillar": "Play & Creativity",
+              "category": "Design Thinking for Toys",
+              "hashtags": [],
               "activity": {
                 "name": "User Experience Toy Test",
                 "materials": [
@@ -2093,13 +2508,18 @@
               }
             },
             {
-              "topicNumber": 84,
+              "topicNumber": "4",
               "topic": "Toy Blueprint Sketching",
               "objective": "Build visualization and planning skills",
               "explanation": "Strengthens technical drawing ability.",
-              "hashtags": [],
               "estimatedTime": "30–35 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Great prep for robotics or architecture.",
+              "pillar": "Play & Creativity",
+              "category": "Design Thinking for Toys",
+              "hashtags": [],
               "activity": {
                 "name": "Toy Blueprint Sketching",
                 "materials": [
@@ -2118,13 +2538,18 @@
               }
             },
             {
-              "topicNumber": 85,
+              "topicNumber": "5",
               "topic": "Mini Invention Fair",
               "objective": "Practice full-cycle creative development",
               "explanation": "Mimics real-world invention experience.",
-              "hashtags": [],
               "estimatedTime": "60+ min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Hard",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Encourage recording video pitch.",
+              "pillar": "Play & Creativity",
+              "category": "Design Thinking for Toys",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Invention Fair",
                 "materials": [
@@ -2143,13 +2568,18 @@
               }
             },
             {
-              "topicNumber": 86,
+              "topicNumber": "6",
               "topic": "Stop-Motion Clay Animation",
               "objective": "Bring stories to life with frame-by-frame creation",
               "explanation": "Builds understanding of animation principles.",
-              "hashtags": [],
               "estimatedTime": "45–60 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Use tripod for smooth results.",
+              "pillar": "Play & Creativity",
+              "category": "Stop-motion Animation Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Stop-Motion Clay Animation",
                 "materials": [
@@ -2168,13 +2598,18 @@
               }
             },
             {
-              "topicNumber": 87,
+              "topicNumber": "7",
               "topic": "LEGO Movie Maker",
               "objective": "Combine engineering with storytelling",
               "explanation": "Blends construction with digital creativity.",
-              "hashtags": [],
               "estimatedTime": "40–50 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Encourage full short films with titles.",
+              "pillar": "Play & Creativity",
+              "category": "Stop-motion Animation Projects",
+              "hashtags": [],
               "activity": {
                 "name": "LEGO Movie Maker",
                 "materials": [
@@ -2193,13 +2628,18 @@
               }
             },
             {
-              "topicNumber": 88,
+              "topicNumber": "8",
               "topic": "Paper Cutout Animation",
               "objective": "Practice artistic precision and timing",
               "explanation": "Develops stop-motion skills without complex materials.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Great classroom or at-home project.",
+              "pillar": "Play & Creativity",
+              "category": "Stop-motion Animation Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Paper Cutout Animation",
                 "materials": [
@@ -2218,13 +2658,18 @@
               }
             },
             {
-              "topicNumber": 89,
+              "topicNumber": "9",
               "topic": "Everyday Object Animation",
               "objective": "Spark creativity through resourcefulness",
               "explanation": "Encourages seeing creativity in daily life.",
-              "hashtags": [],
               "estimatedTime": "25–35 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Challenge to tell story under 15 sec.",
+              "pillar": "Play & Creativity",
+              "category": "Stop-motion Animation Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Everyday Object Animation",
                 "materials": [
@@ -2242,13 +2687,18 @@
               }
             },
             {
-              "topicNumber": 90,
+              "topicNumber": "10",
               "topic": "Animation Sound Design",
               "objective": "Understand the power of sound in storytelling",
               "explanation": "Builds understanding of rhythm and emotion.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Try “foley” using kitchen items.",
+              "pillar": "Play & Creativity",
+              "category": "Stop-motion Animation Projects",
+              "hashtags": [],
               "activity": {
                 "name": "Animation Sound Design",
                 "materials": [
@@ -2267,13 +2717,18 @@
               }
             },
             {
-              "topicNumber": 91,
+              "topicNumber": "11",
               "topic": "Song Loop Challenge",
               "objective": "Introduce music layering and rhythm creation",
               "explanation": "Encourages composition through experimentation.",
-              "hashtags": [],
               "estimatedTime": "25–30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Explore different genres each time.",
+              "pillar": "Play & Creativity",
+              "category": "Music Composition & Recording",
+              "hashtags": [],
               "activity": {
                 "name": "Song Loop Challenge",
                 "materials": [
@@ -2291,13 +2746,18 @@
               }
             },
             {
-              "topicNumber": 92,
+              "topicNumber": "12",
               "topic": "Nature Sounds Recording",
               "objective": "Boost mindfulness through listening and sound editing",
               "explanation": "Teaches attentive listening and basic audio editing.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Great start for ASMR or ambiance sound creation.",
+              "pillar": "Play & Creativity",
+              "category": "Music Composition & Recording",
+              "hashtags": [],
               "activity": {
                 "name": "Nature Sounds Recording",
                 "materials": [
@@ -2315,13 +2775,18 @@
               }
             },
             {
-              "topicNumber": 93,
+              "topicNumber": "13",
               "topic": "Create Your Theme Song",
               "objective": "Express identity through lyrics and melody",
               "explanation": "Builds self-awareness and joy in music-making.",
-              "hashtags": [],
               "estimatedTime": "40–50 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Share with family or online safely.",
+              "pillar": "Play & Creativity",
+              "category": "Music Composition & Recording",
+              "hashtags": [],
               "activity": {
                 "name": "Create Your Theme Song",
                 "materials": [
@@ -2340,13 +2805,18 @@
               }
             },
             {
-              "topicNumber": 94,
+              "topicNumber": "14",
               "topic": "Rhythm Band Jam",
               "objective": "Encourage teamwork and timing",
               "explanation": "Promotes social connection through sound.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Record video of “band performance.”",
+              "pillar": "Play & Creativity",
+              "category": "Music Composition & Recording",
+              "hashtags": [],
               "activity": {
                 "name": "Rhythm Band Jam",
                 "materials": [
@@ -2365,13 +2835,18 @@
               }
             },
             {
-              "topicNumber": 95,
+              "topicNumber": "15",
               "topic": "Music Remix Lab",
               "objective": "Introduce digital remixing and sound design",
               "explanation": "Encourages innovation with modern tools.",
-              "hashtags": [],
               "estimatedTime": "40–50 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Hard",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Great first step to digital music production.",
+              "pillar": "Play & Creativity",
+              "category": "Music Composition & Recording",
+              "hashtags": [],
               "activity": {
                 "name": "Music Remix Lab",
                 "materials": [
@@ -2389,13 +2864,18 @@
               }
             },
             {
-              "topicNumber": 96,
+              "topicNumber": "16",
               "topic": "Clay Character Sculpting",
               "objective": "Develop 3D modeling and tactile art skills",
               "explanation": "Builds patience and visual-spatial awareness.",
-              "hashtags": [],
               "estimatedTime": "40–50 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Bake or air-dry for permanence.",
+              "pillar": "Play & Creativity",
+              "category": "Sculpting & 3D Modeling",
+              "hashtags": [],
               "activity": {
                 "name": "Clay Character Sculpting",
                 "materials": [
@@ -2414,13 +2894,18 @@
               }
             },
             {
-              "topicNumber": 97,
+              "topicNumber": "17",
               "topic": "Wire & Bead Sculpture",
               "objective": "Encourage design using unusual materials",
               "explanation": "Enhances planning and artistic precision.",
-              "hashtags": [],
               "estimatedTime": "35–45 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Adult supervision for wire safety.",
+              "pillar": "Play & Creativity",
+              "category": "Sculpting & 3D Modeling",
+              "hashtags": [],
               "activity": {
                 "name": "Wire & Bead Sculpture",
                 "materials": [
@@ -2439,13 +2924,18 @@
               }
             },
             {
-              "topicNumber": 98,
+              "topicNumber": "18",
               "topic": "Recycled Mini Sculptures",
               "objective": "Blend art and sustainability",
               "explanation": "Teaches reuse through artistic expression.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Encourage naming the sculpture.",
+              "pillar": "Play & Creativity",
+              "category": "Sculpting & 3D Modeling",
+              "hashtags": [],
               "activity": {
                 "name": "Recycled Mini Sculptures",
                 "materials": [
@@ -2464,13 +2954,18 @@
               }
             },
             {
-              "topicNumber": 99,
+              "topicNumber": "19",
               "topic": "Clay Animation Character Build",
               "objective": "Connect art and media",
               "explanation": "Bridges sculpting and storytelling.",
-              "hashtags": [],
               "estimatedTime": "45–60 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Integrate into previous stop-motion tasks.",
+              "pillar": "Play & Creativity",
+              "category": "Sculpting & 3D Modeling",
+              "hashtags": [],
               "activity": {
                 "name": "Clay Animation Character Build",
                 "materials": [
@@ -2489,13 +2984,18 @@
               }
             },
             {
-              "topicNumber": 100,
+              "topicNumber": "20",
               "topic": "3D Paper Architecture",
               "objective": "Explore structure and spatial awareness",
               "explanation": "Excellent intro to architecture and model-making.",
-              "hashtags": [],
               "estimatedTime": "45–60 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Hard",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Display in home “mini museum.”",
+              "pillar": "Play & Creativity",
+              "category": "Sculpting & 3D Modeling",
+              "hashtags": [],
               "activity": {
                 "name": "3D Paper Architecture",
                 "materials": [
@@ -2514,13 +3014,18 @@
               }
             },
             {
-              "topicNumber": 101,
+              "topicNumber": "1",
               "topic": "Stage Performance Workshop",
               "objective": "Develop confidence and expressive performance skills",
               "explanation": "Combines drama, music, and expression for stage readiness.",
-              "hashtags": [],
               "estimatedTime": "45–60 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Ideal for school plays or talent shows.",
+              "pillar": "Play & Creativity",
+              "category": "Artistic Performance & Design",
+              "hashtags": [],
               "activity": {
                 "name": "Stage Performance Workshop",
                 "materials": [
@@ -2541,13 +3046,18 @@
               }
             },
             {
-              "topicNumber": 102,
+              "topicNumber": "2",
               "topic": "Set Design & Decoration",
               "objective": "Enhance creativity through stage aesthetics",
               "explanation": "Strengthens visual storytelling and attention to detail.",
-              "hashtags": [],
               "estimatedTime": "40–50 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Encourage collaboration with peers.",
+              "pillar": "Play & Creativity",
+              "category": "Artistic Performance & Design",
+              "hashtags": [],
               "activity": {
                 "name": "Set Design & Decoration",
                 "materials": [
@@ -2568,13 +3078,18 @@
               }
             },
             {
-              "topicNumber": 103,
+              "topicNumber": "3",
               "topic": "Costume & Prop Creation",
               "objective": "Learn design skills for performing arts",
               "explanation": "Encourages imagination and personalization of performance.",
-              "hashtags": [],
               "estimatedTime": "35–45 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Can be reused for multiple performances.",
+              "pillar": "Play & Creativity",
+              "category": "Artistic Performance & Design",
+              "hashtags": [],
               "activity": {
                 "name": "Costume & Prop Creation",
                 "materials": [
@@ -2595,13 +3110,18 @@
               }
             },
             {
-              "topicNumber": 104,
+              "topicNumber": "4",
               "topic": "Improvisation Exercises",
               "objective": "Build adaptability and creative thinking",
               "explanation": "Develops quick thinking, confidence, and creative problem-solving.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Encourage recording for self-review.",
+              "pillar": "Play & Creativity",
+              "category": "Artistic Performance & Design",
+              "hashtags": [],
               "activity": {
                 "name": "Improvisation Exercises",
                 "materials": [
@@ -2621,13 +3141,18 @@
               }
             },
             {
-              "topicNumber": 105,
+              "topicNumber": "5",
               "topic": "Performance Review & Critique",
               "objective": "Improve self-reflection and constructive feedback",
               "explanation": "Encourages maturity in evaluating one’s own work.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Build habit of reflective learning.",
+              "pillar": "Play & Creativity",
+              "category": "Artistic Performance & Design",
+              "hashtags": [],
               "activity": {
                 "name": "Performance Review & Critique",
                 "materials": [
@@ -2647,13 +3172,18 @@
               }
             },
             {
-              "topicNumber": 106,
+              "topicNumber": "6",
               "topic": "Digital Illustration Challenge",
               "objective": "Create digital artwork from imagination",
               "explanation": "Combines tech and art for personal expression.",
-              "hashtags": [],
               "estimatedTime": "45–60 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Encourage sharing in teen art communities safely.",
+              "pillar": "Play & Creativity",
+              "category": "Creating Digital Art",
+              "hashtags": [],
               "activity": {
                 "name": "Digital Illustration Challenge",
                 "materials": [
@@ -2674,13 +3204,18 @@
               }
             },
             {
-              "topicNumber": 107,
+              "topicNumber": "7",
               "topic": "Character Design Project",
               "objective": "Develop unique characters and storytelling",
               "explanation": "Encourages narrative skills along with visual creativity.",
-              "hashtags": [],
               "estimatedTime": "40–50 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Can be used in comics or animations.",
+              "pillar": "Play & Creativity",
+              "category": "Creating Digital Art",
+              "hashtags": [],
               "activity": {
                 "name": "Character Design Project",
                 "materials": [
@@ -2700,13 +3235,18 @@
               }
             },
             {
-              "topicNumber": 108,
+              "topicNumber": "8",
               "topic": "Comic Strip Creation",
               "objective": "Tell a story visually and textually",
               "explanation": "Builds narrative flow and design integration skills.",
-              "hashtags": [],
               "estimatedTime": "45–60 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Ideal for teen magazines or personal portfolio.",
+              "pillar": "Play & Creativity",
+              "category": "Creating Digital Art",
+              "hashtags": [],
               "activity": {
                 "name": "Comic Strip Creation",
                 "materials": [
@@ -2727,13 +3267,18 @@
               }
             },
             {
-              "topicNumber": 109,
+              "topicNumber": "9",
               "topic": "Digital Animation Intro",
               "objective": "Explore animation techniques digitally",
               "explanation": "Introduces fundamentals of digital animation.",
-              "hashtags": [],
               "estimatedTime": "60 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Hard",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Short clips work best for practice projects.",
+              "pillar": "Play & Creativity",
+              "category": "Creating Digital Art",
+              "hashtags": [],
               "activity": {
                 "name": "Digital Animation Intro",
                 "materials": [
@@ -2754,13 +3299,18 @@
               }
             },
             {
-              "topicNumber": 110,
+              "topicNumber": "10",
               "topic": "Visual Storyboard Challenge",
               "objective": "Plan stories visually before creation",
               "explanation": "Strengthens organization and visualization of complex stories.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Supports film, animation, or game design.",
+              "pillar": "Play & Creativity",
+              "category": "Creating Digital Art",
+              "hashtags": [],
               "activity": {
                 "name": "Visual Storyboard Challenge",
                 "materials": [
@@ -2780,13 +3330,18 @@
               }
             },
             {
-              "topicNumber": 111,
+              "topicNumber": "11",
               "topic": "DIY Smart Gadget Build",
               "objective": "Introduce electronics and design thinking",
               "explanation": "Hands-on learning for STEM and innovation skills.",
-              "hashtags": [],
               "estimatedTime": "60–75 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Hard",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Encourage documenting process with photos.",
+              "pillar": "Play & Creativity",
+              "category": "Building and Designing Gadgets",
+              "hashtags": [],
               "activity": {
                 "name": "DIY Smart Gadget Build",
                 "materials": [
@@ -2807,13 +3362,18 @@
               }
             },
             {
-              "topicNumber": 112,
+              "topicNumber": "12",
               "topic": "Mini Robot Construction",
               "objective": "Learn basic robotics and programming",
               "explanation": "Integrates mechanical and digital skills.",
-              "hashtags": [],
               "estimatedTime": "60–80 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Hard",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Focus on safe use of tools.",
+              "pillar": "Play & Creativity",
+              "category": "Building and Designing Gadgets",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Robot Construction",
                 "materials": [
@@ -2833,13 +3393,18 @@
               }
             },
             {
-              "topicNumber": 113,
+              "topicNumber": "13",
               "topic": "Tech Art Mashup",
               "objective": "Combine electronics with creative art",
               "explanation": "Encourages STEAM integration and innovation.",
-              "hashtags": [],
               "estimatedTime": "50–60 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Can be used for room decor or gifts.",
+              "pillar": "Play & Creativity",
+              "category": "Building and Designing Gadgets",
+              "hashtags": [],
               "activity": {
                 "name": "Tech Art Mashup",
                 "materials": [
@@ -2860,13 +3425,18 @@
               }
             },
             {
-              "topicNumber": 114,
+              "topicNumber": "14",
               "topic": "DIY Gadget Challenge",
               "objective": "Solve real-world problem creatively",
               "explanation": "Develops inventive thinking and resourcefulness.",
-              "hashtags": [],
               "estimatedTime": "60–75 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Hard",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Encourage reflection on improvements.",
+              "pillar": "Play & Creativity",
+              "category": "Building and Designing Gadgets",
+              "hashtags": [],
               "activity": {
                 "name": "DIY Gadget Challenge",
                 "materials": [
@@ -2887,13 +3457,18 @@
               }
             },
             {
-              "topicNumber": 115,
+              "topicNumber": "15",
               "topic": "Fashion Mood Board",
               "objective": "Plan fashion concepts and themes",
               "explanation": "Prepares for personal or professional fashion projects.",
-              "hashtags": [],
               "estimatedTime": "40–50 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Use digital tools as alternative.",
+              "pillar": "Play & Creativity",
+              "category": "Building and Designing Gadgets",
+              "hashtags": [],
               "activity": {
                 "name": "Fashion Mood Board",
                 "materials": [
@@ -2915,13 +3490,18 @@
               }
             },
             {
-              "topicNumber": 116,
+              "topicNumber": "16",
               "topic": "Sketch Your Outfit",
               "objective": "Explore clothing design on paper",
               "explanation": "Encourages self-expression through fashion illustration.",
-              "hashtags": [],
               "estimatedTime": "35–45 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Great for personal style exploration.",
+              "pillar": "Play & Creativity",
+              "category": "Independent Fashion Design",
+              "hashtags": [],
               "activity": {
                 "name": "Sketch Your Outfit",
                 "materials": [
@@ -2942,13 +3522,18 @@
               }
             },
             {
-              "topicNumber": 117,
+              "topicNumber": "17",
               "topic": "Upcycled Fashion Project",
               "objective": "Combine sustainability with creativity",
               "explanation": "Teaches sustainable fashion practices.",
-              "hashtags": [],
               "estimatedTime": "45–60 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Perfect for gift-making or personal use.",
+              "pillar": "Play & Creativity",
+              "category": "Independent Fashion Design",
+              "hashtags": [],
               "activity": {
                 "name": "Upcycled Fashion Project",
                 "materials": [
@@ -2969,13 +3554,18 @@
               }
             },
             {
-              "topicNumber": 118,
+              "topicNumber": "18",
               "topic": "Fashion Accessories Design",
               "objective": "Build unique accessories from scratch",
               "explanation": "Encourages experimentation in wearable design.",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Great for bracelets, bags, or headpieces.",
+              "pillar": "Play & Creativity",
+              "category": "Independent Fashion Design",
+              "hashtags": [],
               "activity": {
                 "name": "Fashion Accessories Design",
                 "materials": [
@@ -2996,13 +3586,18 @@
               }
             },
             {
-              "topicNumber": 119,
+              "topicNumber": "19",
               "topic": "Digital Wardrobe Planner",
               "objective": "Explore organization and styling digitally",
               "explanation": "Teaches styling and outfit planning digitally.",
-              "hashtags": [],
               "estimatedTime": "40–50 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Light Supervision",
+              "additionalInfo": "Useful for teen fashion projects or school events.",
+              "pillar": "Play & Creativity",
+              "category": "Independent Fashion Design",
+              "hashtags": [],
               "activity": {
                 "name": "Digital Wardrobe Planner",
                 "materials": [
@@ -3022,13 +3617,18 @@
               }
             },
             {
-              "topicNumber": 120,
+              "topicNumber": "20",
               "topic": "DIY Animation Short Film",
               "objective": "Produce a short animated film using creative storytelling",
               "explanation": "Combines narrative, animation, and audio skills for a complete creative project.",
-              "hashtags": [],
               "estimatedTime": "60–90 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Hard",
+              "supervisionLevel": "Moderate Supervision",
+              "additionalInfo": "Can be submitted to school or online teen animation contests.",
+              "pillar": "Play & Creativity",
+              "category": "Independent Fashion Design",
+              "hashtags": [],
               "activity": {
                 "name": "DIY Animation Short Film",
                 "materials": [
@@ -3054,5 +3654,5 @@
     }
   ],
   "totalActivities": 120,
-  "lastUpdated": "2025-10-12T01:20:25.317930"
+  "lastUpdated": "2025-10-26T12:37:54.354840"
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import MinimalBackButton from '../components/ui/MinimalBackButton';
+import SimpleBackButton from '../components/ui/SimpleBackButton';
 
 const About = () => {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ const About = () => {
         padding: '20px',
         paddingTop: '5rem' // Add top padding to account for back button
       }}>
-      <MinimalBackButton 
+      <SimpleBackButton 
         heroColors={{
           backgroundColor: '#f8fafc',
           primaryColor: '#667eea',

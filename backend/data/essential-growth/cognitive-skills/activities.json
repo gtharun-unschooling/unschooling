@@ -8,13 +8,18 @@
           "description": "Activities for Cognitive Skills",
           "activities": [
             {
-              "topicNumber": 1,
+              "topicNumber": "1",
               "topic": "Peek-a-Boo Box",
               "objective": "Help baby understand object permanence and develop attention",
               "explanation": "Using a simple box hides the toy and teaches babies that objects exist even when out of sight",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Safe indoor play; always supervise closely",
+              "pillar": "Cognitive Skills",
+              "category": "Object Permanence Play",
+              "hashtags": [],
               "activity": {
                 "name": "Peek-a-Boo Box",
                 "materials": [
@@ -34,13 +39,18 @@
               }
             },
             {
-              "topicNumber": 2,
+              "topicNumber": "2",
               "topic": "Hide & Seek Toy",
               "objective": "Stimulate memory and anticipation skills",
               "explanation": "Encourages anticipation and memory as baby predicts toy location",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can use multiple toys for variety",
+              "pillar": "Cognitive Skills",
+              "category": "Object Permanence Play",
+              "hashtags": [],
               "activity": {
                 "name": "Hide & Seek Toy",
                 "materials": [
@@ -60,13 +70,18 @@
               }
             },
             {
-              "topicNumber": 3,
+              "topicNumber": "3",
               "topic": "Covered Rattle Surprise",
               "objective": "Develop cause-and-effect understanding",
               "explanation": "Combines sound and touch to teach that actions produce reactions",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Introduce different sounds to enhance learning",
+              "pillar": "Cognitive Skills",
+              "category": "Object Permanence Play",
+              "hashtags": [],
               "activity": {
                 "name": "Covered Rattle Surprise",
                 "materials": [
@@ -86,13 +101,18 @@
               }
             },
             {
-              "topicNumber": 4,
+              "topicNumber": "4",
               "topic": "Rolling Object Hide",
               "objective": "Promote reaching and motor planning",
               "explanation": "Teaches tracking and prediction while promoting movement",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Great for tummy time practice",
+              "pillar": "Cognitive Skills",
+              "category": "Object Permanence Play",
+              "hashtags": [],
               "activity": {
                 "name": "Rolling Object Hide",
                 "materials": [
@@ -112,13 +132,18 @@
               }
             },
             {
-              "topicNumber": 5,
+              "topicNumber": "5",
               "topic": "Blanket Lift Game",
               "objective": "Encourage exploration and anticipation",
               "explanation": "Introduces exploration and understanding cause-effect",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use soft blankets and lightweight toys",
+              "pillar": "Cognitive Skills",
+              "category": "Object Permanence Play",
+              "hashtags": [],
               "activity": {
                 "name": "Blanket Lift Game",
                 "materials": [
@@ -138,13 +163,18 @@
               }
             },
             {
-              "topicNumber": 6,
+              "topicNumber": "6",
               "topic": "Shake & See",
               "objective": "Teach cause-and-effect",
               "explanation": "Baby learns that shaking produces sound",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Safe, lightweight objects only",
+              "pillar": "Cognitive Skills",
+              "category": "Cause & Effect Exploration",
+              "hashtags": [],
               "activity": {
                 "name": "Shake & See",
                 "materials": [
@@ -164,13 +194,18 @@
               }
             },
             {
-              "topicNumber": 7,
+              "topicNumber": "7",
               "topic": "Light-Up Toy Tap",
               "objective": "Develop cause-effect and hand-eye coordination",
               "explanation": "Encourages coordination and understanding that actions produce results",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use soft, safe toys",
+              "pillar": "Cognitive Skills",
+              "category": "Cause & Effect Exploration",
+              "hashtags": [],
               "activity": {
                 "name": "Light-Up Toy Tap",
                 "materials": [
@@ -189,13 +224,18 @@
               }
             },
             {
-              "topicNumber": 8,
+              "topicNumber": "8",
               "topic": "Sound Button Fun",
               "objective": "Stimulate auditory feedback recognition",
               "explanation": "Baby learns pressing produces sound",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Always supervise to prevent button swallowing",
+              "pillar": "Cognitive Skills",
+              "category": "Cause & Effect Exploration",
+              "hashtags": [],
               "activity": {
                 "name": "Sound Button Fun",
                 "materials": [
@@ -214,13 +254,18 @@
               }
             },
             {
-              "topicNumber": 9,
+              "topicNumber": "9",
               "topic": "Push & Pop Toys",
               "objective": "Build understanding of action-result",
               "explanation": "Develops coordination and motor planning",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Indoor safe area recommended",
+              "pillar": "Cognitive Skills",
+              "category": "Cause & Effect Exploration",
+              "hashtags": [],
               "activity": {
                 "name": "Push & Pop Toys",
                 "materials": [
@@ -240,13 +285,18 @@
               }
             },
             {
-              "topicNumber": 10,
+              "topicNumber": "10",
               "topic": "Drop & Bounce Game",
               "objective": "Teach action-reaction and motor control",
               "explanation": "Baby learns dropping produces results and predicts outcomes",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use soft, lightweight balls",
+              "pillar": "Cognitive Skills",
+              "category": "Cause & Effect Exploration",
+              "hashtags": [],
               "activity": {
                 "name": "Drop & Bounce Game",
                 "materials": [
@@ -266,13 +316,18 @@
               }
             },
             {
-              "topicNumber": 11,
+              "topicNumber": "11",
               "topic": "Peek-a-Boo Mirror",
               "objective": "Encourage recognition and attention",
               "explanation": "Mirrors help babies learn faces and expressions",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Always clean mirror before play",
+              "pillar": "Cognitive Skills",
+              "category": "Peekaboo & Recognition Games",
+              "hashtags": [],
               "activity": {
                 "name": "Peek-a-Boo Mirror",
                 "materials": [
@@ -291,13 +346,18 @@
               }
             },
             {
-              "topicNumber": 12,
+              "topicNumber": "12",
               "topic": "Face Peek Blocks",
               "objective": "Promote recognition and object permanence",
               "explanation": "Learning faces and anticipating hidden images",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Rotate images for novelty",
+              "pillar": "Cognitive Skills",
+              "category": "Peekaboo & Recognition Games",
+              "hashtags": [],
               "activity": {
                 "name": "Face Peek Blocks",
                 "materials": [
@@ -316,13 +376,18 @@
               }
             },
             {
-              "topicNumber": 13,
+              "topicNumber": "13",
               "topic": "Cloth Peek Surprise",
               "objective": "Stimulate curiosity and tactile skills",
               "explanation": "Combines touch and discovery for learning",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Safe, soft toys only",
+              "pillar": "Cognitive Skills",
+              "category": "Peekaboo & Recognition Games",
+              "hashtags": [],
               "activity": {
                 "name": "Cloth Peek Surprise",
                 "materials": [
@@ -342,13 +407,18 @@
               }
             },
             {
-              "topicNumber": 14,
+              "topicNumber": "14",
               "topic": "Peek & Smile Game",
               "objective": "Build social interaction and anticipation",
               "explanation": "Teaches anticipation and positive social interaction",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Short sessions work best",
+              "pillar": "Cognitive Skills",
+              "category": "Peekaboo & Recognition Games",
+              "hashtags": [],
               "activity": {
                 "name": "Peek & Smile Game",
                 "materials": [
@@ -368,13 +438,18 @@
               }
             },
             {
-              "topicNumber": 15,
+              "topicNumber": "15",
               "topic": "Hide-and-Find Toy",
               "objective": "Develop memory and problem-solving",
               "explanation": "Encourages memory through discovery play",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Keep toys safe and light",
+              "pillar": "Cognitive Skills",
+              "category": "Peekaboo & Recognition Games",
+              "hashtags": [],
               "activity": {
                 "name": "Hide-and-Find Toy",
                 "materials": [
@@ -394,13 +469,18 @@
               }
             },
             {
-              "topicNumber": 16,
+              "topicNumber": "16",
               "topic": "Shape Puzzle Mat",
               "objective": "Introduce shape recognition",
               "explanation": "Early exposure to shapes enhances cognitive recognition",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Indoor, soft surface recommended",
+              "pillar": "Cognitive Skills",
+              "category": "Simple Puzzle Mats",
+              "hashtags": [],
               "activity": {
                 "name": "Shape Puzzle Mat",
                 "materials": [
@@ -419,13 +499,18 @@
               }
             },
             {
-              "topicNumber": 17,
+              "topicNumber": "17",
               "topic": "Color Block Mat",
               "objective": "Teach colors and matching",
               "explanation": "Develops visual discrimination and motor skills",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Rotate colors for variety",
+              "pillar": "Cognitive Skills",
+              "category": "Simple Puzzle Mats",
+              "hashtags": [],
               "activity": {
                 "name": "Color Block Mat",
                 "materials": [
@@ -445,13 +530,18 @@
               }
             },
             {
-              "topicNumber": 18,
+              "topicNumber": "18",
               "topic": "Animal Puzzle Mat",
               "objective": "Encourage visual and tactile learning",
               "explanation": "Introduces animals and shapes for learning",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use large, soft pieces",
+              "pillar": "Cognitive Skills",
+              "category": "Simple Puzzle Mats",
+              "hashtags": [],
               "activity": {
                 "name": "Animal Puzzle Mat",
                 "materials": [
@@ -470,13 +560,18 @@
               }
             },
             {
-              "topicNumber": 19,
+              "topicNumber": "19",
               "topic": "Soft Shape Board",
               "objective": "Teach shapes safely",
               "explanation": "Safe tactile learning for shape familiarity",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Always supervise",
+              "pillar": "Cognitive Skills",
+              "category": "Simple Puzzle Mats",
+              "hashtags": [],
               "activity": {
                 "name": "Soft Shape Board",
                 "materials": [
@@ -495,13 +590,18 @@
               }
             },
             {
-              "topicNumber": 20,
+              "topicNumber": "20",
               "topic": "Textured Puzzle Play",
               "objective": "Stimulate tactile and cognitive skills",
               "explanation": "Combines texture and puzzle-solving for cognitive development",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👶 Infant (0–1)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Great for sensory engagement",
+              "pillar": "Cognitive Skills",
+              "category": "Simple Puzzle Mats",
+              "hashtags": [],
               "activity": {
                 "name": "Textured Puzzle Play",
                 "materials": [
@@ -520,13 +620,18 @@
               }
             },
             {
-              "topicNumber": 21,
+              "topicNumber": "1",
               "topic": "Shape Sort Challenge",
               "objective": "Develop shape recognition and fine motor skills",
               "explanation": "Sorting shapes reinforces cognitive recognition and motor skills",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Rotate shapes for variety",
+              "pillar": "Cognitive Skills",
+              "category": "Sorting & Matching Toys",
+              "hashtags": [],
               "activity": {
                 "name": "Shape Sort Challenge",
                 "materials": [
@@ -546,13 +651,18 @@
               }
             },
             {
-              "topicNumber": 22,
+              "topicNumber": "2",
               "topic": "Color Match Boxes",
               "objective": "Teach color recognition and matching",
               "explanation": "Matching colors helps visual discrimination and cognitive mapping",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Indoor activity",
+              "pillar": "Cognitive Skills",
+              "category": "Sorting & Matching Toys",
+              "hashtags": [],
               "activity": {
                 "name": "Color Match Boxes",
                 "materials": [
@@ -572,13 +682,18 @@
               }
             },
             {
-              "topicNumber": 23,
+              "topicNumber": "3",
               "topic": "Animal Pairing Game",
               "objective": "Promote memory and categorization",
               "explanation": "Teaches memory, recognition, and grouping",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use soft, toddler-safe cards",
+              "pillar": "Cognitive Skills",
+              "category": "Sorting & Matching Toys",
+              "hashtags": [],
               "activity": {
                 "name": "Animal Pairing Game",
                 "materials": [
@@ -597,13 +712,18 @@
               }
             },
             {
-              "topicNumber": 24,
+              "topicNumber": "4",
               "topic": "Stack & Match",
               "objective": "Develop problem-solving and spatial skills",
               "explanation": "Stacking and matching develops planning and coordination",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can be done indoors or outdoors",
+              "pillar": "Cognitive Skills",
+              "category": "Sorting & Matching Toys",
+              "hashtags": [],
               "activity": {
                 "name": "Stack & Match",
                 "materials": [
@@ -622,13 +742,18 @@
               }
             },
             {
-              "topicNumber": 25,
+              "topicNumber": "5",
               "topic": "Everyday Object Sorting",
               "objective": "Build categorization and observation skills",
               "explanation": "Toddlers learn to group objects by characteristics",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use safe, lightweight items",
+              "pillar": "Cognitive Skills",
+              "category": "Sorting & Matching Toys",
+              "hashtags": [],
               "activity": {
                 "name": "Everyday Object Sorting",
                 "materials": [
@@ -648,13 +773,18 @@
               }
             },
             {
-              "topicNumber": 26,
+              "topicNumber": "6",
               "topic": "Obstacle Find Game",
               "objective": "Encourage problem-solving and movement",
               "explanation": "Combines exploration with physical activity for cognitive growth",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Supervised indoor/outdoor play",
+              "pillar": "Cognitive Skills",
+              "category": "Basic Problem Solving",
+              "hashtags": [],
               "activity": {
                 "name": "Obstacle Find Game",
                 "materials": [
@@ -674,13 +804,18 @@
               }
             },
             {
-              "topicNumber": 27,
+              "topicNumber": "7",
               "topic": "Toy Rescue Challenge",
               "objective": "Promote logic and problem-solving",
               "explanation": "Encourages logical thinking and planning",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Rotate toys to maintain engagement",
+              "pillar": "Cognitive Skills",
+              "category": "Basic Problem Solving",
+              "hashtags": [],
               "activity": {
                 "name": "Toy Rescue Challenge",
                 "materials": [
@@ -700,13 +835,18 @@
               }
             },
             {
-              "topicNumber": 28,
+              "topicNumber": "8",
               "topic": "Hidden Treasure Hunt",
               "objective": "Stimulate attention, memory, and problem-solving",
               "explanation": "Toddler learns to track, search, and retrieve objects",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Indoor or garden activity",
+              "pillar": "Cognitive Skills",
+              "category": "Basic Problem Solving",
+              "hashtags": [],
               "activity": {
                 "name": "Hidden Treasure Hunt",
                 "materials": [
@@ -726,13 +866,18 @@
               }
             },
             {
-              "topicNumber": 29,
+              "topicNumber": "9",
               "topic": "Mini Maze Exploration",
               "objective": "Enhance spatial awareness and planning",
               "explanation": "Teaches problem-solving and directional thinking",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use safe, toddler-friendly materials",
+              "pillar": "Cognitive Skills",
+              "category": "Basic Problem Solving",
+              "hashtags": [],
               "activity": {
                 "name": "Mini Maze Exploration",
                 "materials": [
@@ -752,13 +897,18 @@
               }
             },
             {
-              "topicNumber": 30,
+              "topicNumber": "10",
               "topic": "Button & Latch Puzzle",
               "objective": "Develop fine motor and problem-solving skills",
               "explanation": "Strengthens dexterity and logical thinking",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Always supervise closely",
+              "pillar": "Cognitive Skills",
+              "category": "Basic Problem Solving",
+              "hashtags": [],
               "activity": {
                 "name": "Button & Latch Puzzle",
                 "materials": [
@@ -777,13 +927,18 @@
               }
             },
             {
-              "topicNumber": 31,
+              "topicNumber": "11",
               "topic": "Story Sequence Cards",
               "objective": "Teach sequencing and memory",
               "explanation": "Encourages understanding of order and narrative",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Rotate stories for engagement",
+              "pillar": "Cognitive Skills",
+              "category": "Simple Sequencing Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Story Sequence Cards",
                 "materials": [
@@ -802,13 +957,18 @@
               }
             },
             {
-              "topicNumber": 32,
+              "topicNumber": "12",
               "topic": "Daily Routine Steps",
               "objective": "Introduce planning and sequencing",
               "explanation": "Reinforces daily routine understanding",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can be adapted to home environment",
+              "pillar": "Cognitive Skills",
+              "category": "Simple Sequencing Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Daily Routine Steps",
                 "materials": [
@@ -827,13 +987,18 @@
               }
             },
             {
-              "topicNumber": 33,
+              "topicNumber": "13",
               "topic": "Snack Prep Order Game",
               "objective": "Teach sequencing and basic problem-solving",
               "explanation": "Develops early planning and independence",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Safe edible items only",
+              "pillar": "Cognitive Skills",
+              "category": "Simple Sequencing Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Snack Prep Order Game",
                 "materials": [
@@ -853,13 +1018,18 @@
               }
             },
             {
-              "topicNumber": 34,
+              "topicNumber": "14",
               "topic": "Dress-Up Sequence",
               "objective": "Enhance planning and sequencing skills",
               "explanation": "Reinforces order of actions",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Safe clothing only",
+              "pillar": "Cognitive Skills",
+              "category": "Simple Sequencing Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Dress-Up Sequence",
                 "materials": [
@@ -879,13 +1049,18 @@
               }
             },
             {
-              "topicNumber": 35,
+              "topicNumber": "15",
               "topic": "Toy Train Order",
               "objective": "Introduce logical ordering",
               "explanation": "Combines play and logic for early cognitive skills",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use large, safe train cars",
+              "pillar": "Cognitive Skills",
+              "category": "Simple Sequencing Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Toy Train Order",
                 "materials": [
@@ -904,13 +1079,18 @@
               }
             },
             {
-              "topicNumber": 36,
+              "topicNumber": "16",
               "topic": "Animal Sound Match",
               "objective": "Develop auditory discrimination and memory",
               "explanation": "Builds recognition of sounds and association",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Indoor-friendly",
+              "pillar": "Cognitive Skills",
+              "category": "Sound & Image Identification",
+              "hashtags": [],
               "activity": {
                 "name": "Animal Sound Match",
                 "materials": [
@@ -930,13 +1110,18 @@
               }
             },
             {
-              "topicNumber": 37,
+              "topicNumber": "17",
               "topic": "Musical Instrument Match",
               "objective": "Enhance auditory memory and matching",
               "explanation": "Strengthens sound-object association",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use soft, safe instruments",
+              "pillar": "Cognitive Skills",
+              "category": "Sound & Image Identification",
+              "hashtags": [],
               "activity": {
                 "name": "Musical Instrument Match",
                 "materials": [
@@ -956,13 +1141,18 @@
               }
             },
             {
-              "topicNumber": 38,
+              "topicNumber": "18",
               "topic": "Everyday Sound Recognition",
               "objective": "Promote auditory awareness and attention",
               "explanation": "Recognizing everyday sounds develops auditory cognition",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Safe household sounds only",
+              "pillar": "Cognitive Skills",
+              "category": "Sound & Image Identification",
+              "hashtags": [],
               "activity": {
                 "name": "Everyday Sound Recognition",
                 "materials": [
@@ -981,13 +1171,18 @@
               }
             },
             {
-              "topicNumber": 39,
+              "topicNumber": "19",
               "topic": "Picture & Sound Pairing",
               "objective": "Teach association between visual and auditory cues",
               "explanation": "Combines visual and auditory learning",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use toddler-safe images",
+              "pillar": "Cognitive Skills",
+              "category": "Sound & Image Identification",
+              "hashtags": [],
               "activity": {
                 "name": "Picture & Sound Pairing",
                 "materials": [
@@ -1007,13 +1202,18 @@
               }
             },
             {
-              "topicNumber": 40,
+              "topicNumber": "20",
               "topic": "Echo Game",
               "objective": "Reinforce listening and memory skills",
               "explanation": "Helps with sound recognition and memory",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "🚼 Toddler (1–3)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can be done anywhere, no special materials",
+              "pillar": "Cognitive Skills",
+              "category": "Sound & Image Identification",
+              "hashtags": [],
               "activity": {
                 "name": "Echo Game",
                 "materials": [
@@ -1032,13 +1232,18 @@
               }
             },
             {
-              "topicNumber": 41,
+              "topicNumber": "1",
               "topic": "Color Pattern Tiles",
               "objective": "Teach pattern recognition and visual sequencing",
               "explanation": "Builds understanding of visual patterns and order",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Rotate tiles for variety",
+              "pillar": "Cognitive Skills",
+              "category": "Pattern Recognition Games",
+              "hashtags": [],
               "activity": {
                 "name": "Color Pattern Tiles",
                 "materials": [
@@ -1058,13 +1263,18 @@
               }
             },
             {
-              "topicNumber": 42,
+              "topicNumber": "2",
               "topic": "Shape Sequencing",
               "objective": "Develop shape recognition and order",
               "explanation": "Encourages observation, prediction, and order recognition",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can be done indoors or outdoors",
+              "pillar": "Cognitive Skills",
+              "category": "Pattern Recognition Games",
+              "hashtags": [],
               "activity": {
                 "name": "Shape Sequencing",
                 "materials": [
@@ -1084,13 +1294,18 @@
               }
             },
             {
-              "topicNumber": 43,
+              "topicNumber": "3",
               "topic": "Daily Routine Patterns",
               "objective": "Teach sequencing through familiar routines",
               "explanation": "Reinforces understanding of daily routines and order",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can adapt to home or school routines",
+              "pillar": "Cognitive Skills",
+              "category": "Pattern Recognition Games",
+              "hashtags": [],
               "activity": {
                 "name": "Daily Routine Patterns",
                 "materials": [
@@ -1109,13 +1324,18 @@
               }
             },
             {
-              "topicNumber": 44,
+              "topicNumber": "4",
               "topic": "Number Pattern Game",
               "objective": "Promote numeric sequencing and counting",
               "explanation": "Enhances numeric awareness and pattern logic",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Indoor-friendly",
+              "pillar": "Cognitive Skills",
+              "category": "Pattern Recognition Games",
+              "hashtags": [],
               "activity": {
                 "name": "Number Pattern Game",
                 "materials": [
@@ -1135,13 +1355,18 @@
               }
             },
             {
-              "topicNumber": 45,
+              "topicNumber": "5",
               "topic": "Nature Pattern Hunt",
               "objective": "Encourage observation and natural pattern recognition",
               "explanation": "Connects cognitive skills with nature exploration",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Outdoor activity",
+              "pillar": "Cognitive Skills",
+              "category": "Pattern Recognition Games",
+              "hashtags": [],
               "activity": {
                 "name": "Nature Pattern Hunt",
                 "materials": [
@@ -1161,13 +1386,18 @@
               }
             },
             {
-              "topicNumber": 46,
+              "topicNumber": "6",
               "topic": "Animal Memory Cards",
               "objective": "Improve memory and recognition",
               "explanation": "Builds recall and visual memory",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Toddler-safe cards only",
+              "pillar": "Cognitive Skills",
+              "category": "Memory Matching Games",
+              "hashtags": [],
               "activity": {
                 "name": "Animal Memory Cards",
                 "materials": [
@@ -1186,13 +1416,18 @@
               }
             },
             {
-              "topicNumber": 47,
+              "topicNumber": "7",
               "topic": "Color Match Memory",
               "objective": "Develop visual memory and color recognition",
               "explanation": "Enhances cognitive mapping of colors",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Indoor-friendly",
+              "pillar": "Cognitive Skills",
+              "category": "Memory Matching Games",
+              "hashtags": [],
               "activity": {
                 "name": "Color Match Memory",
                 "materials": [
@@ -1212,13 +1447,18 @@
               }
             },
             {
-              "topicNumber": 48,
+              "topicNumber": "8",
               "topic": "Toy Memory Tray",
               "objective": "Improve attention and working memory",
               "explanation": "Trains short-term memory and recall",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use safe, lightweight toys",
+              "pillar": "Cognitive Skills",
+              "category": "Memory Matching Games",
+              "hashtags": [],
               "activity": {
                 "name": "Toy Memory Tray",
                 "materials": [
@@ -1238,13 +1478,18 @@
               }
             },
             {
-              "topicNumber": 49,
+              "topicNumber": "9",
               "topic": "Story Recall Game",
               "objective": "Enhance auditory memory and sequencing",
               "explanation": "Encourages recall, comprehension, and narrative skills",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Short, engaging stories work best",
+              "pillar": "Cognitive Skills",
+              "category": "Memory Matching Games",
+              "hashtags": [],
               "activity": {
                 "name": "Story Recall Game",
                 "materials": [
@@ -1263,13 +1508,18 @@
               }
             },
             {
-              "topicNumber": 50,
+              "topicNumber": "10",
               "topic": "Shape Memory Tiles",
               "objective": "Build visual memory and recognition",
               "explanation": "Improves recall and shape discrimination",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Indoor-friendly",
+              "pillar": "Cognitive Skills",
+              "category": "Memory Matching Games",
+              "hashtags": [],
               "activity": {
                 "name": "Shape Memory Tiles",
                 "materials": [
@@ -1288,13 +1538,18 @@
               }
             },
             {
-              "topicNumber": 51,
+              "topicNumber": "11",
               "topic": "First Board Adventure",
               "objective": "Introduce basic board game rules and turn-taking",
               "explanation": "Builds early understanding of games and rules",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use age-appropriate board games",
+              "pillar": "Cognitive Skills",
+              "category": "Beginner Board Games",
+              "hashtags": [],
               "activity": {
                 "name": "First Board Adventure",
                 "materials": [
@@ -1313,13 +1568,18 @@
               }
             },
             {
-              "topicNumber": 52,
+              "topicNumber": "12",
               "topic": "Counting Game Board",
               "objective": "Reinforce counting and number recognition",
               "explanation": "Strengthens numeric awareness and coordination",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Indoor activity",
+              "pillar": "Cognitive Skills",
+              "category": "Beginner Board Games",
+              "hashtags": [],
               "activity": {
                 "name": "Counting Game Board",
                 "materials": [
@@ -1339,13 +1599,18 @@
               }
             },
             {
-              "topicNumber": 53,
+              "topicNumber": "13",
               "topic": "Color Race Game",
               "objective": "Teach color recognition and quick responses",
               "explanation": "Combines visual learning and motor response",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can be played indoors",
+              "pillar": "Cognitive Skills",
+              "category": "Beginner Board Games",
+              "hashtags": [],
               "activity": {
                 "name": "Color Race Game",
                 "materials": [
@@ -1365,13 +1630,18 @@
               }
             },
             {
-              "topicNumber": 54,
+              "topicNumber": "14",
               "topic": "Animal Path Game",
               "objective": "Improve planning and logical thinking",
               "explanation": "Teaches logic and sequencing",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use safe figurines",
+              "pillar": "Cognitive Skills",
+              "category": "Beginner Board Games",
+              "hashtags": [],
               "activity": {
                 "name": "Animal Path Game",
                 "materials": [
@@ -1391,13 +1661,18 @@
               }
             },
             {
-              "topicNumber": 55,
+              "topicNumber": "15",
               "topic": "Turn-Taking Dice Game",
               "objective": "Teach turn-taking, counting, and patience",
               "explanation": "Combines numeracy with social interaction",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Simple board or floor mat",
+              "pillar": "Cognitive Skills",
+              "category": "Beginner Board Games",
+              "hashtags": [],
               "activity": {
                 "name": "Turn-Taking Dice Game",
                 "materials": [
@@ -1417,13 +1692,18 @@
               }
             },
             {
-              "topicNumber": 56,
+              "topicNumber": "16",
               "topic": "Story Prediction Game",
               "objective": "Develop prediction and reasoning",
               "explanation": "Encourages critical thinking and narrative understanding",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Stories can be fictional or real",
+              "pillar": "Cognitive Skills",
+              "category": "\"What Happens Next?\" Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Story Prediction Game",
                 "materials": [
@@ -1442,13 +1722,18 @@
               }
             },
             {
-              "topicNumber": 57,
+              "topicNumber": "17",
               "topic": "Ending Guess Cards",
               "objective": "Enhance prediction and memory",
               "explanation": "Stimulates imagination and logical thinking",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Rotate stories for variety",
+              "pillar": "Cognitive Skills",
+              "category": "\"What Happens Next?\" Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Ending Guess Cards",
                 "materials": [
@@ -1467,13 +1752,18 @@
               }
             },
             {
-              "topicNumber": 58,
+              "topicNumber": "18",
               "topic": "Picture Sequence Game",
               "objective": "Teach sequencing and logical thinking",
               "explanation": "Strengthens understanding of order and cause-effect",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Indoor-friendly",
+              "pillar": "Cognitive Skills",
+              "category": "\"What Happens Next?\" Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Picture Sequence Game",
                 "materials": [
@@ -1492,13 +1782,18 @@
               }
             },
             {
-              "topicNumber": 59,
+              "topicNumber": "19",
               "topic": "Puppet Story Continuation",
               "objective": "Enhance imagination and sequencing",
               "explanation": "Combines storytelling with cognitive sequencing",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Puppets or toys work",
+              "pillar": "Cognitive Skills",
+              "category": "\"What Happens Next?\" Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Puppet Story Continuation",
                 "materials": [
@@ -1518,13 +1813,18 @@
               }
             },
             {
-              "topicNumber": 60,
+              "topicNumber": "20",
               "topic": "Story Dice Play",
               "objective": "Teach cause-effect, sequencing, and creativity",
               "explanation": "Promotes imaginative thinking and narrative skills",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧒 Preschooler (3–5)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Indoor activity",
+              "pillar": "Cognitive Skills",
+              "category": "\"What Happens Next?\" Activities",
+              "hashtags": [],
               "activity": {
                 "name": "Story Dice Play",
                 "materials": [
@@ -1544,13 +1844,18 @@
               }
             },
             {
-              "topicNumber": 61,
+              "topicNumber": "1",
               "topic": "Math Puzzle Cards",
               "objective": "Strengthen mental math and problem-solving",
               "explanation": "Combines math practice with engaging puzzle solving",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Rotate cards to vary difficulty",
+              "pillar": "Cognitive Skills",
+              "category": "Mental Math Challenges",
+              "hashtags": [],
               "activity": {
                 "name": "Math Puzzle Cards",
                 "materials": [
@@ -1568,13 +1873,18 @@
               }
             },
             {
-              "topicNumber": 62,
+              "topicNumber": "2",
               "topic": "Number Maze",
               "objective": "Improve number recognition and sequencing",
               "explanation": "Teaches order of numbers while navigating",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can increase maze complexity over time",
+              "pillar": "Cognitive Skills",
+              "category": "Mental Math Challenges",
+              "hashtags": [],
               "activity": {
                 "name": "Number Maze",
                 "materials": [
@@ -1593,13 +1903,18 @@
               }
             },
             {
-              "topicNumber": 63,
+              "topicNumber": "3",
               "topic": "Quick Addition Game",
               "objective": "Practice addition and speed",
               "explanation": "Builds fast mental math skills",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use timer to make it a fun challenge",
+              "pillar": "Cognitive Skills",
+              "category": "Mental Math Challenges",
+              "hashtags": [],
               "activity": {
                 "name": "Quick Addition Game",
                 "materials": [
@@ -1618,13 +1933,18 @@
               }
             },
             {
-              "topicNumber": 64,
+              "topicNumber": "4",
               "topic": "Math Bingo",
               "objective": "Reinforce arithmetic operations",
               "explanation": "Combines fun with learning arithmetic",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can be played in small groups",
+              "pillar": "Cognitive Skills",
+              "category": "Mental Math Challenges",
+              "hashtags": [],
               "activity": {
                 "name": "Math Bingo",
                 "materials": [
@@ -1643,13 +1963,18 @@
               }
             },
             {
-              "topicNumber": 65,
+              "topicNumber": "5",
               "topic": "Countdown Numbers",
               "objective": "Practice subtraction and sequencing",
               "explanation": "Improves reverse counting and attention",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Indoors or outdoors activity",
+              "pillar": "Cognitive Skills",
+              "category": "Mental Math Challenges",
+              "hashtags": [],
               "activity": {
                 "name": "Countdown Numbers",
                 "materials": [
@@ -1667,13 +1992,18 @@
               }
             },
             {
-              "topicNumber": 66,
+              "topicNumber": "6",
               "topic": "Logic Puzzle Boards",
               "objective": "Develop critical thinking",
               "explanation": "Enhances analytical skills through hands-on puzzles",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use varying difficulty levels",
+              "pillar": "Cognitive Skills",
+              "category": "Critical Thinking Puzzles",
+              "hashtags": [],
               "activity": {
                 "name": "Logic Puzzle Boards",
                 "materials": [
@@ -1691,13 +2021,18 @@
               }
             },
             {
-              "topicNumber": 67,
+              "topicNumber": "7",
               "topic": "Brain Teaser Cards",
               "objective": "Stimulate critical thinking and problem solving",
               "explanation": "Teaches children to think outside the box",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can repeat with new sets daily",
+              "pillar": "Cognitive Skills",
+              "category": "Critical Thinking Puzzles",
+              "hashtags": [],
               "activity": {
                 "name": "Brain Teaser Cards",
                 "materials": [
@@ -1715,13 +2050,18 @@
               }
             },
             {
-              "topicNumber": 68,
+              "topicNumber": "8",
               "topic": "Find the Odd One Out",
               "objective": "Enhance observation and logic",
               "explanation": "Helps distinguish similarities and differences",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use colorful, engaging images",
+              "pillar": "Cognitive Skills",
+              "category": "Critical Thinking Puzzles",
+              "hashtags": [],
               "activity": {
                 "name": "Find the Odd One Out",
                 "materials": [
@@ -1739,13 +2079,18 @@
               }
             },
             {
-              "topicNumber": 69,
+              "topicNumber": "9",
               "topic": "Mystery Clue Game",
               "objective": "Encourage deduction and problem-solving",
               "explanation": "Builds critical thinking and reasoning skills",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can be played in pairs or groups",
+              "pillar": "Cognitive Skills",
+              "category": "Critical Thinking Puzzles",
+              "hashtags": [],
               "activity": {
                 "name": "Mystery Clue Game",
                 "materials": [
@@ -1764,13 +2109,18 @@
               }
             },
             {
-              "topicNumber": 70,
+              "topicNumber": "10",
               "topic": "Pattern Logic Challenge",
               "objective": "Develop pattern recognition and reasoning",
               "explanation": "Reinforces observation and sequencing skills",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use various visual patterns",
+              "pillar": "Cognitive Skills",
+              "category": "Critical Thinking Puzzles",
+              "hashtags": [],
               "activity": {
                 "name": "Pattern Logic Challenge",
                 "materials": [
@@ -1789,13 +2139,18 @@
               }
             },
             {
-              "topicNumber": 71,
+              "topicNumber": "11",
               "topic": "Block Maze Challenge",
               "objective": "Improve spatial reasoning",
               "explanation": "Enhances understanding of space and directions",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can increase maze complexity",
+              "pillar": "Cognitive Skills",
+              "category": "Spatial Awareness Games",
+              "hashtags": [],
               "activity": {
                 "name": "Block Maze Challenge",
                 "materials": [
@@ -1814,13 +2169,18 @@
               }
             },
             {
-              "topicNumber": 72,
+              "topicNumber": "12",
               "topic": "Tangram Puzzles",
               "objective": "Enhance visual-spatial reasoning",
               "explanation": "Develops shape recognition and planning",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can create multiple shapes for challenge",
+              "pillar": "Cognitive Skills",
+              "category": "Spatial Awareness Games",
+              "hashtags": [],
               "activity": {
                 "name": "Tangram Puzzles",
                 "materials": [
@@ -1838,13 +2198,18 @@
               }
             },
             {
-              "topicNumber": 73,
+              "topicNumber": "13",
               "topic": "Puzzle Path Game",
               "objective": "Promote spatial planning and logic",
               "explanation": "Encourages strategic thinking",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Rotate path pieces for variety",
+              "pillar": "Cognitive Skills",
+              "category": "Spatial Awareness Games",
+              "hashtags": [],
               "activity": {
                 "name": "Puzzle Path Game",
                 "materials": [
@@ -1863,13 +2228,18 @@
               }
             },
             {
-              "topicNumber": 74,
+              "topicNumber": "14",
               "topic": "3D Shape Challenge",
               "objective": "Teach 3D shape recognition",
               "explanation": "Introduces 3D shapes and manipulation",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use large, safe blocks",
+              "pillar": "Cognitive Skills",
+              "category": "Spatial Awareness Games",
+              "hashtags": [],
               "activity": {
                 "name": "3D Shape Challenge",
                 "materials": [
@@ -1887,13 +2257,18 @@
               }
             },
             {
-              "topicNumber": 75,
+              "topicNumber": "15",
               "topic": "Lego Spatial Build",
               "objective": "Improve planning and spatial skills",
               "explanation": "Develops creativity with logical thinking",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can be collaborative or individual",
+              "pillar": "Cognitive Skills",
+              "category": "Spatial Awareness Games",
+              "hashtags": [],
               "activity": {
                 "name": "Lego Spatial Build",
                 "materials": [
@@ -1911,13 +2286,18 @@
               }
             },
             {
-              "topicNumber": 76,
+              "topicNumber": "16",
               "topic": "Logic Grid Puzzles",
               "objective": "Strengthen deduction and reasoning",
               "explanation": "Builds critical thinking and logical mapping",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Start with simple puzzles",
+              "pillar": "Cognitive Skills",
+              "category": "Logic Grid Challenges",
+              "hashtags": [],
               "activity": {
                 "name": "Logic Grid Puzzles",
                 "materials": [
@@ -1936,13 +2316,18 @@
               }
             },
             {
-              "topicNumber": 77,
+              "topicNumber": "17",
               "topic": "Sudoku Beginner",
               "objective": "Introduce logical number placement",
               "explanation": "Builds early number logic and attention",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use large-print puzzles",
+              "pillar": "Cognitive Skills",
+              "category": "Logic Grid Challenges",
+              "hashtags": [],
               "activity": {
                 "name": "Sudoku Beginner",
                 "materials": [
@@ -1961,13 +2346,18 @@
               }
             },
             {
-              "topicNumber": 78,
+              "topicNumber": "18",
               "topic": "Color Grid Game",
               "objective": "Enhance visual logic and pattern recognition",
               "explanation": "Encourages visual discrimination and planning",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Rotate grids for variety",
+              "pillar": "Cognitive Skills",
+              "category": "Logic Grid Challenges",
+              "hashtags": [],
               "activity": {
                 "name": "Color Grid Game",
                 "materials": [
@@ -1986,13 +2376,18 @@
               }
             },
             {
-              "topicNumber": 79,
+              "topicNumber": "19",
               "topic": "Deduction Cards",
               "objective": "Promote reasoning and inference",
               "explanation": "Trains logical thinking and inference",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use small groups for challenge",
+              "pillar": "Cognitive Skills",
+              "category": "Logic Grid Challenges",
+              "hashtags": [],
               "activity": {
                 "name": "Deduction Cards",
                 "materials": [
@@ -2010,13 +2405,18 @@
               }
             },
             {
-              "topicNumber": 80,
+              "topicNumber": "20",
               "topic": "Who’s Who Puzzle",
               "objective": "Develop memory and logical association",
               "explanation": "Enhances memory and recognition skills",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "👦 Child (6–8)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can play individually or in pairs",
+              "pillar": "Cognitive Skills",
+              "category": "Logic Grid Challenges",
+              "hashtags": [],
               "activity": {
                 "name": "Who’s Who Puzzle",
                 "materials": [
@@ -2034,13 +2434,18 @@
               }
             },
             {
-              "topicNumber": 81,
+              "topicNumber": "1",
               "topic": "Chess Challenge",
               "objective": "Develop strategic thinking and planning",
               "explanation": "Builds logical reasoning, foresight, and decision-making",
-              "hashtags": [],
               "estimatedTime": "20–30 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can play with peers or solo against apps",
+              "pillar": "Cognitive Skills",
+              "category": "Strategy Board Games",
+              "hashtags": [],
               "activity": {
                 "name": "Chess Challenge",
                 "materials": [
@@ -2059,13 +2464,18 @@
               }
             },
             {
-              "topicNumber": 82,
+              "topicNumber": "2",
               "topic": "Checkers Tournament",
               "objective": "Enhance planning and tactical skills",
               "explanation": "Teaches foresight and anticipating opponent moves",
-              "hashtags": [],
               "estimatedTime": "15–25 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can organize mini tournaments",
+              "pillar": "Cognitive Skills",
+              "category": "Strategy Board Games",
+              "hashtags": [],
               "activity": {
                 "name": "Checkers Tournament",
                 "materials": [
@@ -2084,13 +2494,18 @@
               }
             },
             {
-              "topicNumber": 83,
+              "topicNumber": "3",
               "topic": "Strategy Card Game",
               "objective": "Improve logical reasoning and decision-making",
               "explanation": "Combines fun with strategic problem-solving",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can be played in pairs or small groups",
+              "pillar": "Cognitive Skills",
+              "category": "Strategy Board Games",
+              "hashtags": [],
               "activity": {
                 "name": "Strategy Card Game",
                 "materials": [
@@ -2109,13 +2524,18 @@
               }
             },
             {
-              "topicNumber": 84,
+              "topicNumber": "4",
               "topic": "Maze Strategy Game",
               "objective": "Promote spatial reasoning and strategy",
               "explanation": "Enhances ability to foresee paths and make decisions",
-              "hashtags": [],
               "estimatedTime": "20 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can increase complexity over time",
+              "pillar": "Cognitive Skills",
+              "category": "Strategy Board Games",
+              "hashtags": [],
               "activity": {
                 "name": "Maze Strategy Game",
                 "materials": [
@@ -2135,13 +2555,18 @@
               }
             },
             {
-              "topicNumber": 85,
+              "topicNumber": "5",
               "topic": "Tactical Grid Play",
               "objective": "Develop logic and tactical planning",
               "explanation": "Improves reasoning and foresight",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use competitive or cooperative variations",
+              "pillar": "Cognitive Skills",
+              "category": "Strategy Board Games",
+              "hashtags": [],
               "activity": {
                 "name": "Tactical Grid Play",
                 "materials": [
@@ -2161,13 +2586,18 @@
               }
             },
             {
-              "topicNumber": 86,
+              "topicNumber": "6",
               "topic": "Simple Circuit Challenge",
               "objective": "Introduce cause and effect in electronics",
               "explanation": "Explains electrical circuits and observation",
-              "hashtags": [],
               "estimatedTime": "20 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use safe, low-voltage components",
+              "pillar": "Cognitive Skills",
+              "category": "Cause & Effect Simulations",
+              "hashtags": [],
               "activity": {
                 "name": "Simple Circuit Challenge",
                 "materials": [
@@ -2188,13 +2618,18 @@
               }
             },
             {
-              "topicNumber": 87,
+              "topicNumber": "7",
               "topic": "Water Flow Experiment",
               "objective": "Explore principles of water movement",
               "explanation": "Teaches fluid dynamics and experimentation",
-              "hashtags": [],
               "estimatedTime": "20–25 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can repeat with different setups",
+              "pillar": "Cognitive Skills",
+              "category": "Cause & Effect Simulations",
+              "hashtags": [],
               "activity": {
                 "name": "Water Flow Experiment",
                 "materials": [
@@ -2215,13 +2650,18 @@
               }
             },
             {
-              "topicNumber": 88,
+              "topicNumber": "8",
               "topic": "Domino Chain Reaction",
               "objective": "Teach sequential cause and effect",
               "explanation": "Demonstrates chain reactions and planning",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Encourage creativity with layout patterns",
+              "pillar": "Cognitive Skills",
+              "category": "Cause & Effect Simulations",
+              "hashtags": [],
               "activity": {
                 "name": "Domino Chain Reaction",
                 "materials": [
@@ -2240,13 +2680,18 @@
               }
             },
             {
-              "topicNumber": 89,
+              "topicNumber": "9",
               "topic": "Balloon Car Experiment",
               "objective": "Introduce physics principles",
               "explanation": "Combines physics with hands-on play",
-              "hashtags": [],
               "estimatedTime": "20 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can do races with peers",
+              "pillar": "Cognitive Skills",
+              "category": "Cause & Effect Simulations",
+              "hashtags": [],
               "activity": {
                 "name": "Balloon Car Experiment",
                 "materials": [
@@ -2268,13 +2713,18 @@
               }
             },
             {
-              "topicNumber": 90,
+              "topicNumber": "10",
               "topic": "Magnetic Attraction Game",
               "objective": "Teach magnetic properties and effects",
               "explanation": "Helps understand magnetism in a fun way",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Safe handling only",
+              "pillar": "Cognitive Skills",
+              "category": "Cause & Effect Simulations",
+              "hashtags": [],
               "activity": {
                 "name": "Magnetic Attraction Game",
                 "materials": [
@@ -2294,13 +2744,18 @@
               }
             },
             {
-              "topicNumber": 91,
+              "topicNumber": "11",
               "topic": "What-If Scenario Game",
               "objective": "Foster abstract thinking and decision-making",
               "explanation": "Promotes creative thinking and reasoning",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can discuss in groups or individually",
+              "pillar": "Cognitive Skills",
+              "category": "Abstract Thinking Tasks",
+              "hashtags": [],
               "activity": {
                 "name": "What-If Scenario Game",
                 "materials": [
@@ -2319,13 +2774,18 @@
               }
             },
             {
-              "topicNumber": 92,
+              "topicNumber": "12",
               "topic": "Riddle Challenges",
               "objective": "Improve logical reasoning and problem-solving",
               "explanation": "Builds critical thinking and reasoning",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Rotate riddles for variety",
+              "pillar": "Cognitive Skills",
+              "category": "Abstract Thinking Tasks",
+              "hashtags": [],
               "activity": {
                 "name": "Riddle Challenges",
                 "materials": [
@@ -2344,13 +2804,18 @@
               }
             },
             {
-              "topicNumber": 93,
+              "topicNumber": "13",
               "topic": "Concept Sorting Cards",
               "objective": "Teach categorization and abstract reasoning",
               "explanation": "Develops reasoning and classification skills",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can add new concepts to increase difficulty",
+              "pillar": "Cognitive Skills",
+              "category": "Abstract Thinking Tasks",
+              "hashtags": [],
               "activity": {
                 "name": "Concept Sorting Cards",
                 "materials": [
@@ -2369,13 +2834,18 @@
               }
             },
             {
-              "topicNumber": 94,
+              "topicNumber": "14",
               "topic": "Pattern Inference Game",
               "objective": "Enhance abstract thinking and observation",
               "explanation": "Encourages analytical thinking",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Increase complexity gradually",
+              "pillar": "Cognitive Skills",
+              "category": "Abstract Thinking Tasks",
+              "hashtags": [],
               "activity": {
                 "name": "Pattern Inference Game",
                 "materials": [
@@ -2394,13 +2864,18 @@
               }
             },
             {
-              "topicNumber": 95,
+              "topicNumber": "15",
               "topic": "Story Logic Puzzle",
               "objective": "Develop reasoning and narrative understanding",
               "explanation": "Combines storytelling with reasoning",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can involve group discussion",
+              "pillar": "Cognitive Skills",
+              "category": "Abstract Thinking Tasks",
+              "hashtags": [],
               "activity": {
                 "name": "Story Logic Puzzle",
                 "materials": [
@@ -2420,13 +2895,18 @@
               }
             },
             {
-              "topicNumber": 96,
+              "topicNumber": "16",
               "topic": "Labyrinth Adventure",
               "objective": "Improve visual-spatial reasoning",
               "explanation": "Teaches pathfinding and strategic movement",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Vary labyrinth complexity",
+              "pillar": "Cognitive Skills",
+              "category": "Visual Puzzles & Mazes",
+              "hashtags": [],
               "activity": {
                 "name": "Labyrinth Adventure",
                 "materials": [
@@ -2445,13 +2925,18 @@
               }
             },
             {
-              "topicNumber": 97,
+              "topicNumber": "17",
               "topic": "Picture Maze Game",
               "objective": "Enhance observation and navigation skills",
               "explanation": "Improves attention to detail and planning",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use themed pictures to engage interest",
+              "pillar": "Cognitive Skills",
+              "category": "Visual Puzzles & Mazes",
+              "hashtags": [],
               "activity": {
                 "name": "Picture Maze Game",
                 "materials": [
@@ -2470,13 +2955,18 @@
               }
             },
             {
-              "topicNumber": 98,
+              "topicNumber": "18",
               "topic": "Hidden Path Puzzle",
               "objective": "Promote critical thinking and problem-solving",
               "explanation": "Builds analytical and observational skills",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Increase complexity gradually",
+              "pillar": "Cognitive Skills",
+              "category": "Visual Puzzles & Mazes",
+              "hashtags": [],
               "activity": {
                 "name": "Hidden Path Puzzle",
                 "materials": [
@@ -2495,13 +2985,18 @@
               }
             },
             {
-              "topicNumber": 99,
+              "topicNumber": "19",
               "topic": "Dot-to-Dot Maze",
               "objective": "Strengthen sequencing and attention",
               "explanation": "Reinforces order recognition and precision",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can create custom mazes",
+              "pillar": "Cognitive Skills",
+              "category": "Visual Puzzles & Mazes",
+              "hashtags": [],
               "activity": {
                 "name": "Dot-to-Dot Maze",
                 "materials": [
@@ -2521,13 +3016,18 @@
               }
             },
             {
-              "topicNumber": 100,
+              "topicNumber": "20",
               "topic": "Spot the Difference Maze",
               "objective": "Enhance observation and attention",
               "explanation": "Combines fun with cognitive skill building",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧑 Pre-Teen (9–12)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use increasing difficulty levels",
+              "pillar": "Cognitive Skills",
+              "category": "Visual Puzzles & Mazes",
+              "hashtags": [],
               "activity": {
                 "name": "Spot the Difference Maze",
                 "materials": [
@@ -2546,13 +3046,18 @@
               }
             },
             {
-              "topicNumber": 101,
+              "topicNumber": "1",
               "topic": "Ethical Dilemma Game",
               "objective": "Develop decision-making and ethical reasoning",
               "explanation": "Teaches weighing consequences and making informed choices",
-              "hashtags": [],
               "estimatedTime": "20–30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can be done individually or in groups",
+              "pillar": "Cognitive Skills",
+              "category": "Decision-Making Scenarios",
+              "hashtags": [],
               "activity": {
                 "name": "Ethical Dilemma Game",
                 "materials": [
@@ -2571,13 +3076,18 @@
               }
             },
             {
-              "topicNumber": 102,
+              "topicNumber": "2",
               "topic": "Leadership Choice Challenge",
               "objective": "Foster leadership and strategic thinking",
               "explanation": "Strengthens planning and leadership abilities",
-              "hashtags": [],
               "estimatedTime": "20 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can be paired with peer discussions",
+              "pillar": "Cognitive Skills",
+              "category": "Decision-Making Scenarios",
+              "hashtags": [],
               "activity": {
                 "name": "Leadership Choice Challenge",
                 "materials": [
@@ -2597,13 +3107,18 @@
               }
             },
             {
-              "topicNumber": 103,
+              "topicNumber": "3",
               "topic": "Budget Decision Simulation",
               "objective": "Teach financial planning and prioritization",
               "explanation": "Encourages practical money management and planning",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use realistic scenarios for engagement",
+              "pillar": "Cognitive Skills",
+              "category": "Decision-Making Scenarios",
+              "hashtags": [],
               "activity": {
                 "name": "Budget Decision Simulation",
                 "materials": [
@@ -2623,13 +3138,18 @@
               }
             },
             {
-              "topicNumber": 104,
+              "topicNumber": "4",
               "topic": "Team Strategy Scenario",
               "objective": "Promote collaboration and strategic thinking",
               "explanation": "Teaches collaborative decision-making",
-              "hashtags": [],
               "estimatedTime": "20–25 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can rotate team roles for variety",
+              "pillar": "Cognitive Skills",
+              "category": "Decision-Making Scenarios",
+              "hashtags": [],
               "activity": {
                 "name": "Team Strategy Scenario",
                 "materials": [
@@ -2649,13 +3169,18 @@
               }
             },
             {
-              "topicNumber": 105,
+              "topicNumber": "5",
               "topic": "Crisis Management Exercise",
               "objective": "Develop problem-solving under pressure",
               "explanation": "Prepares teens for handling real-life pressure situations",
-              "hashtags": [],
               "estimatedTime": "25–30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Hard",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Use realistic but safe scenarios",
+              "pillar": "Cognitive Skills",
+              "category": "Decision-Making Scenarios",
+              "hashtags": [],
               "activity": {
                 "name": "Crisis Management Exercise",
                 "materials": [
@@ -2675,13 +3200,18 @@
               }
             },
             {
-              "topicNumber": 106,
+              "topicNumber": "6",
               "topic": "Memory App Challenge",
               "objective": "Enhance working memory and attention",
               "explanation": "Engages tech-savvy teens in cognitive skill practice",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Easy",
+              "supervisionLevel": "Independent",
+              "additionalInfo": "Ensure balanced screen time",
+              "pillar": "Cognitive Skills",
+              "category": "Brain-Training Apps",
+              "hashtags": [],
               "activity": {
                 "name": "Memory App Challenge",
                 "materials": [
@@ -2700,13 +3230,18 @@
               }
             },
             {
-              "topicNumber": 107,
+              "topicNumber": "7",
               "topic": "Logic Puzzle App",
               "objective": "Improve reasoning and problem-solving",
               "explanation": "Strengthens analytical thinking",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Independent",
+              "additionalInfo": "Use app variety to maintain interest",
+              "pillar": "Cognitive Skills",
+              "category": "Brain-Training Apps",
+              "hashtags": [],
               "activity": {
                 "name": "Logic Puzzle App",
                 "materials": [
@@ -2725,13 +3260,18 @@
               }
             },
             {
-              "topicNumber": 108,
+              "topicNumber": "8",
               "topic": "Speed Recall Game",
               "objective": "Enhance rapid memory retrieval",
               "explanation": "Trains rapid recall under time pressure",
-              "hashtags": [],
               "estimatedTime": "10 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Independent",
+              "additionalInfo": "Can use digital or physical flashcards",
+              "pillar": "Cognitive Skills",
+              "category": "Brain-Training Apps",
+              "hashtags": [],
               "activity": {
                 "name": "Speed Recall Game",
                 "materials": [
@@ -2750,13 +3290,18 @@
               }
             },
             {
-              "topicNumber": 109,
+              "topicNumber": "9",
               "topic": "Pattern Recognition App",
               "objective": "Develop observation and analytical skills",
               "explanation": "Strengthens analytical and visual thinking",
-              "hashtags": [],
               "estimatedTime": "10–15 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Independent",
+              "additionalInfo": "Use app difficulty levels to increase challenge",
+              "pillar": "Cognitive Skills",
+              "category": "Brain-Training Apps",
+              "hashtags": [],
               "activity": {
                 "name": "Pattern Recognition App",
                 "materials": [
@@ -2775,13 +3320,18 @@
               }
             },
             {
-              "topicNumber": 110,
+              "topicNumber": "10",
               "topic": "Attention Focus Challenge",
               "objective": "Improve sustained attention and concentration",
               "explanation": "Trains sustained mental effort",
-              "hashtags": [],
               "estimatedTime": "15 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Independent",
+              "additionalInfo": "Encourage short, consistent practice sessions",
+              "pillar": "Cognitive Skills",
+              "category": "Brain-Training Apps",
+              "hashtags": [],
               "activity": {
                 "name": "Attention Focus Challenge",
                 "materials": [
@@ -2800,13 +3350,18 @@
               }
             },
             {
-              "topicNumber": 111,
+              "topicNumber": "11",
               "topic": "Structured Debate",
               "objective": "Develop argumentation and reasoning",
               "explanation": "Teaches structured reasoning and verbal communication",
-              "hashtags": [],
               "estimatedTime": "20–30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can be done in pairs or small teams",
+              "pillar": "Cognitive Skills",
+              "category": "Debate-Based Reasoning",
+              "hashtags": [],
               "activity": {
                 "name": "Structured Debate",
                 "materials": [
@@ -2826,13 +3381,18 @@
               }
             },
             {
-              "topicNumber": 112,
+              "topicNumber": "12",
               "topic": "Mock Court Challenge",
               "objective": "Promote logical reasoning and public speaking",
               "explanation": "Simulates real-world reasoning and teamwork",
-              "hashtags": [],
               "estimatedTime": "25–30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Encourage constructive feedback",
+              "pillar": "Cognitive Skills",
+              "category": "Debate-Based Reasoning",
+              "hashtags": [],
               "activity": {
                 "name": "Mock Court Challenge",
                 "materials": [
@@ -2852,13 +3412,18 @@
               }
             },
             {
-              "topicNumber": 113,
+              "topicNumber": "13",
               "topic": "Persuasive Argument Game",
               "objective": "Strengthen reasoning and persuasion skills",
               "explanation": "Builds ability to reason and convince others",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Rotate sides to understand multiple perspectives",
+              "pillar": "Cognitive Skills",
+              "category": "Debate-Based Reasoning",
+              "hashtags": [],
               "activity": {
                 "name": "Persuasive Argument Game",
                 "materials": [
@@ -2877,13 +3442,18 @@
               }
             },
             {
-              "topicNumber": 114,
+              "topicNumber": "14",
               "topic": "Scenario Discussion",
               "objective": "Enhance decision-making and critical thinking",
               "explanation": "Develops thoughtful discussion and evaluation",
-              "hashtags": [],
               "estimatedTime": "20 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can be done in small groups",
+              "pillar": "Cognitive Skills",
+              "category": "Debate-Based Reasoning",
+              "hashtags": [],
               "activity": {
                 "name": "Scenario Discussion",
                 "materials": [
@@ -2902,13 +3472,18 @@
               }
             },
             {
-              "topicNumber": 115,
+              "topicNumber": "15",
               "topic": "Pro-Con Analysis",
               "objective": "Teach structured reasoning and evaluation",
               "explanation": "Helps weigh options logically",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Encourage alternative viewpoints",
+              "pillar": "Cognitive Skills",
+              "category": "Debate-Based Reasoning",
+              "hashtags": [],
               "activity": {
                 "name": "Pro-Con Analysis",
                 "materials": [
@@ -2927,13 +3502,18 @@
               }
             },
             {
-              "topicNumber": 116,
+              "topicNumber": "16",
               "topic": "Sudoku Advanced",
               "objective": "Improve logic and pattern recognition",
               "explanation": "Strengthens logical thinking and problem-solving",
-              "hashtags": [],
               "estimatedTime": "15–20 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Independent",
+              "additionalInfo": "Use increasing difficulty levels",
+              "pillar": "Cognitive Skills",
+              "category": "Complex Puzzle Solving",
+              "hashtags": [],
               "activity": {
                 "name": "Sudoku Advanced",
                 "materials": [
@@ -2952,13 +3532,18 @@
               }
             },
             {
-              "topicNumber": 117,
+              "topicNumber": "17",
               "topic": "Escape Room Challenge",
               "objective": "Develop multi-step problem-solving",
               "explanation": "Teaches collaboration and sequential reasoning",
-              "hashtags": [],
               "estimatedTime": "30–40 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Hard",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can be done in physical or digital format",
+              "pillar": "Cognitive Skills",
+              "category": "Complex Puzzle Solving",
+              "hashtags": [],
               "activity": {
                 "name": "Escape Room Challenge",
                 "materials": [
@@ -2977,13 +3562,18 @@
               }
             },
             {
-              "topicNumber": 118,
+              "topicNumber": "18",
               "topic": "Logic Tower Puzzle",
               "objective": "Enhance strategic thinking and planning",
               "explanation": "Combines strategy and logical thinking",
-              "hashtags": [],
               "estimatedTime": "20–25 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Challenge with increasing levels",
+              "pillar": "Cognitive Skills",
+              "category": "Complex Puzzle Solving",
+              "hashtags": [],
               "activity": {
                 "name": "Logic Tower Puzzle",
                 "materials": [
@@ -3002,13 +3592,18 @@
               }
             },
             {
-              "topicNumber": 119,
+              "topicNumber": "19",
               "topic": "Strategic Maze",
               "objective": "Strengthen planning and reasoning",
               "explanation": "Enhances foresight and problem-solving",
-              "hashtags": [],
               "estimatedTime": "20 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Medium",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can vary difficulty and complexity",
+              "pillar": "Cognitive Skills",
+              "category": "Complex Puzzle Solving",
+              "hashtags": [],
               "activity": {
                 "name": "Strategic Maze",
                 "materials": [
@@ -3027,13 +3622,18 @@
               }
             },
             {
-              "topicNumber": 120,
+              "topicNumber": "20",
               "topic": "Multi-Step Mystery Game",
               "objective": "Promote complex reasoning and critical thinking",
               "explanation": "Builds analytical thinking and sequential problem-solving",
-              "hashtags": [],
               "estimatedTime": "25–30 min",
               "age": "🧑‍🎤 Teen (13–18)",
+              "difficultyLevel": "Hard",
+              "supervisionLevel": "Close Supervision",
+              "additionalInfo": "Can be done individually or in groups",
+              "pillar": "Cognitive Skills",
+              "category": "Complex Puzzle Solving",
+              "hashtags": [],
               "activity": {
                 "name": "Multi-Step Mystery Game",
                 "materials": [
@@ -3057,5 +3657,5 @@
     }
   ],
   "totalActivities": 120,
-  "lastUpdated": "2025-10-12T01:20:25.322245"
+  "lastUpdated": "2025-10-26T12:37:54.361063"
 }

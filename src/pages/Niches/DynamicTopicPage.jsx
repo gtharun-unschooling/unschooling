@@ -1,7 +1,7 @@
 import { useParams, Link, useLocation } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import config from '../../config/config';
-import MinimalBackButton from '../../components/ui/MinimalBackButton';
+import SimpleBackButton from '../../components/ui/SimpleBackButton';
 
 const DynamicTopicPage = () => {
   const { nicheName, topicSlug } = useParams();
@@ -46,45 +46,39 @@ const DynamicTopicPage = () => {
       });
   }, [nicheName, topicSlug]);
 
-  // ✅ Safety checks on route params
+  // ✅ Decode niche from slug
   const decodedNiche = (nicheName || '').replace(/-/g, ' ').toLowerCase();
-  const decodedTopic = (topicSlug || '').replace(/-/g, ' ').toLowerCase();
   
-  // Add more robust debugging
   console.log('🔍 URL Decoding Debug:');
   console.log('  Original nicheName:', nicheName);
   console.log('  Original topicSlug:', topicSlug);
   console.log('  Decoded niche:', decodedNiche);
-  console.log('  Decoded topic:', decodedTopic);
-  
-  console.log('🔍 DynamicTopicPage Debug Info:');
-  console.log('  nicheName:', nicheName);
-  console.log('  topicSlug:', topicSlug);
-  console.log('  decodedNiche:', decodedNiche);
-  console.log('  decodedTopic:', decodedTopic);
 
   // ✅ Preprocess dataset once
   const cleanData = Array.isArray(topicData)
     ? topicData.filter(item => item.Niche && item.Topic)
     : [];
 
-  // ✅ Try finding a match
-  console.log('🔍 Looking for topic match:');
+  // ✅ Try finding a match by comparing slugs (not decoded names)
+  console.log('🔍 Looking for topic match using slug comparison:');
   console.log('  Looking for niche:', decodedNiche);
-  console.log('  Looking for topic:', decodedTopic);
+  console.log('  Looking for topicSlug:', topicSlug);
   
   const foundTopic = cleanData.find(
     (item) => {
       const nicheMatch = item.Niche.toLowerCase() === decodedNiche;
-      const topicMatch = item.Topic.toLowerCase() === decodedTopic;
+      
+      // Create slug from topic name (same logic as CustomisedWeeklyPlan)
+      const itemTopicSlug = item.Topic
+        .toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^a-z0-9-]/g, '');
+      
+      const topicMatch = itemTopicSlug === topicSlug;
       
       // Add more detailed logging for debugging
-      console.log(`  Checking: "${item.Niche}" (${nicheMatch ? '✅' : '❌'}) "${item.Topic}" (${topicMatch ? '✅' : '❌'})`);
-      
-      // If exact match fails, try partial matching for better debugging
-      if (!nicheMatch || !topicMatch) {
-        console.log(`    Debug - Niche comparison: "${item.Niche.toLowerCase()}" vs "${decodedNiche}"`);
-        console.log(`    Debug - Topic comparison: "${item.Topic.toLowerCase()}" vs "${decodedTopic}"`);
+      if (nicheMatch) {
+        console.log(`  Checking: "${item.Topic}" → slug: "${itemTopicSlug}" (${topicMatch ? '✅' : '❌'})`);
       }
       
       return nicheMatch && topicMatch;
@@ -134,14 +128,16 @@ const DynamicTopicPage = () => {
   );
 
   if (!foundTopic) {
-    console.error('❌ Topic not found:', { decodedNiche, decodedTopic });
+    console.error('❌ Topic not found:', { decodedNiche, topicSlug });
     console.log('🔍 Available topics:', cleanData.map(t => ({ niche: t.Niche, topic: t.Topic })));
     
     // Try to find similar topics for better debugging
-    const similarTopics = cleanData.filter(item => 
-      item.Niche.toLowerCase().includes(decodedNiche) || 
-      item.Topic.toLowerCase().includes(decodedTopic)
-    );
+    const similarTopics = cleanData.filter(item => {
+      const itemSlug = item.Topic.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+      return item.Niche.toLowerCase().includes(decodedNiche) || 
+             itemSlug.includes(topicSlug) || 
+             topicSlug.includes(itemSlug);
+    });
     
     if (similarTopics.length > 0) {
       console.log('🔍 Similar topics found:', similarTopics.map(t => ({ niche: t.Niche, topic: t.Topic })));
@@ -159,10 +155,10 @@ const DynamicTopicPage = () => {
         <div>
           <div style={{ marginBottom: '1rem' }}>❌ Topic Not Found</div>
           <div style={{ fontSize: '0.9rem', color: '#666' }}>
-            Could not find topic "{decodedTopic}" in niche "{decodedNiche}"
+            Could not find topic "{topicSlug}" in niche "{decodedNiche}"
           </div>
           <div style={{ fontSize: '0.8rem', color: '#999', marginTop: '1rem' }}>
-            URL: /niche/{nicheSlug}/{topicSlug}
+            URL: /niche/{nicheName}/{topicSlug}
           </div>
           {similarTopics.length > 0 && (
             <div style={{ fontSize: '0.8rem', color: '#999', marginTop: '1rem' }}>
@@ -199,7 +195,7 @@ const DynamicTopicPage = () => {
   
     return (
       <div style={wrapper}>
-        <MinimalBackButton 
+        <SimpleBackButton 
           heroColors={{
             backgroundColor: '#e0f2fe',
             primaryColor: '#0c4a6e',

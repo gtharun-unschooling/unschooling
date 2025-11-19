@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../contexts/AuthContext';
 import { db } from '../../firebase';
 import { collection, query, where, orderBy, getDocs, doc, getDoc } from 'firebase/firestore';
-import MinimalBackButton from '../ui/MinimalBackButton';
+import SimpleBackButton from '../ui/SimpleBackButton';
 
 const BillingDashboard = () => {
   const { currentUser } = useAuth();
@@ -98,7 +98,7 @@ const BillingDashboard = () => {
       margin: '0 auto',
       padding: '2rem',
     }}>
-      <MinimalBackButton 
+      <SimpleBackButton 
         heroColors={{
           backgroundColor: '#f8fafc',
           primaryColor: '#3b82f6',

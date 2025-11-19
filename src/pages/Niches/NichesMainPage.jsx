@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import config from '../../config/config';
 import NicheIcon from '../../components/ui/NicheIcon';
-import MinimalBackButton from '../../components/ui/MinimalBackButton';
+import SimpleBackButton from '../../components/ui/SimpleBackButton';
 
 
 
@@ -57,7 +57,7 @@ const HeroSection = () => {
   
     return (
       <section style={sectionStyle}>
-        <MinimalBackButton 
+        <SimpleBackButton 
           heroColors={{
             backgroundColor: '#e0f2fe',
             primaryColor: '#0369a1',

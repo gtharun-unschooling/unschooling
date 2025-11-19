@@ -49,6 +49,7 @@ def run_reviewer_agent(state: Dict[str, Any]) -> Dict[str, Any]:
         
         return {
             "final_plan": optimized_plan,
+            "weekly_plan": weekly_plan,  # ✅ CRITICAL: Frontend expects this field!
             "review_notes": "Comprehensive plan review completed successfully",
             "plan_quality_assessment": plan_quality_assessment,
             "age_appropriateness": age_appropriateness,
@@ -59,6 +60,7 @@ def run_reviewer_agent(state: Dict[str, Any]) -> Dict[str, Any]:
             "parent_recommendations": parent_recommendations,
             "performance_tracking": performance_tracking,
             "profile": profile,
+            "matched_topics": state.get("matched_topics", []),  # ✅ Pass through matched_topics
             "status": "plan_reviewed"
         }
         
@@ -120,8 +122,20 @@ def _assess_age_appropriateness(weekly_plan: Dict[str, Any], profile: Dict[str, 
     appropriateness_score = 0.0
     issues = []
     
-    for week_key, week_data in weekly_plan.items():
-        for day_key, day_data in week_data.get("days", {}).items():
+    # ✅ Iterate in explicit order
+    week_order = ['week_1', 'week_2', 'week_3', 'week_4']
+    day_order = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+    
+    for week_key in week_order:
+        if week_key not in weekly_plan:
+            continue
+        week_data = weekly_plan[week_key]
+        
+        # ✅ Iterate days in explicit order
+        for day_key in day_order:
+            if day_key not in week_data.get("days", {}):
+                continue
+            day_data = week_data["days"][day_key]
             # Check session length appropriateness
             duration = day_data.get("duration", "30 min")
             if "min" in duration:
@@ -173,8 +187,19 @@ def _assess_learning_style_alignment(weekly_plan: Dict[str, Any], profile: Dict[
     matching_activities = 0
     total_activities = 0
     
-    for week_key, week_data in weekly_plan.items():
-        for day_key, day_data in week_data.get("days", {}).items():
+    # ✅ Iterate in explicit order
+    week_order = ['week_1', 'week_2', 'week_3', 'week_4']
+    day_order = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+    
+    for week_key in week_order:
+        if week_key not in weekly_plan:
+            continue
+        week_data = weekly_plan[week_key]
+        
+        for day_key in day_order:
+            if day_key not in week_data.get("days", {}):
+                continue
+            day_data = week_data["days"][day_key]
             total_activities += 1
             activity = day_data.get("activity", "").lower()
             
@@ -201,8 +226,19 @@ def _assess_engagement_potential(weekly_plan: Dict[str, Any], profile: Dict[str,
     engagement_score = 0.0
     engagement_factors = []
     
-    for week_key, week_data in weekly_plan.items():
-        for day_key, day_data in week_data.get("days", {}).items():
+    # ✅ Iterate in explicit order
+    week_order = ['week_1', 'week_2', 'week_3', 'week_4']
+    day_order = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+    
+    for week_key in week_order:
+        if week_key not in weekly_plan:
+            continue
+        week_data = weekly_plan[week_key]
+        
+        for day_key in day_order:
+            if day_key not in week_data.get("days", {}):
+                continue
+            day_data = week_data["days"][day_key]
             activity = day_data.get("activity", "").lower()
             topic = day_data.get("topic", "").lower()
             
@@ -245,9 +281,20 @@ def _identify_potential_issues(weekly_plan: Dict[str, Any], profile: Dict[str, A
     issues = []
     child_age = int(profile.get("age", 7))
     
+    # ✅ Iterate in explicit order
+    week_order = ['week_1', 'week_2', 'week_3', 'week_4']
+    day_order = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+    
     # Check for potential issues
-    for week_key, week_data in weekly_plan.items():
-        for day_key, day_data in week_data.get("days", {}).items():
+    for week_key in week_order:
+        if week_key not in weekly_plan:
+            continue
+        week_data = weekly_plan[week_key]
+        
+        for day_key in day_order:
+            if day_key not in week_data.get("days", {}):
+                continue
+            day_data = week_data["days"][day_key]
             activity = day_data.get("activity", "")
             duration = day_data.get("duration", "")
             
@@ -358,21 +405,29 @@ def _create_performance_tracking(profile: Dict[str, Any], weekly_plan: Dict[str,
 
 def _optimize_plan(weekly_plan: Dict[str, Any], profile: Dict[str, Any], suggestions: List[str]) -> Dict[str, Any]:
     """Optimize the learning plan based on review findings."""
-    # For now, return the original plan with optimization notes
-    # In a full implementation, this would make actual modifications
+    # ✅ CRITICAL: Preserve week order when optimizing
+    # Use OrderedDict or explicit ordering to maintain 1→2→3→4 sequence
     
-    optimized_plan = weekly_plan.copy()
+    from collections import OrderedDict
     
-    # Add optimization metadata
-    for week_key in optimized_plan:
-        if "optimization" not in optimized_plan[week_key]:
-            optimized_plan[week_key]["optimization"] = {
-                "reviewed": True,
-                "suggestions_applied": suggestions[:3],  # Apply top 3 suggestions
-                "quality_improvements": "Plan optimized based on comprehensive review"
-            }
+    # Create optimized plan in EXPLICIT order
+    optimized_plan = OrderedDict()
+    week_order = ['week_1', 'week_2', 'week_3', 'week_4']
     
-    return optimized_plan
+    for week_key in week_order:
+        if week_key in weekly_plan:
+            optimized_plan[week_key] = weekly_plan[week_key].copy()
+            
+            # Add optimization metadata
+            if "optimization" not in optimized_plan[week_key]:
+                optimized_plan[week_key]["optimization"] = {
+                    "reviewed": True,
+                    "suggestions_applied": suggestions[:3],
+                    "quality_improvements": "Plan optimized based on comprehensive review"
+                }
+    
+    # Convert back to regular dict (Python 3.7+ maintains insertion order)
+    return dict(optimized_plan)
 
 # Helper functions for recommendations and tracking
 def _get_daily_routine_recommendations(age: int) -> List[str]:

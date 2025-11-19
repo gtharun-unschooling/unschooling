@@ -10,16 +10,94 @@ import logging
 import os
 import json
 import time
+import re
 from typing import Dict, Any, List
 # MIGRATED TO GOOGLE AI STUDIO (Gemini API with instant access)
 import google.generativeai as genai
 import os
 from real_usage_tracker import real_usage_tracker
 from child_activity_tracker import child_activity_tracker
+# Firebase Admin for Firestore
+import firebase_admin
+from firebase_admin import credentials, firestore
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+# Initialize Firebase Admin (Single Source of Truth)
+try:
+    if not firebase_admin._apps:
+        cred = credentials.Certificate('google-sheets-service-account.json')
+        firebase_admin.initialize_app(cred)
+    db = firestore.client()
+    logger.info("✅ Firebase Admin initialized - Firestore connected")
+except Exception as e:
+    logger.error(f"❌ Firebase Admin initialization failed: {e}")
+    db = None
+
+def safe_json_parse(text: str, fallback: Any = None, max_retries: int = 3) -> Any:
+    """
+    Safely parse JSON with multiple fallback strategies.
+    
+    Args:
+        text: Raw text to parse as JSON
+        fallback: Fallback value if all parsing attempts fail
+        max_retries: Maximum number of retry attempts
+    
+    Returns:
+        Parsed JSON object or fallback value
+    """
+    if not text or not text.strip():
+        logger.warning("⚠️ Empty text provided for JSON parsing")
+        return fallback
+    
+    # Clean the text
+    cleaned_text = text.strip()
+    
+    # Remove markdown code blocks
+    if cleaned_text.startswith('```'):
+        cleaned_text = cleaned_text.strip('`').replace('json\n', '').replace('json', '').strip()
+    
+    # Try direct parsing first
+    try:
+        return json.loads(cleaned_text)
+    except json.JSONDecodeError as e:
+        logger.warning(f"⚠️ Direct JSON parsing failed: {e}")
+    
+    # Try to extract JSON from text (look for { ... } or [ ... ])
+    json_patterns = [
+        r'\{.*\}',  # Object
+        r'\[.*\]',  # Array
+    ]
+    
+    for pattern in json_patterns:
+        matches = re.findall(pattern, cleaned_text, re.DOTALL)
+        for match in matches:
+            try:
+                return json.loads(match)
+            except json.JSONDecodeError:
+                continue
+    
+    # Try to fix common JSON issues
+    fixed_text = cleaned_text
+    
+    # Fix missing commas between objects
+    fixed_text = re.sub(r'}\s*{', '},{', fixed_text)
+    
+    # Fix missing commas between array elements
+    fixed_text = re.sub(r']\s*\[', '],[', fixed_text)
+    
+    # Fix trailing commas
+    fixed_text = re.sub(r',\s*}', '}', fixed_text)
+    fixed_text = re.sub(r',\s*]', ']', fixed_text)
+    
+    try:
+        return json.loads(fixed_text)
+    except json.JSONDecodeError as e:
+        logger.error(f"❌ All JSON parsing attempts failed: {e}")
+        logger.error(f"Original text: {text[:200]}...")
+        return fallback
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -102,83 +180,74 @@ from agents.plan_generator import RealPlanGenerator
 
 # Agent System Implementation
 class ProfileAgent:
-    """Profile Agent - Intelligent Profile Understanding & Evolution Engine.
+    """Profile Agent - LLM-Powered Profile Enrichment Engine.
     
     Responsibilities:
-    1. Analyzes parent-created profiles deeply (not just extraction)
-    2. Makes intelligent assumptions based on provided information
-    3. Stores profile data in structured, retrievable format
-    4. Acts as central knowledge base about the child
-    5. Tracks monthly behavioral patterns and learning traits
-    6. Builds comprehensive developmental history over time
-    7. Provides enriched context to all downstream agents
+    1. Uses AI to enrich minimal parent input into comprehensive profile
+    2. Analyzes child characteristics based on age, interests, learning style
+    3. Generates personalized learning objectives and recommendations
+    4. Provides deep insights to all downstream agents
+    5. Creates detailed developmental and learning analysis
     """
     
     def run(self, profile: Dict[str, Any]) -> Dict[str, Any]:
-        """Analyze and understand the child's profile intelligently."""
+        """Use LLM to enrich and analyze the child's profile."""
         start_time = time.time()
-        logger.info("📋 Profile Agent: Intelligent Profile Analysis & Understanding")
+        logger.info("📋 Profile Agent: AI-Powered Profile Enrichment")
         
-        # Extract observable fields provided by user
-        child_name = profile.get("child_name", "Child")
-        child_age = profile.get("child_age", 7)
-        interests = profile.get("interests", [])
-        dislikes = profile.get("dislikes", [])
-        learning_style = profile.get("preferred_learning_style", "visual")
-        goals = profile.get("goals", [])
-        plan_type = profile.get("plan_type", "hybrid")
+        # Import the LLM-powered profile agent
+        from agents.profile_agent import run_profile_agent
+        logger.info("✅ Imported run_profile_agent")
         
-        logger.info(f"📊 Analyzing Profile for {child_name} (age {child_age})")
-        logger.info(f"   • Interests: {interests}")
-        logger.info(f"   • Dislikes: {dislikes}")
-        logger.info(f"   • Learning Style: {learning_style}")
-        logger.info(f"   • Goals: {goals}")
-        logger.info(f"   • Plan Type: {plan_type}")
+        # Prepare state for profile agent
+        state = {"profile": profile}
+        logger.info(f"✅ Prepared state: {list(state.keys())}")
         
-        # Analyze and understand the profile context
-        profile_insights = self._analyze_profile_context(
-            child_name, child_age, interests, dislikes, learning_style, goals, plan_type
-        )
+        # Get LLM model
+        llm_model = get_gemini_model()
+        logger.info(f"✅ Got LLM model: {type(llm_model)}")
         
-        logger.info(f"🧠 Profile Insights Generated:")
-        logger.info(f"   • Parent Intent: {profile_insights.get('parent_intent')}")
-        logger.info(f"   • Interest Pattern: {profile_insights.get('interest_pattern')}")
-        logger.info(f"   • Learning Focus: {profile_insights.get('learning_focus')}")
+        # Call LLM-powered profile agent
+        logger.info("🤖 Calling run_profile_agent with LLM model...")
+        profile_result = run_profile_agent(state, llm_model)
+        logger.info(f"✅ Profile agent returned: llm_used={profile_result.get('agent_timing', {}).get('llm_used')}")
         
-        # Create standardized profile with insights
+        # Extract enriched profile
+        enriched_profile = profile_result.get("enriched_profile", {})
+        agent_timing = profile_result.get("agent_timing", {})
+        
+        # Create standardized profile for downstream agents
         standardized_profile = {
-            "child_name": child_name,
-            "child_age": child_age,
-            "interests": interests,
-            "dislikes": dislikes,
-            "preferred_learning_style": learning_style,
-            "goals": goals,
-            "plan_type": plan_type,
-            "profile_insights": profile_insights,
+            "child_name": profile.get("child_name", "Child"),
+            "child_age": profile.get("child_age", 7),
+            "interests": profile.get("interests", []),
+            "dislikes": profile.get("dislikes", []),
+            "preferred_learning_style": profile.get("preferred_learning_style", "visual"),
+            "goals": profile.get("goals", []),
+            "enriched_profile": enriched_profile,  # AI-enriched data
             "agent_flow": "ProfileAgent",
-            "processing_timestamp": time.time(),
-            "monthly_evolution": {
-                "current_month": 1,
-                "observations": [],
-                "behavioral_patterns": [],
-                "historical_context": "Initial profile - no history yet"
-            }
+            "processing_timestamp": time.time()
         }
         
         result = {
             "profile": profile,
             "standardized_profile": standardized_profile,
+            "enriched_profile": enriched_profile,
             "agent_timing": {
                 "agent_name": "ProfileAgent",
                 "execution_time_seconds": time.time() - start_time,
-                "llm_used": False,
-                "tokens_used": 0,
-                "action": "profile_analyzed_and_stored",
+                "llm_used": agent_timing.get("llm_used", True),
+                "tokens_used": agent_timing.get("tokens_used", 0),
+                "llm_calls_count": agent_timing.get("llm_calls_count", 0),
+                "llm_prompt": agent_timing.get("llm_prompt", ""),
+                "llm_response": agent_timing.get("llm_response", ""),
+                "llm_calls_detail": agent_timing.get("llm_calls_detail", []),
+                "action": "profile_enriched_by_ai",
                 "insights_generated": True
             }
         }
         
-        logger.info(f"✅ Profile Agent completed analysis in {time.time() - start_time:.2f} seconds")
+        logger.info(f"✅ Profile Agent completed AI enrichment in {time.time() - start_time:.2f} seconds")
         return result
     
     def _analyze_profile_context(self, child_name, child_age, interests, dislikes, 
@@ -194,12 +263,8 @@ class ProfileAgent:
         elif any(interest.lower() in ["sports", "outdoor", "physical"] for interest in interests):
             interest_pattern = "physical-oriented"
         
-        # Infer parent intent from plan type and goals
-        parent_intent = "balanced development"
-        if plan_type == "hybrid":
-            parent_intent = "depth-focused mastery in specific areas"
-        elif plan_type == "holistic":
-            parent_intent = "well-rounded development across all domains"
+        # Simplified: Always holistic intent
+        parent_intent = "well-rounded development across all domains"
         
         # Determine learning focus
         learning_focus = "experiential"
@@ -301,36 +366,32 @@ class AnalysisAgent:
         dislikes = standardized_profile.get("dislikes", [])
         learning_style = standardized_profile.get("preferred_learning_style", "visual")
         goals = standardized_profile.get("goals", [])
-        plan_type = standardized_profile.get("plan_type", "hybrid")
+        # SIMPLIFIED: Always holistic plan
+        plan_type = "holistic"
         
         # Determine month type
         current_month = monthly_evolution.get("current_month", 1)
         month_type = "introduction" if current_month == 1 else "continuation"
         
-        logger.info(f"📅 Planning Month {current_month} ({month_type}) for {child_name} (age {child_age})")
+        logger.info(f"📅 Planning Month {current_month} for {child_name} (age {child_age})")
         
         # Get age group for theme filtering
         age_group = self._get_age_group(child_age)
         
-        # Filter themes by age, interests, and plan type
-        matching_themes = self._filter_themes(age_group, interests, plan_type)
+        # Filter themes by age and interests only
+        matching_themes = self._filter_themes(age_group, interests, "holistic")
         
-        logger.info(f"📚 Found {len(matching_themes)} matching themes for age {age_group}, plan type: {plan_type}")
+        logger.info(f"📚 Found {len(matching_themes)} holistic themes")
         
-        # Check if we have themes
-        if len(self.themes) == 0:
-            logger.error("❌ CRITICAL: No themes loaded in Analysis Agent! Using fallback.")
+        # Ensure we have themes
         if len(matching_themes) == 0:
-            logger.warning(f"⚠️ No themes matched for age {age_group}, plan {plan_type}. Relaxing filters...")
-            # Fallback: Just match age group and plan type, ignore interests
+            logger.warning(f"⚠️ No themes found, using all holistic themes for age group")
             matching_themes = [t for t in self.themes 
-                             if t.get('ageGroup') == age_group and t.get('planType', '').lower() == plan_type.lower()]
-            logger.info(f"📚 After relaxing filters: {len(matching_themes)} themes")
+                             if t.get('ageGroup') == age_group and t.get('planType', '').lower() == 'holistic'][:15]
         
-        # Use LLM to select best theme(s) for this month
+        # Use LLM to select 3 themes
         selected_themes, monthly_strategy = self._llm_select_themes_and_strategy(
-            matching_themes, child_name, child_age, interests, dislikes, 
-            learning_style, goals, plan_type, month_type, profile_insights
+            matching_themes, child_name, child_age, interests, learning_style
         )
         
         logger.info(f"✅ Selected {len(selected_themes)} theme(s): {[t['themeName'] for t in selected_themes]}")
@@ -375,52 +436,31 @@ class AnalysisAgent:
             return "13–18 yrs"
     
     def _filter_themes(self, age_group: str, interests: List[str], plan_type: str) -> List[Dict]:
-        """Filter themes by age group, interests, and plan type."""
+        """Filter themes by age group and interests (holistic only)."""
         
-        logger.info(f"🔍 Filtering themes: age={age_group}, plan={plan_type}, interests={interests}")
-        logger.info(f"   Total themes available: {len(self.themes)}")
+        logger.info(f"🔍 Filtering holistic themes: age={age_group}, interests={interests[:3]}")
         
-        # Step 1: Filter by age and plan type (mandatory)
-        age_plan_matched = []
+        # Step 1: Filter by age and holistic plan type
+        age_matched = []
         for theme in self.themes:
-            if theme.get("ageGroup") == age_group and theme.get("planType", "").lower() == plan_type.lower():
-                age_plan_matched.append(theme)
+            if theme.get("ageGroup") == age_group and theme.get("planType", "").lower() == "holistic":
+                age_matched.append(theme)
         
-        logger.info(f"   After age+plan filter: {len(age_plan_matched)} themes")
+        logger.info(f"   Found {len(age_matched)} holistic themes for age group")
         
-        # Step 2: Try to match interests (optional - broader matching)
-        if interests and age_plan_matched:
+        # Step 2: Match by interests (optional)
+        if interests and age_matched:
             interest_matched = []
-            
-            # Create broader keyword list from interests
-            interest_keywords = []
-            for interest in interests:
-                interest_lower = interest.lower()
-                interest_keywords.append(interest_lower)
-                # Add related keywords
-                if interest_lower in ["science", "technology", "tech"]:
-                    interest_keywords.extend(["stem", "science", "technology", "tech", "innovation", "experiment"])
-                elif interest_lower in ["art", "drawing", "painting"]:
-                    interest_keywords.extend(["art", "creative", "creativity", "visual", "drawing", "painting"])
-                elif interest_lower in ["music", "dancing", "dance"]:
-                    interest_keywords.extend(["music", "rhythm", "dance", "movement", "performing"])
-            
-            interest_keywords = list(set(interest_keywords))  # Remove duplicates
-            logger.info(f"   Interest keywords: {interest_keywords[:10]}")
-            
-            for theme in age_plan_matched:
-                theme_text = f"{theme.get('themeName', '')} {theme.get('shortDescription', '')} {theme.get('coreFocusArea', '')}".lower()
-                
-                # Check if any keyword matches
-                if any(keyword in theme_text for keyword in interest_keywords):
+            for theme in age_matched:
+                theme_text = f"{theme.get('themeName', '')} {theme.get('shortDescription', '')}".lower()
+                # Simple interest matching
+                if any(interest.lower() in theme_text for interest in interests[:3]):
                     interest_matched.append(theme)
             
-            logger.info(f"   After interest filter: {len(interest_matched)} themes")
-            
-            # If we got matches, use them; otherwise use all age+plan matches
-            final_matched = interest_matched if interest_matched else age_plan_matched
+            logger.info(f"   Interest-matched: {len(interest_matched)} themes")
+            final_matched = interest_matched if interest_matched else age_matched
         else:
-            final_matched = age_plan_matched
+            final_matched = age_matched
         
         logger.info(f"✅ Final matched themes: {len(final_matched)}")
         
@@ -431,69 +471,30 @@ class AnalysisAgent:
             logger.warning(f"⚠️ No themes matched! Using fallback (first 10)")
             return self.themes[:10]
     
-    def _llm_select_themes_and_strategy(self, matching_themes, child_name, child_age, interests,
-                                         dislikes, learning_style, goals, plan_type, month_type, profile_insights):
-        """Use LLM to select themes and create monthly strategy."""
+    def _llm_select_themes_and_strategy(self, matching_themes, child_name, child_age, interests, learning_style):
+        """Use LLM to select 6-7 holistic themes (gives Schedule Agent more options)."""
         
-        # Prepare theme list for LLM
+        # Prepare theme list for LLM (limit to 25 for more variety)
         theme_list = []
-        for i, theme in enumerate(matching_themes[:20], 1):  # Limit to 20 for LLM
+        for i, theme in enumerate(matching_themes[:25], 1):
             theme_list.append({
                 "id": i,
                 "name": theme.get("themeName"),
-                "description": theme.get("shortDescription"),
-                "focus": theme.get("coreFocusArea")
+                "description": theme.get("shortDescription")
             })
         
-        theme_count = 1 if plan_type.lower() == "hybrid" else 2
-        
-        prompt = f"""You are an educational strategist. Create a monthly learning plan.
+        # SIMPLIFIED PROMPT: Clear and concise
+        prompt = f"""Select 6-7 learning themes for {child_name} (age {child_age}).
 
-CHILD PROFILE:
-- Name: {child_name}
-- Age: {child_age} years old
-- Interests: {', '.join(interests) if interests else 'General'}
-- Dislikes: {', '.join(dislikes) if dislikes else 'None'}
-- Learning Style: {learning_style}
-- Goals: {', '.join(goals) if goals else 'Holistic development'}
-- Plan Type: {plan_type}
-- Month Type: {month_type}
-- Profile Insights: {profile_insights.get('context_notes', '')}
+Interests: {', '.join(interests[:3]) if interests else 'General learning'}
 
-AVAILABLE THEMES ({len(theme_list)}):
+THEMES:
 {json.dumps(theme_list, indent=2)}
 
-TASK: Select {theme_count} theme(s) and create monthly strategy.
-
-For HYBRID plan: Select 1 theme for deep mastery
-For HOLISTIC plan: Select 2-3 themes for balanced development
+Choose 6-7 themes that match the child's interests. This gives Schedule Agent more options to create the best weekly plan.
 
 Return JSON:
-{{
-  "selected_theme_ids": [1 or 2-3 IDs],
-  "monthly_agenda": {{
-    "primary_goal": "main goal for this month",
-    "thought_process": "why these themes for this child",
-    "learning_narrative": "story of this month's journey"
-  }},
-  "weekly_progression": {{
-    "week_1": "Foundation & Discovery - ...",
-    "week_2": "Exploration & Research - ...",
-    "week_3": "Application & Practice - ...",
-    "week_4": "Project & Mastery - ..."
-  }},
-  "guidance_for_match_agent": {{
-    "topic_criteria": "what topics to look for",
-    "skill_focus": ["skill1", "skill2", "skill3"],
-    "avoid_topics": ["based on dislikes"]
-  }},
-  "guidance_for_schedule_agent": {{
-    "structure_type": "hybrid_deep_dive or holistic_varied",
-    "daily_balance": "how to balance activities"
-  }}
-}}
-
-Return ONLY valid JSON, no markdown."""
+{{"selected_theme_ids": [1, 5, 9, 12, 15, 18, 22]}}"""
         
         try:
             # Check if we have themes to select from
@@ -513,10 +514,16 @@ Return ONLY valid JSON, no markdown."""
                 if response_text.startswith('```'):
                     response_text = response_text.strip('`').replace('json\n', '').replace('json', '').strip()
                 
-                strategy = json.loads(response_text)
+                strategy = safe_json_parse(response_text, {"selected_theme_ids": []})
                 
                 # Map selected IDs to actual themes
-                selected_ids = strategy.get("selected_theme_ids", [1])
+                selected_ids = strategy.get("selected_theme_ids", [])[:7]  # Up to 7 themes
+                
+                # Ensure we have at least 6 themes
+                if len(selected_ids) < 6:
+                    while len(selected_ids) < 7 and len(selected_ids) < len(matching_themes):
+                        selected_ids.append(len(selected_ids) + 1)
+                
                 selected_themes = []
                 for theme_id in selected_ids:
                     if 1 <= theme_id <= len(theme_list):
@@ -526,13 +533,20 @@ Return ONLY valid JSON, no markdown."""
                 strategy["tokens_used"] = len(prompt.split()) + len(response_text.split())
                 strategy["llm_prompt"] = prompt
                 
-                logger.info(f"✅ LLM selected {len(selected_themes)} theme(s): {[t.get('themeName') for t in selected_themes]}")
+                logger.info(f"✅ LLM selected {len(selected_themes)} themes: {[t.get('themeName') for t in selected_themes]}")
+                
+                # Add simplified strategy data
+                strategy["monthly_agenda"] = {"primary_goal": "Holistic development", "learning_focus": "Multi-domain skills"}
+                strategy["weekly_progression"] = {"week_1": "Discovery", "week_2": "Exploration", "week_3": "Practice", "week_4": "Project"}
+                strategy["guidance_for_match_agent"] = {"skill_focus": ["cognitive", "creative", "social", "physical", "real-world"]}
+                strategy["guidance_for_schedule_agent"] = {"structure_type": "holistic_varied", "daily_balance": "Mix of skills daily"}
                 
                 return selected_themes, strategy
             else:
-                logger.warning("⚠️ Vertex AI not available, using fallback")
-                # Fallback: select first theme
-                return [matching_themes[0]] if matching_themes else [], {
+                logger.warning("⚠️ LLM not available, using fallback")
+                # Fallback: Always select first 6-7 themes
+                fallback_themes = matching_themes[:7] if len(matching_themes) >= 7 else matching_themes
+                return fallback_themes, {
                     "monthly_agenda": {
                         "primary_goal": f"Explore {matching_themes[0].get('themeName') if matching_themes else 'general topics'}",
                         "thought_process": "Selected based on interests",
@@ -550,7 +564,7 @@ Return ONLY valid JSON, no markdown."""
                         "avoid_topics": dislikes
                     },
                     "guidance_for_schedule_agent": {
-                        "structure_type": plan_type,
+                        "structure_type": "holistic",
                         "daily_balance": "Mix hands-on and observation activities"
                     },
                     "tokens_used": 0,
@@ -564,11 +578,13 @@ Return ONLY valid JSON, no markdown."""
             import traceback
             logger.error(f"   Stack trace: {traceback.format_exc()}")
             
-            return [matching_themes[0]] if matching_themes else [], {
+            # Error fallback: Return first 7 themes
+            error_fallback_themes = matching_themes[:7] if len(matching_themes) >= 7 else matching_themes
+            return error_fallback_themes, {
                 "monthly_agenda": {"primary_goal": "General learning", "thought_process": "Fallback", "learning_narrative": "Discovery"},
                 "weekly_progression": {"week_1": "Week 1", "week_2": "Week 2", "week_3": "Week 3", "week_4": "Week 4"},
                 "guidance_for_match_agent": {"topic_criteria": "General", "skill_focus": [], "avoid_topics": []},
-                "guidance_for_schedule_agent": {"structure_type": plan_type, "daily_balance": "Balanced"},
+                "guidance_for_schedule_agent": {"structure_type": "holistic", "daily_balance": "Balanced"},
                 "tokens_used": 0,
                 "llm_prompt": None
             }
@@ -666,12 +682,21 @@ class MatchAgent:
         logger.info(f"📚 Selected themes: {[t.get('themeName', 'Unknown') for t in selected_themes]}")
         logger.info(f"🎯 Topic criteria: {guidance.get('topic_criteria', 'General')}")
         
-        # Step 1: Pre-filter NICHE topics by age
+        # Step 1: Pre-filter NICHE topics by age (STRICT: only ±1 year)
         age_appropriate_niche_topics = []
         for topic in self.topics_data:
             topic_age = topic.get("Age", 5)
-            if abs(topic_age - child_age) <= 3:  # ±3 years
+            if abs(topic_age - child_age) <= 1:  # ±1 year ONLY (age 6-8 for 7-year-old)
                 age_appropriate_niche_topics.append(topic)
+        
+        # If NO age-appropriate niche topics, try ±2 years as fallback
+        if len(age_appropriate_niche_topics) < 10:
+            logger.warning(f"⚠️ Only {len(age_appropriate_niche_topics)} niche topics for exact age match. Expanding to ±2 years...")
+            age_appropriate_niche_topics = []
+            for topic in self.topics_data:
+                topic_age = topic.get("Age", 5)
+                if abs(topic_age - child_age) <= 2:  # ±2 years as fallback
+                    age_appropriate_niche_topics.append(topic)
         
         logger.info(f"📊 Age-appropriate niche topics: {len(age_appropriate_niche_topics)}")
         
@@ -815,19 +840,19 @@ CHILD PROFILE:
 AVAILABLE NICHE TOPICS ({len(topic_summaries)}):
 {json.dumps(topic_summaries, indent=2)}
 
-REQUIREMENTS:
+CRITICAL REQUIREMENTS:
 1. Select EXACTLY {count} topics
-2. BALANCE across ALL interests ({', '.join(interests) if interests else 'general topics'})
-   - Distribute evenly: ~{count // max(1, len(interests))} topics per interest
-3. Focus on interest-driven learning (AI, Finance, Entrepreneurship, etc.)
-4. Age-appropriate for {child_age} years old
-5. Consider {learning_style} learning style
-6. Mix difficulty levels within interests
+2. **AGE FILTERING IS CRITICAL**: ONLY select topics aged {child_age-1} to {child_age+1} (ages {child_age-1}-{child_age+1})
+   - REJECT any topic aged {child_age-2} or younger (too simple!)
+   - REJECT any topic aged {child_age+2} or older (too complex!)
+3. BALANCE across child's interests: {', '.join(interests) if interests else 'general topics'}
+4. Consider {learning_style} learning style
+5. Prefer topics from diverse niches
 
 Return ONLY a JSON array of topic IDs (numbers 1-{len(topic_summaries)}):
 {{"selected_topic_ids": [1, 5, 12, ...]}}
 
-IMPORTANT: Select {count} topics that match the child's INTERESTS!"""
+IMPORTANT: Age filtering is MANDATORY - DO NOT select age {child_age-2} or younger topics!"""
         
         try:
             if gemini_api_available:
@@ -850,17 +875,31 @@ IMPORTANT: Select {count} topics that match the child's INTERESTS!"""
                     logger.error(f"❌ LLM returned empty response!")
                     raise ValueError("Empty LLM response")
                 
-                llm_result = json.loads(response_text)
+                llm_result = safe_json_parse(response_text, {"selected_topic_ids": []})
                 selected_ids = llm_result.get('selected_topic_ids', [])
                 
-                # Map IDs back to actual topics
+                # Map IDs back to actual topics WITH AGE VALIDATION
                 matched_topics = []
-                for topic_id in selected_ids[:count]:
+                rejected_topics = []
+                for topic_id in selected_ids:
                     if 1 <= topic_id <= len(topic_summaries):
                         original_topic = topics_pool[topic_id - 1]
-                        matched_topics.append(original_topic)
+                        topic_age = original_topic.get("Age", 5)
+                        
+                        # STRICT AGE VALIDATION: Only ±1 year
+                        if abs(topic_age - child_age) <= 1:
+                            matched_topics.append(original_topic)
+                        else:
+                            rejected_topics.append({
+                                'topic': original_topic.get('Topic', 'Unknown')[:30],
+                                'age': topic_age,
+                                'reason': f'Age {topic_age} not suitable for {child_age}-year-old'
+                            })
                 
-                logger.info(f"✅ LLM selected {len(matched_topics)} niche topics")
+                if rejected_topics:
+                    logger.warning(f"⚠️ Rejected {len(rejected_topics)} age-inappropriate topics: {rejected_topics[:3]}")
+                
+                logger.info(f"✅ LLM selected {len(matched_topics)} age-appropriate niche topics (rejected {len(rejected_topics)})")
                 
                 # Log balance
                 niche_counts = {}
@@ -938,7 +977,7 @@ CRITICAL: Select activities from MULTIPLE DIFFERENT pillars! NO MORE than 3 from
                 if response_text.startswith('```'):
                     response_text = response_text.strip('`').replace('json\n', '').replace('json', '').strip()
                 
-                llm_result = json.loads(response_text)
+                llm_result = safe_json_parse(response_text, {"selected_topic_ids": []})
                 selected_ids = llm_result.get('selected_activity_ids', [])
                 
                 # Map IDs back to actual activities
@@ -1080,7 +1119,7 @@ class ScheduleAgent:
         monthly_plan_structure = match_result.get("monthly_plan_structure", {})
         candidate_topics = match_result.get("matched_topics", [])  # 50 candidates
         
-        plan_type = standardized_profile.get("plan_type", "hybrid")
+        # SIMPLIFIED: Always holistic
         child_name = standardized_profile.get("child_name", "Child")
         child_age = standardized_profile.get("child_age", 7)
         learning_style = standardized_profile.get("preferred_learning_style", "visual")
@@ -1088,10 +1127,11 @@ class ScheduleAgent:
         
         # Get monthly strategy guidance
         selected_themes = monthly_plan_structure.get("selected_themes", [])
-        weekly_progression = monthly_plan_structure.get("weekly_progression", {})
-        schedule_guidance = monthly_plan_structure.get("guidance_for_schedule_agent", {})
+        weekly_progression = monthly_plan_structure.get("weekly_progression", {
+            "week_1": "Discovery", "week_2": "Exploration", "week_3": "Practice", "week_4": "Project"
+        })
         
-        logger.info(f"🎯 Plan Type: {plan_type}")
+        logger.info(f"🎯 Holistic plan for {child_name}")
         logger.info(f"📊 Candidate topics received: {len(candidate_topics)}")
         logger.info(f"📚 Themes: {[t.get('themeName', 'Unknown') for t in selected_themes]}")
         logger.info(f"📅 Target: Select 28 final topics from {len(candidate_topics)} candidates")
@@ -1103,13 +1143,17 @@ class ScheduleAgent:
         # Step 1: Use LLM to select 28 final topics from 50 candidates organized by week
         final_topics_by_week = self._llm_select_final_28_topics(
             candidate_topics, child_name, child_age, interests, learning_style,
-            weekly_progression, selected_themes, plan_type
+            weekly_progression, selected_themes, "holistic"
         )
         
         logger.info(f"📅 LLM organized {sum(len(topics) for topics in final_topics_by_week.values())} topics into themed weeks")
         
-        # Step 2: Generate weekly plan using the themed topics
-        weekly_plan = self._create_themed_weekly_plan(final_topics_by_week, profile)
+        # Step 2: Generate weekly plan with theme names
+        weekly_plan = self._create_themed_weekly_plan(
+            final_topics_by_week, 
+            profile, 
+            selected_themes=selected_themes
+        )
         
         # Get all final selected topics (flatten from weeks)
         final_matched_topics = []
@@ -1122,7 +1166,7 @@ class ScheduleAgent:
         learning_objectives = self._llm_generate_learning_objectives(child_name, child_age, interests, learning_style, final_matched_topics)
         
         # Use LLM to generate recommended activities (NO hardcoded)
-        recommended_activities = self._llm_generate_recommended_activities(child_name, child_age, interests, learning_style, plan_type)
+        recommended_activities = self._llm_generate_recommended_activities(child_name, child_age, interests, learning_style, "holistic")
         
         # Use LLM to generate progress tracking approach (NO hardcoded)
         progress_tracking = self._llm_generate_progress_tracking(child_name, child_age, learning_style)
@@ -1252,7 +1296,7 @@ Return ONLY valid JSON, no markdown."""
                 if response_text.startswith('```'):
                     response_text = response_text.strip('`').replace('json\n', '').replace('json', '').strip()
                 
-                llm_result = json.loads(response_text)
+                llm_result = safe_json_parse(response_text, {"selected_topic_ids": []})
                 
                 # Map IDs back to actual topics
                 for week_num in range(1, 5):
@@ -1387,12 +1431,12 @@ Select 3 activities that FIT this theme. Return: {{"selected_activity_ids": [1, 
                     # Select niche topics
                     response1 = model.generate_content(niche_prompt)
                     text1 = response1.text.strip()
-                    niche_ids = json.loads(text1).get('selected_topic_ids', [])
+                    niche_ids = safe_json_parse(text1, {}).get('selected_topic_ids', [])
                     
                     # Select EG topics
                     response2 = model.generate_content(eg_prompt)
                     text2 = response2.text.strip()
-                    eg_ids = json.loads(text2).get('selected_activity_ids', [])
+                    eg_ids = safe_json_parse(text2, {}).get('selected_activity_ids', [])
                     
                     # Combine: 4 niche + 3 EG = 7 total
                     for niche_id in niche_ids[:4]:
@@ -1420,20 +1464,39 @@ Select 3 activities that FIT this theme. Return: {{"selected_activity_ids": [1, 
         
         return final_topics_by_week
     
-    def _create_themed_weekly_plan(self, topics_by_week: Dict[str, List[Dict]], profile: Dict) -> Dict[str, Any]:
-        """Create the weekly plan structure from themed topic selections."""
+    def _create_themed_weekly_plan(self, topics_by_week: Dict[str, List[Dict]], profile: Dict, 
+                                   selected_themes: List[Dict] = None) -> Dict[str, Any]:
+        """Create the weekly plan structure with creative week names (holistic)."""
         
         weekly_plan = {}
         day_names = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
         
-        for week_key, week_topics in topics_by_week.items():
-            weekly_plan[week_key] = {}
+        # Generate week names (always holistic approach)
+        week_names = self._generate_week_names(topics_by_week, selected_themes, "holistic", profile)
+        
+        # ✅ CRITICAL: Iterate in EXPLICIT ORDER to ensure weeks are 1→2→3→4
+        week_order = ["week_1", "week_2", "week_3", "week_4"]
+        
+        for week_key in week_order:
+            if week_key not in topics_by_week:
+                logger.warning(f"⚠️ {week_key} not found in topics_by_week, skipping")
+                continue
             
-            # Assign topics to days
+            week_topics = topics_by_week[week_key]
+            week_info = week_names.get(week_key, {})
+            
+            weekly_plan[week_key] = {
+                "name": week_info.get("name", f"Week {week_key.split('_')[1]}"),
+                "theme": week_info.get("theme", "Learning"),
+                "focus": week_info.get("focus", "Exploration and growth"),
+                "days": {}
+            }
+            
+            # ✅ CRITICAL: Assign topics to days in EXPLICIT ORDER (Mon→Sun)
             for day_idx, day_name in enumerate(day_names):
                 if day_idx < len(week_topics):
                     topic = week_topics[day_idx]
-                    weekly_plan[week_key][day_name] = {
+                    weekly_plan[week_key]["days"][day_name] = {
                         "activity": topic.get("Activity 1", f"Explore {topic.get('Topic', 'Learning')}"),
                         "duration": topic.get("Estimated Time", "30 minutes"),
                         "topic": topic.get("Topic", "Learning"),
@@ -1445,6 +1508,149 @@ Select 3 activities that FIT this theme. Return: {{"selected_activity_ids": [1, 
                     }
         
         return weekly_plan
+    
+    def _generate_week_names(self, topics_by_week: Dict[str, List[Dict]], 
+                            selected_themes: List[Dict], plan_type: str, profile: Dict) -> Dict[str, Dict]:
+        """Generate creative week names using LLM (holistic approach)."""
+        
+        week_names = {}
+        child_name = profile.get("child_name", "Child")
+        
+        # SIMPLIFIED: Always use holistic approach - generate creative names based on week topics
+        # Weeks 1-3: LLM generates names based on topics
+        for week_num in [1, 2, 3]:
+            week_key = f"week_{week_num}"
+            if week_key in topics_by_week:
+                week_topics = topics_by_week[week_key]
+                week_names[week_key] = self._llm_generate_single_week_name(week_topics, week_num, child_name, selected_themes)
+        
+        # Week 4: Project week with creative name
+        if "week_4" in topics_by_week:
+            week_names["week_4"] = self._generate_project_week_name(topics_by_week, child_name, selected_themes[:3] if selected_themes and len(selected_themes) >= 3 else selected_themes)
+        
+        return week_names
+    
+    def _generate_project_week_name(self, topics_by_week: Dict, child_name: str, themes: List[Dict]) -> Dict[str, str]:
+        """Generate creative achievement name for Week 4."""
+        
+        creative_names = [
+            f"{child_name}'s Grand Showcase",
+            f"{child_name}'s Learning Journey",
+            "Skills Mastery Week",
+            "Achievement Celebration",
+            "My Creative Project",
+            "Grand Learning Showcase",
+            "Skills & Talents Week"
+        ]
+        
+        # Use LLM to generate personalized project week name
+        if gemini_api_available and themes:
+            try:
+                theme_names = [t.get("themeName", "") for t in themes[:3]]
+                prompt = f"""Generate a creative, inspiring name for the final project week of a learning plan.
+
+CONTEXT:
+- Child: {child_name}
+- Previous weeks covered: {', '.join(theme_names)}
+- This week combines all previous learning into a final project
+
+Generate a name that:
+- Shows achievement and accomplishment
+- Is inspiring and motivational
+- Reflects what the child will create/showcase
+- Is 2-5 words maximum
+
+Return JSON:
+{{
+  "name": "creative week name",
+  "theme": "Project & Creation",
+  "focus": "brief description of what child will achieve"
+}}"""
+                
+                model = get_gemini_model()
+                response = model.generate_content(prompt)
+                response_text = response.text.strip()
+                
+                if response_text.startswith('```'):
+                    response_text = response_text.strip('`').replace('json\n', '').replace('json', '').strip()
+                
+                result = safe_json_parse(response_text, {})
+                
+                # CRITICAL: Ensure result is a dict, not a list
+                if isinstance(result, list):
+                    logger.warning(f"⚠️ LLM returned list instead of dict for project week")
+                    result = {"name": f"{child_name}'s Grand Showcase", "theme": "Project & Mastery", "focus": "Final showcase"}
+                
+                return result
+            except Exception as e:
+                logger.error(f"❌ LLM project week name generation failed: {e}")
+        
+        # Fallback: Use random creative name
+        import random
+        return {
+            "name": random.choice(creative_names),
+            "theme": "Project & Mastery",
+            "focus": "Showcase learning through creative project"
+        }
+    
+    def _llm_generate_holistic_week_names(self, topics_by_week: Dict[str, List[Dict]], child_name: str) -> Dict[str, Dict]:
+        """Use LLM to generate week names for HOLISTIC plans based on topic connections."""
+        
+        week_names = {}
+        
+        for week_key, week_topics in topics_by_week.items():
+            if week_key == "week_4":
+                # Week 4 is always project week
+                week_names[week_key] = self._generate_project_week_name([], child_name, "holistic")
+            else:
+                # Generate name based on topic connections
+                week_names[week_key] = self._llm_generate_single_week_name(week_topics, child_name, week_key)
+        
+        return week_names
+    
+    def _llm_generate_single_week_name(self, week_topics: List[Dict], week_num: int, child_name: str, selected_themes: List[Dict]) -> Dict[str, str]:
+        """Generate creative week name using LLM (simplified)."""
+        
+        if not gemini_api_available or not week_topics:
+            return {"name": f"Week {week_num}", "theme": "Learning", "focus": "Skill development"}
+        
+        try:
+            # Get topic names (first 5 for brevity)
+            topic_names = [t.get("Topic", "")[:30] for t in week_topics[:5]]
+            
+            # SIMPLIFIED PROMPT
+            prompt = f"""Create a fun week name for {child_name}.
+
+Topics: {', '.join(topic_names)}
+
+Make it creative (2-3 words). Examples: "Ocean Explorers", "Space Adventures"
+
+Return JSON:
+{{"name": "Week Name", "theme": "Theme", "focus": "Focus"}}"""
+            
+            model = get_gemini_model()
+            response = model.generate_content(prompt)
+            response_text = response.text.strip()
+            
+            if response_text.startswith('```'):
+                response_text = response_text.strip('`').replace('json\n', '').replace('json', '').strip()
+            
+            result = safe_json_parse(response_text, {})
+            
+            # CRITICAL: Ensure result is a dict, not a list
+            if isinstance(result, list):
+                logger.warning(f"⚠️ LLM returned list instead of dict for week {week_num}")
+                result = {"name": f"Learning Week {week_num}", "theme": "Multi-domain", "focus": "Exploration"}
+            
+            return result
+            
+        except Exception as e:
+            logger.error(f"❌ LLM week name generation failed: {e}")
+            return {
+                "name": f"Learning Week {week_num}",
+                "theme": "Multi-domain Exploration",
+                "focus": "Developing diverse skills"
+            }
     
     def _llm_generate_learning_objectives(self, child_name: str, child_age: int, interests: List[str], learning_style: str, matched_topics: List[Dict]) -> List[str]:
         """Use LLM to generate personalized learning objectives."""
@@ -1467,7 +1673,7 @@ Return ONLY a JSON array of 5 learning objectives:
                 response_text = response.text.strip()
                 if response_text.startswith('```'):
                     response_text = response_text.strip('`').replace('json\n', '').replace('json', '').strip()
-                result = json.loads(response_text)
+                result = safe_json_parse(response_text, {})
                 return result.get('objectives', [])
         except Exception as e:
             logger.error(f"❌ LLM objectives generation failed: {e}")
@@ -1497,7 +1703,7 @@ Return ONLY a JSON array of 5 activity recommendations:
                 response_text = response.text.strip()
                 if response_text.startswith('```'):
                     response_text = response_text.strip('`').replace('json\n', '').replace('json', '').strip()
-                result = json.loads(response_text)
+                result = safe_json_parse(response_text, {})
                 return result.get('activities', [])
         except Exception as e:
             logger.error(f"❌ LLM activities generation failed: {e}")
@@ -1526,7 +1732,7 @@ Return ONLY a JSON object:
                 response_text = response.text.strip()
                 if response_text.startswith('```'):
                     response_text = response_text.strip('`').replace('json\n', '').replace('json', '').strip()
-                return json.loads(response_text)
+                return safe_json_parse(response_text, {})
         except Exception as e:
             logger.error(f"❌ LLM progress tracking generation failed: {e}")
         
@@ -1567,7 +1773,7 @@ Return ONLY a JSON object describing the plan flow:
                 response_text = response.text.strip()
                 if response_text.startswith('```'):
                     response_text = response_text.strip('`').replace('json\n', '').replace('json', '').strip()
-                return json.loads(response_text)
+                return safe_json_parse(response_text, {})
         except Exception as e:
             logger.error(f"❌ LLM plan analysis failed: {e}")
         
@@ -1638,7 +1844,6 @@ class ReviewerAgent:
             "child_name": child_name,
             "child_age": child_age,
             "learning_style": learning_style,
-            "plan_type": standardized_profile.get("plan_type", "hybrid"),
             "selected_themes": [t.get('themeName', '') for t in selected_themes],
             "total_topics_reviewed": len(matched_topics),
             "total_weeks_planned": len(weekly_plan),
@@ -1669,13 +1874,26 @@ class ReviewerAgent:
                                    interests: List[str]) -> Dict[str, Any]:
         """Use LLM to perform comprehensive plan review."""
         
-        # Summarize plan for LLM
-        plan_summary = {
-            "total_weeks": len(weekly_plan),
-            "total_topics": len(matched_topics),
-            "interests": interests,
-            "sample_topics": [t.get("Topic", "")[:30] for t in matched_topics[:5]]
-        }
+        # Prepare complete topic list for LLM review
+        topics_for_review = []
+        for topic in matched_topics:
+            topics_for_review.append({
+                "id": topic.get("Topic ID", "N/A"),
+                "name": topic.get("Topic", "Unknown"),
+                "objective": topic.get("Objective", ""),
+                "niche": topic.get("Niche", topic.get("Pillar", "General")),
+                "age": topic.get("Age", "")
+            })
+        
+        # Prepare week summary with names
+        week_summary = []
+        for week_key, week_data in weekly_plan.items():
+            week_summary.append({
+                "week": week_key,
+                "name": week_data.get("name", "N/A"),
+                "theme": week_data.get("theme", "N/A"),
+                "focus": week_data.get("focus", "N/A")
+            })
         
         prompt = f"""You are an expert educational reviewer. Perform a comprehensive review of this learning plan.
 
@@ -1685,10 +1903,11 @@ CHILD PROFILE:
 - Interests: {', '.join(interests)}
 - Learning Style: {learning_style}
 
-PLAN OVERVIEW:
-- Total Weeks: {plan_summary['total_weeks']}
-- Total Topics: {plan_summary['total_topics']}
-- Sample Topics: {', '.join(plan_summary['sample_topics'])}
+WEEKLY PLAN STRUCTURE:
+{json.dumps(week_summary, indent=2)}
+
+ALL SELECTED TOPICS ({len(topics_for_review)} topics):
+{json.dumps(topics_for_review, indent=2)}
 
 TASK: Provide a comprehensive review in JSON format:
 
@@ -1769,7 +1988,7 @@ Return ONLY valid JSON, no markdown.
                 if response_text.startswith('```'):
                     response_text = response_text.strip('`').replace('json\n', '').replace('json', '').strip()
                 
-                llm_result = json.loads(response_text)
+                llm_result = safe_json_parse(response_text, {"selected_topic_ids": []})
                 logger.info(f"✅ LLM comprehensive review completed")
                 return llm_result
             else:
@@ -1925,6 +2144,187 @@ async def health_check():
         "essential_loaded": essential_loaded
     }
 
+@app.get("/api/get-latest-plan/{user_id}/{child_id}")
+async def get_latest_plan_for_child(user_id: str, child_id: str):
+    """Fetch the latest plan for a specific child from Firestore."""
+    try:
+        if not db:
+            return JSONResponse(
+                status_code=500,
+                content={"error": "Firestore not initialized"}
+            )
+        
+        logger.info(f"📥 Fetching latest plan for child: {child_id}")
+        
+        # Get the child's plans collection
+        plans_ref = db.collection('users').document(user_id).collection('children').document(child_id).collection('plans')
+        
+        # Get all plans ordered by timestamp (most recent first)
+        plans_query = plans_ref.order_by('timestamp', direction=firestore.Query.DESCENDING).limit(1)
+        plans = list(plans_query.stream())
+        
+        if not plans:
+            return JSONResponse(
+                status_code=404,
+                content={"error": f"No plans found for child {child_id}"}
+            )
+        
+        latest_plan = plans[0].to_dict()
+        
+        # ✅ CRITICAL: Fix week/day order before sending to frontend
+        if 'weekly_plan' in latest_plan and latest_plan['weekly_plan']:
+            latest_plan['weekly_plan'] = ensure_correct_order(latest_plan['weekly_plan'])
+            logger.info("✅ Week/day order corrected before sending to frontend")
+        
+        # Convert Firestore timestamps to strings
+        if 'timestamp' in latest_plan:
+            latest_plan['timestamp'] = str(latest_plan['timestamp'])
+        if 'created_at' in latest_plan:
+            latest_plan['created_at'] = str(latest_plan['created_at'])
+        if 'updated_at' in latest_plan:
+            latest_plan['updated_at'] = str(latest_plan['updated_at'])
+        
+        logger.info(f"✅ Found latest plan: {plans[0].id}")
+        
+        # Wrap response in standard format expected by frontend
+        return JSONResponse(content={
+            "success": True,
+            "data": latest_plan
+        })
+        
+    except Exception as e:
+        logger.error(f"❌ Error fetching plan: {e}")
+        return JSONResponse(
+            status_code=500,
+            content={"error": str(e)}
+        )
+
+def ensure_correct_order(weekly_plan: Dict) -> Dict:
+    """Ensure weekly_plan has correct week and day order."""
+    from collections import OrderedDict
+    
+    ordered_plan = OrderedDict()
+    week_order = ['week_1', 'week_2', 'week_3', 'week_4']
+    day_order = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+    
+    for week_key in week_order:
+        if week_key in weekly_plan:
+            week_data = weekly_plan[week_key]
+            ordered_week = OrderedDict()
+            ordered_week['name'] = week_data.get('name', f'Week {week_key.split("_")[1]}')
+            ordered_week['theme'] = week_data.get('theme', 'Learning')
+            ordered_week['focus'] = week_data.get('focus', 'Exploration')
+            
+            # Order days
+            ordered_days = OrderedDict()
+            for day_key in day_order:
+                if day_key in week_data.get('days', {}):
+                    ordered_days[day_key] = week_data['days'][day_key]
+            
+            ordered_week['days'] = dict(ordered_days)
+            ordered_plan[week_key] = dict(ordered_week)
+    
+    return dict(ordered_plan)
+
+@app.get("/api/get-latest-plan")
+async def get_absolute_latest_plan():
+    """Fetch the absolute latest plan from Firestore (across all users/children)."""
+    try:
+        if not db:
+            return JSONResponse(
+                status_code=500,
+                content={"error": "Firestore not initialized"}
+            )
+        
+        logger.info(f"📥 Fetching absolute latest plan from all users")
+        
+        # Get all users first, then find latest plan (avoids collection_group index issue)
+        users = db.collection('users').stream()
+        all_plans = []
+        
+        for user_doc in users:
+            user_id = user_doc.id
+            children = db.collection('users').document(user_id).collection('children').stream()
+            
+            for child_doc in children:
+                child_id = child_doc.id
+                plans = db.collection('users').document(user_id).collection('children').document(child_id).collection('plans').stream()
+                
+                for plan_doc in plans:
+                    plan_data = plan_doc.to_dict()
+                    plan_data['user_id'] = user_id
+                    plan_data['child_id'] = child_id
+                    plan_data['plan_id'] = plan_doc.id
+                    
+                    # Keep original timestamp for sorting
+                    all_plans.append(plan_data)
+        
+        if not all_plans:
+            return JSONResponse(
+                status_code=404,
+                content={"error": "No plans found in database"}
+            )
+        
+        # Sort by timestamp (Firestore SERVER_TIMESTAMP) - most reliable
+        # Use generated_at as fallback, then timestamp, then created_at
+        def get_sort_key(plan):
+            # Try generated_at first (Unix timestamp)
+            if 'generated_at' in plan and plan['generated_at']:
+                return plan['generated_at']
+            # Try timestamp (Firestore timestamp object)
+            elif 'timestamp' in plan and plan['timestamp']:
+                ts = plan['timestamp']
+                if hasattr(ts, 'seconds'):
+                    return ts.seconds
+                elif hasattr(ts, 'timestamp'):
+                    return ts.timestamp()
+            # Try created_at (Firestore timestamp object)
+            elif 'created_at' in plan and plan['created_at']:
+                ts = plan['created_at']
+                if hasattr(ts, 'seconds'):
+                    return ts.seconds
+                elif hasattr(ts, 'timestamp'):
+                    return ts.timestamp()
+            return 0
+        
+        all_plans.sort(key=get_sort_key, reverse=True)
+        
+        # Log all plans found with their timestamps for debugging
+        logger.info(f"📊 Found {len(all_plans)} total plans across all users/children")
+        for i, p in enumerate(all_plans[:5]):  # Log top 5
+            sort_key = get_sort_key(p)
+            logger.info(f"   Plan {i+1}: Month={p.get('month')}, Child={p.get('child_id')}, SortKey={sort_key}, Generated={p.get('generated_at', 'N/A')}")
+        
+        latest_plan = all_plans[0]
+        
+        # ✅ CRITICAL: Fix week/day order before sending to frontend
+        if 'weekly_plan' in latest_plan and latest_plan['weekly_plan']:
+            latest_plan['weekly_plan'] = ensure_correct_order(latest_plan['weekly_plan'])
+            logger.info("✅ Week/day order corrected before sending to frontend")
+        
+        # NOW convert timestamps to strings for JSON response
+        if 'timestamp' in latest_plan:
+            latest_plan['timestamp'] = str(latest_plan['timestamp'])
+        if 'created_at' in latest_plan:
+            latest_plan['created_at'] = str(latest_plan['created_at'])
+        if 'updated_at' in latest_plan:
+            latest_plan['updated_at'] = str(latest_plan['updated_at'])
+        
+        logger.info(f"✅ Returning latest plan: {latest_plan.get('month', 'Unknown')} for child {latest_plan.get('child_id', 'Unknown')}")
+        
+        # Wrap response in standard format expected by frontend
+        return JSONResponse(content={
+            "success": True,
+            "data": latest_plan
+        })
+        
+    except Exception as e:
+        logger.error(f"❌ Error fetching latest plan: {e}")
+        return JSONResponse(
+            status_code=500,
+            content={"error": str(e)}
+        )
+
 @app.post("/api/generate-plan")
 async def generate_plan(request: Request):
     """Generate a personalized learning plan using the full agent system."""
@@ -1932,9 +2332,22 @@ async def generate_plan(request: Request):
     try:
         # Get the request body
         body = await request.json()
-        profile = body.get("profile", {})
         
-        logger.info("🚀 Starting full agent system (5 agents)")
+        # Support both "profile" and "childProfile" keys
+        child_profile_data = body.get("childProfile") or body.get("profile", {})
+        
+        # Map frontend format to backend format (SIMPLIFIED: Always holistic)
+        profile = {
+            "child_name": child_profile_data.get("name", child_profile_data.get("child_name", "Child")),
+            "child_age": child_profile_data.get("age", child_profile_data.get("child_age", 7)),
+            "interests": child_profile_data.get("interests", []),
+            "dislikes": child_profile_data.get("dislikes", []),
+            "preferred_learning_style": child_profile_data.get("learningStyle", child_profile_data.get("learning_style", child_profile_data.get("preferred_learning_style", "visual"))),
+            "goals": child_profile_data.get("goals", [])
+        }
+        
+        logger.info(f"🚀 Starting full agent system (5 agents) for {profile['child_name']}, age {profile['child_age']}")
+        logger.info(f"📋 Profile: interests={profile['interests']}, style={profile['preferred_learning_style']}")
         
         # Step 1: Profile Agent (Extract user input)
         logger.info("Step 1: Profile Agent - Extracting user input")
@@ -1970,10 +2383,11 @@ async def generate_plan(request: Request):
         reviewer_result = reviewer_agent.run(schedule_result)
         reviewer_timing = reviewer_result["agent_timing"]
         
+        # Reviewer now includes weekly_plan, matched_topics, and all necessary data
         # Combine all results
         final_result = {
             "success": True,
-            "data": reviewer_result,
+            "data": reviewer_result,  # ✅ reviewer_result now includes weekly_plan
             "message": "Plan generated successfully using full agent system",
             "agent_flow": "Profile → Analysis → Match → Schedule → Reviewer",
             "real_agents": True,
@@ -2015,6 +2429,42 @@ async def generate_plan(request: Request):
                 "reviewer_agent_tokens_used": reviewer_timing.get("tokens_used", 0)
             }
         }
+        
+        # Save to Firestore (Single Source of Truth)
+        if db and body.get("userId") and body.get("childId"):
+            try:
+                user_id = body.get("userId")
+                child_id = body.get("childId")
+                month_key = body.get("monthKey", f"{time.strftime('%B %Y')}")
+                
+                logger.info(f"💾 Saving plan to Firestore: users/{user_id}/children/{child_id}/plans/{month_key}")
+                
+                # Save only the plan data, not the API response wrapper
+                # final_result = {success: True, data: {...}, message: ...}
+                # We want to save data + metadata, not the whole response
+                plan_to_save = {
+                    **final_result["data"],  # ✅ Save only the actual plan data
+                    "timestamp": firestore.SERVER_TIMESTAMP,
+                    "created_at": firestore.SERVER_TIMESTAMP,  # ✅ CRITICAL: Frontend uses this!
+                    "updated_at": firestore.SERVER_TIMESTAMP,
+                    "generated_at": time.time(),
+                    "month": month_key,
+                    "child_id": child_id,
+                    "user_id": user_id,
+                    "agent_timings": final_result.get("agent_timings", {}),
+                    "llm_integration": final_result.get("llm_integration", {}),
+                    "agent_flow": final_result.get("agent_flow", "")
+                }
+                
+                # Save to Firestore
+                plan_ref = db.collection('users').document(user_id).collection('children').document(child_id).collection('plans').document(month_key)
+                plan_ref.set(plan_to_save)
+                
+                logger.info(f"✅ Plan saved to Firestore: {month_key}")
+                
+            except Exception as firestore_error:
+                logger.error(f"⚠️ Failed to save to Firestore: {firestore_error}")
+                # Continue anyway - plan is still returned to frontend
         
         logger.info("✅ Full agent system completed successfully")
         return JSONResponse(content=final_result)

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest LLM Plan - Auto Viewer</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 20px;
+            background: #000;
+            color: #0f0;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #0f0;
+            text-align: center;
+            border-bottom: 2px solid #0f0;
+            padding-bottom: 10px;
+        }
+        .controls {
+            background: #111;
+            padding: 20px;
+            border: 1px solid #0f0;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .btn {
+            background: #0f0;
+            color: #000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 10px;
+            width: 200px;
+        }
+        .btn:hover {
+            background: #0ff;
+        }
+        .agent {
+            margin: 30px 0;
+            border: 1px solid #0f0;
+            padding: 15px;
+        }
+        .agent-title {
+            color: #ff0;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .section-title {
+            color: #0ff;
+            font-size: 14px;
+            margin: 15px 0 5px 0;
+            text-transform: uppercase;
+        }
+        .raw-data {
+            background: #111;
+            padding: 10px;
+            border: 1px solid #333;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-x: auto;
+            color: #0f0;
+            font-size: 12px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .status {
+            color: #f0f;
+        }
+        .week-names {
+            background: #112;
+            padding: 15px;
+            border: 2px solid #0ff;
+            margin: 20px 0;
+        }
+        .week-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: #001;
+            border-left: 3px solid #ff0;
+        }
+        .info {
+            color: #ff0;
+            padding: 10px;
+            margin: 10px 0;
+            background: #111;
+            border: 1px solid #ff0;
+            text-align: center;
+        }
+        .plan-info {
+            background: #001;
+            padding: 15px;
+            border: 2px solid #0f0;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 LATEST LLM PLAN - AUTO VIEWER</h1>
+        <p style="text-align: center; color: #ff0;">Shows the most recent plan from ANY user/child</p>
+        
+        <div class="controls">
+            <button class="btn" onclick="loadLatestPlan()">🔄 REFRESH - Get Latest Plan</button>
+            <div style="margin-top: 15px; color: #999; font-size: 12px;">
+                💡 No IDs needed - fetches the absolute latest plan from Firestore
+            </div>
+        </div>
+        
+        <div id="info" class="info" style="display: none;"></div>
+        <div id="plan-info"></div>
+        <div id="week-names"></div>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        function loadLatestPlan() {
+            const infoDiv = document.getElementById('info');
+            infoDiv.style.display = 'block';
+            infoDiv.innerHTML = '⏳ Fetching the latest plan from Firestore...';
+            
+            // Use the absolute latest endpoint (no IDs needed)
+            const url = 'https://llm-agents-790275794964.us-central1.run.app/api/get-latest-plan';
+            
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        infoDiv.innerHTML = `
+                            ❌ ${data.error}<br>
+                            <br>
+                            💡 This might be a Firestore index issue.<br>
+                            Try generating a plan on staging first:<br>
+                            <a href="https://unschooling-464413--staging-ev2hoc0p.web.app/customised-weekly-plan" 
+                               style="color: #0ff;" target="_blank">
+                               Open Staging Site
+                            </a>
+                        `;
+                    } else {
+                        displayPlan(data);
+                    }
+                })
+                .catch(error => {
+                    infoDiv.innerHTML = `❌ Error: ${error.message}`;
+                });
+        }
+        
+        function displayPlan(data) {
+            const infoDiv = document.getElementById('info');
+            infoDiv.innerHTML = `✅ Latest plan loaded from FIRESTORE!`;
+            
+            // Display plan info
+            const planInfo = document.getElementById('plan-info');
+            
+            // Format timestamp properly
+            let generatedTime = 'N/A';
+            if (data.generated_at) {
+                generatedTime = new Date(data.generated_at * 1000).toLocaleString();
+            } else if (data.created_at) {
+                // Handle Firestore timestamp format
+                const timestamp = data.created_at;
+                if (timestamp.seconds) {
+                    generatedTime = new Date(timestamp.seconds * 1000).toLocaleString();
+                } else if (typeof timestamp === 'string') {
+                    generatedTime = new Date(timestamp).toLocaleString();
+                }
+            }
+            
+            planInfo.innerHTML = `
+                <h3 style="color: #0ff; margin-top: 0;">📋 PLAN INFORMATION</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 14px;">
+                    <div><strong>Month:</strong> ${data.month || 'N/A'}</div>
+                    <div><strong>Child ID:</strong> ${data.child_id || 'N/A'}</div>
+                    <div><strong>User ID:</strong> ${data.user_id || 'N/A'}</div>
+                    <div><strong>Generated:</strong> ${generatedTime}</div>
+                </div>
+                <div style="margin-top: 10px; padding: 8px; background: #001; border: 1px solid #0f0; font-size: 12px; color: #0ff;">
+                    🕒 <strong>Timestamp Details:</strong><br>
+                    • Generated At: ${data.generated_at || 'N/A'}<br>
+                    • Created At: ${data.created_at ? (typeof data.created_at === 'object' ? JSON.stringify(data.created_at) : data.created_at) : 'N/A'}<br>
+                    • Updated At: ${data.updated_at ? (typeof data.updated_at === 'object' ? JSON.stringify(data.updated_at) : data.updated_at) : 'N/A'}
+                </div>
+            `;
+            
+            // Display week names (check both locations)
+            const weeklyPlan = data.weekly_plan || data.data?.weekly_plan || {};
+            let weekHtml = '<div class="week-names"><h2 style="color: #ff0;">📅 WEEK NAMES FROM FIRESTORE:</h2>';
+            
+            if (Object.keys(weeklyPlan).length > 0) {
+                for (let i = 1; i <= 4; i++) {
+                    const week = weeklyPlan[`week_${i}`];
+                    if (week) {
+                        weekHtml += `
+                            <div class="week-item">
+                                <strong style="color: #0ff;">Week ${i}: ${week.name || 'NO NAME'}</strong><br>
+                                Theme: ${week.theme || 'NO THEME'}<br>
+                                Focus: ${week.focus || 'NO FOCUS'}
+                            </div>
+                        `;
+                    }
+                }
+            } else {
+                weekHtml += '<div style="color: #f66;">❌ No weekly plan data found in this plan</div>';
+            }
+            weekHtml += '</div>';
+            document.getElementById('week-names').innerHTML = weekHtml;
+            
+            // Display LLM data (check both locations)
+            const llm = data.llm_integration || {};
+            const agentTiming = data.agent_timing || {};
+            
+            const agents = [
+                {name: '1️⃣  PROFILE AGENT', key: 'profile_agent'},
+                {name: '2️⃣  ANALYSIS AGENT', key: 'analysis_agent'},
+                {name: '3️⃣  MATCH AGENT', key: 'match_agent'},
+                {name: '4️⃣  SCHEDULE AGENT', key: 'schedule_agent'},
+                {name: '5️⃣  REVIEWER AGENT', key: 'reviewer_agent'}
+            ];
+            
+            let html = '';
+            
+            agents.forEach(agent => {
+                // Check both llm_integration and agent_timing for data
+                const llmUsed = llm[`${agent.key}_llm_used`] || agentTiming.llm_used || 'Unknown';
+                const prompt = llm[`${agent.key}_prompt`] || agentTiming.llm_prompt || '(No LLM input)';
+                const response = llm[`${agent.key}_response`] || agentTiming.llm_response || '(No LLM output)';
+                const tokens = llm[`${agent.key}_tokens_used`] || agentTiming.tokens_used || 0;
+                
+                // Format prompt and response properly
+                const formatData = (data) => {
+                    if (!data || data === '(No LLM input)' || data === '(No LLM output)') {
+                        return data;
+                    }
+                    if (typeof data === 'object') {
+                        return JSON.stringify(data, null, 2);
+                    }
+                    if (typeof data === 'string') {
+                        // Check if it's already JSON string
+                        try {
+                            const parsed = JSON.parse(data);
+                            return JSON.stringify(parsed, null, 2);
+                        } catch {
+                            return data;
+                        }
+                    }
+                    return String(data);
+                };
+                
+                const formattedPrompt = formatData(prompt);
+                const formattedResponse = formatData(response);
+                
+                html += `
+                    <div class="agent">
+                        <div class="agent-title">${agent.name}</div>
+                        <div class="status">LLM Used: ${llmUsed} | Tokens: ${tokens}</div>
+                        
+                        <div class="section-title">📥 RAW INPUT (Sent to LLM):</div>
+                        <div class="raw-data">${formattedPrompt}</div>
+                        
+                        <div class="section-title">📤 RAW OUTPUT (Received from LLM):</div>
+                        <div class="raw-data">${formattedResponse}</div>
+                    </div>
+                `;
+            });
+            
+            document.getElementById('output').innerHTML = html;
+        }
+        
+        // Auto-load on page open
+        window.onload = function() {
+            loadLatestPlan();
+        };
+    </script>
+</body>
+</html>

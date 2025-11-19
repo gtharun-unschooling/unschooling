@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MinimalBackButton from '../../components/ui/MinimalBackButton';
+import SimpleBackButton from '../../components/ui/SimpleBackButton';
 import './Help.css';
 
 const Help = () => {
@@ -65,7 +65,7 @@ const Help = () => {
 
   return (
     <div className="help-page">
-      <MinimalBackButton 
+      <SimpleBackButton 
         heroColors={{
           backgroundColor: '#f8fafc',
           primaryColor: '#3b82f6',

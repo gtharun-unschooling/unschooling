@@ -23,37 +23,33 @@ const ScheduleDisplay = ({ scheduleData, childProfile, onActivityComplete }) => 
     }
   };
 
-  const getWeekTitle = (weekIndex) => {
-    const titles = [
-      "Foundation & Introduction (Motivation Week)",
-      "Deep Dive & Exploration", 
-      "Application & Practice (Motivation Week)",
-      "Project & Mastery (Project Week)"
-    ];
-    return titles[weekIndex] || `Week ${weekIndex + 1}`;
+  const getDayName = (dayKey) => {
+    const dayNames = {
+      'monday': 'Monday',
+      'tuesday': 'Tuesday',
+      'wednesday': 'Wednesday',
+      'thursday': 'Thursday',
+      'friday': 'Friday',
+      'saturday': 'Saturday',
+      'sunday': 'Sunday'
+    };
+    return dayNames[dayKey] || dayKey;
   };
 
-  const getDayName = (dayIndex) => {
-    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-    return days[dayIndex] || `Day ${dayIndex + 1}`;
-  };
-
-  const getProgressPercentage = (weekIndex) => {
-    const weekActivities = scheduleData.weekly_plan?.[weekIndex] || [];
-    if (weekActivities.length === 0) return 0;
+  const getProgressPercentage = (weekKey) => {
+    const weekData = scheduleData.weekly_plan?.[weekKey];
+    if (!weekData || !weekData.days) return 0;
     
     let completedCount = 0;
     let totalCount = 0;
     
-    weekActivities.forEach((day, dayIndex) => {
-      if (day.activities) {
-        day.activities.forEach((_, activityIndex) => {
-          totalCount++;
-          const activityId = `${weekIndex}-${dayIndex}-${activityIndex}`;
-          if (completedActivities.has(activityId)) {
-            completedCount++;
-          }
-        });
+    Object.entries(weekData.days).forEach(([dayKey, dayData], dayIndex) => {
+      if (dayData.activity) {
+        totalCount++;
+        const activityId = `${weekKey}-${dayKey}`;
+        if (completedActivities.has(activityId)) {
+          completedCount++;
+        }
       }
     });
     
@@ -179,20 +175,30 @@ const ScheduleDisplay = ({ scheduleData, childProfile, onActivityComplete }) => 
         />
       )}
 
-      {scheduleData.weekly_plan.map((week, weekIndex) => {
-        const progress = getProgressPercentage(weekIndex);
-        const isExpanded = expandedWeek === weekIndex;
+      {Object.entries(scheduleData.weekly_plan).map(([weekKey, weekData], weekIndex) => {
+        const progress = getProgressPercentage(weekKey);
+        const isExpanded = expandedWeek === weekKey;
         
         return (
-          <div key={weekIndex} style={weekCardStyle}>
+          <div key={weekKey} style={weekCardStyle}>
             <div 
               style={weekHeaderStyle}
-              onClick={() => setExpandedWeek(isExpanded ? null : weekIndex)}
+              onClick={() => setExpandedWeek(isExpanded ? null : weekKey)}
             >
-              <div>
-                <h3 style={{ margin: '0', color: '#1e293b' }}>
-                  Week {weekIndex + 1}: {getWeekTitle(weekIndex)}
+              <div style={{ flex: 1 }}>
+                <h3 style={{ margin: '0 0 4px 0', color: '#1e293b', fontSize: '1.25rem', fontWeight: '700' }}>
+                  {weekData.name || `Week ${weekIndex + 1}`}
                 </h3>
+                {weekData.theme && (
+                  <p style={{ margin: '0 0 4px 0', fontSize: '14px', color: '#667eea', fontWeight: '600' }}>
+                    📚 {weekData.theme}
+                  </p>
+                )}
+                {weekData.focus && (
+                  <p style={{ margin: '0 0 8px 0', fontSize: '13px', color: '#64748b', fontStyle: 'italic' }}>
+                    {weekData.focus}
+                  </p>
+                )}
                 <div style={progressBarStyle}>
                   <div style={progressFillStyle(progress)}></div>
                 </div>
@@ -205,58 +211,48 @@ const ScheduleDisplay = ({ scheduleData, childProfile, onActivityComplete }) => 
               </div>
             </div>
             
-            {isExpanded && (
+            {isExpanded && weekData.days && (
               <div style={dayGridStyle}>
-                {week.map((day, dayIndex) => (
-                  <div key={dayIndex} style={dayCardStyle}>
+                {Object.entries(weekData.days).map(([dayKey, dayData]) => (
+                  <div key={dayKey} style={dayCardStyle}>
                     <h4 style={{ margin: '0 0 12px 0', color: '#374151' }}>
-                      {getDayName(dayIndex)}
+                      {getDayName(dayKey)}
                     </h4>
-                    {day.activities?.map((activity, activityIndex) => {
-                      const activityId = `${weekIndex}-${dayIndex}-${activityIndex}`;
-                      const isCompleted = completedActivities.has(activityId);
-                      
-                      return (
-                        <div 
-                          key={activityIndex} 
-                          style={isCompleted ? completedActivityStyle : activityStyle}
-                        >
-                          <input
-                            type="checkbox"
-                            checked={isCompleted}
-                            onChange={() => handleActivityComplete(weekIndex, dayIndex, activityIndex)}
-                            style={checkboxStyle}
-                          />
-                          <div style={{ flex: 1 }}>
-                            <div style={{ 
-                              fontWeight: '500', 
-                              color: isCompleted ? '#059669' : '#374151',
-                              textDecoration: isCompleted ? 'line-through' : 'none'
-                            }}>
-                              {activity.title || activity.name || `Activity ${activityIndex + 1}`}
-                            </div>
-                            {activity.description && (
-                              <div style={{ 
-                                fontSize: '14px', 
-                                color: '#64748b',
-                                marginTop: '4px'
-                              }}>
-                                {activity.description}
-                              </div>
-                            )}
-                            {activity.duration && (
-                              <div style={{ 
-                                fontSize: '12px', 
-                                color: '#9ca3af',
-                                marginTop: '4px'
-                              }}>
-                                ⏱️ {activity.duration}
-                              </div>
-                            )}
-                          </div>
+                    <div style={activityStyle}>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: '500', color: '#374151', marginBottom: '8px' }}>
+                          {dayData.topic || 'Activity'}
                         </div>
-                      );
-                    })}
+                        {dayData.objective && (
+                          <div style={{ fontSize: '14px', color: '#667eea', marginBottom: '8px', fontStyle: 'italic' }}>
+                            🎯 {dayData.objective}
+                          </div>
+                        )}
+                        {dayData.activity && (
+                          <div style={{ fontSize: '14px', color: '#64748b', marginTop: '8px', whiteSpace: 'pre-line' }}>
+                            {dayData.activity}
+                          </div>
+                        )}
+                        {dayData.duration && (
+                          <div style={{ fontSize: '12px', color: '#9ca3af', marginTop: '8px' }}>
+                            ⏱️ {dayData.duration}
+                          </div>
+                        )}
+                        {dayData.niche && (
+                          <div style={{ 
+                            fontSize: '11px', 
+                            color: '#fff', 
+                            backgroundColor: '#667eea',
+                            padding: '4px 8px',
+                            borderRadius: '4px',
+                            display: 'inline-block',
+                            marginTop: '8px'
+                          }}>
+                            {dayData.niche}
+                          </div>
+                        )}
+                      </div>
+                    </div>
                   </div>
                 ))}
               </div>

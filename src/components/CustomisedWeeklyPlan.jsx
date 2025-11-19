@@ -4,7 +4,7 @@ import { doc, getDoc, collection, getDocs, query, orderBy, updateDoc, setDoc, se
 import { useAuth } from '../contexts/AuthContext';
 import { useLocation, useNavigate } from 'react-router-dom';
 import config from '../config/config';
-import MinimalBackButton from './ui/MinimalBackButton';
+import SimpleBackButton from './ui/SimpleBackButton';
 
 const CustomisedWeeklyPlan = () => {
   const { currentUser: user, loading: authLoading, error: authError } = useAuth();
@@ -18,6 +18,7 @@ const CustomisedWeeklyPlan = () => {
   const [selectedChild, setSelectedChild] = useState('');
   const [currentPlan, setCurrentPlan] = useState(null);
   const [agentPerformance, setAgentPerformance] = useState(null);
+  const [expandedDay, setExpandedDay] = useState(null); // Track which day dropdown is expanded
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -170,6 +171,8 @@ const CustomisedWeeklyPlan = () => {
       const apiUrl = `${config.API_BASE_URL}${config.ENDPOINTS.GENERATE_PLAN}`;
       console.log('🌐 API URL:', apiUrl);
       
+      const currentMonth = new Date().toLocaleString('default', { month: 'long', year: 'numeric' });
+      
       const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
@@ -177,37 +180,31 @@ const CustomisedWeeklyPlan = () => {
           'X-API-Key': 'unschooling-api-key-2024',
           'Accept': 'application/json',
         },
-        body: JSON.stringify({ childProfile: profileData, planType: profileData.plan_type }),
+        body: JSON.stringify({ 
+          childProfile: profileData, 
+          planType: profileData.plan_type,
+          userId: user.uid,
+          childId: actualChildId,
+          monthKey: currentMonth
+        }),
       });
       
       if (response.ok) {
         const result = await response.json();
         
         if (result.success && result.data) {
-          const currentMonth = new Date().toLocaleString('default', { month: 'long', year: 'numeric' });
+          console.log('✅ Plan generated and saved to Firestore by backend');
           
-          console.log('✅ Plan generated successfully');
+          // Wait a moment for Firestore to propagate, then reload from database
+          setTimeout(async () => {
+            console.log('🔄 Reloading plans from Firestore to ensure sync...');
+            await loadPlans();
+          }, 2000);
           
-          // Save to subcollection (NOT nested in child document)
-          const planRef = doc(collection(db, `users/${user.uid}/children/${actualChildId}/plans`));
-          const planDocument = {
-            ...result.data,
-            month: currentMonth,
-            status: 'active',
-            created_at: serverTimestamp(),
-            updated_at: serverTimestamp()
-          };
-          
-          await setDoc(planRef, planDocument);
-          console.log('💾 Plan saved to subcollection:', planRef.id);
-          
-          // Update local state
+          // Update local state immediately for responsiveness
           const newPlans = {
             ...plans,
-            [currentMonth]: {
-              ...result.data,
-              planId: planRef.id
-            }
+            [currentMonth]: result.data
           };
           
           setPlans(newPlans);
@@ -241,7 +238,7 @@ const CustomisedWeeklyPlan = () => {
   if (authLoading) {
     return (
       <div style={{ padding: '20px', textAlign: 'center', position: 'relative' }}>
-        <MinimalBackButton 
+        <SimpleBackButton 
           heroColors={{
             backgroundColor: '#ffffff',
             primaryColor: '#667eea',
@@ -256,7 +253,7 @@ const CustomisedWeeklyPlan = () => {
   if (authError) {
     return (
       <div style={{ padding: '20px', textAlign: 'center', color: 'red', position: 'relative' }}>
-        <MinimalBackButton 
+        <SimpleBackButton 
           heroColors={{
             backgroundColor: '#ffffff',
             primaryColor: '#667eea',
@@ -271,7 +268,7 @@ const CustomisedWeeklyPlan = () => {
   if (!user) {
     return (
       <div style={{ padding: '20px', textAlign: 'center', position: 'relative' }}>
-        <MinimalBackButton 
+        <SimpleBackButton 
           heroColors={{
             backgroundColor: '#ffffff',
             primaryColor: '#667eea',
@@ -300,7 +297,7 @@ const CustomisedWeeklyPlan = () => {
   return (
     <div style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto', position: 'relative' }}>
       {/* Back Button - Standard minimal button */}
-      <MinimalBackButton 
+      <SimpleBackButton 
         heroColors={{
           backgroundColor: '#ffffff',
           primaryColor: '#667eea',
@@ -509,94 +506,268 @@ const CustomisedWeeklyPlan = () => {
               </div>
               
               {/* Weekly Plan Display - Responsive Cards */}
+              {currentPlan.weekly_plan && (() => {
+                // Log what we're about to display
+                console.log('═══════════════════════════════════════════════════════════');
+                console.log('📊 DISPLAYING WEEKLY PLAN TO PARENT');
+                console.log('═══════════════════════════════════════════════════════════');
+                console.log('Total weeks:', Object.keys(currentPlan.weekly_plan).length);
+                
+                // ✅ CRITICAL: Log in EXPLICIT ORDER
+                const weekOrder = ['week_1', 'week_2', 'week_3', 'week_4'];
+                const dayOrder = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+                
+                weekOrder.forEach((weekKey) => {
+                  if (!currentPlan.weekly_plan[weekKey]) return;
+                  const weekData = currentPlan.weekly_plan[weekKey];
+                  
+                  console.log(`\n📅 ${weekKey.toUpperCase()}:`);
+                  console.log(`   Name: ${weekData.name}`);
+                  console.log(`   Theme: ${weekData.theme}`);
+                  console.log(`   Days: ${weekData.days ? Object.keys(weekData.days).length : 0}`);
+                  
+                  if (weekData.days) {
+                    dayOrder.forEach((dayKey) => {
+                      if (weekData.days[dayKey]) {
+                        const dayData = weekData.days[dayKey];
+                        console.log(`   📆 ${dayKey}: ${dayData.topic} (${dayData.duration})`);
+                      }
+                    });
+                  }
+                });
+                console.log('═══════════════════════════════════════════════════════════\n');
+                
+                return null;
+              })()}
               {currentPlan.weekly_plan && (
                 <div>
-                  {Object.entries(currentPlan.weekly_plan).map(([weekKey, weekData]) => (
-                    <div key={weekKey} style={{ marginBottom: '30px' }}>
-                      <h5 style={{ 
-                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 
-                        color: 'white',
-                        padding: '12px 16px', 
-                        borderRadius: '8px',
-                        margin: '0 0 15px 0',
-                        textTransform: 'capitalize',
-                        fontSize: '1.1rem',
-                        fontWeight: '700',
-                        boxShadow: '0 2px 8px rgba(102, 126, 234, 0.2)'
-                      }}>
-                        {weekKey.replace('_', ' ')} Week
-                      </h5>
-                      
-                      {/* Mobile-Friendly Card Layout */}
+                  {/* ✅ CRITICAL: Iterate weeks in EXPLICIT ORDER */}
+                  {['week_1', 'week_2', 'week_3', 'week_4'].map((weekKey) => {
+                    if (!currentPlan.weekly_plan[weekKey]) return null;
+                    
+                    const weekData = currentPlan.weekly_plan[weekKey];
+                    const weekNumber = weekKey.replace('week_', '');
+                    
+                    return (
+                    <div key={weekKey} style={{ marginBottom: '25px' }}>
+                      {/* Compact Week Header */}
                       <div style={{ 
-                        display: 'grid',
-                        gap: '15px'
+                        padding: '8px 12px', 
+                        borderRadius: '6px',
+                        margin: '0 0 10px 0',
+                        background: '#f8f9fa',
+                        borderLeft: '4px solid #667eea'
                       }}>
-                        {Object.entries(weekData).map(([dayKey, dayData]) => (
-                          <div key={dayKey} style={{
-                            background: 'white',
-                            border: '1px solid #e0e0e0',
-                            borderRadius: '10px',
-                            padding: '14px 18px',
-                            boxShadow: '0 1px 4px rgba(0, 0, 0, 0.06)',
-                            transition: 'all 0.2s ease',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'space-between',
-                            gap: '15px'
-                          }}
-                          onMouseEnter={(e) => {
-                            e.currentTarget.style.boxShadow = '0 3px 10px rgba(0, 0, 0, 0.1)';
-                            e.currentTarget.style.transform = 'translateX(4px)';
-                          }}
-                          onMouseLeave={(e) => {
-                            e.currentTarget.style.boxShadow = '0 1px 4px rgba(0, 0, 0, 0.06)';
-                            e.currentTarget.style.transform = 'translateX(0)';
-                          }}>
-                            
-                            {/* Day */}
-                            <div style={{
-                              minWidth: '90px',
-                              fontWeight: '700',
-                              color: '#667eea',
-                              fontSize: '0.95rem',
-                              textTransform: 'capitalize'
-                            }}>
-                              {dayKey}
-                            </div>
-                            
-                            {/* Topic Title */}
-                            <div style={{
-                              flex: '1',
-                              fontSize: '1rem',
-                              fontWeight: '600',
-                              color: '#333',
-                              lineHeight: '1.3'
-                            }}>
-                              {dayData.topic || 'Activity'}
-                            </div>
-                            
-                            {/* Duration */}
-                            {dayData.duration && (
+                        <div style={{ 
+                          fontSize: '0.9rem',
+                          fontWeight: '600',
+                          color: '#333'
+                        }}>
+                          Week {weekNumber}: {weekData.theme || weekData.name || 'Learning Week'}
+                        </div>
+                      </div>
+                      
+                      {/* Compact Day List */}
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                        {/* ✅ CRITICAL: Iterate days in EXPLICIT ORDER */}
+                        {weekData.days && ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'].map((dayKey) => {
+                          if (!weekData.days[dayKey]) return null;
+                          
+                          const dayData = weekData.days[dayKey];
+                          const dayId = `${weekKey}-${dayKey}`;
+                          const isExpanded = expandedDay === dayId;
+                          
+                          return (
+                          <div key={dayKey}>
+                            {/* Main Day Row - Clickable Button */}
+                            <button
+                              onClick={() => {
+                                console.log('Navigating to topic:', dayData);
+                                
+                                // Create clean slug from topic name (preserve hyphens that are part of the name)
+                                const topicSlug = dayData.topic
+                                  .toLowerCase()
+                                  .replace(/\s+/g, '-')  // Spaces to hyphens first
+                                  .replace(/[^a-z0-9-]/g, '');  // Then remove special chars except hyphens
+                                
+                                // Check if it's Essential Growth or Niche
+                                if (dayData.niche && dayData.niche.toLowerCase() === 'essential growth') {
+                                  // Essential Growth activity - route to pillar page
+                                  if (dayData.pillar_slug || dayData.pillar) {
+                                    const pillarSlug = dayData.pillar_slug || 
+                                      dayData.pillar.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+                                    navigate(`/essential-growth/${pillarSlug}/${topicSlug}`);
+                                  } else {
+                                    // Fallback if no pillar info
+                                    navigate('/essential-growth');
+                                  }
+                                } else if (dayData.niche) {
+                                  // Niche topic - route to niche topic page
+                                  const nicheSlug = dayData.niche
+                                    .toLowerCase()
+                                    .replace(/\s+/g, '-')
+                                    .replace(/[^a-z0-9-]/g, '');
+                                  navigate(`/niche/${nicheSlug}/${topicSlug}`);
+                                } else {
+                                  // Fallback to simple topic route
+                                  navigate(`/topic/${dayData.topic_id || topicSlug}`);
+                                }
+                              }}
+                              style={{
+                                width: '100%',
+                                background: 'white',
+                                border: '1px solid #e0e0e0',
+                                borderRadius: '6px',
+                                padding: '10px 12px',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'space-between',
+                                gap: '10px',
+                                cursor: 'pointer',
+                                transition: 'all 0.2s',
+                                textAlign: 'left'
+                              }}
+                              onMouseEnter={(e) => {
+                                e.currentTarget.style.background = '#f8f9fa';
+                                e.currentTarget.style.borderColor = '#667eea';
+                              }}
+                              onMouseLeave={(e) => {
+                                e.currentTarget.style.background = 'white';
+                                e.currentTarget.style.borderColor = '#e0e0e0';
+                              }}
+                            >
+                              {/* LEFT: Day Name */}
                               <div style={{
-                                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                                color: 'white',
-                                padding: '6px 14px',
-                                borderRadius: '20px',
+                                minWidth: '80px',
+                                fontWeight: '600',
+                                color: '#667eea',
                                 fontSize: '0.85rem',
-                                fontWeight: '700',
-                                whiteSpace: 'nowrap',
-                                minWidth: '70px',
-                                textAlign: 'center'
+                                textTransform: 'capitalize'
                               }}>
-                                {dayData.duration}
+                                {dayKey}
+                              </div>
+                              
+                              {/* MIDDLE: Activity Name */}
+                              <div style={{
+                                flex: 1,
+                                fontSize: '0.9rem',
+                                fontWeight: '500',
+                                color: '#333'
+                              }}>
+                                {dayData.topic || dayData.name || 'Activity'}
+                              </div>
+                              
+                              {/* RIGHT: Duration */}
+                              <div style={{
+                                minWidth: '60px',
+                                fontSize: '0.85rem',
+                                color: '#666',
+                                textAlign: 'right'
+                              }}>
+                                {dayData.duration || dayData.estimated_time || '30 min'}
+                              </div>
+                              
+                              {/* FAR RIGHT: Dropdown Arrow */}
+                              <div 
+                                onClick={(e) => {
+                                  e.stopPropagation(); // Prevent navigation when clicking dropdown
+                                  setExpandedDay(isExpanded ? null : dayId);
+                                }}
+                                style={{
+                                  minWidth: '24px',
+                                  fontSize: '0.8rem',
+                                  color: '#999',
+                                  transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)',
+                                  transition: 'transform 0.2s'
+                                }}>
+                                ▼
+                              </div>
+                            </button>
+                            
+                            {/* Dropdown Content */}
+                            {isExpanded && (
+                              <div style={{
+                                background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
+                                border: '1px solid #e0e0e0',
+                                borderTop: 'none',
+                                borderRadius: '0 0 8px 8px',
+                                padding: '16px',
+                                marginTop: '-4px',
+                                boxShadow: '0 2px 8px rgba(0,0,0,0.05)'
+                              }}>
+                                {/* Description - Direct text without label */}
+                                {(dayData.objective || dayData.activity) && (
+                                  <div style={{ 
+                                    marginBottom: '12px',
+                                    padding: '12px',
+                                    background: 'white',
+                                    borderRadius: '6px',
+                                    borderLeft: '3px solid #667eea',
+                                    fontSize: '0.9rem',
+                                    lineHeight: '1.6',
+                                    color: '#555',
+                                    fontStyle: 'italic'
+                                  }}>
+                                    {dayData.objective || dayData.activity}
+                                  </div>
+                                )}
+                                
+                                {/* Category & Level Tags */}
+                                <div style={{ 
+                                  display: 'flex', 
+                                  gap: '10px', 
+                                  flexWrap: 'wrap',
+                                  alignItems: 'center'
+                                }}>
+                                  {/* Category Badge */}
+                                  {dayData.niche && (
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                                      <span style={{ fontSize: '0.75rem', color: '#888', fontWeight: '600' }}>
+                                        CATEGORY
+                                      </span>
+                                      <span style={{ 
+                                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 
+                                        color: 'white', 
+                                        padding: '5px 14px', 
+                                        borderRadius: '16px',
+                                        fontSize: '0.85rem',
+                                        fontWeight: '600',
+                                        boxShadow: '0 2px 6px rgba(102, 126, 234, 0.3)'
+                                      }}>
+                                        {dayData.niche}
+                                      </span>
+                                    </div>
+                                  )}
+                                  
+                                  {/* Level Badge */}
+                                  {dayData.difficulty && (
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                                      <span style={{ fontSize: '0.75rem', color: '#888', fontWeight: '600' }}>
+                                        LEVEL
+                                      </span>
+                                      <span style={{ 
+                                        background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)', 
+                                        color: 'white', 
+                                        padding: '5px 14px', 
+                                        borderRadius: '16px',
+                                        fontSize: '0.85rem',
+                                        fontWeight: '600',
+                                        boxShadow: '0 2px 6px rgba(40, 167, 69, 0.3)'
+                                      }}>
+                                        {dayData.difficulty}
+                                      </span>
+                                    </div>
+                                  )}
+                                </div>
                               </div>
                             )}
                           </div>
-                        ))}
+                        );
+                        })}
                       </div>
                     </div>
-                  ))}
+                    );
+                  })}
                 </div>
               )}
             </div>

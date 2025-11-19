@@ -67,3 +67,10 @@ sheets-credentials.json
 backups/*.tar.gz
 backups/*.gz
 google-sheets-service-account.json
+
+# Logs
+logs/
+*.log
+
+# Backups (if not already covered)
+data_backups/

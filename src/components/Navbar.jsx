@@ -142,9 +142,12 @@ const Navbar = () => {
               onClick={toggleHamburger}
               aria-label="Toggle navigation menu"
             >
-              <span className="hamburger-line"></span>
-              <span className="hamburger-line"></span>
-              <span className="hamburger-line"></span>
+              {/* Three-line hamburger icon (matches staging) */}
+              <div className="hamburger-icon">
+                <span className="hamburger-line"></span>
+                <span className="hamburger-line"></span>
+                <span className="hamburger-line"></span>
+              </div>
             </button>
 
             <Link to="/" className="navbar-logo">
@@ -156,9 +159,6 @@ const Navbar = () => {
           <div className="navbar-menu">
             <Link to="/what-we-do" className="nav-link">
               What We Do
-            </Link>
-            <Link to="/plans" className="nav-link">
-              Pricing
             </Link>
             
             {currentUser ? (

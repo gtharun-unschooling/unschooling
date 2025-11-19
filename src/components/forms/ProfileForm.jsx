@@ -5,7 +5,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import { colors, spacing, typography } from "../../styles/designTokens";
 import "./ProfileForm.css";
-import MinimalBackButton from "../ui/UniversalBackButton";
+import SimpleBackButton from "../ui/SimpleBackButton";
 import apiService from "../../services/api";
 import { useDebug } from "../../contexts/DebugContext";
 
@@ -237,16 +237,8 @@ const goals = [
 ];
 
 const PLAN_TYPES = [
-  {
-    id: 'hybrid',
-    name: 'Hybrid Monthly Plan',
-    description: 'Each week is different: themes, skills, and a real-world project. Great for variety and deep dives.'
-  },
-  {
-    id: 'fusion',
-    name: 'Holistic Fusion Plan',
-    description: 'Every week follows the same balanced routine. Great for consistency and all-round growth.'
-  }
+  // SIMPLIFIED: Only holistic plan type
+  // Plan type selection removed - always 'holistic' for all-round development
 ];
 
 export default function ProfileForm({ onSubmit }) {
@@ -266,7 +258,7 @@ export default function ProfileForm({ onSubmit }) {
   const [dislikes, setDislikes] = useState([]);
   const [learningStyle, setLearningStyle] = useState('visual');
   const [selectedGoals, setSelectedGoals] = useState([]);
-  const [planType, setPlanType] = useState('hybrid');
+  const [planType, setPlanType] = useState('holistic'); // SIMPLIFIED: Always holistic
   const [showPlanModal, setShowPlanModal] = useState(false);
   const [planData, setPlanData] = useState(null);
   const [debugInfo, setDebugInfo] = useState('');
@@ -425,7 +417,7 @@ export default function ProfileForm({ onSubmit }) {
     setDislikes(child.dislikes || []);
     setLearningStyle(child.preferred_learning_style || "");
     setSelectedGoals(child.goals || []);
-    setPlanType(child.plan_type || 'hybrid'); // Load plan type
+    setPlanType('holistic'); // SIMPLIFIED: Always holistic
     setOriginalProfile(child);
     setHasChanges(false);
     setIsAddingNewChild(false);
@@ -481,7 +473,7 @@ export default function ProfileForm({ onSubmit }) {
         dislikes.length > 0 ||
         learningStyle !== "" ||
         selectedGoals.length > 0 ||
-        planType !== 'hybrid' // Check if plan type changed
+        false // Plan type removed - always holistic
       );
       // Hide update message if any change
       setShowUpdateMessage(false);
@@ -493,7 +485,7 @@ export default function ProfileForm({ onSubmit }) {
       JSON.stringify(dislikes) !== JSON.stringify(originalProfile.dislikes) ||
       learningStyle !== originalProfile.preferred_learning_style ||
       JSON.stringify(selectedGoals) !== JSON.stringify(originalProfile.goals) ||
-      planType !== originalProfile.plan_type; // Check if plan type changed
+      false; // Plan type removed - always holistic
     setHasChanges(changed);
     // Hide update message if any change
     if (changed) setShowUpdateMessage(false);
@@ -519,7 +511,7 @@ export default function ProfileForm({ onSubmit }) {
       setDislikes(originalProfile.dislikes);
       setLearningStyle(originalProfile.preferred_learning_style);
       setSelectedGoals(originalProfile.goals);
-      setPlanType(originalProfile.plan_type); // Reset plan type on cancel
+      setPlanType('holistic'); // Always holistic
     }
   };
 
@@ -639,7 +631,9 @@ export default function ProfileForm({ onSubmit }) {
             dislikes: dislikes,
             preferred_learning_style: learningStyle,
             goals: selectedGoals,
-            plan_type: planType
+            plan_type: planType,
+            userId: user?.uid || 'unknown',
+            childId: childName || 'unknown'
           });
           addDebugInfo(`📥 API RESPONSE RECEIVED: ${res.success ? 'SUCCESS' : 'FAILED'}`);
           console.log('📥 API RESPONSE RECEIVED:', res);
@@ -651,6 +645,14 @@ export default function ProfileForm({ onSubmit }) {
             console.log('🔍 DEBUG - res.data:', res.data);
             console.log('🔍 DEBUG - res.data keys:', Object.keys(res.data));
             console.log('🔍 DEBUG - res.data.matched_topics:', res.data.matched_topics);
+            
+            // Open Flow Viewer in new window with user/child context
+            // Add delay to ensure Firestore save completes
+            setTimeout(() => {
+              const flowViewerUrl = `${window.location.origin}/admin/flow-viewer?userId=${user.uid}&childId=${childName}`;
+              window.open(flowViewerUrl, '_blank');
+              console.log('📊 Flow Viewer opened:', flowViewerUrl);
+            }, 2000);  // 2 second delay for Firestore save
             
             // Save plan to Firestore under 'plans' field keyed by month
             const currentDate = new Date();
@@ -783,13 +785,28 @@ export default function ProfileForm({ onSubmit }) {
           // Send to backend
           addDebugInfo("📡 CALLING API SERVICE FOR EXISTING PROFILE...");
           console.log('📡 CALLING API SERVICE FOR EXISTING PROFILE...');
-          const res = await apiService.generatePlan(originalProfile); // Pass originalProfile
+          // Add userId and childId to profile before sending
+          const profileWithIds = {
+            ...originalProfile,
+            userId: user?.uid || 'unknown',
+            childId: originalProfile.child_name || 'unknown'
+          };
+          const res = await apiService.generatePlan(profileWithIds);
           addDebugInfo(`📥 API RESPONSE RECEIVED: ${res.success ? 'SUCCESS' : 'FAILED'}`);
           console.log('📥 API RESPONSE RECEIVED:', res);
           
           if (res.success) {
             console.log('✅ PLAN GENERATION SUCCESSFUL FOR EXISTING PROFILE');
             addDebugInfo('✅ PLAN GENERATION SUCCESSFUL FOR EXISTING PROFILE');
+            
+            // Open Flow Viewer in new window with user/child context
+            // Add delay to ensure Firestore save completes
+            setTimeout(() => {
+              const flowViewerUrl = `${window.location.origin}/admin/flow-viewer?userId=${user.uid}&childId=${originalProfile.child_name}`;
+              window.open(flowViewerUrl, '_blank');
+              console.log('📊 Flow Viewer opened:', flowViewerUrl);
+            }, 2000);  // 2 second delay for Firestore save
+            
             // Save plan to Firestore under 'plans' field keyed by month
             const currentDate = new Date();
             const monthYear = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' }).replace(/ /g, ''); // e.g., July2025
@@ -1081,9 +1098,7 @@ export default function ProfileForm({ onSubmit }) {
             <div style={{ color: 'white', fontSize: '0.9rem' }}>
               <strong>Goals:</strong> {children[selectedChildIndex].goals?.length || 0} selected
             </div>
-            <div style={{ color: 'white', fontSize: '0.9rem' }}>
-              <strong>Plan Type:</strong> {children[selectedChildIndex].plan_type || 'Not set'}
-            </div>
+            {/* Plan type display removed - always holistic */}
           </div>
         )}
         
@@ -1337,7 +1352,7 @@ export default function ProfileForm({ onSubmit }) {
       {/* DebugDisplay component is removed as debug info is now global */}
       <div style={cardStyle} className="profile-form-card profile-form-glass">
         {/* Back button at top left */}
-        <MinimalBackButton 
+        <SimpleBackButton 
           heroColors={{
             backgroundColor: '#f8fafc',
             primaryColor: '#667eea',
@@ -1508,36 +1523,7 @@ export default function ProfileForm({ onSubmit }) {
             </div>
           </div>
 
-          {/* Plan Type Selection Section */}
-          <div style={{ margin: '32px 0', padding: '20px', background: '#f8f9fa', borderRadius: '10px', border: '2px solid #6a4c93' }}>
-            <h2 style={{ color: '#6a4c93', marginBottom: 12 }}>Choose Your Plan Type</h2>
-            <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
-              {PLAN_TYPES.map(type => (
-                <div key={type.id} style={{ flex: 1, minWidth: 220, background: planType === type.id ? '#e0e7ff' : 'white', border: planType === type.id ? '2px solid #6a4c93' : '1px solid #ddd', borderRadius: 8, padding: 16, cursor: 'pointer', boxShadow: planType === type.id ? '0 2px 8px #6a4c9340' : 'none', transition: 'all 0.2s' }} onClick={() => setPlanType(type.id)}>
-                  <input type="radio" id={type.id} name="planType" value={type.id} checked={planType === type.id} onChange={() => setPlanType(type.id)} style={{ marginRight: 8 }} />
-                  <label htmlFor={type.id} style={{ fontWeight: 'bold', fontSize: 17, color: '#264653' }}>{type.name}</label>
-                  <div style={{ margin: '8px 0', color: '#555', fontSize: 14 }}>{type.description}</div>
-                </div>
-              ))}
-            </div>
-            <div style={{ marginTop: 18, background: '#f3f0fa', borderRadius: 8, padding: 12, fontSize: 15 }}>
-              <strong>Quick Comparison:</strong>
-              <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: 8 }}>
-                <thead>
-                  <tr style={{ background: '#e0e7ff', fontSize: 14 }}>
-                    <th style={{ padding: 6, border: '1px solid #ddd' }}></th>
-                    <th style={{ padding: 6, border: '1px solid #ddd' }}>Hybrid</th>
-                    <th style={{ padding: 6, border: '1px solid #ddd' }}>Fusion</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td style={{ padding: 6, border: '1px solid #ddd' }}>Weekly Flow</td><td style={{ padding: 6, border: '1px solid #ddd' }}>Different each week</td><td style={{ padding: 6, border: '1px solid #ddd' }}>Same every week</td></tr>
-                  <tr><td style={{ padding: 6, border: '1px solid #ddd' }}>Best For</td><td style={{ padding: 6, border: '1px solid #ddd' }}>Variety, projects</td><td style={{ padding: 6, border: '1px solid #ddd' }}>Routine, balance</td></tr>
-                  <tr><td style={{ padding: 6, border: '1px solid #ddd' }}>Parent Effort</td><td style={{ padding: 6, border: '1px solid #ddd' }}>More planning</td><td style={{ padding: 6, border: '1px solid #ddd' }}>Easy to follow</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+          {/* SIMPLIFIED: Plan type selection removed - always holistic */}
 
           {/* Show persistent update confirmation message just above the buttons */}
           {showUpdateMessage && (

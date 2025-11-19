@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📊 Plan Generation Flow - Live Monitor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .refresh-bar {
+            background: #f8f9fa;
+            padding: 20px 30px;
+            border-bottom: 2px solid #e9ecef;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .status-badge {
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .status-loading {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .status-success {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #667eea, #764ba2);
+        }
+
+        .stage {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .stage-icon {
+            position: absolute;
+            left: -38px;
+            top: 8px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: white;
+            border: 4px solid #667eea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1;
+        }
+
+        .stage-icon.complete {
+            background: #28a745;
+            border-color: #28a745;
+            color: white;
+        }
+
+        .stage-icon.running {
+            background: #ffc107;
+            border-color: #ffc107;
+            color: white;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .stage-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .stage-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
+        }
+
+        .stage-header {
+            padding: 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .stage-header:hover {
+            background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+        }
+
+        .stage-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .stage-meta {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            font-size: 0.9em;
+        }
+
+        .meta-time {
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-weight: bold;
+        }
+
+        .meta-tokens {
+            background: #28a745;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-weight: bold;
+        }
+
+        .expand-icon {
+            font-size: 1.5em;
+            transition: transform 0.3s;
+        }
+
+        .expand-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .stage-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .stage-details.expanded {
+            max-height: 2000px;
+            transition: max-height 0.5s ease-in;
+        }
+
+        .stage-content {
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        .detail-section {
+            margin-bottom: 20px;
+        }
+
+        .detail-title {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .detail-content {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            font-family: monospace;
+            font-size: 0.9em;
+            line-height: 1.6;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .detail-list {
+            list-style: none;
+        }
+
+        .detail-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .detail-list li:last-child {
+            border-bottom: none;
+        }
+
+        .checkpoint {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+        }
+
+        .checkpoint-icon {
+            font-size: 1.2em;
+        }
+
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .summary-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .summary-card h3 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .summary-card p {
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+
+        .week-names {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .week-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 15px;
+            transition: all 0.3s;
+        }
+
+        .week-card:hover {
+            border-color: #667eea;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .week-number {
+            font-size: 0.9em;
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .week-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .week-theme {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .timestamp-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            text-align: center;
+            border: 2px solid #e9ecef;
+        }
+
+        .timestamp-section h3 {
+            color: #667eea;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .timestamp-value {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .timestamp-age {
+            font-size: 1.1em;
+            color: #666;
+            font-weight: normal;
+        }
+
+        .timestamp-age.recent {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .timestamp-age.old {
+            color: #ffc107;
+            font-weight: bold;
+        }
+
+        .timestamp-age.very-old {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+
+        .no-data-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .critical-warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .critical-warning strong {
+            color: #856404;
+        }
+
+        .flow-summary {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            border: 2px solid #e9ecef;
+        }
+
+        .flow-summary h3 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 30px;
+            font-size: 1.5em;
+        }
+
+        .flow-diagram {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .flow-step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .flow-step-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #e9ecef;
+            color: #666;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+            font-size: 24px;
+            border: 3px solid #e9ecef;
+            transition: all 0.3s;
+        }
+
+        .flow-step-icon.completed {
+            background: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+
+        .flow-step-icon.failed {
+            background: #dc3545;
+            color: white;
+            border-color: #dc3545;
+        }
+
+        .flow-step-icon.partial {
+            background: #ffc107;
+            color: white;
+            border-color: #ffc107;
+        }
+
+        .flow-step-label {
+            font-size: 0.85em;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .flow-step-status {
+            font-size: 0.75em;
+            color: #666;
+        }
+
+        .flow-connector {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: #e9ecef;
+            z-index: 0;
+            transform: translateY(-20px);
+        }
+
+        .flow-connector-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: linear-gradient(90deg, #28a745, #667eea);
+            transition: width 0.5s ease;
+        }
+
+        @media (max-width: 768px) {
+            .flow-diagram {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .flow-connector {
+                display: none;
+            }
+
+            .flow-step {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Plan Generation Flow Monitor</h1>
+            <p>Real-time visualization of your learning plan generation process</p>
+        </div>
+
+        <div class="refresh-bar">
+            <div>
+                <button class="btn" onclick="loadLatestPlan()">🔄 Refresh Now</button>
+                <span style="margin-left: 15px; color: #666;">Last updated: <span id="lastUpdate">Never</span></span>
+                <span style="margin-left: 15px; color: #28a745; font-weight: bold;">🔄 Auto-refresh: <span id="autoRefreshStatus">ON (every 2m)</span></span>
+            </div>
+            <div>
+                <span class="status-badge" id="statusBadge">⏳ Loading...</span>
+            </div>
+        </div>
+
+        <div class="content" id="mainContent">
+            <div class="no-data">
+                <div class="no-data-icon">📊</div>
+                <h2>No Plan Loaded</h2>
+                <p>Click the "Refresh Latest Plan" button above to load the most recent plan generation.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentPlan = null;
+
+        // Helper function to format timestamp
+        function formatTimestamp(timestamp) {
+            try {
+                let date;
+                
+                // Handle different timestamp formats
+                if (timestamp && typeof timestamp === 'string') {
+                    // ISO string or Firestore string format
+                    date = new Date(timestamp);
+                } else if (timestamp && timestamp._seconds) {
+                    // Firestore Timestamp object
+                    date = new Date(timestamp._seconds * 1000);
+                } else if (timestamp instanceof Date) {
+                    date = timestamp;
+                } else {
+                    return 'Unknown';
+                }
+                
+                // Format: "Oct 24, 2025 @ 8:36:17 PM PST"
+                const options = {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric',
+                    hour: 'numeric',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    hour12: true,
+                    timeZoneName: 'short'
+                };
+                
+                return date.toLocaleString('en-US', options);
+            } catch (error) {
+                console.error('Error formatting timestamp:', error);
+                return 'Invalid timestamp';
+            }
+        }
+
+        // Helper function to calculate age of plan
+        function calculateAge(timestamp) {
+            try {
+                let date;
+                
+                // Handle different timestamp formats
+                if (timestamp && typeof timestamp === 'string') {
+                    date = new Date(timestamp);
+                } else if (timestamp && timestamp._seconds) {
+                    date = new Date(timestamp._seconds * 1000);
+                } else if (timestamp instanceof Date) {
+                    date = timestamp;
+                } else {
+                    return { text: 'Unknown', class: '' };
+                }
+                
+                const now = new Date();
+                const ageMs = now - date;
+                const ageMinutes = Math.floor(ageMs / 60000);
+                const ageHours = Math.floor(ageMinutes / 60);
+                const ageDays = Math.floor(ageHours / 24);
+                
+                let ageText;
+                let ageClass;
+                
+                if (ageMinutes < 1) {
+                    ageText = 'Just now';
+                    ageClass = 'recent';
+                } else if (ageMinutes < 60) {
+                    ageText = `Generated ${ageMinutes} minute${ageMinutes !== 1 ? 's' : ''} ago`;
+                    ageClass = ageMinutes < 10 ? 'recent' : (ageMinutes < 30 ? 'old' : 'very-old');
+                } else if (ageHours < 24) {
+                    ageText = `Generated ${ageHours} hour${ageHours !== 1 ? 's' : ''} ago`;
+                    ageClass = 'very-old';
+                } else {
+                    ageText = `Generated ${ageDays} day${ageDays !== 1 ? 's' : ''} ago`;
+                    ageClass = 'very-old';
+                }
+                
+                return { text: ageText, class: ageClass };
+            } catch (error) {
+                console.error('Error calculating age:', error);
+                return { text: 'Unknown age', class: '' };
+            }
+        }
+
+        async function loadLatestPlan() {
+            const statusBadge = document.getElementById('statusBadge');
+            const mainContent = document.getElementById('mainContent');
+            
+            statusBadge.className = 'status-badge status-loading';
+            statusBadge.textContent = '⏳ Loading...';
+            
+            mainContent.innerHTML = '<div class="loader"></div>';
+
+            try {
+                // Add cache-busting parameter to ensure fresh data
+                const cacheBuster = `?t=${Date.now()}`;
+                const response = await fetch('https://llm-agents-790275794964.us-central1.run.app/api/get-latest-plan' + cacheBuster, {
+                    cache: 'no-store',
+                    headers: {
+                        'Cache-Control': 'no-cache, no-store, must-revalidate',
+                        'Pragma': 'no-cache'
+                    }
+                });
+                const data = await response.json();
+
+                if (data.success) {
+                    // Backend returns mixed structure: some fields at root, some in data object
+                    // Use data itself (which has all fields) instead of data.data
+                    currentPlan = data;
+                    
+                    // DEBUG: Log agent timings to console
+                    console.log('📊 Full plan data:', currentPlan);
+                    console.log('⏰ Timestamp:', currentPlan.timestamp);
+                    console.log('⏰ Generated At:', currentPlan.generated_at);
+                    console.log('🤖 Agent Timings:', currentPlan.agent_timings);
+                    console.log('👶 Profile Agent:', currentPlan.agent_timings?.profile_agent);
+                    console.log('🧠 LLM Integration:', currentPlan.llm_integration);
+                    
+                    renderPlan(currentPlan);
+                    statusBadge.className = 'status-badge status-success';
+                    statusBadge.textContent = '✅ Plan Loaded';
+                    document.getElementById('lastUpdate').textContent = new Date().toLocaleTimeString();
+                } else {
+                    throw new Error(data.error || 'Failed to load plan');
+                }
+            } catch (error) {
+                statusBadge.className = 'status-badge status-error';
+                statusBadge.textContent = '❌ Error Loading';
+                mainContent.innerHTML = `
+                    <div class="no-data">
+                        <div class="no-data-icon">⚠️</div>
+                        <h2>Error Loading Plan</h2>
+                        <p>${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        function renderPlan(plan) {
+            const agentTimings = plan.agent_timings || {};
+            const weeklyPlan = plan.weekly_plan || {};
+            const profile = plan.profile || {};
+            const llmIntegration = plan.llm_integration || {};
+
+            const totalTime = agentTimings.total_execution_time || 0;
+            const totalTokens = Object.values(agentTimings)
+                .filter(a => typeof a === 'object' && a.tokens_used)
+                .reduce((sum, a) => sum + (a.tokens_used || 0), 0);
+
+            // Extract timestamp (try multiple fields)
+            const timestamp = plan.timestamp || plan.generated_at || plan.created_at;
+            const timestampDisplay = formatTimestamp(timestamp);
+            const ageInfo = calculateAge(timestamp);
+
+            const html = `
+                <!-- Summary Cards -->
+                <div class="summary-cards">
+                    <div class="summary-card">
+                        <h3>⏱️ ${Math.round(totalTime)}s</h3>
+                        <p>Total Generation Time</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>🧠 ${totalTokens.toLocaleString()}</h3>
+                        <p>LLM Tokens Used</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>🤖 5</h3>
+                        <p>Agents Executed</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>📅 4</h3>
+                        <p>Weeks Planned</p>
+                    </div>
+                </div>
+
+                <!-- Timestamp Section -->
+                <div class="timestamp-section">
+                    <h3>⏰ Plan Generated</h3>
+                    <div class="timestamp-value">${timestampDisplay}</div>
+                    <div class="timestamp-age ${ageInfo.class}">${ageInfo.text}</div>
+                </div>
+
+                <!-- Week Names Section -->
+                ${renderWeekNames(weeklyPlan)}
+
+                <!-- Timeline -->
+                <div class="timeline">
+                    ${renderStage('1', 'frontend', '🌐 Frontend Input', 'User fills child profile form', {
+                        checkpoints: [
+                            { label: 'Child name entered', value: profile.child_name || 'N/A', status: profile.child_name ? 'pass' : 'fail' },
+                            { label: 'Age selected', value: profile.child_age || 'N/A', status: profile.child_age ? 'pass' : 'fail' },
+                            { label: 'Interests chosen', value: (profile.interests || []).join(', ') || 'N/A', status: profile.interests?.length ? 'pass' : 'fail' },
+                            { label: 'Learning style', value: profile.learning_style || 'N/A', status: profile.learning_style ? 'pass' : 'fail' }
+                        ],
+                        location: 'src/components/forms/ProfileForm.jsx'
+                    })}
+
+                    ${renderStage('2', 'api', '🚀 API Request', 'Frontend sends request to backend', {
+                        checkpoints: [
+                            { label: 'Backend URL', value: 'llm-agents-790275794964.us-central1.run.app', status: 'pass' },
+                            { label: 'Endpoint', value: 'POST /api/generate-plan', status: 'pass' },
+                            { label: 'Timeout', value: '10 minutes', status: 'pass' }
+                        ],
+                        location: 'src/services/api.js'
+                    })}
+
+                    ${renderAgentStage('3', 'profile', '👶 Profile Agent', agentTimings.profile_agent, {
+                        description: 'Enriches child profile with developmental insights',
+                        llmUsed: agentTimings.profile_agent?.llm_used || llmIntegration.profile_agent_llm_used,
+                        llmPrompt: llmIntegration.profile_agent_prompt,
+                        llmResponse: llmIntegration.profile_agent_response,
+                        output: [
+                            'Developmental stage analysis',
+                            'Learning characteristics',
+                            'Attention span recommendations',
+                            'Personalized learning objectives',
+                            'Engagement strategies'
+                        ]
+                    })}
+
+                    ${renderAgentStage('4', 'analysis', '🎯 Analysis Agent', agentTimings.analysis_agent, {
+                        description: 'Selects 6-7 learning themes matching child\'s interests',
+                        llmUsed: agentTimings.analysis_agent?.llm_used || llmIntegration.analysis_agent_llm_used,
+                        llmPrompt: llmIntegration.analysis_agent_prompt,
+                        llmResponse: llmIntegration.analysis_agent_response,
+                        output: [
+                            'Selected themes (6-7 from 25 available)',
+                            'Monthly learning agenda',
+                            'Weekly progression framework',
+                            'Guidance for Match Agent'
+                        ]
+                    })}
+
+                    ${renderAgentStage('5', 'match', '🎲 Match Agent', agentTimings.match_agent, {
+                        description: 'Selects age-appropriate topics (±1 year strict filtering)',
+                        llmUsed: agentTimings.match_agent?.llm_used || llmIntegration.match_agent_llm_used,
+                        llmPrompt: llmIntegration.match_agent_prompt,
+                        llmResponse: llmIntegration.match_agent_response,
+                        output: [
+                            '30 niche topics (age-filtered)',
+                            'Skill gap analysis',
+                            '~20 essential growth topics to fill gaps',
+                            'Total: 50 balanced candidate topics',
+                            'Match analysis (age, interest, skill alignment)'
+                        ],
+                        critical: 'Age filtering: ONLY topics within ±1 year of child\'s age'
+                    })}
+
+                    ${renderAgentStage('6', 'schedule', '📅 Schedule Agent', agentTimings.schedule_agent, {
+                        description: 'Creates 4-week plan with creative week names',
+                        llmUsed: agentTimings.schedule_agent?.llm_used || llmIntegration.schedule_agent_llm_used,
+                        llmPrompt: llmIntegration.schedule_agent_prompt,
+                        llmResponse: llmIntegration.schedule_agent_response,
+                        output: [
+                            'Selected 28 final topics (7 per week)',
+                            '⚠️ CRITICAL: Generated creative week names',
+                            'Daily schedule (Mon-Sun activities)',
+                            'Learning objectives',
+                            'Activity recommendations',
+                            'Progress tracking methods'
+                        ],
+                        critical: 'Week names MUST be creative (not "Week 1")'
+                    })}
+
+                    ${renderAgentStage('7', 'reviewer', '✅ Reviewer Agent', agentTimings.reviewer_agent, {
+                        description: 'Performs comprehensive quality review',
+                        llmUsed: agentTimings.reviewer_agent?.llm_used || llmIntegration.reviewer_agent_llm_used,
+                        llmPrompt: llmIntegration.reviewer_agent_prompt,
+                        llmResponse: llmIntegration.reviewer_agent_response,
+                        output: [
+                            'Age appropriateness score',
+                            'Interest alignment assessment',
+                            'Learning style match evaluation',
+                            'Engagement potential rating',
+                            'Potential issues identified',
+                            'Parent recommendations'
+                        ]
+                    })}
+
+                    ${renderStage('8', 'firestore', '💾 Firestore Storage', 'Plan saved to database', {
+                        checkpoints: [
+                            { label: 'Path', value: `users/{userId}/children/{childId}/plans/{month}`, status: 'pass' },
+                            { label: 'Document created', value: plan.timestamp ? '✅ Yes' : '❌ No', status: plan.timestamp ? 'pass' : 'fail' },
+                            { label: 'Timestamp', value: plan.timestamp ? new Date(plan.timestamp).toLocaleString() : 'N/A', status: plan.timestamp ? 'pass' : 'fail' }
+                        ],
+                        location: 'Firebase Firestore'
+                    })}
+
+                    ${renderStage('9', 'response', '📤 Backend Response', 'Plan returned to frontend', {
+                        checkpoints: [
+                            { label: 'Status Code', value: '200 OK', status: 'pass' },
+                            { label: 'Response Time', value: `${Math.round(totalTime)}s`, status: totalTime < 600 ? 'pass' : 'warn' },
+                            { label: 'Data Complete', value: '✅ All fields present', status: 'pass' }
+                        ]
+                    })}
+
+                    ${renderStage('10', 'render', '🎨 Frontend Display', 'Plan displayed to user', {
+                        checkpoints: [
+                            { label: 'Weekly plan loaded', value: Object.keys(weeklyPlan).length ? '✅ Yes' : '❌ No', status: Object.keys(weeklyPlan).length ? 'pass' : 'fail' },
+                            { label: 'Week names present', value: weeklyPlan.week_1?.name ? '✅ Yes' : '❌ No', status: weeklyPlan.week_1?.name ? 'pass' : 'fail' },
+                            { label: 'Creative names', value: (weeklyPlan.week_1?.name && !weeklyPlan.week_1.name.includes('Week 1')) ? '✅ Yes' : '❌ No', status: (weeklyPlan.week_1?.name && !weeklyPlan.week_1.name.includes('Week 1')) ? 'pass' : 'fail' }
+                        ],
+                        location: 'src/components/CustomisedWeeklyPlan.jsx'
+                    })}
+                </div>
+
+                <!-- Flow Summary at Bottom -->
+                ${renderFlowSummary(agentTimings, weeklyPlan, llmIntegration)}
+            `;
+
+            document.getElementById('mainContent').innerHTML = html;
+        }
+
+        function renderFlowSummary(agentTimings, weeklyPlan, llmIntegration) {
+            // Define all flow steps
+            const flowSteps = [
+                {
+                    id: 'frontend',
+                    icon: '🌐',
+                    label: 'Frontend',
+                    check: () => true  // Always true if we have data
+                },
+                {
+                    id: 'api',
+                    icon: '🚀',
+                    label: 'API Call',
+                    check: () => true  // Always true if we have data
+                },
+                {
+                    id: 'profile',
+                    icon: '👶',
+                    label: 'Profile',
+                    check: () => agentTimings.profile_agent?.llm_used || llmIntegration.profile_agent_llm_used
+                },
+                {
+                    id: 'analysis',
+                    icon: '🎯',
+                    label: 'Analysis',
+                    check: () => agentTimings.analysis_agent?.llm_used || llmIntegration.analysis_agent_llm_used
+                },
+                {
+                    id: 'match',
+                    icon: '🎲',
+                    label: 'Match',
+                    check: () => agentTimings.match_agent?.llm_used || llmIntegration.match_agent_llm_used
+                },
+                {
+                    id: 'schedule',
+                    icon: '📅',
+                    label: 'Schedule',
+                    check: () => agentTimings.schedule_agent?.llm_used || llmIntegration.schedule_agent_llm_used
+                },
+                {
+                    id: 'reviewer',
+                    icon: '✅',
+                    label: 'Reviewer',
+                    check: () => agentTimings.reviewer_agent?.llm_used || llmIntegration.reviewer_agent_llm_used
+                },
+                {
+                    id: 'firestore',
+                    icon: '💾',
+                    label: 'Firestore',
+                    check: () => true  // If we have data, it was saved
+                },
+                {
+                    id: 'response',
+                    icon: '📤',
+                    label: 'Response',
+                    check: () => true  // If we have data, response was sent
+                },
+                {
+                    id: 'display',
+                    icon: '🎨',
+                    label: 'Display',
+                    check: () => weeklyPlan.week_1?.name && !weeklyPlan.week_1.name.includes('Week 1')
+                }
+            ];
+
+            // Calculate completion status for each step
+            const stepsHtml = flowSteps.map(step => {
+                const isCompleted = step.check();
+                const statusClass = isCompleted ? 'completed' : 'failed';
+                const statusIcon = isCompleted ? '✓' : '✗';
+                const statusText = isCompleted ? 'Complete' : 'Failed';
+
+                return `
+                    <div class="flow-step">
+                        <div class="flow-step-icon ${statusClass}">
+                            ${statusIcon}
+                        </div>
+                        <div class="flow-step-label">${step.label}</div>
+                        <div class="flow-step-status">${statusText}</div>
+                    </div>
+                `;
+            }).join('');
+
+            // Calculate progress percentage
+            const completedCount = flowSteps.filter(step => step.check()).length;
+            const progressPercent = (completedCount / flowSteps.length) * 100;
+
+            return `
+                <div class="flow-summary">
+                    <h3>📊 Complete Flow Status (${completedCount}/${flowSteps.length} Stages)</h3>
+                    <div class="flow-diagram">
+                        <div class="flow-connector">
+                            <div class="flow-connector-progress" style="width: ${progressPercent}%"></div>
+                        </div>
+                        ${stepsHtml}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderWeekNames(weeklyPlan) {
+            const weeks = ['week_1', 'week_2', 'week_3', 'week_4'];
+            const weekCards = weeks.map((weekKey, index) => {
+                const week = weeklyPlan[weekKey] || {};
+                return `
+                    <div class="week-card">
+                        <div class="week-number">Week ${index + 1}</div>
+                        <div class="week-name">${week.name || '❌ NO NAME'}</div>
+                        <div class="week-theme">${week.theme || 'No theme'}</div>
+                    </div>
+                `;
+            }).join('');
+
+            return `
+                <div class="detail-section">
+                    <div class="detail-title">📅 Generated Week Names (Critical Check)</div>
+                    ${weeklyPlan.week_1?.name && !weeklyPlan.week_1.name.includes('Week 1') ? '' : '<div class="critical-warning"><strong>⚠️ WARNING:</strong> Week names may be missing or generic!</div>'}
+                    <div class="week-names">
+                        ${weekCards}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderStage(num, id, title, description, details) {
+            const checkpointsHtml = details.checkpoints ? `
+                <div class="detail-section">
+                    <div class="detail-title">✅ Checkpoints</div>
+                    <ul class="detail-list">
+                        ${details.checkpoints.map(cp => `
+                            <li class="checkpoint">
+                                <span class="checkpoint-icon">${cp.status === 'pass' ? '✅' : cp.status === 'warn' ? '⚠️' : '❌'}</span>
+                                <strong>${cp.label}:</strong> ${cp.value}
+                            </li>
+                        `).join('')}
+                    </ul>
+                </div>
+            ` : '';
+
+            const locationHtml = details.location ? `
+                <div class="detail-section">
+                    <div class="detail-title">📍 Location</div>
+                    <div class="detail-content">${details.location}</div>
+                </div>
+            ` : '';
+
+            return `
+                <div class="stage" id="stage-${id}">
+                    <div class="stage-icon complete">
+                        <span>${num}</span>
+                    </div>
+                    <div class="stage-card">
+                        <div class="stage-header" onclick="toggleStage('${id}')">
+                            <div class="stage-title">
+                                ${title}
+                            </div>
+                            <div class="stage-meta">
+                                <span class="expand-icon" id="expand-${id}">▼</span>
+                            </div>
+                        </div>
+                        <div class="stage-details" id="details-${id}">
+                            <div class="stage-content">
+                                <p style="margin-bottom: 15px; color: #666;">${description}</p>
+                                ${checkpointsHtml}
+                                ${locationHtml}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderAgentStage(num, id, title, agentData, details) {
+            const time = agentData?.execution_time_seconds || 0;
+            const tokens = agentData?.tokens_used || 0;
+            // Check both llmUsed from details AND from agentData
+            const llmUsedValue = details.llmUsed !== undefined ? details.llmUsed : (agentData?.llm_used || false);
+            const llmUsed = llmUsedValue ? '✅ Yes' : '❌ No';
+            
+            // Get raw LLM prompt and response
+            const llmPrompt = agentData?.llm_prompt || details.llmPrompt || '';
+            const llmResponse = agentData?.llm_response || details.llmResponse || '';
+
+            const outputHtml = details.output ? `
+                <div class="detail-section">
+                    <div class="detail-title">📤 Output Summary</div>
+                    <ul class="detail-list">
+                        ${details.output.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+            ` : '';
+            
+            // RAW LLM INPUT - Show actual prompt sent to Gemini
+            const llmInputHtml = llmPrompt ? `
+                <div class="detail-section">
+                    <div class="detail-title">📥 RAW LLM INPUT (Actual Prompt Sent to Gemini)</div>
+                    <details style="margin-top: 10px;">
+                        <summary style="cursor: pointer; padding: 10px; background: #f8f9fa; border-radius: 5px; font-weight: bold; color: #495057;">
+                            🔽 Click to View Full Prompt (${llmPrompt.length} characters)
+                        </summary>
+                        <pre style="background: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; margin-top: 10px; white-space: pre-wrap; word-wrap: break-word; font-size: 12px; line-height: 1.5; color: #212529; border-left: 4px solid #667eea;">${escapeHtml(llmPrompt)}</pre>
+                    </details>
+                </div>
+            ` : '<div class="detail-section"><div class="detail-title">📥 RAW LLM INPUT</div><p style="color: #999; font-style: italic;">No LLM input available</p></div>';
+            
+            // RAW LLM OUTPUT - Show actual response from Gemini
+            const llmOutputHtml = llmResponse ? `
+                <div class="detail-section">
+                    <div class="detail-title">📤 RAW LLM OUTPUT (Actual Response from Gemini)</div>
+                    <details style="margin-top: 10px;">
+                        <summary style="cursor: pointer; padding: 10px; background: #f8f9fa; border-radius: 5px; font-weight: bold; color: #495057;">
+                            🔽 Click to View Full Response (${llmResponse.length} characters)
+                        </summary>
+                        <pre style="background: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; margin-top: 10px; white-space: pre-wrap; word-wrap: break-word; font-size: 12px; line-height: 1.5; color: #212529; border-left: 4px solid #28a745;">${escapeHtml(llmResponse)}</pre>
+                    </details>
+                </div>
+            ` : '<div class="detail-section"><div class="detail-title">📤 RAW LLM OUTPUT</div><p style="color: #999; font-style: italic;">No LLM output available</p></div>';
+
+            const criticalHtml = details.critical ? `
+                <div class="critical-warning">
+                    <strong>🚨 CRITICAL:</strong> ${details.critical}
+                </div>
+            ` : '';
+
+            return `
+                <div class="stage" id="stage-${id}">
+                    <div class="stage-icon complete">
+                        <span>${num}</span>
+                    </div>
+                    <div class="stage-card">
+                        <div class="stage-header" onclick="toggleStage('${id}')">
+                            <div class="stage-title">
+                                ${title}
+                            </div>
+                            <div class="stage-meta">
+                                <span class="meta-time">⏱️ ${time.toFixed(1)}s</span>
+                                <span class="meta-tokens">🧠 ${tokens.toLocaleString()}</span>
+                                <span class="expand-icon" id="expand-${id}">▼</span>
+                            </div>
+                        </div>
+                        <div class="stage-details" id="details-${id}">
+                            <div class="stage-content">
+                                <p style="margin-bottom: 15px; color: #666;">${details.description}</p>
+                                ${criticalHtml}
+                                <div class="detail-section">
+                                    <div class="detail-title">🤖 Execution Details</div>
+                                    <ul class="detail-list">
+                                        <li><strong>LLM Used:</strong> ${llmUsed}</li>
+                                        <li><strong>Execution Time:</strong> ${time.toFixed(2)} seconds</li>
+                                        <li><strong>Tokens Consumed:</strong> ${tokens.toLocaleString()}</li>
+                                        <li><strong>Model:</strong> Gemini 2.5 Flash</li>
+                                    </ul>
+                                </div>
+                                ${outputHtml}
+                                ${llmInputHtml}
+                                ${llmOutputHtml}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Helper function to escape HTML to prevent XSS and display raw text
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function toggleStage(id) {
+            const details = document.getElementById(`details-${id}`);
+            const icon = document.getElementById(`expand-${id}`);
+            
+            details.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+        }
+
+        // Auto-refresh interval (2 minutes)
+        let autoRefreshInterval = null;
+        const REFRESH_INTERVAL = 120000; // 2 minutes (120 seconds)
+
+        function startAutoRefresh() {
+            // Clear any existing interval
+            if (autoRefreshInterval) {
+                clearInterval(autoRefreshInterval);
+            }
+            
+            // Set up auto-refresh every 2 minutes
+            autoRefreshInterval = setInterval(() => {
+                console.log('🔄 Auto-refreshing plan...');
+                loadLatestPlan();
+            }, REFRESH_INTERVAL);
+            
+            console.log('✅ Auto-refresh started (every 2 minutes)');
+        }
+
+        // Auto-load on page load
+        window.addEventListener('load', () => {
+            console.log('🚀 Page loaded - starting automatic refresh...');
+            
+            // Load plan immediately on page load
+            loadLatestPlan();
+            
+            // Start auto-refresh
+            startAutoRefresh();
+        });
+    </script>
+</body>
+</html>
+
