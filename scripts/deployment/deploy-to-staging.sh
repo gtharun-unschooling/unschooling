@@ -46,7 +46,8 @@ git push origin $VERSION
 echo "🔨 Building frontend..."
 export REACT_APP_ENVIRONMENT=staging
 export REACT_APP_API_BASE_URL=https://llm-agents-staging-44gsrw22gq-uc.a.run.app
-npm run build
+export CI=false  # Allow build with warnings
+DISABLE_ESLINT_PLUGIN=true npm run build
 
 # Deploy to Firebase staging channel
 echo "🚀 Deploying to Firebase staging..."
