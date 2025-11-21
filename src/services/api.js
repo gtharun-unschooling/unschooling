@@ -93,20 +93,26 @@ class ApiService {
     console.log('🔍 SEARCHING FOR MATCHING TOPICS...');
     console.log('   Looking for topics matching interests:', interests);
     
-    if (topicsData && interests.length > 0) {
+    // Ensure interests is an array
+    const interestsArray = Array.isArray(interests) ? interests : (interests ? [interests] : []);
+    console.log('   Normalized interests array:', interestsArray);
+    
+    if (topicsData && interestsArray.length > 0) {
       for (const topic of topicsData) {
-        if (interests.includes(topic.Niche)) {
-          // Simple age matching
-          const age_range = topic.Age || "";
+        // Ensure topic.Niche is a string before comparing
+        const topicNiche = topic.Niche ? String(topic.Niche) : '';
+        if (topicNiche && interestsArray.includes(topicNiche)) {
+          // Simple age matching - ensure age_range is a string
+          const age_range = topic.Age ? String(topic.Age) : "";
           const age_match = age_range.includes(String(child_age)) || age_range.includes("5-12") || age_range.includes("3 and 4");
           
-          console.log(`   Checking topic: "${topic.Topic}" (Niche: ${topic.Niche}, Age: ${age_range})`);
-          console.log(`     Interest match: ${interests.includes(topic.Niche) ? '✅' : '❌'}`);
+          console.log(`   Checking topic: "${topic.Topic}" (Niche: ${topicNiche}, Age: ${age_range})`);
+          console.log(`     Interest match: ${interestsArray.includes(topicNiche) ? '✅' : '❌'}`);
           console.log(`     Age match: ${age_match ? '✅' : '❌'}`);
           
           if (age_match) {
             matched_topics.push(topic);
-            console.log(`   ✅ SELECTED: "${topic.Topic}" for ${topic.Niche}`);
+            console.log(`   ✅ SELECTED: "${topic.Topic}" for ${topicNiche}`);
             if (matched_topics.length >= 4) {
               console.log('   📋 Reached maximum of 4 topics, stopping search');
               break;
@@ -123,15 +129,18 @@ class ApiService {
     // If no matches found, create generic topics
     if (matched_topics.length === 0) {
       console.log('⚠️ NO MATCHES FOUND - CREATING GENERIC TOPICS');
-      matched_topics = interests.length > 0 ? interests.slice(0, 4).map(interest => ({
-        'Topic': `Introduction to ${interest}`,
-        'Niche': interest,
-        'Age': `${child_age}-${child_age + 2}`,
-        'Objective': `Learn the basics of ${interest} through fun activities`,
-        'Activity 1': `Explore ${interest} through hands-on activities`,
-        'Activity 2': `Create a project related to ${interest}`,
-        'Estimated Time': '30 mins'
-      })) : [{
+      matched_topics = interestsArray.length > 0 ? interestsArray.slice(0, 4).map(interest => {
+        const interestName = String(interest);
+        return {
+          'Topic': `Introduction to ${interestName}`,
+          'Niche': interestName,
+          'Age': `${child_age}-${child_age + 2}`,
+          'Objective': `Learn the basics of ${interestName} through fun activities`,
+          'Activity 1': `Explore ${interestName} through hands-on activities`,
+          'Activity 2': `Create a project related to ${interestName}`,
+          'Estimated Time': '30 mins'
+        };
+      }) : [{
         'Topic': 'General Learning Adventure',
         'Niche': 'General',
         'Age': `${child_age}-${child_age + 2}`,
@@ -420,12 +429,17 @@ class ApiService {
       
       let matched_topics = [];
       debugLog('🔍 STEP 4: MATCHING TOPICS TO INTERESTS');
-      debugLog(`🎯 Looking for topics matching: ${interests.join(', ')}`);
+      // Ensure interests is an array
+      const interestsArray = Array.isArray(interests) ? interests : (interests ? [interests] : []);
+      debugLog(`🎯 Looking for topics matching: ${interestsArray.join(', ')}`);
       
-      if (topicsData && interests.length > 0) {
+      if (topicsData && interestsArray.length > 0) {
         for (const topic of topicsData) {
-          if (interests.includes(topic.Niche)) {
-            const age_range = topic.Age || "";
+          // Ensure topic.Niche is a string before comparing
+          const topicNiche = topic.Niche ? String(topic.Niche) : '';
+          if (topicNiche && interestsArray.includes(topicNiche)) {
+            // Ensure age_range is a string
+            const age_range = topic.Age ? String(topic.Age) : "";
             const age_match = age_range.includes(String(child_age)) || age_range.includes("5-12") || age_range.includes("3 and 4");
             if (age_match) matched_topics.push(topic);
           }
@@ -434,17 +448,21 @@ class ApiService {
         debugLog(`✅ Found ${matched_topics.length} matching topics`);
       }
       
-      if (matched_topics.length === 0 && interests.length > 0) {
+      // Ensure interests is an array (defined above)
+      if (matched_topics.length === 0 && interestsArray.length > 0) {
         debugLog('🔄 STEP 5: CREATING FALLBACK TOPICS (No matches found)');
         
-        matched_topics = interests.map(interest => ({
-          Topic: `Introduction to ${interest}`,
-          Niche: interest,
-          Age: `${child_age}-${child_age + 2}`,
-          Objective: `Learn the basics of ${interest}`,
-          "Activity 1": `Explore ${interest}`,
-          "Activity 2": `Create a project related to ${interest}`
-        }));
+        matched_topics = interestsArray.map(interest => {
+          const interestName = String(interest);
+          return {
+            Topic: `Introduction to ${interestName}`,
+            Niche: interestName,
+            Age: `${child_age}-${child_age + 2}`,
+            Objective: `Learn the basics of ${interestName}`,
+            "Activity 1": `Explore ${interestName}`,
+            "Activity 2": `Create a project related to ${interestName}`
+          };
+        });
         
         debugLog(`✅ Created ${matched_topics.length} fallback topics`);
       }

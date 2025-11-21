@@ -66,28 +66,33 @@ const generateEnhancedPlan = (profile) => {
     console.log('🏷️ Available niches:', [...new Set(topicsData.map(t => t.Niche))]);
   }
   
+  // Ensure interests is an array
+  const interestsArray = Array.isArray(interests) ? interests : (interests ? [interests] : []);
+  
   // Find matching topics from the data (simple fallback only)
   let matched_topics = [];
-  if (topicsData && interests.length > 0) {
+  if (topicsData && interestsArray.length > 0) {
     console.log('🔍 ENHANCED PLAN - SEARCHING FOR MATCHING TOPICS...');
     console.log('   Available niches in topics data:', [...new Set(topicsData.map(t => t.Niche))]);
-    console.log('   Looking for interests:', interests);
+    console.log('   Looking for interests:', interestsArray);
     
     for (const topic of topicsData) {
-      if (interests.includes(topic.Niche)) {
-        // Simple age matching
-        const age_range = topic.Age || "";
+      // Ensure topic.Niche is a string before comparing
+      const topicNiche = topic.Niche ? String(topic.Niche) : '';
+      if (topicNiche && interestsArray.includes(topicNiche)) {
+        // Simple age matching - ensure age_range is a string
+        const age_range = topic.Age ? String(topic.Age) : "";
         const age_match = age_range.includes(String(child_age)) || age_range.includes("5-12") || age_range.includes("3 and 4");
         
-        console.log(`   Checking: "${topic.Topic}" (Niche: ${topic.Niche}, Age: ${age_range})`);
-        console.log(`     Interest match: ${interests.includes(topic.Niche) ? '✅' : '❌'}`);
+        console.log(`   Checking: "${topic.Topic}" (Niche: ${topicNiche}, Age: ${age_range})`);
+        console.log(`     Interest match: ${interestsArray.includes(topicNiche) ? '✅' : '❌'}`);
         console.log(`     Age match: ${age_match ? '✅' : '❌'}`);
         
         if (age_match) {
           // Convert topic to use correct field names
           const convertedTopic = {
             topic_name: topic.Topic,
-            niche: topic.Niche,
+            niche: topicNiche,
             age: topic.Age,
             objective: topic.Objective,
             estimated_time: topic["Estimated Time"] || "20-30 mins",
@@ -108,17 +113,20 @@ const generateEnhancedPlan = (profile) => {
   }
   
   // If no matches found, create generic topics
-  if (matched_topics.length === 0) {
+  if (matched_topics.length === 0 && interestsArray.length > 0) {
     console.log('⚠️ ENHANCED PLAN - NO MATCHES FOUND, CREATING GENERIC TOPICS');
-    matched_topics = interests.map(interest => ({
-      topic_name: `Introduction to ${interest}`,
-      niche: interest,
-      age: `${child_age}-${child_age + 2}`,
-      objective: `Learn the basics of ${interest} through fun activities`,
-      estimated_time: "20-30 mins",
-      "Activity 1": `Explore ${interest} through hands-on activities`,
-      "Activity 2": `Create a project related to ${interest}`
-    }));
+    matched_topics = interestsArray.map(interest => {
+      const interestName = String(interest);
+      return {
+        topic_name: `Introduction to ${interestName}`,
+        niche: interestName,
+        age: `${child_age}-${child_age + 2}`,
+        objective: `Learn the basics of ${interestName} through fun activities`,
+        estimated_time: "20-30 mins",
+        "Activity 1": `Explore ${interestName} through hands-on activities`,
+        "Activity 2": `Create a project related to ${interestName}`
+      };
+    });
     console.log('   Created generic topics:', matched_topics.map(t => t.topic_name));
   }
   
@@ -159,7 +167,7 @@ const generateEnhancedPlan = (profile) => {
       learning_style: learning_style,
       plan_type: profile.plan_type || 'hybrid',
       llm_insights: {
-        profile_summary: `A ${child_age}-year-old child with interests in ${interests.join(', ')} who learns best through ${learning_style} activities.`,
+        profile_summary: `A ${child_age}-year-old child with interests in ${Array.isArray(interests) ? interests.join(', ') : String(interests)} who learns best through ${learning_style} activities.`,
         subject_areas_of_interest: interests,
         areas_for_improvement: ["Focus and attention", "Following instructions"],
         suggestions: ["Provide hands-on activities", "Use visual aids", "Break tasks into smaller steps"],
@@ -537,7 +545,7 @@ export default function ProfileForm({ onSubmit }) {
     addDebugInfo(`👤 User: ${user.email}`);
     addDebugInfo(`📝 Child Name: ${childName}`);
     addDebugInfo(`📝 Child Age: ${childAge}`);
-    addDebugInfo(`📝 Interests: ${interests.join(', ')}`);
+    addDebugInfo(`📝 Interests: ${Array.isArray(interests) ? interests.join(', ') : String(interests)}`);
     addDebugInfo(`📝 Learning Style: ${learningStyle}`);
     addDebugInfo(`📝 Goals: ${selectedGoals.join(', ')}`);
     addDebugInfo(`📝 Plan Type: ${planType}`);
@@ -624,13 +632,18 @@ export default function ProfileForm({ onSubmit }) {
           // Send to backend
           addDebugInfo("📡 CALLING API SERVICE...");
           console.log('📡 CALLING API SERVICE...');
+          // Ensure interests, dislikes, and goals are arrays
+          const normalizedInterests = Array.isArray(interests) ? interests : (interests ? [interests] : []);
+          const normalizedDislikes = Array.isArray(dislikes) ? dislikes : (dislikes ? [dislikes] : []);
+          const normalizedGoals = Array.isArray(selectedGoals) ? selectedGoals : (selectedGoals ? [selectedGoals] : []);
+          
           const res = await apiService.generatePlan({
             child_name: childName,
             child_age: parseInt(childAge),
-            interests: interests,
-            dislikes: dislikes,
+            interests: normalizedInterests,
+            dislikes: normalizedDislikes,
             preferred_learning_style: learningStyle,
-            goals: selectedGoals,
+            goals: normalizedGoals,
             plan_type: planType,
             userId: user?.uid || 'unknown',
             childId: childName || 'unknown'
@@ -1433,7 +1446,7 @@ export default function ProfileForm({ onSubmit }) {
             <p style={labelStyle}>Select all the activities that interest your child:</p>
             <div style={scrollableGridStyle} className="profile-form-scrollable">
               {interestOptions.map((interest) => {
-                const isSelected = interests.includes(interest);
+                const isSelected = Array.isArray(interests) && interests.includes(interest);
                 return (
                   <button
                     key={interest}
