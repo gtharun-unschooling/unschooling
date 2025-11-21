@@ -45,7 +45,8 @@ git push origin $VERSION
 # Build frontend
 echo "🔨 Building frontend..."
 export REACT_APP_ENVIRONMENT=staging
-export REACT_APP_API_BASE_URL=https://llm-agents-staging-44gsrw22gq-uc.a.run.app
+# Temporarily use production backend until staging backend is deployed
+export REACT_APP_API_BASE_URL=https://llm-agents-44gsrw22gq-uc.a.run.app
 export CI=false  # Allow build with warnings
 DISABLE_ESLINT_PLUGIN=true npm run build
 
