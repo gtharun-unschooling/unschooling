@@ -245,16 +245,19 @@ const OurApproach = () => {
         }
       })
       .catch(err => {
-        console.error('Error fetching niches:', err);
-        console.log('🔄 Trying fallback to static file...');
+        // Only log error if it's not a connection refused error (expected in dev when backend is off)
+        if (!err.message.includes('Failed to fetch') && !err.message.includes('ERR_CONNECTION_REFUSED')) {
+          console.error('Error fetching niches:', err);
+        }
         // Fallback to static file if API fails
         fetch('/nichesdata.json')
           .then(res => {
-            console.log('📁 Fallback response status:', res.status);
+            if (!res.ok) {
+              throw new Error(`Fallback fetch failed: ${res.status}`);
+            }
             return res.json();
           })
           .then(data => {
-            console.log('📁 Fallback data received:', data?.length || 0, 'items');
             const mapped = data
               .filter(n => n.Niche && n.Niche.length > 0)
               .map(n => ({
@@ -264,7 +267,6 @@ const OurApproach = () => {
                 gradient: n["Primary Color"] && n["Secondary Color"] ? `linear-gradient(135deg, ${n["Primary Color"]} 0%, ${n["Secondary Color"]} 100%)` : '#f8fafc',
                 slug: n["Niche Slug"] || n.Niche.toLowerCase().replace(/\s+/g, '-'),
               }));
-            console.log('✅ Niches mapped from fallback:', mapped.length);
             setNiches(mapped);
           })
           .catch(fallbackErr => {
@@ -279,13 +281,10 @@ const OurApproach = () => {
   const safeNiches = Array.isArray(niches) ? niches : [];
   const displayNiches = safeNiches.slice(0, visibleNiches);
   
-  // Debug logging
-  console.log('🔍 Niches state:', {
-    niches: niches?.length || 0,
-    safeNiches: safeNiches?.length || 0,
-    displayNiches: displayNiches?.length || 0,
-    visibleNiches
-  });
+  // Debug logging (only in development mode)
+  if (process.env.NODE_ENV === 'development' && niches.length > 0) {
+    console.log('🔍 Niches loaded:', niches.length);
+  }
 
   useEffect(() => {
     setVisibleNiches(9); // Always reset on mount
@@ -613,23 +612,24 @@ const OurApproach = () => {
                     
                     style={{
                       ...cardStyle,
-                      // Fixed consistent size for all niche boxes - increased mobile size
-                      width: isMobile ? '110px' : '110px',
-                      height: isMobile ? '130px' : '130px',
+                      // Enhanced modern design - larger and more prominent
+                      width: isMobile ? '120px' : '140px',
+                      height: isMobile ? '140px' : '160px',
                       flex: '0 0 auto', // Don't grow or shrink
-                      backgroundColor: getNicheBackgroundColor(niche.title),
-                      padding: isMobile ? '12px' : '16px',
-                      borderRadius: '16px',
-                      boxShadow: '0 8px 25px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08)',
-                      border: '1px solid rgba(255, 255, 255, 0.6)',
+                      padding: isMobile ? '20px' : '24px',
+                      borderRadius: '24px',
+                      boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.06)',
+                      border: '2px solid rgba(0, 0, 0, 0.08)',
                       cursor: 'pointer',
-                      transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                      transition: 'all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
                       position: 'relative',
                       overflow: 'hidden',
                       display: 'flex',
                       flexDirection: 'column',
                       alignItems: 'center',
                       justifyContent: 'center',
+                      backgroundColor: '#ffffff',
+                      background: '#ffffff',
                     }}
                     onClick={() => {
                       console.log('🎯 Clicked on niche:', niche.title, 'navigating to:', `/niche/${niche.slug}`);
@@ -639,44 +639,77 @@ const OurApproach = () => {
                       if (!isMobile) {
                         e.currentTarget.style.transform = 'translateY(-6px) scale(1.05)';
                         e.currentTarget.style.boxShadow = '0 16px 40px rgba(0, 0, 0, 0.18), 0 8px 20px rgba(0, 0, 0, 0.12)';
-                        e.currentTarget.querySelector('.card-bg').style.opacity = '0.2';
-                        e.currentTarget.querySelector('.icon-container').style.transform = 'scale(1.15)';
+                        const cardBg = e.currentTarget.querySelector('.card-bg');
+                        if (cardBg) {
+                          cardBg.style.opacity = '0.9';
+                        }
+                        const iconContainer = e.currentTarget.querySelector('.icon-container');
+                        if (iconContainer) iconContainer.style.transform = 'scale(1.15)';
                       }
                     }}
                     onMouseLeave={(e) => {
                       if (!isMobile) {
                         e.currentTarget.style.transform = 'translateY(0) scale(1)';
                         e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08)';
-                        e.currentTarget.querySelector('.card-bg').style.opacity = '0.08';
-                        e.currentTarget.querySelector('.icon-container').style.transform = 'scale(1)';
+                        const cardBg = e.currentTarget.querySelector('.card-bg');
+                        if (cardBg) {
+                          cardBg.style.opacity = '0.8';
+                        }
+                        const iconContainer = e.currentTarget.querySelector('.icon-container');
+                        if (iconContainer) iconContainer.style.transform = 'scale(1)';
                       }
                     }}
                   >
-                    <div className="card-bg" style={cardBackground(niche.gradient)}></div>
+                    <div className="card-bg" style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      backgroundColor: (niche && niche.title) ? getNicheBackgroundColor(niche.title) : '#f8fafc',
+                      opacity: 0.8,
+                      transition: 'opacity 0.4s ease',
+                      borderRadius: '24px',
+                      zIndex: 0,
+                    }}></div>
                     
                     <div className="icon-container" style={{
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      width: isMobile ? '45px' : '50px',
-                      height: isMobile ? '45px' : '50px',
-                      borderRadius: '50%',
-                      marginBottom: '8px',
-                      transition: 'transform 0.3s ease',
-                      fontSize: isMobile ? '26px' : '28px',
+                      marginBottom: isMobile ? '12px' : '16px',
+                      transition: 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                      position: 'relative',
+                      zIndex: 2,
                     }}>
-                      {niche.icon}
+                      <span style={{
+                        fontSize: isMobile ? '3rem' : '3.5rem',
+                        lineHeight: '1',
+                        display: 'inline-block',
+                        textAlign: 'center',
+                        maxWidth: 'none !important',
+                        maxHeight: 'none !important',
+                        width: 'auto !important',
+                        height: 'auto !important',
+                        minWidth: isMobile ? '48px' : '56px',
+                        minHeight: isMobile ? '48px' : '56px',
+                      }}>
+                        {niche.icon}
+                      </span>
                     </div>
                     <Heading 
                       level={5} 
                       style={{
                         textAlign: 'center',
-                        fontSize: isMobile ? '0.7rem' : '0.8rem',
-                        fontWeight: 600,
-                        color: colors.text.primary,
-                        lineHeight: 1.2,
+                        fontSize: isMobile ? '0.85rem' : '0.95rem',
+                        fontWeight: 900,
+                        color: '#000000',
+                        lineHeight: 1.3,
                         margin: 0,
                         padding: 0,
+                        letterSpacing: '0.3px',
+                        zIndex: 3,
+                        position: 'relative',
                       }}
                     >
                       {niche.title}
@@ -689,14 +722,14 @@ const OurApproach = () => {
                     key="show-more-tile"
                     
                     style={{
-                      // Same fixed size as other niche boxes - increased mobile size
-                      width: isMobile ? '110px' : '110px',
-                      height: isMobile ? '130px' : '130px',
+                      // Same enhanced size as other niche boxes
+                      width: isMobile ? '140px' : '160px',
+                      height: isMobile ? '160px' : '180px',
                       flex: '0 0 auto',
                       background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
                       color: '#fff',
-                      padding: isMobile ? '12px' : '16px',
-                      borderRadius: '16px',
+                      padding: isMobile ? '20px' : '24px',
+                      borderRadius: '24px',
                       boxShadow: '0 8px 25px rgba(102,126,234,0.25), 0 4px 12px rgba(102,126,234,0.15)',
                       border: '1px solid rgba(255, 255, 255, 0.3)',
                       cursor: 'pointer',
@@ -723,7 +756,7 @@ const OurApproach = () => {
                     }}
                   >
                     <div style={{ 
-                      fontSize: isMobile ? '32px' : '36px', 
+                      fontSize: isMobile ? '48px' : '56px', 
                       marginBottom: '8px',
                       fontWeight: 300,
                       opacity: 0.9
@@ -821,7 +854,6 @@ const OurApproach = () => {
                       if (!isMobile) {
                         e.currentTarget.style.transform = 'translateY(-6px) scale(1.05)';
                         e.currentTarget.style.boxShadow = '0 16px 40px rgba(0, 0, 0, 0.18), 0 8px 20px rgba(0, 0, 0, 0.12)';
-                        e.currentTarget.querySelector('.card-bg').style.opacity = '0.2';
                         e.currentTarget.querySelector('.icon-container').style.transform = 'scale(1.15)';
                       }
                     }}
@@ -829,7 +861,6 @@ const OurApproach = () => {
                       if (!isMobile) {
                         e.currentTarget.style.transform = 'translateY(0) scale(1)';
                         e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08)';
-                        e.currentTarget.querySelector('.card-bg').style.opacity = '0.08';
                         e.currentTarget.querySelector('.icon-container').style.transform = 'scale(1)';
                       }
                     }}
@@ -840,14 +871,23 @@ const OurApproach = () => {
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      width: isMobile ? '45px' : '50px',
-                      height: isMobile ? '45px' : '50px',
-                      borderRadius: '50%',
                       marginBottom: '8px',
                       transition: 'transform 0.3s ease',
-                      fontSize: isMobile ? '26px' : '28px',
                     }}>
-                      {growth.icon}
+                      <span style={{
+                        fontSize: isMobile ? '3rem' : '3.5rem',
+                        lineHeight: '1',
+                        display: 'inline-block',
+                        textAlign: 'center',
+                        maxWidth: 'none !important',
+                        maxHeight: 'none !important',
+                        width: 'auto !important',
+                        height: 'auto !important',
+                        minWidth: isMobile ? '48px' : '56px',
+                        minHeight: isMobile ? '48px' : '56px',
+                      }}>
+                        {growth.icon}
+                      </span>
                     </div>
                     <Heading 
                       level={5} 

@@ -377,7 +377,7 @@ const DynamicNichePage = () => {
                 gap: '0.5rem',
               }}
             >
-              <span style={{ fontSize: '1.2rem' }}>{problemIcons[index] || '❌'}</span>
+              <span style={{ fontSize: '2rem' }}>{problemIcons[index] || '❌'}</span>
               <span>{problem}</span>
             </div>
           ))}
@@ -429,7 +429,7 @@ const DynamicNichePage = () => {
                 gap: '0.5rem',
               }}
             >
-              <span style={{ fontSize: '1.2rem' }}>{approachIcons[index] || '✅'}</span>
+              <span style={{ fontSize: '2rem' }}>{approachIcons[index] || '✅'}</span>
               <span>{approach}</span>
             </div>
           ))}
@@ -697,7 +697,7 @@ const DynamicNichePage = () => {
                 e.currentTarget.style.boxShadow = `0 4px 16px ${nicheColor}30`;
               }}
             >
-              <span style={{ fontSize: '1.5rem' }}>{impactIcons[index] || '🌟'}</span>
+              <span style={{ fontSize: '2.5rem' }}>{impactIcons[index] || '🌟'}</span>
               <span style={{ fontWeight: '600' }}>{item}</span>
             </div>
           ))}

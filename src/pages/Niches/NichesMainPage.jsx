@@ -357,9 +357,10 @@ const NichesGridSection = () => {
               justifyContent: 'center', 
               alignItems: 'center',
               marginBottom: '1rem',
-              height: '80px'
+              minHeight: '120px',
+              height: 'auto'
             }}>
-              <NicheIcon niche={niche.Niche || niche.title} size="large" />
+              <NicheIcon niche={niche.Niche || niche.title} size="xlarge" />
             </div>
             <h3 style={titleStyle}>{niche.Niche || niche.title}</h3>
             <p style={descStyle}>{niche['Sub heading'] || niche.desc}</p>
@@ -453,7 +454,7 @@ const WhyThisNicheMatters = () => {
     };
   
     const emojiStyle = {
-      fontSize: '2.5rem',
+      fontSize: '4rem',
       marginBottom: '1rem',
     };
   
@@ -526,7 +527,7 @@ const WeeklyKitSection = () => {
     };
   
     const iconEmojiStyle = {
-      fontSize: '3.5rem',
+      fontSize: '5rem',
       marginBottom: '0.5rem',
     };
   
@@ -643,7 +644,7 @@ const WeeklyKitSection = () => {
     };
   
     const iconStyle = {
-      fontSize: '2rem',
+      fontSize: '3rem',
       color: '#d77e82', // muted coral
     };
   
@@ -744,7 +745,7 @@ const WeeklyKitSection = () => {
     };
   
     const assuranceIconStyle = {
-      fontSize: '1.3rem',
+      fontSize: '2rem',
       color: '#8aa29e', // muted teal
     };
   

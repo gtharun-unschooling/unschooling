@@ -238,69 +238,25 @@ p, span, div {
 }
 
 /* Icon sizing adjustments - ALL DEVICES */
+/* Removed !important size constraints to allow component-level sizing */
 .niche-icon {
-  font-size: 10rem !important; /* Large icon on all devices */
-  width: 160px !important;
-  height: 160px !important;
   line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
-/* Make the actual emoji/icon content large on DESKTOP ONLY */
-@media (min-width: 769px) {
-  .niche-icon span {
-    font-size: 10rem !important; /* Make the emoji itself large on desktop */
-    line-height: 1 !important;
-  }
+/* Make the actual emoji/icon content respect component sizing */
+.niche-icon span {
+  line-height: 1 !important;
+  display: inline-block !important;
 }
 
 /* Icon container adjustments - ALL DEVICES */
 .niche-hero-section div[style*="border-radius: 50%"] {
-  width: 180px !important;
-  height: 180px !important;
-  padding: 2.5rem !important;
-}
-
-/* Mobile adjustments - Smaller icon */
-@media (max-width: 768px) {
-  .niche-icon {
-    font-size: 120px !important; /* Smaller icon on mobile */
-    width: 120px !important;
-    height: 120px !important;
-  }
-  
-  /* Make the actual emoji/icon content smaller on mobile */
-  .niche-icon span {
-    font-size: 120px !important; /* Make the emoji itself smaller */
-    line-height: 1 !important;
-  }
-  
-  /* Icon container adjustments */
-  .niche-hero-section div[style*="border-radius: 50%"] {
-    width: 160px !important;
-    height: 160px !important;
-    padding: 1.5rem !important;
-  }
-}
-
-/* Very small screens - also smaller */
-@media (max-width: 480px) {
-  .niche-icon {
-    font-size: 100px !important; /* Smaller icon on very small screens */
-    width: 100px !important;
-    height: 100px !important;
-  }
-  
-  /* Make the actual emoji/icon content smaller on very small screens */
-  .niche-icon span {
-    font-size: 100px !important; /* Make the emoji itself smaller */
-    line-height: 1 !important;
-  }
-  
-  .niche-hero-section div[style*="border-radius: 50%"] {
-    width: 140px !important;
-    height: 140px !important;
-    padding: 1.2rem !important;
-  }
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 /* Hero tagline adjustments for tablet - more specific selector */

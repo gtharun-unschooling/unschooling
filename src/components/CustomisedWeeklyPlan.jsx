@@ -198,7 +198,9 @@ const CustomisedWeeklyPlan = () => {
           // Wait a moment for Firestore to propagate, then reload from database
           setTimeout(async () => {
             console.log('🔄 Reloading plans from Firestore to ensure sync...');
-            await loadPlans();
+            if (selectedChild) {
+              await loadPlansForChild(selectedChild);
+            }
           }, 2000);
           
           // Update local state immediately for responsiveness

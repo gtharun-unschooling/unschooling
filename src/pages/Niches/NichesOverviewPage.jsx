@@ -247,13 +247,13 @@ const NichesOverviewPage = () => {
   };
 
   const iconStyle = {
-    width: '60px',
-    height: '60px',
+    width: '90px',
+    height: '90px',
     borderRadius: '50%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize: '2rem',
+    fontSize: '3rem',
     marginRight: '1rem',
     boxShadow: '0 6px 20px rgba(0, 0, 0, 0.15)',
     background: 'linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%)',
@@ -431,7 +431,7 @@ const NichesOverviewPage = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
               }}>
-                <NicheIcon niche={niche.Niche} size="large" />
+                <NicheIcon niche={niche.Niche} size="xlarge" />
               </div>
               <div>
                 <h3 style={nicheTitleStyle}>{niche.Niche}</h3>

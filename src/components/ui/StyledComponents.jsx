@@ -129,30 +129,30 @@ export const Container = ({
   style = {}, 
   ...props 
 }) => {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const containerStyles = {
     base: {
       maxWidth: '1200px',
       margin: '0 auto',
-      padding: `0 ${spacing.xl}`,
-      '@media (max-width: 768px)': {
-        padding: `0 ${spacing.md}`,
-      },
+      padding: `0 ${isMobile ? spacing.md : spacing.xl}`,
     },
     narrow: {
       maxWidth: '800px',
       margin: '0 auto',
-      padding: `0 ${spacing.xl}`,
-      '@media (max-width: 768px)': {
-        padding: `0 ${spacing.md}`,
-      },
+      padding: `0 ${isMobile ? spacing.md : spacing.xl}`,
     },
     wide: {
       maxWidth: '1400px',
       margin: '0 auto',
-      padding: `0 ${spacing.xl}`,
-      '@media (max-width: 768px)': {
-        padding: `0 ${spacing.md}`,
-      },
+      padding: `0 ${isMobile ? spacing.md : spacing.xl}`,
     },
   };
 
@@ -174,27 +174,27 @@ export const Section = ({
   style = {}, 
   ...props 
 }) => {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const sectionStyles = {
     base: {
-      padding: `${spacing['3xl']} ${spacing.xl}`,
+      padding: `${isMobile ? spacing['2xl'] : spacing['3xl']} ${isMobile ? spacing.md : spacing.xl}`,
       width: '100%',
-      '@media (max-width: 768px)': {
-        padding: `${spacing['2xl']} ${spacing.md}`,
-      },
     },
     narrow: {
-      padding: `${spacing['2xl']} ${spacing.xl}`,
+      padding: `${isMobile ? spacing.xl : spacing['2xl']} ${isMobile ? spacing.md : spacing.xl}`,
       width: '100%',
-      '@media (max-width: 768px)': {
-        padding: `${spacing.xl} ${spacing.md}`,
-      },
     },
     wide: {
-      padding: `${spacing['4xl']} ${spacing.xl}`,
+      padding: `${isMobile ? spacing['3xl'] : spacing['4xl']} ${isMobile ? spacing.md : spacing.xl}`,
       width: '100%',
-      '@media (max-width: 768px)': {
-        padding: `${spacing['3xl']} ${spacing.md}`,
-      },
     },
   };
 

@@ -16,33 +16,23 @@ import './styles/sectionSpecificStyles.css';
 function App() {
   console.log('🚀 App component rendering...');
   
-  try {
-    return (
-      <ErrorBoundary>
-        <BrowserRouter>
-          <HelmetProvider>
-            <GoogleAnalytics>
-              <AuthProvider>
-                <DebugProvider>
-                  <SEOHead />
-                  <RoutesComponent />
-                  <CookieConsent />
-                </DebugProvider>
-              </AuthProvider>
-            </GoogleAnalytics>
-          </HelmetProvider>
-        </BrowserRouter>
-      </ErrorBoundary>
-    );
-  } catch (error) {
-    console.error('🚀 Error in App component:', error);
-    return (
-      <div style={{ padding: '20px', textAlign: 'center' }}>
-        <h2>🚨 App Error</h2>
-        <p>Error: {error.message}</p>
-      </div>
-    );
-  }
+  return (
+    <ErrorBoundary>
+      <BrowserRouter>
+        <HelmetProvider>
+          <GoogleAnalytics>
+            <AuthProvider>
+              <DebugProvider>
+                <SEOHead />
+                <RoutesComponent />
+                <CookieConsent />
+              </DebugProvider>
+            </AuthProvider>
+          </GoogleAnalytics>
+        </HelmetProvider>
+      </BrowserRouter>
+    </ErrorBoundary>
+  );
 }
 
 export default App;

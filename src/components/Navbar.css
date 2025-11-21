@@ -9,7 +9,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 0.5rem 0;
+  padding: 0.25rem 0 0 0;
 }
 
 .navbar-container {
@@ -24,8 +24,18 @@
 .navbar-left {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   margin-left: 0; /* Keep hamburger fully visible */
+}
+
+.hamburger-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  position: relative;
+  z-index: 1001;
 }
 
 /* Hamburger Button Styles */
@@ -33,7 +43,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.75rem;
   border-radius: 10px;
   transition: all 0.3s ease;
   display: flex;
@@ -41,34 +51,109 @@
   justify-content: center;
   min-width: 48px;
   min-height: 48px;
+  position: relative;
+  z-index: 1001;
+  outline: none;
 }
 
 .hamburger-btn:hover {
   background: rgba(102, 126, 234, 0.1);
 }
 
+.hamburger-btn:focus {
+  outline: 2px solid rgba(102, 126, 234, 0.5);
+  outline-offset: 2px;
+}
+
+.hamburger-btn:active {
+  transform: scale(0.95);
+}
+
 .hamburger-icon {
   width: 28px;
-  height: 24px;
+  height: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
+  position: relative;
 }
 
-.navbar .hamburger-line {
+.hamburger-line {
   width: 100%;
   height: 3px;
-  background-color: #000; /* match staging/test_hamburger.html */
+  background-color: #000000;
   border-radius: 2px;
   transition: all 0.3s ease;
+  display: block;
 }
 
-.navbar .hamburger-btn:hover .hamburger-line {
+.hamburger-btn:hover .hamburger-line {
   background-color: #667eea;
 }
 
 .hamburger-btn:hover .hamburger-icon {
+  transform: scale(1.1);
+}
+
+/* ========================================
+   NEW HAMBURGER BUTTON STYLES - BASIC 3 LINES
+   ======================================== */
+
+.hamburger-btn-new {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  min-height: 48px;
+  position: relative;
+  z-index: 1001;
+  outline: none;
+}
+
+.hamburger-btn-new:hover {
+  background: rgba(102, 126, 234, 0.15);
+}
+
+.hamburger-btn-new:focus {
+  outline: 2px solid rgba(102, 126, 234, 0.5);
+  outline-offset: 2px;
+}
+
+.hamburger-btn-new:active {
+  transform: scale(0.95);
+}
+
+.hamburger-icon-new {
+  width: 28px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  position: relative;
+}
+
+.hamburger-line-new {
+  width: 100%;
+  height: 3px;
+  background-color: #333333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.hamburger-btn-new:hover .hamburger-line-new {
+  background-color: #667eea;
+}
+
+.hamburger-btn-new:hover .hamburger-icon-new {
   transform: scale(1.1);
 }
 
@@ -496,7 +581,7 @@
   letter-spacing: 0.5px;
   margin-bottom: 1.25rem;
   border-bottom: 1px solid rgba(102, 126, 234, 0.2);
-  padding-bottom: 0.75rem;
+  padding-bottom: 0;
 }
 
 .menu-section p {
@@ -550,7 +635,7 @@
 /* MOBILE NAVBAR CONTAINER */
 @media (max-width: 768px) {
   .navbar {
-    padding: 0.25rem 0;
+    padding: 0.25rem 0 0 0;
   }
   
   .navbar-container {
@@ -559,6 +644,42 @@
   
   .navbar-left {
     margin-left: -0.75rem; /* Move hamburger menu more left on mobile */
+  }
+  
+  .hamburger-buttons-container {
+    gap: 0.4rem;
+  }
+  
+  /* Mobile hamburger button - ensure visibility */
+  .hamburger-btn {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.5rem;
+  }
+  
+  .hamburger-icon {
+    width: 24px;
+    height: 20px;
+  }
+  
+  .navbar .hamburger-line {
+    height: 3px;
+  }
+  
+  /* Mobile new hamburger button */
+  .hamburger-btn-new {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.5rem;
+  }
+  
+  .hamburger-icon-new {
+    width: 24px;
+    height: 20px;
+  }
+  
+  .hamburger-line-new {
+    height: 3px;
   }
   
   .navbar-menu {

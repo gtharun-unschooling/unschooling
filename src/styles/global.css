@@ -45,6 +45,45 @@ html, body {
   max-width: 100% !important;
 }
 
+/* EXCEPTION: Allow niche icons to exceed container constraints */
+.niche-icon,
+.niche-icon *,
+.niche-icon span {
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* EXCEPTION: Allow OurApproach icon containers to exceed container constraints */
+.our-approach-section .icon-container,
+.our-approach-section .icon-container *,
+.our-approach-section .icon-container span {
+  max-width: none !important;
+  max-height: none !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* Force icon size in OurApproach section */
+.our-approach-section .icon-container span {
+  font-size: 3.5rem !important;
+  line-height: 1 !important;
+  display: inline-block !important;
+  max-width: none !important;
+  max-height: none !important;
+  width: auto !important;
+  height: auto !important;
+  min-width: 56px !important;
+  min-height: 56px !important;
+}
+
+@media (max-width: 768px) {
+  .our-approach-section .icon-container span {
+    font-size: 3rem !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+  }
+}
+
 /* Specific fixes for common overflow culprits */
 .container,
 .container-fluid,

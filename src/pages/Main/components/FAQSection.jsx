@@ -1,9 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { applyTextStyle } from '../../../styles/typography';
 import { colorSystem } from '../../../styles/colors';
 
 const FAQSection = () => {
   const [openItems, setOpenItems] = useState({});
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  useEffect(() => {
+    const styleTag = document.createElement('style');
+    styleTag.innerHTML = `
+      .faq-section .faq-expand-icon {
+        font-size: 2rem !important;
+        min-width: 32px !important;
+        min-height: 32px !important;
+        display: inline-block !important;
+      }
+    `;
+    document.head.appendChild(styleTag);
+    return () => document.head.removeChild(styleTag);
+  }, []);
 
   const toggleItem = (index) => {
     setOpenItems(prev => ({
@@ -90,10 +113,13 @@ const FAQSection = () => {
       paddingRight: '1rem',
     },
     expandIcon: {
-      fontSize: '1.5rem',
+      fontSize: '2rem',
       color: colorSystem.primary[600],
       transition: 'transform 0.3s ease',
       transform: 'rotate(0deg)',
+      minWidth: '32px',
+      minHeight: '32px',
+      display: 'inline-block',
     },
     expandIconOpen: {
       transform: 'rotate(180deg)',
@@ -134,18 +160,6 @@ const FAQSection = () => {
     }
   };
 
-  const [isMobile, setIsMobile] = useState(false);
-
-  React.useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
 
   return (
     <section className="faq-section" style={{
@@ -188,7 +202,7 @@ const FAQSection = () => {
               }}>
                 {faq.question}
               </h3>
-              <span style={{
+              <span className="faq-expand-icon" style={{
                 ...styles.expandIcon,
                 ...(openItems[index] ? styles.expandIconOpen : {})
               }}>

@@ -5,7 +5,8 @@ import './Navbar.css';
 import './Navbar-new-button.css';
 
 const Navbar = () => {
-  const { currentUser, signOut } = useAuth();
+  const authContext = useAuth();
+  const { currentUser, signOut } = authContext || {};
   const navigate = useNavigate();
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
@@ -13,13 +14,15 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     try {
-      console.log('🚪 Logout initiated...');
       setIsProfileDropdownOpen(false);
-      await signOut();
-      console.log('🚪 Sign out completed, navigating to homepage...');
+      setIsHamburgerOpen(false);
+      if (signOut && typeof signOut === 'function') {
+        await signOut();
+      }
       navigate('/');
     } catch (error) {
       console.error('Logout error:', error);
+      // Always navigate to home even if logout fails
       navigate('/');
     }
   };
@@ -33,13 +36,11 @@ const Navbar = () => {
   };
 
   const toggleProfileDropdown = (e) => {
-    console.log('🔄 toggleProfileDropdown called, current state:', isProfileDropdownOpen);
-    e.preventDefault();
-    e.stopPropagation();
-    const newState = !isProfileDropdownOpen;
-    console.log('🔄 Setting new state to:', newState);
-    setIsProfileDropdownOpen(newState);
-    console.log('🔄 State update triggered');
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    setIsProfileDropdownOpen(prev => !prev);
   };
 
   const handleProfileOption = (action) => {
@@ -70,66 +71,82 @@ const Navbar = () => {
 
   // Function to get user initials for mobile
   const getUserInitials = (user) => {
-    if (!user) return 'U';
-    
-    const displayName = user.displayName || '';
-    const email = user.email || '';
-    
-    // If we have a display name, use first letters of first and last name
-    if (displayName && displayName.trim()) {
-      const names = displayName.trim().split(' ');
-      if (names.length >= 2) {
-        return (names[0][0] + names[names.length - 1][0]).toUpperCase();
-      } else {
-        return names[0][0].toUpperCase();
+    try {
+      if (!user) return 'U';
+      
+      const displayName = user.displayName || '';
+      const email = user.email || '';
+      
+      // If we have a display name, use first letters of first and last name
+      if (displayName && displayName.trim()) {
+        const names = displayName.trim().split(' ').filter(n => n.length > 0);
+        if (names.length >= 2) {
+          return (names[0][0] + names[names.length - 1][0]).toUpperCase();
+        } else if (names.length === 1 && names[0].length > 0) {
+          return names[0][0].toUpperCase();
+        }
       }
-    }
-    
-    // If no display name, use first letter of email username
-    if (email) {
-      const username = email.split('@')[0];
-      if (username.length >= 2) {
-        return username.substring(0, 2).toUpperCase();
-      } else {
-        return username[0].toUpperCase();
+      
+      // If no display name, use first letter of email username
+      if (email && typeof email === 'string') {
+        const username = email.split('@')[0];
+        if (username && username.length >= 2) {
+          return username.substring(0, 2).toUpperCase();
+        } else if (username && username.length === 1) {
+          return username[0].toUpperCase();
+        }
       }
+      
+      return 'U'; // Default
+    } catch (error) {
+      console.error('Error getting user initials:', error);
+      return 'U';
     }
-    
-    return 'U'; // Default
   };
 
   // Function to get gender-based emoji
   const getGenderEmoji = (user) => {
-    if (!user) return '👤';
-    
-    // Try to get gender from user profile or email
-    const email = user.email?.toLowerCase() || '';
-    const displayName = user.displayName?.toLowerCase() || '';
-    
-    // Simple heuristic based on common names
-    const maleNames = ['john', 'mike', 'david', 'james', 'robert', 'william', 'tharun'];
-    const femaleNames = ['mary', 'jane', 'sarah', 'lisa', 'emma', 'sophia'];
-    
-    if (maleNames.some(name => email.includes(name) || displayName.includes(name))) {
-      return '👨';
-    } else if (femaleNames.some(name => email.includes(name) || displayName.includes(name))) {
-      return '👩';
+    try {
+      if (!user) return '👤';
+      
+      // Try to get gender from user profile or email
+      const email = (user.email || '').toLowerCase();
+      const displayName = (user.displayName || '').toLowerCase();
+      
+      // Simple heuristic based on common names
+      const maleNames = ['john', 'mike', 'david', 'james', 'robert', 'william', 'tharun'];
+      const femaleNames = ['mary', 'jane', 'sarah', 'lisa', 'emma', 'sophia'];
+      
+      if (maleNames.some(name => email.includes(name) || displayName.includes(name))) {
+        return '👨';
+      } else if (femaleNames.some(name => email.includes(name) || displayName.includes(name))) {
+        return '👩';
+      }
+      
+      return '👤'; // Default
+    } catch (error) {
+      console.error('Error getting gender emoji:', error);
+      return '👤';
     }
-    
-    return '👤'; // Default
   };
 
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (profileDropdownRef.current && !profileDropdownRef.current.contains(event.target)) {
-        setIsProfileDropdownOpen(false);
+      try {
+        if (profileDropdownRef.current && !profileDropdownRef.current.contains(event.target)) {
+          setIsProfileDropdownOpen(false);
+        }
+      } catch (error) {
+        console.error('Error handling click outside:', error);
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
+    if (isProfileDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+      return () => document.removeEventListener('mousedown', handleClickOutside);
+    }
+  }, [isProfileDropdownOpen]);
 
   return (
     <>
@@ -138,17 +155,73 @@ const Navbar = () => {
           {/* Left side: Hamburger Menu + Logo */}
           <div className="navbar-left">
             <button 
-              className="hamburger-btn"
+              className="hamburger-btn-new"
               onClick={toggleHamburger}
               aria-label="Toggle navigation menu"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '40px',
+                height: '40px',
+                padding: '8px',
+                background: '#ffffff',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                boxSizing: 'border-box',
+                margin: '0 auto'
+              }}
             >
-              {/* Three-line hamburger icon (matches staging) */}
-              <div className="hamburger-icon">
-                <span className="hamburger-line"></span>
-                <span className="hamburger-line"></span>
-                <span className="hamburger-line"></span>
-              </div>
-            </button>
+                <div
+                  style={{
+                    width: '24px',
+                    height: '13px',
+                    position: 'relative',
+                    display: 'block'
+                  }}
+                >
+                  <div
+                    style={{
+                      width: '24px',
+                      height: '2.5px',
+                      backgroundColor: '#000000',
+                      borderRadius: '1px',
+                      position: 'absolute',
+                      top: '0px',
+                      left: '0',
+                      margin: '0',
+                      padding: '0'
+                    }}
+                  ></div>
+                  <div
+                    style={{
+                      width: '24px',
+                      height: '2.5px',
+                      backgroundColor: '#000000',
+                      borderRadius: '1px',
+                      position: 'absolute',
+                      top: '5px',
+                      left: '0',
+                      margin: '0',
+                      padding: '0'
+                    }}
+                  ></div>
+                  <div
+                    style={{
+                      width: '24px',
+                      height: '2.5px',
+                      backgroundColor: '#000000',
+                      borderRadius: '1px',
+                      position: 'absolute',
+                      top: '10px',
+                      left: '0',
+                      margin: '0',
+                      padding: '0'
+                    }}
+                  ></div>
+                </div>
+              </button>
 
             <Link to="/" className="navbar-logo">
               Unschooling

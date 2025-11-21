@@ -212,6 +212,28 @@ const HowItWorks = () => {
     },
   };
 
+  useEffect(() => {
+    const styleTag = document.createElement('style');
+    styleTag.innerHTML = `
+      .how-it-works-section .how-it-works-step .how-it-works-step-icon {
+        font-size: 3.5rem !important;
+        line-height: 1 !important;
+        display: inline-block !important;
+        min-width: 56px !important;
+        min-height: 56px !important;
+      }
+      @media (max-width: 768px) {
+        .how-it-works-section .how-it-works-step .how-it-works-step-icon {
+          font-size: 3rem !important;
+          min-width: 48px !important;
+          min-height: 48px !important;
+        }
+      }
+    `;
+    document.head.appendChild(styleTag);
+    return () => document.head.removeChild(styleTag);
+  }, []);
+
   return (
     <div 
       className="how-it-works-section"
@@ -267,7 +289,7 @@ const HowItWorks = () => {
                   gap: '0.5rem',
                   justifyContent: isMobile ? 'center' : 'flex-start'
                 }}>
-                  <span style={{ fontSize: isMobile ? '1.5rem' : '1.2rem' }}>{step.icon}</span>
+                  <span className="how-it-works-step-icon" style={{ fontSize: isMobile ? '3rem' : '3.5rem', minWidth: isMobile ? '48px' : '56px', minHeight: isMobile ? '48px' : '56px', lineHeight: '1', display: 'inline-block' }}>{step.icon}</span>
                   {step.title}
                 </h3>
                 <p className="how-it-works-step-description" style={{

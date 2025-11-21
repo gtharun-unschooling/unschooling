@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -6,6 +6,19 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const Testimonials = () => {
+  useEffect(() => {
+    const styleTag = document.createElement('style');
+    styleTag.innerHTML = `
+      .swiper-button-prev-custom,
+      .swiper-button-next-custom {
+        font-size: 28px !important;
+        min-width: 50px !important;
+        min-height: 50px !important;
+      }
+    `;
+    document.head.appendChild(styleTag);
+    return () => document.head.removeChild(styleTag);
+  }, []);
   const testimonials = [
     {
       text: "My child started cooking at age 5! The hands-on approach has made learning so much more engaging.",
@@ -119,9 +132,11 @@ const Testimonials = () => {
             boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
             border: '2px solid #667eea',
             transition: 'all 0.3s ease',
-            fontSize: '18px',
+            fontSize: '28px',
             color: '#667eea',
-            fontWeight: 'bold'
+            fontWeight: 'bold',
+            minWidth: '50px',
+            minHeight: '50px'
           }}
           onMouseEnter={(e) => {
             e.target.style.backgroundColor = '#667eea';
@@ -156,9 +171,11 @@ const Testimonials = () => {
             boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
             border: '2px solid #667eea',
             transition: 'all 0.3s ease',
-            fontSize: '18px',
+            fontSize: '28px',
             color: '#667eea',
-            fontWeight: 'bold'
+            fontWeight: 'bold',
+            minWidth: '50px',
+            minHeight: '50px'
           }}
           onMouseEnter={(e) => {
             e.target.style.backgroundColor = '#667eea';
@@ -176,7 +193,7 @@ const Testimonials = () => {
       </div>
       
       {/* Custom Pagination Styles */}
-      <style jsx>{`
+      <style>{`
         :global(.swiper-pagination-bullet-custom) {
           width: 12px !important;
           height: 12px !important;

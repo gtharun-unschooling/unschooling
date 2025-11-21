@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const SubscriptionPlans = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
   const planData = [
     {
       name: "Nurture",
@@ -66,8 +74,12 @@ const SubscriptionPlans = () => {
       transition: 'transform 0.3s ease',
     },
     icon: {
-      fontSize: '2.5rem',
+      fontSize: isMobile ? '3rem' : '3.5rem',
       marginBottom: '1rem',
+      lineHeight: '1',
+      display: 'inline-block',
+      minWidth: isMobile ? '48px' : '56px',
+      minHeight: isMobile ? '48px' : '56px',
     },
     planName: {
       fontSize: '1.5rem',
@@ -109,13 +121,28 @@ const SubscriptionPlans = () => {
     },
   };
   
+  useEffect(() => {
+    const styleTag = document.createElement('style');
+    styleTag.innerHTML = `
+      .pricing-section .plan-icon {
+        font-size: ${isMobile ? '3rem' : '3.5rem'} !important;
+        line-height: 1 !important;
+        display: inline-block !important;
+        min-width: ${isMobile ? '48px' : '56px'} !important;
+        min-height: ${isMobile ? '48px' : '56px'} !important;
+      }
+    `;
+    document.head.appendChild(styleTag);
+    return () => document.head.removeChild(styleTag);
+  }, [isMobile]);
+
   return (
     <section className="pricing-section" style={planStyles.section}>
       <h2 style={planStyles.heading}>Plans for Every Family</h2>
       <div style={planStyles.plansWrapper}>
         {planData.map((plan, index) => (
           <div key={index} style={planStyles.card}>
-            <div style={planStyles.icon}>{plan.icon}</div>
+            <div className="plan-icon" style={planStyles.icon}>{plan.icon}</div>
             <div style={planStyles.planName}>{plan.name}</div>
             <div style={planStyles.price}>{plan.price}</div>
             <ul style={planStyles.featuresList}>

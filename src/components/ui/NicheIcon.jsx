@@ -113,12 +113,12 @@ const NicheIcon = ({ niche, size = 'medium', className = '', style = {} }) => {
 
   // Size configurations
   const sizeConfig = {
-    small: { width: 32, height: 32 },
-    medium: { width: 48, height: 48 },
-    large: { width: 64, height: 64 },
-    xlarge: { width: 80, height: 80 },
-    huge: { width: 150, height: 150 },
-    massive: { width: 250, height: 250 }
+    small: { width: 48, height: 48 },
+    medium: { width: 64, height: 64 },
+    large: { width: 96, height: 96 },
+    xlarge: { width: 120, height: 120 },
+    huge: { width: 180, height: 180 },
+    massive: { width: 300, height: 300 }
   };
 
   const iconSize = sizeConfig[size] || sizeConfig.medium;
@@ -131,6 +131,13 @@ const NicheIcon = ({ niche, size = 'medium', className = '', style = {} }) => {
         alignItems: 'center',
         justifyContent: 'center',
         fontSize: `${iconSize.width}px`,
+        width: `${iconSize.width}px`,
+        height: `${iconSize.height}px`,
+        minWidth: `${iconSize.width}px`,
+        minHeight: `${iconSize.height}px`,
+        maxWidth: 'none',
+        maxHeight: 'none',
+        lineHeight: '1',
         ...style
       }}
     >
@@ -139,6 +146,12 @@ const NicheIcon = ({ niche, size = 'medium', className = '', style = {} }) => {
           filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))',
           transition: 'transform 0.3s ease',
           display: 'inline-block',
+          fontSize: `${iconSize.width}px`,
+          lineHeight: '1',
+          width: `${iconSize.width}px`,
+          height: `${iconSize.height}px`,
+          maxWidth: 'none',
+          maxHeight: 'none',
         }}
         onMouseEnter={(e) => {
           e.target.style.transform = 'scale(1.1)';

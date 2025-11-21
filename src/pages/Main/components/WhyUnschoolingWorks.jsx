@@ -9,7 +9,7 @@ const icons = [
   '🔍', // Curiosity-Driven
   '🎨', // Creativity
   '⏳', // Self-Paced
-  '��', // Flexible
+  '🔄', // Flexible
 ];
 
 // Professional background colors using the color system
@@ -177,6 +177,20 @@ const WhyUnschoolingWorks = () => {
       0% { opacity: 0; transform: scale(0.7); }
       100% { opacity: 1; transform: scale(1); }
     }
+    .why-unschooling-card h3 span {
+      font-size: 3.5rem !important;
+      min-width: 56px !important;
+      min-height: 56px !important;
+      line-height: 1 !important;
+      display: inline-block !important;
+    }
+    @media (max-width: 768px) {
+      .why-unschooling-card h3 span {
+        font-size: 3rem !important;
+        min-width: 48px !important;
+        min-height: 48px !important;
+      }
+    }
   `;
 
   // Responsive: horizontal scroll layout
@@ -249,7 +263,7 @@ const WhyUnschoolingWorks = () => {
               gap: '0.5rem',
               justifyContent: 'center'
             }}>
-              <span style={{ fontSize: '1.2rem' }}>{icons[index]}</span>
+              <span style={{ fontSize: isMobile ? '3rem' : '3.5rem', minWidth: isMobile ? '48px' : '56px', minHeight: isMobile ? '48px' : '56px', lineHeight: '1', display: 'inline-block' }}>{icons[index]}</span>
               {tile.title}
             </h3>
             <p style={tileDescription}>{tile.description}</p>

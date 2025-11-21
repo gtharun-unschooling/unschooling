@@ -58,3 +58,9 @@
   display: none;
 }
 
+/* Profile Dropdown Container */
+.profile-dropdown-container-new {
+  position: relative;
+  display: inline-block;
+}
+
