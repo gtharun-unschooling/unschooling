@@ -54,19 +54,16 @@ DISABLE_ESLINT_PLUGIN=true npm run build
 echo "🚀 Deploying to Firebase staging..."
 firebase hosting:channel:deploy staging --expires 30d
 
-# Deploy backend
+# Deploy backend (if gcloud is available)
 echo "🔧 Deploying backend..."
-cd backend
-gcloud builds submit --tag gcr.io/unschooling-464413/llm-agents-staging
-gcloud run deploy llm-agents-staging \
-  --image gcr.io/unschooling-464413/llm-agents-staging \
-  --region us-central1 \
-  --platform managed \
-  --memory 1Gi \
-  --cpu 1 \
-  --allow-unauthenticated
-
-cd ..
+if command -v gcloud &> /dev/null; then
+    echo "   gcloud found, deploying backend..."
+    ./scripts/deployment/deploy-backend-staging.sh
+else
+    echo "   ⚠️  gcloud CLI not found - skipping backend deployment"
+    echo "   📝 Backend is using production URL: https://llm-agents-44gsrw22gq-uc.a.run.app"
+    echo "   💡 To deploy staging backend later, run: ./scripts/deployment/deploy-backend-staging.sh"
+fi
 
 echo ""
 echo "✅ STAGING DEPLOYMENT COMPLETE"
