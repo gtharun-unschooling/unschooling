@@ -342,7 +342,7 @@ const CustomerJourney = () => {
           
           <div className="child-form">
             <div className="form-group">
-              <label htmlFor={`child${index}Name`}>Child's Name *</label>
+              <label htmlFor={`child${index}Name`}>Child&apos;s Name *</label>
               <input 
                 id={`child${index}Name`}
                 type="text" 
@@ -647,7 +647,7 @@ const CustomerJourney = () => {
             <div className="step-number">4</div>
             <div className="step-content">
               <strong>Delivery</strong>
-              <p>You'll receive tracking information and delivery updates</p>
+              <p>You&apos;ll receive tracking information and delivery updates</p>
             </div>
           </div>
         </div>

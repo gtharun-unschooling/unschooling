@@ -20,8 +20,11 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off', // Not needed in React 17+
     'react/prop-types': 'warn',
+    'react/no-unescaped-entities': 'warn', // Allow apostrophes and quotes in JSX
     'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
     'no-console': ['warn', { allow: ['warn', 'error'] }],
+    'no-dupe-keys': 'warn',
+    'no-duplicate-case': 'warn',
   },
   settings: {
     react: {
