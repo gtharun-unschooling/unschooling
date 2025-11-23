@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams, useLocation } from 'react-router-dom';
+import { handleLinkClick } from '../../utils/linkUtils';
 import config from '../../config/config';
 import SimpleBackButton from '../../components/ui/SimpleBackButton';
 import NicheIcon from '../../components/ui/NicheIcon';
@@ -612,6 +613,12 @@ const DynamicNichePage = () => {
                 to={`/niche/${nicheSlug}/${topicSlug}`} // use outer scope's `nicheSlug`
                 state={{ from: 'niches' }}
                 style={cardStyle}
+                onClick={(e) => {
+                  if (e.metaKey || e.ctrlKey) {
+                    e.preventDefault();
+                    window.open(`${window.location.origin}/niche/${nicheSlug}/${topicSlug}`, '_blank', 'noopener,noreferrer');
+                  }
+                }}
                 onMouseEnter={(e) => {
                   if (window.innerWidth > 768) { // Only on desktop
                     e.currentTarget.style.transform = 'translateY(-3px) scale(1.02)';

@@ -43,6 +43,16 @@ const Navbar = () => {
     setIsProfileDropdownOpen(prev => !prev);
   };
 
+  // Helper function to handle Command+Click on links
+  const handleLinkClick = (e, path) => {
+    if (e.metaKey || e.ctrlKey) {
+      e.preventDefault();
+      window.open(`${window.location.origin}${path}`, '_blank', 'noopener,noreferrer');
+      return;
+    }
+    // For normal clicks, let React Router handle it
+  };
+
   const handleProfileOption = (action) => {
     switch (action) {
       case 'profile':
@@ -223,14 +233,32 @@ const Navbar = () => {
                 </div>
               </button>
 
-            <Link to="/" className="navbar-logo">
+            <Link 
+              to="/" 
+              className="navbar-logo"
+              onClick={(e) => {
+                if (e.metaKey || e.ctrlKey) {
+                  e.preventDefault();
+                  window.open(`${window.location.origin}/`, '_blank', 'noopener,noreferrer');
+                }
+              }}
+            >
               Unschooling
             </Link>
           </div>
           
           {/* Right side: Navigation Menu */}
           <div className="navbar-menu">
-            <Link to="/what-we-do" className="nav-link">
+            <Link 
+              to="/what-we-do" 
+              className="nav-link"
+              onClick={(e) => {
+                if (e.metaKey || e.ctrlKey) {
+                  e.preventDefault();
+                  window.open(`${window.location.origin}/what-we-do`, '_blank', 'noopener,noreferrer');
+                }
+              }}
+            >
               What We Do
             </Link>
             
@@ -328,7 +356,11 @@ const Navbar = () => {
                 )}
               </div>
             ) : (
-              <Link to="/login" className="nav-link login-btn">
+              <Link 
+                to="/login" 
+                className="nav-link login-btn"
+                onClick={(e) => handleLinkClick(e, '/login')}
+              >
                 Sign In
               </Link>
             )}
@@ -347,27 +379,69 @@ const Navbar = () => {
         <div className="hamburger-content">
           <div className="menu-section">
             <h4>🏠 Main</h4>
-            <Link to="/" className="menu-link" onClick={closeHamburger}>
+            <Link 
+              to="/" 
+              className="menu-link" 
+              onClick={(e) => {
+                handleLinkClick(e, '/');
+                if (!e.metaKey && !e.ctrlKey) closeHamburger();
+              }}
+            >
               <span className="menu-icon">🏠</span>
               <span>Home</span>
             </Link>
-            <Link to="/what-we-do" className="menu-link" onClick={closeHamburger}>
+            <Link 
+              to="/what-we-do" 
+              className="menu-link" 
+              onClick={(e) => {
+                handleLinkClick(e, '/what-we-do');
+                if (!e.metaKey && !e.ctrlKey) closeHamburger();
+              }}
+            >
               <span className="menu-icon">🌟</span>
               <span>What We Do</span>
             </Link>
-            <Link to="/plans" className="menu-link" onClick={closeHamburger}>
+            <Link 
+              to="/plans" 
+              className="menu-link" 
+              onClick={(e) => {
+                handleLinkClick(e, '/plans');
+                if (!e.metaKey && !e.ctrlKey) closeHamburger();
+              }}
+            >
               <span className="menu-icon">💰</span>
               <span>Pricing</span>
             </Link>
-            <Link to="/about" className="menu-link" onClick={closeHamburger}>
+            <Link 
+              to="/about" 
+              className="menu-link" 
+              onClick={(e) => {
+                handleLinkClick(e, '/about');
+                if (!e.metaKey && !e.ctrlKey) closeHamburger();
+              }}
+            >
               <span className="menu-icon">ℹ️</span>
               <span>About Us</span>
             </Link>
-            <Link to="/faq" className="menu-link" onClick={closeHamburger}>
+            <Link 
+              to="/faq" 
+              className="menu-link" 
+              onClick={(e) => {
+                handleLinkClick(e, '/faq');
+                if (!e.metaKey && !e.ctrlKey) closeHamburger();
+              }}
+            >
               <span className="menu-icon">❓</span>
               <span>FAQ</span>
             </Link>
-            <Link to="/contact" className="menu-link" onClick={closeHamburger}>
+            <Link 
+              to="/contact" 
+              className="menu-link" 
+              onClick={(e) => {
+                handleLinkClick(e, '/contact');
+                if (!e.metaKey && !e.ctrlKey) closeHamburger();
+              }}
+            >
               <span className="menu-icon">📞</span>
               <span>Contact Us</span>
             </Link>
@@ -376,27 +450,69 @@ const Navbar = () => {
           {currentUser && (
             <div className="menu-section">
               <h4>📚 Learning</h4>
-              <Link to="/dashboard" className="menu-link" onClick={closeHamburger}>
+              <Link 
+                to="/dashboard" 
+                className="menu-link" 
+                onClick={(e) => {
+                  handleLinkClick(e, '/dashboard');
+                  if (!e.metaKey && !e.ctrlKey) closeHamburger();
+                }}
+              >
                 <span className="menu-icon">📊</span>
                 <span>Dashboard</span>
               </Link>
-              <Link to="/child-profile" className="menu-link" onClick={closeHamburger}>
+              <Link 
+                to="/child-profile" 
+                className="menu-link" 
+                onClick={(e) => {
+                  handleLinkClick(e, '/child-profile');
+                  if (!e.metaKey && !e.ctrlKey) closeHamburger();
+                }}
+              >
                 <span className="menu-icon">👶</span>
                 <span>Child Profile</span>
               </Link>
-              <Link to="/customised-weekly-plan" className="menu-link" onClick={closeHamburger}>
+              <Link 
+                to="/customised-weekly-plan" 
+                className="menu-link" 
+                onClick={(e) => {
+                  handleLinkClick(e, '/customised-weekly-plan');
+                  if (!e.metaKey && !e.ctrlKey) closeHamburger();
+                }}
+              >
                 <span className="menu-icon">🗓️</span>
                 <span>Weekly Plan</span>
               </Link>
-              <Link to="/progress" className="menu-link" onClick={closeHamburger}>
+              <Link 
+                to="/progress" 
+                className="menu-link" 
+                onClick={(e) => {
+                  handleLinkClick(e, '/progress');
+                  if (!e.metaKey && !e.ctrlKey) closeHamburger();
+                }}
+              >
                 <span className="menu-icon">📈</span>
                 <span>Progress Tracker</span>
               </Link>
-              <Link to="/billing" className="menu-link" onClick={closeHamburger}>
+              <Link 
+                to="/billing" 
+                className="menu-link" 
+                onClick={(e) => {
+                  handleLinkClick(e, '/billing');
+                  if (!e.metaKey && !e.ctrlKey) closeHamburger();
+                }}
+              >
                 <span className="menu-icon">💳</span>
                 <span>Billing</span>
               </Link>
-              <Link to="/settings" className="menu-link" onClick={closeHamburger}>
+              <Link 
+                to="/settings" 
+                className="menu-link" 
+                onClick={(e) => {
+                  handleLinkClick(e, '/settings');
+                  if (!e.metaKey && !e.ctrlKey) closeHamburger();
+                }}
+              >
                 <span className="menu-icon">⚙️</span>
                 <span>Settings</span>
               </Link>
@@ -410,27 +526,69 @@ const Navbar = () => {
           {currentUser && (currentUser.role === 'admin' || currentUser.role === 'founder') && (
             <div className="menu-section">
               <h4>👑 Admin</h4>
-              <Link to="/admin/dashboard" className="menu-link" onClick={closeHamburger}>
+              <Link 
+                to="/admin/dashboard" 
+                className="menu-link" 
+                onClick={(e) => {
+                  handleLinkClick(e, '/admin/dashboard');
+                  if (!e.metaKey && !e.ctrlKey) closeHamburger();
+                }}
+              >
                 <span className="menu-icon">👑</span>
                 <span>Admin Dashboard</span>
               </Link>
-              <Link to="/admin/tracker" className="menu-link" onClick={closeHamburger}>
+              <Link 
+                to="/admin/tracker" 
+                className="menu-link" 
+                onClick={(e) => {
+                  handleLinkClick(e, '/admin/tracker');
+                  if (!e.metaKey && !e.ctrlKey) closeHamburger();
+                }}
+              >
                 <span className="menu-icon">🔍</span>
                 <span>Admin Tracker</span>
               </Link>
-              <Link to="/admin/schedule" className="menu-link" onClick={closeHamburger}>
+              <Link 
+                to="/admin/schedule" 
+                className="menu-link" 
+                onClick={(e) => {
+                  handleLinkClick(e, '/admin/schedule');
+                  if (!e.metaKey && !e.ctrlKey) closeHamburger();
+                }}
+              >
                 <span className="menu-icon">📅</span>
                 <span>Admin Schedule</span>
               </Link>
-              <Link to="/admin/content" className="menu-link" onClick={closeHamburger}>
+              <Link 
+                to="/admin/content" 
+                className="menu-link" 
+                onClick={(e) => {
+                  handleLinkClick(e, '/admin/content');
+                  if (!e.metaKey && !e.ctrlKey) closeHamburger();
+                }}
+              >
                 <span className="menu-icon">📝</span>
                 <span>Content Management</span>
               </Link>
-              <Link to="/admin/child-progress" className="menu-link" onClick={closeHamburger}>
+              <Link 
+                to="/admin/child-progress" 
+                className="menu-link" 
+                onClick={(e) => {
+                  handleLinkClick(e, '/admin/child-progress');
+                  if (!e.metaKey && !e.ctrlKey) closeHamburger();
+                }}
+              >
                 <span className="menu-icon">👶📈</span>
                 <span>Child Progress</span>
               </Link>
-              <Link to="/admin/agent-reporting" className="menu-link" onClick={closeHamburger}>
+              <Link 
+                to="/admin/agent-reporting" 
+                className="menu-link" 
+                onClick={(e) => {
+                  handleLinkClick(e, '/admin/agent-reporting');
+                  if (!e.metaKey && !e.ctrlKey) closeHamburger();
+                }}
+              >
                 <span className="menu-icon">🤖</span>
                 <span>Agent Reporting</span>
               </Link>
