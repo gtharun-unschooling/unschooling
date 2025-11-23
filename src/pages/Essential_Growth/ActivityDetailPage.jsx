@@ -37,11 +37,8 @@ const ActivityDetailPage = () => {
         const allActivities = activitiesData.ageGroups[0]?.categories[0]?.activities || [];
         
         const foundActivity = allActivities.find(act => {
-          // Create slug: spaces to hyphens FIRST, then remove special chars (preserve hyphens)
-          const activitySlug = act.topic
-            .toLowerCase()
-            .replace(/\s+/g, '-')  // Spaces to hyphens first
-            .replace(/[^a-z0-9-]/g, '');  // Remove special chars except hyphens
+          // Create slug using Niche method (simple and consistent)
+          const activitySlug = act.topic.toLowerCase().replace(/\s+/g, '-');
           
           console.log(`  Checking: "${act.topic}" → slug: "${activitySlug}" (${activitySlug === activityId ? '✅' : '❌'})`);
           return activitySlug === activityId;

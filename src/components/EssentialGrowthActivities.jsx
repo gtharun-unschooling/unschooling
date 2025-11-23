@@ -187,12 +187,9 @@ const EssentialGrowthActivities = () => {
 
   const handleActivityClick = (activity, category, ageGroup) => {
     console.log('Activity clicked:', { activity, category, ageGroup });
-    // Create clean slug from activity name only (e.g., "interactive-learning-tablet")
+    // Create clean slug from activity name (using Niche method: simple and consistent)
     const activityName = activity.topic || activity.activity?.name || 'activity';
-    const activitySlug = activityName
-      .toLowerCase()
-      .replace(/[^a-z0-9\s-]/g, '')
-      .replace(/\s+/g, '-');
+    const activitySlug = activityName.toLowerCase().replace(/\s+/g, '-');
     navigate(`/essential-growth/${pillarSlug}/${activitySlug}`);
   };
 

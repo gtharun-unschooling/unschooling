@@ -68,11 +68,8 @@ const DynamicTopicPage = () => {
     (item) => {
       const nicheMatch = item.Niche.toLowerCase() === decodedNiche;
       
-      // Create slug from topic name (same logic as CustomisedWeeklyPlan)
-      const itemTopicSlug = item.Topic
-        .toLowerCase()
-        .replace(/\s+/g, '-')
-        .replace(/[^a-z0-9-]/g, '');
+      // Create slug from topic name using Niche method (simple and consistent)
+      const itemTopicSlug = item.Topic.toLowerCase().replace(/\s+/g, '-');
       
       const topicMatch = itemTopicSlug === topicSlug;
       
@@ -133,7 +130,7 @@ const DynamicTopicPage = () => {
     
     // Try to find similar topics for better debugging
     const similarTopics = cleanData.filter(item => {
-      const itemSlug = item.Topic.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+      const itemSlug = item.Topic.toLowerCase().replace(/\s+/g, '-');
       return item.Niche.toLowerCase().includes(decodedNiche) || 
              itemSlug.includes(topicSlug) || 
              topicSlug.includes(itemSlug);

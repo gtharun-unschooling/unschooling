@@ -30,24 +30,10 @@ const PlayCreativityActivities = ({ onBackClick }) => {
   const selectedAgeGroup = getAgeGroupFromAge(selectedAge);
 
   const handleActivityClick = (activity, category, ageGroup) => {
-    // Create a URL-friendly slug for the activity
-    const activitySlug = activity.topic
-      .toLowerCase()
-      .replace(/[^a-z0-9\s-]/g, '')
-      .replace(/\s+/g, '-')
-      .trim();
-    
-    const ageGroupSlug = ageGroup
-      .toLowerCase()
-      .replace(/[^a-z0-9\s-]/g, '')
-      .replace(/\s+/g, '-')
-      .trim();
-    
-    const categorySlug = category
-      .toLowerCase()
-      .replace(/[^a-z0-9\s-]/g, '')
-      .replace(/\s+/g, '-')
-      .trim();
+    // Create URL-friendly slugs using Niche method (simple and consistent)
+    const activitySlug = activity.topic.toLowerCase().replace(/\s+/g, '-');
+    const ageGroupSlug = ageGroup.toLowerCase().replace(/\s+/g, '-');
+    const categorySlug = category.toLowerCase().replace(/\s+/g, '-');
     
     // Navigate to the activity detail page
     navigate(`/essential-growth/play-creativity/${ageGroupSlug}/${categorySlug}/${activitySlug}`);

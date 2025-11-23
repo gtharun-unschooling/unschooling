@@ -587,17 +587,15 @@ const CustomisedWeeklyPlan = () => {
                                 console.log('Navigating to topic:', dayData);
                                 
                                 // Create clean slug from topic name (preserve hyphens that are part of the name)
-                                const topicSlug = dayData.topic
-                                  .toLowerCase()
-                                  .replace(/\s+/g, '-')  // Spaces to hyphens first
-                                  .replace(/[^a-z0-9-]/g, '');  // Then remove special chars except hyphens
+                                // Create slugs using Niche method (simple and consistent)
+                                const topicSlug = dayData.topic.toLowerCase().replace(/\s+/g, '-');
                                 
                                 // Check if it's Essential Growth or Niche
                                 if (dayData.niche && dayData.niche.toLowerCase() === 'essential growth') {
                                   // Essential Growth activity - route to pillar page
                                   if (dayData.pillar_slug || dayData.pillar) {
                                     const pillarSlug = dayData.pillar_slug || 
-                                      dayData.pillar.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+                                      dayData.pillar.toLowerCase().replace(/\s+/g, '-');
                                     navigate(`/essential-growth/${pillarSlug}/${topicSlug}`);
                                   } else {
                                     // Fallback if no pillar info
@@ -605,10 +603,7 @@ const CustomisedWeeklyPlan = () => {
                                   }
                                 } else if (dayData.niche) {
                                   // Niche topic - route to niche topic page
-                                  const nicheSlug = dayData.niche
-                                    .toLowerCase()
-                                    .replace(/\s+/g, '-')
-                                    .replace(/[^a-z0-9-]/g, '');
+                                  const nicheSlug = dayData.niche.toLowerCase().replace(/\s+/g, '-');
                                   navigate(`/niche/${nicheSlug}/${topicSlug}`);
                                 } else {
                                   // Fallback to simple topic route
