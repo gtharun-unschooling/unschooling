@@ -848,7 +848,7 @@ const OurApproach = () => {
                 {essentialGrowth.map((growth, index) => (
                   <Card 
                     key={index} 
-                    onClick={() => handleEssentialGrowthClick(growth)}
+                    onClick={(e) => handleEssentialGrowthClick(growth, e)}
                     style={{
                       ...cardStyle,
                       // Fixed consistent size for all essential growth boxes - increased mobile size
