@@ -584,7 +584,13 @@ const CustomisedWeeklyPlan = () => {
                             {/* Main Day Row - Clickable Button */}
                             <button
                               onClick={() => {
-                                console.log('Navigating to topic:', dayData);
+                                console.log('🔍 Navigating to topic:', dayData);
+                                console.log('📋 Full dayData:', JSON.stringify(dayData, null, 2));
+                                console.log('📋 dayData keys:', Object.keys(dayData));
+                                console.log('📋 dayData.niche:', dayData.niche);
+                                console.log('📋 dayData.pillar:', dayData.pillar);
+                                console.log('📋 dayData.pillar_slug:', dayData.pillar_slug);
+                                console.log('📋 dayData.topic:', dayData.topic);
                                 
                                 // Create clean slug from topic name (preserve hyphens that are part of the name)
                                 // Create slugs using Niche method (simple and consistent)
@@ -593,13 +599,110 @@ const CustomisedWeeklyPlan = () => {
                                 // Check if it's Essential Growth or Niche
                                 if (dayData.niche && dayData.niche.toLowerCase() === 'essential growth') {
                                   // Essential Growth activity - route to pillar page
-                                  if (dayData.pillar_slug || dayData.pillar) {
-                                    const pillarSlug = dayData.pillar_slug || 
-                                      dayData.pillar.toLowerCase().replace(/\s+/g, '-');
+                                  console.log('✅ Essential Growth activity detected');
+                                  console.log('📌 pillar_slug:', dayData.pillar_slug);
+                                  console.log('📌 pillar:', dayData.pillar);
+                                  console.log('📌 pillar_name:', dayData.pillar_name);
+                                  
+                                  // Try multiple ways to get pillar slug
+                                  let pillarSlug = dayData.pillar_slug;
+                                  if (!pillarSlug && dayData.pillar) {
+                                    pillarSlug = dayData.pillar.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '').replace(/,/g, '');
+                                  }
+                                  // Also check if pillar name is in the topic data structure
+                                  if (!pillarSlug && dayData.pillar_name) {
+                                    pillarSlug = dayData.pillar_name.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '').replace(/,/g, '');
+                                  }
+                                  
+                                  // Last resort: try to infer from activity name or other fields
+                                  if (!pillarSlug) {
+                                    console.warn('⚠️ No pillar info found, checking for fallback options');
+                                    // Check if there's any pillar-related field
+                                    const allKeys = Object.keys(dayData);
+                                    const pillarKey = allKeys.find(k => k.toLowerCase().includes('pillar'));
+                                    if (pillarKey) {
+                                      console.log(`📌 Found pillar key: ${pillarKey} = ${dayData[pillarKey]}`);
+                                      pillarSlug = String(dayData[pillarKey]).toLowerCase().replace(/\s+/g, '-').replace(/&/g, '').replace(/,/g, '');
+                                    }
+                                  }
+                                  
+                                  if (pillarSlug) {
+                                    console.log(`🚀 Navigating to: /essential-growth/${pillarSlug}/${topicSlug}`);
                                     navigate(`/essential-growth/${pillarSlug}/${topicSlug}`);
                                   } else {
-                                    // Fallback if no pillar info
-                                    navigate('/essential-growth');
+                                    console.warn('⚠️ No pillar info found in dayData, trying to find pillar by searching activities...');
+                                    console.log('📋 Available keys:', Object.keys(dayData));
+                                    console.log('📋 Full dayData object:', dayData);
+                                    
+                                    // Fallback: Try to find pillar by searching activities
+                                    // This is a workaround for plans generated before pillar info was added
+                                    const findPillarForActivity = async () => {
+                                      try {
+                                        // Try to load config - check public/data first, then backend/data
+                                        let configResponse;
+                                        try {
+                                          configResponse = await fetch('/data/essential-growth-config.json');
+                                          if (!configResponse.ok) throw new Error('Not found in public');
+                                        } catch {
+                                          try {
+                                            configResponse = await fetch('/backend/data/essential-growth-config.json');
+                                          } catch {
+                                            console.error('❌ Could not load essential-growth-config.json');
+                                            navigate('/essential-growth');
+                                            return;
+                                          }
+                                        }
+                                        const configData = await configResponse.json();
+                                        const pillars = configData.pillars || [];
+                                        
+                                        // Search through each pillar's activities to find a match
+                                        for (const pillar of pillars) {
+                                          try {
+                                            const activitiesResponse = await fetch(`/data/essential-growth/${pillar.slug}/activities.json`);
+                                            const activitiesData = await activitiesResponse.json();
+                                            
+                                            // Search through all age groups and categories
+                                            let allActivities = [];
+                                            if (activitiesData.ageGroups && Array.isArray(activitiesData.ageGroups)) {
+                                              activitiesData.ageGroups.forEach(ageGroup => {
+                                                if (ageGroup.categories && Array.isArray(ageGroup.categories)) {
+                                                  ageGroup.categories.forEach(category => {
+                                                    if (category.activities && Array.isArray(category.activities)) {
+                                                      allActivities = allActivities.concat(category.activities);
+                                                    }
+                                                  });
+                                                }
+                                              });
+                                            }
+                                            
+                                            // Check if topic matches
+                                            const found = allActivities.find(act => {
+                                              if (!act || !act.topic) return false;
+                                              const activitySlug = act.topic.toLowerCase().replace(/\s+/g, '-');
+                                              return activitySlug === topicSlug;
+                                            });
+                                            
+                                            if (found) {
+                                              console.log(`✅ Found activity in pillar: ${pillar.slug}`);
+                                              navigate(`/essential-growth/${pillar.slug}/${topicSlug}`);
+                                              return;
+                                            }
+                                          } catch (err) {
+                                            // Continue to next pillar if this one fails
+                                            continue;
+                                          }
+                                        }
+                                        
+                                        // If we get here, activity wasn't found in any pillar
+                                        console.error('❌ Activity not found in any pillar, falling back to home');
+                                        navigate('/essential-growth');
+                                      } catch (error) {
+                                        console.error('❌ Error finding pillar:', error);
+                                        navigate('/essential-growth');
+                                      }
+                                    };
+                                    
+                                    findPillarForActivity();
                                   }
                                 } else if (dayData.niche) {
                                   // Niche topic - route to niche topic page

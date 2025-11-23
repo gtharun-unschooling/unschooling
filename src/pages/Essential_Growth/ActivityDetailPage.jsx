@@ -18,6 +18,8 @@ const ActivityDetailPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    console.log('🔍 ActivityDetailPage loaded with:', { pillarSlug, activityId });
+    
     const loadActivity = async () => {
       try {
         // Load pillar config
@@ -33,20 +35,43 @@ const ActivityDetailPage = () => {
         const activitiesResponse = await fetch(`/data/essential-growth/${pillarSlug}/activities.json`);
         const activitiesData = await activitiesResponse.json();
         
-        // Find activity by slug (same logic as CustomisedWeeklyPlan)
-        const allActivities = activitiesData.ageGroups[0]?.categories[0]?.activities || [];
+        // Find activity by slug - search through ALL age groups and ALL categories
+        let allActivities = [];
+        if (activitiesData.ageGroups && Array.isArray(activitiesData.ageGroups)) {
+          activitiesData.ageGroups.forEach(ageGroup => {
+            if (ageGroup.categories && Array.isArray(ageGroup.categories)) {
+              ageGroup.categories.forEach(category => {
+                if (category.activities && Array.isArray(category.activities)) {
+                  allActivities = allActivities.concat(category.activities);
+                }
+              });
+            }
+          });
+        }
+        
+        console.log(`🔍 Searching through ${allActivities.length} activities for slug: "${activityId}"`);
         
         const foundActivity = allActivities.find(act => {
+          if (!act || !act.topic) return false;
           // Create slug using Niche method (simple and consistent)
           const activitySlug = act.topic.toLowerCase().replace(/\s+/g, '-');
           
-          console.log(`  Checking: "${act.topic}" → slug: "${activitySlug}" (${activitySlug === activityId ? '✅' : '❌'})`);
-          return activitySlug === activityId;
+          const matches = activitySlug === activityId;
+          if (matches) {
+            console.log(`✅ Found match: "${act.topic}" → slug: "${activitySlug}"`);
+          }
+          return matches;
         });
         
         if (foundActivity) {
           setActivity(foundActivity);
           console.log('✅ Activity loaded:', foundActivity);
+        } else {
+          console.error(`❌ Activity not found for slug: "${activityId}" in pillar: "${pillarSlug}"`);
+          console.log(`📋 Available activities (first 10):`, allActivities.slice(0, 10).map(a => ({
+            topic: a.topic,
+            slug: a.topic?.toLowerCase().replace(/\s+/g, '-')
+          })));
         }
         setLoading(false);
       } catch (error) {
@@ -70,10 +95,21 @@ const ActivityDetailPage = () => {
     );
   }
 
-  if (!activity) {
+  if (!activity && !loading) {
+    // If activity not found after loading, show error with option to go back
     return (
-      <Box display="flex" justifyContent="center" alignItems="center" minHeight="400px">
-        <Typography  color="error">Activity not found</Typography>
+      <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" minHeight="400px" gap={2}>
+        <Typography variant="h5" color="error">Activity not found</Typography>
+        <Typography variant="body2" color="text.secondary">
+          Activity: {activityId} in pillar: {pillarSlug}
+        </Typography>
+        <Button 
+          variant="contained" 
+          onClick={() => navigate(`/essential-growth/${pillarSlug}`)}
+          startIcon={<ArrowBack />}
+        >
+          Back to {pillarConfig?.name || pillarSlug}
+        </Button>
       </Box>
     );
   }

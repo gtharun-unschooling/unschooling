@@ -76,11 +76,21 @@ class RealPlanGenerator:
     
     def _create_day_activity(self, topic: Dict[str, Any], profile: Dict[str, Any]) -> Dict[str, Any]:
         """Create a day activity from a real topic."""
+        # Get pillar info for Essential Growth activities
+        pillar = topic.get("pillar", topic.get("Pillar", ""))
+        pillar_slug = topic.get("pillar_slug", topic.get("Pillar_Slug", ""))
+        
+        # If pillar exists but no slug, create slug from pillar name
+        if pillar and not pillar_slug:
+            pillar_slug = pillar.lower().replace(" ", "-").replace("&", "").replace(",", "")
+        
         return {
             "activity": topic.get("Activity 1", topic.get("activity_1", f"Explore {topic.get('Topic', 'Learning')}")),
             "duration": topic.get("Estimated Time", topic.get("estimated_time", "30 minutes")),
             "topic": topic.get("Topic", "Learning"),
             "niche": topic.get("Niche", "General"),
+            "pillar": pillar,  # Add pillar for Essential Growth routing
+            "pillar_slug": pillar_slug,  # Add pillar_slug for Essential Growth routing
             "objective": topic.get("Objective", f"Learn about {topic.get('Topic', 'learning')}"),
             "materials_needed": self._get_materials(topic, profile),
             "difficulty": topic.get("Difficulty", "Beginner"),
