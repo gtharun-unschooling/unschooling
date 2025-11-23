@@ -150,11 +150,33 @@ const SubscriptionPlans = () => {
                 <li key={i} style={planStyles.featureItem}>✔ {feature}</li>
               ))}
             </ul>
-            <Link to="/plans" style={planStyles.ctaBtn}>Know More</Link>
+            <Link 
+              to="/plans" 
+              style={planStyles.ctaBtn}
+              onClick={(e) => {
+                if (e.metaKey || e.ctrlKey) {
+                  e.preventDefault();
+                  window.open(`${window.location.origin}/plans`, '_blank', 'noopener,noreferrer');
+                }
+              }}
+            >
+              Know More
+            </Link>
           </div>
         ))}
       </div>
-      <Link to="/plans" style={planStyles.compareLink}>See Full Comparison</Link>
+      <Link 
+        to="/plans" 
+        style={planStyles.compareLink}
+        onClick={(e) => {
+          if (e.metaKey || e.ctrlKey) {
+            e.preventDefault();
+            window.open(`${window.location.origin}/plans`, '_blank', 'noopener,noreferrer');
+          }
+        }}
+      >
+        See Full Comparison
+      </Link>
     </section>
   );
 };

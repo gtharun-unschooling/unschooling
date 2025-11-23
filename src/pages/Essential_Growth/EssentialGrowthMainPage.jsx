@@ -135,8 +135,17 @@ const GrowthPillarsSection = ({ onPlayCreativityClick, onCognitiveSkillsClick })
       'memory-recall'
     ];
     
-    const handlePillarClick = (pillar) => {
+    const handlePillarClick = (pillar, event) => {
       const slug = getPillarSlug(pillar.title);
+      
+      // Support Command+Click to open in new tab
+      if (event && (event.metaKey || event.ctrlKey)) {
+        event.preventDefault();
+        if (pagesExist.includes(slug)) {
+          window.open(`${window.location.origin}/essential-growth/${slug}`, '_blank', 'noopener,noreferrer');
+        }
+        return;
+      }
       
       if (pagesExist.includes(slug)) {
         navigate(`/essential-growth/${slug}`);
@@ -227,7 +236,7 @@ const GrowthPillarsSection = ({ onPlayCreativityClick, onCognitiveSkillsClick })
                 cursor: 'pointer',  // All tiles are now clickable
                 transition: 'all 0.3s ease'
               }}
-              onClick={() => handlePillarClick(pillar)}
+              onClick={(e) => handlePillarClick(pillar, e)}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-5px)';
                 e.currentTarget.style.boxShadow = '0 10px 25px rgba(0,0,0,0.2)';
