@@ -175,7 +175,7 @@ const OurApproach = () => {
   const navigate = useNavigate();
   
   // Handle Essential Growth tile clicks
-  const handleEssentialGrowthClick = (growth) => {
+  const handleEssentialGrowthClick = (growth, event) => {
     const slugMap = {
       'Play & Creativity': 'play-creativity',
       'Cognitive Skills': 'cognitive-skills',
