@@ -943,7 +943,14 @@ const OurApproach = () => {
                   boxShadow: `0 2px 6px ${colorSystem.shadow.colored}`,
                   transition: 'all 0.2s ease',
                 }}
-                onClick={() => window.location.href = '/essential-growth'}
+                onClick={(e) => {
+                  if (e.metaKey || e.ctrlKey) {
+                    e.preventDefault();
+                    window.open(`${window.location.origin}/essential-growth`, '_blank', 'noopener,noreferrer');
+                  } else {
+                    window.location.href = '/essential-growth';
+                  }
+                }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = colorSystem.primary[600];
                   e.currentTarget.style.transform = 'translateY(-1px)';
