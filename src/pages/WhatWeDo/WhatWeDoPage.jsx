@@ -615,46 +615,64 @@ const WhatWeDoPage = () => {
               </div>
               
               {/* Pillar 1 - Top */}
-              <Link to="/niche" style={{
-                position: 'absolute',
-                top: '60px',
-                left: '50%',
-                transform: 'translateX(-50%)',
-                ...textStyle,
-                textDecoration: 'none',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease'
-              }}
-              onMouseEnter={(e) => {
-                e.target.style.transform = 'translateX(-50%) scale(1.1)';
-                e.target.style.textShadow = '4px 4px 8px rgba(0,0,0,0.6)';
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.transform = 'translateX(-50%) scale(1)';
-                e.target.style.textShadow = '3px 3px 6px rgba(0,0,0,0.4)';
-              }}>
+              <Link 
+                to="/niche" 
+                style={{
+                  position: 'absolute',
+                  top: '60px',
+                  left: '50%',
+                  transform: 'translateX(-50%)',
+                  ...textStyle,
+                  textDecoration: 'none',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease'
+                }}
+                onClick={(e) => {
+                  if (e.metaKey || e.ctrlKey) {
+                    e.preventDefault();
+                    window.open(`${window.location.origin}/niche`, '_blank', 'noopener,noreferrer');
+                  }
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.transform = 'translateX(-50%) scale(1.1)';
+                  e.target.style.textShadow = '4px 4px 8px rgba(0,0,0,0.6)';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.transform = 'translateX(-50%) scale(1)';
+                  e.target.style.textShadow = '3px 3px 6px rgba(0,0,0,0.4)';
+                }}
+              >
                 NICHE
               </Link>
               
               {/* Pillar 2 - Right */}
-              <Link to="/growth" style={{
-                position: 'absolute',
-                right: '30px',
-                top: '50%',
-                transform: 'translateY(-50%)',
-                ...textStyle,
-                textDecoration: 'none',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease'
-              }}
-              onMouseEnter={(e) => {
-                e.target.style.transform = 'translateY(-50%) scale(1.1)';
-                e.target.style.textShadow = '4px 4px 8px rgba(0,0,0,0.6)';
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.transform = 'translateY(-50%) scale(1)';
-                e.target.style.textShadow = '3px 3px 6px rgba(0,0,0,0.4)';
-              }}>
+              <Link 
+                to="/growth" 
+                style={{
+                  position: 'absolute',
+                  right: '30px',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  ...textStyle,
+                  textDecoration: 'none',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease'
+                }}
+                onClick={(e) => {
+                  if (e.metaKey || e.ctrlKey) {
+                    e.preventDefault();
+                    window.open(`${window.location.origin}/growth`, '_blank', 'noopener,noreferrer');
+                  }
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.transform = 'translateY(-50%) scale(1.1)';
+                  e.target.style.textShadow = '4px 4px 8px rgba(0,0,0,0.6)';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.transform = 'translateY(-50%) scale(1)';
+                  e.target.style.textShadow = '3px 3px 6px rgba(0,0,0,0.4)';
+                }}
+              >
                 ESSENTIAL<br />GROWTH
               </Link>
               
@@ -688,7 +706,16 @@ const WhatWeDoPage = () => {
             gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
             gap: 'clamp(1rem, 3vw, 1.5rem)'
           }}>
-            <Link to="/niche" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Link 
+              to="/niche" 
+              style={{ textDecoration: 'none', color: 'inherit' }}
+              onClick={(e) => {
+                if (e.metaKey || e.ctrlKey) {
+                  e.preventDefault();
+                  window.open(`${window.location.origin}/niche`, '_blank', 'noopener,noreferrer');
+                }
+              }}
+            >
               <div style={{
                 ...ageCardStyle,
                 cursor: 'pointer',
@@ -714,7 +741,16 @@ const WhatWeDoPage = () => {
               </div>
             </Link>
             
-            <Link to="/growth" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Link 
+              to="/growth" 
+              style={{ textDecoration: 'none', color: 'inherit' }}
+              onClick={(e) => {
+                if (e.metaKey || e.ctrlKey) {
+                  e.preventDefault();
+                  window.open(`${window.location.origin}/growth`, '_blank', 'noopener,noreferrer');
+                }
+              }}
+            >
               <div style={{
                 ...ageCardStyle,
                 cursor: 'pointer',

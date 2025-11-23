@@ -198,10 +198,16 @@ const OurApproach = () => {
     };
     const slug = slugMap[growth.title];
     
-    if (slug) {
-      navigate(`/essential-growth/${slug}`);
+    const path = slug ? `/essential-growth/${slug}` : '/essential-growth';
+    if (event && (event.metaKey || event.ctrlKey)) {
+      event.preventDefault();
+      window.open(`${window.location.origin}${path}`, '_blank', 'noopener,noreferrer');
     } else {
-      navigate('/essential-growth');
+      if (slug) {
+        navigate(`/essential-growth/${slug}`);
+      } else {
+        navigate('/essential-growth');
+      }
     }
   };
 
@@ -631,9 +637,15 @@ const OurApproach = () => {
                       backgroundColor: '#ffffff',
                       background: '#ffffff',
                     }}
-                    onClick={() => {
-                      console.log('🎯 Clicked on niche:', niche.title, 'navigating to:', `/niche/${niche.slug}`);
-                      navigate(`/niche/${niche.slug}`);
+                    onClick={(e) => {
+                      const path = `/niche/${niche.slug}`;
+                      if (e.metaKey || e.ctrlKey) {
+                        e.preventDefault();
+                        window.open(`${window.location.origin}${path}`, '_blank', 'noopener,noreferrer');
+                      } else {
+                        console.log('🎯 Clicked on niche:', niche.title, 'navigating to:', path);
+                        navigate(path);
+                      }
                     }}
                     onMouseEnter={(e) => {
                       if (!isMobile) {
@@ -791,7 +803,14 @@ const OurApproach = () => {
                     boxShadow: '0 2px 6px rgba(118,75,162,0.15)',
                     transition: 'all 0.2s ease',
                   }}
-                  onClick={() => navigate('/niche')}
+                  onClick={(e) => {
+                    if (e.metaKey || e.ctrlKey) {
+                      e.preventDefault();
+                      window.open(`${window.location.origin}/niche`, '_blank', 'noopener,noreferrer');
+                    } else {
+                      navigate('/niche');
+                    }
+                  }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.background = '#6a4190';
                     e.currentTarget.style.transform = 'translateY(-1px)';

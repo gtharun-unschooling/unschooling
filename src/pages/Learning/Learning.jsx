@@ -102,19 +102,55 @@ const Learning = () => {
       <div className="quick-actions">
         <h2>Quick Actions</h2>
         <div className="action-buttons">
-          <Link to="/child-profile" className="action-btn primary">
+          <Link 
+            to="/child-profile" 
+            className="action-btn primary"
+            onClick={(e) => {
+              if (e.metaKey || e.ctrlKey) {
+                e.preventDefault();
+                window.open(`${window.location.origin}/child-profile`, '_blank', 'noopener,noreferrer');
+              }
+            }}
+          >
             <span className="action-icon">👤</span>
             Update Profile
           </Link>
-          <Link to="/enhanced-dashboard" className="action-btn secondary">
+          <Link 
+            to="/enhanced-dashboard" 
+            className="action-btn secondary"
+            onClick={(e) => {
+              if (e.metaKey || e.ctrlKey) {
+                e.preventDefault();
+                window.open(`${window.location.origin}/enhanced-dashboard`, '_blank', 'noopener,noreferrer');
+              }
+            }}
+          >
             <span className="action-icon">🎯</span>
             Browse Topics
           </Link>
-          <Link to="/customised-weekly-plan" className="action-btn secondary">
+          <Link 
+            to="/customised-weekly-plan" 
+            className="action-btn secondary"
+            onClick={(e) => {
+              if (e.metaKey || e.ctrlKey) {
+                e.preventDefault();
+                window.open(`${window.location.origin}/customised-weekly-plan`, '_blank', 'noopener,noreferrer');
+              }
+            }}
+          >
             <span className="action-icon">📅</span>
             View Plans
           </Link>
-          <Link to="/progress-tracker" className="action-btn secondary">
+          <Link 
+            to="/progress-tracker" 
+            className="action-btn secondary"
+            onClick={(e) => {
+              if (e.metaKey || e.ctrlKey) {
+                e.preventDefault();
+                window.open(`${window.location.origin}/progress-tracker`, '_blank', 'noopener,noreferrer');
+              }
+            }}
+          >
             <span className="action-icon">📊</span>
             Track Progress
           </Link>
@@ -156,7 +192,16 @@ const Learning = () => {
                 <span className="difficulty">{topic.difficulty}</span>
                 <span className="time">{topic.estimatedTime}</span>
               </div>
-              <Link to={`/enhanced-dashboard?topic=${topic.id}`} className="start-topic-btn">
+              <Link 
+                to={`/enhanced-dashboard?topic=${topic.id}`} 
+                className="start-topic-btn"
+                onClick={(e) => {
+                  if (e.metaKey || e.ctrlKey) {
+                    e.preventDefault();
+                    window.open(`${window.location.origin}/enhanced-dashboard?topic=${topic.id}`, '_blank', 'noopener,noreferrer');
+                  }
+                }}
+              >
                 Start Learning
               </Link>
             </div>

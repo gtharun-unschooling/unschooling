@@ -341,7 +341,15 @@ const NichesGridSection = () => {
           <div
             key={index}
             style={tileStyle}
-            onClick={() => navigate(`/niche/${niche['Niche Slug'] || niche.Niche.toLowerCase().replace(/\s+/g, '-')}`)}
+            onClick={(e) => {
+              const path = `/niche/${niche['Niche Slug'] || niche.Niche.toLowerCase().replace(/\s+/g, '-')}`;
+              if (e.metaKey || e.ctrlKey) {
+                e.preventDefault();
+                window.open(`${window.location.origin}${path}`, '_blank', 'noopener,noreferrer');
+              } else {
+                navigate(path);
+              }
+            }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'translateY(-4px)';
               e.currentTarget.style.boxShadow = '0 12px 25px rgba(0,0,0,0.15)';
