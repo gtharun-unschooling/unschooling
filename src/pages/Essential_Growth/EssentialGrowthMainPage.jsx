@@ -649,6 +649,8 @@ const FinalCallToAction = () => {
           <h2 style={headingStyle}>Begin Your Essential Growth Journey Today</h2>
           <a
             href="https://unschooling.in/plans"
+            target="_blank"
+            rel="noopener noreferrer"
             style={hover ? { ...buttonStyle, ...buttonHoverStyle } : buttonStyle}
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
